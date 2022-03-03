@@ -25,7 +25,7 @@ Note to English translation:
 BACKUP ~ACBre/backup~
 //AUTHOR ~whiteagnus@gmx.de~ //Original von Ascalon (geheimer.herrscher@gmx.de)
 SUPPORT ~jastey@web.de~
-VERSION ~7.01~ //2018-02-26
+VERSION ~7.02~ //2018-03-17
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 

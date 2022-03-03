@@ -2,7 +2,7 @@
                A Modification for BGT, EET, BG:EE, Tutu, BGII, BGII:EE, and EET
                             by Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 7.01 
+                         		Version: 7.02 
 
 ***************************************************************************************************************
 
@@ -238,6 +238,10 @@ silver arm in ToB
 	-started to translate the readme to English
 	-renamed readme(s) to something language specific
 	-update to WeiDU v244
+
+7.02:
+	-(German version) SoD lines fully translated. Thanks to Gerri!
+	-In the mod area Anstinus' Tower, Breagar will now give his comment about fighting noises in the East correctly in ToB, only.
 
 ***************************************************************************************************************
 
