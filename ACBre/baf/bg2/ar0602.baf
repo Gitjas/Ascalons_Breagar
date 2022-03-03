@@ -1,5 +1,4 @@
 IF
-	OnCreation()
 	Global("ACBrePlotLost","GLOBAL",0)
 	Global("ACBreBroke","GLOBAL",0)
 	Global("ACBREPartyBG1","GLOBAL",1)
@@ -23,7 +22,6 @@ THEN
 END
 
 IF
-	OnCreation()
 	Global("ACBrePlotLost","GLOBAL",0)
 	Global("ACBreBroke","GLOBAL",0)
 	Global("ACBREPartyBG1","GLOBAL",0)
@@ -44,14 +42,13 @@ THEN
 END
 
 IF
-	OnCreation()
 	Global("ACBREPartyBG1","GLOBAL",1)
-OR(5)
-	GlobalGT("ACBrePlotLost","GLOBAL",0)
-	GlobalGT("ACBreBroke","GLOBAL",0)
-	!Global("ACBREEXISTS","GLOBAL",1)
-	!Global("ACBREINPARTY","GLOBAL",2)
-	Dead("ACBRE")
+	OR(5)
+		GlobalGT("ACBrePlotLost","GLOBAL",0)
+		GlobalGT("ACBreBroke","GLOBAL",0)
+		!Global("ACBREEXISTS","GLOBAL",1)
+		!GlobalGT("ACBREINPARTY","GLOBAL",1)
+		Dead("ACBRE")
 	Global("ACBRE","AR0602",0)
 THEN
 	RESPONSE #100
@@ -60,36 +57,5 @@ THEN
 		Continue()
 END
 
-IF
-	Global("ACBREDIARY","AR0602",0)
-THEN
-	RESPONSE #100
-		SetGlobal("ACBREDIARY","AR0602",1)
-		EraseJournalEntry(@10001)
-		EraseJournalEntry(@10002)
-		EraseJournalEntry(@10003)
-		EraseJournalEntry(@10004)
-		EraseJournalEntry(@10005)
-		EraseJournalEntry(@10006)
-		EraseJournalEntry(@10007)
-		EraseJournalEntry(@10008)
-		EraseJournalEntry(@10009)
-		EraseJournalEntry(@10010)
-		EraseJournalEntry(@10011)
-		EraseJournalEntry(@10012)
-		EraseJournalEntry(@10013)
-		EraseJournalEntry(@10014)
-		EraseJournalEntry(@10015)
-		EraseJournalEntry(@10016)
-		EraseJournalEntry(@10017)
-		EraseJournalEntry(@10018)
-		EraseJournalEntry(@10019)
-		EraseJournalEntry(@10020)
-		EraseJournalEntry(@10021)
-		EraseJournalEntry(@10022)
-		EraseJournalEntry(@10023)
-		EraseJournalEntry(@10024)
-		EraseJournalEntry(@10025)
-		Continue()
-END
+
 	

@@ -1,17 +1,3 @@
-/* Breagar moves across area with the others */
-IF
-	Global("bd_plot","global",670)
-	Global("ACBre_SodBreagarMoves","MYAREA",0)
-	InMyArea("ACBre")  
-THEN
-	RESPONSE #100
-		SetGlobal("ACBre_SodBreagarMoves","MYAREA",1)
-		ActionOverride("ACBre",MoveToPoint([1410.1410]))
-		Continue()
-END
-
-
-
 /* end of SoD. Breagar will be at the meeting place */
 
 IF
@@ -24,8 +10,6 @@ IF
 THEN
 	RESPONSE #0
 		SetGlobal("ACBre_SoDEndMove","bd6200",1)
-		SetGlobal("bd_meet_canon_party","bd6200",1)
-		IncrementGlobal("bd_canon_party_size","bd6200",1)
 		MoveGlobal("bd6200","ACBre",[1680.1200]) 
 		ActionOverride("ACBre",LeaveParty())
 		SetGlobal("ACBREINPARTY","GLOBAL",3) 
@@ -45,3 +29,18 @@ THEN
 		ActionOverride("ACBre",SetDialog("ACBreP"))
 		Continue()
 END
+
+/* Breagar moves across area with the others */
+IF
+	Global("bd_plot","global",670)
+	Global("ACBre_SodBreagarMoves","MYAREA",0)
+	InMyArea("ACBre")  
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_SodBreagarMoves","MYAREA",1)
+		ActionOverride("ACBre",MoveToPoint([1410.1410]))
+		Continue()
+END
+
+
+

@@ -72,7 +72,7 @@
 @71   = ~Viel weiser seid Ihr nicht geworden, göttliches Blut hin oder her.~ [acbre_94]
 @72   = ~Dennoch müssen wir uns für eine Weile trennen, Breagar.~
 @73   = ~Das war ein Missverständnis, Breagar. Bitte bleibt bei uns.~
-@74   = ~Hrmpf~
+//@74   
 @75   = ~Ihr habt gesagt, dass Ihr den Riesen mit mir gemeinsam bezwingen wollt! So haltet Ihr Euer Wort?~
 @76   = ~Ihr werdet nicht alleine gehen müssen, Breagar. Wenn <CHARNAME> Euch freigibt dann werde ich Euch auf Eurem Weg begleiten!~
 @77   = ~Ich danke Euch, Yeslick.~
@@ -100,3 +100,11 @@
 @97  = ~Dann werde ich dort auf Euch warten.~
 @98  = ~Hrmpf. So richtig wohl ist mir bei Eurer Rolle bei der ganzen Sache nicht, <CHARNAME>. Nun ja. Lasst uns mal ein paar Meilen zwischen uns und die Stadt bringen, dann wird es alles anders aussehen.~
 @99  = ~Hrmpf. Bin schon irgendwie froh, Euch zu sehen. Blöde Sache, das Ganze. Lasst uns mal ein paar Meilen zwischen uns und die Stadt bringen, dann wird es alles anders aussehen.~
+
+/* new for v9.0.0 */
+@100  = ~Schön Euch zu sehen. Wenn Ihr mich wieder braucht, ich bin jetzt wieder an Eurer Seite.~
+
+//101-103 is @50, in parts:
+@101  = ~Wahrscheinlich habt Ihr Recht. Imoen und dieser verrückte Magier werden nicht auf uns warten.~
+@102  = ~Wahrscheinlich habt Ihr Recht.~
+@103  = ~Und ich habe Galthur meine Beweise vorgelegt, mehr kann ich wohl nicht erwarten. Dann führt uns an, <CHARNAME>. Lasst uns diese Stadt so schnell es geht verlassen.~

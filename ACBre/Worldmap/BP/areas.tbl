@@ -3,5 +3,5 @@
 //ACBRE New Areas Table
 SHORT_NAME  CONTENT  LONG_NAME  FLAGS  BAM_ANIM  X_POS  Y_POS  NAME         TOOLTIP      LOAD_IM
 
-ARAC00      ARAC00   ARAC00     0      79       2358    2670   @ACBRE_0000  @ACBRE_0000  N
+ARAC00      ARAC00   ARAC00     0      icon_index       2434    2831   @ACBRE_0000  @ACBRE_0000  N
 

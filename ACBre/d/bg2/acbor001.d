@@ -2,10 +2,11 @@ BEGIN ACBOR001
 
 IF ~NumTimesTalkedTo(0)!Dead("ACELASIA")~ THEN BEGIN 0
 SAY @0
-++ @1 + 1
-++ @2 + 2
-++ @3 + 3
-++ @4 + 4
+IF ~GlobalLT("ACBORKPLOT","GLOBAL",2)~ THEN REPLY @8 + 1
+IF ~GlobalLT("ACBORKPLOT","GLOBAL",2)~ THEN REPLY @2 + 2
+IF ~GlobalLT("ACBORKPLOT","GLOBAL",2)~ THEN REPLY @3 + 3
+IF ~GlobalLT("ACBORKPLOT","GLOBAL",2)~ THEN REPLY @4 + 4
+IF ~Global("ACBORKPLOT","GLOBAL",2)~ THEN REPLY @9 + 13
 ++ @5 + 5
 ++ @6 + 6
 END

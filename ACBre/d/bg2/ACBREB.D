@@ -61,13 +61,13 @@ INTERJECT ARAN 41 ACARAN41
 @32
 END
 ++ @33 EXTERN ACBREB ARAN42.1
-++ @34 EXTERN ACBREB ARAN42.2
++ ~Global("C#IM_ImoenStays","GLOBAL",0)~ + @34 EXTERN ACBREB ARAN42.2
 ++ @35 EXTERN ACBREB ARAN42.3
 
 APPEND ACBREB
 IF ~~ THEN BEGIN ARAN42.1
 SAY @36
-++ @34 + ARAN42.2
++ ~Global("C#IM_ImoenStays","GLOBAL",0)~ + @34 + ARAN42.2
 ++ @35 + ARAN42.3
 ++ @37 + ARAN42.4
 ++ @38 + ARAN42.5
@@ -836,27 +836,13 @@ END
 INTERJECT_COPY_TRANS %IMOENJ_ID% %IMOENJ_ID_STATE26% ACIMOEN2J74
 ==ACBREB IF ~InParty("ACBRE")InMyArea("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN 
 @128
-==IMOEN2J IF ~InParty("ACBRE")InMyArea("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN
+==%IMOENJ_ID% IF ~InParty("ACBRE")InMyArea("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN
 @129
 ==ACBREB IF ~InParty("ACBRE")InMyArea("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN 
 @130
-==IMOEN2J IF ~InParty("ACBRE")InMyArea("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN
+==%IMOENJ_ID% IF ~InParty("ACBRE")InMyArea("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN
 @131
 END
-
-/* this doesn't work in EET. s.above: "IMOENJ" is Imoen's joined dialogue in ID for all games.
-INTERJECT_COPY_TRANS %IMOEN_JOINED% %IMOEN_STATE_26% ACIMOEN2J74
-==ACBREB IF ~InParty("ACBRE")InMyArea("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN 
-@128
-==%IMOEN_JOINED% IF ~InParty("ACBRE")InMyArea("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN
-@129
-==ACBREB IF ~InParty("ACBRE")InMyArea("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN 
-@130
-==%IMOEN_JOINED% IF ~InParty("ACBRE")InMyArea("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN
-@131
-END
-*/
-
 
 INTERJECT_COPY_TRANS JAHEIRAJ 338 ACJAHEIRAJ338
 ==ACBREB IF ~InParty("ACBRE")See("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN 
@@ -916,29 +902,31 @@ END
 
 ///////////////////////// IMOEN FRIENDSHIP
 
+/* inside Irenicus Dungeon - Imoen has other DV and J.dlg for the different games! */
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")AreaCheck("AR0602")Global("ACImmy0602","GLOBAL",0)~ THEN ACBREJ BREIMMYAR0602a
+IF ~Global("ACImmy0602","GLOBAL",1)~ THEN ACBREJ BREIMMYAR0602a
 @473
 END
-IF ~~ THEN EXTERN IMOEN2J BREIMMYAR0602
+IF ~~ THEN EXTERN ~%IMOENJ_ID%~ BREIMMYAR0602
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("ACBre")AreaCheck("AR0602")Global("ACImmy0602","GLOBAL",0)~ THEN IMOEN2J BREIMMYAR0602
-@474 DO ~SetGlobal("ACBreImmyActive","GLOBAL",2)SetGlobal("ACImmy0602","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
+IF ~Global("ACImmy0602","GLOBAL",1)~ THEN ~%IMOENJ_ID%~ BREIMMYAR0602
+@474 DO ~SetGlobal("ACBreImmyActive","GLOBAL",2)SetGlobal("ACImmy0602","GLOBAL",2)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @475
-==IMOEN2J @476
+==~%IMOENJ_ID%~ @476
 ==ACBREJ @477
-==IMOEN2J @478
+==~%IMOENJ_ID%~ @478
 ==ACBREJ @479
-==IMOEN2J @480
+==~%IMOENJ_ID%~ @480
 ==ACBREJ @481
-==IMOEN2J @482
+==~%IMOENJ_ID%~ @482
 ==ACBREJ @483
-==IMOEN2J @484
+==~%IMOENJ_ID%~ @484
 EXIT
 
+/* BREIMMY21 - Imoen begrüßt und drückt Breagar nach Spellhold. */
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",2)~ THEN ACBREJ BREIMMY21
+IF ~%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",2)~ THEN ACBREJ BREIMMY21
 @581 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==IMOEN2J @582
 ==ACBREJ @479
@@ -949,18 +937,38 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")%BGT_VAR2%
 ==IMOEN2J @587
 EXIT
 
+/* BREIMMY22 - Imoen dankt Breagar, dass er ihr zuliebe mit dem Schiff gekommen ist, um sie zu retten. */
+
+/* normal dialogue start without I4E */
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("ACBre")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",4)~ THEN IMOEN2J BREIMMY22
+IF WEIGHT #-1
+~Global("C#IM_ImoenStays","GLOBAL",0) %BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",4)~ THEN IMOEN2J BREIMMY22
 @588 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
-==ACBREJ @589
+END
+IF ~~ THEN EXTERN ACBREJ BREIMMY22_add
+
+/* dialogue start in case of I4E: adapted dialogue */
+CHAIN
+IF WEIGHT #-1
+~!Global("C#IM_ImoenStays","GLOBAL",0) %BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",4)~ THEN IMOEN2J BREIMMY22_i4e
+@985 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
+END
+IF ~~ THEN EXTERN ACBREJ BREIMMY22_add
+
+CHAIN
+IF ~~ THEN ACBREJ BREIMMY22_add
+@589
+==ACBREJ IF ~!Global("C#IM_ImoenStays","GLOBAL",0)~ THEN @986
 ==IMOEN2J @590
 ==ACBREJ @591
 ==IMOEN2J @592 = @593 = @594
 ==ACBREJ @595
 EXIT
 
+/* BREIMMY23 - Imoen spricht über ihr Bhaalerbe */
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("ACBre")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",6)~ THEN IMOEN2J BREIMMY23
+IF WEIGHT #-1
+~%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",6)~ THEN IMOEN2J BREIMMY23
 @474 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @596
 ==IMOEN2J @597
@@ -976,10 +984,24 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("ACBre")%BGT_VAR2%G
 ==IMOEN2J @605 = @606
 EXIT
 
+/* BREIMMY24 - über Imoens Magie  */
+/* normal dialogue start without I4E */
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",8)~ THEN ACBREJ BREIMMY24
+IF ~%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",8)~ THEN ACBREJ BREIMMY24
 @607 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
-==IMOEN2J @608
+END
+IF ~~ THEN EXTERN IMOEN2J BREIMMY24_add
+
+/* changed dialogue start with I4E */
+CHAIN
+IF ~%BGT_VAR2%Global("ACBreImmyTalk_I4E","GLOBAL",3)~ THEN ACBREJ BREIMMY24_i4e
+@607 DO ~IncrementGlobal("ACBreImmyTalk_I4E","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
+END
+IF ~~ THEN EXTERN IMOEN2J BREIMMY24_add
+
+CHAIN
+IF ~~ THEN IMOEN2J BREIMMY24_add
+@608
 ==ACBREJ @479
 ==IMOEN2J @609
 ==ACBREJ @610
@@ -987,10 +1009,26 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")%BGT_VAR2%
 ==ACBREJ @612
 EXIT
 
+/* BREIMMY25 - Breagar und Imoen sprechen zwergisch. */
+/* normal dialogue start without I4E */
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("ACBre")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",10)~ THEN IMOEN2J BREIMMY25
+IF WEIGHT #-1
+~%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",10)~ THEN IMOEN2J BREIMMY25
 @474 DO ~SetGlobal("ACBreImmyActive","GLOBAL",3)IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
-==ACBREJ @596
+END
+IF ~~ THEN EXTERN ACBREJ BREIMMY25_add
+
+/* changed dialogue start with I4E */
+CHAIN
+IF WEIGHT #-1
+~%BGT_VAR2%Global("ACBreImmyTalk_I4E","GLOBAL",5)~ THEN IMOEN2J BREIMMY25_i4e
+@474 DO ~IncrementGlobal("ACBreImmyTalk_I4E","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
+END
+IF ~~ THEN EXTERN ACBREJ BREIMMY25_add
+
+CHAIN
+IF ~~ THEN ACBREJ BREIMMY25_add
+@596
 ==IMOEN2J @613
 ==ACBREJ @614 = @615
 ==IMOEN2J @616 = @617
@@ -998,21 +1036,54 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("ACBre")%BGT_VAR2%G
 ==IMOEN2J @619
 EXIT
 
+/* BREIMMY26 - über Audhild */
+/* normal dialogue start without I4E */
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("ACBre")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",12)~ THEN IMOEN2J BREIMMY26
+IF WEIGHT #-1
+~%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",12)~ THEN IMOEN2J BREIMMY26
 @620 DO ~SetGlobal("ACBreImmyActive","GLOBAL",3)IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
-==ACBREJ IF ~GlobalLT("ACBREBIO","GLOBAL",2)~ THEN @621
-==IMOEN2J IF ~GlobalLT("ACBREBIO","GLOBAL",2)~ THEN @622
-==ACBREJ IF ~GlobalLT("ACBREBIO","GLOBAL",2)~ THEN @623
-==IMOEN2J IF ~GlobalLT("ACBREBIO","GLOBAL",2)~ THEN @624
-==ACBREJ IF ~GlobalLT("ACBREBIO","GLOBAL",2)~ THEN @625
-==IMOEN2J IF ~GlobalLT("ACBREBIO","GLOBAL",2)~ THEN @626
-==ACBREJ IF ~GlobalGT("ACBREBIO","GLOBAL",1)~ THEN @627
-==IMOEN2J IF ~GlobalGT("ACBREBIO","GLOBAL",1)~ THEN @628
-==ACBREJ IF ~GlobalGT("ACBREBIO","GLOBAL",1)~ THEN @629
-==IMOEN2J IF ~GlobalGT("ACBREBIO","GLOBAL",1)~ THEN @630
-==ACBREJ IF ~GlobalGT("ACBREBIO","GLOBAL",1)~ THEN @631
-==IMOEN2J IF ~GlobalGT("ACBREBIO","GLOBAL",1)~ THEN @330
+END
+IF ~~ THEN EXTERN ACBREJ BREIMMY25_add_2
+IF ~GlobalLT("ACBREBIO","GLOBAL",2)~ THEN EXTERN ACBREJ BREIMMY25_add_1
+
+/* changed dialogue start with I4E */
+CHAIN
+IF WEIGHT #-1
+~%BGT_VAR2%Global("ACBreImmyTalk_I4EAudhild","GLOBAL",1)~ THEN IMOEN2J BREIMMY26_i4e
+@620 DO ~SetGlobal("ACBreImmyTalk_I4EAudhild","GLOBAL",2)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
+END
+IF ~~ THEN EXTERN ACBREJ BREIMMY25_add_2
+IF ~GlobalLT("ACBREBIO","GLOBAL",2)~ THEN EXTERN ACBREJ BREIMMY25_add_1
+
+CHAIN
+IF ~~ THEN ACBREJ BREIMMY25_add_1
+@621
+==IMOEN2J @622
+==ACBREJ @623
+==IMOEN2J @624
+==ACBREJ @625
+==IMOEN2J @626
+EXIT
+
+CHAIN
+IF ~~ THEN ACBREJ BREIMMY25_add_2
+@627
+==IMOEN2J @628
+==ACBREJ @629
+==IMOEN2J @630
+==ACBREJ @631
+==IMOEN2J @330
+EXIT
+
+/* extra dialogue for I4E, after Imoen returned in the slums */
+CHAIN
+IF ~Global("ACBreImmyTalk_I4E","GLOBAL",1)~ THEN ACBREJ i4e1st
+@987 DO ~IncrementGlobal("ACBreImmyTalk_I4E","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
+==IMOEN2J @988
+==ACBREJ @989
+==IMOEN2J @990
+==ACBREJ @991 
+==IMOEN2J @992
 EXIT
 
 

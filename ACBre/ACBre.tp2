@@ -1,12 +1,10 @@
 /*
-
-ToDo:
-include timer 1800 in optional component, in case someone wants to change back to it
-
 Known Issues:
 -Breagar will only smithy for the PC if he is in Taerom's smithy *before* joining the group.
 -(TdB) Berronar's Axt will be doubled after the Silver Dwarf blessed it in ToB.
 -Anstinus Turm, outside area: in the southwest corner, the wall can be left to the lower ground although there is no stairs.
+- Picture of Audhild is too small for EE.
+
 
 Note:
 -SoD-content is not yet approved by Ascalon
@@ -27,9 +25,9 @@ Note to English translation:
 
 
 BACKUP ~ACBre/backup~
-//AUTHOR ~whiteagnus@gmx.de~ //Original von Ascalon (geheimer.herrscher@gmx.de)
+//AUTHOR Original von Ascalon 
 SUPPORT ~https://www.baldurs-gate.de/index.php?threads/ascalons-breagar.44520/~
-VERSION ~8.0.1~ //2019-03-09
+VERSION ~9.0.0~ 
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
@@ -64,7 +62,7 @@ SetGlobal("TalkedToMulahey","GLOBAL",1)~
   OUTER_SPRINT ~journalentry_JARED_0~ ~27184~
   OUTER_SPRINT ~EraseJournalEntry_KOVERA_6~ ~EraseJournalEntry(31460)~
 
-  OUTER_SPRINT ~SoD_VAR~ ~Global("ENDOFBG1","GLOBAL",2)~
+  OUTER_SPRINT ~SoD_VAR~ ~GlobalGT("bd_plot","global",0)~
 END
 
 ACTION_IF NOT GAME_IS "bgee eet" BEGIN
@@ -109,7 +107,7 @@ ACTION_IF !FILE_EXISTS ~ACBre/reinstall.mrk~ BEGIN
 
 	LAF HANDLE_CHARSETS
 		INT_VAR
-			infer_charset = 1
+			infer_charsets = 1
 		STR_VAR
 			tra_path = EVAL ~ACBre/tra/autotra~
 			noconvert_array = tra#noconvert
@@ -156,7 +154,8 @@ LANGUAGE ~Partly English (but most still in German)~ ~english~ ~ACBre/TRA/englis
 BEGIN @1 DESIGNATED 0
 
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tob bg2ee tutu_totsc eet~ @2
-FORBID_COMPONENT ~setup-bp-bgt-worldmap.tp2~ ~0~ @208
+//FORBID_COMPONENT ~setup-bp-bgt-worldmap.tp2~ ~0~ @208
+//REQUIRE_PREDICATE ((NOT MOD_IS_INSTALLED ~setup-bp-bgt-worldmap.tp2~ ~0~) OR (GAME_IS ~eet~)) @208
 
 //For all engines
 
@@ -953,10 +952,13 @@ SAY NAME2 @50019
 COPY ~ACBre/SPL~ ~override~
 
 //Compiling Scripts
-COMPILE ~ACBre/baf~
-EVALUATE_BUFFER
+COMPILE EVALUATE_BUFFER ~ACBre/baf~
 
-
+/* script addition for BGII: crossmod compatibility with I4E */
+ACTION_IF GAME_IS ~BGT EET tob bg2ee~ THEN BEGIN
+  EXTEND_BOTTOM ~acbre.bcs~ ~ACBre/baf/bg2/acbre_i4e.baf~
+  EVALUATE_BUFFER
+END
 
 //////
 // Get journal entry from JARED.dlg (we need this for BGT/Tutu for ACBREB.d)
@@ -1081,6 +1083,8 @@ LAF HANDLE_AUDIO
     oggdec_path = ~ACBre/tools/oggdec~
     sox_path = ~ACBre/tools/sox~
 END
+
+
 
 //Extend existing Scripts for BG1
 EXTEND_TOP ~%NashkelMines_L4_BCS%.bcs~ ~ACBre/baf/bg1/AR4404.baf~
@@ -1221,40 +1225,18 @@ EXTEND_BOTTOM ~bd3000.bcs~ ~ACBre/baf/sod/ac_bd3000.baf~
 EXTEND_BOTTOM ~bd7100.bcs~ ~ACBre/baf/sod/ac_bd7100.baf~
   EVALUATE_BUFFER
 
-/* portal to Avernus */
+/* Breagar returns to camp on his own if told to */
+EXTEND_TOP ~bdparty.bcs~ ~ACBre/baf/sod/ac_bdparty.baf~
+  EVALUATE_BUFFER
+
+/* Breagar comments at portal to Avernus */
 EXTEND_TOP ~bd4300.bcs~ ~ACBre/baf/sod/ac_bd4300.baf~
   EVALUATE_BUFFER
 
-/* inside Avernus */
+/* Breagar comments inside Avernus */
 EXTEND_TOP ~bd4400.bcs~ ~ACBre/baf/sod/ac_bd4400.baf~
   EVALUATE_BUFFER
 
-/* Breagar comments on murder accusation */
-EXTEND_BOTTOM ~bd4100.bcs~ ~ACBre/baf/sod/ac_bd4100.baf~
-  EVALUATE_BUFFER
-
-
-/* bdcut60a.bcs, bdcut60b.bcs: group is handled as one, no action needed */
-
-/* after PC gets arrested for murder: Breagar leaves party */
-EXTEND_TOP ~bdcut61.bcs~ ~ACBre/baf/sod/ac_bdcut61.baf~
-  EVALUATE_BUFFER
-
-
-/* move to SoD end area */
-EXTEND_TOP ~bd6200.bcs~ ~ACBre/baf/sod/ac_bd6200.baf~
-  EVALUATE_BUFFER
-
-
-/* this was my first attempt - will remain here until the other works 
-/* group moves inside area - Breager should, too */
-COPY_EXISTING ~bd6200.bcs~ ~override~
-  DECOMPILE_BCS_TO_BAF
-    REPLACE_TEXTUALLY ~\(ActionOverride("khalid",MoveToPoint(\[1410\.1410\]))\)~
-
-~\1 ActionOverride("ACBre",MoveToPoint([1410.1410]))~
-
-*/
 
 /* Breagar is kicked in hell dimension - teleport to other areas */
 EXTEND_TOP ~bdcut59b.bcs~ ~ACBre/baf/sod/ac_bdcut59b.baf~
@@ -1317,97 +1299,47 @@ BUT_ONLY_IF_IT_CHANGES
 EXTEND_BOTTOM ~bd4601.bcs~ ~ACBre/baf/sod/ac_bd4601.baf~
   EVALUATE_BUFFER
 
-/* End of SoD - Breagar follows to abduction site */
-EXTEND_TOP ~bdcut65.bcs~ ~ACBre/baf/sod/ac_bdcut65.baf~
+
+/* Breagar comments on murder accusation */
+EXTEND_TOP ~bd4100.bcs~ ~ACBre/baf/sod/ac_bd4100.baf~
   EVALUATE_BUFFER
 
 
-/* my first attempt - will stay here until it's clear the EXTEND_TOP works as intended
-COPY_EXISTING ~bdcut65.bcs~ ~override~
-  DECOMPILE_BCS_TO_BAF
-    REPLACE_TEXTUALLY ~\(DisableAI(Player6,TRUE)\)~
-~\1 DisableAI("ACBre",TRUE)~
+/* bdcut60a.bcs, bdcut60b.bcs: group is handled as one, no action needed */
 
-    REPLACE_TEXTUALLY ~\(ActionOverride(Player6,LeaveAreaLUA("bd6100","",\[470\.270\],SE))\)~
-~\1 ActionOverride("ACBre",LeaveAreaLUA("bd6100","",[480.260],SE))~
+/* after PC gets arrested for murder: Breagar leaves party */
+EXTEND_TOP ~bdcut61.bcs~ ~ACBre/baf/sod/ac_bdcut61.baf~
+  EVALUATE_BUFFER
 
-    REPLACE_TEXTUALLY ~\(ActionOverride(Player6,MoveToPoint(\[780\.765\]))\)~
-~\1 ActionOverride("ACBre",MoveToPoint([770.790]))~
 
-  COMPILE_BAF_TO_BCS
-BUT_ONLY_IF_IT_CHANGES
-*/
+/* move to SoD end area */
+EXTEND_TOP ~bd6200.bcs~ ~ACBre/baf/sod/ac_bd6200.baf~
+  EVALUATE_BUFFER
+
+/* Breagar joins group if there is still a free slot */
+EXTEND_TOP ~bdcut64x.bcs~ ~ACBre/baf/sod/ac_bdcut64x.baf~
+  EVALUATE_BUFFER
 
 /* End of SoD - Abduction */
 EXTEND_TOP ~bd6100.bcs~ ~ACBre/baf/sod/ac_bd6100.baf~
   EVALUATE_BUFFER
 
 
-/* my first attempt - will stay here until it's clear the EXTEND_TOP works as intended
-COPY_EXISTING ~bd6100.bcs~ ~override~
-  DECOMPILE_BCS_TO_BAF
-    REPLACE_TEXTUALLY ~\(ActionOverride(Player6,JumpToPoint(\[795\.825\]))\)~
-~\1 ActionOverride("ACBre",JumpToPoint([760.800]))~
-
-    REPLACE_TEXTUALLY ~\(ActionOverride(Player6,Face(SW))\)~
-~\1 ActionOverride("ACBre",Face(SW))~
-
-    REPLACE_TEXTUALLY ~\(ActionOverride(Player6,SetSequence(SEQ_SLEEP))\)~
-~\1 ActionOverride("ACBre",SetSequence(SEQ_SLEEP))~
-
-    REPLACE_TEXTUALLY ~\(ApplySpellRES("bdfinal",Player6)\)[%tab% %lnl%%mnl%%wnl%]+\(Continue()\)[%tab% %lnl%%mnl%%wnl%]+\(END\)~
-~\1 \2 \3 
-IF
-	Global("ACBreSoD_sleep","bd6100",0)
-	StateCheck("ACBre",STATE_SLEEPING)
-THEN
-	RESPONSE #100
-		SetGlobal("ACBreSoD_sleep","bd6100",1)
-		ActionOverride("ACBre",MakeUnselectable(3600000))
-		ApplySpellRES("bdfinal","ACBre")  // No such index
-		Continue()
-END
-
-IF
-	Global("ACBre_SoD_down","bd6100",0)
-	OR(2)
-		StateCheck("ACBre",STATE_REALLY_DEAD)
-		TriggerOverride("ACBre",Global("bd_final","locals",1))
-THEN
-	RESPONSE #100
-		SetGlobal("ACBre_SoD_down","bd6100",1)
-		SetGlobalTimer("bd_sleep_timer","bd6100",THREE_MINUTES)
-		Continue()
-END
-~
-
-   REPLACE_TEXTUALLY ~\(ApplySpellRES("bdsleep",Player6)\)[%tab% %lnl%%mnl%%wnl%]+\(END\)~
-~\1 \2 
-
-IF
-	Global("bd_finale","bd6100",4)
-	Global("ACBre_SoD_down","bd6100",0)
-	!GlobalTimerNotExpired("bd_sleep_timer","bd6100")
-THEN
-	RESPONSE #100
-		SetGlobalTimer("bd_sleep_timer","bd6100",THREE_MINUTES)
-		ApplySpellRES("bdsleep","ACBre")  // No such index
-END
-~
-  COMPILE_BAF_TO_BCS
-BUT_ONLY_IF_IT_CHANGES
-*/
 
 
 END //SoD
-
-
 
 /* Move from SoD to BGII for EET! (canon party member) */
 
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
 EXTEND_TOP ~K#TELBGT.bcs~ ~ACBre/baf/sod/ac_K#TELBGT.baf~
   EVALUATE_BUFFER
+
+/* make sure Breagar spawns in BGII if SoD gets skipped (EET with SkipSoD or EBG1) */
+EXTEND_TOP ~acbre.bcs~ ~ACBre/baf/eet/acbre_eet_add.baf~
+EVALUATE_BUFFER
+
+
 END
 
 
@@ -1482,6 +1414,11 @@ ACTION_IF GAME_IS ~bgt tob bg2ee~ THEN BEGIN
   EXTEND_TOP ~AR4500.bcs~ ~ACBre/baf/bg2/AR4500.baf~
 END
 
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+  EXTEND_BOTTOM ~AR0602.bcs~ ~ACBre/baf/bg2/ar0602_bgt.baf~
+END
+
+
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
   EXTEND_TOP ~AR4500.bcs~ ~ACBre/baf/bg2/AR4500_eet.baf~
 END
@@ -1531,6 +1468,16 @@ UNLESS ~ARAC07~
 //Worldmap
 MKDIR ~Worldmap~
 
+ACTION_IF GAME_IS ~bgt eet~ BEGIN
+	COPY ~ACBre/Worldmap/BP/areas.tbl~  ~ACBre/Worldmap/areas.tbl~
+		REPLACE_TEXTUALLY ~icon_index~ ~79~
+END
+ACTION_IF (GAME_IS ~tob bg2ee~ AND NOT GAME_IS ~bgt~) BEGIN
+	COPY ~ACBre/Worldmap/BP/areas.tbl~  ~ACBre/Worldmap/areas.tbl~
+		REPLACE_TEXTUALLY ~icon_index~ ~11~
+END
+
+
 ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
   COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
   APPEND_FILE ~ACBre/Worldmap/areas.tbl~
@@ -1550,8 +1497,7 @@ END ELSE BEGIN
   COPY ~ACBre/TRA/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
 END
 
-/* For eet. the BP-Worldmap mod is not necessary */
-
+/* direct Worldmap-patching for EET */
 ACTION_IF GAME_IS ~eet~ BEGIN
 	INCLUDE ~ACBre/lib/add_worldmap_tbl.tpa~
 	LAF ADD_WORLDMAP_TBL
@@ -1559,7 +1505,37 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 		verbose = 1
 		inclSv = 0
 		STR_VAR
-		path_to_areas = EVAL ~ACBre/Worldmap/areas.tbl~
+		path_to_areas = EVAL ~ACBre/Worldmap/EET/areas.tbl~
+		path_to_areas_bp = EVAL ~ACBre/Worldmap/areas.tbl~
+		path_to_links = EVAL ~ACBre/Worldmap/links.tbl~
+		path_to_trans = EVAL ~ACBre/TRA/%LANGUAGE%/worldmap.tra~
+	END
+END
+
+/* direct Worldmap-patching for BGT */
+ACTION_IF GAME_IS ~bgt~ BEGIN
+	INCLUDE ~ACBre/lib/add_worldmap_tbl.tpa~
+	LAF ADD_WORLDMAP_TBL
+		INT_VAR
+		verbose = 1
+		inclSv = 0
+		STR_VAR
+		path_to_areas = EVAL ~ACBre/Worldmap/BGT/areas.tbl~
+		path_to_areas_bp = EVAL ~ACBre/Worldmap/areas.tbl~
+		path_to_links = EVAL ~ACBre/Worldmap/links.tbl~
+		path_to_trans = EVAL ~ACBre/TRA/%LANGUAGE%/worldmap.tra~
+	END
+END
+
+/* direct Worldmap-patching for BGII(:EE) */
+ACTION_IF (GAME_IS ~tob bg2ee~ AND NOT GAME_IS ~bgt~) BEGIN
+	INCLUDE ~ACBre/lib/add_worldmap_tbl.tpa~
+	LAF ADD_WORLDMAP_TBL
+		INT_VAR
+		verbose = 1
+		inclSv = 0
+		STR_VAR
+		path_to_areas = EVAL ~ACBre/Worldmap/BG2/areas.tbl~
 		path_to_areas_bp = EVAL ~ACBre/Worldmap/areas.tbl~
 		path_to_links = EVAL ~ACBre/Worldmap/links.tbl~
 		path_to_trans = EVAL ~ACBre/TRA/%LANGUAGE%/worldmap.tra~
@@ -1698,20 +1674,27 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ACQ11001.CRE~
 THEN BEGIN
-PRINT @205
+  PRINT @205
 // EXTEND_BOTTOM ~ACBRE.bcs~ ~ACBre/CROSS/ACACQ.baf~
-COMPILE ~ACBre/CROSS/ACACQ.D~
+  COMPILE ~ACBre/CROSS/ACACQ.D~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~sola5.cre~ THEN BEGIN
-PRINT @209
-COMPILE ~ACBre/CROSS/ACSOLA.D~ EVALUATE_BUFFER
+  PRINT @209
+  COMPILE ~ACBre/CROSS/ACSOLA.D~ EVALUATE_BUFFER
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~B!ASTER.dlg~ THEN BEGIN
-EXTEND_TOP ~ACBre.bcs~ ~ACBre/CROSS/acbre_alternatives.baf~
+  PRINT @210
+  EXTEND_TOP ~ACBre.bcs~ ~ACBre/CROSS/acbre_alternatives.baf~
 END
 
+/* Imoen 4 Ever */
+ACTION_IF FILE_EXISTS_IN_GAME ~C#IMMET.dlg~ THEN BEGIN
+  PRINT @211
+  OUTER_SET i4e_imoenreturn = STATE_WHICH_SAYS 27 IN ~imoen_forever/tra/%s/C#IMMET.tra~ FROM ~C#IMMET~
+  COMPILE EVALUATE_BUFFER ~ACBre/CROSS/aci4e.D~ USING ~ACBre/tra/autotra/%LANGUAGE%/ACBREB.tra~
+END
 
 
 COMPILE ~ACBre/pid~
@@ -1757,9 +1740,10 @@ COPY_EXISTING ~gtimes.ids~ ~override~
   REPLACE_TEXTUALLY ~^.+[ %TAB%]\(ACBRE_TIMER[ %TAB%%LNL%%MNL%%WNL%]+\)~ ~5400 \1~
   BUT_ONLY
 
+/* DEPRECATED
 ////////////////////////////////////////////////////////////////////////////
 //
-//  Chose portrait from Nix
+//  Alternatives Portraits aus v4.X
 //
 //
 ///////////////////////////////////////////////////////////////////////////
@@ -1774,5 +1758,5 @@ ACTION_IF GAME_IS ~bgee bg2ee eet~ THEN BEGIN
 COPY ~ACBre/Portraits/Gerri/bgee~ ~override~
 END
 PRINT @16
-
+*/
 

@@ -1,0 +1,13 @@
+/* Undercity Temple */
+
+IF
+	InParty(Myself)
+	AreaCheck("%Undercity_TempleofBhaal%")
+	!See([ENEMY])
+	Global("ACBREPartyBG1","GLOBAL",0)
+THEN
+	RESPONSE #200
+		SetGlobal("ACBREPartyBG1","GLOBAL",1)
+END
+
+

@@ -2,7 +2,7 @@
                A Modification for BGT, EET, BG:EE, Tutu, BGII, BGII:EE, and EET
                             by Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 8.0.1
+                         		Version: 9.0.0
 
 ***************************************************************************************************************
 
@@ -32,6 +32,8 @@ For BGT and EET, Breagar works as a continuous character all through the trilogy
 
 For BG:EE, Tutu, BGII, and BGII:EE, only the according content of the game will be installed.
 
+For v9.0.0 and later, the mod is compatible but independent on the Worldmap Mod, i.e. the Breagar Mod will work with the Worldmap Mod independent on whether it is  installed before or after, but the Worldmap Mod is not needed to see the new area added by Breagar on the games' worldmaps.
+
 
 
 ***************************************************************************************************************
@@ -47,13 +49,15 @@ II. Installation:
 
 III. Notes (important!)
 
+-Version 9 does not offer the alternate portrait any more, due to Copyright reasons.
+
 -Version 8 comes with a changed install routine. Deinstall previous versions and delete old mod folders before extracting the version 8 into your game folder.
 
 - Version 6 and higher is not backwards compatible with Breagar version 5 or lower. You will have to start a new game.
 
 - Installation of Breagar mod is done in two steps: the main component first, and the PID (Player Initiated Dialogues) and crossmod content in a second component. For the mod to work best with other mods, the second component should be installed as late as possible in a game with several mods.
 
-- Breagar needs the BP-BGT-Worldmap mod for the new area in BGII ot be accessible - except for EET!
+- For v9.0.0 and later, the mod is compatible but independent on the Worldmap Mod, i.e. the Breagar Mod will work with the Worldmap Mod independent on whether it is  installed before or after, but the Worldmap Mod is not needed to see the new area added by Breagar on the games' worldmaps.
 
 
 ***************************************************************************************************************
@@ -63,6 +67,11 @@ IV. Compatibility:
 
 Breagar was developped with WeiDU (2.07 to 2.24) and should be compatible with other WeiDU mods. It was designed for Leonardo's Big World Project and should be compatible with BGT in all constellations.
 
+-Breagar is compatible with any "skip SoD" tweak in EET: he will spawn in BGII when he was in party upon facing Sarevok in Undercity no matter the game transition.
+
+-For v9.0.0 and later, the mod is compatible but independent on the Worldmap Mod, i.e. the Breagar Mod will work with the Worldmap Mod independent on whether it is  installed before or after, but the Worldmap Mod is not needed to see the new area added by Breagar on the games' worldmaps.
+
+-Note: the use of the Item Patcher that makes Breagar's items droppable might lead to incompatibilities in the game because some of Breagar's undroppable items are expected on him for quest and story porgress.
 
 ***************************************************************************************************************
 
@@ -291,6 +300,29 @@ silver arm in ToB
 
 8.0.1: (2019-03-09) by jastey
 	-fixed install bug if Ascalon's Questpack is already installed
+
+9.0.0: (2020-01-23) by jastey
+	-fixed swapped portrait options.
+	-Anstinus will only initiate dialogue once.
+	-compatibility with Imoen 4 Ever added: including one new dialogue if i4e is installed
+	-Imoen-Breagar banter inside Irenicus Dungeon should trigger in all BGII games correctly
+	-Breagar interjection into Imoen's dialogue about Duergar in ID should work correctly
+	-(EET) compatibility with skip SoD tweak(s): Breagar will spawn in BGII if he was in party upon entering the Undercity Temple.
+	-(BGII) after talking with Reggik, Galtor, and Audhild in the smithy, teleporting Breagar and PC back into inn should work in cutscene
+	-Breagar and group should return to original game Taerom smithy area after bg1 quest is finished and Breagar rejoins the group.
+	-Breagar should comment in Tanners Cellar as meant to
+	-Breagar should comment upon Fierkraags dungeon as meant to
+	-Viconia banter should not end after Breagar's line
+	-optimized SoD scripting for party management
+	-Breagar should give the correct kickout-dialogue in SoD
+	-Ellie and Bork: if PC helped Ellie first, speaking with Bork should not lead to being stuck in the quest
+	-after bringing the juwels to Cromwell and upgrading the axe it should appear in the inventory andthe jewels should be gone, even if Breagar's inventory was full.
+	-Reggik will no longer drop the third dwarven text fragment, it will be handed over by Galthur only.
+	-EET, BGII(:EE): Anstinus Tower area will show on the worldmap correctly
+	-Breagar Mod is now compatible but completely independent on the Worldmap Mod.
+	-component "alternative portrait" removed due to Copyright reasons
+	-Breagars stats in all cres unified to INT 10, WIS 12.
+	-added folder libiconv-1.9.2-1-src.7z with iconv licence info
 
 
 ***************************************************************************************************************

@@ -2,7 +2,7 @@
                Eine Modifikation für BGT, EET, BG:EE, Tutu, BGII, BGII:EE und EET
                             von Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 8.0.1
+                         		Version: 9.0.0
 
 ***************************************************************************************************************
 
@@ -32,6 +32,8 @@ Diese Modifikation fügt Breager vom Clan Bardormar als aufnehmbaren NPC hinzu. B
 Breagar ist komplett durch Baldur's Gate, Schatten von Amn und Thron des Bhaals spielbar und bringt drei verschiedene Enden mit sich, je nach Spielweise.
 Bei der Installation in Tutu, BG:EE oder BGII wird nur der entsprechende Teil der Mod installiert.
 
+- Breagar ist ab Version 9.0.0 komplett unabhängig von der BP-BGT-Worldmap-Mod. Kompatibilität mir der Worldmap-Mod ist aber gegeben, unabhängig der Installationsreihenfolge!
+
 
 ***************************************************************************************************************
 
@@ -46,13 +48,15 @@ II. Installation:
 
 III. Hinweise (wichtig!)
 
+-Version 9 bistete das alternative Portrait nicht mehr an, aufgrund von Copyrightbedenken.
+
 -Die Version 8 hat einen veränderten Installationsprozess: zwei neue Komponenten sind hinzugekommen, dafür fällt die Auswhl während der Installation der Hauptkomponente raus. Die tp2-Datei wurde umbenannt. Deinstalliert vorherige Versionen und löscht den alten Modordner, bevor Ihr die neue Version 8 in Euren Spieleordner entpackt.
 
 - Die Version 6 ist nicht abwärtskompatibel mit vorherigen Versionen von Breagar. Inhalte wurden teilweise komplett neu überarbeitet und Variablen neu gesetzt. Es ist nicht möglich, ein bereits begonnenes Spiel der Version 5.2 oder niedriger mit Breagar in der Gruppe einfach zu updaten!
 
 - Breagar wird in zwei Schritten installiert: Der reguläre Inhalt und Crossmod-Inhalte / PID (Player Initiated Dialogues). Damit alle Komponenten reibungslos mit anderen Modifikationen funktionieren, muss die Komponente "Crossmod-Inhalte und PIDs" nicht nur ganz am Ende von Breagars Installation, sondern so SPÄT WIE MÖGLICH in einer Installation mit mehreren Mods installiert werden.
 
-- Breagar benötigt ab der Version 5 auch die BP-BGT-Worldmap, außer für EET!
+- Breagar ist ab Version 9.0.0 komplett unabhängig von der BP-BGT-Worldmap-Mod. Kompatibilität mir der Worldmap-Mod ist aber gegeben, unabhängig der Installationsreihenfolge!
 
 
 ***************************************************************************************************************
@@ -61,6 +65,10 @@ III. Hinweise (wichtig!)
 IV. Kompatibilität:
 
 Breagar wurde mit WeiDU Vers. 2.07 bis 2.24 programmiert und sollte daher mit (fast)  allen anderen Modifikationen auf WeiDU-Basis kompatibel sein. Breagar wurde mit Blick auf das Big World Projekt von Leonardo Watson programmiert und sollte in jeder beliebigen Konstellation, in der BGT installiert ist, funktionieren.
+
+-Breagar ist kompatibel mit jedem "SoD überspringen"-Tweak in EET: er wird auf alle Fälle in BGII planmäßig auftauchen, solange man Sarevok in der Unterstadt mit Breagar in der Gruppe gegenübergetreten ist.
+
+- Breagar ist ab Version 9.0.0 komplett unabhängig von der BP-BGT-Worldmap-Mod. Kompatibilität mir der Worldmap-Mod ist aber gegeben, unabhängig der Installationsreihenfolge!
 
 Achtung: Die Verwendung des Item Patchers, der einige von Breagars Items entfernbar macht, kann zu Inkompatibilitäten führen, da Breagar diese Items zu bestimmten Zeiten an bestimmten Itemslots haben muss, damit die Mod richtig ausgeführt wird.
 
@@ -292,6 +300,29 @@ silver arm in ToB
 
 8.0.1: (2019-03-09) by jastey
 	-fixed install bug if Ascalon's Questpack is already installed
+
+9.0.0: (2020-01-23) by jastey
+	-fixed swapped portrait options
+	-Anstinus will only initiate dialogue once.
+	-compatibility with Imoen 4 Ever added: including one new dialogue if i4e is installed
+	-Imoen-Breagar banter inside Irenicus Dungeon should trigger in all BGII games correctly
+	-Breagar interjection into Imoen's dialogue about Duergar in ID should work correctly
+	-(EET) compatibility with skip SoD tweak(s): Breagar will spawn in BGII if he was in party upon entering the Undercity Temple.
+	-(BGII) after talking with Reggik, Galtor, and Audhild in the smithy, teleporting Breagar and PC back into inn should work in cutscene
+	-Breagar and group should return to original game Taerom smithy area after bg1 quest is finished and Breagar rejoins the group.
+	-Breagar should comment in Tanners Cellar as meant to
+	-Breagar should comment upon Fierkraags dungeon as meant to
+	-added folder libiconv-1.9.2-1-src.7z with iconv licence info
+	-optimized SoD scripting for party management
+	-Breagar should give the correct kickout-dialogue in SoD
+	-Ellie und Bork: falls man erst mit Ellie spricht und ihr hilft, ist der Quest nun auch zu lösen.
+	-wenn man die Juwelen zu Cromwell gebracht hat und Berronars Axt ein Upgrade erhält, erscheint diese nun hoffentlich auch im Inventar, wenn dieses vorher voll war.
+	-Das dritte zwergische Textfragment aus Reggiks Inventar entfernt, es wird (nur noch) von Galthur übergeben.
+	-EET, BGII(:EE): Anstinus Tower area will show on the worldmap correctly
+	-Breagar Mod is now compatible but completely independent on the Worldmap Mod.
+	-component "alternative portrait" removed due to Copyright reasons
+	-Breagars stats in allen cres vereinheitlicht auf INT 10, WIS 12.
+	-added folder libiconv-1.9.2-1-src.7z with iconv licence info
 
 
 ***************************************************************************************************************

@@ -691,8 +691,65 @@ END
 
 
 /* these are for BGII part */
+
+/* inside Irenicus Dungeon: timer start */
 IF
-	%GlobalGT_CHAPTER_1%
+	%BGT_VAR2%
+	AreaCheck("AR0602")
+	InParty(Myself)
+	InParty("Imoen2")
+	Global("ACBreImmyIDTimerStart","MYAREA",0)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",20)
+		SetGlobal("ACBreImmyIDTimerStart","MYAREA",1)
+		SetGlobal("ACBreImmyActive","GLOBAL",1)
+		SetGlobal("ACBreImmyTalk","GLOBAL",0)
+END
+
+/* inside ID - dialogue activation */
+IF
+	OR(2)
+		AreaCheck("AR0602")
+		AreaCheck("AR0603")
+	%BGT_VAR2%
+	InParty(Myself)
+	InParty("%IMOEN_DV%")
+	See("%IMOEN_DV%")
+	RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+	Global("ACImmy0602","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACImmy0602","GLOBAL",1)
+END
+
+/* inside ID - dialogue triggering */
+IF
+	%BGT_VAR2%
+	InParty(Myself) 
+	InParty("%IMOEN_DV%")
+	See("%IMOEN_DV%")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+	Global("ACImmy0602","GLOBAL",1)
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)
+		ActionOverride("%IMOEN_DV%",StartDialogNoSet("ACBre"))
+END
+
+
+
+/* after Immy returned after Spellhold. Timer restart */
+IF
+	GlobalGT("Chapter","GLOBAL",%bg2_chapter_3%) !Global("C#IM_ImoenStays","GLOBAL",1) //compatibility with I4E
 	%BGT_VAR2%
 	InParty(Myself)
 	InParty("Imoen2")
@@ -701,18 +758,25 @@ OR(2)
 	Global("ACBreImmyActive","GLOBAL",2)
 THEN
 	RESPONSE #100
-		RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",5)
+		RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",10)
 		SetGlobal("ACBreImmyActive","GLOBAL",1)
 		SetGlobal("ACBreImmyTalk","GLOBAL",1)
 		Continue()
 END
 
+/*after Audhild + Galthur quest */
 IF
 	%BGT_VAR2%
+	Global("C#IM_ImoenStays","GLOBAL",0) //compatibility with I4E
 	GlobalGT("ACBreBio","GLOBAL",0)
 	Global("ACBreImmyTalk","GLOBAL",11)
+	RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")
 	InParty(Myself)
 	InParty("Imoen2") 
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("Imoen2",CD_STATE_NOTVALID)
 	Global("ACBreImmyActive","GLOBAL",3)
 THEN
 	RESPONSE #100
@@ -721,9 +785,11 @@ THEN
 		Continue()
 END
 
+/* normal friendship banter, activation */
 IF
-	%GlobalGT_CHAPTER_1%
 	%BGT_VAR2%
+	GlobalGT("Chapter","GLOBAL",3) !Global("C#IM_ImoenStays","GLOBAL",1) //compatibility with I4E
+	%GlobalGT_CHAPTER_1%
 	InParty(Myself)
 	InParty("Imoen2")
 	See("Imoen2")
@@ -733,10 +799,46 @@ IF
 	!See([ENEMY])
 	!StateCheck("ACBre",CD_STATE_NOTVALID)
 	!StateCheck("Imoen2",CD_STATE_NOTVALID)
-	OR(6)
+	OR(3)
 	Global("ACBreImmyTalk","GLOBAL",1)
 	Global("ACBreImmyTalk","GLOBAL",3)
 	Global("ACBreImmyTalk","GLOBAL",5)
+THEN
+	RESPONSE #100
+		IncrementGlobal("ACBreImmyTalk","GLOBAL",1)
+		Continue()
+END
+
+/* With I4E: normal dialogue path ends for Global("ACBreImmyTalk","GLOBAL",7) /the other dialogues are triggred differently) */
+
+IF
+	%BGT_VAR2%
+	InParty(Myself)
+	InParty("Imoen2")
+	CombatCounter(0)
+	!See([ENEMY])
+	!Global("C#IM_ImoenStays","GLOBAL",0) //compatibility with I4E
+	Global("ACBreImmyTalk","GLOBAL",7)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBreImmyActive","GLOBAL",3)
+END
+
+/* Without I4E: normal dialogue path continues */
+IF
+	%BGT_VAR2%
+	Global("C#IM_ImoenStays","GLOBAL",0) //compatibility with I4E
+	%GlobalGT_CHAPTER_1%
+	InParty(Myself)
+	InParty("Imoen2")
+	See("Imoen2")
+	RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")
+	Global("ACBreImmyActive","GLOBAL",1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("Imoen2",CD_STATE_NOTVALID)
+	OR(3)
 	Global("ACBreImmyTalk","GLOBAL",7)
 	Global("ACBreImmyTalk","GLOBAL",9)
 	Global("ACBreImmyTalk","GLOBAL",11)
@@ -746,37 +848,38 @@ THEN
 		Continue()
 END
 
+/* normal friendship banter, triggering: Breagar talks to Imoen */
 IF
-	%GlobalGT_CHAPTER_1%
 	%BGT_VAR2%
+	%GlobalGT_CHAPTER_1%
 	InParty(Myself) 
-	InParty("%IMOEN_DV%")
-	See("%IMOEN_DV%")
-	RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")
+	InParty("Imoen2")
+	See("Imoen2")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck("ACBre",CD_STATE_NOTVALID)
-	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+	!StateCheck("Imoen2",CD_STATE_NOTVALID)
 	OR(2)
 	Global("ACBreImmyTalk","GLOBAL",2)
 	Global("ACBreImmyTalk","GLOBAL",8)
 THEN
 	RESPONSE #100
+		RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)
 		PlaySong(999991)
 		StartDialogNoSet("Imoen2")
 END
 
+/* normal friendship banter, triggering: Imoen talks to Breagar */
 IF
-	%GlobalGT_CHAPTER_1%
 	%BGT_VAR2%
+	%GlobalGT_CHAPTER_1%
 	InParty(Myself) 
-	InParty("%IMOEN_DV%")
-	See("%IMOEN_DV%")
-	RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")
+	InParty("Imoen2")
+	See("Imoen2")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck("ACBre",CD_STATE_NOTVALID)
-	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+	!StateCheck("Imoen2",CD_STATE_NOTVALID)
 	OR(4)
 	Global("ACBreImmyTalk","GLOBAL",4)
 	Global("ACBreImmyTalk","GLOBAL",6)
@@ -787,6 +890,7 @@ THEN
 		PlaySong(999991)
 		ActionOverride("Imoen2",StartDialogNoSet("ACBRE")
 END
+
 
 IF
 	%BGT_VAR2%
@@ -1332,6 +1436,7 @@ THEN
 END
 
 
+
 IF 
 	InParty(Myself)
 	!AreaCheck("AR0601")
@@ -1348,6 +1453,9 @@ THEN
 		SetGlobal("ACBREBANTER5","LOCALS",1)
 END
 
+/* 93 */
+
+/* spread out for debug 
 IF
 	InParty(Myself) 
 	See(Player1)
@@ -1371,6 +1479,137 @@ THEN
 		PlaySong(999991)
 		StartDialogNoSet(Player1)
 END
+*/
+
+
+IF
+	InParty(Myself) 
+	See(Player1)
+	Global("ACBREFRIENDACTIVE","GLOBAL",2)
+	RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBREBANTER1","LOCALS",1)
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		StartDialogNoSet(Player1)
+END
+
+IF
+	InParty(Myself) 
+	See(Player1)
+	Global("ACBREFRIENDACTIVE","GLOBAL",2)
+	RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBREBANTER1","LOCALS",4)
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		StartDialogNoSet(Player1)
+END
+
+IF
+	InParty(Myself) 
+	See(Player1)
+	Global("ACBREFRIENDACTIVE","GLOBAL",2)
+	RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBREBANTER2","LOCALS",1)
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		StartDialogNoSet(Player1)
+END
+
+IF
+	InParty(Myself) 
+	See(Player1)
+	Global("ACBREFRIENDACTIVE","GLOBAL",2)
+	RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBREBANTER2","LOCALS",2)
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		StartDialogNoSet(Player1)
+END
+
+IF
+	InParty(Myself) 
+	See(Player1)
+	Global("ACBREFRIENDACTIVE","GLOBAL",2)
+	RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBREBANTER3","LOCALS",1)
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		StartDialogNoSet(Player1)
+END
+
+IF
+	InParty(Myself) 
+	See(Player1)
+	Global("ACBREFRIENDACTIVE","GLOBAL",2)
+	RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBREBANTER3","LOCALS",2)
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		StartDialogNoSet(Player1)
+END
+
+IF
+	InParty(Myself) 
+	See(Player1)
+	Global("ACBREFRIENDACTIVE","GLOBAL",2)
+	RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBREBANTER4","LOCALS",2)
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		StartDialogNoSet(Player1)
+END
+
+IF
+	InParty(Myself) 
+	See(Player1)
+	Global("ACBREFRIENDACTIVE","GLOBAL",2)
+	RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBREBANTER5","LOCALS",1) 
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		StartDialogNoSet(Player1)
+END
+
+/*
+IF
+	InParty(Myself) 
+	See(Player1)
+	Global("ACBREFRIENDACTIVE","GLOBAL",2)
+	RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBREBANTER5","LOCALS",2)
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		StartDialogNoSet(Player1)
+END
+
+*/
 
 IF
 	InParty(Myself)
@@ -3195,5 +3434,25 @@ THEN
 		StartDialogNoSet(Player1)
 END
 
+/* in tanners hideout */
+IF
+	%BGT_VAR2%
+	InParty(Myself)
+	See(Player1)
+	Global("ACAR0502","LOCALS",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
 
 
+/* at Fierkraag's entrance */
+IF
+	%BGT_VAR2%
+	InParty(Myself)
+	See(Player1)
+	Global("ACAR1201","LOCALS",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END

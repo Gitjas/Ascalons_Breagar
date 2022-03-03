@@ -14,7 +14,7 @@
 @13   = ~Schweigt und gebt Euch zu erkennen!~
 @14   = ~Der Magier, der sich einer Zwergenaxt nicht beugt, muss erst noch geboren werden. Pah.~
 @15   = ~Ihr wisst wohl, wie Ihr Euch Gehör verschaffen könnt.~
-@16   = ~<CHARNAME> der Wunderbare, der Retter der kleinen Hunde. Ha.~ ~<CHARNAME> die Wunderbare, die Retterin der kleinen Hunde. Ha.~
+@16   = ~<GABBER> der Wunderbare, der Retter der kleinen Hunde. Ha.~ ~<GABBER> die Wunderbare, die Retterin der kleinen Hunde. Ha.~
 @17   = ~Ihr seid so gut, ich könnte Euch küssen!~
 @18   = ~Freunde in der Händerliga sind eine gute Sache, <CHARNAME>. Dann sitzen wir auch an der Goldquelle.~
 @19   = ~Keine Sorge, Freund. Wir werden <CHARNAME> schon den Schädel gerade rücken.~
@@ -323,7 +323,7 @@
 @322  = ~Mein Fürst, die Axt, bitte!~
 @323  = ~Vielleicht sollte ich Dir mal eine Lektion erteilen, die du nicht so schnell vergisst, Bursche!~
 @324  = ~Oooohneinneinnein! Ich hab meine Lektion gelernt! Nie wieder Zwerge beklauen! Ihr bekommt alles wieder und ich leg auch noch was drauf, aber jetzt nehmt die Axt *da* weg, ich flehe Euch an!~
-@325  = ~Hrmpf. Also gut. Aber wehe, ich erwische Dich nochmal, Junge.~
+@325  = ~Hrmpf. Also gut. Aber wehe, ich erwische dich nochmal, Junge.~
 @326  = ~*Uff.*~
 @327  = ~Dann werdet Ihr diesem Sarevok den Weg in die Hölle freimachen, Abschaum!~
 @328  = ~Ihr werdet vor uns dort sein!~
@@ -453,7 +453,7 @@
 @452  = ~*Kicher* Aber es sieht so lustig aus! Natürlich verzeihe ich Euch, Breagar. Unter einer Bedingung.~
 @453  = ~Und die wäre?~
 @454  = ~Dass Ihr wieder vernünftig mit mir redet.~
-@455  = ~(seufzt) Ich were mir Mühe geben.~
+@455  = ~(seufzt) Ich werde mir Mühe geben.~
 @456  = ~Juhuuuu!~
 @457  = ~Imoen?~
 @458  = ~Äääääääh...~
@@ -583,7 +583,7 @@
 @582  = ~Breagar! Ihr seid auch da. Ich hab' Euch gar nicht gesehen!~
 @583  = ~Nun kommt, schmollt nicht. Lasst Euch drücken!~
 @584  = ~He, lasst das. Schon gut, schon gut! Buzzurk! Lasst mich los!~
-@585  = ~Ihr seid immer noch der alte, was?~
+@585  = ~Ihr seid immer noch der Alte, was?~
 @586  = ~Wer sollte ich denn sonst sein? Närrisches Mädchen.~
 @587  = ~Ach, es ist schön, wieder mit Euch reisen zu können.~
 @588  = ~Breagar? Seid Ihr wirklich mit einem Schiff gereist? Nur um mich zu retten?~
@@ -610,7 +610,7 @@
 @609  = ~Ach, seid Ihr immer noch so griesgrämig, wenn es um die Zauberei geht? Ich wette, sie hat Euch in der letzten Zeit mehr als einmal gute Dienste erwiesen.~
 @610  = ~Hrmpf. Sagen wir, sie hat nicht ganz so viel Schaden angerichtet, wie es möglich gewesen wäre.~
 @611  = ~*Kichert* Und ich sage Euch, es kommt noch der Tag, da werdet Ihr für ein wenig Zauberei dankbar sein.~
-@612  = ~Das mötgen die Götter verhindern.~
+@612  = ~Das mögen die Götter verhindern.~
 @613  = ~Vel.. ähm... Vel nosnyr baz gurbak na dwardek?~
 @614  = ~*Breagar schaut einen Moment verwirrt, dann verziehen sich seine Mundwinkel zu einem Lächeln - ein Anblick, der selten genug vorkommt*~
 @615  = ~Ah nosmyr gez dwardek. Bakah rez therdek nes kar.~
@@ -621,7 +621,7 @@
 @620  = ~Breagar, Ihr redet gar nicht über Audhild.~
 @621  = ~Was soll es denn da schon zu reden geben, Mädchen?~
 @622  = ~Ihr habt so viele Jahre damit verbracht, an Eurer Prüfung zu arbeiten und jetzt ist alles dahin. Was soll es denn da *nicht* zu reden geben?~
-@623  = ~Was geschehen ist, das ist geschehen, Imoen. Niemandem ist damit geholfen, wenn ich mir jetzt den Bart ausreisse. Und am wenigsten <CHARNAME>.~
+@623  = ~Was geschehen ist, das ist geschehen, Imoen. Niemandem ist damit geholfen, wenn ich mir jetzt den Bart ausreiße. Und am wenigsten <CHARNAME>.~
 @624  = ~Denkt Ihr wirklich nur an <CHARNAME>?~
 @625  = ~Pah. Wäre dem so, dann müsste ich wohl überprüfen lassen, ob in meinem Schädel noch alles in Ordnung ist. Nein, ich denke vor allem daran, dass ich noch einigen Leuten eine Tracht Prügel schuldig bin. Und die werde ich ihnen zu gerne zukommen lassen.~
 @626  = ~Nun gut, dann sollten wir nicht allzu lange damit warten.~
@@ -983,3 +983,14 @@
 @982  = ~Ihr wollt doch noch einen Versuch wagen? Großartig! Also, passt genau auf: Ein Ork, ein Elf und ein Kreischling treffen sich in einer Kneipe. Da sagt der Kreischling zum Elf...~
 @983  = ~Euer Zorn ist uns ein leuchtendes Beispiel, Breagar!~
 @984  = ~(lacht verächtlich)~
+
+/* new in v. 9.0.0 */
+@985  = ~Breagar, ich hatte gar keine Zeit, das zu sagen. Da seid Ihr tatsächlich mit einem Schiff gereist, um den Entführer von <CHARNAME> und mir zu verfolgen!~
+@986  = ~Wenn ich allerdings gewusst hätte, dass er Euch hier erneut ergreift, dann wäre ich Euch eigenhändig hinterhergerudert!~
+@987  = ~Imoen, mit Eurem Verschwinden habt Ihr uns einen ganz schönen Schrecken eingejagt, Mädchen.~
+@988  = ~Oh, ich mir selbst auch, Breagar, das könnt Ihr mir glauben! Von einer Gefangenschaft gleich in die nächste - ne, das wär nichts gewesen. Das geht doch gar nicht, dass <CHARNAME> ohne mich die Welt erkundet!~
+@989  = ~Wir hatten uns schon vorbereitet, unsere wiedergewonnene Freiheit mit dem Suchen nach Euch verbringen zu müssen.~
+@990  = ~Oh, Ihr seid so lieb! Und ich weiß, dass weder <CHARNAME> noch Ihr geruht hättet, bis Ihr mich gefunden hättet.~
+@991  = ~Hrmpf. Ich beginne jetzt schon die Ruhe zu vermissen, die ohne Euch geherrscht hat. Närrisches Mädchen...~
+@992  = ~*kichert* Ich habe Euch auch vermisst, Breagar.~
+@993  = ~Hrmpf, Mädchen! <CHARNAME> war ja schon ganz krank vor Sorge.~

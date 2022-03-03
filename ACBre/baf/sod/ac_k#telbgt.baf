@@ -1,27 +1,29 @@
 IF
-	Global("K#FrameDelay","LOCALS",0)
+	Global("ACBre_BreagarEETTransit","LOCALS",0)
+	InPartyAllowDead("ACBre")
 	
 THEN
 	RESPONSE #100
+		SetInterrupt(FALSE)		
 		DisableAI("ACBre",FALSE)
-		Continue()
-END
-
-IF
-	Global("K#FrameDelay","LOCALS",1)
-THEN
-	RESPONSE #100
+		SetGlobal("ACBre_BreagarEETTransit","LOCALS",1)
 		ActionOverride("ACBre",MakeUnselectable(1))
+		ApplySpellRES("bdresurr","ACBre")
+		SmallWait(10)
+		ApplySpellRES("K#UNREST","ACBre")
+		SmallWait(10)
+		ApplySpellRES("bdrejuve","ACBre")
+		SmallWait(10)
 		ActionOverride("K#ImportContainer",TakeCreatureItems("ACBre",ALL))
+		SmallWait(10)
 		ActionOverride("K#ImportContainer",DestroyItem("ACAXE"))
+		SmallWait(10)
 		ActionOverride("K#ImportContainer",DestroyItem("ACAXE2"))
-		Continue()
-END
-
-IF
-	Global("K#FrameDelay","LOCALS",2)
-THEN
-	RESPONSE #100
-		ApplySpellRES("K#UNREST","ACBre")  
+		SmallWait(10)
+		ActionOverride("ACBre",ChangeAIScript("",DEFAULT))
+		SetGlobal("ACBREPartyBG1","GLOBAL",1)
+		SetGlobal("ACBREEXISTS","GLOBAL",1)
+		SetGlobal("ACBREINPARTY","GLOBAL",3)
+		SetInterrupt(TRUE)		
 		Continue()
 END

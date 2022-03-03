@@ -438,7 +438,7 @@ Kann nur verwendet werden von:
 @112  = ~Berronars Axt +5~
 @113  = ~Um diese legendäre Axt ranken sich viele Legenden. Angeblich soll Moradin selbst diese Waffe als Geschenk für seine treue Gattin Berronar geschmiedet haben.
 
-Bei Ihrer Reise durch das Unterreich fanden <CHARNAME> und Breagar die fehlenden Edelsteine und reparierten die Axt in Cromwells Schmiede. Seitdem erstrahlt die Axt in neuem Glanz und ist eine furchtbare Waffe im Kampf gegen das Böse.
+Bei ihrer Reise durch das Unterreich fanden <CHARNAME> und Breagar die fehlenden Edelsteine und reparierten die Axt in Cromwells Schmiede. Seitdem erstrahlt die Axt in neuem Glanz und ist eine furchtbare Waffe im Kampf gegen das Böse.
 
 EIGENSCHAFTEN:
 
@@ -683,6 +683,10 @@ Und als Moradins Hammer mit der Wucht von tausend Lawinen auf den schurkischen R
 @208  = ~Die Mod muss vor BP-BGT Worldmap installiert werden.~ /* ~This mod should be installed BEFORE BP-BGT Worldmap~ */
 @209  = ~Installiere Crossmodinhalt für: Weimers Solaufein~
 
+/* new for v9.0.0 */
+@210 = ~Installiere Crossmodinhalt für: Alternatives~
+@211  = ~Installiere Crossmodinhalt für: Imoen 4 Ever~
+
 @4000    = ~Alle Zutaten sind bereit. Ihr wisst, dass Ihr nur einen Versuch habt und solltet Ihr zwischendurch abbrechen ist der Trank verloren. Wollt Ihr beginnen?~
 @4001    = ~Ja, ich bin bereit.~
 @4002    = ~Nein, ich muss mich noch vorbereiten.~
@@ -741,6 +745,10 @@ Und als Moradins Hammer mit der Wucht von tausend Lawinen auf den schurkischen R
 der einäugige Arnold wurde von unseren Kontakten dabei beobachtet, wie er nach den Unruhen auf Waukeens Promenade eine Zwergenaxt an sich nahm. Bin gespannt, ob er dafür noch seinen Zoll von sich aus zahlt oder ob wir ihm wieder einen "Besuch" in seiner favorisierten Taverne in der Promenade abstatten müssen.
 
 G.~
+
+/* new for v8.0.2 */
+@5030 = ~Ja, kommt nur, Ihr Schmeißfliegen! Und genauso werde ich Euch zerquetschen, rhaaaa!~
+
 
 ///////////////////////////////////////////
 ///// Tagebucheinträge

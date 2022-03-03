@@ -345,7 +345,8 @@ IF ~~ THEN ACBREJ Acc.11
 ==ACTAEROM @132
 ==ACBREJ @133
 END
-IF ~~ THEN DO ~AddexperienceParty(1200)AddJournalEntry(@10013,QUEST_DONE)SetGlobal("AC6701TELEPORT","GLOBAL",2)SetGlobal("ACBREINPARTY","GLOBAL",2)SetDialog("AcBreJ")ChangeAIScript("AcBre",OVERRIDE)JoinParty()
+IF ~~ THEN DO ~CopyGroundPilesTo("%Beregost_ThunderhammerSmithy%",[851.508])
+AddexperienceParty(1200)AddJournalEntry(@10013,QUEST_DONE)SetGlobal("AC6701TELEPORT","GLOBAL",2)SetGlobal("ACBREINPARTY","GLOBAL",2)
 ClearAllActions()
       StartCutSceneMode()
       StartCutScene("accut_1x")~ EXIT

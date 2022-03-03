@@ -671,17 +671,21 @@ Und als Moradins Hammer mit der Wucht von tausend Lawinen auf den schurkischen R
 @196  = ~Die Treppe sieht nicht allzu vertrauenerweckend aus.~
 @197  = ~Breagar: Crossmods und PID~
 @198  = ~Ihr habt den Hauptteil von Breagar nicht installiert. Installation wird abgebrochen.~
-@199  = ~Installiere Crossmodinhalt für: DSotSC~
-@200  = ~Installiere Crossmodinhalt für: Amber~
-@201  = ~Installiere Crossmodinhalt für: Auren~
-@202  = ~Installiere Crossmodinhalt für: ToBR~
-@203  = ~Installiere Crossmodinhalt für: BGQE~
-@204  = ~Installiere Crossmodinhalt für: ToD~
-@205  = ~Installiere Crossmodinhalt für: AsQ~
+@199  = ~Installiere Crossmodinhalt fuer: DSotSC~
+@200  = ~Installiere Crossmodinhalt fuer: Amber~
+@201  = ~Installiere Crossmodinhalt fuer: Auren~
+@202  = ~Installiere Crossmodinhalt fuer: ToBR~
+@203  = ~Installiere Crossmodinhalt fuer: BGQE~
+@204  = ~Installiere Crossmodinhalt fuer: ToD~
+@205  = ~Installiere Crossmodinhalt fuer: AsQ~
 @206  = ~Bringe Virginie, dem unsichtbaren Wunderbunny, ein paar neue Tricks bei~
 @207  = ~Installiere Virginie, das unsichtbare Wunderbunny~
 @208  = ~Die Mod muss vor BP-BGT Worldmap installiert werden.~ /* ~This mod should be installed BEFORE BP-BGT Worldmap~ */
-@209  = ~Installiere Crossmodinhalt für: Weimers Solaufein~
+@209  = ~Installiere Crossmodinhalt fuer: Weimers Solaufein~
+
+/* new for v9.0.0 */
+@210 = ~Installiere Crossmodinhalt fuer: Alternatives~
+@211  = ~Installiere Crossmodinhalt fuer: Imoen 4 Ever~
 
 @4000    = ~Alle Zutaten sind bereit. Ihr wisst, dass Ihr nur einen Versuch habt und solltet Ihr zwischendurch abbrechen ist der Trank verloren. Wollt Ihr beginnen?~
 @4001    = ~Ja, ich bin bereit.~
@@ -741,6 +745,10 @@ Und als Moradins Hammer mit der Wucht von tausend Lawinen auf den schurkischen R
 der einäugige Arnold wurde von unseren Kontakten dabei beobachtet, wie er nach den Unruhen auf Waukeens Promenade eine Zwergenaxt an sich nahm. Bin gespannt, ob er dafür noch seinen Zoll von sich aus zahlt oder ob wir ihm wieder einen "Besuch" in seiner favorisierten Taverne in der Promenade abstatten müssen.
 
 G.~
+
+/* new for v8.0.2 */
+@5030 = ~Ja, kommt nur, Ihr Schmeißfliegen! Und genauso werde ich Euch zerquetschen, rhaaaa!~
+
 
 
 ///////////////////////////////////////////

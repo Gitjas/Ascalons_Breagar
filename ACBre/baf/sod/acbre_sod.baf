@@ -22,6 +22,8 @@ END
 IF
 	%SoD_VAR%
 	!InParty(Myself)
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
 	Global("ACBREINPARTY","GLOBAL",3)
 	AreaCheck("bd0103")
 	Range(Player1,15)
@@ -35,52 +37,9 @@ THEN
 END
 
 
-/* talk to PC if kicked out */
-IF
-	%SoD_VAR%
-	!InParty(Myself)
-	Global("ACBREINPARTY","GLOBAL",2)
-THEN
-	RESPONSE #100
-		StartDialogNoSet(Player1)
-END
 
-/* Move camp if kicked out and waiting */
 
-IF
-	%SoD_VAR%
-	Global("bd_npc_camp","locals",1)
-	Switch("bd_npc_camp_chapter","global")
-	OR(2)
-		!Range("ff_camp",999)
-		!TriggerOverride("ff_camp",IsOverMe("ACBre"))  
-THEN
-	RESPONSE #2
-		EscapeAreaMove("bd1000",300,3435,N) 
-	RESPONSE #3
-		EscapeAreaMove("bd7100",1000,3595,N) 
-	RESPONSE #4
-		EscapeAreaMove("bd3000",469,570,N) 
-END
 
-IF
-	%SoD_VAR%
-	GlobalLT("bd_npc_camp","locals",2)
-	Global("ACBREINPARTY","GLOBAL",3)
-	TriggerOverride("ff_camp",IsOverMe("ACBre"))  
-	Switch("bd_npc_camp_chapter","global")
-THEN
-	RESPONSE #2
-		SetGlobal("bd_npc_camp","locals",2)
-		SaveLocation("LOCALS","bd_default_loc",[300.3435])
-	RESPONSE #3
-		SetGlobal("bd_npc_camp","locals",2)
-		SaveLocation("LOCALS","bd_default_loc",[1000.3595])
-	RESPONSE #4
-		SetGlobal("bd_npc_camp","locals",2)
-		SaveLocation("LOCALS","bd_default_loc",[469.570])
-		ChangeAIScript("bdasc3",CLASS)
-END
 
 /* SoD gameplay */
 
@@ -161,9 +120,10 @@ IF
 	!StateCheck("ACBRE",CD_STATE_NOTVALID)
 	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
 	Global("ACBre_SoDThrix","GLOBAL",2)
-	GlobalLT("bd_plot","global",550)
+	GlobalLT("bd_plot","global",550)	
 	OR(2)
-	Global("bd_thrix_plot","global",20)
+		Global("bd_thrix_plot","global",20)
+		Dead("bdthrix")  // Thrix
 THEN
 	RESPONSE #100
 		SetGlobal("ACBre_SoDThrix","GLOBAL",3)
@@ -180,8 +140,10 @@ IF
 	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
 	GlobalLT("ACBre_SoDThrix","GLOBAL",2)
 	Global("bd_thrix_sacrifice_companion","global",1)
-	GlobalLT("bd_plot","global",550)
-	Global("bd_thrix_plot","global",20)
+	GlobalLT("bd_plot","global",550)	
+	OR(2)
+		Global("bd_thrix_plot","global",20)
+		Dead("bdthrix")  // Thrix
 THEN
 	RESPONSE #100
 		SetGlobal("ACBre_SoDThrix","GLOBAL",5)
