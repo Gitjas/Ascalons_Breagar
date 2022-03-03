@@ -9,10 +9,6 @@ Note:
 -SoD-content is not yet approved by Ascalon
 
 
-
-Changes since last version: 
--fixed "reputation" stutter bug for rep between 9 and 13
-
 ------
 
 Note to English translation:
@@ -29,7 +25,7 @@ Note to English translation:
 BACKUP ~ACBre/backup~
 //AUTHOR ~whiteagnus@gmx.de~ //Original von Ascalon (geheimer.herrscher@gmx.de)
 SUPPORT ~jastey@web.de~
-VERSION ~7.00~ //2018-01-13
+VERSION ~7.01~ //2018-02-26
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 

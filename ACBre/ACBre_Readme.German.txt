@@ -1,8 +1,8 @@
                                    *  Ascalons Breagar  *
-                       Eine Modifikation für BGT, EET, BG:EE, Tutu, und BGII
-                            Ascalon (geheimer.herrscher@gmx.de)
+               Eine Modifikation für BGT, EET, BG:EE, Tutu, BGII, BGII:EE und EET
+                            von Ascalon (geheimer.herrscher@gmx.de)
 
-                                  Version: 7.00 (gepackt von White Agnus und jastey)
+                         		Version: 7.01 
 
 ***************************************************************************************************************
 
@@ -51,7 +51,7 @@ III. Hinweise (wichtig!)
 
 - Breagar wird in zwei Schritten installiert: Der reguläre Inhalt und Crossmod-Inhalte / PID (Player Initiated Dialogues). Damit alle Komponenten reibungslos mit anderen Modifikationen funktionieren, muss die Komponente "Crossmod-Inhalte und PIDs" nicht nur ganz am Ende von Breagars Installation, sondern so SPÄT WIE MÖGLICH in einer Installation mit mehreren Mods installiert werden.
 
-- Breagar benötigt ab der Version 5 auch die BP-BGT-Worldmap!
+- Breagar benötigt ab der Version 5 auch die BP-BGT-Worldmap, außer für EET!
 
 
 ***************************************************************************************************************
@@ -67,7 +67,7 @@ Breagar wurde mit WeiDU Vers. 2.07 bis 2.24 programmiert und sollte daher mit al
 
 V. Kontakt:
 
-Sollten Probleme jedweder Art auftauchen (bei der Installation oder im Spiel), könnt ihr mich entweder über die oben angezeigte E-Mail-Adresse erreichen oder in den Foren von www.rosenranken.org oder www.kerzenburg.baldurs-gate.eu anschreiben (mein Name ist jedes Mal "Ascalon").
+Sollten Probleme jedweder Art auftauchen (bei der Installation oder im Spiel), könnt ihr mich entweder über die oben angezeigte E-Mail-Adresse erreichen oder im Kerzenburgforum posten.
 
 
 ***************************************************************************************************************
@@ -231,6 +231,13 @@ silver arm in ToB
 -updated readme 
 -update to WeiDU v242
 
+7.01:
+	-(SoD) fixed bug where Breagar would turn hostile the moment the dwarven 		archaelogical site is entered. 
+	-(EET) SoA Anstinus Tower area in ToB disabled
+	-started to translate the readme to English
+	-renamed readme(s) to something language specific
+	-update to WeiDU v244
+
 ***************************************************************************************************************
 
 
@@ -355,7 +362,8 @@ trademarks and copyrights are property of their respective owners.
 ***************************************************************************************************************
 
 ***************************************************************************************************************
-Breagar NPC Mod for Baldur's Gate © 2009 Ascalon. This mod is not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., or the Wizards of the Coast. All other trademarks and copyrights are property of their respective owners.
+Breagar NPC Mod for Baldur's Gate © 2009 Ascalon. This mod is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
 ***************************************************************************************************************
 Die Musik, die in dieser Modifikation verwendet wird, stammt aus dem Lied "Remember Green" von der CD "Into The Red" von Erdenstern und wird mit freundlicher Genehmigung der Künstler verwendet. Alle Rechte liegen beim Urheber.
 

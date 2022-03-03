@@ -7,6 +7,7 @@ THEN
 	RESPONSE #100
 		ActionOverride("ACBRE",ChangeAIScript("ACBRE25",OVERRIDE))
 		SetGlobal("ACBreSummoned","GLOBAL",2)
+		Continue()
 END
 
 IF
@@ -24,6 +25,7 @@ THEN
 		ActionOverride("ACBre",SetNumTimesTalkedTo(0))
 		SetGlobal("ACBRELEVELED","GLOBAL",0)
 		SetGlobal("ACBreSpawnPlane","GLOBAL",1)
+		Continue()
 END
 
 IF
@@ -37,5 +39,15 @@ THEN
 		CreateCreature("ACBRE25",[1999.1218],0)
 		ActionOverride("ACBRE",SetBeenInPartyFlags())
 		SetGlobal("ACBreSpawnPlane","GLOBAL",1)
+		Continue()
+END
+
+IF
+	Global("ACBre_ToBRemoveARAC00","MYAREA",0)
+THEN
+	RESPONSE #100
+
+		RemoveWorldmapAreaFlag("arac00",VISIBLE)
+		SetGlobal("ACBre_ToBRemoveARAC00","MYAREA",1)
 		Continue()
 END
