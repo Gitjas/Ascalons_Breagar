@@ -108,3 +108,6 @@
 @101  = ~Wahrscheinlich habt Ihr Recht. Imoen und dieser verrückte Magier werden nicht auf uns warten.~
 @102  = ~Wahrscheinlich habt Ihr Recht.~
 @103  = ~Und ich habe Galthur meine Beweise vorgelegt, mehr kann ich wohl nicht erwarten. Dann führt uns an, <CHARNAME>. Lasst uns diese Stadt so schnell es geht verlassen.~
+
+/* new for v10.0.0 */
+@104  = ~Wartet hier auf mich.~

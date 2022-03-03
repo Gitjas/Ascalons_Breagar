@@ -27,3 +27,7 @@
 @26   = ~Seufz, Ihr auch noch. Haben wir das Thema langsam durch?~
 @27   = ~Werdet mal nicht frech, Bürschchen, ja? Den Ernst der Lage habt Ihr begriffen? Oder verwandelt Ihr Euch hier unten selbst in eine Höllenkreatur?!~ ~Werdet mal nicht frech, Mädel, ja? Den Ernst der Lage habt Ihr begriffen? Oder verwandelt Ihr Euch hier unten selbst in eine Höllenkreatur?!~
 @28   = ~Na gut, ich werde das aufgrund der Umstände, wie das Treffen ausgegangen ist, mal ruhen lassen. Aber vergessen kann ich das nicht, wie leichtfertig Ihr eine andere Seele angeboten habt!~
+
+/* new for v10.0.0 */
+@50   = ~Buzzurk, <CHARNAME>, so machen wir das doch nicht. Ihr wollt ihren Tod - dann gebt ihnen Waffen und öffnet die Zellentüren!~
+@51   = ~Was ist in Euch gefahren, <CHARNAME>? Wir scheuen uns doch sonst nicht vor einem Kampf!~

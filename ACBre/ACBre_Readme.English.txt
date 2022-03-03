@@ -2,7 +2,7 @@
                A Modification for BGT, EET, BG:EE, Tutu, BGII, BGII:EE, and EET
                             by Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 9.0.0
+                         		Version: 10.0.0
 
 ***************************************************************************************************************
 
@@ -73,12 +73,17 @@ Breagar was developped with WeiDU (2.07 to 2.24) and should be compatible with o
 
 -Note: the use of the Item Patcher that makes Breagar's items droppable might lead to incompatibilities in the game because some of Breagar's undroppable items are expected on him for quest and story porgress.
 
+-Install Breagar before Brandock the Mage NPC Mod to see the crossmod content.
+
+-Install Breagar after quest mods to see the crossmod content(alternatives, bgqe, bst, DSotSC, I4E, ToD).
+
+-Install Breagar after Alassa, Amber und Auren to see the crossmod content.
 ***************************************************************************************************************
 
 
 V. Contact:
 
-If you encounter problems of any sort with this mod, feel free to write an email to the above address or post in either Kerzenburgforum or GibberlingsThree Forums as specified on the downloads page.
+If you encounter problems of any sort with this mod, feel free to post in either Kerzenburgforum or GibberlingsThree Forums as specified on the downloads page.
 
 
 ***************************************************************************************************************
@@ -324,6 +329,15 @@ silver arm in ToB
 	-Breagars stats in all cres unified to INT 10, WIS 12.
 	-added folder libiconv-1.9.2-1-src.7z with iconv licence info
 
+10.0.0: (2020-12-18) by jastey
+	-English version completed by Eimerian, all proofread by Brokenkatana
+	-crossmod with BST added
+	-crossmod with bgqe should be installed component-wise
+	-crossmod with bgqe: I_C_T2 changed to I_C_T for better compatibility
+	-second friendship dialogue in BG1 should be triggered
+	-typo corrections
+	-SoD content improvements
+	-compatibility with the Transitions Mod
 
 ***************************************************************************************************************
 
@@ -348,12 +362,17 @@ IX. Credits
 
 - Special Thanks to "AstralChilledkroete", der in seinem langen "Let's Play" auf Youtube Breagar nun schon seit einer gefühlten Ewigkeit mit sich schleppt und ich dadurch immer mal wieder auf kleine Ungereimtheiten stieß.
 
+English version:
+-first part by Gertwenger and Sergio, revised by Bloodtitan
+-completed for v10 by Eimerian
+-all proofread by Brokenkatana
+
 ***************************************************************************************************************
 
 
 X: Used Tools
 
-- WeiDU Vers. 2.07 - 2.29
+- WeiDU 
 - Near Infinity
 - Shadowkeeper
 - Crimson Editor

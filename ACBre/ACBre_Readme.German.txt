@@ -2,7 +2,7 @@
                Eine Modifikation für BGT, EET, BG:EE, Tutu, BGII, BGII:EE und EET
                             von Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 9.0.0
+                         		Version: 10.0.0
 
 ***************************************************************************************************************
 
@@ -29,7 +29,7 @@ I. Beschreibung:
 
 Diese Modifikation fügt Breager vom Clan Bardormar als aufnehmbaren NPC hinzu. Breagar ist ein rechtschaffen-guter Zwergenkämpfer und hat sein eigenes Kit: "Zwergenschmied". Er bringt einige Gespräche, Kreaturen, Items und Questen mit sich, die sich über den Baldur's Gate I und II Teil der Trilogie erstrecken. 
 
-Breagar ist komplett durch Baldur's Gate, Schatten von Amn und Thron des Bhaals spielbar und bringt drei verschiedene Enden mit sich, je nach Spielweise.
+Breagar ist in BGT und EET komplett durch Baldur's Gate, Schatten von Amn und Thron des Bhaals spielbar und bringt drei verschiedene Enden mit sich, je nach Spielweise.
 Bei der Installation in Tutu, BG:EE oder BGII wird nur der entsprechende Teil der Mod installiert.
 
 - Breagar ist ab Version 9.0.0 komplett unabhängig von der BP-BGT-Worldmap-Mod. Kompatibilität mir der Worldmap-Mod ist aber gegeben, unabhängig der Installationsreihenfolge!
@@ -72,13 +72,19 @@ Breagar wurde mit WeiDU Vers. 2.07 bis 2.24 programmiert und sollte daher mit (f
 
 Achtung: Die Verwendung des Item Patchers, der einige von Breagars Items entfernbar macht, kann zu Inkompatibilitäten führen, da Breagar diese Items zu bestimmten Zeiten an bestimmten Itemslots haben muss, damit die Mod richtig ausgeführt wird.
 
+Installiert Breagar vor Brandock der Magier NPC Mod, um den Crossmodinhalt zu sehen.
+
+Installiert Breagar nach Questmods, um die Crossmodinhalte zu sehen (alternatives, bgqe, bst, DSotSC, I4E, ToD).
+
+Installiert Breagar nach Alassa, Amber und Auren, um die Crossmodinhalte zu sehen.
+
 
 ***************************************************************************************************************
 
 
 V. Kontakt:
 
-Sollten Probleme jedweder Art auftauchen (bei der Installation oder im Spiel), könnt ihr mich entweder über die oben angezeigte E-Mail-Adresse erreichen oder im Kerzenburgforum posten.
+Sollten Probleme jedweder Art auftauchen (bei der Installation oder im Spiel), könnt ihr im Kerzenburgforum oder Bei GibberlingsThree posten.
 
 
 ***************************************************************************************************************
@@ -324,6 +330,16 @@ silver arm in ToB
 	-Breagars stats in allen cres vereinheitlicht auf INT 10, WIS 12.
 	-added folder libiconv-1.9.2-1-src.7z with iconv licence info
 
+10.0.0: (2020-12-18) by jastey
+	-English version completed by Eimerian, all proofread by Brokenkatana
+	-crossmod with BST added
+	-crossmod with bgqe should be installed component-wise
+	-crossmod with bgqe: I_C_T2 changed to I_C_T for better compatibility
+	-second friendship dialogue in BG1 should be triggered
+	-typo corrections
+	-SoD content improvements
+	-compatibility with the Transitions Mod
+
 
 ***************************************************************************************************************
 
@@ -348,12 +364,18 @@ IX. Danksagungen
 
 - Special Thanks to "AstralChilledkroete", der in seinem langen "Let's Play" auf Youtube Breagar nun schon seit einer gefühlten Ewigkeit mit sich schleppt und ich dadurch immer mal wieder auf kleine Ungereimtheiten stieß.
 
+Englische Version:
+-Ein erster Teil von Gertwenger und Sergio, überarbeitet von Bloodtitan
+-für v10 fertig übersetzt von Eimerian
+-alles von Brokenkatana gegengelesen.
+
+
 ***************************************************************************************************************
 
 
 X: Benutzte Tools
 
-- WeiDU Vers. 2.07 - 2.29
+- WeiDU  
 - Near Infinity
 - Shadowkeeper
 - Crimson Editor

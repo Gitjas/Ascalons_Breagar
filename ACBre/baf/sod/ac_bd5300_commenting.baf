@@ -1,0 +1,14 @@
+/* ac_bd5300_commenting.baf */
+/* Comment when battle starts in Kanaglym (bd5300.are, Underground River) */
+IF
+	Global("BD_AREA_HOSTILE","BD5300",1)  
+	!GlobalTimerNotExpired("bd_sdd350b_ot_timer","bd2000")  //## bug?
+	Global("ACBre_bd_ot","bd5300",0)  
+	IfValidForPartyDialog("ACBre")  
+	TriggerOverride("ACBre",Range([ENEMY.0.0.0.HOSTILES3],30))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("bd_sdd350b_ot_timer","bd2000",THREE_MINUTES)  //## bug?
+		SetGlobal("ACBre_bd_ot","bd5300",1)  
+		DisplayStringHead("ACBre",@39)
+END

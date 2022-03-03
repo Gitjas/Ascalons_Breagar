@@ -109,15 +109,15 @@ IF ~~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT_09")~ EX
 
 CHAIN
 IF ~GlobalLT("ACAUDQUEST","GLOBAL",13)NumTimesTalkedTo(0)~ THEN ACAUD002 1.START
-@42 DO ~SetGlobal("ACAUDWAITS","GLOBAL",4)SetGabber(PLAYER1)MakeGlobal()~
+@71 DO ~SetGlobal("ACAUDWAITS","GLOBAL",4)SetGabber(PLAYER1)MakeGlobal()~
 ==ACBREJ @43
-==ACAUD002 @44
+==ACAUD002 @72
 ==ACBREJ @45 = @46
-==ACAUD002 @47 = @48
+==ACAUD002 @73 = @74
 ==ACBREJ @49
-==ACAUD002 @50
+==ACAUD002 @75
 ==ACBREJ @51
-==ACAUD002 @52
+==ACAUD002 @76
 END
 ++ @53 + 1.1
 ++ @54 + 1.1

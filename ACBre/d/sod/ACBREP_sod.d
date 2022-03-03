@@ -1,6 +1,7 @@
 APPEND ACBREP
 
-IF WEIGHT #-1 ~AreaCheck("bd4700")
+IF WEIGHT #-1 ~%SoD_VAR%
+AreaCheck("bd4700")
 GlobalLT("bd_plot","global",570)
 ~ THEN BEGIN 0 // from:
   SAY @95  /* ~Jetzt hauen wir erstmal diesen Dämon platt, würde ich vorschlagen!~ */
@@ -9,7 +10,8 @@ SetGlobal("bd_joined","locals",0)
 SetGlobal("ACBREINPARTY","GLOBAL",3)~ EXIT
 END
 
-IF WEIGHT #-1 ~OR(2)
+IF WEIGHT #-1 ~%SoD_VAR%
+OR(2)
 AreaCheck("BD0120")
 AreaCheck("BD0130")
 Global("ACBREINPARTY","GLOBAL",2)~ THEN BEGIN KICKOUT.KORLASZTOMB
@@ -23,7 +25,7 @@ END
 IF WEIGHT #-1 ~%SoD_VAR% Global("ACBREINPARTY","GLOBAL",2)~ THEN BEGIN KICKOUT.SOD
 SAY @11
 ++ @2 + KICKOUT.SOD1
-++ ~Wartet hier auf mich.~ + KICKOUT.SOD2
+++ @104 + KICKOUT.SOD2
 + ~GlobalGT("bd_npc_camp_chapter","global",1)
 GlobalLT("bd_npc_camp_chapter","global",5)
 OR(2)
@@ -62,7 +64,7 @@ END
 
 
 IF WEIGHT #-1 
-~%SoD_VAR%Global("ACBREINPARTY","GLOBAL",3)~ THEN BEGIN REJOIN.SOD
+~%SoD_VAR% Global("ACBREINPARTY","GLOBAL",3)~ THEN BEGIN REJOIN.SOD
 SAY @19
 ++ @20 + REJOIN.SOD1
 ++ @21 EXIT

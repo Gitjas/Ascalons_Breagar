@@ -623,6 +623,7 @@ EIGENSCHAFTEN:
 
 Wird ein Gegner getroffen, besteht eine 5%ige Chance, dass das Ziel den sofortigen Kältetod stirbt (Rettungswurf gg. Tod).
 
+
 Schaden: 2W4+3 (Wucht)
 ETW0-Bonus: 0
 Gewicht: 4
@@ -687,6 +688,10 @@ Und als Moradins Hammer mit der Wucht von tausend Lawinen auf den schurkischen R
 @210 = ~Installiere Crossmodinhalt fuer: Alternatives~
 @211  = ~Installiere Crossmodinhalt fuer: Imoen 4 Ever~
 
+/* new for v10.0.0 */
+@212 = ~Transitions Mod entdeckt.~
+@213 = ~Installiere Crossmodinhalt fuer: Balduran's Seatower~
+
 @4000    = ~Alle Zutaten sind bereit. Ihr wisst, dass Ihr nur einen Versuch habt und solltet Ihr zwischendurch abbrechen ist der Trank verloren. Wollt Ihr beginnen?~
 @4001    = ~Ja, ich bin bereit.~
 @4002    = ~Nein, ich muss mich noch vorbereiten.~
@@ -742,6 +747,7 @@ Und als Moradins Hammer mit der Wucht von tausend Lawinen auf den schurkischen R
 @5028 = ~Von Osten höre ich Kampfeslärm, <CHARNAME>. Lasst uns erst dort nachsehen, bevor wir in den Turm gehen!~
 
 @5029 = ~Renal,
+
 der einäugige Arnold wurde von unseren Kontakten dabei beobachtet, wie er nach den Unruhen auf Waukeens Promenade eine Zwergenaxt an sich nahm. Bin gespannt, ob er dafür noch seinen Zoll von sich aus zahlt oder ob wir ihm wieder einen "Besuch" in seiner favorisierten Taverne in der Promenade abstatten müssen.
 
 G.~
@@ -749,12 +755,23 @@ G.~
 /* new for v8.0.2 */
 @5030 = ~Ja, kommt nur, Ihr Schmeißfliegen! Und genauso werde ich Euch zerquetschen, rhaaaa!~
 
+/* new for v10.0.0 */
+@5031 = ~Buzzurk, Dieser Nebel spielt uns Streiche! Ich fühle mich... nicht gut...~
+@5032 = ~Buzzurk!~
+@5033 = ~Diese Caelar ist eine charismatische Anführerin. Diese Kreuzzügler werden nicht einfach so aufhören, ihr zu folgen.~
+@5034 = ~Ich wünscht, diese enge Schlucht wäre ein richtiger Stollen. So bietet er nämlich möglichen Angreifern viele Möglichkeiten, sich über uns zu verstecken.~
+@5035 = ~Ich habe schon einiges an Ungeziefer gesehen, seit ich mit Euch reise - aber dieses Ding stellt alles bisherige an Scheußlichkeit in den Schatten!~
+@5036 = ~Hrmpf. Ich bin einem guten Kampf niemals abgeneigt, aber wenn sich hier alle gegen uns wenden, dann haben wir ein Problem.~
+@5037 = ~Magiern kann man nicht trauen, dass habe ich Euch schon häufig gesagt!~
+@5038 = ~Sie hätten auf uns hören sollen, die Narren.~
+@5039 = ~<CHARNAME>, wenn Ihr mich in absehbarer Zeit wieder in die Hölle zerrt, dann setzt es was.~
+@5040 = ~Ha, der Drache hat einen malerischen Ort für sein Ableben ausgesucht. Ein Denkmal für eine große Schlacht, und den Sieg der Leute hier.~
+@5041 = ~Eigentlich sollten mich die geschmiedeten Verzierungen auf dem Tor entzücken, aber diese Tür strahlt etwas so abgrundtief Böses aus, dass es unmöglich ist, sich an der Schmiedekunst zu erfreuen.~
 
 
 ///////////////////////////////////////////
 ///// Tagebucheinträge
 ///////////////////////////////////////////
-
 @10000 = ~Finde das Buch des Zwergen
 
 Ein Zwerg bei Puffguts wartet auf Adam, der ihm eigentlich ein Buch bringen sollte. Scheint so, als sei der Tagträumer mal wieder abgelenkt...~
@@ -896,7 +913,6 @@ Elasia hat sich in Anstinus' Turm versteckt und möchte an Bork vorbeigeschmuggel
 @10046 = ~Bork und Ellie
 
 Die Elfe Elasia kann jetzt ihren Weg forsetzen, nachdem Bork tot ist.~
-
 @10047 = ~Breagar in Saradush
 
 Breagar meint, dass es in Saradush Zwerge gäbe, die der Unterstützung Berronars bedürfen. Wir sollten uns einmal umschauen.~

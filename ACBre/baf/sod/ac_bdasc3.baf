@@ -1,0 +1,15 @@
+/* ac_bdasc3.baf */
+/* Move NPC to entrance of the Allied Siege Camp (Crusade battle) */
+IF
+	Global("bd_battle","global",1)
+	Global("bd_move_npcs","bd3000",1)  // Allied Siege Camp
+	Global("bd_move_to_entrance","locals",0)
+	Name("ACBre",Myself)  
+	Global("ACBre_MoveCamp","bd3000",1)  // same variable as used for moving Biff here
+THEN
+	RESPONSE #100
+		SetGlobal("bd_move_to_entrance","locals",1)
+		JumpToPoint([1122.355]) //Coordinates at the entrance of the Siege Camp. Minsc for example jumps to [1465.400]
+		Face(N)
+		SaveObjectLocation("LOCALS","bd_default_loc",Myself)
+END

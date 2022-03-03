@@ -7,9 +7,7 @@ IF
 	!InParty(Myself)
 	Global("ACBREINPARTY","GLOBAL",3)
 	AreaCheck("bd0103")
-	OR(2)
-		!Range(Player1,15)
-		!See(Player1)
+        !See(Player1)
 	Global("bd_001_plot","bd0103",9)
 	Global("ACBRE_SoDJoin","LOCALS",0)
 	
@@ -26,7 +24,6 @@ IF
 	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
 	Global("ACBREINPARTY","GLOBAL",3)
 	AreaCheck("bd0103")
-	Range(Player1,15)
 	See(Player1)
 	GlobalLT("ACBRE_SoDJoin","LOCALS",2)
 	
@@ -36,7 +33,18 @@ THEN
 		StartDialogNoSet(Player1)
 END
 
-
+/* bd1000: Breagar comments on the explosion on the bridge  */
+IF
+	GlobalTimerNotExpired("bd_caelar_timer","bd1000")
+	AreaCheck("bd1000")
+	IsValidForPartyDialog(Myself)
+	Detect(Player1)	
+	Global("ACBRE_SoDbridge","bd1000",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBRE_SoDbridge","bd1000",1)
+		DisplayStringHead(Myself,@5032)
+END
 
 
 

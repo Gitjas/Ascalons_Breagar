@@ -7,8 +7,8 @@
 @6    = ~Wieso sollten Duergar eigentlich nicht einfach nur ihre Ruhe wollen?~
 @7    = ~Was sagt Euer Gefühl?~
 @8    = ~Hätte die Göttin Euch diesen Auftrag wirklich gegeben wenn es falsch wäre?~
-@9    = ~Warum wohl? Weil *Ihr* jemand seid der es gewohnt ist, solche Entscheidungen am laufenden Band zu fällen und *ich* nicht! Ich brauche Eure Hilfe, <CHRNAME>, verdammt noch mal.~
-@10   = ~Das ist wohl eine Frage, die Ihr für Euch selbst beantworten müsst, Breagar.~
+@9    = ~Warum wohl? Weil *Ihr* jemand seid der es gewohnt ist, solche Entscheidungen am laufenden Band zu fällen und *ich* nicht! Ich brauche Eure Hilfe, <CHARNAME>, verdammt noch mal.~
+@10   = ~Das ist wohl eine Frage, die Ihr Euch selbst beantworten müsst, Breagar.~
 @11   = ~Wahrlich nicht. Aber denkt daran, dass Forres mir freiwillig die Axt zurück gab. Das hätte er nicht gemusst.~
 @12   = ~Weil er sie selbst nicht führen konnte.~
 @13   = ~Stimmt, das ist ein gutes Argument.~
@@ -23,12 +23,12 @@
 @22   = ~Mein Gefühl sagt mir, dass ich den grauen Mistkerlen die Axt in den Wanst jagen sollte. Aber andererseits lag ich mit meinem Gefühl schon oft falsch.~
 @23   = ~Und... hrmpf. Ich will dieses Mal alles richtig machen. Es ist immerhin ein Auftrag der Göttin.~
 @24   = ~Ihr solltet Auf Euer Gefühl hören. So falsch wird es nicht sein.~
-@25   = ~Es ist gut, dass Ihr einen kühlen Kopf bewahrt. das Gefühl ist nicht alles.~
-@26   = ~Ihr habt allerdings Recht. Duergar die in Frieden leben wollen  klingt nicht sehr plausibel.~
+@25   = ~Es ist gut, dass Ihr einen kühlen Kopf bewahrt. Gefühl ist nicht alles.~
+@26   = ~Ihr habt allerdings Recht. Duergar die in Frieden leben wollen klingt nicht sehr plausibel.~
 @27   = ~Aber wieso sollten Duergar eigentlich nicht einfach nur ihre Ruhe wollen?~
 @28   = ~Vielleicht will sie mich testen. Um zu schauen, ob ich das richtige tue. Habt Ihr schon einmal daran gedacht?~
 @29   = ~Es wäre ein guter Test, das ist wahr.~
-@30   = ~Bedenkt, dass es nicht nur um Duergar geht sondern auch im Drow. Das wäre kein guter Test.~
+@30   = ~Bedenkt, dass es nicht nur um Duergar geht sondern auch um Drow. Das wäre kein guter Test.~
 @31   = ~Ihr seid keine sonderlich große Hilfe, <CHARNAME>.~
 @32   = ~Ich glaube, ich verstehe.~
 @33   = ~Dann handelt dem entsprechend. Seid auf der Hut bei den Duergar.~

@@ -1,6 +1,7 @@
 IF
 	Global("ACBre_BreagarEETTransit","LOCALS",0)
-	InPartyAllowDead("ACBre")
+//	InPartyAllowDead("ACBre")
+	InMyArea("ACBre")
 	
 THEN
 	RESPONSE #100
@@ -24,6 +25,9 @@ THEN
 		SetGlobal("ACBREPartyBG1","GLOBAL",1)
 		SetGlobal("ACBREEXISTS","GLOBAL",1)
 		SetGlobal("ACBREINPARTY","GLOBAL",3)
+		ActionOverride("ACBre",LeaveParty())
+		SmallWait(10)
+		ActionOverride("ACBre",DestroySelf())
 		SetInterrupt(TRUE)		
 		Continue()
 END

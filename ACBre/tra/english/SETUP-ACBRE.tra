@@ -1,1017 +1,1036 @@
-@1    = ~Breagar: Inhalte~
-@2    = ~Ihr habt kein Spiel installiert, für das die Mod kompatibel ist. Installation wird abgebrochen.~
+@1    = ~Breagar: Contents~
+@2    = ~You have not installed a game that is compatible with this mod. Installation is cancelled.~
 @3    = ~Change Breagar's dialog timer? (Default is 30 minutes between dialogues.)~
 /*
-@4    = ~Bitte auswaehlen:
-[1] 30 Minuten Realzeit zwischen den einzelnen Gespraechen (empfohlen)
-[2] 45 Minuten Realzeit zwischen den einzelnen Gespraechen
-[3] 1 Stunde Realzeit zwischen den einzelnen Gespraechen
-[4] 15 Minuten Realzeit zwischen den einzelnen Gespraechen
-[5] 1 Stunde 30 Minuten Realzeit zwischen den einzelnen Gespraechen
-~
-@5    = ~placeholder_value~
-@6    = ~Bitte waehlt 1, 2, 3, 4 oder 5 und bestaetigt mit Enter.~
-@7    = ~30 Minuten Realzeit zwischen den Gespraechen~
+@4    = ~Please choose:
+[1] 30 minutes real time between talks (recommended)
+[2] 45 minutes real time between talks
+[3] 1 hour real time between talks
+[4] 15 minutes real time between talks
+[5] 1 hour 30 real time between talks~
+@5    = ~placeholder value~
+@6    = ~Please choose 1, 2, 3, 4 or 5 and confirm with enter.~
+@7    = ~30 minutes real time between talks~
 */
-@8    = ~45 Minuten Realzeit zwischen den Gespraechen~
-@9    = ~1 Stunde Realzeit zwischen den Gespraechen~
-@10   = ~15 Minuten Realzeit zwischen den Gespraechen~
-@11   = ~1 Stunde 30 Minuten Realzeit zwischen den Gespraechen~
+@8    = ~45 minutes real time between talks~
+@9    = ~1 hour real time between talks~
+@10   = ~15 minutes real time between talks~
+@11   = ~1 hour 30 minutes real time between talks~
 @12   = ~Install Alternative Portrait from v4.X? (Default is Original Art by Nix)~
 /*
-@13   = ~Bitte waehlt ein Portrait:
+@13   = ~Please choose a portrait:
 
 [1] Original Art by Nix
-[2] Alternatives Portraits aus v4.X~
-@14   = ~Bitte 1 oder 2 waehlen und mit ENTER bestaetigen.~
-@15   = ~Portrait wird installiert: Original Art by Nix~
+[2] Alternative Portrait from v4.X~
+@14   = ~Please choose 1 or 2 and confirm with enter ~
+@15   = ~Installing portrait: Original Art by Nix~
 */
-@16   = ~Portrait wird installiert: Alternatives Portrait aus v.4.X~
-@17   = ~Zwergenschmied~
-@18   = ~ZWERGENSCHMIED: In den Hallen der Zwergenclans wird die Meisterschaft eines Handwerkes als höchste zu erlangende Kunst angesehen. Angehörigen anderer Rassen sind Zwerge am ehesten als tapfere Bergleute und talentierte Schmiede bekannt, von denen gerade letztere durch ihre kunstvollen Waffen auf der ganzen Welt einen besondernen Ruf halten. Der typische Zwergenschmied ist kräftig und zäh, das lange Arbeiten am offenen Feuer hat ihn unempfindlich gegen die Hitze gemacht. Ein wahrer Meisterschmied erkennt die Geheimnisse, die ein Werkstück in sich birgt, auf den ersten Blick. Obwohl der Schmied nicht zögert, seinen Amboss vor jeglichen Gefahren zu schützen, kennt er die meisten Waffen doch nur vom Übungsplatz und verlässt sich im Kampf auf wuchtige Hiebwaffen wie Hämmer und Äxte.
+@16   = ~Installing portrait: Alternative Portrait from v.4.X~
+@17   = ~Dwarven Smith~
+@18   = ~ DWARVEN SMITH: In the halls of dwarven clans, mastery in craftsmanship is considered to be the most prestigious profession. The other races know dwarves first and foremost to be fearless miners and talented smiths, the latter having gained worldwide fame for their masterfully crafted weapons. The typical Dwarven Smith is strong, tough and insensitive to heat after long hours working the forge. Being true masters of smithing they knows the secrets of any item at first glance. Dwarven Smiths will not hesitate to protect their forge from danger, and while they are familiar with most weapons from the training grounds, in battle they mostly rely on hammers and axes.
 
-Besondere Vorteile:
-- Feuerresistenz +1 je Stufe, (beginnend mit einem Wert von 5)
-- Erhöhte Sagenkunde
-- Hat die Fähigkeit "Geisterhammer"
+Advantages:
+- Gains 1% resistance to fire every level (starting at 5%)
+- Increased lore
+- Gains special ability Ghost Hammer
 
-Besondere Nachteile:
-- Kann nur in Äxten und Hämmern Großmeisterschaft erlangen
-- Kann sich nur auf "einhändigen Kampf" spezialisieren~
-@19   = ~Das Buch der Schmiedekunst~
-@20   = ~Das Buch der Schmiedekunst ist ein dicker, schwerer Wälzer, gebunden in brüchigem, altem Leder. Die Seiten sind mit zwergischen Runen und Diagrammen eng bekritzelt, die wohl niemandem etwas sagen, der nicht sein Leben lang am Amboss stand.~
-@21   = ~Ein unverdorbener Klumpen Eisen~
-@22   = ~Ein schöner Klumpen Eisen, ideal für anspruchsvolle Schmiedearbeiten.~
-@23   = ~Schlüssel~
-@24   = ~Der Leichnam unter dem Friedhof hatte diesen Schlüssel bei sich.~
+Disadvantages:
+- May achieve Grand Mastery only for Hammers and Axes
+- May achieve Specialization only in Single Weapon Style~
+@19   = ~The book of Smithing~
+@20   = ~The book of smithing is a thick and heavy tome, bound in brittle, old leather. The pages are covered in dwarven runes and diagrams, unintelligible for anyone not having spent their life at the anvil.~
+@21   = ~An untainted lump of iron~
+@22   = ~A nice lump of iron. Ideal for ambitious smithing work.~
+@23   = ~Key~
+@24   = ~The lich below the graveyard had this key on him.~
 @25   = ~Adam~
 @26   = ~Azzik~
 
 
 @29   = ~Breagar~
-@30   = ~Bei Moradins Hammer! Ihr treibt mich noch in den Wahnsinn, Wirt!~ [ACBre_00]
-@31   = ~Verdammt, das gefällt mir ganz und gar nicht.~ [ACBre_01]
-@32   = ~Clangeddin wird uns wohlgesonnen sein.~ [ACBre_02]
-@33   = ~Ihr führt uns auf einen verdammt schlechten Weg.~ [ACBre_03]
-@34   = ~Wenn Ihr nicht meine Axt spüren wollt, dann solltet Ihr Euren Weg schleunigst überdenken!~ [ACBre_04]
-@35   = ~Ihr seid ein schändlicher Anführer!~ [ACBre_05]
-@36   = ~So ist es richtig, immer schön den Zwerg nach vorne!~ [ACBre_06]
-@37   = ~Sind wir jetzt nicht langsam genug herumgelaufen? Lasst uns rasten.~ [ACBre_07]
+@30   = ~By Moradin's Hammer! You are driving me mad, innkeeper!~ [ACBre_00]
+@31   = ~Dammit, I'm having a bad feeling about this.~ [ACBre_01]
+@32   = ~Clangeddin means us well.~ [ACBre_02]
+@33   = ~You lead us on a bad path.~ [ACBre_03]
+@34   = ~If you don't want to feel my axe, you should reconsider the path you are on!~ [ACBre_04]
+@35   = ~You are a disgraceful leader!~ [ACBre_05]
+@36   = ~That's right, put the dwarf in the front row!~ [ACBre_06]
+@37   = ~Did we not run around long enough now? Let's rest.~ [ACBre_07]
 
-@39   = ~Schmeckt meine Axt!~ [ACBre_09]
+@39   = ~Taste my axe!~ [ACBre_09]
 @40   = ~Clangeddin!~ [ACBre_10]
-@41   = ~Auf sie!~ [ACBre_11]
-@42   = ~(Kampfsschrei)~ [ACBre_12]
+@41   = ~Get them!~ [ACBre_11]
+@42   = ~(battle cry)~ [ACBre_12]
 
 
-@45   = ~Viel mehr kann ich nicht aushalten!~ [ACBre_15]
-@46   = ~Hrmph. Ich hasse den Wald.~ [ACBre_16]
-@47   = ~Eines dieser Häuser muss doch eine Taverne sein. Ob es dort Zwergenbier gibt?~ [ACBre_17]
-@48   = ~Ein Zwerg braucht eine stabile Decke, dann fühlt er sich erst richtig wohl.~ [ACBre_18]
-@49   = ~Ja?~ [ACBre_21]
-@50   = ~Was gibt es?~ [ACBre_22]
-@51   = ~Was wollt Ihr?~ [ACBre_23]
+@45   = ~I can't take much more!~ [ACBre_15]
+@46   = ~Hrmph. I hate the forest.~ [ACBre_16]
+@47   = ~One of these houses must be a tavern. I wonder if they have dwarven ale.~ [ACBre_17]
+@48   = ~A dwarf needs a solid ceiling above his head. Now I feel at home.~ [ACBre_18]
+@49   = ~Yes?~ [ACBre_21]
+@50   = ~What is it?~ [ACBre_22]
+@51   = ~What do you want?~ [ACBre_23]
 @52   = ~Hmm?~ [ACBre_24]
-@53   = ~Raus mit der Sprache!~ [ACBre_25]
-@54   = ~Sagt, was Ihr wollt.~ [ACBre_26]
-@55   = ~Selbstverständlich.~ [ACBre_27]
-@56   = ~Sofort.~ [ACBre_28]
-@57   = ~Alles klar.~ [ACBre_29]
-@58   = ~Wenn Ihr wünscht.~ [ACBre_30]
-@59   = ~Na dann, vorwärts!~ [ACBre_31]
-@60   = ~Wieso auch nicht.~ [ACBre_32]
-@61   = ~Ja.~ [ACBre_33]
-@62   = ~Und dafür stört Ihr mich?~ [ACBre_34]
-@63   = ~Wenn es sein muss.~ [ACBre_35]
+@53   = ~Out with it!~ [ACBre_25]
+@54   = ~Tell me, what you want.~ [ACBre_26]
+@55   = ~Of course.~ [ACBre_27]
+@56   = ~At once.~ [ACBre_28]
+@57   = ~All right.~ [ACBre_29]
+@58   = ~As you wish.~ [ACBre_30]
+@59   = ~Well then, onwards!~ [ACBre_31]
+@60   = ~Why not.~ [ACBre_32]
+@61   = ~Yes.~ [ACBre_33]
+@62   = ~And that's why you bother me?~ [ACBre_34]
+@63   = ~If need be.~ [ACBre_35]
 @64   = ~Ha!~ [ACBre_36]
 @65   = ~Buzzurk!~ [ACBre_37]
-@66   = ~Buzzurk! Kein Schaden!~ [ACBre_38]
-@67   = ~Ich bin nicht Euer Packesel!~ [ACBre_39]
-@68   = ~BREAGAR vom Clan Bardormar grummelt in seinen Bart, als Ihr ihn nach seiner Lebensgeschichte fragt. Aus dem, was Ihr heraushören könnt, stammt er aus dem Sturmhornbergen und hat seinen Clan aus Gründen verlassen, die ein "närrischer <PRO_RACE>, der sein Leben lang durch keinen einzigen Stollen gekrochen ist", wie er sich ausdrückt, sowieso nicht verstehen kann. Vielleicht taut der Zwerg mit der Zeit ein wenig auf und erzählt von sich aus, was ihn antreibt.~
-@69   = ~Ha! Schmeckt meine Axt!~ [ACBre_36]
-@70   = ~Verletzter Breagar~
-@71   = ~Die gängigste Ausführung einer Streitaxt besteht aus einem dicken Stab von ungefähr 1,20 m Länge mit einer einschneidigen, trompetenförmigen Klinge an einem Ende. Diese Waffe wird auch Breitbeil genannt.
+@66   = ~Buzzurk! No damage!~ [ACBre_38]
+@67   = ~I'm not your pack mule!~ [ACBre_39]
+@68   = ~BREAGAR of Clan Bardormar rumbles behind his beard, when you ask for his story. From what you can understand, he hails from the Storm Horn mountains and left his clan for reasons, that could never be understood by a "foolish <PRO_RACE>, who never walked a tunnel in <PRO_HISHER> life", as he puts it. Maybe the dwarf will warm up to you in time and might even tell you what motivates him.~
+@69   = ~Ha! Taste my axe!~ [ACBre_36]
+@70   = ~Injured Breagar~
+@71   = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes.
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Schaden: 1W8 (Klinge)
-Gewicht: 7
-Initiativefaktor: 7
-Mindeststärke: 10
-Fertigkeit: Axt
-Typ: 1-händig
+Damage: 1d8 (Slashing)
+Weight: 7
+Speed Factor: 7
+Requirement: 10 Strength
+Proficiency Type: Axe
+Type: 1-handed
 
-Kann nicht verwendet werden von:
-- Dieben
-- Druiden
-- Klerikern
-- Magiern
-- Mönchen~
-@72   = ~Ein Flegel besteht aus einem kräftigen Holzgriff, der mit einem Eisenstab, einem Dornen besetzten Holzstab oder einer mit Dornen besetzten Eisenkugel verbunden ist. Die beiden Teile sind entweder mit einem Scharnier oder einer Kette verbunden. Ursprünglich wurde diese Waffe zum Dreschen von Getreide benutzt.
+Not usable by:
+- Thieves
+- Druids
+- Clerics
+- Mages
+- Monks~
+@72   = ~ The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain. 
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Schaden: 1W6 +1 (Wucht)
-Gewicht: 15
-Initiativefaktor: 7
-Mindeststärke: 13
-Fertigkeit: Flegel
-Typ: 1-händig
+Damage: 1d6 +1 (Crushing)
+Weight: 15
+Speed Factor: 7
+Requirement: 13 Strength
+Proficiency Type: Flail
+Type: 1-handed
 
-Kann nicht verwendet werden von:
-- Dieben
-- Druiden
-- Magiern
-- Mönchen~
-@73   = ~Der Streitkolben ist eine direkte Ableitung der einfachen Keule und besteht lediglich aus einem Holzschaft, auf den ein Stein- oder Eisenkopf aufgesetzt ist. Der Kopf kann entweder mit Spitzen versehen, geflanscht oder aber auch pyramidenförmig ausgearbeitet sein.
+Not usable by:
+- Thieves
+- Druids
+- Mages
+- Monks~
+@73   = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies; some being spiked, others flanged, and still others have pyramidal knobs. 
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Schaden: 1W6 +1 (Wucht)
-ETW0: -1
-Gewicht: 10
-Initiativefaktor: 7
-Mindeststärke: 10
-Fertigkeit: Streitkolben
-Typ: 1-händig
+Damage: 1d6 +1 (Crushing)
+Weight: 10
+Speed Factor: 7
+Requirement: 10 Strength
+Proficiency Type: Mace
+Type: 1-handed
 
-Kann nicht verwendet werden von:
-- Dieben
-- Druiden
-- Magiern~
-@74   = ~Ein Morgenstern besteht aus einem hölzernen Schaft, auf den ein mit Eisenspitzen besetzter Metallkopf aufgesetzt ist. Die Gesamtlänge eines Morgensterns beträgt etwa 1,20 m. Der Kopf kann rund, oval oder zylindrisch geformt sein. Unabhängig von der jeweiligen Ausführung ist der Kopf von Morgensternen meist mit einer langen Spitze zum Stoßen versehen.
+Not usable by:
+- Thieves
+- Druids
+- Mages~
+@74   = ~ The morning star is a wooden shaft topped with a metal head made up of a spiked iron sheath. Morning stars have an overall length of about four feet. Some such weapons have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Schaden: 2W4 (Wucht)
-Gewicht: 12
-Initiativefaktor: 7
-Mindeststärke: 11
-Fertigkeit: Flegel
-Typ: 1-händig
+Damage: 2d4 (Crushing)
+Weight: 12
+Speed Factor: 7
+Requirement: 11 Strength
+Proficiency Type: Flail
+Type: 1-handed
 
-Kann nicht verwendet werden von:
-- Dieben
-- Druiden
-- Magiern
-- Mönchen~
-@75   = ~Ein typischer Dolch ist mit einer spitzen, normalerweise zweischneidigen Klinge versehen, wodurch er sich von einem Messer unterscheidet. Ein Messer hat nur eine Schneide und ist etwas kürzer als ein Dolch.
+Not usable by:
+- Thieves
+- Druids
+- Mages
+- Monks~
+@75   = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. 
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Schaden: 1W4 (Stich)
-Gewicht: 1
-Initiativefaktor: 2
-Fertigkeit: Dolch
-Typ: 1-händig
+Damage: 1d4 (Piercing)
+Weight: 1
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: 1-handed
 
-Kann nicht verwendet werden von:
-- Klerikern~
-@76   = ~Die Hellebarde ist nach dem Speer die älteste und verbreitetste Stangenwaffe. Sie besteht aus einer Klinge, die einem Henkerbeil ähnelt, welche auf einen durchschnittlich 1,80 m langen Stab aufgesetzt ist. Das Gewicht der Axtklinge wird durch eine Fluke ausgeglichen. Am oberen Ende sitzt ein spitzer Dorn, der gewöhnlich viereckig geformt ist. Manchmal wird die Fluke von einem Haken ersetzt, mit dem berittene Kämpfer vom Pferd geholt werden können. Eine Hellebarde lässt sich am besten als eine Kreuzung zwischen Speer und Axt beschreiben.
+Not usable by:
+- Clerics~
+@76   = ~By far the oldest and most often used pole-arm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke, and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe. 
 
-EIGENSCHAFTEN:
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight
 
-Schaden: 1W10 (Stich)
-Gewicht: 15
-Initiativefaktor: 9
-Mindeststärke: 13
-Fertigkeit: Hellebarde
-Typ: 2-händig
+STATISTICS:
 
-Kann nicht verwendet werden von:
-- Dieben
-- Druiden
-- Klerikern
-- Magiern
-- Mönchen~
-@77   = ~Speere zählen zu den ältesten Waffen der Geschichte. Schon die primitivsten Völker benutzten einfache Holzstangen, die an einem Ende angespitzt wurden. Nachdem die Menschen die Metallverarbeitung entdeckt hatten, begannen sie Speerköpfe aus Eisen und Stahl herzustellen. Waffenschmiede experimentierten bald mit unterschiedlichen Formen von Speerköpfen, was zur Entstehung verschiedener Arten von Stangenwaffen führte.
+Damage: 1d10 (Piercing)
+Weight: 15
+Speed Factor: 9
+Requirement: 13 Strength
+Proficiency Type: Halberd
+Type: 2-handed
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+Not usable by:
+- Thieves
+- Druids
+- Clerics
+- Mages
+- Monks~
+@77   = ~One of man's earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When man mastered metals, spearheads were made from iron and steel. Having reached this end, weaponers began experimenting with different types of spear heads, thus leading to the development of certain polearm types.
 
-EIGENSCHAFTEN:
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-Schaden: 1W6 (Stich)
-Gewicht: 5
-Initiativefaktor: 6
-Mindeststärke: 5
-Fertigkeit: Speer
-Typ: 2-händig
+STATISTICS:
 
-Kann nicht verwendet werden von:
-- Dieben
-- Druiden
-- Magiern
-- Mönchen~
-@78   = ~Das Bastardschwert ist von seiner Art her zwischen dem Zweihänder und dem Langschwert angesiedelt, weshalb es auch als Anderthalbhänder bezeichnet wird. Es besitzt eine zweischneidige Klinge und einen langen Griff, wodurch es auch beidhändig geschwungen werden kann. Die durchschnittliche Länge des Bastardschwertes liegt zwischen 1,40 und 1,60 m.
+Damage: 1d6 (Piercing)
+Weight: 5
+Speed Factor: 6
+Requirement: 5 Strength
+Proficiency Type: Spear
+Type: 2-handed
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+Not usable by:
+- Thieves
+- Druids
+- Mages
+- Monks~
+@78   = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the sword ranged between four feet and four feet ten inches.
 
-EIGENSCHAFTEN:
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-Schaden: 2W4 (Klinge)
-Gewicht: 10
-Initiativefaktor: 8
-Mindeststärke: 11
-Fertigkeit: Bastardschwert
-Typ: 1-händig
+STATISTICS:
 
-Kann nicht verwendet werden von:
-- Dieben
-- Druiden
-- Klerikern
-- Magiern
-- Mönchen~
-@79   = ~Diese Schwerter werden auch als zweischneidige Schwerter, Kriegsschwerter oder Militärschwerter bezeichnet. Es gibt keine einheitliche Form des Langschwertes. Seine Form und Länge sind von Kultur zu Kultur unterschiedlich und können selbst innerhalb einer Kultur je nach Zeitalter variieren. Das grundlegendste Merkmal aller Langschwerter ist ihre Länge, die zwischen 90 cm und 1,20 m beträgt. Im letzteren Fall nimmt die Klinge 1 m der Gesamtlänge ein. Die meisten Langschwerter besitzen eine zweischneidige Klinge mit einer scharfen Spitze. Trotz dieser Spitze ist das Langschwert nicht zum Stoßen, sondern zum Schwingen vorgesehen.
+Damage: 2d4 (Slashing)
+Weight: 10
+Speed Factor: 8
+Requirement: 11 Strength
+Proficiency Type: Bastard Sword
+Type: 1-handed
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+Not usable by:
+- Thieves
+- Druids
+- Clerics
+- Mages
+- Monks~
+@79   = ~These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
-EIGENSCHAFTEN:
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-Schaden: 1W8 (Klinge)
-Gewicht: 4
-Initiativefaktor: 5
-Mindeststärke: 6
-Fertigkeit: Langschwert
-Typ: 1-händig
+STATISTICS:
 
-Kann nicht verwendet werden von:
-- Druiden
-- Klerikern
-- Magiern~
-@80   = ~Das Kurzschwert ist die erste und ursprüngliche Form eines Schwertes. Einfach ausgedrückt ist ein Kurzschwert ein Dolch, bei dem die Klinge so lang ist, dass das Ganze nicht mehr als Dolch bezeichnet werden kann. Der Begriff "Kurzschwert" ist in der Klassifizierung der Schwerter eigentlich nicht bekannt. Er wird jedoch mittlerweile zur Beschreibung einer zweischneidigen Klinge mit einer ungefähren Länge von 60 cm verwendet. Die Klinge ist normalerweise vorne spitz, wodurch sich das Kurzschwert hervorragend zum Stoßen eignet.
+Damage: 1d8 (Slashing)
+Weight: 4
+Speed Factor: 5
+Requirement: 6 Strength
+Proficiency Type: Long Sword
+Type: 1-handed
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+Not usable by:
+- Druids
+- Clerics
+- Mages~
+@80   = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
-EIGENSCHAFTEN:
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-Schaden: 1W6 (Stich)
-Gewicht: 3
-Initiativefaktor: 3
-Mindeststärke: 5
-Fertigkeit: Kurzschwert
-Typ: 1-händig
+STATISTICS:
 
-Kann nicht verwendet werden von:
-- Druiden
-- Klerikern
-- Magiern~
-@81   = ~Sowohl der Säbel als auch der Krummsäbel sind durch eine einseitig scharfe, gekrümmte Klinge charakterisiert, obwohl die beiden Waffen ursprünglich aus unterschiedlichen Regionen Faerûns stammen. Der Säbel wurde aufgrund seiner Vielseitigkeit hauptsächlich von berittenen Kriegern eingesetzt, während die Entwicklung des Krummsäbels durch einen starken orientalischen Einfluss geprägt ist. Der "Shamshir", wie man ihn ursprünglich genannt hat, ist größer und stärker gekrümmt und hat eine langgezogene Spitze. Dadurch kann er zwar nur ein wenig langsamer geschwungen werden, ist aber wesentlich tödlicher.
+Damage: 1d6 (Piercing)
+Weight: 3
+Speed Factor: 3
+Requirement: 5 Strength
+Proficiency Type: Short Sword
+Type: 1-handed
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+Not usable by:
+- Druids
+- Clerics
+- Mages~
+@81   = ~The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
-EIGENSCHAFTEN:
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-Schaden: 1W8 (Klinge)
-Gewicht: 4
-Initiativefaktor: 5
-Mindeststärke: 10
-Fertigkeit: Krummsäbel
-Typ: 1-händig
+STATISTICS:
 
-Kann nicht verwendet werden von:
-- Dieben
-- Klerikern
-- Magiern
-- Mönchen~
-@82   = ~Das Katana ist ein Schwert, dessen Klinge nur auf einer Seite scharf ist. Es ist leicht gekrümmt und endet in einer Spitze, die an die Spitze eines Meißels erinnert. Das Katana stellt vermutlich die aufwändigste Form des Schwertes dar. Seine Fertigung ist ein langer, aufwändiger und höchst geheimer Vorgang, den man schon fast als Kunstwerk bezeichnen müsste. Diese Schwerter spielen in der Kultur von Kara-Tur eine wichtige Rolle. Wenn man es wagt, das Katana eines Samurais zu berühren oder gar zu ziehen, beleidigt man den Samurai, dem es gehört, und zieht seinen Zorn auf sich. Es kommt nur äußerst selten vor, dass ein Gaijin, ein Fremder, in den Besitz einer derartigen Waffe kommt. Entweder handelt es sich bei diesem Gaijin dann um den geehrten Freund eines wichtigen Ministers oder um den Mörder eines Samurais.
+Damage: 1d8 (Slashing)
+Weight: 4
+Speed Factor: 5
+Requirement: 10 Strength
+Proficiency Type: Scimitar
+Type: 1-handed
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+Not usable by:
+- Thieves
+- Clerics
+- Mages
+- Monks~
+@82   = ~The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process, that is more art form than anything else. This blade is an important facet of Kara-Tur culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
 
-EIGENSCHAFTEN:
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-Schaden: 1W10 (Klinge)
-Gewicht: 6
-Initiativefaktor: 4
-Mindeststärke: 6
-Fertigkeit: Katana
-Typ: 1-händig
+STATISTICS:
 
-Kann nicht verwendet werden von:
-- Druiden
-- Klerikern
-- Magiern~
-@83   = ~Das Wakizashi, auch Begleitschwert genannt, ist für einen Samurai von höchster Wichtigkeit. Es wird von ihm ständig getragen, auch wenn er sich in einem Gebäude aufhält. Wenn er schläft, liegt es neben ihm. Das Wakizashi ist von ebenso hochwertiger Fertigung wie das Katana. Es ist allerdings deutlich kürzer und die Klinge ist nur 30 bis 60 cm lang. In den Händen eines geschulten Kriegers ist es eine tödliche Waffe.
+Damage: 1d10 (Slashing)
+Weight: 6
+Speed Factor: 4
+Requirement: 6 Strength
+Proficiency Type: Katana
+Type: 1-handed
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+Not usable by:
+- Druids
+- Clerics
+- Mages~
+@83   = ~The wakizashi, or companion sword is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi, a shorter sword with a length between 12 and 24 inches, is a dangerous weapon in the hands of a skilled user.
 
-EIGENSCHAFTEN:
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-Schaden: 1W8 (Stich)
-Gewicht: 3
-Initiativefaktor: 3
-Mindeststärke: 5
-Fertigkeit: Krummsäbel
-Typ: 1-händig
+STATISTICS:
 
-Kann nicht verwendet werden von:
-- Druiden
-- Klerikern
-- Magiern~
-@84   = ~Das Ninja-To ist das Schwert der Ninja und nicht von so hochwertiger Qualität wie die anderen Klingen, die aus Kara-Tur stammen, wie beispielsweise das Katana. Das Ninja-To hat eine gerade Klinge und ist relativ kurz. Es eignet sich daher ideal für den verschlagenen Ninja, da es sich leicht verbergen lässt. Da es recht kurz ist, eignet es sich besser als die langen Klingen eines Samurais, um damit unter beengten Verhältnissen zu kämpfen. Das verschafft einem Ninja, der gegen einen Samurai antritt, manchmal einen Vorteil.
+Damage: 1d8 (Piercing)
+Weight: 3
+Speed Factor: 3
+Requirement: 5 Strength
+Proficiency Type: Scimitar
+Type: 1-handed
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+Not usable by:
+- Druids
+- Clerics
+- Mages~
+@84   = ~The sword of the ninja, the ninjato, is of lower quality than other Kara-Turan blades such as the katana. The ninjato is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninjato is also more suited to fighting in closed places, sometimes giving the ninja an advantage over the longer blades that the samurai use.
 
-EIGENSCHAFTEN:
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-Schaden: 1W8 (Klinge)
-Gewicht: 5
-Initiativefaktor: 4
-Mindeststärke: 6
-Fertigkeit: Krummsäbel
-Typ: 1-händig
+STATISTICS:
 
-Kann nicht verwendet werden von:
-- Druiden
-- Klerikern
-- Magiern~
-@85   = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen.
+Damage: 1d8 (Slashing)
+Weight: 5
+Speed Factor: 4
+Requirement: 6 Strength
+Proficiency Type: Scimitar
+Type: 1-handed
 
-Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+Not usable by:
+- Druids
+- Clerics
+- Mages~
+@85   = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
-EIGENSCHAFTEN:
+The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
-Schaden: 1W10 (Klinge)
-Gewicht: 15
-Initiativefaktor: 10
-Mindeststärke: 14
-Fertigkeit: Zweihänder
-Typ: 2-händig
+STATISTICS:
 
-Kann nicht verwendet werden von:
-- Dieben
-- Druiden
-- Klerikern
-- Magiern
-- Mönchen~
+Damage: 1d10 (Slashing)
+Weight: 15
+Speed Factor: 10
+Requirement: 14 Strength
+Proficiency Type: Two-Handed Sword
+Type: 2-handed
+
+Not usable by:
+- Thieves
+- Druids
+- Clerics
+- Mages
+- Monks~
 @86   = ~Taerom~
 
 @88   = ~Revianel~
-@89   = ~Dämmerungslord Revianel~
-@90   = ~Lathander zum Gruße! Kann ich etwas für Euch tun?~ [ACREVI00]
-@91   = ~Breagars Armstumpf~
-@92   = ~Bei dem Unfall in der Donnerhammerschmiede verlor Breagar seine linke Hand. Die Wunde wurde zwar geheilt, bietet aber mit ihrem vernarbten Gewebe keinen schönen Anblick.~
-@93   = ~Golemarm~
-@94   = ~Der ausgerissene Arm eines silbernen Golems.~
-@95   = ~Breagars silberne Hand~
-@96   = ~Durch Berronars mächtige Magie wurde der silberne Arm des Wächtergolems mit Breagars Armstumpf verbunden. Breagar kann die Hand verwenden, als ob es seine eigene wäre. Der Segen der Zwergengöttin verstärkt das Metall genug, dass Breagar damit Waffen blocken und sogar magischen Angriffen ein wenig trotzen kann. Leider sind die Finger der neuen Hand zu dick, als dass er einen Ring über sie streifen könnte.
+@89   = ~Dusklord Revianel~
+@90   = ~Lathander's greetings! What can I do for you?~ [ACREVI00]
+@91   = ~Breagar's Arm Stump~
+@92   = ~Because of an accident in the Thunderhammer Smithy, Breagar lost his left hand. The injury was quickly treated, but the scarred stump is not a pretty sight.~
+@93   = ~Arm of a golem~
+@94   = ~The torn-off arm of a silver golem.~
+@95   = ~Breagar's silver hand~
+@96   = ~Through Berronar's divine powers, the silver arm of a guardian golem was fused to the stump of Breagar's arm. Breagar can now use this hand, as if it were his own. The metal is enhanced by a blessing of the dwarven goddess, allowing Breagar to block weapons and even magical attacks to some extent. Unfortunately, the fingers of this new hand are too thick for wearing rings.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-  RK-Bonus: -2
-  RW-Bonus: +2~
-@97   = ~Durch Berronars mächtige Magie wurde der silberne Arm des Wächtergolems mit Breagars Armstumpf verbunden. Breagar kann die Hand verwenden, als ob es seine eigene wäre. Der Segen der Zwergengöttin verstärkt das Metall genug, dass Breagar damit Waffen blocken und sogar magischen Angriffen ein wenig trotzen kann. Leider sind die Finger der neuen Hand zu dick, als dass er einen Ring über sie streifen könnte.
+  Armor Class: -2 bonus
+  Saving Throws: +2 bonus~
+@97   = ~Through Berronar's divine powers, the silver arm of a guardian golem was fused to the stump of Breagar's arm. Breagar can now use this hand, as if it were his own. The metal is enhanced by a blessing of the dwarven goddess, allowing Breagar to block weapons and even magical attacks to some extent. Unfortunately, the fingers of this new hand are too thick for wearing rings.
 
-Dank der Energiezellen aus Irencus' Kerker ist der silberne Arm jetzt um einiges stärker.
+Thanks to the energy cells found in the dungeon of Irenicus, the silver arm is now much stronger.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-  Stärkebonus: +1
-  RK-Bonus: -2
-  RW-Bonus: +2~
-@98   = ~Durch Berronars mächtige Magie wurde der silberne Arm des Wächtergolems mit Breagars Armstumpf verbunden. Breagar kann die Hand verwenden, als ob es seine eigene wäre. Der Segen der Zwergengöttin verstärkt das Metall genug, dass Breagar damit Waffen blocken und sogar magischen Angriffen ein wenig trotzen kann. Leider sind die Finger der neuen Hand zu dick, als dass er einen Ring über sie streifen könnte.
+  Strength Bonus: +1
+  Armor Class: -2 bonus
+  Saving Throws: +2 bonus~
+@98   = ~Through Berronar's divine powers, the silver arm of a guardian golem was fused to the stump of Breagar's arm. Breagar can now use this hand, as if it were his own. The metal is enhanced by a blessing of the dwarven goddess, allowing Breagar to block weapons and even magical attacks to some extent. Unfortunately, the fingers of this new hand are too thick for wearing rings.
 
-Dank der Energiezellen aus Irencus' Kerker kann Breagar mit seinem silbernen Arm einen Schild viel besser benutzen als vorher.
+Thanks to the energy cells found in the dungeon of Irenicus, the silver arm can now wield shields much more effectively.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-  +2 Auf Talent "Waffe und Schild"
-  RK-Bonus: -2
-  RW-Bonus: +2~
-@99   = ~Durch Berronars mächtige Magie wurde der silberne Arm des Wächtergolems mit Breagars Armstumpf verbunden. Breagar kann die Hand verwenden, als ob es seine eigene wäre. Der Segen der Zwergengöttin verstärkt das Metall genug, dass Breagar damit Waffen blocken und sogar magischen Angriffen ein wenig trotzen kann. Leider sind die Finger der neuen Hand zu dick, als dass er einen Ring über sie streifen könnte.
+  +2 Points in Sword and Shield Style Proficiency 
+  Armor Class: -2 bonus
+  Saving Throws: +2 bonus~
+@99   = ~ Through Berronar's divine powers, the silver arm of a guardian golem was fused to the stump of Breagar's arm. Breagar can now use this hand, as if it were his own. The metal is enhanced by a blessing of the dwarven goddess, allowing Breagar to block weapons and even magical attacks to some extent. Unfortunately, the fingers of this new hand are too thick for wearing rings.
 
-Dank der Energiezellen aus Irenicus' Kerker kann Breagar mit seinem silbernen Arm einen Schild viel besser benutzen als vorher.
+Thanks to the energy cells found in the dungeon of Irenicus, the silver arm can now wield off-hand weapons much more effectively.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-  +3 Auf Talent "Beidhändiger Kampf"
-  RK-Bonus: -2
-  RW-Bonus: +2~
-@100  = ~Breagars fehlende Hand~
-@101  = ~Da Breagars Hand bei dem Unfall in der Donnerhammerschmiede abgerissen wurde, kann er auf dieser Seite keine Ringe mehr tragen.~
-@102  = ~Breagars Hand aus Meteoritenerz~
-@103  = ~Durch Berronars mächtige Magie wurde der silberne Arm des Wächtergolems mit Breagars Armstumpf verbunden. Breagar kann die Hand verwenden, als ob es seine eigene wäre. Der Segen der Zwergengöttin verstärkt das Metall genug, dass Breagar damit Waffen blocken und sogar magischen Angriffen ein wenig trotzen kann. Leider sind die Finger der neuen Hand zu dick, als dass er einen Ring über sie streifen könnte.
+  +3 Points in Two Weapon Style Proficiency
+  Armor Class: -2 bonus
+  Saving Throws: +2 bonus~
+@100  = ~Breagar's missing hand~
+@101  = ~Since Breagar's hand was torn-off in an accident in the Thunderhammer Smithy, he can no longer wear rings.~
+@102  = ~Breagar's meteorite hand ~
+@103  = ~Through Berronar's divine powers, the silver arm of a guardian golem was fused to the stump of Breagar's arm. Breagar can now use this hand, as if it were his own. The metal is enhanced by a blessing of the dwarven goddess, allowing Breagar to block weapons and even magical attacks to some extent. Unfortunately, the fingers of this new hand are too thick for wearing rings.
 
-Mit Hilfe des Meteoritenerzes, welches Breagar erfolgreich in den Golemarm implementierten konnte, ist es ihm gelungen, dessen Widerstandsfähigkeit noch einmal zu verbessern.
+Breagar success fully managed to incorporate meteorite ore into the hand, and improved its resistance to damage.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-  RK-Bonus: -3
-  RW-Bonus: +3~
-@104  = ~Silberne Zwergin~
-@105  = ~Silbernes Kettenhemd~
-@106  = ~Silberner Helm~
+  Armor Class: -3 bonus
+  Saving Throws: +3 bonus~
+@104  = ~Silver Dwarf~
+@105  = ~Silver Chain Mail~
+@106  = ~Silver Helmet~
 @107  = ~Yrrymyr~
-@108  = ~Berronars Schale~
-@109  = ~In solchen Schalen wird am Neujahrsfest Silber eingeschmolzen, das in einer feierlichen Zeremonie Berronar geopfert wird.~
-@110  = ~Berronars Axt +2~
-@111  = ~Um diese legendäre Axt ranken sich viele Legenden. Angeblich soll Moradin selbst diese Waffe als Geschenk für seine treue Gattin Berronar geschmiedet haben, doch durch eine Verkettung unglücklicher Ereignisse zerbrach die Waffe, und die kostbaren Edelsteine, die sie zierten, gingen verloren.
+@108  = ~Berronar's bowl~
+@109  = ~During New Year's celebrations, silver is melted in such bowls and offered to Berronar as a ceremonial sacrifice.~
+@110  = ~Berronar's Axe +2~
+@111  = ~Many legends are abound about this famed axe. It is said that Moradin himself once forged this weapon as a gift for his wife Berronar. Through a chain of unfortunate events, it is now broken, and the gems, that once decorated it, are lost to history.
 
-Obwohl die Axt durch diesen Schaden einiges von ihrer Kraft verloren hat, ist sie doch in den Händen eines ehrbaren Zwerges immer noch eine hilfreiche Waffe gegen alles Böse.
+Even though the axe might have lost much of its former power, it still makes for a potent weapon against evil in the hands of an honorable dwarf.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Bei jedem Treffer besteht eine 10%ige Chance, den Gegner für 10 Sekunden bewusstlos zu schlagen (Rettungswurf gg. Tod, +2 Malus).
+10% chance of knocking an opponent unconscious for 10 seconds with each successful attack (Save vs. death at -2 penalty negates)
 
-Schaden: 1W10 +2 (Klinge)
-ETW0-Bonus: -2
-Gewicht: 7
-Initiativefaktor: 4
-Mindeststärke 10 
-Fertigkeit: Axt
-Typ:  1-händig
+Damage: 1d10 +2 (Slashing)
+THAC0: -2
+Weight: 7
+Speed Factor: 4
+Requirement: 10 Strength
+Proficiency Type: Axe
+Type:  1-handed
 
-Kann nur verwendet werden von: 
-- Guten Wesen
-- Zwergen
-- Barbaren
-- Kämpfern~
-@112  = ~Berronars Axt +5~
-@113  = ~Um diese legendäre Axt ranken sich viele Legenden. Angeblich soll Moradin selbst diese Waffe als Geschenk für seine treue Gattin Berronar geschmiedet haben.
+Only usable by: 
+- Good aligned characters
+- Dwarves
+- Barbarians
+- Fighters~
+@112  = ~Berronar's Axe +5~
+@113  = ~Many legends abound about this famed axe. It is said that Moradin himself once forged this weapon as a gift for his wife Berronar.
 
-Bei ihrer Reise durch das Unterreich fanden <CHARNAME> und Breagar die fehlenden Edelsteine und reparierten die Axt in Cromwells Schmiede. Seitdem erstrahlt die Axt in neuem Glanz und ist eine furchtbare Waffe im Kampf gegen das Böse.
+While journeying through the Underdark, <CHARNAME> and Breagar found the lost gems and repaired the axe in Cromwell's smithy. Since then the axe shines in new-found splendor and is now a formidable weapon against evil.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Bei jedem Treffer besteht eine 50%ige Chance den Gegner für 10 Sekunden bewusstlos zu schlagen (Rettungswurf gg. Tod, +2 Malus).
-Auf dem Träger liegt Schutz vor Bösem.
+50% chance of knocking an opponent unconscious for 10 seconds with each successful attack (Save vs. death at -2 penalty negates)
+Wearer is protected from evil
 
-Schaden: 1W12 +5 (Klinge)
-ETW0-Bonus: -5
-Gewicht: 7
-Initiativefaktor: 4
-Mindeststärke 10 
-Fertigkeit: Axt
-Typ:  1-händig
+Damage: 1d12 +5 (Slashing)
+THAC0: -5
+Weight: 7
+Speed Factor: 4
+Requirement: 10 Strength
+Proficiency Type: Axe
+Type:  1-handed
 
-Kann nur verwendet werden von: 
-- Guten Wesen
-- Zwergen
-- Barbaren
-- Kämpfern~
-@114  = ~Berronars Axt +6~
-@115  = ~Um diese legendäre Axt ranken sich viele Legenden. Angeblich soll Moradin selbst diese Waffe als Geschenk für seine treue Gattin Berronar geschmiedet haben.
+Only usable by: 
+- Good aligned characters
+- Dwarves
+- Barbarians
+- Fighters~
+@114  = ~Berronar's Axe +6~
+@115  = ~Many legends abound about this famed axe. It is said that Moradin himself once forged this weapon as a gift for his wife Berronar.
 
-Bei Ihrer Reise durch das Unterreich fanden <CHARNAME> und Breagar die fehlenden Edelsteine und reparierten die Axt in Cromwells Schmiede. Diese Tat erweckte das Interesse der Götter, und sie verliehen der Waffe einen zusätzlichen Segen. Seitdem erstrahlt die Axt in neuem Glanz und ist eine furchtbare Waffe im Kampf gegen das Böse, ganz besonders gegen Riesen und riesenartige.
+While journeying through the Underdark, <CHARNAME> and Breagar found the lost gems and repaired the axe in Cromwell's smithy. This deed awoke the interest of the dwarven gods, and they blessed the weapon with additional powers. Since then the axe shines in new-found splendor and is now a formidable weapon against evil, especially against giants and their kind.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Bei jedem Treffer besteht eine 50%ige Chance, den Gegner für 10 Sekunden bewusstlos zu schlagen (Rettungswurf gg. Tod, +2 Malus).
-Auf dem Träger liegt Schutz vor Bösem.
+50% chance of knocking an opponent unconscious for 10 seconds with each successful attack (Save vs. death at -2 penalty negates)
+Wearer is protected from evil
 
-Schaden:
-  1W12+6 (Klinge)
-  1W12+9 (gg. riesige Gegner)
-ETW0-Bonus: -6
-  -9 (gg. riesige Gegner)
-Gewicht: 7
-Initiativefaktor: 4
-Fertigkeit: Axt
-Typ:  1-händig
-Mindeststärke 10 
+Damage:
+  1s12+6 (Slashing)
+  1d12+9 (against giants)
+THAC0: -6
+  -9 (against giants)
+Weight: 7
+Speed Factor: 4
+Proficiency Type: Axe
+Type:  1-handed
+Requirement: 10 Strength
 
-Kann nur verwendet werden von: 
-- Guten Wesen
-- Zwergen
-- Barbaren
-- Kämpfern~
-@116  = ~Borsks Zauberrobe~
-@117  = ~Diese Robe gehörte einst dem Nekromanten Borsk. Jetzt gehört sie Euch.
+Only usable by: 
+- Good aligned characters
+- Dwarves
+- Barbarians
+- Fighters~
+@116  = ~Borsk's Mage Robe~
+@117  = ~This robe once belonged to Borsk the necromancer. Now it belongs to you.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Rüstungsklasse: 5
-RW-Bonus: -1
-Magiewiderstand: +2%
-Gewicht: 6
+Armor Class: 5
+  Armor Class: -1 bonus
+  Magic Resistance: +2% bonus
+Weight: 6
 
-Kann nur verwendet werden von:
-- Magiern~
+Only usable by:
+- Mages~
 @118  = ~Borsk~
 @119  = ~Theber~
 @120  = ~Karela~
 @121  = ~Ralph~
-@122  = ~Ralph, der Schmied~
+@122  = ~Ralph, the smith~
 @123  = ~Tobin~
-@124  = ~Morgenlord Tobin~
-@125  = ~Verhüllter Zwerg~
+@124  = ~Morninglord Tobin~
+@125  = ~Hooded dwarf~
 @126  = ~Audhild~
-@127  = ~Nachricht der Schattendiebe~
+@127  = ~Message from the Shadow Thieves~
 @128  = ~Breagar,
 
-Eure Axt ist tatsächlich gesehen worden. Unsere Kontakte haben berichtet, dass eine kleine, blau gekleidete Gestalt sie in den Unruhen auf Waukeens Promenade an sich nahm. Meiner Meinung nach klingt das ganz nach dem einäugigen Arnold, einem zweitklassigen gnomischen Waffenhänder. Wenn Ihr mit ihm sprechen wollt, findet Ihr ihn bestimmt in einer der Tavernen auf der Promenade. Aber geht sanft mit ihm um, eigentlich ist er kein böser Kerl.
+Your axe has indeed been seen. According to our contacts, a small person dressed in blue took it during the chaos in Waukeen's Promenade. I think it sounds like One-Eyed Arnold, a second-rate gnomish weapon dealer. If you want to talk to him, you are sure to find him in one of the promenade's taverns. Please be gentle with him, he isn't such a bad guy.
 
-Viel Erfolg bei Eurer Suche!~
-@129  = ~Brief~
-@130  = ~Brief des Einaugen Arnie~
+Good look on your search!~
+@129  = ~Letter~
+@130  = ~Letter of One-Eyed Arnold~
 @131  = ~Arnie,
 
-Das Geschäft steht. Wir sehen uns beim Turm des Anstinus.
+The deal stands. We meet at the tower of Anstinus.
 
 - Reggik~
-@132  = ~Bote der Schattendiebe~
+@132  = ~Messenger of the Shadow Thieves~
 @133  = ~Arnie~
-@134  = ~Arnie Einauge~
-@135  = ~Klerikerin~
-@136  = ~Zofe Lolths~
-@137  = ~Priesterin~
-@138  = ~Pfefferkörner~
-@139  = ~Der Pfefferstrauch ist eine Pflanze aus der Familie der Piperaceae, deren Früchte ein durch das darin enthaltene Alkaloid Piperin scharf schmeckendes Gewürz liefern.~
-@140  = ~Zerrissenes Rezept~
-@141  = ~Rezept des Grünen Feuers
+@134  = ~One-Eyed Arnold~
+@135  = ~Cleric~
+@136  = ~Maid of Lolth~
+@137  = ~Priestess~
+@138  = ~Peppercorn~
+@139  = ~Black pepper is a flowering vine in the family Piperaceae, cultivated for its fruit, which yields an aromatic spice.~
+@140  = ~Torn-up recipe~
+@141  = ~Recipe for green fire
 
-Zutaten:
+Ingredients:
 
-1 komplettes Menschliches Skelett
-1 handelsüblicher Explosionstrank
-1 Smaragd
-1 Zweig vom Busch des Feuerkrautes
-1 Handvoll Pfefferkörner
+1 complete human skeleton
+1 commercially available potion of explosions
+1 emerald
+1 Twig of the fireweed scrub
+1 handful of peppercorns
 
-(Hier bricht das Rezept ab)~
-@142  = ~(Die Obere Hälfte scheint zu fehlen)
+(the paper is torn here and the lower half seems to be missing)~
+@142  = ~(The upper half of this paper seems to be missing)
 
-Zubereitung:
+Preparation:
 
-1. Drapiere alle Zutaten um das Erste herum.
-2. Lasse das Letzte in das Zweite rieseln.
-3. Nimm die Hälfte vom Vierten und gebe sie Zerrieben zum Zweiten.
-4. Schüttele vorsichtig
-5. Gib die zweite Hälfte vom Vierten zum Zweiten
-6. Schüttele kräftig.
-7. Lass das Dritte ins Zweite fallen und warte, bis es sich aufgelöst hat.
+1. Place all ingredients around the first one.
+2. Let the last trickle into the second.
+3. Take half of the fourth, crush it and add it to the second.
+4. Shake gently.
+5. Give the second half of the fourth to the second.
+6. Shake vigorously.
+7. Drop the third into the second and wait until it has dissolved.
 
-Nicht für Kinder unter drei Jahren geeignet!~
-@143  = ~Duergar Kämpfer~
-@144  = ~Duergar Kleriker~
+Not suitable for children under three!~
+@143  = ~Duergar Fighter~
+@144  = ~Duergar Cleric~
 @145  = ~Graschek~
 @146  = ~Hargek~
 @147  = ~Forres~
-@148  = ~Anstitus~
-@149  = ~Reggiks zweites Tagebuch~
-@150  = ~In den Einband ist eine kurze Notiz gekritzelt: Ich habe mich entschieden, dieses Buch weder zu vernichten noch zu verfälschen. Mag sein, dass ich eines Tages gerichtet werde, dann sollen diese Seiten meine Zeugen sein, im Guten wie im Schlechten.
+@148  = ~Anstinus~
+@149  = ~Reggik's second journal~
+@150  = ~A short note is scribbled on the inside of the cover. I have decided to neither destroy nor to embellish these accounts. If I may be judged one day, these pages shall be my witnesses, for better or for worse.
 
 4. Alturiak 1467
 
-Breagar hat es tatsächlich gewagt! Er hat Meister Galthur um die Hand Audhilds gebeten. Ich habe zu lange gezögert. Dieser Narr wirft alle meine Pläne durcheinander. Muss mit Forres sprechen.
+Breagar actually dared to do it! He asked Master Galthur for Audhild's hand. I've waited too long. This fool is getting in the way of my plans. I need to talk with Forres.
 
 6. Alturiak 1467
 
-Unser Plan scheint in Erfüllung zu gehen. Forres ist der klügere Kopf von uns beiden, ich bin erstaunt wie einfach es ihm fiel, auf die richtige Lösung zu kommen. Galthur hat sich von mir einwickeln lassen und Breagar eine Meisterprüfung aufgebrummt, die sich gewaschen hat. Einen Ring der Elemente soll er schmieden! Aber ich sollte mich nicht zu früh freuen, ich weiß, dass diese Aufgabe mir auch noch bevorsteht. Ich muss schnell und zügig arbeiten.
+Our plan is slowly coming to fruition. Forres is definitely the smarter of us two. It amazes me, how quickly he found a solution for our problem. Galthur was open to my suggestions, and gave Breagar a heck of challenge for his master's trial. He has to forge a ring of elements! But I shouldn't be too happy about this, I know that I will have to face the same challenge soon enough. I have to act quickly.
 
-10. Tarsak 1467
+10. Tarsakh 1467
 
-Ich mache Fortschritte. Breagar arbeitet wie ein Besessener, so dass ihm nicht auffällt, dass er nicht der einzige ist, der Vorbereitungen auf einen Ring der Elemente trifft. Habe bereits Kontakt nach Süden aufgenommen, mein alter Clan wird mir sicherlich zur Hand gehen.
+I'm making progress. Breagar is working obsessively. He doesn't even notice that he isn't the only one preparing to forge a ring of elements. I already reached out to my contacts in the south. My old clan is sure to help me.
 
-15. Marpenot 1467
+15. Marpenoth 1467
 
-Ein halbes Jahr Arbeit, aber es hat sich gelohnt. Meine Aufzeichnungen sind komplett, und ich vermute Breagars auch. Es war ein leichtes, seine Vorlagen der alten Runen zu verfälschen, ein Strich reicht, um aus der Rune Kontrolle die Rune Freisetzung zu machen. Wenn er den Ring graviert, werden die Kräfte im Metall freigesetzt und... mir ist nicht so ganz wohl dabei, aber für die gute Sache müssen Opfer gebracht werden. Breagar würde es sowieso nicht verstehen.
+Half a year of hard work, has paid off. My research is complete, and I assume Breagar has finished as well. It was so easy to manipulate his drawings of the ancient runes. A single stroke of a pen can turn the rune of control, into a rune of release. When he engraves the ring, the forces in the metal will be released and... I don't really like it, but sacrifices have to be made for the greater good. Breagar wouldn't understand it anyway.
 
-20. Marpenot 1467
+20. Marpenoth 1467
 
-Breagar möchte nächstes Frühjahr aufbrechen. Er hat sich für die Schwertküste entschieden, um in Kerzenburg eine Kopie des Buches der Schmiedekunst zu erwerben. Das ist gut so, denn der Eintritt ist teuer und jeder Tag, den Breagar mit Sparen zubringt, ist ein Tag auf meiner Seite.
+Breagar wants to set out next spring. He decided to travel to the Sword Coast, to obtain a copy of the Book of Smithing in Candlekeep. That is fortunate. Entry into Candlekeep is expensive, and each day Breagar has to spend in order to gain enough money, is a day won for me.
 
 1. Ches 1468
 
-Breagar ist gestern aufgebrochen. Ich warte noch ein paar Tage ab, um sicher zu gehen, dann werde ich ebenfalls bei Galthur um Audhilds Hand anhalten. Meine Vorbereitungen sind gut, und ich weiß, dass bei meinem alten Clan bereits ein Buch der Schmiedekunst auf mich wartet.~
-@151  = ~Reggiks erstes Tagebuch~
-@152  = ~Wenn irgendjemand dieses Tagebuch liest, bin ich wahrscheinlich tot. Nach zwergischem Recht hätte ich es verdient, denn ich habe gegen fast alle Gesetze des Clans Bardormar verstoßen, und werde wahrscheinlich auch noch gegen die übrigen verstoßen müssen. Aber wenn das mein Weg ist, dann gehe ich ihn mit hoch erhobenen Haupt zu Ende, denn es ist ein guter Weg.
+Breagar left yesterday. I will wait for a few day, just in case he comes back, then I too will ask Galthur for Audhild's hand. I am well prepared, knowing that a Book of Smithing is already waiting for me with my old clan.~
+@151  = ~Reggik's first journal~
+@152  = ~If someone ever reads this journal, I am surely dead. I deserve death according to dwarven law, because I have broken almost all laws of clan Bardormar, and I might have to break a few more in the future. But if this is my fated path, I shall walk it proudly, because it is a good path.
 
-Es ist nun ein paar Wochen her, dass ich Forres, den Duergarpriester, traf. Er taumelte halb verhungert und wahnsinnig durch die Stollen, und es wäre mir ein leichtes gewesen, ihn zu töten. Aber dennoch: Irgendetwas hielt mich davon ab. Ich nahm mich seiner an und pflegte ihn in einem stillgelegten Korridor gesund. Je länger unser Versteckspiel dauerte, desto größer wurde die Gefahr, dass man uns entdeckte. Aber in gleichen Maße wuchs meine Überzeugung, das richtige zu tun. Forres ist ein entlaufener Sklave, dessen Clan von den Drow unterjocht wurde und durch weit verzweigte Gänge aus den Tiefen des Unterreiches bis in die Minen des Clans Bardormar stolperte. Wäre nicht ich es gewesen, sondern ein anderer Zwerg, der ihn dort gefunden hätte - er wäre bestimmt erschlagen worden.
+I met Forres, the duergar priest, a few weeks ago. He was stumbling through the mines, starving and mad, and killing him would have been easy. Yet something stayed my hand. I took him to an abandoned shaft and nursed him back to health. The longer I kept him hidden, the greater the danger, that someone could have found us. But likewise my certainty of doing the right thing also grow over time. Forres is a runaway slave, his entire clan has been conquered and subjugated by the drow. He had run through the many-branched tunnels of the Underdark until he came across the mines of clan Bardormar. If it hadn't been me who found him, but another dwarf – he surely would have been killed on the spot.
 
-Je länger ich Forres pflegte und mich mit ihm unterhielt, desto richtiger kam mir vor, was ich tat. Forres ist ein Duergar und somit ein Feind aller Bardormar-Zwerge, und einige seiner Ansichten laufen den Lehren der Mordinsamman entgegen - aber er ist einsichtig und klug. Ich habe mit ihm tiefere Gespräche geführt als mit manchem reinem Zwergen.
+The more I cared about Forres and talked to him, the more I found my actions to be just. Forres is a duergar and thus an enemy of all Bardormar dwarves and some of his opinions run contrary to the teachings of the Mordinsamman. Yet he is reasonable and smart and I had more interesting in-depth discussions with him than with any pure dwarf.
 
-Es dauerte einige Zeit, bis mir bewusst wurde, dass meine Gedanken immer öfter in eine bestimmte Richtung zeigten: Ich wollte die Vendetta des Clans gegen die Grauzwerge beenden und Forres und seinem Clan einen Weg zeigen, zurück in den Schoß der Mordinsamman zu gelangen. Keine leichte Aufgabe, aber ich spürte deutlich, dass meine Bemühungen auf göttlichen Beistand stießen. Ich hatte vor, Galthur zu beerben, was das Amt des Meisterschmiedes des Clans anging, denn als Mitglied des Clansvorstandes hätte ich mehr Einfluss auf die anderen Zwerge. Vielleicht hätte ich wirklich etwas erreicht.
+It took some time until I realized that in my thoughts a great idea had taken root. I needed to end the feud between the gray dwarves and the clans and show Forres and his clan a way back into the fold of the Mordinsamman. No easy task, but I felt that my undertaking would find divine support. First I needed to succeed Galthur, to obtain the position of master smith. As a member of the clan's council, I would have great influence over the other dwarves, maybe enough to make a difference.
 
-Doch meine Pläne erfuhren einen herben Dämpfer. Breagar der Bäcker hat sich entschlossen, seine Backstube zu verlassen und sich Galthur als Schmiedelehrling angehängt. Es dauerte nicht lange, bis ich begriff, warum er das tat: Er hat sich in Audhild verliebt und will Telormavar des Clans werden. Aus einem jugendlichen Leichtsinn heraus droht Breagar, mir alles zu verderben. Ich muss abwarten was sich ergibt. Wenn er von sich aus versagt, schön. Wenn nicht...~
-@153  = ~Reggiks drittes Tagebuch~
-@154  = ~Breagar und <CHARNAME> wurden in Athkatla gesehen! Schon als Grothir berichtete, dass Breagar in seiner Prüfung zwar versagt hatte, dafür aber von den Göttern selbst berührt wurde, zeigte mir das auf, dass unser Plan stärker ins Wanken geriet als gedacht. Und doch... ist nicht ein Symbol wie Berronars Axt genau das richtige, um den Duergar etwas zu geben, woran sie glauben können? Ist nicht genau das ein Zeichen, das sie zurück zu den Mordinsamman führen würde?
+But now there is a new obstacle to my plans. Breagar the baker has decided to leave his father's bakery and became Galthur's new apprentice. It didn't take me long to figure out why. He has fallen in love with Audhild and wants to become the clan's Telormavar and because of this utter adolescent foolishness Breagar might ruin everything. I shall wait and see how things will turn out. If he should fail on his own, good. If not...~
+@153  = ~Reggik's third journal~
+@154  = ~Breagar and <CHARNAME> were seen in Athkatla! When Grothir reported that Breagar had failed his trial, but instead was touched by the gods, I already knew that our plan was on shakier grounds than I had thought. And yet... wouldn't a symbolic weapon like Berronar's Axe be exactly what the duergar need? It would give them something to believe in. Wouldn't it be a divine sign that would lead them back to the Mordinsamman?
 
-Ich habe den Waffenhändler Einaugen-Arnold angeheuert, damit er uns die Axt organisiert. Wie er das geschafft hat, will ich gar nicht so genau wissen, aber er konnte sie tatsächlich aus dem Chaos auf Waukeens Promenade bergen und zu uns bringen. Wenn mir die Götter jetzt noch ein bisschen gewogen sind, dann hilft der Verlust der Axt, Breagar von Audhild und Galthur endgültig fernzuhalten. Und gleichzeitig kann sie den Duergar neue Hoffnung geben. Ich werde die Tagebücher und die Axt bei Forres hinterlassen, wenn ich mich jetzt auf den Weg mache, um Galthur in Handelstreff aufzusuchen. Von dort aus werden wir in die Hallen meines alten Clans reisen.~
-@155  = ~Reggiks Schlüsselstein~
-@156  = ~Dieser Schlüsselstein hebt die magische Barriere auf, die den Keller von Anstinus' Turm versperrt. Der Stein ist so verändert, dass nur ein Zwerg aus dem Clan Bardormar seine Kräfte nutzen kann.~
-@157  = ~Forres' Schlüsselstein~
-@158  = ~Dieser Schlüsselstein hebt die magische Barriere auf, die den Keller von Anstinus' Turm versperrt.~
-@159  = ~Feuerkrautzweig~
-@160  = ~Die Beeren des Feuerkrautes schmecken widerlich, werden allerdings von Kindern und Alchemisten hoch geschätzt. Letztere nutzen den glühenden Inhaltsstoff "Spectrin" um ihren Tränken ein gewisses Glühen zu verleihen, erstere schätzen den selben Effekt insbesondere beim morgendlichen Gang auf das Stille Örtchen.~
-@161  = ~Vertrag mit Clan Bardormar~
-@162  = ~Dieser Vertrag über eine größere Waffenlieferung könnte dem Eisenthron einen großen Vorteil geben.~
-@163  = ~Mithrilkette~
-@164  = ~Eine kostbare Kette aus Mithril, eindeutig Zwergenarbeit.~
-@165  = ~Trank des grünen Feuers~
-@166  = ~Dieser Trank wurde von <CHARNAME> und <PRO_HISHER>en Gefährten nach dem Rezept von Anstinus dem Großen hergestellt.~
+I have hired One-Eyes Arnold, a weapon's trader, to fetch the axe. I don't even want to know how he did it, but he managed to acquire it during the chaos in Waukeen's Promenade. Gods willing, the loss of the axe will keep Breagar from Audhild and Galthur once and for all. At the same time it can give new hope for the duergar. I will leave the axe and the journals with Forres, before traveling to Trademeet to meet with Galthur. From there I shall travel to the halls of my old clan.~
+@155  = ~Reggik's keystone~
+@156  = ~ This keystone will open the magical barrier that prevents access to the basement of the tower of Anstinus. It was modified in such a way, that only a member of clan Bardormar may use it.~
+@157  = ~Forres' keystone~
+@158  = ~This keystone will open the magical barrier that prevents access to the basement of the tower of Anstinus.~
+@159  = ~Fireweed twig~
+@160  = ~Fireweed berries taste disgusting, but they are still very popular with children and alchemists. The latter use the ingredient Spectrin to make their potions glow, the former want to see the same effect in their early morning wee.~
+@161  = ~Business Contract with Clan Bardormar~
+@162  = ~This contract details a very lucrative weapons deal between clan Bardormar and the Iron Throne.~
+@163  = ~Mithril Necklace~
+@164  = ~A valuable chain of mithril, no doubt dwarven work.~
+@165  = ~Potion of green fire~
+@166  = ~This potion was brewed by <CHARNAME> and <PRO_HISHER> companions according to a recipe of Anstinus the Great.~
 @167  = ~Grothir~
 @168  = ~Reggik~
 @169  = ~Galthur~
 @170  = ~Ascalon~
-@171  = ~Ascalon der Barkeeper~
+@171  = ~Ascalon the barkeeper~
 @172  = ~Bork~
 @173  = ~Elasia~
-@174  = ~Frosthammer +3~
-@175  = ~Reggik, einer der fähigsten Schmiede des Bardormar-Clans aus den Sturmhornbergen, übte sich lange in der Kunst der Runenschmiede, bis er seine Fähkigeiten an diesem Hammer erproben wollte. Die Waffe knackst hin und wieder vor Kälte, und in dem Metall funkeln silberweiße Runen.
+@174  = ~Frost Hammer +3~
+@175  = ~Reggik, one of the most capable smiths of clan Bardormar of the Storm Horn mountains, studied rune crafting for a long time until he created this hammer to test his skills. The weapons crackles in coldness, and silver-white runes glow in its metal.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Wird ein Gegner getroffen, besteht eine 5%ige Chance, dass das Ziel den sofortigen Kältetod stirbt (Rettungswurf gg. Tod).
+5% chance of instantly freezing the opponent to death with each successful attack (Save vs. death negates)
 
-Schaden: 2W4+3 (Wucht)
-ETW0-Bonus: 0
-Gewicht: 4
-Initiativefaktor: 1
-Fertigkeit: Hammer
-Typ: 1-händig
-Mindeststärke 10 
 
-Kann nicht verwendet werden von:
-- Dieben
-- Druiden
-- Magiern
-- Mönchen~
-@176  = ~Zwergisches Textfragment~
-@177  = ~Diese losen Papiere sind Fragmente der Geschichte von Berronars Axt.
+Damage: 2d4+3 (Crushing)
+THAC0: 0
+Weight: 4
+Speed Factor: 1
+Proficiency Type: Hammer
+Type: 1-handed
+Requirement: 10 Strength
 
-"... makelloser Reinheit war die silberne Klinge... feinsten Stoff... Rubin... Sonne..."~
-@178  = ~Diese losen Papiere sind Fragmente der Geschichte von Berronars Axt.
+Not usable by:
+- Thieves
+- Druids
+- Mages
+- Monks~
+@176  = ~Fragments of dwarven text~
+@177  = ~These loose pages are parts of the history of Berronar's Axe.
 
-"... aus den Händen Moradins nahm... Mordinsamman... Saphir... fallender Stern..."~
-@179  = ~Diese losen Papiere sind Fragmente der Geschichte von Berronars Axt.
+"... flawless purity of the silver blade... finest materials... ruby... sun..."~
+@178  = ~ These loose pages are parts of the history of Berronar's Axe.
 
-"... tausend Lawinen... riss er die Axt in die Höhe... die kunstvollen Edelsteine... in der Welt der Sterblichen... Saphir... tiefsten Tiefen des Unterreiches..."~
-@180  = ~Schriftgelehrter Oghmas~
-@181  = ~Toter Drow~
-@182  = ~Die Geschichte der Axt Berronars~
-@183  = ~In jener Zeit machte Moradin seiner Gattin Berronar ein fürstliches Geschenk. Um Jahr und Tag schmiedete er eine silberne Axt, zum Schutze des Clans, und zur Ehre seines geliebten Weibes. Und von makelloser Reinheit war die silberne Klinge, geschliffen mit dem feinsten Stoff, und in Ihrer Mitte der Rubin, funkelnd und leuchtend wie die untergehende Sonne.
+"... took from Moradin's hands... Mordinsamman... sapphire... falling star..."~
+@179  = ~ These loose pages are parts of the history of Berronar's Axe.
 
-Und als sie die Axt aus den Händen Moradins nahm, da gleißte das Licht auf in den Hallen der Mordinsamman, und der Saphir an der Spitze der Axt strahlte auf wie ein fallender Stern.
+"... thousand avalanches... held the axe up high... precious gems... in the realms of the mortals... sapphire... deepest depths of the Underdark..."~
+@180  = ~Scribe of Oghma~
+@181  = ~Dead Drow~
+@182  = ~The History of Berronar's Axe~
+@183  = ~In that time Moradin made his wife Berronar a glorious gift. One year and one day he forged a silver axe, to protect the clan, and to honor his beloved wife. Of flawless purity was the silver blade, honed with the finest materials, and in its center the ruby, sparkling and glowing like the evening sun.
 
-Da aber Abbathor, der finstere Gott der Habsucht die Waffe erblicke, da neidete er Berronar dieses Stück und sprang sie an, und entriss Ihr die Waffe und lief von dannen. Moradin aber ergriff seinen Hammer und setzte dem Dieb nach und holte ihn ein.
+And as she took the axe from Moradin's hands, light glistened in the halls of the Mordinsamman, and the sapphire on its tip glowed like a falling star.
 
-Und als Moradins Hammer mit der Wucht von tausend Lawinen auf den schurkischen Räuber herniederging, da riss dieser die Axt in die Höhe und siehe: Die Waffe hielt! Doch brachen die kunstvollen Edelsteine aus ihrer Fassung und sprangen davon und landeten in der Welt der Sterblichen. Mit dem Smaragd, der den Knauf der Axt schmückte,  flogen sie über Berge und Täler hinweg und verschwanden auf Nimmerwiedersehen in den tiefsten Tiefen des Unterreiches.~
-@184  = ~Smaragd~
-@185  = ~Dieser Edelstein sieht eindeutig so aus, als sei er einstmals ein Teil einer Waffe gewesen.~
-@186  = ~Saphir~
-@187  = ~Rubin~
-@188  = ~Meteoritenerz~
-@189  = ~Breagar hat sich diese Brocken Erz mitgenommen um sie genauer zu untersuchen.~
-@190  = ~Nachdem Breagar und <CHARNAME> voneinander Abschied genommen hatten, reiste der Zwerg alleine zurück Richtung Norden. Auch wenn ihn alles zu den Hallen seines alten Clans zog, so spürte Breagar tief in sich, dass sein Weg ihn in andere Gefilde treiben würde. Von Berronars Axt geleitet, zog er einsam durch die Welt und erlebte noch einige Abenteuer, in denen er sich ein ums andere Mal als wahrer Streiter für das Gute erwies. Als Breagar nach einem langen, erfüllten Leben verschied, wurden seine sterblichen Überreste in die Hallen des Clans Bardormar überbracht, und der ruhelose Kämpfer fand endlich seinen Frieden im Schoße der Heimat, die er zeitlebens nicht mehr gesehen hatte.~
-@191  = ~Nachdem <CHARNAME> und Breagar voneinander Abschied genommen hatten, reiste der Zwerg zurück an die Schwertküste, um endlich seine Aufgabe zu erfüllen, einen Ring der Elemente zu schmieden. Er hatte noch viele Abenteuer zu bestehen, doch über Jahr und Tag stand er endlich vor den Pforten der Hallen seines Clans, um Audhild den Ring als Verlobungsgeschenk an den Finger zu stecken. Breagar übernahm das Amt des Meisterschmiedes, nachdem Galthur sich zur Ruhe setzte, und als nach einigen Jahren der Verbannte Reggik wieder vor den Toren der Clanshallen stand, setzte sich Breagar für seine Wiederaufnahme in die Clansmitte ein. Reggik und Breagar wurden vielleicht nicht die besten Freunde, hatten jedoch beide gelernt, über ihre persönlichen Ansichten hinweg zu sehen und arbeiteten als ein perfektes Gespann, dem Clan zur Ehre. Als Audhild nach einem langen Leben verschied, unternahm Breagar eine letzte Reise. Er besuchte Suldanessanar, Athkatla und Baldurs Tor, sowie viele andere Orte, die er mit <CHARNAME> durchwandert hatte. Schließlich führte sein Weg ihn nach Kerzenburg. Die Mönche staunten nicht schlecht, als ein uralter Zwerg mit langem, weißen Bart berichtete, er sei einst mit dem Bhaalskind gezogen, das hier gelebt hatte. Als Einlassgeschenk vermachte er der Bibliothek ein neues Buch der Schmiedekunst, aus seiner eigenen Feder. Breagar wurde herzlich aufgenommen, doch als die Mönche ihn am nächsten Morgen wecken wollten, lag der alte Zwerg tot in seinem Bett. Breagar war mit einem glücklichen Lächeln in Berronars Hallen eingegangen, um die Ewigkeit an der Seite seiner geliebten Audhild zu verbringen.~
-@192  = ~Nachdem <CHARNAME> und Breagar voneinander Abschied genommen hatten, reiste der Zwerg zurück an die Schwertküste, um endlich seine Aufgabe zu erfüllen, einen Ring der Elemente zu schmieden. Er hatte noch viele Abenteuer zu bestehen, doch über Jahr und Tag stand er endlich vor den Pforten der Hallen seines Clans, um Audhild den Ring als Verlobungsgeschenk an den Finger zu stecken. Er wurde fürstlich empfangen, denn die Kunde um seine Taten hatten längst die Clanshallen erreicht. Breagar übernahm das Amt des Meisterschmiedes, das er viele Jahre lang gewissenhaft ausführte. Als Audhild nach einem langen und erfülltem Leben verschied, unternahm Breagar eine letzte Reise. Er besuchte Suldanessanar, Athkatla und Baldurs Tor, sowie viele andere Orte, die er mit <CHARNAME> durchwandert hatte. Schließlich führte sein Weg ihn nach Kerzenburg. Die Mönche staunten nicht schlecht, als ein uralter Zwerg mit langem, weißen Bart berichtete, er sei einst mit dem Bhaalskind gezogen, das hier gelebt hatte. Als Einlassgeschenk vermachte er der Bibliothek ein neues Buch der Schmiedekunst, aus seiner eigenen Feder. Breagar wurde herzlich aufgenommen, doch als die Mönche ihn am nächsten Morgen wecken wollten, lag der alte Zwerg tot in seinem Bett. Breagar war mit einem glücklichen Lächeln in Berronars Hallen eingegangen, um die Ewigkeit an der Seite seiner geliebten Audhild zu verbringen.~
-@193  = ~Turm des Anstinus~
-@194  = ~Ein steiler Gang verliert sich im Dunkeln. Es wäre töricht, dort hinabklettern zu wollen.~
-@195  = ~Ein unsichtbares Kraftfeld liegt über der Treppe in den Keller.~
-@196  = ~Die Treppe sieht nicht allzu vertrauenerweckend aus.~
-@197  = ~Breagar: Crossmods und PID~
-@198  = ~Ihr habt den Hauptteil von Breagar nicht installiert. Installation wird abgebrochen.~
-@199  = ~Installiere Crossmodinhalt für: DSotSC~
-@200  = ~Installiere Crossmodinhalt für: Amber~
-@201  = ~Installiere Crossmodinhalt für: Auren~
-@202  = ~Installiere Crossmodinhalt für: ToBR~
-@203  = ~Installiere Crossmodinhalt für: BGQE~
-@204  = ~Installiere Crossmodinhalt für: ToD~
-@205  = ~Installiere Crossmodinhalt für: AsQ~
-@206  = ~Bringe Virginie, dem unsichtbaren Wunderbunny, ein paar neue Tricks bei~
-@207  = ~Installiere Virginie, das unsichtbare Wunderbunny~
-@208  = ~Die Mod muss vor BP-BGT Worldmap installiert werden.~ /* ~This mod should be installed BEFORE BP-BGT Worldmap~ */
-@209  = ~Installiere Crossmodinhalt für: Weimers Solaufein~
+But when Abbathor, the dark god of greed, saw the axe, he envied Berronar this weapon. He jumped her and ran away with it. Moradin took his hammer, ran after the thief and caught him.
+
+And as Moradin's hammer came down with the force of a thousand avalanches, Abbathor raised the axe in defense. And behold, it withstood the blow! But the precious gems were broken from their sockets and fell into the realms of the mortals. The ruby, the sapphire and the emerald, who decorated the pommel, flew over mountains and valleys and disappeared in the Underdark, never to be seen again.~
+@184  = ~Emerald~
+@185  = ~This gem looks as if it was once socketed in a weapon.~
+@186  = ~Sapphire~
+@187  = ~Ruby~
+@188  = ~Meteorite Ore~
+@189  = ~Breagar took this ore sample to take a closer look at it later.~
+@190  = ~After Breagar and <CHARNAME> said their goodbyes, the dwarf travelled alone into the north. Even though he wanted to return to the halls of his clan, he felt that his path would lead him into another direction. Guided by Berronar's Axe, he travelled the world alone and lived through quite a few adventures, during which he affirmed himself again and again as a fighter for good. When Breagar passed on after a long fulfilled life, his remains were brought to the halls of Clan Bardormar. Only in death, the restless warrior finally found peace in the fold of his home, that he had never seen again in life.~
+@191  = ~After Breagar and <CHARNAME> said their goodbyes, the dwarf traveled back to the Sword Coast to finally complete his task, to forge a ring of elements. He still had to live through many adventures, but eventually he stood at the gates of his clan to put the ring on Audhild's finger as an engagement gift. Breagar took on the position of mastersmith, after Galthur had retired, and when a few years later the banished Reggik stood before the clan's gates, he advocated for his reinstatement. Reggik and Breagar never became close friends, but both had learned to look beyond their own points of view and together worked as a perfect team to honor the clan. When Audhild passed away after a long life, Breagar made one last journey. He visited Suldanessanar, Athkatla and Baldur's Gate, and many other places he had travelled with <CHARNAME>. Eventually he reached Candlekeep. The monks were flabbergasted, when an ancient dwarf with long, white beard told them he once, travelled with the Child of Bhaal, who grew up there. To be allowed inside, he gave the library a new Book of Smithing, penned by himself. Breagar was cordially received, but when the monks tried to wake him the next day, the old dwarf laid dead in his bed. Breagar had entered Berronar's halls with a smile on his face, to spend eternity with his beloved Audhild.~
+@192  = ~After Breagar and <CHARNAME> said their goodbyes, the dwarf traveled back to the Sword Coast to finally complete his task, to forge a ring of elements. He still had to live through many adventures, but eventually he stood at the gates of his clan to put the ring on Audhild's finger as an engagement gift. He was welcomed in all honors, because words of his heroic deeds had already reached the clan. Breagar took on the position of mastersmith, after Galthur had retired, and exercised it diligently for many years. When Audhild passed away after a long life, Breagar made one last journey. He visited Suldanessanar, Athkatla and Baldur's Gate, and many other places he had travelled with <CHARNAME>. Eventually he reached Candlekeep. The monks were flabbergasted, when an ancient dwarf with long, white beard told them he once, travelled with the Child of Bhaal, who grew up there. To be allowed inside, he gave the library a new Book of Smithing, penned by himself. Breagar was cordially received, but when the monks tried to wake him the next day, the old dwarf laid dead in his bed. Breagar had entered Berronar's halls with a smile on his face, to spend eternity with his beloved Audhild.~
+@193  = ~Tower of Anstinus~
+@194  = ~A deeply sloping corridor fades into darkness. Climbing down there would be foolish.~
+@195  = ~An invisible force field prevents access to the basement stairs.~
+@196  = ~These stairs don't look too trust-worthy.~
+@197  = ~Breagar: Crossmods and PID~
+@198  = ~You did not install the main component of Breagar. Canceling installation.~
+@199  = ~Installing cross-mod content for DSotSC~
+@200  = ~Installing cross-mod content for Amber~
+@201  = ~Installing cross-mod content for Auren~
+@202  = ~Installing cross-mod content for ToBR~
+@203  = ~Installing cross-mod content for BGQE~
+@204  = ~Installing cross-mod content for ToD~
+@205  = ~Installing cross-mod content for AsQ~
+@206  = ~Teach Virginie, the invisible wonder bunny some new tricks~
+@207  = ~Installing Virginie, the invisible wonder bunny~
+@208  = ~This mod should be installed BEFORE BP-BGT Worldmap~
+@209  = ~Installing cross-mod content for Weimer's Solaufein~
+
 
 /* new for v9.0.0 */
-@210 = ~Installiere Crossmodinhalt für: Alternatives~
-@211  = ~Installiere Crossmodinhalt für: Imoen 4 Ever~
+@210  = ~Installing cross-mod content for: Alternatives~
+@211  = ~Install cross-mod content for: Imoen 4 Ever~
 
-@4000    = ~Alle Zutaten sind bereit. Ihr wisst, dass Ihr nur einen Versuch habt und solltet Ihr zwischendurch abbrechen ist der Trank verloren. Wollt Ihr beginnen?~
-@4001    = ~Ja, ich bin bereit.~
-@4002    = ~Nein, ich muss mich noch vorbereiten.~
-@4003    = ~(Ihr wendet Euch ab.)~
-@4004    = ~Wie wollt Ihr beginnen?~
-@4005    = ~(Den Explosionstrank vorsichtig schütteln)~
-@4006    = ~(Den Explosionstrank kräftig schütteln)~
-@4007    = ~(Eine Hälfte des Feuerkrautes in den Trank geben)~
-@4008    = ~(Die Pfefferkörner in den Trank rieseln lassen)~
-@4009    = ~(Den Smaragd in den Trank geben)~
-@4010   = ~(Die Mischung beginnt zu brodeln. Offenbar war das ein falscher Schritt)~
-@4011   = ~(Die Körner versinken mit einem leisen Zischen)~
-@4012   = ~(Die Blätter kräuseln sich in dem Gebräu)~
-@4013   = ~(Die andere Hälfte des Feuerkrautes in den Trank geben)~
-@4014   = ~(Vorsichtig schüttelt Ihr den Trank. Die Blätter zerfallen in ihre Fasern)~
-@4015   = ~(Die übrigen Blätter werfen Blasen und ein übelriechendes Gas entweicht)~
-@4016   = ~(Etwas nervös, aber doch entschlossen schüttelt Ihr den Trank. Die letzten Blätter lösen sich auf)~
-@4017   = ~(Der Smaragd versinkt im schäumenden Trank, der schon bald eine blassgrüne Farbe annimmt)~
+/* new for v10.0.0 */
+@212 = ~Transitions Mod detected~
+@213 = ~Installing cross-mod content for Balduran's Seatower~
+
+
+@4000    = ~All ingredients are ready. As you know, we only have one attempt, and if we stop in the middle of it, the potion is lost. Shall we start?~
+@4001    = ~Yes, I am ready.~
+@4002    = ~No, I have to prepare.~
+@4003    = ~(You turn away.)~
+@4004    = ~How would you like to start?~
+@4005    = ~(Gently shake the Potion of Explosions)~
+@4006    = ~(Vigorously shake the Potion of Explosions)~
+@4007    = ~(Add half of the fireweed to the potion)~
+@4008    = ~(Let the peppercorns trickle down into the potion)~
+@4009    = ~(Put the emerald in the potion)~
+@4010   = ~(The mixture is bubbling violently. You must have made a mistake.)~
+@4011   = ~(The peppercorns sink into the potion with a loud hissing sound)~
+@4012   = ~(The leaves curl up in the potion)~
+@4013   = ~(Add the other half of the fireweed to the potion)~
+@4014   = ~(You shake the potion carefully. The leaves dissolve into small fibers)~
+@4015   = ~(The other leaves make the potion bubble and an obnoxious gas is released)~
+@4016   = ~(Nervously but determined you shake the potion. The last leaves dissolve)~
+@4017   = ~(The emerald sinks into the bubbling potion, which soon turns pale green)~
 
 @5000 = ~Ewsahvarmarnakkaglem...~
 @5001 = ~Ewsahvarmar... mos! MOS!~
-@5002 = ~Heda, Breagar!~
-@5003 = ~Raaaah! Tod und Verderben über Euch!~
-@5004 = ~Macht die Tür auf!~
-@5005 = ~Ich kann Euch hören! Nun lasst mich raus!~
-@5006 = ~Buzzurk! Macht die Tür auf!~
-@5007 = ~Das ist nicht komisch! Öffnet die Tür!~
-@5008 = ~Verdammter närrischer <PRO_RACE>! Macht auf!~
-@5009 = ~Duergar! Verdammte Höllenbrut!~
-@5010 = ~Das Kraftfeld über der Treppe ist verschwunden.~
-@5011 = ~Ich rieche Euch!~
-@5012 = ~Heda, Verstärkung! Los, auf sie!~
-@5013 = ~Der Tunnel ist leer.~
-@5014 = ~Drow stürzen sich aus der Höhle auf Euch.~
-@5015 = ~Im Namen der Mordinsamman!~
-@5016 = ~Sei versiegelt bis in alle Zeit!~
-@5017 = ~Das Energiefeld lässt Euch die Haare im Nacken aufstehen.~
-@5018 = ~Die Bar ist geschlossen!~
-@5019 = ~Das werde ich Euch nie vergessen!~
+@5002 = ~Hey there, Breagar!~
+@5003 = ~Raaaah! Death and destruction to you!~
+@5004 = ~Open the door!~
+@5005 = ~I can hear you! Let me out now!~
+@5006 = ~Buzzurk! Open the door!~
+@5007 = ~It's not funny! Open the door!~
+@5008 = ~Damn foolish <PRO_RACE>! Open up!~
+@5009 = ~Duergar! Damn demon spawn!~
+@5010 = ~The force field above the stairs is gone.~
+@5011 = ~I can smell you!~
+@5012 = ~Hey, reinforcement! Go, at them!~
+@5013 = ~The tunnel is empty.~
+@5014 = ~Drow are swarming out of the cave.~
+@5015 = ~In the name of the Mordinsamman!~
+@5016 = ~Be sealed until the end of times!~
+@5017 = ~The energy field makes the hair stand up on the back of your neck.~
+@5018 = ~The bar is closed!~
+@5019 = ~I will never forget this!~
 
 /* new for v7.0 */
-@5020 = ~Bei Moradins Hammer, wir haben es geschafft!~
-@5021 = ~Ich werde auch weiterhin an Eurer Seite bleiben. Sofern Ihr das wollt, natürlich.~
+@5020 = ~By Moradin's Hammer, we made it!~
+@5021 = ~I will remain at your side. If that is what you want, of course.~
 /* Avernus, inside the elevator */
-@5022 = ~Hrmpf. So tief unter der Erde, aber *hier* fühle ich mich nicht wohl.~
+@5022 = ~Hrmph. We may be deep underground, but I'm not feeling at home here at all.~
 /* after PC's murder accusation, low rep */
-@5023 = ~Das kann doch nicht sein - nach allem, was wir erreicht haben, solltet Ihr nun so eine Tat begehen?~
+@5023 = ~You cannot be serious! After all we have achieved together, you would do such a thing?~
 /* after PC's murder accusation, high rep */
-@5024 = ~Das geht nicht mit rechten Dingen zu! Nach allem, was <CHARNAME> erreicht hat, würde <PRO_HESHE> doch nicht in so einer Freudennacht die Tochter des Herzogs ermorden!~
-@5025 = ~Buzzurk. Wir können hier nicht rumstehen und warten, bis die Viecher alle rauskommen. Uns bleibt nichts anderes übrig, als auch da rein zu springen, <CHARNAME>.~
-@5026 = ~Buzzurk. Heißer als ein Schmiedeofen...~
-@5027 = ~Hier schienen die Mistkerle herzukommen. Um den Eingang müssen wir uns gleich mal kümmern, <CHARNAME>. Aber erst sollten wir sicherstellen, dass wir alle Drow im Turm erwischt haben!~
-@5028 = ~Von Osten höre ich Kampfeslärm, <CHARNAME>. Lasst uns erst dort nachsehen, bevor wir in den Turm gehen!~
+@5024 = ~Something is foul here!  After all <CHARNAME> has achieved, <PRO_HESHE> wouldn't just go and murder the count's daughter during a celebration!~
+@5025 = ~Buzzurk. We can't just stand here and wait until all of these things have crawled out. We have no choice but to jump in, <CHARNAME>.~
+@5026 = ~Buzzurk. Hotter than a forge...~
+@5027 = ~This is where these bastards are coming from. We will take care of this opening soon, <CHARNAME>. But first let's make sure, we've got all the drow in the tower!~
+@5028 = ~I hear the sounds of battle from the east, <CHARNAME>. Let us look there before going to the tower!~
 
 @5029 = ~Renal,
-der einäugige Arnold wurde von unseren Kontakten dabei beobachtet, wie er nach den Unruhen auf Waukeens Promenade eine Zwergenaxt an sich nahm. Bin gespannt, ob er dafür noch seinen Zoll von sich aus zahlt oder ob wir ihm wieder einen "Besuch" in seiner favorisierten Taverne in der Promenade abstatten müssen.
+
+our contacts have observed One-Eyed Arnold, picking up a dwarven axe after the commotion at Waukeen's promenade. Let's see if he remembers his guild fee on his own, or if he needs another visit. He should be at his favorite tavern in the promenade.
 
 G.~
 
 /* new for v8.0.2 */
-@5030 = ~Ja, kommt nur, Ihr Schmeißfliegen! Und genauso werde ich Euch zerquetschen, rhaaaa!~
+@5030 = ~Yeah, bring it you scum! I will smash you, rhaaaa!~
+
+/* new for v10.0.0 */
+@5031 = ~Buzzurk, this fog is playing tricks! I.. feel... not good.~
+@5032 = ~Buzzurk!~
+@5033 = ~That Caelar is a strong leader. The crusaders won't give up on following her easily.~
+@5034 = ~I'd prefer this narrow canyon to be a real cave. As it is now, it gives too much possibility for attackers to hide above us.~
+@5035 = ~I've seen a lot of vermin while travelling with you... This one tops them all by far!~
+@5036 = ~Hrmph. I don't mind a good fight, but if all the enemy units get activated we might have a problem.~
+@5037 = ~Mages can't be trusted, I told you so often enough!~
+@5038 = ~They should have listened, the fools.~
+@5039 = ~<CHARNAME>, if you drag me to hell again anytime soon, I'll split your head in half.~
+@5040 = ~Ha, that dragon chose a great spot for his death. A reminder to a great battle, and victory for the people here.~
+@5041 = ~Normally, such ornaments would give my smithy's heart joy. But this door radiates an evil gloominess that makes it impossible to marvel at the craftmanship.~
 
 
 ///////////////////////////////////////////
-///// Tagebucheinträge
+///// Journal entries
 ///////////////////////////////////////////
-@10000 = ~Finde das Buch des Zwergen
+@10000 = ~Find the book of the dwarf
 
-Ein Zwerg bei Puffguts wartet auf Adam, der ihm eigentlich ein Buch bringen sollte. Scheint so, als sei der Tagträumer mal wieder abgelenkt...~
-@10001 = ~Finde das Buch des Zwergen
+A dwarf at the Candlekeep Inn is waiting for Adam to bring him a book. Seems that idler has been getting distracted again...~
+@10001 = ~ Find the book of the dwarf
 
-Adam hat mir den Wälzer gegeben, damit ich ihn dem Zwergen bringen kann.~
-@10002 = ~Finde das Buch des Zwergen
+Adam gave me the Tome to bring it to the dwarf.~
+@10002 = ~ Find the book of the dwarf
 
-Ich habe Adam zu Winthrop geschickt, damit er das Buch endlich abliefern kann. Ich kontrolliere besser, ob er auch wirklich angekommen ist.~
-@10003 = ~Ich habe Breagars Buch gefunden
+I have sent Adam to Winthrop, so he could deliver the book. I better check, if he had arrived there.~
+@10003 = ~I have found Breagar's book
 
-Breagar, der Zwerg in Winthrops Taverne, hat sich beruhigt und mich sogar auf ein Bier eingeladen! Aber jetzt ist er weiter gereist. Ich soll in der Donnerhammerschmiede in Beregost vorbeischauen, falls ich jemals dorthin komme.~
-@10004 = ~Ich habe Breagars Buch gefunden
+Breagar, the dwarf at Winthrop's inn, calmed down and even invited me for a beer! But now he has left. I should visit the Thunderhammer Smithy in Beregost, if I ever come to that town.~
+@10004 = ~I have found Breagar's book
 
-Ich habe dem Zwerg das Buch gebracht und ein paar Münzen dafür bekommen. Geizkragen.~
-@10005 = ~Breagar ist auf der Suche nach Eisen
+I brought the dwarf his book and got a few coins for my troubles. What a cheap skate!~
+@10005 = ~Breagar is looking for iron
 
-Der Zwerg scheint ziemlich verzweifelt auf der Suche nach einem guten Klumpen Eisen zu sein. Vielleicht lohnt es sich, ihm ein Stück zukommen zu lassen.~
-@10006 = ~Breagar hat sein Eisen
+The dwarf is desperately looking for some good iron. Maybe getting him some would pay off.~
+@10006 = ~Breagar has his iron
 
-Der Zwerg arbeitet bei Taerom an seinem Schmiedewerk. Vielleicht sollte ich beizeiten einmal nachschauen, wie es ihm geht.~
-@10007 = ~Breagar hat uns verlassen
+The dwarf is working at Taerom's smithy. Maybe I should visit him to see how things are going.~
+@10007 = ~Breagar has left
 
-Der Zwerg hat sich auf eigene Faust aufgemacht, um Eisen zu Suchen.~
-@10008 = ~Breagar braucht einen Priester!
+The dwarf went looking for iron by himself.~
+@10008 = ~Breagar needs a priest!
 
-Ich muss schauen, dass ich so schnell wie möglich einen Priester aus dem Tempel der Morgendämmerung in die Schmiede hole, bevor er stirbt!~
-@10009 = ~Breagar hatte einen Unfall in der Donnerhammerschmiede
+I have to go to the Song of the Morning Temple and find help for Breagar as fast as possible!~
+@10009 = ~Breagar's accident in the Thunderhammer Smithy 
 
-Anscheinend hat ihm eine magische Entladung die Hand abgerissen. Taerom hat ihn jetzt in den Tempel geschleift. Ich für meinen Teil habe besseres zu tun.~
-@10010 = ~Breagar ist verstorben
+Seems like some magical blast has torn-off Breagar's hand. Taerom has dragged him to the temple. I for myself have better things to do.~
+@10010 = ~Breagar has died
 
-Ich habe zu lange gebraucht, und der Zwerg ist seinen Verletzungen erlegen.~
-@10011 = ~Breagars Unfall in der Donnerhammerschmiede
+I took too long, and the dwarf died of his injuries.~
+@10011 = ~Breagar's accident in the Thunderhammer Smithy
 
-Die Klerikerin Revianel hat sich auf den Weg in die Schmiede gemacht, um Breagar zu retten. Ich muss mich beeilen, ihr zu folgen.~
-@10012 = ~Breagars Leben ist gerettet
+The cleric Revianel has gone to the smithy to save Breagar. I should hurry to follow her.~
+@10012 = ~Breagar's life was saved
 
-Der Schmied hat sich auf die Reise gemacht. Ich hoffe, es geht alles gut für ihn aus.~
-@10013 = ~Breagars Leben ist gerettet
+The smith went on his journey. I hope things will turn out well for him.~
+@10013 = ~Breagar's life was saved 
 
-Der Zwerg hat sich mir aus Dankbarkeit angeschlossen. Er wird sich hoffentlich als guter Reisegefährte entpuppen.~
-@10014 = ~Ein Riese in den Wolkenspitzen?
+The dwarf joined us out of gratitude. Let's hope he will turn out to be a capable companion.~
+@10014 = ~A giant in the Cloud Peaks?
 
-Eine seltsame Zwergin, die sich selbst als "Botin Berronars" vorstellte, hat Breagar eine Aufgabe gestellt. In den Wolkenspitzen treibt sich ein Riese herum, der einen Tempel geschändet hat. Wir sollen die drei Artefakte, die er gestohlen hat, zurückergattern und den Riesen töten.~
-@10015 = ~Ein Riese in den Wolkenspitzen
+A strange dwarf, who called herself a messenger of Berronar, gave Breagar a task. A giant roaming the Cloud Peaks has defiled a temple. We should kill the giant and regain three artifacts that he has stolen.~
+@10015 = ~ A giant in the Cloud Peaks
 
-Breagar hat die Gruppe verlassen, um der Aufgabe der Zwergengötter zu folgen.~
-@10016 = ~Ein Riese in den Wolkenspitzen!
+Breagar has left the group, to complete the task the dwarven gods have given him by himself.~
+@10016 = ~A giant in the Cloud Peaks!
 
-In den Bergen trieb sich tatsächlich der Riese Yrrymyr herum! Der Kampf war einfacher als angenommen, denn der Riese war wohl durch die lange Reise geschwächt. Trotzdem ist der Lohn der Mühe nicht von schlechten Eltern: Breagars verlorener Arm wurde durch einen silbernen Golemarm ersetzt, und die heilige Axt Berronars ist ebenfalls seine Belohnung. Nebenbei führte der Riese nicht wenig Gold mit sich...~
-@10017 = ~Düstere Prophezeiungen
+There really was a giant called Yrrymyr in the Cloud Peaks! The fight was easier than expected, as the giant was tired after a long journey. Our reward wasn't bad at all: Breagar's was replaced with the arm of a silver golem, and he was given the sacred axe of Berronar as a reward. Besides, the giant had quite a few gold coins on him...~
+@10017 = ~Dark Prophecy
 
-Die seltsame Zwergin, die Breagar "Botin Berronars" genannt hat, hatte auch mir einige Sachen zu berichten. Offenbar hegen die Zwergengötter auch an mir ein besonderes Interesse. Breagar wurde bestimmt, mich auf meinem Weg weiter zu begleiten, und ich glaube, dass ein wackerer Kämpfer wie er recht nützlich sein kann. Es bleibt abzuwarten, was mit den Worten gemeint ist: Aus der Asche der toten Götter wird neues Leben entstehen...~
-@10018 = ~Taerom braucht Hilfe: Revianel ist verschwunden
+The strange dwarf, who Breagar called a messenger of Berronar, had a few things to tell me. It seems the dwarven gods are interested in my path. Breagar was chosen, to accompany me, and I think that a brave fighter like him can be of use. Time will tell what the prophecy was about: Out of the ash of the old gods, new life will arise...~
+@10018 = ~Taerom needs help: Revianel has disappeared
 
-Die Priesterin, die Breagar das Leben gerettet hat, ist auf einer Mission für den Tempel verschollen, und Taerom braucht die Hilfe von kräftigen Gesellen wie uns. Er scheint das Verschwinden der Klerikerin sehr persönlich zu nehmen...~
-@10019 = ~Revianel ist verschwunden - wir müssen mit Tobin reden
+The priestess who saved Breagar's life has disappeared on a mission for the temple, and Taerom needs our help. Seems like he took her disappearance personally...~
+@10019 = ~ Revianel has disappeared – we have to talk to Tobin
 
-Der Priester, der mit Revianel gemeinsam auf der Mission war, müsste sich am Vestibül des Tempels aufhalten.~
-@10020 = ~Revianel ist verschwunden
+The priest who was out on a mission with Revianel should be at the temple vestibule.~
+@10020 = ~ Revianel has disappeared
 
-Ich habe mich dagegen entschieden, die Priesterin zu suchen. Das Schicksal der Schwertküste ist wichtiger als das Verschwinden einer Frau.~
-@10021 = ~Das Böse auf dem Friedhof - Tobin zeigt uns den Weg
+I decided not to look for the priestess. The fate of the Sword Coast is more important than the life of one woman.~
+@10021 = ~The Evil under the graveyard - Tobin leads the way
 
-Der Priester wird uns als Wegweiser zur Verfügung stehen und uns auf den Friedhof und wieder zurück bringen, damit wir dort nach dem Rechten sehen können.~
-@10022 = ~Wir treffen Revianel am Ausgang des Friedhofes
+The priest will be our guide and lead us to the graveyard, so we can investigate there.~
+@10022 = ~We will meet Revianel at the entrance of the graveyard
 
-Die Priesterin möchte mit Tobin zusammen zurück reisen.~
-@10023 = ~Die Klerikerin Revianel ist gerettet
+The priestess wants to travel back together with Tobin.~
+@10023 = ~The cleric Revianel was saved
 
-Revianel und Taerom sind zum Tempel gegangen. Breagar ist froh, einen Teil seiner Schuld beglichen zu haben. Es fühlt sich gut an, etwas Gutes getan zu haben.~
-@10024 = ~Grothir im Feiernden Stör sucht Verträge
+Revianel and Taerom went back to the temple. Breagar is glad to have paid back his debts in parts. It feels great to have done something good.~
+@10024 = ~Grothir at the Splurging Sturgeon is looking for a contract
 
-Grothir, ein Zwerg aus Breagars Clan, hat voreilig einen Handelsvertrag mit dem Eisenthron abgeschlossen. Er wäre sehr dankbar, wenn sich jemand dort umsehen und ihm den Vertrag wieder zurückbringen könnte.~
-@10025 = ~Grothir hat den Vertrag zurück
+Grothir, a dwarf of Breagar's clan, signed an ill-conceived contract with the Iron Throne. He would be thankful, if we could go there and get the contract back.~
+@10025 = ~Grothir has the contract
 
-So schnell wird der Clan Bardormar keine Verträge mit dem Eisenthron abschließen.~
-@10026 = ~Berronars Axt wurde gestohlen
+Clan Bardormar won't sign any more contracts with the Iron Throne any time soon.~
+@10026 = ~Berronar's Axe was stolen
 
-Es scheint, als hätte unser Kerkermeister sich nicht nur an meinem Zeug vergriffen. Breagars geliebte silberne Axt, die der Zwergengöttin Berronar selbst geweiht ist, wurde entwendet. Wenn wir sie wiederfinden wollen, müssen wir uns schleunigst auf die Suche machen... nachdem wir dem Kerker entkommen sind.~
-@10027 = ~Wissen die Schattendiebe etwas über Berronars Axt?
+Seems like our captor didn't just take my equipment. Breagar's beloved silver axe, blessed by the dwarven goddess Berronar, was stolen. If we want it back, we should look for it as soon as possible... once we are out of this dungeon.~
+@10027 = ~Do the Shadow Thieves know something about Berronar's Axe?
 
-Ein verhüllter Zwerg ist an Breagar herangetreten und hat ihm den Hinweis gegeben, dass die Schattendiebe etwas über Berronars Axt wissen könnten. Wir sollten uns dort einmal umhören.~
-@10028 = ~Wissen die Schattendiebe etwas über Berronars Axt?
+A hooded dwarf approached Breagar and suggested the Shadow Thieves might know something about Berronar's Axe. We should ask around.~
+@10028 = ~Do the Shadow Thieves know something about Berronar's Axe?
 
-Die Hehlerin der Schattendiebe hat versprochen, sich für eine Zuwendung aus Gold umzuhören. Ich soll wiederkommen, wenn ich ihr ein vernünftiges Angebot machen kann.~
-@10029 = ~Wissen die Schattendiebe etwas über Berronars Axt?
+The fence of the Shadow Thieves promised she would ask around for a fee. I should return, once I have enough to make her a good offer.~
+@10029 = ~Do the Shadow Thieves know something about Berronar's Axe?
 
-Anstelle von Gold wäre die Hehlerin bereit, ein Amulett der Harfner als Bezahlung für ihre Informationen zu akzeptieren.~
-@10030 = ~Wissen die Schattendiebe etwas über Berronars Axt?
+Instead of gold, the fence might accept an amulet of the Harpers as payment for information.~
+@10030 = ~Do the Shadow Thieves know something about Berronar's Axe?
 
-Ich konnte Breagar nur mit Mühe davon abhalten, einen privaten Gildenkrieg mit den Schattendieben zu beginnen. Immerhin hat sich die Hehlerin bereit erklärt, ihre Kontakte zu befragen. Ein Bote soll uns Nachricht schicken, wenn sich etwas ergeben hat.~
-@10031 = ~Berronars Axt: Die Spur führt auf die Promenade
+I could barely hold back Breagar, not to start a private war with the Shadow Thieves. At the end the fence agreed to ask around. A messenger will find us, should something turn up.~
+@10031 = ~Berronar's Axe: A lead at the promenade
 
-Offenbar hat ein Gnom namens Arnie bei dem Diebstahl seine Finger im Spiel. Er soll sich irgendwo auf der Promenade herumtreiben.~
-@10032 = ~Berronars Axt: Der Turm des Anstinus
+Seems like a gnome called Arnie was involved in the theft. He is said to be somewhere at the promenade.~
+@10032 = ~Berronar's Axe: The tower of Anstinus
 
-Arnie hatte einen Brief dabei, der von Reggik unterzeichnet wurde und ihn zu dem "Turm des Anstinus" bestellte. Dort sollten wir der Lösung einen Schritt näher kommen, und wenn jemand weiß, wo dieser Turm liegt, dann Cromwell.~
-@10033 = ~Berronars Axt: Der Turm des Anstinus
+Arnie had a letter, signed by Reggik. He was asked to come to the Tower of Anstinus. We should find out more there, and if anyone knows where to find that tower, it's Cromwell.~
+@10033 = ~Berronar's Axe: The tower of Anstinus
 
-Wenn Breagar recht hat, dann finden wir in diesem Turm in den Trollbergen die Antworten, die wir suchen.~
-@10034 = ~Berronars Axt: Der Turm des Anstinus
+If Breagar is right, we should find that tower in the Troll Mountains.~
+@10034 = ~Berronar's Axe: The tower of Anstinus
 
-Wir konnten den Turm ohne Gefahren betreten. Die Lösung des Geheimnisses scheint zum Greifen nah...~
-@10035 = ~Anstinus' Turm: Der Trank des grünen Feuers
+We were able to enter the tower without problems. The axe must be close...~
+@10035 = ~Tower of Anstinus: The Potion of Green Fire
 
-Der große Anstinus, oder jedenfalls das, was von ihm übrig blieb, hat uns gebeten, den Trank des grünen Feuers herzustellen. Die Zutaten sollen angeblich alle irgendwo im Turm verstreut sein...~
-@10036 = ~Anstinus' Turm: Der Trank des grünen Feuers
+The great Anstinus, or at least, what was left of him, asked us to create the Potion of Green Fire. The ingredients should all be somewhere in the tower...~
+@10036 = ~Tower of Anstinus: The Potion of Green Fire
 
-Wir haben den Geist des großen Anstinus erlöst und dafür den Schlüsselstein für den Keller erhalten.~
-@10037 = ~Berronars Axt: Anstinus' Schlüsselstein
+We have released the tower of Anstinus and gained the keystone to the basement.~
+@10037 = ~Berronar's Axe: Keystone of Anstinus
 
-Wir haben den Schlüsselstein erbeuten können, den Reggik dem Geist des Anstinus zur Aufbewahrung gab. Er sollte uns den Weg in den Keller öffnen.~
-@10038 = ~Bork und Ellie
+We have gained the keystone, Reggik gave to the ghost of Anstinus for safe-keeping. It should open the way to the basement.~
+@10038 = ~Bork and Ellie
 
-Ein Halbork, der vor dem Turm des Anstinus herumlungerte, war auf der Suche nach einer Ellie... nun, jetzt sucht er sie nicht mehr.~
-@10039 = ~Bork und Ellie
+A half-orc, who lurked in front of the Tower of Anstinus, was looking for someone called Ellie... well, he's no longer looking for her.~
+@10039 = ~Bork and Ellie
 
-Ich habe zugestimmt, für den Halbork Bork nach seiner Ellie zu schauen, die sich irgendwo im Turm des Anstinus versteckt hat.~
-@10040 = ~Elasia die Waldläuferin
+I agreed to help the half-orc Bork in his search for Ellie. She should be somewhere in the Tower of Anstinus.~
+@10040 = ~Elasia the Ranger
 
-In Anstinus' Turm bin ich auf Elasia gestoßen, die mich angriff. Ich habe mich meiner Haut erwehrt.~
-@10041 = ~Bork und Ellie
+In the tower of Anstinus I encountered Elasia, who attacked me. I defended myself.~
+@10041 = ~Bork and Ellie
 
-Der Halbork Bork hat die Elfe Elasia in eine Art Ehe gezwungen. Elasia möchte sich gerne von ihm lösen, ohne Bork zu töten... wie kann ich ihr wohl helfen?~
-@10042 = ~Bork und Ellie
+The half-orc Bork has forced the elf Elasia into some kind of marriage. Elasia wants to be free of him, without killing Bork... How could I possibly help her?~
+@10042 = ~Bork and Ellie
 
-Ich habe Bork und Ellie zueinander gebracht - im Jenseits.~
-@10043 = ~Bork und Ellie
+I have brought Bork and Ellie together – in the afterlife.~
+@10043 = ~Bork and Ellie
 
-Ich habe Elasia an ihren Eid erinnert, als Waldläufer immer die Wahrheit zu sagen. Sie ist zu Bork zurückgekehrt um an seiner Seite zu leben.~
-@10044 = ~Bork und Ellie
+I have made Elasia remember her oath. As a ranger she is bound to always speak the truth. She has returned to Bork to live at his side.~
+@10044 = ~Bork and Ellie
 
-Ich habe Elasia unsichtbar gemacht und ihr geholfen, sich an Bork vorbei zu schleichen. Vielleicht sollte ich noch mit dem Halbork darüber reden.~
-@10045 = ~Bork und Ellie
+I have turned Elasia invisible and helped her sneak by Bork. Maybe I should talk to the half-orc now.~
+@10045 = ~Bork and Ellie
 
-Elasia hat sich in Anstinus' Turm versteckt und möchte an Bork vorbeigeschmuggelt werden. Ein Unsichtbarkeitstrank oder ein Zauber sollten sehr hilfreich sein.~
-@10046 = ~Bork und Ellie
+Elasia is hiding in tower of Anstinus and wants to sneak by Bork. A Potion of Invisibility or a spell would help her.~
+@10046 = ~Bork and Ellie
 
-Die Elfe Elasia kann jetzt ihren Weg forsetzen, nachdem Bork tot ist.~
-
+Now that Bork is dead, the elf Elasia can continue her journey.~
 @10047 = ~Breagar in Saradush
 
-Breagar meint, dass es in Saradush Zwerge gäbe, die der Unterstützung Berronars bedürfen. Wir sollten uns einmal umschauen.~
+Breagar mentioned, that there are dwarves in Saradush, who are in need of Berronar's support. We should look around.~
+@10048 = ~Breagar's text fragments
 
-@10048 = ~Breagars Textfragmente
+Breagar has found fragments of a book about Berronar's Axe and wants to restore it, but doesn't know how. Visiting a temple of Oghma, god of wisdom, might be advisable.~
 
-Breagar hat Textfragmente des Buches über Berronars Axt gefunden und möchte es restaurieren, weiß aber nicht, wie. Ein Besuch im Tempel Oghmas, Gott der Weisheit, würde sich hier wohl anbieten.~
+@10049 = ~Breagar's text fragments
 
-@10049 = ~Breagars Textfragmente
+We found the scribe Wallisek in the temple of Oghma, who could restore the book for Breagar.~
 
-Wir waren im Tempel von Oghma und haben den Mönch Wallisek gefunden, der Breagar das Buch restaurieren könnte.~
+@10050 = ~Breagar's text fragments
 
-@10050 = ~Breagars Textfragmente
+We found the scribe Wallisek in the temple of Oghma, who could restore the book for Breagar. Unfortunately we don't have all the fragments yet. We have to find them to restore the book.~
 
-Wir waren im Tempel von Oghma und haben den Mönch Wallisek gefunden, der Breagar das Buch restaurieren könnte. Allerdings haben wir noch nicht alle Fragmente beisammen. Diese müssten wir erstmal finden, bevor das Buch restauriert werden kann.~
+@10051 = ~Breagar's text fragments
 
-@10051 = ~Breagars Textfragmente
+The monk Wallisek estimates, that there are three fragments.~
 
-Der Mönch Wallisek schätzt, dass es drei Textfragmente gibt.~
+@10052 = ~Breagar's text fragments
 
-@10052 = ~Breagars Textfragmente
+The monk Wallisek assumes, that we might find the fragments with dwarves or people specializing in weapon crafting.~
 
-Der Mönch Wallisek vermutet, dass wir die Textfragmente bei Zwergen oder bei gebildeten Leuten, die sich mit der Herstellung von Waffen beschäftigen, finden sollten.~
+@10053 = ~Breagar's text fragments
 
-@10053 = ~Breagars Textfragmente
+The monk Wallisek is restoring the book about Berronar's Axe. We should come back in a few days, to see the results.~
 
-Der Mönch Wallisek arbeitet nun an der Restauration des Buches über Berronars Axt. Wir sollen in ein paar Tagen wieder zu ihm kommen, dann sollte es fertig sein.~
+@10054 = ~Breagar's text fragments
 
-@10054 = ~Breagars Textfragmente
+The Book about Berronar's Axe has been restored!~
 
-Das Buch über Berronars Axt ist fertig restauriert!~
+@10055 = ~The Tower of Anstinus is under siege
 
-@10055 = ~Die Belagerung in Anstinus Turm
+The silver dwarf appeared again and informed Breagar that the tower of Anstinus was in danger. Without hesitation, we agreed to investigate. The silver dwarf was pleased and immediately teleported us there. But what now? Should we secure the outside or take a look inside?~
 
-Die silberne Zwergin ist uns erneut erschienen und informierte Breagar darüber, dass Anstinus Turm in Gefahr sei. Ohne zu zögern stimmten wir ihm zu, dem auf den Grund zu gehen. Die Zwergin zeigte sich wohlwollend und teleportierte uns sogleich zum Ort des Geschehens. Nun bleibt die Frage, was zuerst? Das Gelände sichern oder uns ersteinmal drinnen umsehen?~
+/* Forres and Reggik, Duergar can stay */
+@10056 = ~The Tower of Anstinus is under siege
 
-/* Forres und Reggik, Duergar können bleiben */
-@10056 = ~Die Belagerung in Anstinus Turm
+We followed the sounds of battle and found Forres and Reggik fighting off spiders. After dealing with them, they told us that drow and other scum had broken through the corridors below the tower. Breagar let me decide, how to handle the situation. We persuaded Breagar to help them reclaim the tower.~
 
-Wir folgten dem Kampfeslärm und stießen dabei auf Forres und Reggik, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Breagar überließ es uns zu entscheiden, was zu tun sei. Wir rieten ihm gut zu und Breagar sagte ihnen Hilfe zu, die Brut aus dem Turm zu vertreiben.~
+/* Forres and Graschek, Duergar can stay */
+@10057 = ~The Tower of Anstinus is under siege
 
-/* Forres und Graschek, Duergar können bleiben */
-@10057 = ~Die Belagerung in Anstinus Turm
+We followed the sounds of battle and found Forres and Graschek fighting off spiders. After dealing with them, they told us that drow and other scum had broken through the corridors below the tower. Breagar let me decide, how to handle the situation. We persuaded Breagar to help them reclaim the tower.~
 
-Wir folgten dem Kampfeslärm und stießen dabei auf Forres und Graschek, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Breagar überließ es uns zu entscheiden, was zu tun sei. Wir rieten ihm gut zu und Breagar sagte ihnen Hilfe zu, die Brut aus dem Turm zu vertreiben.~
+/* Reggik and Graschek, Duergar can stay */
+@10058 = ~The Tower of Anstinus is under siege
 
-/* Reggik und Graschek, Duergar können bleiben */
-@10058 = ~Die Belagerung in Anstinus Turm
+We followed the sounds of battle and found Reggik and Graschek fighting off spiders. After dealing with them, they told us that drow and other scum had broken through the corridors below the tower. Breagar let me decide, how to handle the situation. We persuaded Breagar to help them reclaim the tower.~
 
-Wir folgten dem Kampfeslärm und stießen dabei auf Reggik und Graschek, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Breagar überließ es uns zu entscheiden, was zu tun sei. Wir rieten ihm gut zu und Breagar sagte ihnen Hilfe zu, die Brut aus dem Turm zu vertreiben.~
+/* Graschek and Hargek, Duergar can stay */
+@10059 = ~The Tower of Anstinus is under siege
 
-/* Graschek und Hargek, Duergar können bleiben */
-@10059 = ~Die Belagerung in Anstinus Turm
+We followed the sounds of battle and found Graschek and Hargek fighting off spiders. After dealing with them, they told us that drow and other scum had broken through the corridors below the tower. Breagar let me decide, how to handle the situation. We persuaded Breagar to help them reclaim the tower.~
 
-Wir folgten dem Kampfeslärm und stießen dabei auf Graschek und Hargek, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Breagar überließ es uns zu entscheiden, was zu tun sei. Wir rieten ihm gut zu und Breagar sagte ihnen Hilfe zu, die Brut aus dem Turm zu vertreiben.~
+/* Forres and Reggik, Duergar have to go */
+@10060 = ~The Tower of Anstinus is under siege
 
-/* Forres und Reggik, Duergar müssen gehen */
-@10060 = ~Die Belagerung in Anstinus Turm
+We followed the sounds of battle and found Forres and Reggik fighting off spiders. After dealing with them, they told us that drow and other scum had broken through the corridors below the tower. We agreed to take care of the drow, but the duergar will have to leave the tower!~
 
-Wir folgten dem Kampfeslärm und stießen dabei auf Forres und Reggik, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Wir werden uns um die Drow kümmern. Die Duergar allerdings müssen den Turm verlassen!~
+/* Forres and Graschek, Duergar have to go */
+@10061 = ~The Tower of Anstinus is under siege
 
-/* Forres und Graschek, Duergar müssen gehen */
-@10061 = ~Die Belagerung in Anstinus Turm
+We followed the sounds of battle and found Forres and Graschek fighting off spiders. After dealing with them, they told us that drow and other scum had broken through the corridors below the tower. We agreed to take care of the drow, but the duergar will have to leave the tower!~
 
-Wir folgten dem Kampfeslärm und stießen dabei auf Forres und Graschek, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Wir werden uns um die Drow kümmern. Die Duergar allerdings müssen den Turm verlassen!~
+/* Reggik and Graschek, Duergar have to go */
+@10062 = ~The Tower of Anstinus is under siege
 
-/* Reggik und Graschek, Duergar müssen gehen */
-@10062 = ~Die Belagerung in Anstinus Turm
+We followed the sounds of battle and found Reggik and Graschek fighting off spiders. After dealing with them, they told us that drow and other scum had broken through the corridors below the tower. We agreed to take care of the drow, but the duergar will have to leave the tower!~
 
-Wir folgten dem Kampfeslärm und stießen dabei auf Reggik und Graschek, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Wir werden uns um die Drow kümmern. Die Duergar allerdings müssen den Turm verlassen!~
+/* Graschek and Hargek, Duergar have to go */
+@10063 = ~The Tower of Anstinus is under siege
 
-/* Graschek und Hargek, Duergar müssen gehen */
-@10063 = ~Die Belagerung in Anstinus Turm
+We followed the sounds of battle and found Graschek and Hargek fighting off spiders. After dealing with them, they told us that drow and other scum had broken through the corridors below the tower. We agreed to take care of the drow, but the duergar will have to leave the tower!~
 
-Wir folgten dem Kampfeslärm und stießen dabei auf Graschek und Hargek, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Wir werden uns um die Drow kümmern. Die Duergar allerdings müssen den Turm verlassen!~
+@10064 = ~The Tower of Anstinus is under siege
 
-@10064 = ~Die Belagerung in Anstinus Turm
+Breagar was satisfied that we cleared out the drow from the upper levels of the tower. Now we have to take care of the basement.~
 
-Breagar zeigte sich zufrieden darüber, dass wir die Drow aus allen Stockwerken vertrieben haben. Nun ist der Keller an der Reihe.~
+@10065 = ~The Tower of Anstinus is under siege
 
-@10065 = ~Die Belagerung in Anstinus Turm
+Breagar was satisfied that we cleared out the drow from the basement of the tower. Now we have to take care of the upper levels.~
 
-Breagar zeigte sich zufrieden darüber, dass wir die Drow aus dem Keller vertrieben haben. Nun ist der restliche Turm an der Reihe.~
+/* Forres and Reggik */
+@10066 = ~The Tower of Anstinus is under siege
 
-/* Forres und Reggik */
-@10066 = ~Die Belagerung in Anstinus Turm
+We faced drow and beholders in the basement and the duergar dwelling, but we were able to defeat them. With Berronar's divine support, Breagar sealed the underground entrance of the tower, to protect the duergar from future drow attacks. Now all that is left to do, is to inform Reggik and Forres.~
 
-Drow und Betrachter stellten sich uns im Keller und den Wohnhöhlen der Duergar in den Weg, doch wir konnten sie erledigen. Als letztes bat Breagar Berronar um Hilfe an und es gelang ihm, ein Siegel um die unterirdischen Eingänge des Turms zu legen, der die Duergar vor Übergriffen der Drow schützen wird. Nun bleibt nur noch, Reggik und Forres darüber in Kenntnis zu setzen.~
+/* Forres and Graschek */
+@10067 = ~The Tower of Anstinus is under siege
 
-/* Forres und Graschek */
-@10067 = ~Die Belagerung in Anstinus Turm
+We faced drow and beholders in the basement and the duergar dwelling, but we were able to defeat them. With Berronar's divine support, Breagar sealed the underground entrance of the tower, to protect the duergar from future drow attacks. Now all that is left to do, is to inform Graschek and Forres.~
 
-Drow und Betrachter stellten sich uns im Keller und den Wohnhöhlen der Duergar in den Weg, doch wir konnten sie erledigen. Als letztes bat Breagar Berronar um Hilfe an und es gelang ihm, ein Siegel um die unterirdischen Eingänge des Turms zu legen, der die Duergar vor Übergriffen der Drow schützen wird. Nun bleibt nur noch, Forres und Graschek darüber in Kenntnis zu setzen.~
+/* Reggik and Graschek */
+@10068 = ~The Tower of Anstinus is under siege
 
-/* Reggik und Graschek */
-@10068 = ~Die Belagerung in Anstinus Turm
+We faced drow and beholders in the basement and the duergar dwelling, but we were able to defeat them. With Berronar's divine support, Breagar sealed the underground entrance of the tower, to protect the duergar from future drow attacks. Now all that is left to do, is to inform Reggik and Graschek.~
 
-Drow und Betrachter stellten sich uns im Keller und den Wohnhöhlen der Duergar in den Weg, doch wir konnten sie erledigen. Als letztes bat Breagar Berronar um Hilfe an und es gelang ihm, ein Siegel um die unterirdischen Eingänge des Turms zu legen, der die Duergar vor Übergriffen der Drow schützen wird. Nun bleibt nur noch, Reggik und Graschek darüber in Kenntnis zu setzen.~
+/* Graschek and Hargek */
+@10069 = ~The Tower of Anstinus is under siege
 
-/* Graschek und Hargek */
-@10069 = ~Die Belagerung in Anstinus Turm
+We faced drow and beholders in the basement and the duergar dwelling, but we were able to defeat them. With Berronar's divine support, Breagar sealed the underground entrance of the tower, to protect the duergar from future drow attacks. Now all that is left to do, is to inform Graschek and Hargek.~
 
-Drow und Betrachter stellten sich uns im Keller und den Wohnhöhlen der Duergar in den Weg, doch wir konnten sie erledigen. Als letztes bat Breagar Berronar um Hilfe an und es gelang ihm, ein Siegel um die unterirdischen Eingänge des Turms zu legen, der die Duergar vor Übergriffen der Drow schützen wird. Nun bleibt nur noch, Graschek und Hargek darüber in Kenntnis zu setzen.~
+/* Reggik alive*/
+@10070 = ~The Tower of Anstinus is under siege
 
-/* Reggik am Leben */
-@10070 = ~Die Belagerung in Anstinus Turm
+Reggik and the duergar were happy and thankful for what Breagar and the party did for them. Now we have to return to the Pocket Plane to see the silver dwarf.~
 
-Reggik und die Duergar waren glücklich und dankbar für das, was Breagar und die Gruppe geleistet hatten. Nun heißt es, ins Einsprengsel zurück zu kehren, um das Urteil der silbernen Zwergin abzuwarten.~
+/* Reggik not alive */
+@10071 = ~The Tower of Anstinus is under siege
 
-/* Reggik nicht mehr am Leben */
-@10071 = ~Die Belagerung in Anstinus Turm
+The duergar were happy and thankful for what Breagar and the party did for them. Now we have to return to the Pocket Plane to see the silver dwarf.~
 
-Die Duergar waren glücklich und dankbar für das, was Breagar und die Gruppe geleistet hatten. Nun heißt es, ins Einsprengsel zurück zu kehren, um das Urteil der silbernen Zwergin abzuwarten.~
+@10072 = ~The Tower of Anstinus is under siege
 
-@10072 = ~Die Belagerung in Anstinus Turm
-
-Die silberne Zwergin war hoch erfreut über unsere Leistung und zum Dank segntete sie Berronars Axt und verbesserte sie noch einmal. Bevor sie verschwand sagte sie zu Breagar, dass noch eine letzte Prüfung auf ihn als Träger von Berronars Axt warten würde.~
+The silver dwarf was pleased with our actions. In thanks she gave Berronar's Axe an additional blessing, enhancing it yet again. Before she left, she told Breagar, that the wielder of Berronar's Axe would face one more test in the future.~
 //ungelöste Aufgaben:	AddJournalEntry(@10037,QUEST)
 //erledigte Aufgaben:	AddJournalEntry(@10036,QUEST_DONE)
 //Tagebucheinträge:	AddJournalEntry(%Text%,INFO)
@@ -1020,36 +1039,36 @@ Die silberne Zwergin war hoch erfreut über unsere Leistung und zum Dank segntete
 //BG:EE Compatibility
 
 //Strings from BG2
-@50001 = ~Ihr werdet leiden... Oh ja, das werdet Ihr.~ [HVILLM04] //#61778
+@50001 = ~You will suffer... Oh yes, you will.~ [HVILLM04] //#61778
 @50002 = ~~ [HVILLM06] //#61780
 @50003 = ~~ [HVILLM07] //#61781
 @50004 = ~~ [MTOWN05] //#12566
-@50005 = ~Mögen die Götter Euch gnädig gesonnen sein.~ [GPRIM03] //#61726
+@50005 = ~May the gods have mercy on you.~ [GPRIM03] //#61726
 @50006 = ~~ [GPRIM06] //#61730
 @50007 = ~~ [GPRIM07] //#61731
-@50008 = ~Leichnam~ //#8457
-@50009 = ~Hmmm, ja?~ [GNOMEM03] //#61703
-@50010 = ~Zurück, oder Ihr könnt Euch von Euren Kniescheiben verabschieden!~ [GNOMEM05] //#61705
+@50008 = ~Lich~ //#8457
+@50009 = ~Hmmm, yes?~ [GNOMEM03] //#61703
+@50010 = ~Stay back, or say good bye to your kneecaps!~ [GNOMEM05] //#61705
 @50011 = ~~ [GNOMEM06] //#61706
 @50012 = ~~ [GNOMEM07] //#61707
-@50013 = ~Aller Ruhm gebührt der Dunklen Mutter!~ [DRPRIS04] //#53379
-@50014 = ~Lolth sei gepriesen! Wir verdanken ihr jeden Sieg!~ [DRPRIS01] //#53358
+@50013 = ~All glory belongs to the dark mother!~ [DRPRIS04] //#53379
+@50014 = ~Lolth be praised! We owe every victory to her!~ [DRPRIS01] //#53358
 @50015 = ~~ [DRPRIS06] //#53387
 @50016 = ~~ [DRPRIS05] //#53383
-@50017 = ~Betrachter~ //#2662
+@50017 = ~Beholder~ //#2662
 @50018 = ~Drow~ //#50900
-@50019 = ~Schatten~
+@50019 = ~Shadow~
 
 //Journal Titles
-@60001 = ~Finde das Buch des Zwergen~
-@60002 = ~Breagar ist auf der Suche nach Eisen~
-@60003 = ~Breagars Unfall in der Donnerhammerschmiede~
-@60004 = ~Ein Riese in den Wolkenspitzen~
-@60005 = ~Düstere Prophezeiungen~
-@60006 = ~Revianel ist verschwunden~
-@60007 = ~Grothir sucht Verträge~
-@60008 = ~Berronars Axt wurde gestohlen~
-@60009 = ~Bork und Ellie~
+@60001 = ~Find the book of the dwarf~
+@60002 = ~Breagar is looking for iron~
+@60003 = ~Breagar's accident in the Thunderhammer Smithy~
+@60004 = ~A giant in the Cloud Peaks~
+@60005 = ~Dark Prophecy~
+@60006 = ~Revianel has disappeared~
+@60007 = ~Grothir wants the contracts~
+@60008 = ~Berronar's Axe was stolen~
+@60009 = ~Bork and Ellie~
 @60010 = ~Breagar in Saradush~
-@60011 = ~Breagars Textfragmente~
-@60012 = ~Die Belagerung in Anstinus Turm~
+@60011 = ~Breagar's text fragments~
+@60012 = ~The Tower of Anstinus is under siege~

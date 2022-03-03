@@ -1,34 +1,15 @@
 /* xxbdcut64x.baf
-Let Breagar join after PC escaped from prison (if there is still a free slot in the group) */
+Breagar will not join after PC escaped from prison (simplifies scripting) */
 IF
-	Global("bd_party_check","bd6200",5)
 	Global("ACBre_SoDEndMove","bd6200",1) 
 	InMyArea("ACBre")
 	!Dead("ACBre")  
 	!InParty("ACBre")  
-	NumInPartyLT(6)
 THEN
 	RESPONSE #100
 		CutSceneId(Player1)
 		SetGlobal("ACBre_SoDEndMove","bd6200",2)
-		ActionOverride("ACBre",JoinParty())
-		SmallWait(10)
-		Continue()
-END
-
-/* If there is no free slot, Breagar will disappear. We'll just pretend he is present in the last abduction scene. */
-IF
-	Global("bd_party_check","bd6200",5)
-	Global("ACBre_SoDEndMove","bd6200",1) 
-	InMyArea("ACBre")
-	!Dead("ACBre")  
-	!InParty("ACBre")  
-	NumInParty(6)
-THEN
-	RESPONSE #100
-		CutSceneId(Player1)
-		SetGlobal("ACBre_SoDEndMove","bd6200",2)
-		ActionOverride("ACBre",DestroySelf())
+		ActionOverride("ACBre",LeaveAreaLUA("bd6100","",[643.465],SE)) 
 		SmallWait(10)
 		Continue()
 END

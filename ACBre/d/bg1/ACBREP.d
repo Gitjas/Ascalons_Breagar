@@ -23,7 +23,12 @@ END
 
 IF ~%BGT_VAR% Global("ACSTORY","GLOBAL",1)Global("ACBREINPARTY","GLOBAL",2)PartyHasItem("ACIRON")~ THEN BEGIN KICKOUT.2
 SAY @6 = @7 = @8
-IF ~~ THEN DO ~EraseJournalEntry(@10005)AddJournalEntry(@10006,QUEST)SetGlobal("ACAR6700","LOCALS",2)SetGlobal("ACSTORY","GLOBAL",2)SetGlobal("ACBREINPARTY","GLOBAL",3)SetGlobal("ACBREAGARWANTSHISIRON","LOCALS",4)TakePartyItem("ACIRON")DestroyItem("ACIRON")TakePartyItem("ACBOOK")DestroyItem("ACBOOK")AddexperienceParty(300)MoveGlobal("%Beregost_ThunderhammerSmithy%","ACBRESMI",[851.508])EscapeAreaMove("AC9999",333,333,0)~ EXIT
+IF ~~ THEN DO ~SetInterrupt(FALSE) EraseJournalEntry(@10005)AddJournalEntry(@10006,QUEST)SetGlobal("ACAR6700","LOCALS",2)SetGlobal("ACSTORY","GLOBAL",2)SetGlobal("ACBREINPARTY","GLOBAL",3)SetGlobal("ACBREAGARWANTSHISIRON","LOCALS",4)TakePartyItem("ACIRON")
+SmallWait(1)
+DestroyItem("ACIRON") SmallWait(1)
+TakePartyItem("ACBOOK") SmallWait(1)
+DestroyItem("ACBOOK")AddexperienceParty(300)MoveGlobal("%Beregost_ThunderhammerSmithy%","ACBRESMI",[851.508])EscapeAreaMove("AC9999",333,333,0)
+SetInterrupt(TRUE)~ EXIT
 END
 
 IF ~%BGT_VAR% Global("ACSTORY","GLOBAL",1)Global("ACBREINPARTY","GLOBAL",2)!PartyHasItem("ACIRON")~ THEN BEGIN KICKOUT.3

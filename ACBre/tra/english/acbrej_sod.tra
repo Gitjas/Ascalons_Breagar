@@ -1,0 +1,33 @@
+@0    = ~Hrmph. To risk dwarven lives for this abomination... That'll be the day! We cannot agree to this, <CHARNAME>!~
+@1    = ~<CHARNAME>, I sincerely hope you only feigned interest in doing what the lich told you, so that we could make a strategic withdrawal, because I will not raise my weapon against brother Deepvein and his men!~
+@2    = ~Buzzurk! <CHARNAME>, I cannot allow this! Leave these dwarves alone!~
+@3    = ~Dwarves are strong and quite stubborn. If Thrix wins and you cannot solve his riddle, he will bind the dwarf with the silver hand to his will.~
+@4    = ~You want Breagar? Fine, take him! You're going to have a tough time with him though!~
+@5    = ~Breagar has entrusted me with his life. I cannot gamble with his soul. Pick another from my group as your price or step aside and let me pass.~
+@6    = ~He may have his flaws, but I will not risk his soul. If I cannot solve your riddle, you will take my soul. Agreed?~
+@7    = ~I will make you eat your own body parts, if you don't let me enter the tower, you damned creature. I'm tired of your games.~
+@8    = ~Buzzurk. <CHARNAME>, we will talk about this later. And you! Don't think that I will come willingly, you hellish creature. My axe is waiting for you! By Moradin's hammer!~
+@9    = ~Oh no, this one is too unruly. It is no fun, if there is no chance of success.~
+@10   = ~Hrmph! Don't play games with this creature, <CHARNAME>! How is that supposed to work? Whoever blinks last will be put up as wager?!~
+@11   = ~Tell me, <CHARNAME>, was that supposed to be funny or something? To promise my soul to this hellish thing, are you mad?!~
+@12   = ~Calm down. I knew you could defend yourself.~
+@13   = ~I am sorry, Breagar. I shouldn't have done that.~
+@14   = ~Now you listen to me. Nobody, not even you, is indispensable. We have to do whatever it takes to achieve our goals.~
+@15   = ~Yes, and what's wrong with that? Was I supposed to gamble with my own soul?~
+@16   = ~Oh this is how it is?! Funny though, how it's always other people who have to do whatever it takes to achieve your goals, huh? How about that idea? Why didn't you offer your own dispensable soul, huh?!~
+@17   = ~Count yourself lucky that everything went well, <CHARNAME>. Else I would spit in front of your feet here and now!~
+@18   = ~What? That's not what this is about! Do you even hear what I am trying to tell you?~
+@19   = ~Oh, you don't say? Now you're so sorry, yet you didn't even hesitate when those words crossed your lips!~
+@20   = ~Yes, you proved that quite impressively. Hrmph.~
+@21   = ~And instead our companion must face this hell beast now. Oh what a fine champion for our goals you are! (Breagar spits on the ground)~
+@22   = ~Fine! Because things turned out well, I'll let it slide for now. But I will never forget, how recklessly you gambled with my soul!~
+@23   = ~Tell me, <CHARNAME>, was that supposed to be funny or something? To promise the soul of your companion to this hellish thing, are you mad?!~
+@24   = ~I am sorry, Breagar. I shouldn't have done that.~
+@25   = ~Now listen to me. Nobody is indispensable. We have to do whatever it takes to achieve our goals.~
+@26   = ~Sigh, you too? Can we finally drop this subject please?~
+@27   = ~Don't mock me, boy! Do you understand how serious this is or are you turning into a hellish creature yourself down here?~
+@28   = ~Fine! Because things turned out well, I will let it slide for now. But I will never forget, how recklessly you gambled with someone else's soul!~
+
+/* new for v10.0.0 */
+@50   = ~Buzzurk, <CHARNAME>, this is not how we do things. You want them dead, open the cages and give them weapons.~
+@51   = ~What got into you, <CHARNAME>? We don't shy away from a good fight that easily, do we?~

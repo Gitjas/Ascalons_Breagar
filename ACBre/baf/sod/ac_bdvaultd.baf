@@ -1,0 +1,12 @@
+/* ac_bdvaultd.baf */
+/* Comment on closed vault door (to portal) in Dragonspear Castle Interior */
+IF
+	Global("ACBre_bd_MDD893a_ot","bd4300",0)  
+	GlobalLT("bd_plot","global",400)
+	CombatCounter(0)
+	Range("ACBre",25)  
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_bd_MDD893a_ot","bd4300",1)  
+		DisplayStringHead("ACBre",@5041)  
+END

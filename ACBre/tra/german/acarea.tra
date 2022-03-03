@@ -1,6 +1,6 @@
 @0    = ~Hrmpf. Wir sind zu weit unten, als dass uns hier noch etwas Geheures warten würde. Nur das schlimmste Gesocks treibt sich in so tiefen Höhlen herum.~
 @1    = ~Buzzurk! Dieser verdammte Hund! Wir müssen hinterher, <CHARNAME>!~
-@2    = ~Bei Clangedins Axt, ich werde ihm den Stahl in den Wanst jagen!~
+@2    = ~Bei Clangeddins Axt, ich werde ihm den Stahl in den Wanst jagen!~
 @3    = ~Untergegangen sind wir! Mit Mann und Maus! Um unser Leben schwimmen mussten wir! Und anstelle irgendwo zu landen, wo wir in Sicherheit wären, bringt dieser närrische <PRO_RACE> uns auf eine Insel voller gottverdammter Werwölfe!~
 @4    = ~Und als ob *das* noch nicht genug ist werden wir selber noch mit der verdammten Lycantropie angesteckt!~
 @5    = ~Ja, *das* kommt dabei heraus, wenn man auf Schiffe geht! Pah!~
@@ -66,7 +66,7 @@
 @65   = ~Das Leben formt dich schneller als das heißeste Feuer, so sagt man wohl.~
 @66   = ~Da sind wir nun, am Ende unserer Reise.~ [acbre_75]
 @67   = ~Ganz egal, wie es ausgeht. Ich bin froh und stolz, hier bei Euch sein zu können.~ [acbre_76]
-@68   = ~Bei Clangedins Axt! Das war ein Kampf, der den Schlachten der alten Tage in nichts nachsteht!~ [acbre_77]
+@68   = ~Bei Clangeddins Axt! Das war ein Kampf, der den Schlachten der alten Tage in nichts nachsteht!~ [acbre_77]
 @69   = ~Ihr habt Euch wacker geschlagen <CHARNAME> und den Sieg verdient.~
 @70   = ~Ihr habt Euch wacker geschlagen <CHARNAME> und den Sieg verdient. Unsere Reise soll hier ihr Ende nehmen, mein Eid ist erfüllt. Ich wünsche Euch noch alles Gute im Leben!~
 @71   = ~Nun, dann wären wir in der großen Stadt. Hoffen wir, dass uns hier endlich ein paar Antworten erwarten.~
@@ -75,7 +75,7 @@
 @74   = ~Das klingt fast so als würdet Ihr daran zweifeln.~
 @75   = ~Ich schätze es gibt nur einen Weg um das herauszufinden.~
 @76   = ~Alle Spuren deuten hierhin.~
-@77   = ~Ich weiß nicht wo wir sonst hin gehen sollten.~
+@77   = ~Ich weiß nicht wo wir sonst hingehen sollten.~
 @78   = ~Bis jetzt hat uns jeder Hinweis nur noch tiefer in dieses klebrige Netz gesponnen. Wollen wir hoffen, dass wir endlich zum Kern vorstoßen, damit wir einen Platz haben wo es sich lohnt hinein zu schlagen. Buzzurk!~
 @79   = ~Recht habt Ihr. Also vorwärts.~
 @80   = ~Und bisher hat jede Spur nur zu weiteren Verschwörungen geführt. Wollen wir hoffen, dass wir endlich zum Kern vorstoßen, damit wir einen Platz haben wo es sich lohnt hinein zu schlagen. Buzzurk!~
@@ -147,7 +147,7 @@
 @146  = ~Und wen habt Ihr mir mitgebracht? Ach, ich seh schon, irgendein <PRO_RACE> kommt da in meine Schmiede marschiert. Besuch verirrt sich nur selten hierher, bei der ganzen Hitze und so... was kann ich für Euch tun, <PRO_GIRLBOY>?~
 @147  = ~Wer seid Ihr?~
 @148  = ~Was habt Ihr hier zu verkaufen?~
-@149  = ~Nun, Ihr könntet zum Beispiel mal damit aufhören, mich dauernd "<GIRLBOY>" zu nennen.~
+@149  = ~Nun, Ihr könntet zum Beispiel mal damit aufhören, mich dauernd "<PRO_GIRLBOY>" zu nennen.~
 @150  = ~Nein danke. Bin schon wieder weg.~
 @151  = ~Ich werde nie verstehen wie Ihr Menschen Euch mit einer solchen Begeisterung im eigenen Dreck suhlen könnt.~
 @152  = ~Ich glaube nicht, dass irgendjemand freiwillig unter diesen Umständen lebt, mein Freund.~
@@ -182,7 +182,7 @@
 @181  = ~Schnaubt nur so verächtlich wie Ihr könnt, Drow. Das ändert gar nichts.~
 @182  = ~Idiot! Wollt Ihr es noch lauter herausschreien? Sehe ich so erfroren aus, als ob nur ein Scheiterhaufen mich aufwärmen könnte?~
 @183  = ~Seid Euch nur gewiss dass ich allein wegen <CHARNAME> noch nicht selber die Fackel zur Hand genommen habe, dunkle Metze.~
-@184  = ~Scheint so als hätten wir den Kampfplatz gefunden, <CHARNAME>. Bei Clangedins Axt, das gefällt mir nicht!~
+@184  = ~Scheint so als hätten wir den Kampfplatz gefunden, <CHARNAME>. Bei Clangeddins Axt, das gefällt mir nicht!~
 @185  = ~Egal wie groß die Gefahr sein mag, wir müssen vorwärts!~
 @186  = ~Keinen Schritt wollte ich zurückweichen, Keldorn. Aber es liegt etwas in der Luft. Ein Geruch der etwas Böses verheißt.~
 @187  = ~Dann stehen wir Seite an Seite gegen das Böse, ganz egal, was es auch sein mag.~
@@ -203,7 +203,7 @@
 @202  = ~Ich... ich sollte Euch wirklich erschlagen, <CHARNAME>.~
 @203  = ~Ich sollte Euch ganz einfach töten. Einfach dafür, dass Ihr ein närrischer <PRO_RACE> seid, der vielleicht *endlich* begriffen hat, was ich ihm nun schon so lange über Schiffe und Boote predige.~
 @204  = ~Allerdings... allerdings muss das warten, denn ich bin gerade über alle Maßen entsetzt.~
-@205  = ~Minsk und Boo können Euch nachfühlen, Breagar. Aber seid versichert, dass Minsk Kraft keinen Deut nachgelassen hat, wenn es um Stiefeltritte geht!~
+@205  = ~Minsk und Boo können Euch nachfühlen, Breagar. Aber seid versichert, dass Minsks Kraft keinen Deut nachgelassen hat, wenn es um Stiefeltritte geht!~
 @206  = ~Ihr habt doch nun schon genug mitgemacht, dass Euch das bisschen hier nicht aus den Stiefeln schlagen wird, oder? Kommt schon...~
 @207  = ~Reißt Euch gefälligst zusammen, Breagar! Keinem ist gedient, wenn Ihr jetzt zusammenklappt!~
 @208  = ~Buzzurk. Bei verdammten Haimenschen bin ich gelandet. Unter der Führung eines Geisteskranken, der sich in eine Mordbestie verwandelt sobald er die Kontrolle verliert.~ ~Buzzurk. Bei verdammten Haimenschen bin ich gelandet. Unter der Führung einer Geisteskranken, die sich in eine Mordbestie verwandelt sobald sie die Kontrolle verliert.~
@@ -213,7 +213,7 @@
 @212  = ~Nun seht Ihr, Breagar. Man kann auch etwas kunstvolles errichten ohne die Natur dafür zu zerstören.~
 @213  = ~Diese Stadt ist ein verdammtes Wunder, <CHARNAME>. Der Lumpenhund Irenicus *darf* sie nicht zerstören!~
 @214  = ~Kein guter Weg um zu Reisen, <CHARNAME>. Solche Engpässe sind gute Plätze für Räuber.~
-@215  = ~Ich glaube, jeder hier ist bereist genug um das alleine fest zu stellen, Breagar.~
+@215  = ~Ich glaube, jeder hier ist bereist genug um das alleine festzustellen, Breagar.~
 @216  = ~Pah. Und ich weise einen närrischen <PRO_RACE> lieber einmal zu viel als einmal zu wenig darauf hin.~
 @217  = ~So, das ist also die Feuerwein Brücke.~
 @218  = ~Und nun werdet *Ihr* uns sicherlich davon erzählen, dass Zwergenarbeit nie im Leben so sehr verfallen wäre, nicht wahr?~

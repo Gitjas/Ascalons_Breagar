@@ -1,0 +1,17 @@
+/* ac_bd1000_commenting.baf: 
+Reaction to Caelar */
+
+IF
+	OR(2)
+		Global("bd_plot","global",170) 
+		Global("bd_plot","global",175) 
+	Global("ACBre_bd_mdd016b","bd1000",0)
+	!GlobalTimerNotExpired("bd_mdd016b_timer","bd1000") //timer to space the NPC comments
+	IsValidForPartyDialog("ACBre")  
+	TriggerOverride("ACBre",Detect(Player1))
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_bd_mdd016b","bd1000",1)
+		SetGlobalTimer("bd_mdd016b_timer","bd1000",ONE_ROUND)
+		DisplayStringHead("ACBre",@5033)  
+END

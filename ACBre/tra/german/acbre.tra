@@ -58,7 +58,7 @@
 @57   = ~Meine Gesellschaft könnt Ihr haben, aber trinken müsst Ihr alleine.~
 @58   = ~Tut mir Leid, aber ich kann nicht. Mein Ziehvater verlangt nach mir.~
 @59   = ~Natürlich auf meine Rechnung. Ihr habt es Euch verdient.~
-@60   = ~Auf meine... Ha! Hört Euch dieses Spitzohr an! Fragt, ob er auf die Zeche eines Zwergen bechern darf. Nun denn, Meister <RACE>, ich hoffe Ihr vertragt einen guten Humpen!~ ~Auf meine... Ha! Hört Euch dieses Spitzohr an! Fragt, ob sie auf die Zeche eines Zwergen bechern darf. Nun denn, Frau <RACE>e, ich hoffe Ihr vertragt einen guten Humpen!~
+@60   = ~Auf meine... Ha! Hört Euch dieses Spitzohr an! Fragt, ob er auf die Zeche eines Zwergen bechern darf. Nun denn, Meister <RACE>, ich hoffe Ihr vertragt einen guten Humpen!~ ~Auf meine... Ha! Hört Euch dieses Spitzohr an! Fragt, ob sie auf die Zeche eines Zwergen bechern darf. Nun denn, Frau <RACE>, ich hoffe Ihr vertragt einen guten Humpen!~
 @61   = ~Hrmpf. Die Jahre unter den Menschen sind Euch wohl nicht bekommen, junger Zwerg.~
 @62   = ~Na, sei's drum. Falls Ihr jemals nach Beregost kommt, dann sucht mich in der Donnerhammerschmiede. Dann werde ich Euch zeigen, was ein echter Grimdek so vertragen kann.~
 @63   = ~Hrmpf. Ich vergesse immer, dass ein <RACE> nichts Gutes gewohnt ist.~
@@ -108,7 +108,7 @@
 @107  = ~He, Wirt! Mach mal zwei fertig!~
 @108  = ~Einen für Euch, Meister Breagar. Aber glaubt Ihr nicht, dass <GABBER> mit einer Milch besser bedient wäre?~
 @109  = ~Pah! Wenn Breagar vom Clan Bardormar die Getränke zahlt, dann bestimmt Breagar vom Clan Bardormar, was auf den Tisch kommt! Ein Bier für den Bengel, aber hurtig!~ ~Pah! Wenn Breagar vom Clan Bardormar die Getränke zahlt, dann bestimmt Breagar vom Clan Bardormar, was auf den Tisch kommt! Ein Bier für die Göre, aber hurtig!~
-@110  = ~An mir soll's nicht liegen. Aber wenn <HESHE> gleich unterm Tisch liegt, sorgt Ihr dafür, dass <HESHE> bereit steht, wenn Gorion aufbrechen will!~
+@110  = ~An mir soll's nicht liegen. Aber wenn <PRO_HESHE> gleich unterm Tisch liegt, sorgt Ihr dafür, dass <PRO_HESHE> bereit steht, wenn Gorion aufbrechen will!~
 @111  = ~Also dann, Prost!~
 @112  = ~Prost, und danke für das Bier. Aber ich muss mich auf den Weg machen, mein Ziehvater hat nach mir verlangt.~
 @113  = ~Wie wäre es, wenn Ihr erstmal *eine* Aufgabe erledigt, bevor Ihr Euch gleich noch eine aufhalst?~

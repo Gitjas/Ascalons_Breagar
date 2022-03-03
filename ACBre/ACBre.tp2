@@ -7,14 +7,7 @@ Known Issues:
 
 
 Note:
--SoD-content is not yet approved by Ascalon
-
-
-------
-
-Note to English translation:
-
--next file in need of proof-reading in the folder "english" in alphabetical order: acaud001.tra
+-SoD-content is from jastey
 
 
 */
@@ -27,7 +20,7 @@ Note to English translation:
 BACKUP ~ACBre/backup~
 //AUTHOR Original von Ascalon 
 SUPPORT ~https://www.baldurs-gate.de/index.php?threads/ascalons-breagar.44520/~
-VERSION ~9.0.0~ 
+VERSION ~10.0.0~ 
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
@@ -38,6 +31,7 @@ INCLUDE ~ACBre/lib/g3_bgt_cpmvars.tpa~
 INCLUDE ~ACBre/lib/liam_bgee_vars.tpa~
 INCLUDE ~ACBre/lib/read_journal_strref.tpa~
 INCLUDE ~ACBre/lib/extra_regexp_vars.tph~
+OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
 
 INCLUDE ~ACBre/lib/ac_bre_cpmvars.tpa~
 
@@ -96,7 +90,6 @@ ACTION_IF !FILE_EXISTS ~ACBre/reinstall.mrk~ BEGIN
 * Copies tra files into the autotra-folder (to leave the originals untouched)
 */
 	DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
-		COPY ~ACBre/tra/german~ ~ACBre/tra/autotra/%LANGUAGE%~
 		COPY ~ACBre/tra/%LANGUAGE%~ ~ACBre/tra/autotra/%LANGUAGE%~
 	END
 
@@ -140,7 +133,7 @@ END
 
 LANGUAGE ~Deutsch~ ~german~ ~ACBre/TRA/german/setup-ACBre.tra~
 
-LANGUAGE ~Partly English (but most still in German)~ ~english~ ~ACBre/TRA/english/setup-ACBre.tra~
+LANGUAGE ~English~ ~english~ ~ACBre/TRA/english/setup-ACBre.tra~
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1012,6 +1005,7 @@ ACTION_IF (GAME_IS ~bgee eet~ AND FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
   COMPILE EVALUATE_BUFFER ~ACBre/d/sod/ACBreJ_SoD.d~
   COMPILE EVALUATE_BUFFER ~ACBre/d/sod/ACBreS.d~
   COMPILE EVALUATE_BUFFER ~ACBre/d/sod/ACBREP_sod.d~ USING ~ACBre/tra/autotra/%LANGUAGE%/ACBREP.tra~
+
 END
 
 
@@ -1217,19 +1211,107 @@ EXTEND_BOTTOM ~bd0130.bcs~ ~ACBre/baf/sod/ac_bd0120.baf~
 EXTEND_TOP ~bd0103.bcs~ ~ACBre/baf/sod/ac_bd0103.baf~
   EVALUATE_BUFFER
 
+/* Move the PC in the cutscene of the plotting nobles in Three Old Kegs (bdc116d.bcs) */
+EXTEND_BOTTOM ~bdc116d.bcs~ ~ACBre/baf/sod/ac_bdc116d.baf~
+EVALUATE_BUFFER
+
 /* Change camps if not in party */
 EXTEND_BOTTOM ~bd1000.bcs~ ~ACBre/baf/sod/ac_bd1000.baf~
   EVALUATE_BUFFER
+
+	/* Patch your NPC's "Move Camp" variable to the original game's script block (bd1000.bcs) */
+COPY_EXISTING ~bd1000.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(SetGlobal("bd_move_npcs","bd1000",1)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 SetGlobal("ACBre_MoveCamp","bd1000",1)~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
 EXTEND_BOTTOM ~bd3000.bcs~ ~ACBre/baf/sod/ac_bd3000.baf~
   EVALUATE_BUFFER
+
+	/* Patch your NPC's "Move Camp" variable to the original game's script block (bd3000.bcs) */
+COPY_EXISTING ~bd3000.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(SetGlobal("bd_move_npcs","bd3000",1)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 SetGlobal("ACBre_MoveCamp","bd3000",1)~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+		SPRINT textToReplace ~\(SetGlobal("bd_move_voghiln","bd3000",0)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 SetGlobal("ACBre_MoveCamp","bd3000",0)~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
 EXTEND_BOTTOM ~bd7100.bcs~ ~ACBre/baf/sod/ac_bd7100.baf~
+  EVALUATE_BUFFER
+
+	/* Patch your NPC's "Move Camp" variable to the original game's script block (bd7100.bcs) */
+COPY_EXISTING ~bd7100.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(SetGlobal("bd_move_npcs","bd7100",1)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 SetGlobal("ACBre_MoveCamp","bd7100",1)~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+
+/* Move NPC to entrance of the Allied Siege Camp (Crusade battle) */
+EXTEND_BOTTOM ~bdasc3.bcs~ ~ACBre/baf/sod/ac_bdasc3.baf~
   EVALUATE_BUFFER
 
 /* Breagar returns to camp on his own if told to */
 EXTEND_TOP ~bdparty.bcs~ ~ACBre/baf/sod/ac_bdparty.baf~
   EVALUATE_BUFFER
 
-/* Breagar comments at portal to Avernus */
+/* Reaction to Caelar's first appearance on bridge */
+EXTEND_BOTTOM ~bd1000.bcs~ ~ACBre/baf/sod/ac_bd1000_commenting.baf~
+  EVALUATE_BUFFER
+
+/* PC gave Bridgefort Castle to the crusaders */
+/* Battle at Bridgefort starts */
+EXTEND_TOP ~bd2000.bcs~ ~ACBre/baf/sod/ac_bd2000_commenting.baf~
+  EVALUATE_BUFFER
+
+/* Comment in random area (Canyon Ambush) bd0063.are */
+EXTEND_BOTTOM ~bd0063.bcs~ ~ACBre/baf/sod/ac_bd0063.baf~
+EVALUATE_BUFFER
+
+/* Comment after killing the Rhinoceros Beetle in bd0114.are */
+EXTEND_BOTTOM ~bd0114.bcs~ ~ACBre/baf/sod/ac_bd0114_commenting.baf~
+EVALUATE_BUFFER
+
+/* Comment when battle starts in Kanaglym (bd5300.are, Underground River) */
+EXTEND_BOTTOM ~bd5300.bcs~ ~ACBre/baf/sod/ac_bd5300_commenting.baf~
+EVALUATE_BUFFER
+
+/* Comment on closed vault door (to portal) in Dragonspear Castle Interior */
+EXTEND_BOTTOM ~bdvaultd.bcs~ ~ACBre/baf/sod/ac_bdvaultd.baf~
+EVALUATE_BUFFER
+
+/* Hephernaan discovered the group inside the castle
+Portal is opened after Hephernaan's scheme
+PC killed the crusaders at the portal
+Comment after first wave of demons if PC lingers
+Comment after return from Avernus: portal is closed */
 EXTEND_TOP ~bd4300.bcs~ ~ACBre/baf/sod/ac_bd4300.baf~
   EVALUATE_BUFFER
 
@@ -1245,59 +1327,13 @@ EXTEND_TOP ~bdcut59b.bcs~ ~ACBre/baf/sod/ac_bdcut59b.baf~
 EXTEND_TOP ~bdcut58.bcs~ ~ACBre/baf/sod/ac_bdcut58.baf~
   EVALUATE_BUFFER
 
-/* my first attempt - will stay here until it's clear the EXTEND_TOP works as intended
-COPY_EXISTING ~bdcut59b.bcs~ ~override~
-  DECOMPILE_BCS_TO_BAF
-    REPLACE_TEXTUALLY ~\(ActionOverride("voghiln",Face(NW))[%tab% %lnl%%mnl%%wnl%]+END\)~
-
-~\1
-IF
-	Global("ACBreagar_kicked_bd4700","global",1)
-	!Dead("ACBre")  
-	!InParty("ACBre")  
-THEN
-	RESPONSE #100
-		CutSceneId(Player1)
-		MoveGlobal("bd4300","ACBre",[600.320])  
-		ActionOverride("ACBre",Face(N))
-END
-
-IF
-	Global("ACBreagar_kicked_bd4700","global",0)
-	!Dead("ACBre")  
-	!InParty("ACBre")  
-THEN
-	RESPONSE #100
-		CutSceneId(Player1)
-		MoveGlobal("bd4300","ACBre",[690.1254])  
-		ActionOverride("ACBre",Face(NW))
-END~
-  COMPILE_BAF_TO_BCS
-BUT_ONLY_IF_IT_CHANGES
-
-COPY_EXISTING ~bdcut58.bcs~ ~override~
-  DECOMPILE_BCS_TO_BAF
-   REPLACE_TEXTUALLY ~\(ActionOverride("voghiln",Face(NE))\)[%tab% %lnl%%mnl%%wnl%]+\(END\)~
-~\1 \2
-
-IF
-	Global("ACBreagar_kicked_bd4700","global",1)
-	!Dead("ACBre")  
-	!InParty("ACBre")  
-THEN
-	RESPONSE #100
-		CutSceneId(Player1)
-		MoveGlobal("bd4400","ACBre",[1170.1240])  
-		ActionOverride("ACBre",Face(NE))
-END~
-  COMPILE_BAF_TO_BCS
-BUT_ONLY_IF_IT_CHANGES
-
-*/
-
 /* Hell elevator - Breagar comments */
 EXTEND_BOTTOM ~bd4601.bcs~ ~ACBre/baf/sod/ac_bd4601.baf~
   EVALUATE_BUFFER
+
+/* Comment in Dragonspear Castle Exterior */
+EXTEND_BOTTOM ~bdbark01.bcs~ ~ACBre/baf/sod/ac_bdbark01_commenting.baf~
+EVALUATE_BUFFER
 
 
 /* Breagar comments on murder accusation */
@@ -1316,29 +1352,56 @@ EXTEND_TOP ~bdcut61.bcs~ ~ACBre/baf/sod/ac_bdcut61.baf~
 EXTEND_TOP ~bd6200.bcs~ ~ACBre/baf/sod/ac_bd6200.baf~
   EVALUATE_BUFFER
 
-/* Breagar joins group if there is still a free slot */
+/* Move Breagar to last abduction scene if he is present at end of SoD */
 EXTEND_TOP ~bdcut64x.bcs~ ~ACBre/baf/sod/ac_bdcut64x.baf~
   EVALUATE_BUFFER
 
 /* End of SoD - Abduction */
+/* make Breagar move in the last abduction area */
+COPY_EXISTING ~bdcut65.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+
+		SPRINT textToReplace ~\(SetAreaScript("",OVERRIDE)\)[%newline%]*\(END\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 
+\2 
+
+IF
+	Global("ACBre_SoDEndMove","bd6100",0) 
+	InMyArea("ACBre")
+	!Dead("ACBre")  
+	!InParty("ACBre")  
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		SetGlobal("ACBre_SoDEndMove","bd6100",1) 
+		ActionOverride("ACBRE",MoveToPoint([930.795]))
+END
+~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES
+
+/* comment in abduction scene & fog (EET or SoD with SoD Tweakpack "Restore scripted Abduction Scene Fight") */
 EXTEND_TOP ~bd6100.bcs~ ~ACBre/baf/sod/ac_bd6100.baf~
   EVALUATE_BUFFER
 
 
-
-
 END //SoD
 
-/* Move from SoD to BGII for EET! (canon party member) */
+/* Move from SoD to BGII for EET! For Transitions & EBG1 */
 
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
-EXTEND_TOP ~K#TELBGT.bcs~ ~ACBre/baf/sod/ac_K#TELBGT.baf~
+EXTEND_TOP ~K#TELBGT.bcs~ ~ACBre/baf/eet/ac_K#TELBGT.baf~
   EVALUATE_BUFFER
 
 /* make sure Breagar spawns in BGII if SoD gets skipped (EET with SkipSoD or EBG1) */
 EXTEND_TOP ~acbre.bcs~ ~ACBre/baf/eet/acbre_eet_add.baf~
 EVALUATE_BUFFER
-
 
 END
 
@@ -1636,57 +1699,80 @@ REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
 ACTION_IF FILE_EXISTS_IN_GAME ~JETLA.DLG~
 THEN BEGIN
 PRINT @199
-EXTEND_BOTTOM ~ACBRE.bcs~ ~ACBre/CROSS/ACDSOTSC.baf~
-COMPILE ~ACBre/CROSS/ACDSOTSC.D~
+EXTEND_BOTTOM ~ACBRE.bcs~ ~ACBre/CROSS/ACDSOTSC.baf~ EVALUATE_BUFFER
+COMPILE EVALUATE_BUFFER ~ACBre/CROSS/ACDSOTSC.D~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~M#VAMBER.CRE~
 THEN BEGIN
 PRINT @200
-EXTEND_BOTTOM ~ACBRE.bcs~ ~ACBre/CROSS/ACAMBER.baf~
-COMPILE ~ACBre/CROSS/ACAMBER.D~  EVALUATE_BUFFER
+EXTEND_BOTTOM ~ACBRE.bcs~ ~ACBre/CROSS/ACAMBER.baf~ EVALUATE_BUFFER
+COMPILE EVALUATE_BUFFER ~ACBre/CROSS/ACAMBER.D~  EVALUATE_BUFFER
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~AURNSW.ITM~
 THEN BEGIN
 PRINT @201
-COMPILE ~ACBre/CROSS/ACAUREN.D~  EVALUATE_BUFFER
+COMPILE EVALUATE_BUFFER ~ACBre/CROSS/ACAUREN.D~  EVALUATE_BUFFER
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~WGWITCH.BCS~
 THEN BEGIN
 PRINT @202
-EXTEND_BOTTOM ~WGWITCH.bcs~ ~ACBre/CROSS/ACWGWITH.baf~
+EXTEND_BOTTOM ~WGWITCH.bcs~ ~ACBre/CROSS/ACWGWITH.baf~ EVALUATE_BUFFER
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~C#q01001.BCS~
+/* bgqe - slimequest */
+ACTION_IF FILE_EXISTS_IN_GAME ~C#Q01001.dlg~
 THEN BEGIN
 PRINT @203
-COMPILE ~ACBre/CROSS/ACBGQE.D~
+COMPILE EVALUATE_BUFFER ~ACBre/CROSS/ACBGQE.D~
 END
+
+/* bgqe babysitting */
+ACTION_IF FILE_EXISTS_IN_GAME ~C#Q03009.dlg~
+THEN BEGIN
+PRINT @203
+COMPILE EVALUATE_BUFFER ~ACBre/CROSS/acbgqe_q03.D~ USING ~ACBre/tra/autotra/%LANGUAGE%/ACBGQE.tra~
+END
+
+/* bgqe nashkel monster */
+ACTION_IF FILE_EXISTS_IN_GAME ~C#Q04001.dlg~
+THEN BEGIN
+PRINT @203
+COMPILE EVALUATE_BUFFER ~ACBre/CROSS/acbgqe_q04.D~ USING ~ACBre/tra/autotra/%LANGUAGE%/ACBGQE.tra~
+END
+
+/* ToD */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~VA#TIAN.CRE~
 THEN BEGIN
 PRINT @204
 EXTEND_BOTTOM ~ACBRE.bcs~ ~ACBre/CROSS/ACTOD.baf~
-COMPILE ~ACBre/CROSS/ACTOD.D~
+COMPILE EVALUATE_BUFFER ~ACBre/CROSS/ACTOD.D~
 END
+
+/* Ascalon's Questpack */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ACQ11001.CRE~
 THEN BEGIN
   PRINT @205
 // EXTEND_BOTTOM ~ACBRE.bcs~ ~ACBre/CROSS/ACACQ.baf~
-  COMPILE ~ACBre/CROSS/ACACQ.D~
+  COMPILE EVALUATE_BUFFER ~ACBre/CROSS/ACACQ.D~
 END
+
+/* Weimer's Solaufein */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~sola5.cre~ THEN BEGIN
   PRINT @209
-  COMPILE ~ACBre/CROSS/ACSOLA.D~ EVALUATE_BUFFER
+  COMPILE EVALUATE_BUFFER ~ACBre/CROSS/ACSOLA.D~
 END
+
+/* Alternatives */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~B!ASTER.dlg~ THEN BEGIN
   PRINT @210
-  EXTEND_TOP ~ACBre.bcs~ ~ACBre/CROSS/acbre_alternatives.baf~
+  EXTEND_TOP ~ACBre.bcs~ ~ACBre/CROSS/acbre_alternatives.baf~ EVALUATE_BUFFER
 END
 
 /* Imoen 4 Ever */
@@ -1694,6 +1780,35 @@ ACTION_IF FILE_EXISTS_IN_GAME ~C#IMMET.dlg~ THEN BEGIN
   PRINT @211
   OUTER_SET i4e_imoenreturn = STATE_WHICH_SAYS 27 IN ~imoen_forever/tra/%s/C#IMMET.tra~ FROM ~C#IMMET~
   COMPILE EVALUATE_BUFFER ~ACBre/CROSS/aci4e.D~ USING ~ACBre/tra/autotra/%LANGUAGE%/ACBREB.tra~
+END
+
+/* Transitions */
+
+ACTION_IF FILE_EXISTS_IN_GAME ~#L_Cut09.bcs~ THEN BEGIN
+  PRINT @212 /* ~Transitions Mod detected~ */
+  COPY_EXISTING ~#L_Cut09.bcs~ ~override~
+     DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~SetGlobal("#L_CanonGroupMoved","GLOBAL",1)~ ~
+		SetGlobal("#L_CanonGroupMoved","GLOBAL",1)
+
+		MoveGlobal("BD6100","ACBRE",[643.465])
+		ReallyForceSpellDeadRES("bdrejuve","ACBRE")
+		ActionOverride("ACBRE",ChangeAIScript("",CLASS))
+		ActionOverride("ACBRE",ChangeAIScript("",RACE))
+		ActionOverride("ACBRE",ChangeAIScript("",GENERAL))
+		ActionOverride("ACBRE",ChangeAIScript("",DEFAULT))
+		ActionOverride("ACBRE",SetDialogue("ACBREP"))~
+        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~MoveToPoint([800.800])~ ~MoveToPoint([800.800]) ActionOverride("ACBRE",MoveToPoint([930.795])~
+     END
+  BUT_ONLY_IF_IT_CHANGES 
+
+END //Transitions
+
+/* Balduran's Seatower */
+ACTION_IF FILE_EXISTS_IN_GAME ~YSMCOOK1.dlg~
+THEN BEGIN
+PRINT @213
+COMPILE EVALUATE_BUFFER ~ACBre/CROSS/acbst.D~ 
 END
 
 
