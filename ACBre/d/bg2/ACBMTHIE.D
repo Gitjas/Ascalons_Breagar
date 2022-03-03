@@ -150,9 +150,17 @@ END
 CHAIN
 IF ~~ THEN ACBREJ BMTHIEF.2
 @50
+
+/* take this out - leads to a dead end because Thieves' Guild can't be attacked this way (game ends)
 ==BMTHIEF @51 DO ~SetGlobal("AttackedThieves","GLOBAL",1)~
 ==BYOSHIM IF ~InParty("YOSHIMO")See("YOSHIMO")!StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN @52 DO ~LeaveParty()EscapeArea()~
 EXIT 
+*/
+
+==BMTHIEF @59
+END
+IF ~~ THEN EXTERN ACBREJ BMTHIEF.1
+
 
 CHAIN
 IF ~~ THEN ACBREJ BMTHIEF.1

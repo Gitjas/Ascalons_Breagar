@@ -1,0 +1,9 @@
+IF
+	OnCreation()
+	Global("ACAUDQUEST_CreateNote","AR0328",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACAUDQUEST_CreateNote","AR0328",1)
+		ActionOverride("Container7",CreateItem("ACSCRL2K",0,0,0))
+		Continue()
+END

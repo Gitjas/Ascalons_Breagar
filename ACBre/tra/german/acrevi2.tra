@@ -28,15 +28,15 @@
 @27   = ~Diese Gruft erfüllt mein Herz mit Trauer, <CHARNAME>. Ich möchte sie lieber nicht weiter untersuchen. Lasst uns mit Revianel an die Oberfläche zurückkehren.~
 @28   = ~Meine Nase sagt mir dass hier unten noch einige zu holen ist, <CHARNAME>. Wir sollten die Gelegenheit nutzen.~
 @29   = ~Die Götter lehren nicht nur, dass man gegen das Böse antreten muss, <CHARNAME>. Sie lehren auch, geduldig zu sein und auf eine Chance zu warten. Was immer hier unten lauert ist eine tödliche Gefahr, das spüre ich genau.~
-@30   = ~Dieser Geruch von Tod und Verweseung erinnert mich an etwas... etwas... ich weiß nicht was. Jedenfalls war es nichts gutes.~
-@31   = ~Schauen wir zu dass wir von hier verschwinden, <CHARNAME>. Wir haben genug Zeit vertrödelt.~
+@30   = ~Dieser Geruch von Tod und Verwesung erinnert mich an etwas... etwas... ich weiß nicht was. Jedenfalls war es nichts gutes.~
+@31   = ~Schauen wir zu, dass wir von hier verschwinden, <CHARNAME>. Wir haben genug Zeit vertrödelt.~
 @32   = ~Auch wenn ich mich hier unten nicht sonderlich wohl fühle, so sagt mir mein Instinkt, dass nicht viel zwischen uns und einem gehörigen Schatz liegt.~
-@33   = ~D... diese Gruft bereitet mir Angst, <CHARNAME>. Wir sollten lieber schauen dass wir verschwinden.~
+@33   = ~D... diese Gruft bereitet mir Angst, <CHARNAME>. Wir sollten lieber schauen, dass wir verschwinden.~
 @34   = ~Wir haben genug getan um uns in den Balladen zu verewigen, <CHARNAME>. Lasst dieses Lied nicht unser Requiem werden.~
 @35   = ~Taerom!~
 @36   = ~Revianel! Ihr seid wieder da!~
 @37   = ~Ohne die Hilfe von <CHARNAME> hätte ich das nie geschafft. Ich wäre immer noch unter der Erde im Stein gefangen.~
-@38   = ~Ich... ich weiß niht, was ich sagen soll, <CHARNAME>.~
+@38   = ~Ich... ich weiß nicht, was ich sagen soll, <CHARNAME>.~
 @39   = ~Nana, Chef. Jetzt werdet nicht rührselig.~
 @40   = ~Und so eine Heulsuse nennt sich Schmied! Pah!~
 @41   = ~Euch danke ich ebenso, Breagar. Ihr seid ein wahrer Freund in der Not.~
@@ -80,3 +80,8 @@
 @79   = ~Ralph und ich werden Euch zurück zum Tempel geleiten, Revianel.~
 @80   = ~Ihr seid so aufmerksam.~
 @81   = ~Und auch Ihr solltet Euch wieder auf den Weg machen, <CHARNAME>. Wenn Ihr wiederkommt dann ist hoffentlich alles wieder beim alten. Lebt wohl!~
+
+/* new for v7.05 */
+@82   = ~Dann bleibt uns nur noch übrig, dafür zu sorgen, dass sowas nicht noch einmal vorkommt. Ich habe ein mulmiges Gefühl, <CHARNAME>. Was auch immer sich hier untern verschanzt hat, es muss sehr mächtig und sehr böse sein. Wir sollten ihm nur gut vorbereitet gegenüber treten.~
+@83   = ~Das war sicher der Leichnam. Keine Sorge, der ist Geschichte.~ 
+@84   = ~Wirklich? Das ist ja großartig! Dann müssen nur noch die anderen armen ruhelosen untoten Kreaturen gebannt werden und der Friedhof kann wieder geweiht werden.~

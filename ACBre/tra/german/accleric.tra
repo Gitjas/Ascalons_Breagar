@@ -3,7 +3,7 @@
 @2    = ~Ihr seid doch Kleriker, wieso heilt Ihr Eure Wunden nicht einfach?~
 @3    = ~Alles klar. Ich geh dann mal wieder.~
 @4    = ~Ich habe doch gesagt, wenn Ihr die Hilfe eines Klerikers benötigt, dann wendet Euch an einen anderen Priester. Meine Kraft ist momentan zu gering, als dass ich irgendetwas machen könnte.~
-@5    = ~Oh, den Göttern sei Dank! Ich weiß nicht was mit ihr passiert ist und ob sie noch lebt... Aber Ihr müsst schauen ob ihr sie finden könnt. Ihr müsst einfach!~
+@5    = ~Oh, den Göttern sei Dank! Ich weiß nicht was mit ihr passiert ist und ob sie noch lebt... Aber Ihr müsst schauen ob Ihr sie finden könnt. Ihr müsst einfach!~
 @6    = ~Wo sollen wir mit der Suche anfangen?~
 @7    = ~Glaubt Ihr, dass Revianel noch lebt?~
 @8    = ~Von was für einem Wesen wurdet Ihr überfallen?~
@@ -43,3 +43,10 @@
 @42   = ~Dann lasst uns keine Sekunde verlieren.~
 @43   = ~Weist den Weg, Tobin.~
 @44   = ~<CHARNAME>, wenn Ihr später noch einmal den Friedhof erforschen wollt dann kommt nur zum Vestibül. Ich werde Euch mit Freuden den Weg weisen.~
+
+/* new for v7.05 */
+
+@45   = ~Tobin, wir haben den Leichnam erledigt, der Euch so sehr verwundet hat.~
+@46   = ~Das sind großartige Neuigkeiten. Ich werde Kelddath so schnell wie möglich bescheid geben, dass der Friedhof nun wieder geweiht werden kann. Ich danke Euch!~
+@47   = ~Das freut mich zu hören, auch wenn es Revianel nicht wiederbringt... Ich werde Kelddath so schnell wie möglich bescheid geben, dass der Friedhof nun wieder geweiht werden kann. Ich danke Euch!~
+@48   = ~Nein, danke.~

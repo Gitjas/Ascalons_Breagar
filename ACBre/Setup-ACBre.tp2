@@ -3,7 +3,7 @@
 Known Issues:
 -Breagar will only smithy for the PC if he is in Taerom's smithy before joining the group.
 -(TdB) Berronar's Axt will be doubled after the Silver Dwarf blessed it in ToB.
-
+-Anstinus Turm, outside area: in the southwest corner, the wall can be left although there is no stairs.
 
 Note:
 -SoD-content is not yet approved by Ascalon
@@ -26,7 +26,7 @@ Note to English translation:
 BACKUP ~ACBre/backup~
 //AUTHOR ~whiteagnus@gmx.de~ //Original von Ascalon (geheimer.herrscher@gmx.de)
 SUPPORT ~jastey@web.de~
-VERSION ~7.04~ //2018-04-10
+VERSION ~7.0.5~ //2018-05-10
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
@@ -87,7 +87,7 @@ INCLUDE "ACBre/lib/fl#add_kit_ee.tpa"
     OUTER_SET EVAL ~%name_source%~ = bg2_chapter
   END
 
-ACTION_IF !FILE_EXISTS ~ACBre/Backup/reinstall.mrk~ BEGIN
+ACTION_IF !FILE_EXISTS ~ACBre/reinstall.mrk~ BEGIN
 
 /* Handling of correctly formatted tra-files!! ---------------------- */
 
@@ -134,7 +134,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 INCLUDE ~ACBre/lib/ac_bre_cpmvars.tpa~
 
-COPY ~ACBre/component.xxx~ ~ACBre/Backup/reinstall.mrk~
+COPY ~ACBre/component.xxx~ ~ACBre/reinstall.mrk~
 
 END
 END
@@ -505,6 +505,10 @@ COPY ~ACBre/ITM/ACSCRL2J.ITM~ ~override~
 SAY NAME1 @129
 SAY NAME2 @130
 SAY DESC @131
+COPY ~ACBre/ITM/ACSCRL2I.ITM~ ~override/ACSCRL2K.ITM~ 
+SAY NAME1 @127
+SAY NAME2 @127
+SAY DESC @5029
 COPY ~ACBre/ITM/ACPEPPER.itm~ ~override~ 
 SAY NAME1 @138
 SAY NAME2 @138
@@ -1432,6 +1436,7 @@ SAY 0x354 @196
 
 //Extend existing Scripts for BG2
 EXTEND_TOP ~AR0300.bcs~ ~ACBre/baf/bg2/AR0300.baf~
+EXTEND_TOP ~AR0328.bcs~ ~ACBre/baf/bg2/AR0328.baf~
 EXTEND_TOP ~AR0700.bcs~ ~ACBre/baf/bg2/AR0700.baf~
 EXTEND_TOP ~AR0905.bcs~ ~ACBre/baf/bg2/AR0905.baf~
 EXTEND_TOP ~AR2000.bcs~ ~ACBre/baf/bg2/AR2000.baf~
@@ -1670,6 +1675,12 @@ ACTION_IF FILE_EXISTS_IN_GAME ~sola5.cre~ THEN BEGIN
 PRINT @209
 COMPILE ~ACBre/CROSS/ACSOLA.D~
 END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~B!ASTER.dlg~ THEN BEGIN
+EXTEND_TOP ~ACBre.bcs~ ~ACBre/CROSS/acbre_alternatives.baf~
+END
+
+
 
 COMPILE ~ACBre/pid~
 EVALUATE_BUFFER

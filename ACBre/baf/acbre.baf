@@ -906,6 +906,7 @@ IF
 	!See([ENEMY])
 	GlobalTimerExpired("ACBMTHIEF","GLOBAL")
 	Global("ACAUDQUEST","GLOBAL",6)
+	Global("ACAUDQUEST_PCAttacksThievesGuild","GLOBAL",0)
 	%BGT_VAR2%
 THEN
 	RESPONSE #100
@@ -951,6 +952,22 @@ THEN
 	RESPONSE #100
 		StartDialogNoSet(PLAYER1)
 END
+
+
+/* safety net: new journal entry if note in Shadow Thieves' Hideout is found (PC attacks Thieves Guild) */
+
+IF
+	OR(2)
+	Global("ACAUDQUEST","GLOBAL",3)
+	Global("ACAUDQUEST","GLOBAL",6)
+	PartyHasItem("ACSCRL2K")
+THEN
+	RESPONSE #100
+		SetGlobal("ACAUDQUEST","GLOBAL",8)	
+		EraseJournalEntry(@10030)
+		AddJournalEntry(@10031,QUEST)
+END
+
 
 IF
 	InParty(Myself)

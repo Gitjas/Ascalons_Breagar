@@ -2,7 +2,7 @@
                Eine Modifikation für BGT, EET, BG:EE, Tutu, BGII, BGII:EE und EET
                             von Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 7.04
+                         		Version: 7.0.5
 
 ***************************************************************************************************************
 
@@ -253,6 +253,13 @@ silver arm in ToB
 	-Breagar won't find his axe in ID (EET-Tweaks component "Import party items to SoA")
 	-Breagar won't be summonable if he left hostile or is dead (corrected spelling of variable in FATESP.dlg)
 	-EET: ToB script should be assigned correctly (really this time)
+
+7.0.5:
+	-Revianel quest (BG1): added more reply options to Revianel in case the Lich is already defeated when depetrified; added possibility to tell Tobin when the Lich is killed; disabled the NPC reactions that refer to the Lich in case it's already dead.
+	-(BG2) Breagar's Axe Quest: can be solved if PC has quest to attack the Thieves' Guild (for example if going another route to Spellhold like in Alternatives Mod); removed "game dead end" - Black Market Thieve won't turn the Guild hostile any more just because Breagar and the PC talk aggressively
+	-(BG2) Anstinus' Tower: when encountering Anstinus' ghost in his tower, the dialogue should trigger even if Player1 is not in fist slot; also cutscene mode removed 
+	-crossmod compatibility with Alternatives mod: in case of certain status of Breagar's Axe quest, the Thieves' Guild messenger will no longer spawn if PC agreed to attack the Thieves' Guild
+
 
 ***************************************************************************************************************
 

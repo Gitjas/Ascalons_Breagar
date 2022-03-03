@@ -8,12 +8,14 @@ THEN
 		TriggerActivation("Barrier",FALSE)
 END
 
+/*
 IF
 	Global("ARAC06PREP","GLOBAL",2)
 THEN
 	RESPONSE #100
 
 END
+*/
 
 IF
 	Global("ACCELLARCLEAN","GLOBAL",0)
