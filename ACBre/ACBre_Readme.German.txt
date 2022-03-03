@@ -2,7 +2,7 @@
                Eine Modifikation für BGT, EET, BG:EE, Tutu, BGII, BGII:EE und EET
                             von Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 8.0.0
+                         		Version: 8.0.1
 
 ***************************************************************************************************************
 
@@ -289,6 +289,9 @@ silver arm in ToB
 	-renamed setup-acbre.tp2 into acbre.tp2
 	-added ACBre.ini with mod info metadata
 	-update to WeiDU v246
+
+8.0.1: (2019-03-09) by jastey
+	-fixed install bug if Ascalon's Questpack is already installed
 
 
 ***************************************************************************************************************

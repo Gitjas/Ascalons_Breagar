@@ -1,5 +1,8 @@
 /*
 
+ToDo:
+include timer 1800 in optional component, in case someone wants to change back to it
+
 Known Issues:
 -Breagar will only smithy for the PC if he is in Taerom's smithy *before* joining the group.
 -(TdB) Berronar's Axt will be doubled after the Silver Dwarf blessed it in ToB.
@@ -26,7 +29,7 @@ Note to English translation:
 BACKUP ~ACBre/backup~
 //AUTHOR ~whiteagnus@gmx.de~ //Original von Ascalon (geheimer.herrscher@gmx.de)
 SUPPORT ~https://www.baldurs-gate.de/index.php?threads/ascalons-breagar.44520/~
-VERSION ~8.0.0~ //2019-03-06
+VERSION ~8.0.1~ //2019-03-09
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
@@ -157,7 +160,7 @@ FORBID_COMPONENT ~setup-bp-bgt-worldmap.tp2~ ~0~ @208
 
 //For all engines
 
-/*
+
 //ACVIRGI
 ACTION_IF GAME_IS ~tob bgt bg2ee eet~ THEN BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~ACVIRGI.DLG~ THEN BEGIN
@@ -185,30 +188,6 @@ END ELSE BEGIN
 END
 
 EXTEND_BOTTOM ~ACVIRGI.bcs~ ~ACBre/Virgi/ACVIRGI.BAF~
-*/
-
-
-//ACVIRGI
-ACTION_IF FILE_EXISTS_IN_GAME ~ACVIRGI.CRE~
-THEN BEGIN
-PRINT @206
-ACTION_IF GAME_IS ~tob bgt bg2ee eet~ THEN BEGIN
-COMPILE ~ACBre/Virgi/ACVIRGI2.D~
-END
-EXTEND_BOTTOM ~ACVIRGI.bcs~ ~ACBre/Virgi/ACVIRGI.BAF~
-END ELSE BEGIN 
-PRINT @207
-COPY ~ACBre/cre/ACVIRGI.CRE~ ~OVERRIDE/ACVIRGI.CRE~
-SAY NAME1 ~~
-SAY NAME2 ~~
-WRITE_ASCII 0x280 ~ACVIRGI~
-WRITE_ASCII 0x2cc ~ACVIRGI~
-WRITE_ASCII 0x248 ~ACVIRGI~
-ACTION_IF GAME_IS ~tob bgt bg2ee eet~ THEN BEGIN
-COMPILE ~ACBre/Virgi/ACVIRGI.D~
-END
-COMPILE ~ACBre/Virgi/ACVIRGI.BAF~
-END
 
 
 /*
