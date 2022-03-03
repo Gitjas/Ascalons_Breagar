@@ -2,7 +2,7 @@
                Eine Modifikation für BGT, EET, BG:EE, Tutu, BGII, BGII:EE und EET
                             von Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 11.0.0
+                         		Version: 11.1.0
 
 ***************************************************************************************************************
 
@@ -369,6 +369,10 @@ silver arm in ToB
 	-Changed check for Crossmod with EET_DSotSC to exclude BG:EE-DSotSC (fix install error).
 	-Fixed install error with Imoen4Ever crossmod (for non-english versions).
 	-Added install order syntax and globally unique LABELs to support Project Infinity.
+
+11.1.0: (2021-11-02) by jastey
+	-separated the setup lines and the ingame tp2 lines into separate files (game-acbre.tra and setup-acbre.tra).
+	-added crossmod with "Another fine Hell" (SoD content)
 
 
 

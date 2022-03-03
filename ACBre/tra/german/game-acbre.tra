@@ -1,0 +1,1027 @@
+
+@17   = ~Zwergenschmied~
+@18   = ~ZWERGENSCHMIED: In den Hallen der Zwergenclans wird die Meisterschaft eines Handwerkes als höchste zu erlangende Kunst angesehen. Angehörigen anderer Rassen sind Zwerge am ehesten als tapfere Bergleute und talentierte Schmiede bekannt, von denen gerade letztere durch ihre kunstvollen Waffen auf der ganzen Welt einen besondernen Ruf halten. Der typische Zwergenschmied ist kräftig und zäh, das lange Arbeiten am offenen Feuer hat ihn unempfindlich gegen die Hitze gemacht. Ein wahrer Meisterschmied erkennt die Geheimnisse, die ein Werkstück in sich birgt, auf den ersten Blick. Obwohl der Schmied nicht zögert, seinen Amboss vor jeglichen Gefahren zu schützen, kennt er die meisten Waffen doch nur vom Übungsplatz und verlässt sich im Kampf auf wuchtige Hiebwaffen wie Hämmer und Äxte.
+
+Besondere Vorteile:
+- Feuerresistenz +1 je Stufe, (beginnend mit einem Wert von 5)
+- Erhöhte Sagenkunde
+- Hat die Fähigkeit "Geisterhammer"
+
+Besondere Nachteile:
+- Kann nur in Äxten und Hämmern Großmeisterschaft erlangen
+- Kann sich nur auf "einhändigen Kampf" spezialisieren~
+@19   = ~Das Buch der Schmiedekunst~
+@20   = ~Das Buch der Schmiedekunst ist ein dicker, schwerer Wälzer, gebunden in brüchigem, altem Leder. Die Seiten sind mit zwergischen Runen und Diagrammen eng bekritzelt, die wohl niemandem etwas sagen, der nicht sein Leben lang am Amboss stand.~
+@21   = ~Ein unverdorbener Klumpen Eisen~
+@22   = ~Ein schöner Klumpen Eisen, ideal für anspruchsvolle Schmiedearbeiten.~
+@23   = ~Schlüssel~
+@24   = ~Der Leichnam unter dem Friedhof hatte diesen Schlüssel bei sich.~
+@25   = ~Adam~
+@26   = ~Azzik~
+
+
+@29   = ~Breagar~
+@30   = ~Bei Moradins Hammer! Ihr treibt mich noch in den Wahnsinn, Wirt!~ [ACBre_00]
+@31   = ~Verdammt, das gefällt mir ganz und gar nicht.~ [ACBre_01]
+@32   = ~Clangeddin wird uns wohlgesonnen sein.~ [ACBre_02]
+@33   = ~Ihr führt uns auf einen verdammt schlechten Weg.~ [ACBre_03]
+@34   = ~Wenn Ihr nicht meine Axt spüren wollt, dann solltet Ihr Euren Weg schleunigst überdenken!~ [ACBre_04]
+@35   = ~Ihr seid ein schändlicher Anführer!~ [ACBre_05]
+@36   = ~So ist es richtig, immer schön den Zwerg nach vorne!~ [ACBre_06]
+@37   = ~Sind wir jetzt nicht langsam genug herumgelaufen? Lasst uns rasten.~ [ACBre_07]
+
+@39   = ~Schmeckt meine Axt!~ [ACBre_09]
+@40   = ~Clangeddin!~ [ACBre_10]
+@41   = ~Auf sie!~ [ACBre_11]
+@42   = ~(Kampfsschrei)~ [ACBre_12]
+
+
+@45   = ~Viel mehr kann ich nicht aushalten!~ [ACBre_15]
+@46   = ~Hrmph. Ich hasse den Wald.~ [ACBre_16]
+@47   = ~Eines dieser Häuser muss doch eine Taverne sein. Ob es dort Zwergenbier gibt?~ [ACBre_17]
+@48   = ~Ein Zwerg braucht eine stabile Decke, dann fühlt er sich erst richtig wohl.~ [ACBre_18]
+@49   = ~Ja?~ [ACBre_21]
+@50   = ~Was gibt es?~ [ACBre_22]
+@51   = ~Was wollt Ihr?~ [ACBre_23]
+@52   = ~Hmm?~ [ACBre_24]
+@53   = ~Raus mit der Sprache!~ [ACBre_25]
+@54   = ~Sagt, was Ihr wollt.~ [ACBre_26]
+@55   = ~Selbstverständlich.~ [ACBre_27]
+@56   = ~Sofort.~ [ACBre_28]
+@57   = ~Alles klar.~ [ACBre_29]
+@58   = ~Wenn Ihr wünscht.~ [ACBre_30]
+@59   = ~Na dann, vorwärts!~ [ACBre_31]
+@60   = ~Wieso auch nicht.~ [ACBre_32]
+@61   = ~Ja.~ [ACBre_33]
+@62   = ~Und dafür stört Ihr mich?~ [ACBre_34]
+@63   = ~Wenn es sein muss.~ [ACBre_35]
+@64   = ~Ha!~ [ACBre_36]
+@65   = ~Buzzurk!~ [ACBre_37]
+@66   = ~Buzzurk! Kein Schaden!~ [ACBre_38]
+@67   = ~Ich bin nicht Euer Packesel!~ [ACBre_39]
+@68   = ~BREAGAR vom Clan Bardormar grummelt in seinen Bart, als Ihr ihn nach seiner Lebensgeschichte fragt. Aus dem, was Ihr heraushören könnt, stammt er aus dem Sturmhornbergen und hat seinen Clan aus Gründen verlassen, die ein "närrischer <PRO_RACE>, der sein Leben lang durch keinen einzigen Stollen gekrochen ist", wie er sich ausdrückt, sowieso nicht verstehen kann. Vielleicht taut der Zwerg mit der Zeit ein wenig auf und erzählt von sich aus, was ihn antreibt.~
+@69   = ~Ha! Schmeckt meine Axt!~ [ACBre_36]
+@70   = ~Verletzter Breagar~
+@71   = ~Die gängigste Ausführung einer Streitaxt besteht aus einem dicken Stab von ungefähr 1,20 m Länge mit einer einschneidigen, trompetenförmigen Klinge an einem Ende. Diese Waffe wird auch Breitbeil genannt.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Gewicht: 7
+Initiativefaktor: 7
+Mindeststärke: 10
+Fertigkeit: Axt
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Klerikern
+- Magiern
+- Mönchen~
+@72   = ~Ein Flegel besteht aus einem kräftigen Holzgriff, der mit einem Eisenstab, einem Dornen besetzten Holzstab oder einer mit Dornen besetzten Eisenkugel verbunden ist. Die beiden Teile sind entweder mit einem Scharnier oder einer Kette verbunden. Ursprünglich wurde diese Waffe zum Dreschen von Getreide benutzt.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 +1 (Wucht)
+Gewicht: 15
+Initiativefaktor: 7
+Mindeststärke: 13
+Fertigkeit: Flegel
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Magiern
+- Mönchen~
+@73   = ~Der Streitkolben ist eine direkte Ableitung der einfachen Keule und besteht lediglich aus einem Holzschaft, auf den ein Stein- oder Eisenkopf aufgesetzt ist. Der Kopf kann entweder mit Spitzen versehen, geflanscht oder aber auch pyramidenförmig ausgearbeitet sein.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 +1 (Wucht)
+ETW0: -1
+Gewicht: 10
+Initiativefaktor: 7
+Mindeststärke: 10
+Fertigkeit: Streitkolben
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Magiern~
+@74   = ~Ein Morgenstern besteht aus einem hölzernen Schaft, auf den ein mit Eisenspitzen besetzter Metallkopf aufgesetzt ist. Die Gesamtlänge eines Morgensterns beträgt etwa 1,20 m. Der Kopf kann rund, oval oder zylindrisch geformt sein. Unabhängig von der jeweiligen Ausführung ist der Kopf von Morgensternen meist mit einer langen Spitze zum Stoßen versehen.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 2W4 (Wucht)
+Gewicht: 12
+Initiativefaktor: 7
+Mindeststärke: 11
+Fertigkeit: Flegel
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Magiern
+- Mönchen~
+@75   = ~Ein typischer Dolch ist mit einer spitzen, normalerweise zweischneidigen Klinge versehen, wodurch er sich von einem Messer unterscheidet. Ein Messer hat nur eine Schneide und ist etwas kürzer als ein Dolch.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 (Stich)
+Gewicht: 1
+Initiativefaktor: 2
+Fertigkeit: Dolch
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+- Klerikern~
+@76   = ~Die Hellebarde ist nach dem Speer die älteste und verbreitetste Stangenwaffe. Sie besteht aus einer Klinge, die einem Henkerbeil ähnelt, welche auf einen durchschnittlich 1,80 m langen Stab aufgesetzt ist. Das Gewicht der Axtklinge wird durch eine Fluke ausgeglichen. Am oberen Ende sitzt ein spitzer Dorn, der gewöhnlich viereckig geformt ist. Manchmal wird die Fluke von einem Haken ersetzt, mit dem berittene Kämpfer vom Pferd geholt werden können. Eine Hellebarde lässt sich am besten als eine Kreuzung zwischen Speer und Axt beschreiben.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W10 (Stich)
+Gewicht: 15
+Initiativefaktor: 9
+Mindeststärke: 13
+Fertigkeit: Hellebarde
+Typ: 2-händig
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Klerikern
+- Magiern
+- Mönchen~
+@77   = ~Speere zählen zu den ältesten Waffen der Geschichte. Schon die primitivsten Völker benutzten einfache Holzstangen, die an einem Ende angespitzt wurden. Nachdem die Menschen die Metallverarbeitung entdeckt hatten, begannen sie Speerköpfe aus Eisen und Stahl herzustellen. Waffenschmiede experimentierten bald mit unterschiedlichen Formen von Speerköpfen, was zur Entstehung verschiedener Arten von Stangenwaffen führte.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 (Stich)
+Gewicht: 5
+Initiativefaktor: 6
+Mindeststärke: 5
+Fertigkeit: Speer
+Typ: 2-händig
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Magiern
+- Mönchen~
+@78   = ~Das Bastardschwert ist von seiner Art her zwischen dem Zweihänder und dem Langschwert angesiedelt, weshalb es auch als Anderthalbhänder bezeichnet wird. Es besitzt eine zweischneidige Klinge und einen langen Griff, wodurch es auch beidhändig geschwungen werden kann. Die durchschnittliche Länge des Bastardschwertes liegt zwischen 1,40 und 1,60 m.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 2W4 (Klinge)
+Gewicht: 10
+Initiativefaktor: 8
+Mindeststärke: 11
+Fertigkeit: Bastardschwert
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Klerikern
+- Magiern
+- Mönchen~
+@79   = ~Diese Schwerter werden auch als zweischneidige Schwerter, Kriegsschwerter oder Militärschwerter bezeichnet. Es gibt keine einheitliche Form des Langschwertes. Seine Form und Länge sind von Kultur zu Kultur unterschiedlich und können selbst innerhalb einer Kultur je nach Zeitalter variieren. Das grundlegendste Merkmal aller Langschwerter ist ihre Länge, die zwischen 90 cm und 1,20 m beträgt. Im letzteren Fall nimmt die Klinge 1 m der Gesamtlänge ein. Die meisten Langschwerter besitzen eine zweischneidige Klinge mit einer scharfen Spitze. Trotz dieser Spitze ist das Langschwert nicht zum Stoßen, sondern zum Schwingen vorgesehen.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Gewicht: 4
+Initiativefaktor: 5
+Mindeststärke: 6
+Fertigkeit: Langschwert
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+- Druiden
+- Klerikern
+- Magiern~
+@80   = ~Das Kurzschwert ist die erste und ursprüngliche Form eines Schwertes. Einfach ausgedrückt ist ein Kurzschwert ein Dolch, bei dem die Klinge so lang ist, dass das Ganze nicht mehr als Dolch bezeichnet werden kann. Der Begriff "Kurzschwert" ist in der Klassifizierung der Schwerter eigentlich nicht bekannt. Er wird jedoch mittlerweile zur Beschreibung einer zweischneidigen Klinge mit einer ungefähren Länge von 60 cm verwendet. Die Klinge ist normalerweise vorne spitz, wodurch sich das Kurzschwert hervorragend zum Stoßen eignet.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 (Stich)
+Gewicht: 3
+Initiativefaktor: 3
+Mindeststärke: 5
+Fertigkeit: Kurzschwert
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+- Druiden
+- Klerikern
+- Magiern~
+@81   = ~Sowohl der Säbel als auch der Krummsäbel sind durch eine einseitig scharfe, gekrümmte Klinge charakterisiert, obwohl die beiden Waffen ursprünglich aus unterschiedlichen Regionen Faerûns stammen. Der Säbel wurde aufgrund seiner Vielseitigkeit hauptsächlich von berittenen Kriegern eingesetzt, während die Entwicklung des Krummsäbels durch einen starken orientalischen Einfluss geprägt ist. Der "Shamshir", wie man ihn ursprünglich genannt hat, ist größer und stärker gekrümmt und hat eine langgezogene Spitze. Dadurch kann er zwar nur ein wenig langsamer geschwungen werden, ist aber wesentlich tödlicher.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Gewicht: 4
+Initiativefaktor: 5
+Mindeststärke: 10
+Fertigkeit: Krummsäbel
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+- Dieben
+- Klerikern
+- Magiern
+- Mönchen~
+@82   = ~Das Katana ist ein Schwert, dessen Klinge nur auf einer Seite scharf ist. Es ist leicht gekrümmt und endet in einer Spitze, die an die Spitze eines Meißels erinnert. Das Katana stellt vermutlich die aufwändigste Form des Schwertes dar. Seine Fertigung ist ein langer, aufwändiger und höchst geheimer Vorgang, den man schon fast als Kunstwerk bezeichnen müsste. Diese Schwerter spielen in der Kultur von Kara-Tur eine wichtige Rolle. Wenn man es wagt, das Katana eines Samurais zu berühren oder gar zu ziehen, beleidigt man den Samurai, dem es gehört, und zieht seinen Zorn auf sich. Es kommt nur äußerst selten vor, dass ein Gaijin, ein Fremder, in den Besitz einer derartigen Waffe kommt. Entweder handelt es sich bei diesem Gaijin dann um den geehrten Freund eines wichtigen Ministers oder um den Mörder eines Samurais.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W10 (Klinge)
+Gewicht: 6
+Initiativefaktor: 4
+Mindeststärke: 6
+Fertigkeit: Katana
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+- Druiden
+- Klerikern
+- Magiern~
+@83   = ~Das Wakizashi, auch Begleitschwert genannt, ist für einen Samurai von höchster Wichtigkeit. Es wird von ihm ständig getragen, auch wenn er sich in einem Gebäude aufhält. Wenn er schläft, liegt es neben ihm. Das Wakizashi ist von ebenso hochwertiger Fertigung wie das Katana. Es ist allerdings deutlich kürzer und die Klinge ist nur 30 bis 60 cm lang. In den Händen eines geschulten Kriegers ist es eine tödliche Waffe.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Stich)
+Gewicht: 3
+Initiativefaktor: 3
+Mindeststärke: 5
+Fertigkeit: Krummsäbel
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+- Druiden
+- Klerikern
+- Magiern~
+@84   = ~Das Ninja-To ist das Schwert der Ninja und nicht von so hochwertiger Qualität wie die anderen Klingen, die aus Kara-Tur stammen, wie beispielsweise das Katana. Das Ninja-To hat eine gerade Klinge und ist relativ kurz. Es eignet sich daher ideal für den verschlagenen Ninja, da es sich leicht verbergen lässt. Da es recht kurz ist, eignet es sich besser als die langen Klingen eines Samurais, um damit unter beengten Verhältnissen zu kämpfen. Das verschafft einem Ninja, der gegen einen Samurai antritt, manchmal einen Vorteil.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Gewicht: 5
+Initiativefaktor: 4
+Mindeststärke: 6
+Fertigkeit: Krummsäbel
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+- Druiden
+- Klerikern
+- Magiern~
+@85   = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W10 (Klinge)
+Gewicht: 15
+Initiativefaktor: 10
+Mindeststärke: 14
+Fertigkeit: Zweihänder
+Typ: 2-händig
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Klerikern
+- Magiern
+- Mönchen~
+@86   = ~Taerom~
+
+@88   = ~Revianel~
+@89   = ~Dämmerungslord Revianel~
+@90   = ~Lathander zum Gruße! Kann ich etwas für Euch tun?~ [ACREVI00]
+@91   = ~Breagars Armstumpf~
+@92   = ~Bei dem Unfall in der Donnerhammerschmiede verlor Breagar seine linke Hand. Die Wunde wurde zwar geheilt, bietet aber mit ihrem vernarbten Gewebe keinen schönen Anblick.~
+@93   = ~Golemarm~
+@94   = ~Der ausgerissene Arm eines silbernen Golems.~
+@95   = ~Breagars silberne Hand~
+@96   = ~Durch Berronars mächtige Magie wurde der silberne Arm des Wächtergolems mit Breagars Armstumpf verbunden. Breagar kann die Hand verwenden, als ob es seine eigene wäre. Der Segen der Zwergengöttin verstärkt das Metall genug, dass Breagar damit Waffen blocken und sogar magischen Angriffen ein wenig trotzen kann. Leider sind die Finger der neuen Hand zu dick, als dass er einen Ring über sie streifen könnte.
+
+EIGENSCHAFTEN:
+
+  RK-Bonus: -2
+  RW-Bonus: +2~
+@97   = ~Durch Berronars mächtige Magie wurde der silberne Arm des Wächtergolems mit Breagars Armstumpf verbunden. Breagar kann die Hand verwenden, als ob es seine eigene wäre. Der Segen der Zwergengöttin verstärkt das Metall genug, dass Breagar damit Waffen blocken und sogar magischen Angriffen ein wenig trotzen kann. Leider sind die Finger der neuen Hand zu dick, als dass er einen Ring über sie streifen könnte.
+
+Dank der Energiezellen aus Irencus' Kerker ist der silberne Arm jetzt um einiges stärker.
+
+EIGENSCHAFTEN:
+
+  Stärkebonus: +1
+  RK-Bonus: -2
+  RW-Bonus: +2~
+@98   = ~Durch Berronars mächtige Magie wurde der silberne Arm des Wächtergolems mit Breagars Armstumpf verbunden. Breagar kann die Hand verwenden, als ob es seine eigene wäre. Der Segen der Zwergengöttin verstärkt das Metall genug, dass Breagar damit Waffen blocken und sogar magischen Angriffen ein wenig trotzen kann. Leider sind die Finger der neuen Hand zu dick, als dass er einen Ring über sie streifen könnte.
+
+Dank der Energiezellen aus Irencus' Kerker kann Breagar mit seinem silbernen Arm einen Schild viel besser benutzen als vorher.
+
+EIGENSCHAFTEN:
+
+  +2 Auf Talent "Waffe und Schild"
+  RK-Bonus: -2
+  RW-Bonus: +2~
+@99   = ~Durch Berronars mächtige Magie wurde der silberne Arm des Wächtergolems mit Breagars Armstumpf verbunden. Breagar kann die Hand verwenden, als ob es seine eigene wäre. Der Segen der Zwergengöttin verstärkt das Metall genug, dass Breagar damit Waffen blocken und sogar magischen Angriffen ein wenig trotzen kann. Leider sind die Finger der neuen Hand zu dick, als dass er einen Ring über sie streifen könnte.
+
+Dank der Energiezellen aus Irenicus' Kerker kann Breagar mit seinem silbernen Arm einen Schild viel besser benutzen als vorher.
+
+EIGENSCHAFTEN:
+
+  +3 Auf Talent "Beidhändiger Kampf"
+  RK-Bonus: -2
+  RW-Bonus: +2~
+@100  = ~Breagars fehlende Hand~
+@101  = ~Da Breagars Hand bei dem Unfall in der Donnerhammerschmiede abgerissen wurde, kann er auf dieser Seite keine Ringe mehr tragen.~
+@102  = ~Breagars Hand aus Meteoritenerz~
+@103  = ~Durch Berronars mächtige Magie wurde der silberne Arm des Wächtergolems mit Breagars Armstumpf verbunden. Breagar kann die Hand verwenden, als ob es seine eigene wäre. Der Segen der Zwergengöttin verstärkt das Metall genug, dass Breagar damit Waffen blocken und sogar magischen Angriffen ein wenig trotzen kann. Leider sind die Finger der neuen Hand zu dick, als dass er einen Ring über sie streifen könnte.
+
+Mit Hilfe des Meteoritenerzes, welches Breagar erfolgreich in den Golemarm implementierten konnte, ist es ihm gelungen, dessen Widerstandsfähigkeit noch einmal zu verbessern.
+
+EIGENSCHAFTEN:
+
+  RK-Bonus: -3
+  RW-Bonus: +3~
+@104  = ~Silberne Zwergin~
+@105  = ~Silbernes Kettenhemd~
+@106  = ~Silberner Helm~
+@107  = ~Yrrymyr~
+@108  = ~Berronars Schale~
+@109  = ~In solchen Schalen wird am Neujahrsfest Silber eingeschmolzen, das in einer feierlichen Zeremonie Berronar geopfert wird.~
+@110  = ~Berronars Axt +2~
+@111  = ~Um diese legendäre Axt ranken sich viele Legenden. Angeblich soll Moradin selbst diese Waffe als Geschenk für seine treue Gattin Berronar geschmiedet haben, doch durch eine Verkettung unglücklicher Ereignisse zerbrach die Waffe, und die kostbaren Edelsteine, die sie zierten, gingen verloren.
+
+Obwohl die Axt durch diesen Schaden einiges von ihrer Kraft verloren hat, ist sie doch in den Händen eines ehrbaren Zwerges immer noch eine hilfreiche Waffe gegen alles Böse.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer besteht eine 10%ige Chance, den Gegner für 10 Sekunden bewusstlos zu schlagen (Rettungswurf gg. Tod, +2 Malus).
+
+Schaden: 1W10 +2 (Klinge)
+ETW0-Bonus: -2
+Gewicht: 7
+Initiativefaktor: 4
+Mindeststärke 10 
+Fertigkeit: Axt
+Typ:  1-händig
+
+Kann nur verwendet werden von: 
+- Guten Wesen
+- Zwergen
+- Barbaren
+- Kämpfern~
+@112  = ~Berronars Axt +5~
+@113  = ~Um diese legendäre Axt ranken sich viele Legenden. Angeblich soll Moradin selbst diese Waffe als Geschenk für seine treue Gattin Berronar geschmiedet haben.
+
+Bei Ihrer Reise durch das Unterreich fanden <CHARNAME> und Breagar die fehlenden Edelsteine und reparierten die Axt in Cromwells Schmiede. Seitdem erstrahlt die Axt in neuem Glanz und ist eine furchtbare Waffe im Kampf gegen das Böse.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer besteht eine 50%ige Chance den Gegner für 10 Sekunden bewusstlos zu schlagen (Rettungswurf gg. Tod, +2 Malus).
+Auf dem Träger liegt Schutz vor Bösem.
+
+Schaden: 1W12 +5 (Klinge)
+ETW0-Bonus: -5
+Gewicht: 7
+Initiativefaktor: 4
+Mindeststärke 10 
+Fertigkeit: Axt
+Typ:  1-händig
+
+Kann nur verwendet werden von: 
+- Guten Wesen
+- Zwergen
+- Barbaren
+- Kämpfern~
+@114  = ~Berronars Axt +6~
+@115  = ~Um diese legendäre Axt ranken sich viele Legenden. Angeblich soll Moradin selbst diese Waffe als Geschenk für seine treue Gattin Berronar geschmiedet haben.
+
+Bei Ihrer Reise durch das Unterreich fanden <CHARNAME> und Breagar die fehlenden Edelsteine und reparierten die Axt in Cromwells Schmiede. Diese Tat erweckte das Interesse der Götter, und sie verliehen der Waffe einen zusätzlichen Segen. Seitdem erstrahlt die Axt in neuem Glanz und ist eine furchtbare Waffe im Kampf gegen das Böse, ganz besonders gegen Riesen und riesenartige.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer besteht eine 50%ige Chance, den Gegner für 10 Sekunden bewusstlos zu schlagen (Rettungswurf gg. Tod, +2 Malus).
+Auf dem Träger liegt Schutz vor Bösem.
+
+Schaden:
+  1W12+6 (Klinge)
+  1W12+9 (gg. riesige Gegner)
+ETW0-Bonus: -6
+  -9 (gg. riesige Gegner)
+Gewicht: 7
+Initiativefaktor: 4
+Fertigkeit: Axt
+Typ:  1-händig
+Mindeststärke 10 
+
+Kann nur verwendet werden von: 
+- Guten Wesen
+- Zwergen
+- Barbaren
+- Kämpfern~
+@116  = ~Borsks Zauberrobe~
+@117  = ~Diese Robe gehörte einst dem Nekromanten Borsk. Jetzt gehört sie Euch.
+
+EIGENSCHAFTEN:
+
+Rüstungsklasse: 5
+RW-Bonus: -1
+Magiewiderstand: +2%
+Gewicht: 6
+
+Kann nur verwendet werden von:
+- Magiern~
+@118  = ~Borsk~
+@119  = ~Theber~
+@120  = ~Karela~
+@121  = ~Ralph~
+@122  = ~Ralph, der Schmied~
+@123  = ~Tobin~
+@124  = ~Morgenlord Tobin~
+@125  = ~Verhüllter Zwerg~
+@126  = ~Audhild~
+@127  = ~Nachricht der Schattendiebe~
+@128  = ~Breagar,
+
+Eure Axt ist tatsächlich gesehen worden. Unsere Kontakte haben berichtet, dass eine kleine, blau gekleidete Gestalt sie in den Unruhen auf Waukeens Promenade an sich nahm. Meiner Meinung nach klingt das ganz nach dem einäugigen Arnold, einem zweitklassigen gnomischen Waffenhänder. Wenn Ihr mit ihm sprechen wollt, findet Ihr ihn bestimmt in einer der Tavernen auf der Promenade. Aber geht sanft mit ihm um, eigentlich ist er kein böser Kerl.
+
+Viel Erfolg bei Eurer Suche!~
+@129  = ~Brief~
+@130  = ~Brief des Einaugen Arnie~
+@131  = ~Arnie,
+
+Das Geschäft steht. Wir sehen uns beim Turm des Anstinus.
+
+- Reggik~
+@132  = ~Bote der Schattendiebe~
+@133  = ~Arnie~
+@134  = ~Arnie Einauge~
+@135  = ~Klerikerin~
+@136  = ~Zofe Lolths~
+@137  = ~Priesterin~
+@138  = ~Pfefferkörner~
+@139  = ~Der Pfefferstrauch ist eine Pflanze aus der Familie der Piperaceae, deren Früchte ein durch das darin enthaltene Alkaloid Piperin scharf schmeckendes Gewürz liefern.~
+@140  = ~Zerrissenes Rezept~
+@141  = ~Rezept des Grünen Feuers
+
+Zutaten:
+
+1 komplettes Menschliches Skelett
+1 handelsüblicher Explosionstrank
+1 Smaragd
+1 Zweig vom Busch des Feuerkrautes
+1 Handvoll Pfefferkörner
+
+(Hier bricht das Rezept ab)~
+@142  = ~(Die Obere Hälfte scheint zu fehlen)
+
+Zubereitung:
+
+1. Drapiere alle Zutaten um das Erste herum.
+2. Lasse das Letzte in das Zweite rieseln.
+3. Nimm die Hälfte vom Vierten und gebe sie Zerrieben zum Zweiten.
+4. Schüttele vorsichtig
+5. Gib die zweite Hälfte vom Vierten zum Zweiten
+6. Schüttele kräftig.
+7. Lass das Dritte ins Zweite fallen und warte, bis es sich aufgelöst hat.
+
+Nicht für Kinder unter drei Jahren geeignet!~
+@143  = ~Duergar Kämpfer~
+@144  = ~Duergar Kleriker~
+@145  = ~Graschek~
+@146  = ~Hargek~
+@147  = ~Forres~
+@148  = ~Anstitus~
+@149  = ~Reggiks zweites Tagebuch~
+@150  = ~In den Einband ist eine kurze Notiz gekritzelt: Ich habe mich entschieden, dieses Buch weder zu vernichten noch zu verfälschen. Mag sein, dass ich eines Tages gerichtet werde, dann sollen diese Seiten meine Zeugen sein, im Guten wie im Schlechten.
+
+4. Alturiak 1467
+
+Breagar hat es tatsächlich gewagt! Er hat Meister Galthur um die Hand Audhilds gebeten. Ich habe zu lange gezögert. Dieser Narr wirft alle meine Pläne durcheinander. Muss mit Forres sprechen.
+
+6. Alturiak 1467
+
+Unser Plan scheint in Erfüllung zu gehen. Forres ist der klügere Kopf von uns beiden, ich bin erstaunt wie einfach es ihm fiel, auf die richtige Lösung zu kommen. Galthur hat sich von mir einwickeln lassen und Breagar eine Meisterprüfung aufgebrummt, die sich gewaschen hat. Einen Ring der Elemente soll er schmieden! Aber ich sollte mich nicht zu früh freuen, ich weiß, dass diese Aufgabe mir auch noch bevorsteht. Ich muss schnell und zügig arbeiten.
+
+10. Tarsak 1467
+
+Ich mache Fortschritte. Breagar arbeitet wie ein Besessener, so dass ihm nicht auffällt, dass er nicht der einzige ist, der Vorbereitungen auf einen Ring der Elemente trifft. Habe bereits Kontakt nach Süden aufgenommen, mein alter Clan wird mir sicherlich zur Hand gehen.
+
+15. Marpenot 1467
+
+Ein halbes Jahr Arbeit, aber es hat sich gelohnt. Meine Aufzeichnungen sind komplett, und ich vermute Breagars auch. Es war ein leichtes, seine Vorlagen der alten Runen zu verfälschen, ein Strich reicht, um aus der Rune Kontrolle die Rune Freisetzung zu machen. Wenn er den Ring graviert, werden die Kräfte im Metall freigesetzt und... mir ist nicht so ganz wohl dabei, aber für die gute Sache müssen Opfer gebracht werden. Breagar würde es sowieso nicht verstehen.
+
+20. Marpenot 1467
+
+Breagar möchte nächstes Frühjahr aufbrechen. Er hat sich für die Schwertküste entschieden, um in Kerzenburg eine Kopie des Buches der Schmiedekunst zu erwerben. Das ist gut so, denn der Eintritt ist teuer und jeder Tag, den Breagar mit Sparen zubringt, ist ein Tag auf meiner Seite.
+
+1. Ches 1468
+
+Breagar ist gestern aufgebrochen. Ich warte noch ein paar Tage ab, um sicher zu gehen, dann werde ich ebenfalls bei Galthur um Audhilds Hand anhalten. Meine Vorbereitungen sind gut, und ich weiß, dass bei meinem alten Clan bereits ein Buch der Schmiedekunst auf mich wartet.~
+@151  = ~Reggiks erstes Tagebuch~
+@152  = ~Wenn irgendjemand dieses Tagebuch liest, bin ich wahrscheinlich tot. Nach zwergischem Recht hätte ich es verdient, denn ich habe gegen fast alle Gesetze des Clans Bardormar verstoßen, und werde wahrscheinlich auch noch gegen die übrigen verstoßen müssen. Aber wenn das mein Weg ist, dann gehe ich ihn mit hoch erhobenen Haupt zu Ende, denn es ist ein guter Weg.
+
+Es ist nun ein paar Wochen her, dass ich Forres, den Duergarpriester, traf. Er taumelte halb verhungert und wahnsinnig durch die Stollen, und es wäre mir ein leichtes gewesen, ihn zu töten. Aber dennoch: Irgendetwas hielt mich davon ab. Ich nahm mich seiner an und pflegte ihn in einem stillgelegten Korridor gesund. Je länger unser Versteckspiel dauerte, desto größer wurde die Gefahr, dass man uns entdeckte. Aber in gleichen Maße wuchs meine Überzeugung, das richtige zu tun. Forres ist ein entlaufener Sklave, dessen Clan von den Drow unterjocht wurde und durch weit verzweigte Gänge aus den Tiefen des Unterreiches bis in die Minen des Clans Bardormar stolperte. Wäre nicht ich es gewesen, sondern ein anderer Zwerg, der ihn dort gefunden hätte - er wäre bestimmt erschlagen worden.
+
+Je länger ich Forres pflegte und mich mit ihm unterhielt, desto richtiger kam mir vor, was ich tat. Forres ist ein Duergar und somit ein Feind aller Bardormar-Zwerge, und einige seiner Ansichten laufen den Lehren der Mordinsamman entgegen - aber er ist einsichtig und klug. Ich habe mit ihm tiefere Gespräche geführt als mit manchem reinem Zwergen.
+
+Es dauerte einige Zeit, bis mir bewusst wurde, dass meine Gedanken immer öfter in eine bestimmte Richtung zeigten: Ich wollte die Vendetta des Clans gegen die Grauzwerge beenden und Forres und seinem Clan einen Weg zeigen, zurück in den Schoß der Mordinsamman zu gelangen. Keine leichte Aufgabe, aber ich spürte deutlich, dass meine Bemühungen auf göttlichen Beistand stießen. Ich hatte vor, Galthur zu beerben, was das Amt des Meisterschmiedes des Clans anging, denn als Mitglied des Clansvorstandes hätte ich mehr Einfluss auf die anderen Zwerge. Vielleicht hätte ich wirklich etwas erreicht.
+
+Doch meine Pläne erfuhren einen herben Dämpfer. Breagar der Bäcker hat sich entschlossen, seine Backstube zu verlassen und sich Galthur als Schmiedelehrling angehängt. Es dauerte nicht lange, bis ich begriff, warum er das tat: Er hat sich in Audhild verliebt und will Telormavar des Clans werden. Aus einem jugendlichen Leichtsinn heraus droht Breagar, mir alles zu verderben. Ich muss abwarten was sich ergibt. Wenn er von sich aus versagt, schön. Wenn nicht...~
+@153  = ~Reggiks drittes Tagebuch~
+@154  = ~Breagar und <CHARNAME> wurden in Athkatla gesehen! Schon als Grothir berichtete, dass Breagar in seiner Prüfung zwar versagt hatte, dafür aber von den Göttern selbst berührt wurde, zeigte mir das auf, dass unser Plan stärker ins Wanken geriet als gedacht. Und doch... ist nicht ein Symbol wie Berronars Axt genau das richtige, um den Duergar etwas zu geben, woran sie glauben können? Ist nicht genau das ein Zeichen, das sie zurück zu den Mordinsamman führen würde?
+
+Ich habe den Waffenhändler Einaugen-Arnold angeheuert, damit er uns die Axt organisiert. Wie er das geschafft hat, will ich gar nicht so genau wissen, aber er konnte sie tatsächlich aus dem Chaos auf Waukeens Promenade bergen und zu uns bringen. Wenn mir die Götter jetzt noch ein bisschen gewogen sind, dann hilft der Verlust der Axt, Breagar von Audhild und Galthur endgültig fernzuhalten. Und gleichzeitig kann sie den Duergar neue Hoffnung geben. Ich werde die Tagebücher und die Axt bei Forres hinterlassen, wenn ich mich jetzt auf den Weg mache, um Galthur in Handelstreff aufzusuchen. Von dort aus werden wir in die Hallen meines alten Clans reisen.~
+@155  = ~Reggiks Schlüsselstein~
+@156  = ~Dieser Schlüsselstein hebt die magische Barriere auf, die den Keller von Anstinus' Turm versperrt. Der Stein ist so verändert, dass nur ein Zwerg aus dem Clan Bardormar seine Kräfte nutzen kann.~
+@157  = ~Forres' Schlüsselstein~
+@158  = ~Dieser Schlüsselstein hebt die magische Barriere auf, die den Keller von Anstinus' Turm versperrt.~
+@159  = ~Feuerkrautzweig~
+@160  = ~Die Beeren des Feuerkrautes schmecken widerlich, werden allerdings von Kindern und Alchemisten hoch geschätzt. Letztere nutzen den glühenden Inhaltsstoff "Spectrin" um ihren Tränken ein gewisses Glühen zu verleihen, erstere schätzen den selben Effekt insbesondere beim morgendlichen Gang auf das Stille Örtchen.~
+@161  = ~Vertrag mit Clan Bardormar~
+@162  = ~Dieser Vertrag über eine größere Waffenlieferung könnte dem Eisenthron einen großen Vorteil geben.~
+@163  = ~Mithrilkette~
+@164  = ~Eine kostbare Kette aus Mithril, eindeutig Zwergenarbeit.~
+@165  = ~Trank des grünen Feuers~
+@166  = ~Dieser Trank wurde von <CHARNAME> und <PRO_HISHER>en Gefährten nach dem Rezept von Anstinus dem Großen hergestellt.~
+@167  = ~Grothir~
+@168  = ~Reggik~
+@169  = ~Galthur~
+@170  = ~Ascalon~
+@171  = ~Ascalon der Barkeeper~
+@172  = ~Bork~
+@173  = ~Elasia~
+@174  = ~Frosthammer +3~
+@175  = ~Reggik, einer der fähigsten Schmiede des Bardormar-Clans aus den Sturmhornbergen, übte sich lange in der Kunst der Runenschmiede, bis er seine Fähkigeiten an diesem Hammer erproben wollte. Die Waffe knackst hin und wieder vor Kälte, und in dem Metall funkeln silberweiße Runen.
+
+EIGENSCHAFTEN:
+
+Wird ein Gegner getroffen, besteht eine 5%ige Chance, dass das Ziel den sofortigen Kältetod stirbt (Rettungswurf gg. Tod).
+
+
+Schaden: 2W4+3 (Wucht)
+ETW0-Bonus: 0
+Gewicht: 4
+Initiativefaktor: 1
+Fertigkeit: Hammer
+Typ: 1-händig
+Mindeststärke 10 
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Magiern
+- Mönchen~
+@176  = ~Zwergisches Textfragment~
+@177  = ~Diese losen Papiere sind Fragmente der Geschichte von Berronars Axt.
+
+"... makelloser Reinheit war die silberne Klinge... feinsten Stoff... Rubin... Sonne..."~
+@178  = ~Diese losen Papiere sind Fragmente der Geschichte von Berronars Axt.
+
+"... aus den Händen Moradins nahm... Mordinsamman... Saphir... fallender Stern..."~
+@179  = ~Diese losen Papiere sind Fragmente der Geschichte von Berronars Axt.
+
+"... tausend Lawinen... riss er die Axt in die Höhe... die kunstvollen Edelsteine... in der Welt der Sterblichen... Saphir... tiefsten Tiefen des Unterreiches..."~
+@180  = ~Schriftgelehrter Oghmas~
+@181  = ~Toter Drow~
+@182  = ~Die Geschichte der Axt Berronars~
+@183  = ~In jener Zeit machte Moradin seiner Gattin Berronar ein fürstliches Geschenk. Um Jahr und Tag schmiedete er eine silberne Axt, zum Schutze des Clans, und zur Ehre seines geliebten Weibes. Und von makelloser Reinheit war die silberne Klinge, geschliffen mit dem feinsten Stoff, und in Ihrer Mitte der Rubin, funkelnd und leuchtend wie die untergehende Sonne.
+
+Und als sie die Axt aus den Händen Moradins nahm, da gleißte das Licht auf in den Hallen der Mordinsamman, und der Saphir an der Spitze der Axt strahlte auf wie ein fallender Stern.
+
+Da aber Abbathor, der finstere Gott der Habsucht die Waffe erblicke, da neidete er Berronar dieses Stück und sprang sie an, und entriss Ihr die Waffe und lief von dannen. Moradin aber ergriff seinen Hammer und setzte dem Dieb nach und holte ihn ein.
+
+Und als Moradins Hammer mit der Wucht von tausend Lawinen auf den schurkischen Räuber herniederging, da riss dieser die Axt in die Höhe und siehe: Die Waffe hielt! Doch brachen die kunstvollen Edelsteine aus ihrer Fassung und sprangen davon und landeten in der Welt der Sterblichen. Mit dem Smaragd, der den Knauf der Axt schmückte,  flogen sie über Berge und Täler hinweg und verschwanden auf Nimmerwiedersehen in den tiefsten Tiefen des Unterreiches.~
+@184  = ~Smaragd~
+@185  = ~Dieser Edelstein sieht eindeutig so aus, als sei er einstmals ein Teil einer Waffe gewesen.~
+@186  = ~Saphir~
+@187  = ~Rubin~
+@188  = ~Meteoritenerz~
+@189  = ~Breagar hat sich diese Brocken Erz mitgenommen um sie genauer zu untersuchen.~
+@190  = ~Nachdem Breagar und <CHARNAME> voneinander Abschied genommen hatten, reiste der Zwerg alleine zurück Richtung Norden. Auch wenn ihn alles zu den Hallen seines alten Clans zog, so spürte Breagar tief in sich, dass sein Weg ihn in andere Gefilde treiben würde. Von Berronars Axt geleitet, zog er einsam durch die Welt und erlebte noch einige Abenteuer, in denen er sich ein ums andere Mal als wahrer Streiter für das Gute erwies. Als Breagar nach einem langen, erfüllten Leben verschied, wurden seine sterblichen Überreste in die Hallen des Clans Bardormar überbracht, und der ruhelose Kämpfer fand endlich seinen Frieden im Schoße der Heimat, die er zeitlebens nicht mehr gesehen hatte.~
+@191  = ~Nachdem <CHARNAME> und Breagar voneinander Abschied genommen hatten, reiste der Zwerg zurück an die Schwertküste, um endlich seine Aufgabe zu erfüllen, einen Ring der Elemente zu schmieden. Er hatte noch viele Abenteuer zu bestehen, doch über Jahr und Tag stand er endlich vor den Pforten der Hallen seines Clans, um Audhild den Ring als Verlobungsgeschenk an den Finger zu stecken. Breagar übernahm das Amt des Meisterschmiedes, nachdem Galthur sich zur Ruhe setzte, und als nach einigen Jahren der Verbannte Reggik wieder vor den Toren der Clanshallen stand, setzte sich Breagar für seine Wiederaufnahme in die Clansmitte ein. Reggik und Breagar wurden vielleicht nicht die besten Freunde, hatten jedoch beide gelernt, über ihre persönlichen Ansichten hinweg zu sehen und arbeiteten als ein perfektes Gespann, dem Clan zur Ehre. Als Audhild nach einem langen Leben verschied, unternahm Breagar eine letzte Reise. Er besuchte Suldanessanar, Athkatla und Baldurs Tor, sowie viele andere Orte, die er mit <CHARNAME> durchwandert hatte. Schließlich führte sein Weg ihn nach Kerzenburg. Die Mönche staunten nicht schlecht, als ein uralter Zwerg mit langem, weißen Bart berichtete, er sei einst mit dem Bhaalskind gezogen, das hier gelebt hatte. Als Einlassgeschenk vermachte er der Bibliothek ein neues Buch der Schmiedekunst, aus seiner eigenen Feder. Breagar wurde herzlich aufgenommen, doch als die Mönche ihn am nächsten Morgen wecken wollten, lag der alte Zwerg tot in seinem Bett. Breagar war mit einem glücklichen Lächeln in Berronars Hallen eingegangen, um die Ewigkeit an der Seite seiner geliebten Audhild zu verbringen.~
+@192  = ~Nachdem <CHARNAME> und Breagar voneinander Abschied genommen hatten, reiste der Zwerg zurück an die Schwertküste, um endlich seine Aufgabe zu erfüllen, einen Ring der Elemente zu schmieden. Er hatte noch viele Abenteuer zu bestehen, doch über Jahr und Tag stand er endlich vor den Pforten der Hallen seines Clans, um Audhild den Ring als Verlobungsgeschenk an den Finger zu stecken. Er wurde fürstlich empfangen, denn die Kunde um seine Taten hatten längst die Clanshallen erreicht. Breagar übernahm das Amt des Meisterschmiedes, das er viele Jahre lang gewissenhaft ausführte. Als Audhild nach einem langen und erfülltem Leben verschied, unternahm Breagar eine letzte Reise. Er besuchte Suldanessanar, Athkatla und Baldurs Tor, sowie viele andere Orte, die er mit <CHARNAME> durchwandert hatte. Schließlich führte sein Weg ihn nach Kerzenburg. Die Mönche staunten nicht schlecht, als ein uralter Zwerg mit langem, weißen Bart berichtete, er sei einst mit dem Bhaalskind gezogen, das hier gelebt hatte. Als Einlassgeschenk vermachte er der Bibliothek ein neues Buch der Schmiedekunst, aus seiner eigenen Feder. Breagar wurde herzlich aufgenommen, doch als die Mönche ihn am nächsten Morgen wecken wollten, lag der alte Zwerg tot in seinem Bett. Breagar war mit einem glücklichen Lächeln in Berronars Hallen eingegangen, um die Ewigkeit an der Seite seiner geliebten Audhild zu verbringen.~
+@193  = ~Turm des Anstinus~
+@194  = ~Ein steiler Gang verliert sich im Dunkeln. Es wäre töricht, dort hinabklettern zu wollen.~
+@195  = ~Ein unsichtbares Kraftfeld liegt über der Treppe in den Keller.~
+@196  = ~Die Treppe sieht nicht allzu vertrauenerweckend aus.~
+
+@4000    = ~Alle Zutaten sind bereit. Ihr wisst, dass Ihr nur einen Versuch habt und solltet Ihr zwischendurch abbrechen ist der Trank verloren. Wollt Ihr beginnen?~
+@4001    = ~Ja, ich bin bereit.~
+@4002    = ~Nein, ich muss mich noch vorbereiten.~
+@4003    = ~(Ihr wendet Euch ab.)~
+@4004    = ~Wie wollt Ihr beginnen?~
+@4005    = ~(Den Explosionstrank vorsichtig schütteln)~
+@4006    = ~(Den Explosionstrank kräftig schütteln)~
+@4007    = ~(Eine Hälfte des Feuerkrautes in den Trank geben)~
+@4008    = ~(Die Pfefferkörner in den Trank rieseln lassen)~
+@4009    = ~(Den Smaragd in den Trank geben)~
+@4010   = ~(Die Mischung beginnt zu brodeln. Offenbar war das ein falscher Schritt)~
+@4011   = ~(Die Körner versinken mit einem leisen Zischen)~
+@4012   = ~(Die Blätter kräuseln sich in dem Gebräu)~
+@4013   = ~(Die andere Hälfte des Feuerkrautes in den Trank geben)~
+@4014   = ~(Vorsichtig schüttelt Ihr den Trank. Die Blätter zerfallen in ihre Fasern)~
+@4015   = ~(Die übrigen Blätter werfen Blasen und ein übelriechendes Gas entweicht)~
+@4016   = ~(Etwas nervös, aber doch entschlossen schüttelt Ihr den Trank. Die letzten Blätter lösen sich auf)~
+@4017   = ~(Der Smaragd versinkt im schäumenden Trank, der schon bald eine blassgrüne Farbe annimmt)~
+
+@5000 = ~Ewsahvarmarnakkaglem...~
+@5001 = ~Ewsahvarmar... mos! MOS!~
+@5002 = ~Heda, Breagar!~
+@5003 = ~Raaaah! Tod und Verderben über Euch!~
+@5004 = ~Macht die Tür auf!~
+@5005 = ~Ich kann Euch hören! Nun lasst mich raus!~
+@5006 = ~Buzzurk! Macht die Tür auf!~
+@5007 = ~Das ist nicht komisch! Öffnet die Tür!~
+@5008 = ~Verdammter närrischer <PRO_RACE>! Macht auf!~
+@5009 = ~Duergar! Verdammte Höllenbrut!~
+@5010 = ~Das Kraftfeld über der Treppe ist verschwunden.~
+@5011 = ~Ich rieche Euch!~
+@5012 = ~Heda, Verstärkung! Los, auf sie!~
+@5013 = ~Der Tunnel ist leer.~
+@5014 = ~Drow stürzen sich aus der Höhle auf Euch.~
+@5015 = ~Im Namen der Mordinsamman!~
+@5016 = ~Sei versiegelt bis in alle Zeit!~
+@5017 = ~Das Energiefeld lässt Euch die Haare im Nacken aufstehen.~
+@5018 = ~Die Bar ist geschlossen!~
+@5019 = ~Das werde ich Euch nie vergessen!~
+
+/* new for v7.0 */
+@5020 = ~Bei Moradins Hammer, wir haben es geschafft!~
+@5021 = ~Ich werde auch weiterhin an Eurer Seite bleiben. Sofern Ihr das wollt, natürlich.~
+/* Avernus, inside the elevator */
+@5022 = ~Hrmpf. So tief unter der Erde, aber *hier* fühle ich mich nicht wohl.~
+/* after PC's murder accusation, low rep */
+@5023 = ~Das kann doch nicht sein - nach allem, was wir erreicht haben, solltet Ihr nun so eine Tat begehen?~
+/* after PC's murder accusation, high rep */
+@5024 = ~Das geht nicht mit rechten Dingen zu! Nach allem, was <CHARNAME> erreicht hat, würde <PRO_HESHE> doch nicht in so einer Freudennacht die Tochter des Herzogs ermorden!~
+@5025 = ~Buzzurk. Wir können hier nicht rumstehen und warten, bis die Viecher alle rauskommen. Uns bleibt nichts anderes übrig, als auch da rein zu springen, <CHARNAME>.~
+@5026 = ~Buzzurk. Heißer als ein Schmiedeofen...~
+@5027 = ~Hier schienen die Mistkerle herzukommen. Um den Eingang müssen wir uns gleich mal kümmern, <CHARNAME>. Aber erst sollten wir sicherstellen, dass wir alle Drow im Turm erwischt haben!~
+@5028 = ~Von Osten höre ich Kampfeslärm, <CHARNAME>. Lasst uns erst dort nachsehen, bevor wir in den Turm gehen!~
+
+@5029 = ~Renal,
+
+der einäugige Arnold wurde von unseren Kontakten dabei beobachtet, wie er nach den Unruhen auf Waukeens Promenade eine Zwergenaxt an sich nahm. Bin gespannt, ob er dafür noch seinen Zoll von sich aus zahlt oder ob wir ihm wieder einen "Besuch" in seiner favorisierten Taverne in der Promenade abstatten müssen.
+
+G.~
+
+/* new for v8.0.2 */
+@5030 = ~Ja, kommt nur, Ihr Schmeißfliegen! Und genauso werde ich Euch zerquetschen, rhaaaa!~
+
+/* new for v10.0.0 */
+@5031 = ~Buzzurk, Dieser Nebel spielt uns Streiche! Ich fühle mich... nicht gut...~
+@5032 = ~Buzzurk!~
+@5033 = ~Diese Caelar ist eine charismatische Anführerin. Diese Kreuzzügler werden nicht einfach so aufhören, ihr zu folgen.~
+@5034 = ~Ich wünscht, diese enge Schlucht wäre ein richtiger Stollen. So bietet er nämlich möglichen Angreifern viele Möglichkeiten, sich über uns zu verstecken.~
+@5035 = ~Ich habe schon einiges an Ungeziefer gesehen, seit ich mit Euch reise - aber dieses Ding stellt alles bisherige an Scheußlichkeit in den Schatten!~
+@5036 = ~Hrmpf. Ich bin einem guten Kampf niemals abgeneigt, aber wenn sich hier alle gegen uns wenden, dann haben wir ein Problem.~
+@5037 = ~Magiern kann man nicht trauen, dass habe ich Euch schon häufig gesagt!~
+@5038 = ~Sie hätten auf uns hören sollen, die Narren.~
+@5039 = ~<CHARNAME>, wenn Ihr mich in absehbarer Zeit wieder in die Hölle zerrt, dann setzt es was.~
+@5040 = ~Ha, der Drache hat einen malerischen Ort für sein Ableben ausgesucht. Ein Denkmal für eine große Schlacht, und den Sieg der Leute hier.~
+@5041 = ~Eigentlich sollten mich die geschmiedeten Verzierungen auf dem Tor entzücken, aber diese Tür strahlt etwas so abgrundtief Böses aus, dass es unmöglich ist, sich an der Schmiedekunst zu erfreuen.~
+
+
+///////////////////////////////////////////
+///// Tagebucheinträge
+///////////////////////////////////////////
+@10000 = ~Finde das Buch des Zwergen
+
+Ein Zwerg bei Puffguts wartet auf Adam, der ihm eigentlich ein Buch bringen sollte. Scheint so, als sei der Tagträumer mal wieder abgelenkt...~
+@10001 = ~Finde das Buch des Zwergen
+
+Adam hat mir den Wälzer gegeben, damit ich ihn dem Zwergen bringen kann.~
+@10002 = ~Finde das Buch des Zwergen
+
+Ich habe Adam zu Winthrop geschickt, damit er das Buch endlich abliefern kann. Ich kontrolliere besser, ob er auch wirklich angekommen ist.~
+@10003 = ~Ich habe Breagars Buch gefunden
+
+Breagar, der Zwerg in Winthrops Taverne, hat sich beruhigt und mich sogar auf ein Bier eingeladen! Aber jetzt ist er weiter gereist. Ich soll in der Donnerhammerschmiede in Beregost vorbeischauen, falls ich jemals dorthin komme.~
+@10004 = ~Ich habe Breagars Buch gefunden
+
+Ich habe dem Zwerg das Buch gebracht und ein paar Münzen dafür bekommen. Geizkragen.~
+@10005 = ~Breagar ist auf der Suche nach Eisen
+
+Der Zwerg scheint ziemlich verzweifelt auf der Suche nach einem guten Klumpen Eisen zu sein. Vielleicht lohnt es sich, ihm ein Stück zukommen zu lassen.~
+@10006 = ~Breagar hat sein Eisen
+
+Der Zwerg arbeitet bei Taerom an seinem Schmiedewerk. Vielleicht sollte ich beizeiten einmal nachschauen, wie es ihm geht.~
+@10007 = ~Breagar hat uns verlassen
+
+Der Zwerg hat sich auf eigene Faust aufgemacht, um Eisen zu Suchen.~
+@10008 = ~Breagar braucht einen Priester!
+
+Ich muss schauen, dass ich so schnell wie möglich einen Priester aus dem Tempel der Morgendämmerung in die Schmiede hole, bevor er stirbt!~
+@10009 = ~Breagar hatte einen Unfall in der Donnerhammerschmiede
+
+Anscheinend hat ihm eine magische Entladung die Hand abgerissen. Taerom hat ihn jetzt in den Tempel geschleift. Ich für meinen Teil habe besseres zu tun.~
+@10010 = ~Breagar ist verstorben
+
+Ich habe zu lange gebraucht, und der Zwerg ist seinen Verletzungen erlegen.~
+@10011 = ~Breagars Unfall in der Donnerhammerschmiede
+
+Die Klerikerin Revianel hat sich auf den Weg in die Schmiede gemacht, um Breagar zu retten. Ich muss mich beeilen, ihr zu folgen.~
+@10012 = ~Breagars Leben ist gerettet
+
+Der Schmied hat sich auf die Reise gemacht. Ich hoffe, es geht alles gut für ihn aus.~
+@10013 = ~Breagars Leben ist gerettet
+
+Der Zwerg hat sich mir aus Dankbarkeit angeschlossen. Er wird sich hoffentlich als guter Reisegefährte entpuppen.~
+@10014 = ~Ein Riese in den Wolkenspitzen?
+
+Eine seltsame Zwergin, die sich selbst als "Botin Berronars" vorstellte, hat Breagar eine Aufgabe gestellt. In den Wolkenspitzen treibt sich ein Riese herum, der einen Tempel geschändet hat. Wir sollen die drei Artefakte, die er gestohlen hat, zurückergattern und den Riesen töten.~
+@10015 = ~Ein Riese in den Wolkenspitzen
+
+Breagar hat die Gruppe verlassen, um der Aufgabe der Zwergengötter zu folgen.~
+@10016 = ~Ein Riese in den Wolkenspitzen!
+
+In den Bergen trieb sich tatsächlich der Riese Yrrymyr herum! Der Kampf war einfacher als angenommen, denn der Riese war wohl durch die lange Reise geschwächt. Trotzdem ist der Lohn der Mühe nicht von schlechten Eltern: Breagars verlorener Arm wurde durch einen silbernen Golemarm ersetzt, und die heilige Axt Berronars ist ebenfalls seine Belohnung. Nebenbei führte der Riese nicht wenig Gold mit sich...~
+@10017 = ~Düstere Prophezeiungen
+
+Die seltsame Zwergin, die Breagar "Botin Berronars" genannt hat, hatte auch mir einige Sachen zu berichten. Offenbar hegen die Zwergengötter auch an mir ein besonderes Interesse. Breagar wurde bestimmt, mich auf meinem Weg weiter zu begleiten, und ich glaube, dass ein wackerer Kämpfer wie er recht nützlich sein kann. Es bleibt abzuwarten, was mit den Worten gemeint ist: Aus der Asche der toten Götter wird neues Leben entstehen...~
+@10018 = ~Taerom braucht Hilfe: Revianel ist verschwunden
+
+Die Priesterin, die Breagar das Leben gerettet hat, ist auf einer Mission für den Tempel verschollen, und Taerom braucht die Hilfe von kräftigen Gesellen wie uns. Er scheint das Verschwinden der Klerikerin sehr persönlich zu nehmen...~
+@10019 = ~Revianel ist verschwunden - wir müssen mit Tobin reden
+
+Der Priester, der mit Revianel gemeinsam auf der Mission war, müsste sich am Vestibül des Tempels aufhalten.~
+@10020 = ~Revianel ist verschwunden
+
+Ich habe mich dagegen entschieden, die Priesterin zu suchen. Das Schicksal der Schwertküste ist wichtiger als das Verschwinden einer Frau.~
+@10021 = ~Das Böse auf dem Friedhof - Tobin zeigt uns den Weg
+
+Der Priester wird uns als Wegweiser zur Verfügung stehen und uns auf den Friedhof und wieder zurück bringen, damit wir dort nach dem Rechten sehen können.~
+@10022 = ~Wir treffen Revianel am Ausgang des Friedhofes
+
+Die Priesterin möchte mit Tobin zusammen zurück reisen.~
+@10023 = ~Die Klerikerin Revianel ist gerettet
+
+Revianel und Taerom sind zum Tempel gegangen. Breagar ist froh, einen Teil seiner Schuld beglichen zu haben. Es fühlt sich gut an, etwas Gutes getan zu haben.~
+@10024 = ~Grothir im Feiernden Stör sucht Verträge
+
+Grothir, ein Zwerg aus Breagars Clan, hat voreilig einen Handelsvertrag mit dem Eisenthron abgeschlossen. Er wäre sehr dankbar, wenn sich jemand dort umsehen und ihm den Vertrag wieder zurückbringen könnte.~
+@10025 = ~Grothir hat den Vertrag zurück
+
+So schnell wird der Clan Bardormar keine Verträge mit dem Eisenthron abschließen.~
+@10026 = ~Berronars Axt wurde gestohlen
+
+Es scheint, als hätte unser Kerkermeister sich nicht nur an meinem Zeug vergriffen. Breagars geliebte silberne Axt, die der Zwergengöttin Berronar selbst geweiht ist, wurde entwendet. Wenn wir sie wiederfinden wollen, müssen wir uns schleunigst auf die Suche machen... nachdem wir dem Kerker entkommen sind.~
+@10027 = ~Wissen die Schattendiebe etwas über Berronars Axt?
+
+Ein verhüllter Zwerg ist an Breagar herangetreten und hat ihm den Hinweis gegeben, dass die Schattendiebe etwas über Berronars Axt wissen könnten. Wir sollten uns dort einmal umhören.~
+@10028 = ~Wissen die Schattendiebe etwas über Berronars Axt?
+
+Die Hehlerin der Schattendiebe hat versprochen, sich für eine Zuwendung aus Gold umzuhören. Ich soll wiederkommen, wenn ich ihr ein vernünftiges Angebot machen kann.~
+@10029 = ~Wissen die Schattendiebe etwas über Berronars Axt?
+
+Anstelle von Gold wäre die Hehlerin bereit, ein Amulett der Harfner als Bezahlung für ihre Informationen zu akzeptieren.~
+@10030 = ~Wissen die Schattendiebe etwas über Berronars Axt?
+
+Ich konnte Breagar nur mit Mühe davon abhalten, einen privaten Gildenkrieg mit den Schattendieben zu beginnen. Immerhin hat sich die Hehlerin bereit erklärt, ihre Kontakte zu befragen. Ein Bote soll uns Nachricht schicken, wenn sich etwas ergeben hat.~
+@10031 = ~Berronars Axt: Die Spur führt auf die Promenade
+
+Offenbar hat ein Gnom namens Arnie bei dem Diebstahl seine Finger im Spiel. Er soll sich irgendwo auf der Promenade herumtreiben.~
+@10032 = ~Berronars Axt: Der Turm des Anstinus
+
+Arnie hatte einen Brief dabei, der von Reggik unterzeichnet wurde und ihn zu dem "Turm des Anstinus" bestellte. Dort sollten wir der Lösung einen Schritt näher kommen, und wenn jemand weiß, wo dieser Turm liegt, dann Cromwell.~
+@10033 = ~Berronars Axt: Der Turm des Anstinus
+
+Wenn Breagar recht hat, dann finden wir in diesem Turm in den Trollbergen die Antworten, die wir suchen.~
+@10034 = ~Berronars Axt: Der Turm des Anstinus
+
+Wir konnten den Turm ohne Gefahren betreten. Die Lösung des Geheimnisses scheint zum Greifen nah...~
+@10035 = ~Anstinus' Turm: Der Trank des grünen Feuers
+
+Der große Anstinus, oder jedenfalls das, was von ihm übrig blieb, hat uns gebeten, den Trank des grünen Feuers herzustellen. Die Zutaten sollen angeblich alle irgendwo im Turm verstreut sein...~
+@10036 = ~Anstinus' Turm: Der Trank des grünen Feuers
+
+Wir haben den Geist des großen Anstinus erlöst und dafür den Schlüsselstein für den Keller erhalten.~
+@10037 = ~Berronars Axt: Anstinus' Schlüsselstein
+
+Wir haben den Schlüsselstein erbeuten können, den Reggik dem Geist des Anstinus zur Aufbewahrung gab. Er sollte uns den Weg in den Keller öffnen.~
+@10038 = ~Bork und Ellie
+
+Ein Halbork, der vor dem Turm des Anstinus herumlungerte, war auf der Suche nach einer Ellie... nun, jetzt sucht er sie nicht mehr.~
+@10039 = ~Bork und Ellie
+
+Ich habe zugestimmt, für den Halbork Bork nach seiner Ellie zu schauen, die sich irgendwo im Turm des Anstinus versteckt hat.~
+@10040 = ~Elasia die Waldläuferin
+
+In Anstinus' Turm bin ich auf Elasia gestoßen, die mich angriff. Ich habe mich meiner Haut erwehrt.~
+@10041 = ~Bork und Ellie
+
+Der Halbork Bork hat die Elfe Elasia in eine Art Ehe gezwungen. Elasia möchte sich gerne von ihm lösen, ohne Bork zu töten... wie kann ich ihr wohl helfen?~
+@10042 = ~Bork und Ellie
+
+Ich habe Bork und Ellie zueinander gebracht - im Jenseits.~
+@10043 = ~Bork und Ellie
+
+Ich habe Elasia an ihren Eid erinnert, als Waldläufer immer die Wahrheit zu sagen. Sie ist zu Bork zurückgekehrt um an seiner Seite zu leben.~
+@10044 = ~Bork und Ellie
+
+Ich habe Elasia unsichtbar gemacht und ihr geholfen, sich an Bork vorbei zu schleichen. Vielleicht sollte ich noch mit dem Halbork darüber reden.~
+@10045 = ~Bork und Ellie
+
+Elasia hat sich in Anstinus' Turm versteckt und möchte an Bork vorbeigeschmuggelt werden. Ein Unsichtbarkeitstrank oder ein Zauber sollten sehr hilfreich sein.~
+@10046 = ~Bork und Ellie
+
+Die Elfe Elasia kann jetzt ihren Weg forsetzen, nachdem Bork tot ist.~
+@10047 = ~Breagar in Saradush
+
+Breagar meint, dass es in Saradush Zwerge gäbe, die der Unterstützung Berronars bedürfen. Wir sollten uns einmal umschauen.~
+
+@10048 = ~Breagars Textfragmente
+
+Breagar hat Textfragmente des Buches über Berronars Axt gefunden und möchte es restaurieren, weiß aber nicht, wie. Ein Besuch im Tempel Oghmas, Gott der Weisheit, würde sich hier wohl anbieten.~
+
+@10049 = ~Breagars Textfragmente
+
+Wir waren im Tempel von Oghma und haben den Mönch Wallisek gefunden, der Breagar das Buch restaurieren könnte.~
+
+@10050 = ~Breagars Textfragmente
+
+Wir waren im Tempel von Oghma und haben den Mönch Wallisek gefunden, der Breagar das Buch restaurieren könnte. Allerdings haben wir noch nicht alle Fragmente beisammen. Diese müssten wir erstmal finden, bevor das Buch restauriert werden kann.~
+
+@10051 = ~Breagars Textfragmente
+
+Der Mönch Wallisek schätzt, dass es drei Textfragmente gibt.~
+
+@10052 = ~Breagars Textfragmente
+
+Der Mönch Wallisek vermutet, dass wir die Textfragmente bei Zwergen oder bei gebildeten Leuten, die sich mit der Herstellung von Waffen beschäftigen, finden sollten.~
+
+@10053 = ~Breagars Textfragmente
+
+Der Mönch Wallisek arbeitet nun an der Restauration des Buches über Berronars Axt. Wir sollen in ein paar Tagen wieder zu ihm kommen, dann sollte es fertig sein.~
+
+@10054 = ~Breagars Textfragmente
+
+Das Buch über Berronars Axt ist fertig restauriert!~
+
+@10055 = ~Die Belagerung in Anstinus Turm
+
+Die silberne Zwergin ist uns erneut erschienen und informierte Breagar darüber, dass Anstinus Turm in Gefahr sei. Ohne zu zögern stimmten wir ihm zu, dem auf den Grund zu gehen. Die Zwergin zeigte sich wohlwollend und teleportierte uns sogleich zum Ort des Geschehens. Nun bleibt die Frage, was zuerst? Das Gelände sichern oder uns ersteinmal drinnen umsehen?~
+
+/* Forres und Reggik, Duergar können bleiben */
+@10056 = ~Die Belagerung in Anstinus Turm
+
+Wir folgten dem Kampfeslärm und stießen dabei auf Forres und Reggik, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Breagar überließ es uns zu entscheiden, was zu tun sei. Wir rieten ihm gut zu und Breagar sagte ihnen Hilfe zu, die Brut aus dem Turm zu vertreiben.~
+
+/* Forres und Graschek, Duergar können bleiben */
+@10057 = ~Die Belagerung in Anstinus Turm
+
+Wir folgten dem Kampfeslärm und stießen dabei auf Forres und Graschek, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Breagar überließ es uns zu entscheiden, was zu tun sei. Wir rieten ihm gut zu und Breagar sagte ihnen Hilfe zu, die Brut aus dem Turm zu vertreiben.~
+
+/* Reggik und Graschek, Duergar können bleiben */
+@10058 = ~Die Belagerung in Anstinus Turm
+
+Wir folgten dem Kampfeslärm und stießen dabei auf Reggik und Graschek, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Breagar überließ es uns zu entscheiden, was zu tun sei. Wir rieten ihm gut zu und Breagar sagte ihnen Hilfe zu, die Brut aus dem Turm zu vertreiben.~
+
+/* Graschek und Hargek, Duergar können bleiben */
+@10059 = ~Die Belagerung in Anstinus Turm
+
+Wir folgten dem Kampfeslärm und stießen dabei auf Graschek und Hargek, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Breagar überließ es uns zu entscheiden, was zu tun sei. Wir rieten ihm gut zu und Breagar sagte ihnen Hilfe zu, die Brut aus dem Turm zu vertreiben.~
+
+/* Forres und Reggik, Duergar müssen gehen */
+@10060 = ~Die Belagerung in Anstinus Turm
+
+Wir folgten dem Kampfeslärm und stießen dabei auf Forres und Reggik, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Wir werden uns um die Drow kümmern. Die Duergar allerdings müssen den Turm verlassen!~
+
+/* Forres und Graschek, Duergar müssen gehen */
+@10061 = ~Die Belagerung in Anstinus Turm
+
+Wir folgten dem Kampfeslärm und stießen dabei auf Forres und Graschek, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Wir werden uns um die Drow kümmern. Die Duergar allerdings müssen den Turm verlassen!~
+
+/* Reggik und Graschek, Duergar müssen gehen */
+@10062 = ~Die Belagerung in Anstinus Turm
+
+Wir folgten dem Kampfeslärm und stießen dabei auf Reggik und Graschek, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Wir werden uns um die Drow kümmern. Die Duergar allerdings müssen den Turm verlassen!~
+
+/* Graschek und Hargek, Duergar müssen gehen */
+@10063 = ~Die Belagerung in Anstinus Turm
+
+Wir folgten dem Kampfeslärm und stießen dabei auf Graschek und Hargek, die es mit Spinnen zu tun hatten. Nachdem wir diese erledigt hatten, informierten uns beide, dass Drow und anderes Gewürm aus den Gängen unterhalb des Turms durchgebrochen waren. Wir werden uns um die Drow kümmern. Die Duergar allerdings müssen den Turm verlassen!~
+
+@10064 = ~Die Belagerung in Anstinus Turm
+
+Breagar zeigte sich zufrieden darüber, dass wir die Drow aus allen Stockwerken vertrieben haben. Nun ist der Keller an der Reihe.~
+
+@10065 = ~Die Belagerung in Anstinus Turm
+
+Breagar zeigte sich zufrieden darüber, dass wir die Drow aus dem Keller vertrieben haben. Nun ist der restliche Turm an der Reihe.~
+
+/* Forres und Reggik */
+@10066 = ~Die Belagerung in Anstinus Turm
+
+Drow und Betrachter stellten sich uns im Keller und den Wohnhöhlen der Duergar in den Weg, doch wir konnten sie erledigen. Als letztes bat Breagar Berronar um Hilfe an und es gelang ihm, ein Siegel um die unterirdischen Eingänge des Turms zu legen, der die Duergar vor Übergriffen der Drow schützen wird. Nun bleibt nur noch, Reggik und Forres darüber in Kenntnis zu setzen.~
+
+/* Forres und Graschek */
+@10067 = ~Die Belagerung in Anstinus Turm
+
+Drow und Betrachter stellten sich uns im Keller und den Wohnhöhlen der Duergar in den Weg, doch wir konnten sie erledigen. Als letztes bat Breagar Berronar um Hilfe an und es gelang ihm, ein Siegel um die unterirdischen Eingänge des Turms zu legen, der die Duergar vor Übergriffen der Drow schützen wird. Nun bleibt nur noch, Forres und Graschek darüber in Kenntnis zu setzen.~
+
+/* Reggik und Graschek */
+@10068 = ~Die Belagerung in Anstinus Turm
+
+Drow und Betrachter stellten sich uns im Keller und den Wohnhöhlen der Duergar in den Weg, doch wir konnten sie erledigen. Als letztes bat Breagar Berronar um Hilfe an und es gelang ihm, ein Siegel um die unterirdischen Eingänge des Turms zu legen, der die Duergar vor Übergriffen der Drow schützen wird. Nun bleibt nur noch, Reggik und Graschek darüber in Kenntnis zu setzen.~
+
+/* Graschek und Hargek */
+@10069 = ~Die Belagerung in Anstinus Turm
+
+Drow und Betrachter stellten sich uns im Keller und den Wohnhöhlen der Duergar in den Weg, doch wir konnten sie erledigen. Als letztes bat Breagar Berronar um Hilfe an und es gelang ihm, ein Siegel um die unterirdischen Eingänge des Turms zu legen, der die Duergar vor Übergriffen der Drow schützen wird. Nun bleibt nur noch, Graschek und Hargek darüber in Kenntnis zu setzen.~
+
+/* Reggik am Leben */
+@10070 = ~Die Belagerung in Anstinus Turm
+
+Reggik und die Duergar waren glücklich und dankbar für das, was Breagar und die Gruppe geleistet hatten. Nun heißt es, ins Einsprengsel zurück zu kehren, um das Urteil der silbernen Zwergin abzuwarten.~
+
+/* Reggik nicht mehr am Leben */
+@10071 = ~Die Belagerung in Anstinus Turm
+
+Die Duergar waren glücklich und dankbar für das, was Breagar und die Gruppe geleistet hatten. Nun heißt es, ins Einsprengsel zurück zu kehren, um das Urteil der silbernen Zwergin abzuwarten.~
+
+@10072 = ~Die Belagerung in Anstinus Turm
+
+Die silberne Zwergin war hoch erfreut über unsere Leistung und zum Dank segntete sie Berronars Axt und verbesserte sie noch einmal. Bevor sie verschwand sagte sie zu Breagar, dass noch eine letzte Prüfung auf ihn als Träger von Berronars Axt warten würde.~
+
+
+
+//ungelöste Aufgaben:	AddJournalEntry(@10037,QUEST)
+//erledigte Aufgaben:	AddJournalEntry(@10036,QUEST_DONE)
+//Tagebucheinträge:	AddJournalEntry(%Text%,INFO)
+//EraseJournalEntry(@10032)EraseJournalEntry(@10033)EraseJournalEntry(@10034)EraseJournalEntry(@10035)
+
+//BG:EE Compatibility
+
+//Strings from BG2
+@50001 = ~Ihr werdet leiden... Oh ja, das werdet Ihr.~ [HVILLM04] //#61778
+@50002 = ~~ [HVILLM06] //#61780
+@50003 = ~~ [HVILLM07] //#61781
+@50004 = ~~ [MTOWN05] //#12566
+@50005 = ~Mögen die Götter Euch gnädig gesonnen sein.~ [GPRIM03] //#61726
+@50006 = ~~ [GPRIM06] //#61730
+@50007 = ~~ [GPRIM07] //#61731
+@50008 = ~Leichnam~ //#8457
+@50009 = ~Hmmm, ja?~ [GNOMEM03] //#61703
+@50010 = ~Zurück, oder Ihr könnt Euch von Euren Kniescheiben verabschieden!~ [GNOMEM05] //#61705
+@50011 = ~~ [GNOMEM06] //#61706
+@50012 = ~~ [GNOMEM07] //#61707
+@50013 = ~Aller Ruhm gebührt der Dunklen Mutter!~ [DRPRIS04] //#53379
+@50014 = ~Lolth sei gepriesen! Wir verdanken ihr jeden Sieg!~ [DRPRIS01] //#53358
+@50015 = ~~ [DRPRIS06] //#53387
+@50016 = ~~ [DRPRIS05] //#53383
+@50017 = ~Betrachter~ //#2662
+@50018 = ~Drow~ //#50900
+@50019 = ~Schatten~
+
+//Journal Titles
+@60001 = ~Finde das Buch des Zwergen~
+@60002 = ~Breagar ist auf der Suche nach Eisen~
+@60003 = ~Breagars Unfall in der Donnerhammerschmiede~
+@60004 = ~Ein Riese in den Wolkenspitzen~
+@60005 = ~Düstere Prophezeiungen~
+@60006 = ~Revianel ist verschwunden~
+@60007 = ~Grothir sucht Verträge~
+@60008 = ~Berronars Axt wurde gestohlen~
+@60009 = ~Bork und Ellie~
+@60010 = ~Breagar in Saradush~
+@60011 = ~Breagars Textfragmente~
+@60012 = ~Die Belagerung in Anstinus Turm~
