@@ -1,0 +1,9 @@
+IF
+	Global("ACBRE","%BaldursGateDocks_IronThrone_L5%",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBRE","%BaldursGateDocks_IronThrone_L5%",1)
+		ActionOverride("Container 3",CreateItem("ACCONT01",0,0,0))
+		ActionOverride("Container 3",CreateItem("ACMISC7R",0,0,0))
+		Continue()
+END

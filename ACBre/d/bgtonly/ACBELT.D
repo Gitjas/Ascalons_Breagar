@@ -1,0 +1,1 @@
+ADD_TRANS_ACTION BELTBRD BEGIN 11 END BEGIN 0 END ~ActionOverride("ACBRE",LeaveParty())ActionOverride("ACBRE",ChangeAIScript("",DEFAULT))ActionOverride("ACBRE",ClearAllActions())ActionOverride("ACBRE",DropInventory())SetGlobal("ACBREPartyBG1","GLOBAL",1)~

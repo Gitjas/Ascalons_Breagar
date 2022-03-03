@@ -1,0 +1,33 @@
+IF
+	Global("ACAUDQUEST","GLOBAL",11)
+	Global("ACAUDQUEST_NeutralTurn","LOCALS",0)
+	OR(6)
+		AreaCheck("ARAC00")
+		AreaCheck("ARAC01")
+		AreaCheck("ARAC02")
+		AreaCheck("ARAC03")
+		AreaCheck("ARAC04")
+		AreaCheck("ARAC05")
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		SetGlobal("ACAUDQUEST_NeutralTurn","LOCALS",1)
+END
+
+IF
+	See([PC])
+	Global("ACAUDQUEST","GLOBAL",10)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END 
+
+IF
+	See([PC])
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Global("ACAUDQUEST","GLOBAL",10)
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END

@@ -1,0 +1,47 @@
+IF
+	GlobalLT("CHAPTER","GLOBAL",%bg2_chapter_9%)
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(2)
+		FadeToColor([20.0],0)
+		Wait(2)
+		ActionOverride("ACSILVER",Destroyself())
+/*
+		LeaveAreaLUAPanic("AR6400","",[143.1035],12)
+		LeaveAreaLUA("AR6400","",[143.1035],12)
+		ActionOverride(Player2,LeaveAreaLUA("AR6400","",[143.1082],12))
+		ActionOverride(Player3,LeaveAreaLUA("AR6400","",[94.1035],12))
+		ActionOverride(Player4,LeaveAreaLUA("AR6400","",[94.1082],12))
+		ActionOverride(Player5,LeaveAreaLUA("AR6400","",[45.1035],12))
+		ActionOverride(Player6,LeaveAreaLUA("AR6400","",[45.1082],12))
+*/
+		Wait(1)
+		FadeFromColor([40.0],0)
+		Wait(3)
+		EndCutSceneMode()
+END
+
+IF
+	GlobalGT("CHAPTER","GLOBAL",%bg2_chapter_8%)
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(2)
+		FadeToColor([20.0],0)
+		Wait(2)
+		ActionOverride("ACSILVER",Destroyself())
+/*
+		LeaveAreaLUAPanic("AR5500","",[2407.2298],4)
+		LeaveAreaLUA("AR5500","",[2407.2298],4)
+		ActionOverride(Player2,LeaveAreaLUA("AR5500","",[2456.2310],4))
+		ActionOverride(Player3,LeaveAreaLUA("AR5500","",[2360.2322],4))
+		ActionOverride(Player4,LeaveAreaLUA("AR5500","",[2472.2346],2))
+		ActionOverride(Player5,LeaveAreaLUA("AR5500","",[2376.2370],0))
+		ActionOverride(Player6,LeaveAreaLUA("AR5500","",[2424.2370],0))
+*/
+		Wait(1)
+		FadeFromColor([40.0],0)
+		Wait(3)
+		EndCutSceneMode()
+END

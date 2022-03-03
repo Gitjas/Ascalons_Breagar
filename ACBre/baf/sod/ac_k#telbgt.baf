@@ -1,0 +1,25 @@
+IF
+	Global("K#FrameDelay","LOCALS",0)
+	
+THEN
+	RESPONSE #100
+		DisableAI("ACBre",FALSE)
+		Continue()
+END
+
+IF
+	Global("K#FrameDelay","LOCALS",1)
+THEN
+	RESPONSE #100
+		ActionOverride("ACBre",MakeUnselectable(1))
+		ActionOverride("K#ImportContainer",TakeCreatureItems("ACBre",ALL))
+		Continue()
+END
+
+IF
+	Global("K#FrameDelay","LOCALS",2)
+THEN
+	RESPONSE #100
+		ApplySpellRES("K#UNREST","ACBre")  
+		Continue()
+END

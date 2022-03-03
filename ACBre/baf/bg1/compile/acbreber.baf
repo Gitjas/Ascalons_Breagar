@@ -1,0 +1,22 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(PLAYER1)
+		Wait(1)
+		EraseJournalEntry(@10005)
+		ActionOverride("ACBRE",SetGlobal("ACAR6700","LOCALS",2))
+		SetGlobal("ACSTORY","GLOBAL",2)
+		SetGlobal("ACBREINPARTY","GLOBAL",3)
+		ActionOverride("ACBRE",SetGlobal("ACBREAGARWANTSHISIRON","LOCALS",4))
+		ActionOverride("ACBRE",TakePartyItem("ACIRON"))
+		ActionOverride("ACBRE",DestroyItem("ACIRON"))
+		ActionOverride("ACBRE",TakePartyItem("ACBOOK"))
+		ActionOverride("ACBRE",DestroyItem("ACBOOK"))
+		ActionOverride("ACBRE",LeaveParty())
+		AddexperienceParty(300)
+		MoveGlobal("%Beregost_ThunderhammerSmithy%","ACBRESMI",[851.508])
+		ActionOverride("ACBRE",EscapeAreaMove("AC9999",333,333,0))
+		Wait(1)
+		EndCutSceneMode()
+END

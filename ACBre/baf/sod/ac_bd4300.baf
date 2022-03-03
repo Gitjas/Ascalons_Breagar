@@ -1,0 +1,28 @@
+/* BD4300.bcs 
+
+IF
+	Global("bd_mdd1290d_ot","bd4300",1)
+	Global("bd_mdd1290d_ot_viconia","bd4300",0)
+	IsValidForPartyDialog("VICONIA")  // Viconia
+THEN
+	RESPONSE #100
+		DisplayStringHead("VICONIA",44232)  // We can't fight off these devils forever. What would you have us do, <CHARNAME>?
+		SetGlobal("bd_mdd1290d_ot","bd4300",2)
+		SetGlobal("bd_mdd1290d_ot_viconia","bd4300",1)
+END
+
+*/
+
+
+IF
+	Global("bd_mdd1290d_ot","bd4300",1)
+	Global("ACBre_SoDPortalComment","bd4300",0)
+	IsValidForPartyDialog("ACBre")  
+THEN
+	RESPONSE #100
+		DisplayStringHead("ACBre",@5025)  
+		SetGlobal("ACBre_SoDPortalComment","bd4300",1)
+		Continue()
+END
+
+

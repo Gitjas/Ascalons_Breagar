@@ -1,0 +1,9 @@
+IF
+	Global("ACAR01UNLOCKED","ARAC08",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACAR01LOCKED","ARAC08",1)
+		TriggerActivation("Info Point 3",FALSE)
+		TriggerActivation("Doordown",TRUE)
+		Continue()
+END

@@ -1,0 +1,13 @@
+/* Breagar comments in the elevator in hell */
+
+IF
+	Global("ACBre_hellevator","bd4601",0)
+	IsValidForPartyDialogue("ACBre")  
+	!GlobalTimerNotExpired("bd_hellevator_timer","bd4601")
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_hellevator","bd4601",1)
+		SetGlobalTimer("bd_hellevator_timer","bd4601",7)
+		DisplayStringHead("ACBre",@5022)  
+END

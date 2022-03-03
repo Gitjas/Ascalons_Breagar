@@ -1,0 +1,65 @@
+IF
+	Global("ACBreSoD_sleep","bd6100",0)
+	StateCheck("ACBre",STATE_SLEEPING)
+	!Dead("ACBre")  
+	InMyArea("ACBre")
+	Global("ACBREBROKE","GLOBAL",0)
+	Global("ACBREPartyBG1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBreSoD_sleep","bd6100",1)
+		ActionOverride("ACBre",MakeUnselectable(3600000))
+		ApplySpellRES("bdfinal","ACBre")  // No such index
+		Continue()
+END
+
+IF
+	!Dead("ACBre")  
+	InMyArea("ACBre")
+	Global("ACBREBROKE","GLOBAL",0)
+	Global("ACBREPartyBG1","GLOBAL",1)
+	Global("ACBre_SoD_down","bd6100",0)
+	OR(2)
+		StateCheck("ACBre",STATE_REALLY_DEAD)
+		TriggerOverride("ACBre",Global("bd_final","locals",1))
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_SoD_down","bd6100",1)
+		SetGlobalTimer("bd_sleep_timer","bd6100",THREE_MINUTES)
+		Continue()
+END
+
+/* The following will only show in EET (disabled in SoD ) */
+
+IF
+	Global("bd_finale","bd6100",4)
+	Global("ACBre_SoD_down","bd6100",0)
+	!GlobalTimerNotExpired("bd_sleep_timer","bd6100")
+	!Dead("ACBre")  
+	InMyArea("ACBre")
+	Global("ACBREBROKE","GLOBAL",0)
+	Global("ACBREPartyBG1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("bd_sleep_timer","bd6100",THREE_MINUTES)
+		ApplySpellRES("bdsleep","ACBre")  // No such index
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("bd_ambush_timer","bd6100")
+	Global("bd_finale","bd6100",5)
+	!Dead("ACBre")  
+	InMyArea("ACBre")
+	Global("ACBREBROKE","GLOBAL",0)
+	Global("ACBREPartyBG1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		Wait(4)
+		ActionOverride("ACBre",JumpToPoint([760.800]))
+		SmallWait(5)
+		ActionOverride("ACBre",Face(SW))
+		SmallWait(5)
+		ActionOverride("ACBre",SetSequence(SEQ_SLEEP))
+		Continue()
+END

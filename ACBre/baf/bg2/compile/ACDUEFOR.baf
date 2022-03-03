@@ -1,0 +1,25 @@
+IF
+	Global("ACAUDQUEST","GLOBAL",11)
+	!Dead("ACFORRES")
+	Global("ACAUDQUEST_NeutralTurn","LOCALS",0)
+	OR(6)
+		AreaCheck("ARAC00")
+		AreaCheck("ARAC01")
+		AreaCheck("ARAC02")
+		AreaCheck("ARAC03")
+		AreaCheck("ARAC04")
+		AreaCheck("ARAC05")
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		SetGlobal("ACAUDQUEST_NeutralTurn","LOCALS",1)
+END
+
+IF
+	Dead("ACFORRES")
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+

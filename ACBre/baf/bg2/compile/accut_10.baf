@@ -1,0 +1,20 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(PLAYER1)
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(2)
+		LeaveAreaLUA("AR2000","",[2028.1294],0)
+		ActionOverride("ACBRE",LeaveAreaLUA("AR2000","",[2111.1290],0))
+		CreateCreature("OBSERVE",[1960.930],0)
+		MoveViewPoint([1960.930],INSTANT)
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(2)
+		ActionOverride("ACBRE",MoveToPointNoInterrupt([2024.930]))
+		MoveToPointNoInterrupt([1896.930])
+		Wait(1)
+		ActionOverride("ACBRE",StartDialogNoSet(PLAYER1))
+END

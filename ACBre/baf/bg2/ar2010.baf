@@ -1,0 +1,10 @@
+IF
+	GlobalTimerExpired("ACBRELAWTIMER","GLOBAL")
+	Global("ACAUDWAITS","GLOBAL",4)
+	Global("ACBREINPARTY","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("ACAUDWAITS","GLOBAL",5)
+		MoveGlobal("AR2010","ACBRE",[234.708])
+		Continue()
+END

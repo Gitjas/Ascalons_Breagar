@@ -1,0 +1,54 @@
+IF
+	Global("AC6701TELEPORT","GLOBAL",1)
+	InMyArea(Player1)
+THEN
+	RESPONSE #100
+		SetMasterArea("AC6701")
+		ActionOverride(Player1,LeaveAreaLUA("AC6701","",[440.522],12))
+		Continue()
+END
+
+IF
+	Global("AC6701TELEPORT","GLOBAL",1)
+	InMyArea(Player2)
+THEN
+	RESPONSE #100
+		ActionOverride(Player2,LeaveAreaLUA("AC6701","",[360.522],12))
+		Continue()
+END
+
+IF
+	Global("AC6701TELEPORT","GLOBAL",1)
+	InMyArea(Player3)
+THEN
+	RESPONSE #100
+		ActionOverride(Player3,LeaveAreaLUA("AC6701","",[376.462],12))
+		Continue()
+END
+
+IF
+	Global("AC6701TELEPORT","GLOBAL",1)
+	InMyArea(Player4)
+THEN
+	RESPONSE #100
+		ActionOverride(Player4,LeaveAreaLUA("AC6701","",[392.498],12))
+		Continue()
+END
+
+IF
+	Global("AC6701TELEPORT","GLOBAL",1)
+	InMyArea(Player5)
+THEN
+	RESPONSE #100
+		ActionOverride(Player5,LeaveAreaLUA("AC6701","",[408.546],12))
+		Continue()
+END
+
+IF
+	Global("AC6701TELEPORT","GLOBAL",1)
+	InMyArea(Player6)
+THEN
+	RESPONSE #100
+		ActionOverride(Player6,LeaveAreaLUA("AC6701","",[344.486],12))
+		Continue()
+END

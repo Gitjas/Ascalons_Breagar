@@ -1,0 +1,17 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(PLAYER1)
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(2)
+		LeaveAreaLUA("AR2010","",[528.546],0)
+		ActionOverride("ACBRE",LeaveAreaLUA("AR2010","",[598.559],0))
+		FaceObject("ACBRE")
+		ActionOverride("ACBRE",FaceObject(PLAYER1))
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		ActionOverride("ACBRE",StartDialogNoSet(PLAYER1))
+END

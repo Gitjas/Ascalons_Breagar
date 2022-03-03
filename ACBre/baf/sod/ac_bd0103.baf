@@ -1,0 +1,49 @@
+/* Breagar was in party */
+
+IF
+	OR(2)
+		InMyArea("ACBre")
+		InPartyAllowDead("ACBre")
+	GlobalLT("BD_PLOT","GLOBAL",51)
+THEN
+	RESPONSE #100
+		ApplySpellRES("bdresurr","ACBre") // No such index
+		SmallWait(1)
+		ActionOverride("PlayerChest00",TakeCreatureItems("ACBre",BACKPACK))
+		SmallWait(1)
+		ActionOverride("ACBre",LeaveParty())
+		SetGlobal("ACBREINPARTY","GLOBAL",3)
+		SetGlobal("ACBREPartyBG1","GLOBAL",1)
+		ActionOverride("ACBre",SetDialog("ACBreS")
+		SmallWait(1)
+		ActionOverride("ACBre",JumpToPoint([681.882]))
+		Continue()
+END
+
+/* Breagar was left standing in Korlasz' Tomb */
+
+IF
+	Global("ACBre_MoveCamp","bd0103",0)
+	!Dead("ACBre")  
+	!InPartyAllowDead("ACBre")  
+	Global("ACBREBROKE","GLOBAL",0)
+	Global("ACBREPartyBG1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_MoveCamp","bd0103",1)
+		MoveGlobal("bd0103","ACBre",[681.882])  
+		ActionOverride("ACBre",LeaveParty())
+		SetGlobal("ACBREINPARTY","GLOBAL",3)
+		ActionOverride("ACBre",Face(W))
+		ReallyForceSpellDeadRES("bdrejuve","ACBre")  // No such index
+		ChangeEnemyAlly("ACBre",NEUTRAL)  
+		ChangeSpecifics("ACBre",ALLIES) 
+		ActionOverride("ACBre",SetGlobal("bd_joined","locals",0))
+		ActionOverride("ACBre",ChangeAIScript("ACBre",OVERRIDE))
+		ActionOverride("ACBre",ChangeAIScript("bdasc3",CLASS))
+		ActionOverride("ACBre",ChangeAIScript("BDSHOUT",RACE))
+		ActionOverride("ACBre",ChangeAIScript("BDFIGH01",GENERAL))
+		ActionOverride("ACBre",ChangeAIScript("",DEFAULT))
+		ActionOverride("ACBre",SetDialog("ACBreS"))
+		Continue()
+END

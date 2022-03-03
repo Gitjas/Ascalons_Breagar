@@ -1,0 +1,10 @@
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	!Allegiance(Myself,ENEMY)
+	Global("ACASCGONE","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACASCGONE","LOCALS",1)
+		DisplayStringHead(Myself,@5018)
+		ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END

@@ -1,0 +1,10 @@
+EXTEND_TOP %tutu_var%KELDDA 0 #1
+  IF ~GlobalTimerNotExpired("ACTAEROMTIMER","GLOBAL")Global("ACREVICALLED","LOCALS",0)~ THEN REPLY @0 + AC1
+END
+
+APPEND %tutu_var%KELDDA
+IF ~~ THEN BEGIN AC1
+SAY @1
+IF ~~ THEN DO ~SetGlobal("ACREVICALLED","LOCALS",1)CreateCreature("ACREVI",[266.358],14)ActionOverride("ACREVI",MoveToPointNoInterrupt([258.537])~ EXIT
+END
+END

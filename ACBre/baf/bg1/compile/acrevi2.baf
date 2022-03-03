@@ -1,0 +1,11 @@
+IF
+	NumTimesTalkedTo(0)
+	See([PC])
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("ACREVI2TALK","LOCALS",0)
+	!StateCheck("ACREVI2",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END	

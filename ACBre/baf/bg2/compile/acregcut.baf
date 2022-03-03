@@ -1,0 +1,32 @@
+IF
+	See([PC])
+	CombatCounterGT(0)
+	Global("ACREGSHOUTED","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACREGSHOUTED","LOCALS",1)
+		DisplayStringHead(Myself,@5012)
+END
+
+IF
+	See([PC])
+	AreaCheck("ARAC07")
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("ACARAC07BANTER","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACARAC07BANTER","LOCALS",1)
+		Continue()
+END
+
+IF
+	AreaCheck("ARAC07")
+	CombatCounter(0)
+	!See([ENEMY])
+	See([PC])
+	Global("ACARAC07BANTER","LOCALS",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END

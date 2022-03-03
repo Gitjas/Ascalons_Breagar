@@ -1,0 +1,21 @@
+IF
+	InParty(Myself) 
+	See(Player1)
+	Global("ACBREFRIENDACTIVE","GLOBAL",1)
+	Global("ACBREBANTER1","LOCALS",3)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBREFRIENDACTIVE","GLOBAL",2)
+		StartCutScenemode()
+		FadeToColor([20.0],0)
+		Wait(2)
+		PlaySong(999990)
+		MoveViewObject("ACBRE",INSTANT)
+		FadeFromColor([20.0],0)
+		Wait(3)
+		StartDialogNoSet(Player1)
+END

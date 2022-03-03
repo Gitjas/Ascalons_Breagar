@@ -1,0 +1,232 @@
+@0    = ~What is it?~ [ACBRE_22]
+
+@1    = ~Let us start smithing.~
+
+@2    = ~Tell me of your home.~
+
+@3    = ~I want to know about your religion.~
+
+@4    = ~Tell me about you.~
+
+@5    = ~Hey Breagar, what's the difference between a dragon and a dwarf?~
+
+@6    = ~Nevermind.~
+
+@7    = ~What do you want to talk about?~
+
+@8    = ~Great. Let's waste no more time. Pray to Moradin for a blessed work.~
+
+@9    = ~Hrmpf.~
+
+@10   = ~What would you like to know?~
+
+@11   = ~I would like to talk about your home.~
+
+@12   = ~I would like to hear about the founder of your clan.~
+
+@13   = ~I would like to hear more of the story of Gotrik.~
+
+@14   = ~Tell me the story of Gotrik again.~
+
+@15   = ~Tell me of your family.~
+
+@16   = ~On second thought I would like to talk about something else.~
+
+@17   = ~The Stormhorn Mountains? Well, ask what really interests you about them.~
+
+@18   = ~Where exactly are those Mountains?~
+
+@19   = ~What is it like there?~
+
+@20   = ~Do you like living there?~
+
+@21   = ~Is it dangerous in those Mountains?~
+
+@22   = ~Gotrik Bardormar, the founder of clan Bardomar, is my Grand-Grand-Grand-Grand-Grandfather. He was the epitome of a dwarf. About four feet high, arms like trunks, radiant brown eyes and a beard of majestic magnitude cambering over his tubby belly.~
+
+@23   = ~They say he was irascable and very straight when he got annoyed, but more often than his shout of rage they heard his roaring laughter.~
+
+@24   = ~Gotrik had learned the baker's craft, like his father did and his father's father before him. My family is standing by the baker's oven for so long that no one can exactly say, when one of my ancestors pulled out the first loaf of bread from the fire.~
+
+@25   = ~All of them were talented bakers, but Gotrik surpassed any of them. Clans sent delivery dwarves from miles away only to buy from him. And that's how he came to the nickname "Bardomar". The "Red Soul of the Mountain" they called him, for his face glowed through the embers of the oven and his beard glinted like dark lava.~
+
+@26   = ~Please continue.~
+
+@27   = ~I think that's enough for now.~
+
+@28   = ~Gotrik indeed was the best and most famous bakerman known in all Faerûn. Among dwarves at least. I know that outside the clan halls most people believe, dwarves would only live for coal and steel, but that's not right.~
+
+@29   = ~Coal cannot be eaten, nor can you drink iron. Every craft has his place and earns his respect when done properly.~
+
+@30   = ~Gotrik loved his oven, he loved the smell of flour and the silent crunching when you pull out a fresh loaf of bread off the oven. There was no greater pleasure for him than to breath the scent of fresh baked goods.~
+
+@31   = ~But his peaceful lifetime suddenly ended, for orcs invaded the area where Gotrik's clan had built it's fortress, and roamed the land plundering and murdering. The Thain of the clan sealed off the fortress and closed every gate and embrasure, hoping that the orcs would not bother to besiege the fortress.~
+
+@32   = ~Unfortunately it was harvesttime and Gotrik feared for the flour that he obtained from the local farmers. No flour means no bread, and to have no bread means to hunger.~
+
+@33   = ~All of Gotrik's clan were marooned and they ran out of flour. That was when Gotrik made a bold plan: he girded a shortsword and buckled on a light leather armor to remain agile. Then he climbed to the surface through the chimney of his bakery, to see if he could get at least a single sack of flour. The stories of what he went through are numerous and probably out of whole cloth, but that may be of no interest to you.~
+
+@34   = ~All that matters is that Gotrik indeed succeeded in getting hold of a whole sack of flour.~
+
+@35   = ~And this he transported back to the bakery the same way he had left it.~
+
+@36   = ~This too is a story of its own, and shall be told another time. But the story of a fat, bearded man who is crawling through a chimney carrying a heavy sack is widely popular especially with children.~
+
+@37   = ~Well, Gotrik had succeeded in bringing a sack of flour to his clan, but when he entered the halls again there was a horrific scene.~
+
+@38   = ~A horde of Duergar infiltrated the halls while he was on the surface and pillaged the clan, all dwarves were slain or abducted.~
+
+@39   = ~Since all escape routes were sealed off, Gotrik's clan had build its own mausoleum.~
+
+@40   = ~As you can imagine, the stories of Gotrik advancing into the Underdark and chasing the Duergar are outnumbering even the stories of his surface adventures.~
+
+@41   = ~Anyhow, Grotik managed to escape with a handful surivors. Since they were too few to properly defend the great fortress, and on top of that the Duergar knowing its location, the survivors abandoned the old halls and went into the Stormhorn Mountains where they found a small dale.~
+
+@42   = ~There they located the new Clanhall and cultivated the lands like they were used to. Gotrik was crowned Thain and as such founded the clan Bardomar, that until today resides in that place of mountains.~
+
+@43   = ~Quite long, your history.~
+
+@44   = ~Like all dwarven history is. The histories of the older clans are a sight longer.~
+
+@45   = ~Then let us continue from here another time.~
+
+@46   = ~At the northern frontier of Cormyr, quite a bit away from here, I tell you.~
+
+@47   = ~Steep heights and bleak rocks, a hard, un-bent land. You likely would hate it, <CHARNAME>. There is nothing of interest there, except for a few small human settlements.~
+
+@48   = ~My clan calls it home, yes, I damn love to live there!~
+
+@49   = ~If you do not watch where you poke your nose into, anything can turn out dangerous. But the Mountains are still a special place.~
+
+@50   = ~There are enough beasts to breathe down your neck, if you do not watch your step and know what you are doing.~
+
+@51   = ~And then there are some goblin tribes, infesting the mountains after their realm was shattered, but they are harmless. Some of them even make reasonable neighbours one can trade with.~
+
+@52   = ~What shall I tell you?~
+
+@53   = ~Tell me of your father.~
+
+@54   = ~Tell me of your mother.~
+
+@55   = ~Do you have any siblings?~
+@56   = ~Tell me the history of your family.~
+
+@57   = ~Well, my father, Baragar, directly descends from the founder of our clan, Gotrik Bardormar. And he learned the bakerman's craft from the cradle, like my brother and me, before I went into smithing.~
+
+@58   = ~He is a true performer at the oven, I tell you, allthough quite irascible if things are not to his liking. We... we haven't had a word since I left the bakery.~
+
+@59   = ~My mother Herana originally comes from the fortress Nurkhun, or "Glisterstone" as you would call it.~
+
+@60   = ~She is the almost exact opposite of my father. He is mostly calm and composed, but if things are not to his liking, the roof is risen. She always is loud, hectical and anxious, and only if things get really serious, she is quiet and keeps a cool head.~
+
+@61   = ~You would like Dalgar. He would fit better into this gang of crazies than I.~
+
+@62   = ~Dalgar is almost 20 years older than me, but that's not very much by dwarven ratios. We were very close until his departure.~
+
+@63   = ~He travelled? Where?~
+
+@64   = ~The history of my family? I do not think this would be of much interest to you, unless your interest is bread recipes, baking times and the great yeast drought of '98.~
+
+@65   = ~My ancestors were bakerman, <CHARNAME>, and nothing else. No one ever saw an adventure or went on a journey.~
+
+@66   = ~No one knows for sure.~
+
+@67   = ~He always had been very enterprising and asked himself what the outside world would be like.~
+
+@68   = ~When he was young a wandering priest of Mathamor came for a visit and lit the torch of aspiration in him, so to say.~
+
+@69   = ~He turned poor Dalgar's head with his preachings that true knowledge may only be found in the outside world and all.~
+
+@70   = ~And it fell on fertile ground with my brother. He soon started longer trips through the mountains and as soon as he became adolescent he packed his baggage and left the Halls of Bardomar to see the world.~
+
+@71   = ~It was a hard time and my father did not understand the world anymore.~
+
+@72   = ~The memories still hurt, <CHARNAME>. It has been almost twenty years and I still miss him like yesterday.~
+
+@73   = ~Let's talk about something else.~
+
+@74   = ~And what shall I tell you that you do not already know? I am Breagar, son of Baragar from clan Bardomar. I am in my early 50s, in my prime of life. My axe is sharp, my arm is strong and my eye is wary.~
+
+@75   = ~And I am idling all too long with a boy who better should aim for a steady progress than a gentle gawking.~ ~And I am idling all too long with a brat who better should aim for a steady progress than a gentle gawking.~
+
+@76   = ~What are your gods, Breagar?~
+
+@77   = ~Can you tell further about the different gods?~
+
+@78   = ~Tell me more about the Globeforger.~
+
+@79   = ~What do you believe will happen with you after death?~
+
+@80   = ~When I work with the anvil, Moradin holds his hand over me. In battle Clangeddin conducts me. And when the clan rests, Berronar watches over my sleep. And being outside here, I hope that Marthamor Duin has his eye on me.~
+
+@81   = ~The Globeforger, Telormardarsan, is the First, the Great, he who has forged the world on his anvil once.~
+
+@82   = ~I want to know something else about your faith.~
+
+@83   = ~I want to talk about something else.~
+
+@84   = ~That what will happen to any dwarf. Dumathoin will bring us before Moradins judgment, where we give account for our lives and get the wage for what we did in life.~
+
+@85   = ~An upright craftsman will enjoy eternity in a workshop beyond what mortal words can describe. Great warriors train in battle and fight against the forces of evil.~
+
+@86   = ~Which deity do you wish to learn about?~
+
+@87   = ~Tell me of Moradin.~
+
+@88   = ~Tell me of Berronar Wahrsilber.~
+
+@89   = ~Tell me of Clangeddin Silberbart.~
+
+@90   = ~Tell me of Dugmaren Leuchtmantel.~
+
+@91   = ~Tell me of Dumathoin.~
+
+@92   = ~Tell me of Gorm Gulthyn.~
+
+@93   = ~Tell me of Haela Leuchtaxt.~
+
+@94   = ~Tell me of Marthamor Duin.~
+
+@95   = ~Tell me of Laduguer.~
+
+@96   = ~Tell me of Abbathor.~
+
+@97   = ~Tell me of Duerra der Tiefen.~
+
+@98   = ~Tell me of Sharindlar.~
+
+@99   = ~Tell me of Thard Harr.~
+
+@100  = ~Tell me of Vergadain.~
+
+@101  = ~Moradin is the Soulsmith, the Dwarffather. It resides with him to give a dwarf his soul and judge over him after death. He is a wise and just, but hard judge. Moradin coerces us to do good and to destroy evil.~
+
+@102  = ~Berronar is Moradins spouse. The holy Mother protects the clan and blesses families and lovers. She is a stern but loving mother for all dwarves.~
+
+@103  = ~Clangeddin is the Father of Battles, the bane of goblins and the giantslayer. He stands by the righteous dwarves in battle and welcomes an honorable fight without treachery and deceit. He taught us how to swing our weapons against giants and to hit them where it hurts, if you know what I mean.~
+
+@104  = ~Dugmaren is the Wandering Explorer, the god of research, knowledge and inventions.~
+
+@105  = ~Dumathoin watches over the miners of deep and guides the dead to the banqueting halls on the other side.~
+
+@106  = ~Haela is the goddess of luck and bravery, standing by any overbold who wants to clear Toril of evil monsters.~
+
+@107  = ~Gorm is the protector of dwarven strongholds and the Vigilant God. The Eternal Vigilant summons his Avatars any time it comes to defending a dwarven stronghold and the battle seems lost.~
+
+@108  = ~Marthammor Duin protects the wandering dwarves. When a dwarf is on his journey, he calls to the Finder-of-Ways for help.~
+
+@109  = ~(Breagar spits out loudly) I know nothing about this Duergardriver and I do not want to know.~
+
+@110  = ~Abbathor is the only evil god tolerated by Moradin. He is the god of greed and envy and teaches that anything is allowed to augment wealth as long as no dwarf comes to harm.~
+
+@111  = ~Sharindlar? I am surprised that you know her name, <CHARNAME>. The Lady of Grace is unfamiliar among Dwarmos. Likely because no non-dwarf can imagine that even dwarves find pleasure in grace, compassion and romance.~
+
+@112  = ~I cannot say much about Thard Harr. I only know that he is worshipped by the wild dwarves living far away from here in the woods. But who cares about those? Bah.~
+
+@113  = ~Vergadain, the laughing dwarf? He is the god of trade, negotiation and bargaining.~
+
+@114  = ~The dragon steals the gold to sleep on it and the dwarf steals the gold to sleep with it.~
+
+@115  = ~That joke is as old as the hills, <CHARNAME>.~
+
+@116  = ~Well, I found it amusing.~

@@ -1,0 +1,41 @@
+IF
+	IsOverMe(PLAYER1)
+THEN
+	RESPONSE #100
+		ActionOverride(PLAYER1,Kill(Myself))
+END
+
+IF
+	IsOverMe(PLAYER2)
+THEN
+	RESPONSE #100
+		ActionOverride(PLAYER2,Kill(Myself))
+END
+
+IF
+	IsOverMe(PLAYER3)
+THEN
+	RESPONSE #100
+		ActionOverride(PLAYER3,Kill(Myself))
+END
+
+IF
+	IsOverMe(PLAYER4)
+THEN
+	RESPONSE #100
+		ActionOverride(PLAYER4,Kill(Myself))
+END
+
+IF
+	IsOverMe(PLAYER5)
+THEN
+	RESPONSE #100
+		ActionOverride(PLAYER5,Kill(Myself))
+END
+
+IF
+	IsOverMe(PLAYER6)
+THEN
+	RESPONSE #100
+		ActionOverride(PLAYER6,Kill(Myself))
+END

@@ -1,0 +1,203 @@
+IF
+	InParty(Myself) 
+	AreaCheck("DSC001")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACDSC001","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACDSC001","LOCALS",1)
+END
+
+IF
+	InParty(Myself) 
+	Global("ACDSC001","LOCALS",1)
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+IF
+	InParty(Myself) 
+	AreaCheck("DSC018")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACDSC018","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACDSC018","LOCALS",1)
+END
+
+IF
+	InParty(Myself) 
+	Global("ACDSC018","LOCALS",1)
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+IF
+	InParty(Myself) 
+	PartyHasItem("DSMISC10")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACDSMISC10","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACDSMISC10","LOCALS",1)
+END
+
+IF
+	InParty(Myself) 
+	Global("ACDSMISC10","LOCALS",1)
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+IF
+	InParty(Myself) 
+	PartyHasItem("DSMISC07")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACDSMISC07","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACDSMISC07","LOCALS",1)
+END
+
+IF
+	InParty(Myself) 
+	Global("ACDSMISC07","LOCALS",1)
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+IF
+	InParty(Myself) 
+	AreaCheck("DSC020")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACDSC020","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACDSC020","LOCALS",1)
+END
+
+IF
+	InParty(Myself) 
+	Global("ACDSC020","LOCALS",1)
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+IF
+	InParty(Myself)
+	CombatCounter(0)
+	See([0.0.DUERGAR.0])
+	Global("ACDSDUER","LOCALS",0)
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		SetGlobal("ACDSDUER","LOCALS",1)
+END
+
+IF
+	InParty(Myself) 
+	Global("ACDSDUER","LOCALS",1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+IF
+	Global("ACSCOTTY","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ACSCOTTY","GLOBAL",4)
+		SaveGame(0)
+		ActionOverride(Player1,LeaveAreaLUA("DSC020","",[1063.1357],4))
+		ActionOverride(Player2,LeaveAreaLUA("DSC020","",[1063.1357],4))
+		ActionOverride(Player3,LeaveAreaLUA("DSC020","",[1063.1357],4))
+		ActionOverride(Player4,LeaveAreaLUA("DSC020","",[1063.1357],4))
+		ActionOverride(Player5,LeaveAreaLUA("DSC020","",[1063.1357],4))
+		ActionOverride(Player6,LeaveAreaLUA("DSC020","",[1063.1357],4))
+END
+
+IF
+	Global("ACSCOTTY","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("ACSCOTTY","GLOBAL",4)
+		SaveGame(0)
+		ActionOverride(Player1,LeaveAreaLUA("DSC027","",[1648.1097],4))
+		ActionOverride(Player2,LeaveAreaLUA("DSC027","",[1648.1097],4))
+		ActionOverride(Player3,LeaveAreaLUA("DSC027","",[1648.1097],4))
+		ActionOverride(Player4,LeaveAreaLUA("DSC027","",[1648.1097],4))
+		ActionOverride(Player5,LeaveAreaLUA("DSC027","",[1648.1097],4))
+		ActionOverride(Player6,LeaveAreaLUA("DSC027","",[1648.1097],4))
+END
+
+IF
+	Global("ACSCOTTY","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("ACSCOTTY","GLOBAL",4)
+		SaveGame(0)
+		ActionOverride(Player1,LeaveAreaLUA("DSC034","",[1681.220],4))
+		ActionOverride(Player2,LeaveAreaLUA("DSC034","",[1681.220],4))
+		ActionOverride(Player3,LeaveAreaLUA("DSC034","",[1681.220],4))
+		ActionOverride(Player4,LeaveAreaLUA("DSC034","",[1681.220],4))
+		ActionOverride(Player5,LeaveAreaLUA("DSC034","",[1681.220],4))
+		ActionOverride(Player6,LeaveAreaLUA("DSC034","",[1681.220],4))
+END
+
+IF
+	InParty(Myself) 
+	PartyHasItem("DSAMUL02")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACDSAMUL02","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACDSAMUL02","LOCALS",1)
+END
+
+IF
+	InParty(Myself) 
+	Global("ACDSAMUL02","LOCALS",1)
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END

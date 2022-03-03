@@ -1,0 +1,14 @@
+IF
+	Detect([PC])
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(PLAYER1)
+END
+
+IF
+	HP(MYSELF,1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(PLAYER1)
+END

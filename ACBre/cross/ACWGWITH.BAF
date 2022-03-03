@@ -1,0 +1,14 @@
+IF
+	Global("WGback","ARTOBR",1)
+	Global("ACWGback","ARTOBR",0)
+	See("ACBRE")
+	!InParty("ACBRE")
+THEN
+	RESPONSE #100
+		SetGlobal("ACWGback","ARTOBR",1)
+		PlaySound("EFF_P06")
+		ActionOverride("ACBRE",SetDialog("ACBRE25J"))
+		ActionOverride("ACBRE",ChangeAIScript("",DEFAULT))
+		ActionOverride("ACBRE",Polymorph(FIGHTER_MALE_DWARF))
+		ActionOverride("ACBRE",JoinParty())
+END

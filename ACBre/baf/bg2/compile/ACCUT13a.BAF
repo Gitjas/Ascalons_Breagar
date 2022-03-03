@@ -1,0 +1,17 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(1)
+		ActionOverride("ACBRESMI",Face(10))
+		CreateVisualEffect("spcrtwpn",[648.229])
+		Wait(2)
+		ActionOverride("ACBRESMI",Swing())
+		Wait(5)
+		CreateVisualEffect("spcrtwpn",[648.229])
+		Wait(2)
+		ActionOverride("ACBRESMI",Swing())
+		Wait(7)
+		ActionOverride("ACBRESMI",StartDialogNoSet(PLAYER1))
+END
