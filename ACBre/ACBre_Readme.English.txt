@@ -2,7 +2,7 @@
                A Modification for BGT, EET, BG:EE, Tutu, BGII, BGII:EE, and EET
                             by Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 11.2.0
+                         		Version: 11.3.0
 
 ***************************************************************************************************************
 
@@ -377,6 +377,9 @@ silver arm in ToB
 	-Improved crossmod and compatibility with EndlessBG1.
 	-Improved compatibility with Transitions.
 	-Improved scripting: BG1 banter should not trigger in SoD.
+
+11.3.0: (2021-11-23) by jastey
+	-Breagar should not be moved back into AR0602 at the beginning of BGII.
 
 ***************************************************************************************************************
 

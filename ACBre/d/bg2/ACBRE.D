@@ -69,7 +69,7 @@ END
 
 IF ~~ THEN BEGIN BG2.6
 SAY @91
-IF ~~ THEN DO ~MakeGlobal()SetGlobal("ACBREINPARTY","GLOBAL",2) JoinParty()~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACBRE","AR0602",4) MakeGlobal()SetGlobal("ACBREINPARTY","GLOBAL",2) JoinParty()~ EXIT
 END
 
 END
@@ -80,7 +80,7 @@ IF ~~ THEN ACBRE BG2.7
 == ACBRE IF ~AreaCheck("AR0602")~ THEN @93
 == ACBRE IF ~!AreaCheck("AR0602")~ THEN @124
 END
-IF ~~ THEN DO ~SetGlobal("ACBREINPARTY","GLOBAL",3) SetDialog("ACBREP") MakeGlobal()EscapeAreaMove("AR0334",648,229,2)~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACBRE","AR0602",4) SetGlobal("ACBREINPARTY","GLOBAL",3) SetDialog("ACBREP") MakeGlobal()EscapeAreaMove("AR0334",648,229,2)~ EXIT
 
 CHAIN
 IF ~~ THEN ACBRE BG2.5

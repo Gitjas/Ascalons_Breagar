@@ -20,7 +20,7 @@ Note:
 BACKUP ~ACBre/backup~
 //AUTHOR Original von Ascalon 
 SUPPORT ~https://www.baldurs-gate.de/index.php?threads/ascalons-breagar.44520/~
-VERSION ~11.2.0~ 
+VERSION ~11.3.0~ 
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
