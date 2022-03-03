@@ -15,6 +15,7 @@ Note to English translation:
 
 -next file in need of proof-reading in the folder "english" in alphabetical order: acaud001.tra
 
+
 */
 
 
@@ -25,7 +26,7 @@ Note to English translation:
 BACKUP ~ACBre/backup~
 //AUTHOR ~whiteagnus@gmx.de~ //Original von Ascalon (geheimer.herrscher@gmx.de)
 SUPPORT ~jastey@web.de~
-VERSION ~7.03~ //2018-03-26
+VERSION ~7.04~ //2018-04-10
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
@@ -1435,7 +1436,8 @@ EXTEND_TOP ~AR0700.bcs~ ~ACBre/baf/bg2/AR0700.baf~
 EXTEND_TOP ~AR0905.bcs~ ~ACBre/baf/bg2/AR0905.baf~
 EXTEND_TOP ~AR2000.bcs~ ~ACBre/baf/bg2/AR2000.baf~
 EXTEND_TOP ~AR2010.bcs~ ~ACBre/baf/bg2/AR2010.baf~
-EXTEND_TOP ~AR4000.bcs~ ~ACBre/baf/bg2/AR4000.baf~
+//EXTEND_TOP ~AR4000.bcs~ ~ACBre/baf/bg2/AR4000.baf~
+EXTEND_BOTTOM ~AR4000.bcs~ ~ACBre/baf/bg2/AR4000.baf~
 EXTEND_TOP ~AR0602.bcs~ ~ACBre/baf/bg2/AR0602.baf~
 EXTEND_TOP ~AR6200.bcs~ ~ACBre/baf/bg2/AR6200.baf~
 

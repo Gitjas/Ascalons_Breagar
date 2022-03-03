@@ -2,7 +2,7 @@
                Eine Modifikation für BGT, EET, BG:EE, Tutu, BGII, BGII:EE und EET
                             von Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 7.03
+                         		Version: 7.04
 
 ***************************************************************************************************************
 
@@ -245,6 +245,14 @@ silver arm in ToB
 7.03:
 	-(EET) continuous game and Breagar in party: ToB script will now be assigned correctly!
 	-added Continue() to ar4000.baf so chapter change isn't blocked!
+
+7.04:
+	-Banter Breagar-Imoen triggern nun richtig nur, wenn beide in der Gruppe sind.
+	-Der "verhüllte Zwerg" spawnt nun auch bei der ersten Begegnung direkt neben Breagar und sollte nicht mehr übersehbar sein.
+	-Messenger of the Thieves' Guild will spawn directly by Breagar, too (Axe quest)
+	-Breagar won't find his axe in ID (EET-Tweaks component "Import party items to SoA")
+	-Breagar won't be summonable if he left hostile or is dead (corrected spelling of variable in FATESP.dlg)
+	-EET: ToB script should be assigned correctly (really this time)
 
 ***************************************************************************************************************
 

@@ -923,7 +923,7 @@ END
 IF ~~ THEN EXTERN IMOEN2J BREIMMYAR0602
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")AreaCheck("AR0602")Global("ACImmy0602","GLOBAL",0)~ THEN IMOEN2J BREIMMYAR0602
+IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("ACBre")AreaCheck("AR0602")Global("ACImmy0602","GLOBAL",0)~ THEN IMOEN2J BREIMMYAR0602
 @474 DO ~SetGlobal("ACBreImmyActive","GLOBAL",2)SetGlobal("ACImmy0602","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @475
 ==IMOEN2J @476
@@ -950,7 +950,7 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")%BGT_VAR2%
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",4)~ THEN IMOEN2J BREIMMY22
+IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("ACBre")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",4)~ THEN IMOEN2J BREIMMY22
 @588 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @589
 ==IMOEN2J @590
@@ -960,7 +960,7 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")%BGT_VAR2%
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",6)~ THEN IMOEN2J BREIMMY23
+IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("ACBre")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",6)~ THEN IMOEN2J BREIMMY23
 @474 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @596
 ==IMOEN2J @597
@@ -988,7 +988,7 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")%BGT_VAR2%
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",10)~ THEN IMOEN2J BREIMMY25
+IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("ACBre")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",10)~ THEN IMOEN2J BREIMMY25
 @474 DO ~SetGlobal("ACBreImmyActive","GLOBAL",3)IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @596
 ==IMOEN2J @613
@@ -999,7 +999,7 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")%BGT_VAR2%
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("IMOEN2")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",12)~ THEN IMOEN2J BREIMMY26
+IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("ACBre")%BGT_VAR2%Global("ACBreImmyTalk","GLOBAL",12)~ THEN IMOEN2J BREIMMY26
 @620 DO ~SetGlobal("ACBreImmyActive","GLOBAL",3)IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ IF ~GlobalLT("ACBREBIO","GLOBAL",2)~ THEN @621
 ==IMOEN2J IF ~GlobalLT("ACBREBIO","GLOBAL",2)~ THEN @622

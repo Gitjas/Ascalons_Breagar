@@ -829,25 +829,13 @@ OR(8)
 THEN
 	RESPONSE #100
 		SetGlobal("ACAUDQUESTSTARTER","LOCALS",1)
-		CreateCreatureOffScreen("ACAUD001",0)
 END
 
 IF
 	InParty(Myself) 
 	See(Player1)
-	Global("ACAUDQUEST","GLOBAL",2)
-	InMyArea("ACAUD001")
 	Global("ACAUDQUESTSTARTER","LOCALS",1)
 	%BGT_VAR2%
-OR(8)
-	AreaCheck("AR0020")
-	AreaCheck("AR0300")
-	AreaCheck("AR0400")
-	AreaCheck("AR0500")
-	AreaCheck("AR0700")
-	AreaCheck("AR0800")
-	AreaCheck("AR0900")
-	AreaCheck("AR1000")
 THEN
 	RESPONSE #100
 		PlaySong(999990)
@@ -929,7 +917,7 @@ IF
 	%BGT_VAR2%
 	See(Player1)
 	Global("ACAUDQUEST","GLOBAL",7)
-	!InMyArea("ACTHIEF1")
+	Global("ACAUDQUESTGOESON","LOCALS",0)
 OR(8)
 	AreaCheck("AR0020")
 	AreaCheck("AR0300")
@@ -942,7 +930,6 @@ OR(8)
 THEN
 	RESPONSE #100
 		SetGlobal("ACAUDQUESTGOESON","LOCALS",1)
-		CreateCreatureOffScreen("ACTHIEF1",0)
 END
 
 IF
@@ -950,7 +937,6 @@ IF
 	%BGT_VAR2%
 	See(Player1)
 	Global("ACAUDQUEST","GLOBAL",7)
-	InMyArea("ACTHIEF1")
 	Global("ACAUDQUESTGOESON","LOCALS",1)
 OR(8)
 	AreaCheck("AR0020")

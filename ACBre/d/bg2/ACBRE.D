@@ -69,7 +69,7 @@ END
 
 IF ~~ THEN BEGIN BG2.6
 SAY @91
-IF ~~ THEN DO ~MakeGlobal()SetGlobal("ACBREINPARTY","GLOBAL",2)JoinParty()~ EXIT
+IF ~~ THEN DO ~MakeGlobal()SetGlobal("ACBREINPARTY","GLOBAL",2) JoinParty()~ EXIT
 END
 
 END

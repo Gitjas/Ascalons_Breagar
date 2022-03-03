@@ -62,10 +62,10 @@ END
 
 IF ~~ THEN BEGIN 8
 SAY @22
-IF ~~ THEN DO ~SetGlobal("ACBREEXSISTS","GLOBAL",1)SetGlobal("ACBREINPARTY","GLOBAL",2)JoinParty()~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACBREEXISTS","GLOBAL",1)SetGlobal("ACBREINPARTY","GLOBAL",2)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 9
 SAY @23
-IF ~~ THEN DO ~SetGlobal("ACBREEXSISTS","GLOBAL",1)SetGlobal("ACBREINPARTY","GLOBAL",3)SetLeavePartyDialogFile()MoveToPointNoInterrupt([2562.1376])Face(3)~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACBREEXISTS","GLOBAL",1)SetGlobal("ACBREINPARTY","GLOBAL",3)SetLeavePartyDialogFile()MoveToPointNoInterrupt([2562.1376])Face(3)~ EXIT
 END

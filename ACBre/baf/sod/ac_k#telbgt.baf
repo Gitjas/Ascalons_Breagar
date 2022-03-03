@@ -13,6 +13,8 @@ THEN
 	RESPONSE #100
 		ActionOverride("ACBre",MakeUnselectable(1))
 		ActionOverride("K#ImportContainer",TakeCreatureItems("ACBre",ALL))
+		ActionOverride("K#ImportContainer",DestroyItem("ACAXE"))
+		ActionOverride("K#ImportContainer",DestroyItem("ACAXE2"))
 		Continue()
 END
 
