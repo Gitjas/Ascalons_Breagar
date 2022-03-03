@@ -1,9 +1,9 @@
 /*
 
 Known Issues:
--Breagar will only smithy for the PC if he is in Taerom's smithy before joining the group.
+-Breagar will only smithy for the PC if he is in Taerom's smithy *before* joining the group.
 -(TdB) Berronar's Axt will be doubled after the Silver Dwarf blessed it in ToB.
--Anstinus Turm, outside area: in the southwest corner, the wall can be left although there is no stairs.
+-Anstinus Turm, outside area: in the southwest corner, the wall can be left to the lower ground although there is no stairs.
 
 Note:
 -SoD-content is not yet approved by Ascalon
@@ -25,8 +25,8 @@ Note to English translation:
 
 BACKUP ~ACBre/backup~
 //AUTHOR ~whiteagnus@gmx.de~ //Original von Ascalon (geheimer.herrscher@gmx.de)
-SUPPORT ~jastey@web.de~
-VERSION ~7.0.6~ //2018-06-09
+SUPPORT ~https://www.baldurs-gate.de/index.php?threads/ascalons-breagar.44520/~
+VERSION ~8.0.0~ //2019-03-06
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
@@ -38,7 +38,7 @@ INCLUDE ~ACBre/lib/liam_bgee_vars.tpa~
 INCLUDE ~ACBre/lib/read_journal_strref.tpa~
 INCLUDE ~ACBre/lib/extra_regexp_vars.tph~
 
-
+INCLUDE ~ACBre/lib/ac_bre_cpmvars.tpa~
 
 /* Declaration of EET Platform Variables */
 ACTION_IF GAME_IS "eet" BEGIN
@@ -132,8 +132,6 @@ COPY_EXISTING ~action.ids~ ~override~
  REPLACE_TEXTUALLY ~^106 Shout(.*$~ ~106 Shout(I:ID*SHOUTIDS)~
 BUT_ONLY_IF_IT_CHANGES
 
-INCLUDE ~ACBre/lib/ac_bre_cpmvars.tpa~
-
 COPY ~ACBre/component.xxx~ ~ACBre/reinstall.mrk~
 
 END
@@ -159,6 +157,7 @@ FORBID_COMPONENT ~setup-bp-bgt-worldmap.tp2~ ~0~ @208
 
 //For all engines
 
+/*
 //ACVIRGI
 ACTION_IF GAME_IS ~tob bgt bg2ee eet~ THEN BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~ACVIRGI.DLG~ THEN BEGIN
@@ -186,9 +185,9 @@ END ELSE BEGIN
 END
 
 EXTEND_BOTTOM ~ACVIRGI.bcs~ ~ACBre/Virgi/ACVIRGI.BAF~
+*/
 
 
-/*
 //ACVIRGI
 ACTION_IF FILE_EXISTS_IN_GAME ~ACVIRGI.CRE~
 THEN BEGIN
@@ -210,8 +209,9 @@ COMPILE ~ACBre/Virgi/ACVIRGI.D~
 END
 COMPILE ~ACBre/Virgi/ACVIRGI.BAF~
 END
-*/
 
+
+/*
 PRINT @3
 
 PRINT @4
@@ -241,7 +241,13 @@ END
 		APPEND ~gtimes.ids~ ~5400 ACBRE_TIMER~
 		PRINT @11
 		END
-		
+*/
+
+
+/* 30 min dialogue timer is default, a different one can be installed via separate component */
+APPEND ~gtimes.ids~ ~1800 ACBRE_TIMER~
+
+/*		
 PRINT @12
 
 PRINT @13
@@ -253,12 +259,19 @@ PRINT @14
 END
 
 ACTION_IF ("breagarportrait" = 1) THEN BEGIN
+*/
+
+
+//Portrait
 ACTION_IF GAME_IS ~bgt tutu_totsc tob~ THEN BEGIN
 COPY ~ACBre/Portraits/Nix~ ~override~
 END
 ACTION_IF GAME_IS ~bgee bg2ee eet~ THEN BEGIN
 COPY ~ACBre/Portraits/Nix/bgee~ ~override~
 END
+
+
+/*
 PRINT @15
 END
       
@@ -271,6 +284,7 @@ COPY ~ACBre/Portraits/Gerri/bgee~ ~override~
 END
 PRINT @16
 END
+*/
 
 //bams and portraits 
 COPY ~ACBre/bam~ ~override~
@@ -311,12 +325,12 @@ ADD_MUSIC 		~ACBREM1~			~ACBRE/music/ACBREM1.mus~
 ADD_MUSIC 		~ACBREM2~			~ACBRE/music/ACBREM2.mus~
 
 //Tilesets and Areas for both Parts
-LAF HANDLE_TILESETS
-  STR_VAR
-    tiz_path = ~ACBre/tiz~
-    tisunpack_path = ~ACBre/tools/tisunpack~
-END
+
 COPY ~ACBre/areas~ ~OVERRIDE~
+
+
+
+
 
 //Kit
 ADD_KIT ~ACSMITH1~
@@ -1031,11 +1045,19 @@ ADD_JOURNAL TITLE (@60006) @10018 @10019 @10020 @10022 @10023 //@10021
 ADD_JOURNAL TITLE (@60007) @10024 @10025
 
 //Tilesets and Areas for BG1 Part
-LAF HANDLE_TILESETS
-  STR_VAR
-    tiz_path = ~ACBre/tiz/bg1~
-    tisunpack_path = ~ACBre/tools/tisunpack~
+
+ACTION_IF GAME_IS ~bgt tutu_totsc~ THEN BEGIN
+  LAF HANDLE_TILESETS
+    STR_VAR
+      tiz_path = ~ACBre/tiz/bg1~
+      tisunpack_path = ~ACBre/tools/tisunpack~
+  END
 END
+
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+  COPY ~ACBre/pvrz/bg1~ ~OVERRIDE~
+END
+
 COPY ~ACBre/areas/bg1~ ~OVERRIDE~
 PATCH_IF ("ac6701" STRING_EQUAL_CASE  "%SOURCE_RES%" = 1) BEGIN
 WRITE_EVALUATED_ASCII 0x8 ~%Beregost_ThunderhammerSmithy%~
@@ -1051,6 +1073,24 @@ WRITE_EVALUATED_ASCII 0x107c ~%tutu_scriptbg%skelwa~ #8
 WRITE_EVALUATED_ASCII 0x118c ~%tutu_scriptbg%skelwa~ #8
 //END
 
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+  COPY_EXISTING ~ac6701.are~ ~OVERRIDE~
+	PATCH_IF (GAME_IS ~eet~) BEGIN
+		WRITE_SHORT 0x48 THIS | IDS_OF_SYMBOL(~AREATYPE~ ~BG1AREA~)
+	END
+  COPY_EXISTING ~accem1.are~ ~OVERRIDE~
+	PATCH_IF (GAME_IS ~eet~) BEGIN
+		WRITE_SHORT 0x48 THIS | IDS_OF_SYMBOL(~AREATYPE~ ~BG1AREA~)
+	END
+  COPY_EXISTING ~accem2.are~ ~OVERRIDE~
+	PATCH_IF (GAME_IS ~eet~) BEGIN
+		WRITE_SHORT 0x48 THIS | IDS_OF_SYMBOL(~AREATYPE~ ~BG1AREA~)
+	END
+  COPY_EXISTING ~accem3.are~ ~OVERRIDE~
+	PATCH_IF (GAME_IS ~eet~) BEGIN
+		WRITE_SHORT 0x48 THIS | IDS_OF_SYMBOL(~AREATYPE~ ~BG1AREA~)
+	END
+END
 
 
 //Ambient for Area
@@ -1165,6 +1205,11 @@ COMPILE ~ACBre/baf/bg1/compile~
 EVALUATE_BUFFER
 
 END //END of BG1
+
+/* battle script mage18d.bcs: if in BG:EE not present, compile (combat script of Lich) */
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~mage18d.bcs~ THEN BEGIN
+  COMPILE ~ACBre/baf/bgee/mage18d.baf~ 
+END
 
 
 
@@ -1396,11 +1441,19 @@ ADD_JOURNAL TITLE (@60011) @10048 @10049 @10050 @10051 @10052 @10053 @10054
 ADD_JOURNAL TITLE (@60012) @10055 @10056 @10057 @10058 @10059 @10060 @10061 @10062 @10063 @10064 @10065 @10066 @10067 @10068 @10069 @10070 @10071 @10072
 
 //Tilesets and Areas for BG2 Part
-LAF HANDLE_TILESETS
-  STR_VAR
-    tiz_path = ~ACBre/tiz/bg2~
-    tisunpack_path = ~ACBre/tools/tisunpack~
+
+ACTION_IF GAME_IS ~bgt tob~ THEN BEGIN
+  LAF HANDLE_TILESETS
+    STR_VAR
+      tiz_path = ~ACBre/tiz/bg2~
+      tisunpack_path = ~ACBre/tools/tisunpack~
+  END
 END
+
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+  COPY ~ACBre/pvrz/bg2~ ~OVERRIDE~
+END
+
 COPY ~ACBre/areas/bg2~ ~OVERRIDE~
 
 //Set Strings for Areas
@@ -1636,13 +1689,13 @@ ACTION_IF FILE_EXISTS_IN_GAME ~M#VAMBER.CRE~
 THEN BEGIN
 PRINT @200
 EXTEND_BOTTOM ~ACBRE.bcs~ ~ACBre/CROSS/ACAMBER.baf~
-COMPILE ~ACBre/CROSS/ACAMBER.D~
+COMPILE ~ACBre/CROSS/ACAMBER.D~  EVALUATE_BUFFER
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~AURNSW.ITM~
 THEN BEGIN
 PRINT @201
-COMPILE ~ACBre/CROSS/ACAUREN.D~
+COMPILE ~ACBre/CROSS/ACAUREN.D~  EVALUATE_BUFFER
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~WGWITCH.BCS~
@@ -1684,3 +1737,63 @@ END
 
 COMPILE ~ACBre/pid~
 EVALUATE_BUFFER
+
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Chose different dialogue timer
+//
+//
+///////////////////////////////////////////////////////////////////////////
+
+BEGIN @8 DESIGNATED 10 /* ~45 Minuten Realzeit zwischen den Gespraechen~ */
+	SUBCOMPONENT @3  /* ~Setup von Breagars Gesprächsgeschwindigkeit~ */
+REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
+
+COPY_EXISTING ~gtimes.ids~ ~override~
+  REPLACE_TEXTUALLY ~^.+[ %TAB%]\(ACBRE_TIMER[ %TAB%%LNL%%MNL%%WNL%]+\)~ ~2700 \1~
+  BUT_ONLY
+
+BEGIN @9 DESIGNATED 11 /* ~1 Stunde Realzeit zwischen den Gespraechen~ */
+	SUBCOMPONENT @3  /* ~Setup von Breagars Gesprächsgeschwindigkeit~ */
+REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
+
+COPY_EXISTING ~gtimes.ids~ ~override~
+  REPLACE_TEXTUALLY ~^.+[ %TAB%]\(ACBRE_TIMER[ %TAB%%LNL%%MNL%%WNL%]+\)~ ~3600 \1~
+  BUT_ONLY
+
+BEGIN @10 DESIGNATED 12 /* ~15 Minuten Realzeit zwischen den Gespraechen~ */
+	SUBCOMPONENT @3  /* ~Setup von Breagars Gesprächsgeschwindigkeit~ */
+REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
+
+COPY_EXISTING ~gtimes.ids~ ~override~
+  REPLACE_TEXTUALLY ~^.+[ %TAB%]\(ACBRE_TIMER[ %TAB%%LNL%%MNL%%WNL%]+\)~ ~900 \1~
+  BUT_ONLY
+
+BEGIN @11 DESIGNATED 13 /* ~1 Stunde 30 Minuten Realzeit zwischen den Gespraechen~ */
+	SUBCOMPONENT @3  /* ~Setup von Breagars Gesprächsgeschwindigkeit~ */
+REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
+
+COPY_EXISTING ~gtimes.ids~ ~override~
+  REPLACE_TEXTUALLY ~^.+[ %TAB%]\(ACBRE_TIMER[ %TAB%%LNL%%MNL%%WNL%]+\)~ ~5400 \1~
+  BUT_ONLY
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Chose portrait from Nix
+//
+//
+///////////////////////////////////////////////////////////////////////////
+
+BEGIN @12 DESIGNATED 20 /* ~Alternatives Portraits aus v4.X installieren? (Default ist Original Art by Nix)~ */
+REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
+
+ACTION_IF GAME_IS ~bgt tutu_totsc tob~ THEN BEGIN
+COPY ~ACBre/Portraits/Gerri~ ~override~
+END
+ACTION_IF GAME_IS ~bgee bg2ee eet~ THEN BEGIN
+COPY ~ACBre/Portraits/Gerri/bgee~ ~override~
+END
+PRINT @16
+
+

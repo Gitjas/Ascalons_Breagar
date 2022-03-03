@@ -1,6 +1,7 @@
 @1    = ~Breagar: Inhalte~
 @2    = ~Ihr habt kein Spiel installiert, für das die Mod kompatibel ist. Installation wird abgebrochen.~
-@3    = ~Setup von Breagars Gesprächsgeschwindigkeit~
+@3    = ~Zeit zwischen Breagars Gespraechen veraendern? (Default ist 30 Minuten Realzeit zwischen den Gespraechen.)~
+/*
 @4    = ~Bitte auswaehlen:
 [1] 30 Minuten Realzeit zwischen den einzelnen Gespraechen (empfohlen)
 [2] 45 Minuten Realzeit zwischen den einzelnen Gespraechen
@@ -11,17 +12,20 @@
 @5    = ~placeholder_value~
 @6    = ~Bitte waehlt 1, 2, 3, 4 oder 5 und bestaetigt mit Enter.~
 @7    = ~30 Minuten Realzeit zwischen den Gespraechen~
+*/
 @8    = ~45 Minuten Realzeit zwischen den Gespraechen~
 @9    = ~1 Stunde Realzeit zwischen den Gespraechen~
 @10   = ~15 Minuten Realzeit zwischen den Gespraechen~
 @11   = ~1 Stunde 30 Minuten Realzeit zwischen den Gespraechen~
-@12   = ~Ein Portrait fuer Breagar~
+@12   = ~Alternatives Portraits aus v4.X installieren? (Default ist Original Art by Nix)~
+/*
 @13   = ~Bitte waehlt ein Portrait:
 
 [1] Original Art by Nix
 [2] Alternatives Portraits aus v4.X~
 @14   = ~Bitte 1 oder 2 waehlen und mit ENTER bestaetigen.~
 @15   = ~Portrait wird installiert: Original Art by Nix~
+*/
 @16   = ~Portrait wird installiert: Alternatives Portrait aus v.4.X~
 @17   = ~Zwergenschmied~
 @18   = ~ZWERGENSCHMIED: In den Hallen der Zwergenclans wird die Meisterschaft eines Handwerkes als höchste zu erlangende Kunst angesehen. Angehörigen anderer Rassen sind Zwerge am ehesten als tapfere Bergleute und talentierte Schmiede bekannt, von denen gerade letztere durch ihre kunstvollen Waffen auf der ganzen Welt einen besondernen Ruf halten. Der typische Zwergenschmied ist kräftig und zäh, das lange Arbeiten am offenen Feuer hat ihn unempfindlich gegen die Hitze gemacht. Ein wahrer Meisterschmied erkennt die Geheimnisse, die ein Werkstück in sich birgt, auf den ersten Blick. Obwohl der Schmied nicht zögert, seinen Amboss vor jeglichen Gefahren zu schützen, kennt er die meisten Waffen doch nur vom Übungsplatz und verlässt sich im Kampf auf wuchtige Hiebwaffen wie Hämmer und Äxte.

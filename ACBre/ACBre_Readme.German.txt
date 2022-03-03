@@ -2,7 +2,7 @@
                Eine Modifikation für BGT, EET, BG:EE, Tutu, BGII, BGII:EE und EET
                             von Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 7.0.6
+                         		Version: 8.0.0
 
 ***************************************************************************************************************
 
@@ -46,6 +46,7 @@ II. Installation:
 
 III. Hinweise (wichtig!)
 
+-Die Version 8 hat einen veränderten Installationsprozess: zwei neue Komponenten sind hinzugekommen, dafür fällt die Auswhl während der Installation der Hauptkomponente raus. Die tp2-Datei wurde umbenannt. Deinstalliert vorherige Versionen und löscht den alten Modordner, bevor Ihr die neue Version 8 in Euren Spieleordner entpackt.
 
 - Die Version 6 ist nicht abwärtskompatibel mit vorherigen Versionen von Breagar. Inhalte wurden teilweise komplett neu überarbeitet und Variablen neu gesetzt. Es ist nicht möglich, ein bereits begonnenes Spiel der Version 5.2 oder niedriger mit Breagar in der Gruppe einfach zu updaten!
 
@@ -59,7 +60,9 @@ III. Hinweise (wichtig!)
 
 IV. Kompatibilität:
 
-Breagar wurde mit WeiDU Vers. 2.07 bis 2.24 programmiert und sollte daher mit allen anderen Modifikationen auf WeiDU-Basis kompatibel sein. Breagar wurde mit Blick auf das Big World Projekt von Leonardo Watson programmiert und sollte in jeder beliebigen Konstellation, in der BGT installiert ist, funktionieren.
+Breagar wurde mit WeiDU Vers. 2.07 bis 2.24 programmiert und sollte daher mit (fast)  allen anderen Modifikationen auf WeiDU-Basis kompatibel sein. Breagar wurde mit Blick auf das Big World Projekt von Leonardo Watson programmiert und sollte in jeder beliebigen Konstellation, in der BGT installiert ist, funktionieren.
+
+Achtung: Die Verwendung des Item Patchers, der einige von Breagars Items entfernbar macht, kann zu Inkompatibilitäten führen, da Breagar diese Items zu bestimmten Zeiten an bestimmten Itemslots haben muss, damit die Mod richtig ausgeführt wird.
 
 
 ***************************************************************************************************************
@@ -262,6 +265,30 @@ silver arm in ToB
 
 7.0.6:
 	-Breagar-Solaufein crossmod compiles without error message
+
+8.0.0: (2019-03-06) by jastey
+	-Breagar-Solaufein crossmod should now compile without errors also if crossmod component is installed separately
+	-crossmod banter with Amber and Auren should also play for BGII/:EE (did only for BGT/EET)
+	-Tobin should not have "nothing to say" if the PC didn't go to the cemetary the first time he was spoken to, and also bring the PC to the cemetary in BGII (for EET)
+	-audio references should play correctly in Linux (i.e. case-sensitive OS)
+	-splitted script blocks into BG1 / BGII parts to prevent stutter bug in BG:EE
+	-if PC loses the untainted ore, Breagar will not complain right away but after a little timer (in case it was "dropped" because of NPC death
+	-Breagar will no longer suggest to visit the Halfling's village in Gullykin if the party entered via the tunnels from Firewine Bridge
+	-after Breagar's incident in the smithy: party will be teleported back to Thunderhammy Smithy, including the ground pile with Breagar's stuff (player should not miss Breagar's stuff in the temporary area)
+	-Borsks Zauberrobe now gives AC 5
+	-assigned missing area script to ACCEM1.are
+	-Removed wrong area script from AC2001.are
+	-(German) corrected use of <PRO_MANWOMAN>
+	-(German) typo corrections
+	-(BG:EE/SoD) Lich will defend itself
+	-areas have no black lines for EE (using of pvrz tis format)
+	-(EET) BG1 areas flagged as BG1 areas (~AREATYPE~ ~BG1AREA~)
+	-new component: choice of dialogue timer
+	-new component: choice of alternate portrait
+	-ACTION_READLN removed, two new components added instead
+	-renamed setup-acbre.tp2 into acbre.tp2
+	-added ACBre.ini with mod info metadata
+	-update to WeiDU v246
 
 
 ***************************************************************************************************************

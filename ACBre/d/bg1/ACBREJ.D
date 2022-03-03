@@ -345,7 +345,10 @@ IF ~~ THEN ACBREJ Acc.11
 ==ACTAEROM @132
 ==ACBREJ @133
 END
-IF ~~ THEN DO ~AddexperienceParty(1200)AddJournalEntry(@10013,QUEST_DONE)SetGlobal("AC6701TELEPORT","GLOBAL",2)SetGlobal("ACBREINPARTY","GLOBAL",2)SetDialog("AcBreJ")ChangeAIScript("AcBre",OVERRIDE)ActionOverride("ACTAEROM",EscapeAreaDestroy(10))ActionOverride("ACREVI",EscapeAreaDestroy(10))JoinParty()~ EXIT
+IF ~~ THEN DO ~AddexperienceParty(1200)AddJournalEntry(@10013,QUEST_DONE)SetGlobal("AC6701TELEPORT","GLOBAL",2)SetGlobal("ACBREINPARTY","GLOBAL",2)SetDialog("AcBreJ")ChangeAIScript("AcBre",OVERRIDE)JoinParty()
+ClearAllActions()
+      StartCutSceneMode()
+      StartCutScene("accut_1x")~ EXIT
 
 CHAIN 
 IF ~~ THEN ACBREJ Acc.13
@@ -356,7 +359,10 @@ IF ~~ THEN ACBREJ Acc.13
 ==ACTAEROM @132
 ==ACBREJ @135
 END
-IF ~~ THEN DO ~AddexperienceParty(1200)AddJournalEntry(@10012,QUEST_DONE)SetGlobal("AC6701TELEPORT","GLOBAL",2)SetGlobal("ACBREBROKE","GLOBAL",1)SetGlobal("ACBREEXISTS","GLOBAL",2)ActionOverride("ACTAEROM",EscapeAreaDestroy(10))ActionOverride("ACREVI",EscapeAreaDestroy(10))EscapeAreaDestroy(10)~ EXIT
+IF ~~ THEN DO ~AddexperienceParty(1200)AddJournalEntry(@10012,QUEST_DONE)SetGlobal("AC6701TELEPORT","GLOBAL",2)SetGlobal("ACBREBROKE","GLOBAL",1)SetGlobal("ACBREEXISTS","GLOBAL",2)
+ClearAllActions()
+      StartCutSceneMode()
+      StartCutScene("accut_2x")~ EXIT
 
 CHAIN
 IF ~Global("ACSILVERAPPEARS","GLOBAL",2)~ THEN ACBREJ SILVERAPPEARS.1

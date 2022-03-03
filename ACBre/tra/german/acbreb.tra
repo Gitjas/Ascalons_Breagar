@@ -161,10 +161,10 @@
 @160  = ~Kleiner... mieser... Bastard? Buzzurk! Gnade hättet Ihr vielleicht erwarten können, hättet Ihr Reue gezeigt! So wird nun Moradins Richtspruch über Euch verhängt!~
 @161  = ~Buzzurk! Sieht so aus als könnten wir dieses Huhn doch nicht in die Pfanne schlagen. Verdammt.~
 @162  = ~Eine - (gack) - gute Entscheidung!~
-@163  = ~Moment... wir? Was bei allen Teufeln des Abyss und darüber hinaus meint Ihr mit *wir*?~ [ACBRE_79]
+@163  = ~Moment... wir? Was bei allen Teufeln des Abyss und darüber hinaus meint Ihr mit *wir*?~ [acbre_79]
 @164  = ~Dass Ihr machen werdet diese Reise. Seid nicht gespannt auf große Abenteuer?~
-@165  = ~Ihr... Ihr macht Euch einen Scherz mit dem guten alten Breagar, nicht wahr? Ihr wollt doch nicht wirklich...~ [ACBRE_80]
-@166  = ~Nein! Das kann einfach nicht Euer Ernst sein!~ [ACBRE_81]
+@165  = ~Ihr... Ihr macht Euch einen Scherz mit dem guten alten Breagar, nicht wahr? Ihr wollt doch nicht wirklich...~ [acbre_80]
+@166  = ~Nein! Das kann einfach nicht Euer Ernst sein!~ [acbre_81]
 @167  = ~Natürlich ist das mein Ernst, Breagar.~
 @168  = ~Was habt Ihr denn nun schon wieder?~
 @169  = ~Bitte, reißt Euch zusammen, Breagar! Ihr bringt mich in Verlegenheit.~
@@ -652,7 +652,7 @@
 @651  = ~Vielleicht... vielleicht reden wir später?~
 @652  = ~Vielleicht machen wir das.~
 @653  = ~Gut, dann lasst uns weiterziehen.~
-@654  = ~*Breagar läuft in Gedanken versunken an seinem Platz in der Formation.*~ [ACBRE_08]
+@654  = ~*Breagar läuft in Gedanken versunken an seinem Platz in der Formation.*~ [acbre_08]
 @655  = ~STERBLICHER! VERNIMM DIE WORTE DES MÄCHTIGEN TIAX!~
 @656  = ~Verdammte Gnomenbrut! Ich bringe Euch um, wenn Ihr so etwas noch *einmal* macht!~
 @657  = ~Euch steht es nicht zu, dem großen Tiax zu drohen! Euch steht es zu, zu schweigen und seine Botschaft an Euch zu vernehmen!~

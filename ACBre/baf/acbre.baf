@@ -12,7 +12,7 @@ IF
 THEN
 	RESPONSE #100
 		LeaveParty()
-		EscapeAreaDestroy(90)
+		EscapeAreaDestroy(90) 
 END
 
 IF
@@ -272,6 +272,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("ACBREIRONCOMPLAINER","LOCALS",1)
+		SetGlobalTimer("ACIRONCOMPLAINTIMER","LOCALS",100)
 		Continue()
 END
 
@@ -1253,7 +1254,7 @@ IF
 	%BGT_VAR%
 THEN
 	RESPONSE #100
-		RealSetGlobalTimer("ACBREFRIENDTALKTIMER","GLOBAL",300)
+		RealSetGlobalTimer("ACBreFriendtalkTimer","GLOBAL",300)
 		SetGlobal("ACBREFRIENDACTIVE","GLOBAL",1)
 		SetGlobal("ACBREBANTER1","LOCALS",1)
 END
@@ -1275,18 +1276,18 @@ IF
 	Global("ACBREBANTER1","LOCALS",2)
 	Global("ACSPEEDMEUP","LOCALS",0)
 	Global("ACBREFRIENDACTIVE","GLOBAL",1)
-	!RealGlobalTimerExpired("ACBREFRIENDTALKTIMER","GLOBAL")
+	!RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
 	%BGT_VAR%
 THEN
 	RESPONSE #100
-		RealSetGlobalTimer("ACBREFRIENDTALKTIMER","GLOBAL",10)
+		RealSetGlobalTimer("ACBreFriendtalkTimer","GLOBAL",10)
 		SetGlobal("ACSPEEDMEUP","LOCALS",1)
 END
 
 IF
 	InParty(Myself)
 	See(Player1)
-	RealGlobalTimerExpired("ACBREFRIENDTALKTIMER","GLOBAL")
+	RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
 	Global("ACBREFRIENDACTIVE","GLOBAL",1)
 	CombatCounter(0)
 THEN
@@ -1342,7 +1343,7 @@ IF
 	Global("ACBREBANTER5","LOCALS",0)
 THEN
 	RESPONSE #100
-		RealSetGlobalTimer("ACBREFRIENDTALKTIMER","GLOBAL",1)
+		RealSetGlobalTimer("ACBreFriendtalkTimer","GLOBAL",1)
 		SetGlobal("ACBREFRIENDACTIVE","GLOBAL",1)
 		SetGlobal("ACBREBANTER5","LOCALS",1)
 END
@@ -1351,7 +1352,7 @@ IF
 	InParty(Myself) 
 	See(Player1)
 	Global("ACBREFRIENDACTIVE","GLOBAL",2)
-	RealGlobalTimerExpired("ACBREFRIENDTALKTIMER","GLOBAL")
+	RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
 	!StateCheck("ACBRE",CD_STATE_NOTVALID)
 	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
 OR(9)
@@ -1374,7 +1375,7 @@ END
 IF
 	InParty(Myself)
 	See(Player1)
-	RealGlobalTimerExpired("ACBREFRIENDTALKTIMER","GLOBAL")
+	RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
 	Global("ACBREFRIENDACTIVE","GLOBAL",2)
 	CombatCounter(0)
 	!Global("ACBREBANTER1","LOCALS",1)
@@ -1388,7 +1389,7 @@ IF
 	!Global("ACBREBANTER5","LOCALS",1)
 THEN
 	RESPONSE #100
-		RealSetGlobalTimer("ACBREFRIENDTALKTIMER","GLOBAL",ACBRE_TIMER)
+		RealSetGlobalTimer("ACBreFriendtalkTimer","GLOBAL",ACBRE_TIMER)
 		SetGlobal("ACBREFRIENDACTIVE","GLOBAL",1)
 END
 
@@ -2333,6 +2334,19 @@ THEN
 		SetGlobal("ACAR9200","LOCALS",2)
 END
 
+/* disable dialogue about halfling's village if area was entered through the dungeon */
+IF
+	InParty(Myself) 
+	AreaCheck("%Gullykin_Winery_Cellar%")
+	CombatCounter(0)
+	!See([ENEMY])
+	!Global("ACBREFRIEND","GLOBAL",3)
+	Global("ACAR9900","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACAR9900","LOCALS",2)
+END
+
 IF
 	InParty(Myself) 
 	See(Player1)
@@ -2428,6 +2442,7 @@ END
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/* note to other modders reading this: combining the trigger blocks of dialogues like this is a bad idea - if there is a stutter bug, debugging gets tedious! Use separated trigger blocks instead. */
 IF
 	InParty(Myself) 
 	See(Player1)
@@ -3072,6 +3087,7 @@ THEN
 END
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/*
 IF
 	InParty(Myself) 
 	See(Player1)
@@ -3116,7 +3132,68 @@ THEN
 	RESPONSE #100
 		StartDialogNoSet(Player1)
 END
+*/
 
+/* BG1 */
+
+
+IF
+	%BGT_VAR%
+	InParty(Myself)
+	See(Player1)
+	OR(8)
+		Global("ACBGMISC83","LOCALS",1)
+		Global("ACBOOK70","LOCALS",1)
+		Global("ACMISC04","LOCALS",1)
+		Global("ACMISC49","LOCALS",1)
+		Global("ACMISC60","LOCALS",1)
+		Global("ACMISC87","LOCALS",1) 
+		Global("ACMISC97","LOCALS",1)
+		Global("ACSW1H17","LOCALS",1) 
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+
+/* BGII */
+
+IF
+	%BGT_VAR2%
+	InParty(Myself)
+	See(Player1)
+	OR(27)
+		Global("ACBLUN14","LOCALS",1) //not in BG:EE
+		Global("ACBLUN14A","LOCALS",1) //not in BG:EE
+		Global("ACDAGG19","LOCALS",1)  //not in BG:EE
+		Global("ACDWDUST","LOCALS",1) //not in BG:EE
+		Global("ACHAMM06","LOCALS",1) //not in BG:EE
+		Global("ACHAMM09","LOCALS",1) //not in BG:EE
+		Global("ACLEAT22","LOCALS",1) //not in BG:EE
+		Global("ACMISC4E","GLOBAL",1) //not in BG:EE
+		Global("ACMISC4N","LOCALS",1) //not in BG:EE
+		Global("ACMISC5A","LOCALS",1) //not in BG:EE
+		Global("ACMISC5K","LOCALS",1) //not in BG:EE
+		Global("ACMISC5Z","LOCALS",1) //not in BG:EE
+		Global("ACMISC6Q","LOCALS",1) //not in BG:EE
+		Global("ACMISC7R","LOCALS",1) //not in BG:EE
+		Global("ACMISC9H","LOCALS",1) //not in BG:EE
+		Global("ACMISCBL","LOCALS",1) //not in BG:EE
+		Global("ACMISCBU","LOCALS",1) //not in BG:EE
+		Global("ACDRAGONSCALES","LOCALS",1) //not in BG:EE
+		Global("ACDRAGONSCALES","LOCALS",3) //not in BG:EE
+		Global("ACSCRL2J","LOCALS",1) //not in BG:EE
+		Global("ACBERROBOOK","LOCALS",1) //not in BG:EE
+		Global("ACBERROBOOK","LOCALS",3) //not in BG:EE
+		Global("ACBERROBOOK","LOCALS",5) //not in BG:EE
+		Global("ACBERROSTONE","LOCALS",1) //not in BG:EE
+		Global("ACBERROSTONE","LOCALS",3) //not in BG:EE
+		Global("ACBERROSTONE","LOCALS",5) //not in BG:EE
+		Global("ACACBOOK02","LOCALS",1) //not in BG:EE
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
 
 
 

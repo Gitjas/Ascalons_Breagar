@@ -1,4 +1,4 @@
-@0    = ~Was gibt es?~ [ACBRE_22]
+@0    = ~Was gibt es?~ [acbre_22]
 @1    = ~Lasst uns mit dem Schmieden beginnen.~
 @2    = ~Erzählt mir etwas über Euer zu Hause.~
 @3    = ~Ich möchte etwas über Eure Religion erfahren.~
@@ -61,7 +61,7 @@
 @60   = ~Sie ist fast das genaue Gegenteil von meinem Vater. Er ist meist ruhig und gelassen, aber wenn ihm etwas nicht passt, dann wackeln die Wände. Sie ist immer laut, hektisch und besorgt, nur dann, wenn es ernst wird, ist sie still und behält den kühlen Kopf.~
 @61   = ~Dalgar würde Euch gefallen. Er würde wohl besser in Eure Bande von Verrückten hier passen als ich.~
 @62   = ~Dalgar ist fast zwanzig Jahre älter als ich, aber für zwergische Verhältnisse ist das natürlich nicht allzu viel. Wir standen uns bis zu seiner Abreise sehr nahe.~
-@63   = ~Er ist gereist? wohin?~
+@63   = ~Er ist gereist? Wohin?~
 @64   = ~Die Geschichte meiner Familie? Ich glaube nicht, dass sie Euch sehr interessieren würde, es sei denn, Ihr interessiert Euch für Brotrezepte, Backzeiten und die große Hefedürre von '98.~
 @65   = ~Meine Vorväter waren Bäcker, <CHARNAME>, und nichts mehr. Keiner hat jemals ein Abenteuer erlebt oder ist auf Reisen gegangen.~
 @66   = ~Niemand weiß das so genau.~
@@ -108,7 +108,7 @@
 @107  = ~Gorm ist der Schutzherr der Zwergenfesten und der wachsame Gott. Der ewige Vigilant beschwört seine Avatare immer dann, wenn es darum geht, eine Zwergenfeste zu verteidigen und der Kampf aussichtslos erscheint.~
 @108  = ~Marthammor Duin beschützt Zwerge auf Wanderschaft. Wenn sich ein Zwerg auf Reisen begibt, dann bittet er den Finder-der-Wege um seine Hilfe.~
 @109  = ~(Breagar spuckt hörbar aus) Über diesen Duergartreiber weiß ich nichts und will ich auch nichts wissen.~
-@110  = ~Abbathor ist der einige böse Gott, der von Moradin geduldet wird. Er ist der Gott der Gier und des Neides und lehrt, dass jedes Mittel recht ist, seinen Reichtum zu mehren, so lange kein Zwerg dabei zu Schaden kommt.~
+@110  = ~Abbathor ist der einzige böse Gott, der von Moradin geduldet wird. Er ist der Gott der Gier und des Neides und lehrt, dass jedes Mittel recht ist, seinen Reichtum zu mehren, so lange kein Zwerg dabei zu Schaden kommt.~
 @111  = ~Sharindlar? Es wundert mich, dass Ihr diesen Namen kennt, <CHARNAME>. Die Herrin der Gnade ist wenig bekannt unter Dwarmos. Wohl, weil sich kein Nicht-Zwerg vorstellen kann, dass auch Zwerge Ihren Gefallen an Gnade, Mitleid und Romantik haben können.~
 @112  = ~Über Thard Harr kann ich nicht viel sagen. Ich weiß wohl dass er von den wilden Zwergen, die weitab von hier in den Wäldern wohnen, verehrt wird. Aber wen interessieren die schon? Pah.~
 @113  = ~Vergadain, der lachende Zwerg? Er ist der Gott des Handels, der Verhandlungen und des Feilschens.~

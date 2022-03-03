@@ -1,4 +1,4 @@
-@0    = ~Da seid Ihr ja wieder. Hattet Ihr Erfolg?~ [ACBRE_49]
+@0    = ~Da seid Ihr ja wieder. Hattet Ihr Erfolg?~ [acbre_49]
 @1    = ~Dann seid Ihr nicht daran interessiert mich wieder zu begleiten, oder?~
 @2    = ~Habt Ihr viel zu tun?~
 @3    = ~Könntet Ihr mir etwas schmieden?~
@@ -9,7 +9,7 @@
 @8    = ~Wir haben das Rätsel der Minen von Nashkell gelöst.~
 @9    = ~Lasst mich in Ruhe, <RACE>. Wendet Euch an Taerom, mir ist nicht nach neuen Freunden.~
 @10   = ~Schickt <CHARNAME> zu mir, wenn <PRO_HESHE> etwas will.~
-@11   = ~Da soll mich doch ein tollwütiger Kobold in den Arsch beißen! <CHARNAME>, Euch hätte ich hier nicht erwartet.~ [ACBRE_51]
+@11   = ~Da soll mich doch ein tollwütiger Kobold in den Arsch beißen! <CHARNAME>, Euch hätte ich hier nicht erwartet.~ [acbre_51]
 @12   = ~Ihr habt nicht die beste Laune, oder? Was ist denn hier los?~
 @13   = ~Freut mich auch, Euch zu sehen, Breagar.~
 @14   = ~Könnt Ihr mir etwas verkaufen?~
@@ -119,9 +119,9 @@
 @118  = ~In einer der nächsten Nächte sollte es so weit sein. Kommt wieder, wenn der Mond am Himmel steht.~
 @119  = ~Jetzt. Jetzt ist es so weit. Das Werkstück ist bereit und der Mond steht am Himmel. Die perfekte Zeit, die Runen zu gravieren. Schaut nur gut hin, <CHARNAME>. Seht einem echten Meister bei der Arbeit zu!~
 @120  = ~(Breagar wühlt in einer Lore voller Roheisen herum)~
-@121  = ~Dieses verfluchte Eisen! Da sollen doch alle Teufel des Abyss dreinfahren!~ [ACBRE_55]
-@122  = ~RANZIGE ELFENSCHEISSE! AN DIE WAND MIT DIR! SO!~ [ACBRE_56]
-@123  = ~ARGASHMEGORLIMBUZZURKARASH!~ [ACBRE_57]
+@121  = ~Dieses verfluchte Eisen! Da sollen doch alle Teufel des Abyss dreinfahren!~ [acbre_55]
+@122  = ~RANZIGE ELFENSCHEISSE! AN DIE WAND MIT DIR! SO!~ [acbre_56]
+@123  = ~ARGASHMEGORLIMBUZZURKARASH!~ [acbre_57]
 @124  = ~Breagar! Ihr verscheucht mir noch die Kunden!~
 @125  = ~Pah, wer sich von Eurem Kram hier nicht abschrecken lässt, den werden auch ein paar deutliche Worte nicht davonjagen! Schaut Euch das an, DAS nennt Ihr Handwerk? Dass ich nicht lache! Ha!~
 @126  = ~Jetzt ist es aber genug! Hört zu, ich bin Euch dankbar, dass Ihr mir etwas zur Hand geht, aber irgendwann muss auch mal gut sein!~
@@ -133,7 +133,7 @@
 @132  = ~Das würde Euch so passen, was?~
 @133  = ~Ach, macht doch, was Ihr wollt. Anfänger.~
 @134  = ~Wir haben geschlossen. Kommt morgen wieder.~
-@135  = ~Was hier los ist? WAS HIER LOS IST? DIESES VERFLUCHTE EISEN IST LOS! BARASHNARZABULRAH!~ [ACBRE_46]
+@135  = ~Was hier los ist? WAS HIER LOS IST? DIESES VERFLUCHTE EISEN IST LOS! BARASHNARZABULRAH!~ [acbre_46]
 @136  = ~Damit soll man arbeiten! Pah! Dass ich nicht lache!~
 @137  = ~Ich kann auch nicht zaubern, Breagar! Entweder Ihr nehmt das, was ich hier habe...~
 @138  = ~...Verdammtes Dreckzeug, das einem unter den Fingern wegbröckelt...~
@@ -157,7 +157,7 @@
 @156  = ~Pah, ohne mich wärt Ihr doch schon längst aufgeschmissen, Taerom!~
 @157  = ~Willkommen an Bord, Breagar!~
 @158  = ~Ich glaube nicht, dass ich Eure Hilfe bei meinen Reisen benötige.~
-@159  = ~Ha! Bei Clangeddins Axt! Lasst uns diesen Eisenschändern ein Ende bereiten!~ [ACBRE_47]
+@159  = ~Ha! Bei Clangeddins Axt! Lasst uns diesen Eisenschändern ein Ende bereiten!~ [acbre_47]
 @160  = ~Nichts gegen Dich, <CHARNAME>. Aber ich fühle mich doch um einiges sicherer, wenn sich einer unter Tage auskennt.~
 @161  = ~Pah, ich sage Euch, mit dem werdet Ihr noch Eure Freude haben. Ich rieche die Tiefen meilenweit.~
 @162  = ~Hoffen wir, dass seine Talente unter Tage es Wert sind, dass wir uns mit einem sturköpfigen Zwerg herumschlagen müssen.~

@@ -2,7 +2,7 @@
                A Modification for BGT, EET, BG:EE, Tutu, BGII, BGII:EE, and EET
                             by Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 7.0.6
+                         		Version: 8.0.0
 
 ***************************************************************************************************************
 
@@ -47,6 +47,7 @@ II. Installation:
 
 III. Notes (important!)
 
+-Version 8 comes with a changed install routine. Deinstall previous versions and delete old mod folders before extracting the version 8 into your game folder.
 
 - Version 6 and higher is not backwards compatible with Breagar version 5 or lower. You will have to start a new game.
 
@@ -263,6 +264,30 @@ silver arm in ToB
 
 7.0.6:
 	-Breagar-Solaufein crossmod compiles without error message
+
+8.0.0: (2019-03-06) by jastey
+	-Breagar-Solaufein crossmod should now compile without errors also if crossmod component is installed separately
+	-crossmod banter with Amber and Auren should also play for BGII/:EE (did only for BGT/EET)
+	-Tobin should not have "nothing to say" if the PC didn't go to the cemetary the first time he was spoken to, and also bring the PC to the cemetary in BGII (for EET)
+	-audio references should play correctly in Linux (i.e. case-sensitive OS)
+	-splitted script blocks into BG1 / BGII parts to prevent stutter bug in BG:EE
+	-if PC loses the untainted ore, Breagar will not complain right away but after a little timer (in case it was "dropped" because of NPC death
+	-Breagar will no longer suggest to visit the Halfling's village in Gullykin if the party entered via the tunnels from Firewine Bridge
+	-after Breagar's incident in the smithy: party will be teleported back to Thunderhammy Smithy, including the ground pile with Breagar's stuff (player should not miss Breagar's stuff in the temporary area)
+	-Borsks Zauberrobe now gives AC 5
+	-assigned missing area script to ACCEM1.are
+	-Removed wrong area script from AC2001.are
+	-(German) corrected use of <PRO_MANWOMAN>
+	-(German) typo corrections
+	-(BG:EE/SoD) Lich will defend itself
+	-areas have no black lines for EE (using of pvrz tis format)
+	-(EET) BG1 areas flagged as BG1 areas (~AREATYPE~ ~BG1AREA~)
+	-new component: choice of dialogue timer
+	-new component: choice of alternate portrait
+	-ACTION_READLN removed, two new components added instead
+	-renamed setup-acbre.tp2 into acbre.tp2
+	-added ACBre.ini with mod info metadata
+	-update to WeiDU v246
 
 
 ***************************************************************************************************************

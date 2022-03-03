@@ -50,7 +50,7 @@ END
 
 CHAIN
 IF ~Global("ACBREM#A","GLOBAL",0)
-Global("ENDOFBG1","GLOBAL",2)
+%BGT_VAR2%
 InParty("ACBRE")
 InParty("M#AMBER")
 See("M#AMBER")

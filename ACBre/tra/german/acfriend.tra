@@ -219,5 +219,5 @@
 @218  = ~Euer Wort in Moradins Ohr, <CHARNAME>. Aber wer einmal mit Euch gereist ist, der neigt dazu, so etwas zu glauben.~
 @219  = ~Pah. Das weiß ich selbst, aber müsst Ihr mir es noch in den Bart reiben? Närrischer <PRO_RACE>.~
 @220  = ~Ich versuche es, <CHARNAME>. Dann treibt diesen Haufen mal ein bisschen an, damit es etwas anderes zu sehen gibt als Eure Visage!~
-@221  = ~Ich habe versagt. Nicht nur dass ich meine Hand und das Werkstück verloren habe... ich habe es auch geschafft das uralte Buch der Schmiedekunst zu ruinieren.~ [ACBRE_50]
-@222  = ~Es ist alles hin.~ [ACBRE_52]
+@221  = ~Ich habe versagt. Nicht nur dass ich meine Hand und das Werkstück verloren habe... ich habe es auch geschafft das uralte Buch der Schmiedekunst zu ruinieren.~ [acbre_50]
+@222  = ~Es ist alles hin.~ [acbre_52]

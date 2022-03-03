@@ -1,6 +1,6 @@
 CHAIN
 IF ~Global("ACBREK#A","GLOBAL",0)
-Global("ENDOFBG1","GLOBAL",2)
+%BGT_VAR2%
 PartyHasItem("AURNSW")
 InParty("ACBRE")
 InParty("K#Auren")
@@ -20,7 +20,7 @@ EXIT
 
 CHAIN
 IF ~Global("ACBREK#A","GLOBAL",1)
-Global("ENDOFBG1","GLOBAL",2)
+%BGT_VAR2%
 InParty("ACBRE")
 InParty("K#Auren")
 See("K#Auren")
