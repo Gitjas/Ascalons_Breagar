@@ -2,7 +2,7 @@
                A Modification for BGT, EET, BG:EE, Tutu, BGII, BGII:EE, and EET
                             by Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 7.02 
+                         		Version: 7.03
 
 ***************************************************************************************************************
 
@@ -242,6 +242,10 @@ silver arm in ToB
 7.02:
 	-(German version) SoD lines fully translated. Thanks to Gerri!
 	-In the mod area Anstinus' Tower, Breagar will now give his comment about fighting noises in the East correctly in ToB, only.
+
+7.03:
+	-(EET) continuous game and Breagar in party: ToB script will now be assigned correctly!
+	-added Continue() to ar4000.baf so chapter change isn't blocked!
 
 ***************************************************************************************************************
 
