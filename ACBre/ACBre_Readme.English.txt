@@ -2,7 +2,7 @@
                A Modification for BGT, EET, BG:EE, Tutu, BGII, BGII:EE, and EET
                             by Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 11.3.0
+                         		Version: 11.4.0
 
 ***************************************************************************************************************
 
@@ -49,6 +49,10 @@ II. Installation:
 
 III. Notes (important!)
 
+-While his arm is injured (quest related), any pips in single weapon style will not be applied to Breagar. This is due to technical reasons, but ingame it could be explained by Breagar struggling with fighting with only one arm.
+
+- For v9.0.0 and later, the mod is compatible but independent on the Worldmap Mod, i.e. the Breagar Mod will work with the Worldmap Mod independent on whether it is  installed before or after, but the Worldmap Mod is not needed to see the new area added by Breagar on the games' worldmaps.
+
 -Version 9 does not offer the alternate portrait any more, due to Copyright reasons.
 
 -Version 8 comes with a changed install routine. Deinstall previous versions and delete old mod folders before extracting the version 8 into your game folder.
@@ -56,8 +60,6 @@ III. Notes (important!)
 - Version 6 and higher is not backwards compatible with Breagar version 5 or lower. You will have to start a new game.
 
 - Installation of Breagar mod is done in two steps: the main component first, and the PID (Player Initiated Dialogues) and crossmod content in a second component. For the mod to work best with other mods, the second component should be installed as late as possible in a game with several mods.
-
-- For v9.0.0 and later, the mod is compatible but independent on the Worldmap Mod, i.e. the Breagar Mod will work with the Worldmap Mod independent on whether it is  installed before or after, but the Worldmap Mod is not needed to see the new area added by Breagar on the games' worldmaps.
 
 
 ***************************************************************************************************************
@@ -380,6 +382,11 @@ silver arm in ToB
 
 11.3.0: (2021-11-23) by jastey
 	-Breagar should not be moved back into AR0602 at the beginning of BGII.
+
+11.4.0: (2022-01-25) by jastey
+	-Detection of "is BGII" should be false in SoD for a continuous BG:SoD game, too.
+	-Breagar's Portrait for EE should not be pixelated for some means of ingame display (uses the L portrait everywhere).
+	-Added a note to the readme that Breagar's pips in one handed (single) weapon style will not be applied while he has an injured arm.
 
 ***************************************************************************************************************
 

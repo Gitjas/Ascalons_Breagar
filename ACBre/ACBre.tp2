@@ -20,7 +20,7 @@ Note:
 BACKUP ~ACBre/backup~
 //AUTHOR Original von Ascalon 
 SUPPORT ~https://www.baldurs-gate.de/index.php?threads/ascalons-breagar.44520/~
-VERSION ~11.3.0~ 
+VERSION ~11.4.0~ 
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
@@ -218,7 +218,9 @@ ACTION_IF GAME_IS ~bgt tutu_totsc tob~ THEN BEGIN
 COPY ~ACBre/Portraits/Nix~ ~override~
 END
 ACTION_IF GAME_IS ~bgee bg2ee eet~ THEN BEGIN
-COPY ~ACBre/Portraits/Nix/bgee~ ~override~
+COPY ~ACBre/Portraits/Nix/bgee/ACBREL.bmp~ ~override/ACBREL.bmp~
+COPY ~ACBre/Portraits/Nix/bgee/ACBREL.bmp~ ~override/ACBREM.bmp~
+COPY ~ACBre/Portraits/Nix/bgee/ACBREL.bmp~ ~override/ACBRES.bmp~
 END
 
 

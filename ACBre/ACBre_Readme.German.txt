@@ -2,7 +2,7 @@
                Eine Modifikation für BGT, EET, BG:EE, Tutu, BGII, BGII:EE und EET
                             von Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 11.3.0
+                         		Version: 11.4.0
 
 ***************************************************************************************************************
 
@@ -48,6 +48,10 @@ II. Installation:
 
 III. Hinweise (wichtig!)
 
+-Während Breagars Arm verletzt ist (in seinem perönlichen Quest), werden die Waffenpunte für "Einhändiger Kampf" nicht angewendet. Dies hat technische Gründe, aber es könnte durchaus auch storytechnisch damit erklärt werden, dass Breagar keine Übung darin hat, nur mit einem Arm zu kämpfen.
+
+- Breagar ist ab Version 9.0.0 komplett unabhängig von der BP-BGT-Worldmap-Mod. Kompatibilität mir der Worldmap-Mod ist aber gegeben, unabhängig der Installationsreihenfolge!
+
 -Version 9 bistete das alternative Portrait nicht mehr an, aufgrund von Copyrightbedenken.
 
 -Die Version 8 hat einen veränderten Installationsprozess: zwei neue Komponenten sind hinzugekommen, dafür fällt die Auswhl während der Installation der Hauptkomponente raus. Die tp2-Datei wurde umbenannt. Deinstalliert vorherige Versionen und löscht den alten Modordner, bevor Ihr die neue Version 8 in Euren Spieleordner entpackt.
@@ -55,8 +59,6 @@ III. Hinweise (wichtig!)
 - Die Version 6 ist nicht abwärtskompatibel mit vorherigen Versionen von Breagar. Inhalte wurden teilweise komplett neu überarbeitet und Variablen neu gesetzt. Es ist nicht möglich, ein bereits begonnenes Spiel der Version 5.2 oder niedriger mit Breagar in der Gruppe einfach zu updaten!
 
 - Breagar wird in zwei Schritten installiert: Der reguläre Inhalt und Crossmod-Inhalte / PID (Player Initiated Dialogues). Damit alle Komponenten reibungslos mit anderen Modifikationen funktionieren, muss die Komponente "Crossmod-Inhalte und PIDs" nicht nur ganz am Ende von Breagars Installation, sondern so SPÄT WIE MÖGLICH in einer Installation mit mehreren Mods installiert werden.
-
-- Breagar ist ab Version 9.0.0 komplett unabhängig von der BP-BGT-Worldmap-Mod. Kompatibilität mir der Worldmap-Mod ist aber gegeben, unabhängig der Installationsreihenfolge!
 
 
 ***************************************************************************************************************
@@ -381,6 +383,11 @@ silver arm in ToB
 
 11.3.0: (2021-11-23) by jastey
 	-Breagar should not be moved back into AR0602 at the beginning of BGII.
+
+11.4.0: (2022-01-25) by jastey
+	-Detection of "is BGII" should be false in SoD for a continuous BG:SoD game, too.
+	-Breagar's Portrait for EE should not be pixelated for some means of ingame display (uses the L portrait everywhere).
+	-Added a note to the readme that Breagar's pips in one handed (single) weapon style will not be applied while he has an injured arm.
 
 
 
