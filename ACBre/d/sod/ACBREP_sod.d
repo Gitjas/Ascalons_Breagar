@@ -1,6 +1,6 @@
 APPEND ACBREP
 
-IF WEIGHT #-1 ~%SoD_VAR%
+IF WEIGHT #-1 ~%IT_IS_SOD%
 AreaCheck("bd4700")
 GlobalLT("bd_plot","global",570)
 ~ THEN BEGIN 0 // from:
@@ -10,8 +10,8 @@ SetGlobal("bd_joined","locals",0)
 SetGlobal("ACBREINPARTY","GLOBAL",3)~ EXIT
 END
 
-IF WEIGHT #-1 ~%SoD_VAR%
-OR(2)
+/* do not tagg this as SoD in case Transitions or EndlessBG1 moved Korlasz' Tomb into BG1 */
+IF WEIGHT #-1 ~OR(2)
 AreaCheck("BD0120")
 AreaCheck("BD0130")
 Global("ACBREINPARTY","GLOBAL",2)~ THEN BEGIN KICKOUT.KORLASZTOMB
@@ -22,7 +22,7 @@ SAY @11
 END
 
 
-IF WEIGHT #-1 ~%SoD_VAR% Global("ACBREINPARTY","GLOBAL",2)~ THEN BEGIN KICKOUT.SOD
+IF WEIGHT #-1 ~%IT_IS_SOD% Global("ACBREINPARTY","GLOBAL",2)~ THEN BEGIN KICKOUT.SOD
 SAY @11
 ++ @2 + KICKOUT.SOD1
 ++ @104 + KICKOUT.SOD2
@@ -64,7 +64,7 @@ END
 
 
 IF WEIGHT #-1 
-~%SoD_VAR% Global("ACBREINPARTY","GLOBAL",3)~ THEN BEGIN REJOIN.SOD
+~%IT_IS_SOD% Global("ACBREINPARTY","GLOBAL",3)~ THEN BEGIN REJOIN.SOD
 SAY @19
 ++ @20 + REJOIN.SOD1
 ++ @21 EXIT

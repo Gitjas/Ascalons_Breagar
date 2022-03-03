@@ -939,7 +939,7 @@ END
 
 /*
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%PartyHasItem("ACHAND1")Global("ACBreImmyHand","GLOBAL",0)~ THEN ACBREJ BREIMMYHAND1a
+IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BG1_BEFORE_TRANSITION%PartyHasItem("ACHAND1")Global("ACBreImmyHand","GLOBAL",0)~ THEN ACBREJ BREIMMYHAND1a
 @437
 ==%IMOEN_JOINED% @438
 END
@@ -1003,7 +1003,7 @@ IF WEIGHT #-1
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",2)~ THEN ACBREJ BREIMMY1
+IF ~Global("ACBreImmyTalk","GLOBAL",2)~ THEN ACBREJ BREIMMY1
 @485 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==%IMOEN_JOINED% @486
 ==ACBREJ @487
@@ -1016,7 +1016,7 @@ EXIT
 
 CHAIN
 IF WEIGHT #-1
-~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",4)~ THEN %IMOEN_JOINED% BREIMMY2
+~Global("ACBreImmyTalk","GLOBAL",4)~ THEN %IMOEN_JOINED% BREIMMY2
 @493 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @494
 ==%IMOEN_JOINED% @495
@@ -1035,7 +1035,7 @@ EXIT
 
 CHAIN
 IF WEIGHT #-1
-~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",6)~ THEN %IMOEN_JOINED% BREIMMY3
+~Global("ACBreImmyTalk","GLOBAL",6)~ THEN %IMOEN_JOINED% BREIMMY3
 @474 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @508
 ==%IMOEN_JOINED% @509
@@ -1051,7 +1051,7 @@ IF WEIGHT #-1
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",8)~ THEN ACBREJ BREIMMY4
+IF ~Global("ACBreImmyTalk","GLOBAL",8)~ THEN ACBREJ BREIMMY4
 @520 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==%IMOEN_JOINED% @521
 ==ACBREJ @522
@@ -1065,7 +1065,7 @@ EXIT
 
 CHAIN
 IF WEIGHT #-1
-~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",10)~ THEN %IMOEN_JOINED% BREIMMY5
+~Global("ACBreImmyTalk","GLOBAL",10)~ THEN %IMOEN_JOINED% BREIMMY5
 @529 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @330
 ==%IMOEN_JOINED% @530
@@ -1084,7 +1084,7 @@ IF WEIGHT #-1
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",12)~ THEN ACBREJ BREIMMY6
+IF ~Global("ACBreImmyTalk","GLOBAL",12)~ THEN ACBREJ BREIMMY6
 @545 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)SetGlobal("ACIMOENKNOWSDWARVEN","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==%IMOEN_JOINED% @57
 ==ACBREJ @546
@@ -1103,7 +1103,7 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_V
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",14)~ THEN ACBREJ BREIMMY7
+IF ~Global("ACBreImmyTalk","GLOBAL",14)~ THEN ACBREJ BREIMMY7
 @560 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==%IMOEN_JOINED% @561 = @562
 ==ACBREJ @563
@@ -1115,7 +1115,7 @@ EXIT
 
 CHAIN
 IF WEIGHT #-1
-~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",16)~ THEN %IMOEN_JOINED% BREIMMY8
+~Global("ACBreImmyTalk","GLOBAL",16)~ THEN %IMOEN_JOINED% BREIMMY8
 @569 DO ~SetGlobal("ACBreImmyActive","GLOBAL",2)IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @570
 ==%IMOEN_JOINED% @571
@@ -1137,7 +1137,7 @@ EXIT
 CHAIN
 IF ~Global("ACBRETia","GLOBAL",1)
 !Global("ACBREFRIENDACTIVE","GLOBAL",2)
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 InParty("ACBRE")
 InParty("Tiax")
 See("Tiax")
@@ -1162,7 +1162,7 @@ EXIT
 CHAIN
 IF ~Global("ACBRETia","GLOBAL",2)
 !Global("ACBREFRIENDACTIVE","GLOBAL",2)
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 PartyHasItem("ACAXE")
 InParty("ACBRE")
 InParty("Tiax")
@@ -1183,7 +1183,7 @@ EXIT
 CHAIN
 IF ~Global("ACBRETia","GLOBAL",0)
 !Global("ACBREFRIENDACTIVE","GLOBAL",2)
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 InParty("ACBRE")
 InParty("Tiax")
 See("Tiax")
@@ -1204,7 +1204,7 @@ EXIT
 CHAIN
 IF ~Global("ACBREAlo","GLOBAL",0)
 !Global("ACBREFRIENDACTIVE","GLOBAL",2)
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 InParty("ACBRE")
 InParty("Alora")
 See("Alora")
@@ -1224,7 +1224,7 @@ EXIT
 CHAIN
 IF ~Global("ACBREAja","GLOBAL",0)
 !Global("ACBREFRIENDACTIVE","GLOBAL",2)
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 InParty("ACBRE")
 InParty("Ajantis")
 See("Ajantis")
@@ -1250,7 +1250,7 @@ EXIT
 CHAIN
 IF ~Global("ACBREAja","GLOBAL",1)
 !Global("ACBREFRIENDACTIVE","GLOBAL",2)
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 AreaType(FOREST)
 InParty("ACBRE")
 InParty("Ajantis")
@@ -1269,7 +1269,7 @@ EXIT
 
 CHAIN
 IF ~Global("ACBREBra","GLOBAL",0)
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 InParty("ACBRE")
 InParty("Branwen")
 See("Branwen")
@@ -1290,7 +1290,7 @@ EXIT
 CHAIN
 IF ~Global("ACBREAja","GLOBAL",2)
 !Global("ACBREFRIENDACTIVE","GLOBAL",2)
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 InParty("ACBRE")
 InParty("Ajantis")
 See("Ajantis")
@@ -1308,7 +1308,7 @@ EXIT
 
 CHAIN
 IF ~Global("ACBREAlo","GLOBAL",1)
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 InParty("ACBRE")
 InParty("Alora")
 See("Alora")
@@ -1329,7 +1329,7 @@ EXIT
 CHAIN
 IF ~Global("ACBREAja","GLOBAL",3)
 !Global("ACBREFRIENDACTIVE","GLOBAL",2)
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 PartyHasItem("ACHAND3")
 InParty("ACBRE")
 InParty("Ajantis")
@@ -1486,7 +1486,7 @@ EXIT
 
 CHAIN
 IF ~Global("ACBREBra","GLOBAL",1)
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 InParty("ACBRE")
 InParty("Branwen")
 See("Branwen")
@@ -1503,7 +1503,7 @@ EXIT
 
 CHAIN
 IF ~Global("ACBREBra","GLOBAL",2)
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 InParty("ACBRE")
 InParty("Branwen")
 See("Branwen")
@@ -1521,7 +1521,7 @@ EXIT
 CHAIN
 IF ~Global("ACBREAlo","GLOBAL",2)
 PartyHasItem("ACHAND3")
-%BGT_VAR%
+%BG1_BEFORE_TRANSITION%
 InParty("ACBRE")
 InParty("Alora")
 See("Alora")

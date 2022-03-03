@@ -12,7 +12,22 @@ OUTER_SPRINT "Exit3300" "Exit3300"
 OUTER_SPRINT "Door3300" "Door3300"
 OUTER_SPRINT "eet_var" ""
 OUTER_SPRINT ~GlobalGT_CHAPTER_1~ ~GlobalGT("CHAPTER","GLOBAL",1)~ //only needed for BGII part
-
+  OUTER_SPRINT ~EET_MULAHE_3_1~ ~SetGlobal("CDMulahey","AR5405",6)
+SetGlobal("TalkedToMulahey","GLOBAL",1)~
+  OUTER_SPRINT ~EET_MULAHE_0_1~ ~SetGlobal("CDMulahey","AR5405",3)~
+  OUTER_SPRINT ~EET_ILYICH_0~ ~ActionOverride("DuegarClanChief",SetGlobal("duergarleader","LOCALS",9))~
+  OUTER_SPRINT ~journalentry_JARED_0~ ~27184~
+  OUTER_SPRINT ~EraseJournalEntry_KOVERA_6~ ~EraseJournalEntry(31460)~
+ACTION_IF (MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~14~) BEGIN
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~GlobalLT("BD_PLOT","GLOBAL",41)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~GlobalGT("bd_plot","global",40)~
+END ELSE ACTION_IF (MOD_IS_INSTALLED ~transitions.tp2~ ~0~) BEGIN
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~GlobalLT("BD_PLOT","GLOBAL",41)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~GlobalGT("bd_plot","global",40)~
+END ELSE BEGIN
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~Global("BD_PLOT","GLOBAL",0)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~GlobalGT("bd_plot","global",0)~
+END
 END
 
 ACTION_IF GAME_IS ~bgt~ THEN BEGIN
@@ -29,6 +44,9 @@ OUTER_SPRINT "Exit3300" "Exit6700"
 OUTER_SPRINT "Door3300" "Door6700"
 OUTER_SPRINT "eet_var" ""
 OUTER_SPRINT ~GlobalGT_CHAPTER_1~ ~GlobalGT("CHAPTER","GLOBAL",1)~ //only needed for BGII part
+
+OUTER_SPRINT ~IT_IS_SOD~ ~False()~
+OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~GlobalLT("ENDOFBG1","GLOBAL",2)~
 
 /* Imoen in ID! */
 OUTER_SPRINT ~ImoenDV_ID~ ~imoen2~
@@ -51,6 +69,8 @@ OUTER_SPRINT "Exit3300" "Exit3300"
 OUTER_SPRINT "Door3300" "Door3300"
 OUTER_SPRINT "eet_var" ""
 OUTER_SPRINT ~GlobalGT_CHAPTER_1~ ~GlobalGT("CHAPTER","GLOBAL",1)~ //only needed for BGII part
+OUTER_SPRINT ~IT_IS_SOD~ ~False()~
+OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~GlobalLT("ENDOFBG1","GLOBAL",2)~
 
 END
 
@@ -73,6 +93,22 @@ OUTER_SPRINT ~ImoenDV_ID~ ~imoen2~
   OUTER_SPRINT ~IMOENJ_ID~ ~imoenj~
   OUTER_SPRINT ~IMOENJ_ID_STATE26~ ~26~
 
+  OUTER_SPRINT ~EET_MULAHE_3_1~ ~SetGlobal("CDMulahey","BG5405",6) SetGlobal("TalkedToMulahey","GLOBAL",1)~
+  OUTER_SPRINT ~EET_MULAHE_0_1~ ~SetGlobal("CDMulahey","BG5405",3)~
+  OUTER_SPRINT ~EET_ILYICH_0~ ~ActionOverride("DuegarClanChief",SetGlobal("duergarleader","LOCALS",9))~
+  OUTER_SPRINT ~journalentry_JARED_0~ ~227184~
+  OUTER_SPRINT ~EraseJournalEntry_KOVERA_6~ ~EraseJournalEntry(231460)~
+
+ACTION_IF (MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~14~) BEGIN
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~OR(2) Global("ENDOFBG1","GLOBAL",0) GlobalLT("BD_PLOT","GLOBAL",41)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~Global("ENDOFBG1","GLOBAL",1) GlobalGT("bd_plot","global",40)~
+END ELSE ACTION_IF (MOD_IS_INSTALLED ~transitions.tp2~ ~0~) BEGIN
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~OR(2) Global("ENDOFBG1","GLOBAL",0) GlobalLT("BD_PLOT","GLOBAL",41)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~Global("ENDOFBG1","GLOBAL",1) GlobalGT("bd_plot","global",40)~
+END ELSE BEGIN
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~Global("ENDOFBG1","GLOBAL",0)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~Global("ENDOFBG1","GLOBAL",1)~
+END
 END
 
 ACTION_IF GAME_IS "tob bg2ee" AND !GAME_IS "bgt eet" BEGIN
@@ -82,9 +118,19 @@ OUTER_SPRINT ~BGT_VAR2~ ~~
 OUTER_SPRINT "IMOEN_BANTER" "BIMOEN2"
 OUTER_SPRINT "IMOEN_JOINED" "IMOENJ"
 OUTER_SPRINT ~GlobalGT_CHAPTER_1~ ~GlobalGT("CHAPTER","GLOBAL",1)~ //only needed for BGII part
+    OUTER_SPRINT ~IT_IS_SOD~ ~False()~
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~False()~
 OUTER_SPRINT ~IMOEN_DV~ ~IMOEN2~
 /* Imoen in ID! */
   OUTER_SPRINT ~ImoenDV_ID~ ~imoen~
   OUTER_SPRINT ~IMOENJ_ID~ ~imoenj~
   OUTER_SPRINT ~IMOENJ_ID_STATE26~ ~26~
+END
+
+ACTION_IF NOT GAME_IS "bgee eet" BEGIN
+  OUTER_SPRINT ~EET_MULAHE_3_1~ ~~
+  OUTER_SPRINT ~EET_MULAHE_0_1~ ~~
+  OUTER_SPRINT ~EET_ILYICH_0~ ~~
+  OUTER_SPRINT ~EraseJournalEntry_KOVERA_6~ ~~
+//  OUTER_SPRINT ~journalentry_JARED_0~ --> journal entry str-refs will be defined below dynamically
 END

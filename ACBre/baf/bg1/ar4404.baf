@@ -1,5 +1,5 @@
 IF 
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	Global("ACSTORY","GLOBAL",0)
 	Global("CHAPTER","GLOBAL",%tutu_chapter_3%)
 THEN

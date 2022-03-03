@@ -20,12 +20,13 @@ Note:
 BACKUP ~ACBre/backup~
 //AUTHOR Original von Ascalon 
 SUPPORT ~https://www.baldurs-gate.de/index.php?threads/ascalons-breagar.44520/~
-VERSION ~11.1.0~ 
+VERSION ~11.2.0~ 
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
 ALWAYS
 
+/* declaration of game-specific variables */
 INCLUDE ~ACBre/lib/g3_tutu_cpmvars.tpa~
 INCLUDE ~ACBre/lib/g3_bgt_cpmvars.tpa~
 INCLUDE ~ACBre/lib/liam_bgee_vars.tpa~
@@ -33,39 +34,13 @@ INCLUDE ~ACBre/lib/read_journal_strref.tpa~
 INCLUDE ~ACBre/lib/extra_regexp_vars.tph~
 OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
 
-INCLUDE ~ACBre/lib/ac_bre_cpmvars.tpa~
-
 /* Declaration of EET Platform Variables */
 ACTION_IF GAME_IS "eet" BEGIN
   INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
-
-  OUTER_SPRINT ~EET_MULAHE_3_1~ ~SetGlobal("CDMulahey","BG5405",6) SetGlobal("TalkedToMulahey","GLOBAL",1)~
-  OUTER_SPRINT ~EET_MULAHE_0_1~ ~SetGlobal("CDMulahey","BG5405",3)~
-  OUTER_SPRINT ~EET_ILYICH_0~ ~ActionOverride("DuegarClanChief",SetGlobal("duergarleader","LOCALS",9))~
-  OUTER_SPRINT ~journalentry_JARED_0~ ~227184~
-  OUTER_SPRINT ~EraseJournalEntry_KOVERA_6~ ~EraseJournalEntry(231460)~
-
-  OUTER_SPRINT ~SoD_VAR~ ~Global("ENDOFBG1","GLOBAL",1)~
 END 
 
-ACTION_IF GAME_IS "bgee" BEGIN
-  OUTER_SPRINT ~EET_MULAHE_3_1~ ~SetGlobal("CDMulahey","AR5405",6)
-SetGlobal("TalkedToMulahey","GLOBAL",1)~
-  OUTER_SPRINT ~EET_MULAHE_0_1~ ~SetGlobal("CDMulahey","AR5405",3)~
-  OUTER_SPRINT ~EET_ILYICH_0~ ~ActionOverride("DuegarClanChief",SetGlobal("duergarleader","LOCALS",9))~
-  OUTER_SPRINT ~journalentry_JARED_0~ ~27184~
-  OUTER_SPRINT ~EraseJournalEntry_KOVERA_6~ ~EraseJournalEntry(31460)~
-
-  OUTER_SPRINT ~SoD_VAR~ ~GlobalGT("bd_plot","global",0)~
-END
-
-ACTION_IF NOT GAME_IS "bgee eet" BEGIN
-  OUTER_SPRINT ~EET_MULAHE_3_1~ ~~
-  OUTER_SPRINT ~EET_MULAHE_0_1~ ~~
-  OUTER_SPRINT ~EET_ILYICH_0~ ~~
-  OUTER_SPRINT ~EraseJournalEntry_KOVERA_6~ ~~
-//  OUTER_SPRINT ~journalentry_JARED_0~ --> journal entry str-refs will be defined below dynamically
-END
+/* declaration of Breagar-specific variables */
+INCLUDE ~ACBre/lib/ac_bre_cpmvars.tpa~
 
 INCLUDE "ACBre/lib/fl#add_kit_ee.tpa"
 
@@ -1851,6 +1826,26 @@ END
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~.../add_acbre_afh_interjection.d~ USING ~ACBre/tra/autotra/%s/game-acbre.tra~
 END //Another Fine Hell
+
+/* EndlessBG1 */
+ACTION_IF (GAME_INCLUDES ~sod~ AND FILE_EXISTS_IN_GAME ~c#stdstr.bcs~) THEN BEGIN 
+PRINT @215 /* ~Installing cross-mod content for EndlessBG1~ */
+
+/* direct transition to BGII */
+// Get state @8 for BELT %BELT_ebg1_8% 
+/* ~I see. Still, the city is in your debt. Fare well, Hero of Baldur's Gate.~ */
+  OUTER_SET BELT_ebg1_8 = STATE_WHICH_SAYS 8 IN ~c#endlessbg1/translations/%s/DIALOGUES.TRA~ FROM ~BELT~
+<<<<<<<< ...inlined/acbre_ebg1_bg1_transition.d
+I_C_T ~BELT~ %BELT_ebg1_8% ACBre_EBG1_BG1TOBG2
+== ACBreJ IF ~InParty("ACBre")
+InMyArea("ACBre")
+!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN @5021 
+DO ~SetGlobal("ACBREPartyBG1","GLOBAL",1) SetGlobal("ACBREINPARTY","GLOBAL",3)~
+END
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~...inlined/acbre_ebg1_bg1_transition.d~ 
+END /* EndlessBG1 */
+
 
 
 COMPILE ~ACBre/pid~

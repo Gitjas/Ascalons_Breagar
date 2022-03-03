@@ -229,7 +229,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	NumTimesTalkedTo(0)
 	See(player1)
 	AreaCheck("%Candlekeep_Inn_L1%")
@@ -249,7 +249,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	See(Player1)
 	PartyHasItem("ACIRON")
@@ -263,7 +263,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	See(Player1)
 	Global("ACBREAGARWANTSHISIRON","LOCALS",1)
@@ -275,7 +275,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	See(Player1)
 	!PartyHasItem("ACIRON")
@@ -292,7 +292,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	See(Player1)
 OR(3)
@@ -308,7 +308,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	See(Player1)
 	PartyHasItem("ACIRON")
@@ -324,7 +324,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	See(Player1)
 	!PartyHasItem("ACIRON")
@@ -343,7 +343,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	See(Player1)
 	!PartyHasItem("ACIRON")
@@ -360,7 +360,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	See(Player1)
 	Global("ACBREAGARWANTSHISIRON","LOCALS",0)
@@ -377,7 +377,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	See(Player1)
 	!PartyHasItem("ACIRON")
@@ -428,7 +428,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	GlobalGT("CHAPTER","GLOBAL",%tutu_chapter_4%)
 	AreaType(OUTDOOR)
@@ -536,7 +536,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself) 
 	See(Player1)
 	AreaType(OUTDOOR)
@@ -551,7 +551,7 @@ END
 
 /*
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself) 
 	See(Player1)
 	Global("ACREVIQUEST","GLOBAL",2)
@@ -563,7 +563,7 @@ END
 */
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself) 
 	See(Player1)
 	Global("ACREVIQUEST","GLOBAL",2)
@@ -574,7 +574,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself) 
 	See("ACGROTHI")
 	CombatCounter(0)
@@ -586,7 +586,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself) 
 	See("ACGROTHI")
 	Global("ACGROTHIQUEST","GLOBAL",1)
@@ -621,7 +621,7 @@ END
 ///////////////////////////////////////////////////////
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	GlobalGT("CHAPTER","GLOBAL",%tutu_prologue%)
 	InParty(Myself)
 	InParty("%IMOEN_DV%")
@@ -636,7 +636,7 @@ END
 
 /* Breagar lost his hand - Immy talk */
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	InParty("%IMOEN_DV%")
 	See("%IMOEN_DV%")
@@ -657,7 +657,7 @@ END
 
 /* dialogue triggering */
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself) 
 	InParty("%IMOEN_DV%")
 	See("%IMOEN_DV%")
@@ -674,7 +674,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself) 
 	InParty("%IMOEN_DV%")
 	See("%IMOEN_DV%")
@@ -693,7 +693,7 @@ END
 
 /* Breagar got silver hand - Immy talk */
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	InParty("%IMOEN_DV%")
 	See("%IMOEN_DV%")
@@ -711,7 +711,7 @@ THEN
 END
 /* dialogue triggering */
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself) 
 	InParty("%IMOEN_DV%")
 	See("%IMOEN_DV%")
@@ -728,7 +728,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	InParty("%IMOEN_DV%")
 	See("%IMOEN_DV%")
@@ -754,7 +754,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself) 
 	InParty("%IMOEN_DV%")
 	See("%IMOEN_DV%")
@@ -775,7 +775,7 @@ THEN
 END
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself) 
 	InParty("%IMOEN_DV%")
 	See("%IMOEN_DV%")
@@ -1464,7 +1464,7 @@ IF
 	InParty(Myself)
 	PartyHasItem("ACHAND1")
 	Global("ACBREFRIENDACTIVE","GLOBAL",0)
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 THEN
 	RESPONSE #100
 		RealSetGlobalTimer("ACBreFriendtalkTimer","GLOBAL",300)
@@ -1475,7 +1475,7 @@ END
 IF 
 	InParty(Myself)
 	PartyHasItem("ACHAND3")
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	Global("ACBREBANTER2","LOCALS",0)
 	Global("ACBREFRIENDACTIVE","GLOBAL",1)
 THEN
@@ -1490,7 +1490,7 @@ IF
 	Global("ACSPEEDMEUP","LOCALS",0)
 	Global("ACBREFRIENDACTIVE","GLOBAL",1)
 	!RealGlobalTimerExpired("ACBreFriendtalkTimer","GLOBAL")
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 THEN
 	RESPONSE #100
 		RealSetGlobalTimer("ACBreFriendtalkTimer","GLOBAL",10)
@@ -1512,7 +1512,7 @@ IF
 	InParty(Myself)
 	GlobalGT("ACGROTHIQUEST","GLOBAL",1)
 	Global("ACBREFRIENDACTIVE","GLOBAL",1)
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	Global("ACBREBANTER3","LOCALS",0)
 THEN
 	RESPONSE #100
@@ -1523,7 +1523,7 @@ IF
 	InParty(Myself)
 	Dead("DeathK")
 	AreaCheck("%DurlagsTower_DemonknightsChamber%")	
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	Global("ACBREBANTER4","LOCALS",0)
 	Global("ACBREFRIENDACTIVE","GLOBAL",1)
 	!StateCheck("ACBRE",CD_STATE_NOTVALID)
@@ -1536,7 +1536,7 @@ IF
 	InParty(Myself)
 	Dead("DeathK")
 	AreaType(OUTDOOR)
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	Global("ACBREBANTER4","LOCALS",1)
 	Global("ACBREFRIENDACTIVE","GLOBAL",1)
 THEN
@@ -3525,7 +3525,7 @@ END
 
 
 IF
-	%BGT_VAR%
+	%BG1_BEFORE_TRANSITION%
 	InParty(Myself)
 	See(Player1)
 	OR(8)

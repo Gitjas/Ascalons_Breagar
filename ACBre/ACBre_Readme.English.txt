@@ -2,7 +2,7 @@
                A Modification for BGT, EET, BG:EE, Tutu, BGII, BGII:EE, and EET
                             by Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 11.1.0
+                         		Version: 11.2.0
 
 ***************************************************************************************************************
 
@@ -371,7 +371,12 @@ silver arm in ToB
 
 11.1.0: (2021-11-02) by jastey
 	-separated the setup lines and the ingame tp2 lines into separate files (game-acbre.tra and setup-acbre.tra).
-	-added crossmod with "Another fine Hell" (SoD content)
+	-added crossmod with "Another fine Hell" (SoD content).
+
+11.2.0: (2021-11-12) by jastey
+	-Improved crossmod and compatibility with EndlessBG1.
+	-Improved compatibility with Transitions.
+	-Improved scripting: BG1 banter should not trigger in SoD.
 
 ***************************************************************************************************************
 
