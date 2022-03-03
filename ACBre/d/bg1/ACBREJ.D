@@ -347,6 +347,7 @@ IF ~~ THEN ACBREJ Acc.11
 END
 IF ~~ THEN DO ~CopyGroundPilesTo("%Beregost_ThunderhammerSmithy%",[851.508])
 AddexperienceParty(1200)AddJournalEntry(@10013,QUEST_DONE)SetGlobal("AC6701TELEPORT","GLOBAL",2)SetGlobal("ACBREINPARTY","GLOBAL",2)
+RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",800)
 ClearAllActions()
       StartCutSceneMode()
       StartCutScene("accut_1x")~ EXIT

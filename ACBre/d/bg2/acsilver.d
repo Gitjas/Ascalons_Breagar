@@ -142,7 +142,8 @@ EraseJournalEntry(@10057) EraseJournalEntry(@10058) EraseJournalEntry(@10059) Er
 ==ACSILVER @108
 ==ACSILVER IF ~PartyHasItem("ACAXE2")~ THEN @109
 END
-IF ~PartyHasItem("ACAXE2")~ THEN DO ~AddXPObject(PLAYER1,20000)AddXPObject(PLAYER2,20000)AddXPObject(PLAYER3,20000)AddXPObject(PLAYER4,20000)AddXPObject(PLAYER5,20000)AddXPObject(PLAYER6,20000)ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT_14")~ EXIT
+IF ~PartyHasItem("ACAXE2") GlobalLT("CHAPTER","GLOBAL",%bg2_chapter_9%)~ THEN DO ~AddXPObject(PLAYER1,20000)AddXPObject(PLAYER2,20000)AddXPObject(PLAYER3,20000)AddXPObject(PLAYER4,20000)AddXPObject(PLAYER5,20000)AddXPObject(PLAYER6,20000)ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT_14")~ EXIT
+IF ~PartyHasItem("ACAXE2") GlobalGT("CHAPTER","GLOBAL",%bg2_chapter_8%)~ THEN DO ~AddXPObject(PLAYER1,20000)AddXPObject(PLAYER2,20000)AddXPObject(PLAYER3,20000)AddXPObject(PLAYER4,20000)AddXPObject(PLAYER5,20000)AddXPObject(PLAYER6,20000)ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT14A")~ EXIT
 IF ~!PartyHasItem("ACAXE2")~ THEN DO ~AddXPObject(PLAYER1,20000)AddXPObject(PLAYER2,20000)AddXPObject(PLAYER3,20000)AddXPObject(PLAYER4,20000)AddXPObject(PLAYER5,20000)AddXPObject(PLAYER6,20000)ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT_17")~ EXIT
 
 CHAIN

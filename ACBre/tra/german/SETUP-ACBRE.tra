@@ -9,7 +9,9 @@
 [4] 15 Minuten Realzeit zwischen den einzelnen Gespraechen
 [5] 1 Stunde 30 Minuten Realzeit zwischen den einzelnen Gespraechen
 ~
-@5    = ~placeholder_value~
+*/
+@5    = ~Diese Mod muss vor EET_End installiert werden.~
+/*
 @6    = ~Bitte waehlt 1, 2, 3, 4 oder 5 und bestaetigt mit Enter.~
 @7    = ~30 Minuten Realzeit zwischen den Gespraechen~
 */

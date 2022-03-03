@@ -1,9 +1,9 @@
 /*
 Known Issues:
 -Breagar will only smithy for the PC if he is in Taerom's smithy *before* joining the group.
--(TdB) Berronar's Axt will be doubled after the Silver Dwarf blessed it in ToB.
 -Anstinus Turm, outside area: in the southwest corner, the wall can be left to the lower ground although there is no stairs.
 - Picture of Audhild is too small for EE.
+- installing Breagar after the Worldmapmod will shift the icon on the Worldmap
 
 
 Note:
@@ -20,7 +20,7 @@ Note:
 BACKUP ~ACBre/backup~
 //AUTHOR Original von Ascalon 
 SUPPORT ~https://www.baldurs-gate.de/index.php?threads/ascalons-breagar.44520/~
-VERSION ~10.0.0~ 
+VERSION ~11.0.0~ 
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
@@ -145,10 +145,13 @@ LANGUAGE ~English~ ~english~ ~ACBre/TRA/english/setup-ACBre.tra~
 ////////////////////////////////////////////////////////////////////////////////////////////////////
          
 BEGIN @1 DESIGNATED 0
+LABEL ~Ascalons_Breagar-main~
 
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tob bg2ee tutu_totsc eet~ @2
 //FORBID_COMPONENT ~setup-bp-bgt-worldmap.tp2~ ~0~ @208
 //REQUIRE_PREDICATE ((NOT MOD_IS_INSTALLED ~setup-bp-bgt-worldmap.tp2~ ~0~) OR (GAME_IS ~eet~)) @208
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5
 
 //For all engines
 
@@ -1016,7 +1019,7 @@ ADD_JOURNAL TITLE (@60002) @10005 @10006 @10007
 ADD_JOURNAL TITLE (@60003) @10008 @10009 @10010 @10011 @10012 @10013
 ADD_JOURNAL TITLE (@60004) @10014 @10015 @10016
 ADD_JOURNAL TITLE (@60005) @10017
-ADD_JOURNAL TITLE (@60006) @10018 @10019 @10020 @10022 @10023 //@10021
+ADD_JOURNAL TITLE (@60006) @10018 @10019 @10020 @10021 @10022 @10023 
 ADD_JOURNAL TITLE (@60007) @10024 @10025
 
 //Tilesets and Areas for BG1 Part
@@ -1073,7 +1076,7 @@ LAF HANDLE_AUDIO
   INT_VAR
     music = 1
   STR_VAR
-    audio_path = ~ACBRE/area/ambient~
+    audio_path = ~ACBRE/areas/ambient~
     oggdec_path = ~ACBre/tools/oggdec~
     sox_path = ~ACBre/tools/sox~
 END
@@ -1232,7 +1235,7 @@ COPY_EXISTING ~bd1000.BCS~ ~override~
 		END
 	END
 BUT_ONLY
-EXTEND_BOTTOM ~bd3000.bcs~ ~ACBre/baf/sod/ac_bd3000.baf~
+EXTEND_TOP ~bd3000.bcs~ ~ACBre/baf/sod/ac_bd3000.baf~
   EVALUATE_BUFFER
 
 	/* Patch your NPC's "Move Camp" variable to the original game's script block (bd3000.bcs) */
@@ -1256,7 +1259,7 @@ COPY_EXISTING ~bd3000.BCS~ ~override~
 		END
 	END
 BUT_ONLY
-EXTEND_BOTTOM ~bd7100.bcs~ ~ACBre/baf/sod/ac_bd7100.baf~
+EXTEND_TOP ~bd7100.bcs~ ~ACBre/baf/sod/ac_bd7100.baf~
   EVALUATE_BUFFER
 
 	/* Patch your NPC's "Move Camp" variable to the original game's script block (bd7100.bcs) */
@@ -1352,6 +1355,9 @@ EXTEND_TOP ~bdcut61.bcs~ ~ACBre/baf/sod/ac_bdcut61.baf~
 EXTEND_TOP ~bd6200.bcs~ ~ACBre/baf/sod/ac_bd6200.baf~
   EVALUATE_BUFFER
 
+/* Deprecated: Having Breagar at the kidnapping scene either doesn't work, he's not moving with the party, or it leads to glitches. 
+//ACTION_IF !GAME_IS ~eet~ THEN BEGIN
+
 /* Move Breagar to last abduction scene if he is present at end of SoD */
 EXTEND_TOP ~bdcut64x.bcs~ ~ACBre/baf/sod/ac_bdcut64x.baf~
   EVALUATE_BUFFER
@@ -1389,6 +1395,9 @@ BUT_ONLY_IF_IT_CHANGES
 /* comment in abduction scene & fog (EET or SoD with SoD Tweakpack "Restore scripted Abduction Scene Fight") */
 EXTEND_TOP ~bd6100.bcs~ ~ACBre/baf/sod/ac_bd6100.baf~
   EVALUATE_BUFFER
+
+//END //leave this out for EET
+*/ //deprecated
 
 
 END //SoD
@@ -1430,6 +1439,9 @@ END
 
 COPY ~ACBre/areas/bg2~ ~OVERRIDE~
 
+/* Ambients */
+COPY_EXISTING ~AM2001.wav~ ~OVERRIDE~
+
 //Set Strings for Areas
 COPY_EXISTING ~ARAC00.ARE~ ~OVERRIDE~
 	      ~ARAC07.ARE~ ~override~
@@ -1470,7 +1482,8 @@ EXTEND_TOP ~AR2000.bcs~ ~ACBre/baf/bg2/AR2000.baf~
 EXTEND_TOP ~AR2010.bcs~ ~ACBre/baf/bg2/AR2010.baf~
 //EXTEND_TOP ~AR4000.bcs~ ~ACBre/baf/bg2/AR4000.baf~
 EXTEND_BOTTOM ~AR4000.bcs~ ~ACBre/baf/bg2/AR4000.baf~
-EXTEND_TOP ~AR0602.bcs~ ~ACBre/baf/bg2/AR0602.baf~
+EXTEND_BOTTOM ~AR0602.bcs~ ~ACBre/baf/bg2/AR0602.baf~
+EXTEND_TOP ~AR0603.bcs~ ~ACBre/baf/bg2/acbre_bg2_ar0603.baf~
 EXTEND_TOP ~AR6200.bcs~ ~ACBre/baf/bg2/AR6200.baf~
 
 ACTION_IF GAME_IS ~bgt tob bg2ee~ THEN BEGIN
@@ -1691,18 +1704,23 @@ REPLACE_TEXTUALLY 999991 ~%ACBREM2%~
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @197 DESIGNATED 2
+LABEL ~Ascalons_Breagar-crossmod~
 
 REQUIRE_PREDICATE GAME_IS ~bgt eet tob bg2ee bgee tutu_totsc~ @2
 //REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~acbre.cre~ @198
 REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5
 
-ACTION_IF FILE_EXISTS_IN_GAME ~JETLA.DLG~
+/* DSotSC */
+ACTION_IF FILE_EXISTS_IN_GAME ~DSOTHO.DLG~
 THEN BEGIN
 PRINT @199
 EXTEND_BOTTOM ~ACBRE.bcs~ ~ACBre/CROSS/ACDSOTSC.baf~ EVALUATE_BUFFER
 COMPILE EVALUATE_BUFFER ~ACBre/CROSS/ACDSOTSC.D~
 END
 
+/* Amber */
 ACTION_IF FILE_EXISTS_IN_GAME ~M#VAMBER.CRE~
 THEN BEGIN
 PRINT @200
@@ -1752,7 +1770,7 @@ EXTEND_BOTTOM ~ACBRE.bcs~ ~ACBre/CROSS/ACTOD.baf~
 COMPILE EVALUATE_BUFFER ~ACBre/CROSS/ACTOD.D~
 END
 
-/* Ascalon's Questpack */
+/* Ascalon's Questpack: Der Lohn für die Mühe */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ACQ11001.CRE~
 THEN BEGIN
@@ -1778,7 +1796,7 @@ END
 /* Imoen 4 Ever */
 ACTION_IF FILE_EXISTS_IN_GAME ~C#IMMET.dlg~ THEN BEGIN
   PRINT @211
-  OUTER_SET i4e_imoenreturn = STATE_WHICH_SAYS 27 IN ~imoen_forever/tra/%s/C#IMMET.tra~ FROM ~C#IMMET~
+  OUTER_SET i4e_imoenreturn = STATE_WHICH_SAYS 27 IN ~imoen_forever/tra/autotra/%s/C#IMMET.tra~ FROM ~C#IMMET~
   COMPILE EVALUATE_BUFFER ~ACBre/CROSS/aci4e.D~ USING ~ACBre/tra/autotra/%LANGUAGE%/ACBREB.tra~
 END
 
@@ -1824,6 +1842,7 @@ EVALUATE_BUFFER
 ///////////////////////////////////////////////////////////////////////////
 
 BEGIN @8 DESIGNATED 10 /* ~45 Minuten Realzeit zwischen den Gespraechen~ */
+LABEL ~Ascalons_Breagar-dialogue_timer_45min~
 	SUBCOMPONENT @3  /* ~Setup von Breagars Gesprächsgeschwindigkeit~ */
 REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
 
@@ -1832,6 +1851,7 @@ COPY_EXISTING ~gtimes.ids~ ~override~
   BUT_ONLY
 
 BEGIN @9 DESIGNATED 11 /* ~1 Stunde Realzeit zwischen den Gespraechen~ */
+LABEL ~Ascalons_Breagar-dialogue_timer_60min~
 	SUBCOMPONENT @3  /* ~Setup von Breagars Gesprächsgeschwindigkeit~ */
 REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
 
@@ -1840,6 +1860,7 @@ COPY_EXISTING ~gtimes.ids~ ~override~
   BUT_ONLY
 
 BEGIN @10 DESIGNATED 12 /* ~15 Minuten Realzeit zwischen den Gespraechen~ */
+LABEL ~Ascalons_Breagar-dialogue_timer_15min~
 	SUBCOMPONENT @3  /* ~Setup von Breagars Gesprächsgeschwindigkeit~ */
 REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
 
@@ -1848,6 +1869,7 @@ COPY_EXISTING ~gtimes.ids~ ~override~
   BUT_ONLY
 
 BEGIN @11 DESIGNATED 13 /* ~1 Stunde 30 Minuten Realzeit zwischen den Gespraechen~ */
+LABEL ~Ascalons_Breagar-dialogue_timer_90min~
 	SUBCOMPONENT @3  /* ~Setup von Breagars Gesprächsgeschwindigkeit~ */
 REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
 

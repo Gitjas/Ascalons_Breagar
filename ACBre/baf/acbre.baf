@@ -49,6 +49,10 @@ IF
 	PartyHasItem("ACAXE")
 	!HasItem("ACAXE",Myself)
 	!Global("ACBRENOTYOURAXE","GLOBAL",1)
+	OR(2)
+		GlobalGT("ACSTORY","GLOBAL",4)
+		GlobalGT("ACAUDQUEST","GLOBAL",10)
+		
 THEN
 	RESPONSE #100
 		SetGlobal("ACBRENOTYOURAXE","GLOBAL",1)
@@ -59,6 +63,9 @@ IF
 	PartyHasItem("ACAXE2")
 	!HasItem("ACAXE2",Myself)
 	!Global("ACBRENOTYOURAXE","GLOBAL",1)
+	OR(2)
+		GlobalGT("ACSTORY","GLOBAL",4)
+		GlobalGT("ACAUDQUEST","GLOBAL",10)
 THEN
 	RESPONSE #100
 		SetGlobal("ACBRENOTYOURAXE","GLOBAL",1)
@@ -69,6 +76,9 @@ IF
 	PartyHasItem("ACAXE3")
 	!HasItem("ACAXE3",Myself)
 	!Global("ACBRENOTYOURAXE","GLOBAL",1)
+	OR(2)
+		GlobalGT("ACSTORY","GLOBAL",4)
+		GlobalGT("ACAUDQUEST","GLOBAL",10)
 THEN
 	RESPONSE #100
 		SetGlobal("ACBRENOTYOURAXE","GLOBAL",1)
@@ -624,6 +634,99 @@ THEN
 		Continue()
 END
 
+/* Breagar lost his hand - Immy talk */
+IF
+	%BGT_VAR%
+	InParty(Myself)
+	InParty("%IMOEN_DV%")
+	See("%IMOEN_DV%")
+	RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")
+	Global("ACBreImmyActive","GLOBAL",1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+	PartyHasItem("ACHAND1")
+	OR(2)
+		Global("ACBreImmyHand","GLOBAL",0)
+		Global("ACBreImmyHand","GLOBAL",2)
+THEN
+	RESPONSE #100
+		IncrementGlobal("ACBreImmyHand","GLOBAL",1)
+END
+
+/* dialogue triggering */
+IF
+	%BGT_VAR%
+	InParty(Myself) 
+	InParty("%IMOEN_DV%")
+	See("%IMOEN_DV%")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+	Global("ACBreImmyHand","GLOBAL",1)
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)
+		ActionOverride("%IMOEN_DV%",StartDialogNoSet("ACBRE"))
+END
+
+IF
+	%BGT_VAR%
+	InParty(Myself) 
+	InParty("%IMOEN_DV%")
+	See("%IMOEN_DV%")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+	Global("ACBreImmyHand","GLOBAL",3)
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)
+		StartDialogNoSet("%IMOEN_DV%")
+END
+
+
+/* Breagar got silver hand - Immy talk */
+IF
+	%BGT_VAR%
+	InParty(Myself)
+	InParty("%IMOEN_DV%")
+	See("%IMOEN_DV%")
+	RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")
+	Global("ACBreImmyActive","GLOBAL",1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+	PartyHasItem("ACHAND3")
+	Global("ACBreImmyHand2","GLOBAL",0)
+THEN
+	RESPONSE #100
+		IncrementGlobal("ACBreImmyHand2","GLOBAL",1)
+END
+/* dialogue triggering */
+IF
+	%BGT_VAR%
+	InParty(Myself) 
+	InParty("%IMOEN_DV%")
+	See("%IMOEN_DV%")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+	Global("ACBreImmyHand2","GLOBAL",1)
+THEN
+	RESPONSE #100
+		PlaySong(999991)
+		RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)
+		ActionOverride("%IMOEN_DV%",StartDialogNoSet("ACBRE"))
+END
+
 IF
 	%BGT_VAR%
 	InParty(Myself)
@@ -689,7 +792,7 @@ IF
 THEN
 	RESPONSE #100
 		PlaySong(999991)
-		ActionOverride("%IMOEN_DV%",StartDialogNoSet("ACBRE")
+		ActionOverride("%IMOEN_DV%",StartDialogNoSet("ACBRE"))
 END
 
 ///////////////////////////////////////////
@@ -824,6 +927,7 @@ IF
 	!See([ENEMY])
 	!Global("C#IM_ImoenStays","GLOBAL",0) //compatibility with I4E
 	Global("ACBreImmyTalk","GLOBAL",7)
+	!Global("ACBreImmyActive","GLOBAL",3)
 THEN
 	RESPONSE #100
 		SetGlobal("ACBreImmyActive","GLOBAL",3)
@@ -2790,13 +2894,18 @@ END
 IF
 	InParty(Myself) 
 	See(Player1)
-OR(2)
-	PartyHasItem("%MISC83%")
-	PartyHasItem("MISC83")
+//OR(2)
+//	PartyHasItem("%MISC83%")
+//	PartyHasItem("MISC83")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck("ACBre",CD_STATE_NOTVALID)
 	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	GlobalGT("FLOODED","GLOBAL",0)
+	!AreaCheck("%CloakwoodMines_L1%")
+	!AreaCheck("%CloakwoodMines_L2%")
+	!AreaCheck("%CloakwoodMines_L3%")
+	!AreaCheck("%CloakwoodMines_L4%")
 	Global("ACBGMISC83","LOCALS",0)
 THEN
 	RESPONSE #100
@@ -3116,7 +3225,9 @@ END
 IF
 	InParty(Myself) 
 	See(Player1)
-	PartyHasItem("MISC7R")
+	OR(2)
+		PartyHasItem("MISC7R")
+		PartyHasItem("ACMISC7R")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck("ACBre",CD_STATE_NOTVALID)

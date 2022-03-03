@@ -63,8 +63,8 @@ END
 
 IF ~~ THEN BEGIN 8
 SAY @20
-++ @21 DO ~EraseJournalEntry(@10019)AddJournalEntry(@10021,INFO)SetGlobal("ACREVIQUEST","GLOBAL",7)~ + 9
-++ @22 DO ~EraseJournalEntry(@10019)AddJournalEntry(@10021,INFO)SetGlobal("ACREVIQUEST","GLOBAL",7)~ + 10
+++ @21 DO ~EraseJournalEntry(@10019)AddJournalEntry(@10021,QUEST)SetGlobal("ACREVIQUEST","GLOBAL",7)~ + 9
+++ @22 DO ~EraseJournalEntry(@10019)AddJournalEntry(@10021,QUEST)SetGlobal("ACREVIQUEST","GLOBAL",7)~ + 10
 END
 
 IF ~~ THEN BEGIN 9

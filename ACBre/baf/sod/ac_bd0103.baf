@@ -1,3 +1,26 @@
+
+/* for testing; spawn Breagar for new SoD game **note: screwed up quest variables** */
+
+IF
+	Global("ACBre_GiveMeBreagar","GLOBAL",1)
+	!Exists("ACBre")  
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_GiveMeBreagar","GLOBAL",2)
+		CreateCreature("ACBRE",[681.882],W)
+		SetGlobal("ACBREINPARTY","GLOBAL",3)
+		SetGlobal("ACBREPartyBG1","GLOBAL",1)
+		ChangeSpecifics("ACBre",ALLIES) 
+		ActionOverride("ACBre",SetGlobal("bd_joined","locals",0))
+		ActionOverride("ACBre",ChangeAIScript("ACBre",OVERRIDE))
+		ActionOverride("ACBre",ChangeAIScript("bdasc3",CLASS))
+		ActionOverride("ACBre",ChangeAIScript("BDSHOUT",RACE))
+		ActionOverride("ACBre",ChangeAIScript("BDFIGH01",GENERAL))
+		ActionOverride("ACBre",ChangeAIScript("",DEFAULT))
+		ActionOverride("ACBre",SetDialog("ACBreS"))
+		Continue()
+END
+
 /* Breagar was in party */
 
 IF
@@ -28,6 +51,7 @@ IF
 	!InPartyAllowDead("ACBre")  
 	Global("ACBREBROKE","GLOBAL",0)
 	Global("ACBREPartyBG1","GLOBAL",1)
+	GlobalLT("BD_PLOT","GLOBAL",51)
 THEN
 	RESPONSE #100
 		SetGlobal("ACBre_MoveCamp","bd0103",1)

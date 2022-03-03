@@ -1,0 +1,14 @@
+/* AR0602.bcs check for Breagar's axe */
+
+
+
+IF
+	Global("ACBre_DestroyAxeID","MYAREA",0)
+	PartyHasItem("c#br0003")
+THEN
+	RESPONSE #100
+        ActionOverride("Container3",DestroyItem("ACAXE"))
+        ActionOverride("Container3",DestroyItem("ACAXE2"))
+        ActionOverride("Container3",DestroyItem("ACAXE3"))
+		SetGlobal("ACBre_DestroyAxeID","MYAREA",1)
+END

@@ -8,7 +8,9 @@
 [3] 1 hour real time between talks
 [4] 15 minutes real time between talks
 [5] 1 hour 30 real time between talks~
-@5    = ~placeholder value~
+*/
+@5    = ~This mod needs to be installed before EET_End on your EET install.~
+/*
 @6    = ~Please choose 1, 2, 3, 4 or 5 and confirm with enter.~
 @7    = ~30 minutes real time between talks~
 */
@@ -827,7 +829,7 @@ Breagar has left the group, to complete the task the dwarven gods have given him
 There really was a giant called Yrrymyr in the Cloud Peaks! The fight was easier than expected, as the giant was tired after a long journey. Our reward wasn't bad at all: Breagar's was replaced with the arm of a silver golem, and he was given the sacred axe of Berronar as a reward. Besides, the giant had quite a few gold coins on him...~
 @10017 = ~Dark Prophecy
 
-The strange dwarf, who Breagar called a messenger of Berronar, had a few things to tell me. It seems the dwarven gods are interested in my path. Breagar was chosen, to accompany me, and I think that a brave fighter like him can be of use. Time will tell what the prophecy was about: Out of the ash of the old gods, new life will arise...~
+The strange dwarf, who Breagar called a messenger of Berronar, had a few things to tell me. It seems the dwarven gods are interested in my path. Breagar was chosen to accompany me, and I think that a brave fighter like him can be of use. Time will tell what the prophecy was about: Out of the ash of the old gods, new life will arise...~
 @10018 = ~Taerom needs help: Revianel has disappeared
 
 The priestess who saved Breagar's life has disappeared on a mission for the temple, and Taerom needs our help. Seems like he took her disappearance personally...~

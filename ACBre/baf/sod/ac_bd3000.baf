@@ -7,7 +7,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("ACBre_MoveCamp","bd3000",1)
-		MoveGlobal("bd3000","ACBre",[469.570]) 
+		MoveGlobal("bd3000","ACBre",[1546.1740]) 
 		ActionOverride("ACBre",LeaveParty())
 		SetGlobal("ACBREINPARTY","GLOBAL",3) 
 		ActionOverride("ACBre",Face(N))

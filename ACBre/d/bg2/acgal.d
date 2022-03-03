@@ -178,6 +178,11 @@ END
 ++ @84 + 3
 ++ @85 + END.BAD
 
+/* for debugging 
+CHAIN
+IF WEIGHT #-1
+~GlobalLT("ACAUDQUEST","GLOBAL",13)~ THEN ACGAL 10
+*/
 CHAIN
 IF ~~ THEN ACGAL 10
 @86
@@ -207,7 +212,7 @@ IF ~~ THEN ACGAL END.BAD
 ==ACREG @105 DO ~GiveItemCreate("ACTEXT3",LastTalkedToBy(),0,0,0)~
 ==ACBREP @106
 ==ACAUD002 @107
-==ACGAL @108 = @109 DO ~SetGlobal("ACAUD002QUEST","GLOBAL",13)SetGlobal("ACBREBIO","GLOBAL",1)ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT12a")~
+==ACGAL @108 = @109 DO ~SetGlobal("ACAUDQUEST","GLOBAL",13)SetGlobal("ACBREBIO","GLOBAL",1)ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT12a")~
 EXIT
 
 CHAIN

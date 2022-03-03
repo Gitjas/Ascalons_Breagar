@@ -937,16 +937,19 @@ END
 
 ///////////////////////// IMOEN FRIENDSHIP
 
+/*
 CHAIN
 IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%PartyHasItem("ACHAND1")Global("ACBreImmyHand","GLOBAL",0)~ THEN ACBREJ BREIMMYHAND1a
 @437
 ==%IMOEN_JOINED% @438
 END
 IF ~~ THEN EXTERN %IMOEN_JOINED% BREIMMYHAND1
+*/
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%PartyHasItem("ACHAND1")Global("ACBreImmyHand","GLOBAL",0)~ THEN %IMOEN_JOINED% BREIMMYHAND1
-@439 DO ~SetGlobal("ACBreImmyHand","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
+IF WEIGHT #-1
+~Global("ACBreImmyHand","GLOBAL",1)~ THEN %IMOEN_JOINED% BREIMMYHAND1
+@439 DO ~SetGlobal("ACBreImmyHand","GLOBAL",2)~
 ==ACBREJ @440
 ==%IMOEN_JOINED% @441
 ==ACBREJ @442
@@ -958,14 +961,14 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_V
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%PartyHasItem("ACHAND1")Global("ACBreImmyHand","GLOBAL",1)~ THEN ACBREJ BREIMMYHAND2a
+IF ~Global("ACBreImmyHand","GLOBAL",3)~ THEN ACBREJ BREIMMYHAND2a
 @447
 END
 IF ~~ THEN EXTERN %IMOEN_JOINED% BREIMMYHAND2
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%PartyHasItem("ACHAND1")Global("ACBreImmyHand","GLOBAL",1)~ THEN %IMOEN_JOINED% BREIMMYHAND2
-@448  DO ~SetGlobal("ACBreImmyHand","GLOBAL",2)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
+IF ~~ THEN %IMOEN_JOINED% BREIMMYHAND2
+@448  DO ~SetGlobal("ACBreImmyHand","GLOBAL",4)~
 ==ACBREJ @449
 ==%IMOEN_JOINED% @450
 ==ACBREJ @451
@@ -984,8 +987,9 @@ END
 IF ~~ THEN EXTERN %IMOEN_JOINED% BREIMMYHAND3
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%PartyHasItem("ACHAND3")Global("ACBreImmyHand2","GLOBAL",0)~ THEN %IMOEN_JOINED% BREIMMYHAND3
-@459 = @460  DO ~SetGlobal("ACBreImmyHand2","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
+IF WEIGHT #-1
+~Global("ACBreImmyHand2","GLOBAL",1)~ THEN %IMOEN_JOINED% BREIMMYHAND3
+@459 = @460  DO ~SetGlobal("ACBreImmyHand2","GLOBAL",2)~
 ==ACBREJ @461
 ==%IMOEN_JOINED% @462
 ==ACBREJ @463
@@ -1011,7 +1015,8 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_V
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",4)~ THEN %IMOEN_JOINED% BREIMMY2
+IF WEIGHT #-1
+~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",4)~ THEN %IMOEN_JOINED% BREIMMY2
 @493 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @494
 ==%IMOEN_JOINED% @495
@@ -1029,7 +1034,8 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_V
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",6)~ THEN %IMOEN_JOINED% BREIMMY3
+IF WEIGHT #-1
+~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",6)~ THEN %IMOEN_JOINED% BREIMMY3
 @474 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @508
 ==%IMOEN_JOINED% @509
@@ -1058,7 +1064,8 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_V
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",10)~ THEN %IMOEN_JOINED% BREIMMY5
+IF WEIGHT #-1
+~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",10)~ THEN %IMOEN_JOINED% BREIMMY5
 @529 DO ~IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @330
 ==%IMOEN_JOINED% @530
@@ -1107,7 +1114,8 @@ IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_V
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",16)~ THEN %IMOEN_JOINED% BREIMMY8
+IF WEIGHT #-1
+~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")%BGT_VAR%Global("ACBreImmyTalk","GLOBAL",16)~ THEN %IMOEN_JOINED% BREIMMY8
 @569 DO ~SetGlobal("ACBreImmyActive","GLOBAL",2)IncrementGlobal("ACBreImmyTalk","GLOBAL",1)RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)~
 ==ACBREJ @570
 ==%IMOEN_JOINED% @571

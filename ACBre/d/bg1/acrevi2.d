@@ -190,7 +190,7 @@ END
 
 IF ~~ THEN BEGIN GOODJOB.5a
 SAY @77 = @78
-IF ~~ THEN DO ~ReputationInc(1)AddexperienceParty(1200)~ + GOODJOB.7
+IF ~~ THEN DO ~ReputationInc(1)~ + GOODJOB.7
 END
 END
 

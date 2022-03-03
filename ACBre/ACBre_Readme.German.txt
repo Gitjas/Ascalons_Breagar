@@ -2,7 +2,7 @@
                Eine Modifikation für BGT, EET, BG:EE, Tutu, BGII, BGII:EE und EET
                             von Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 10.0.0
+                         		Version: 11.0.0
 
 ***************************************************************************************************************
 
@@ -339,6 +339,37 @@ silver arm in ToB
 	-typo corrections
 	-SoD content improvements
 	-compatibility with the Transitions Mod
+
+11.0.0: (2021-10-02) by jastey
+	-corrected interjection into Saemon's dialogue in ToB (should use Breagar's ToB Banter file).
+	-removed unknown innate spell from ACBre07.cre
+	-ambient sounds of "ACCEM1.ARE"are should get installed (corrected path in tp2)
+	-Berronar's axe will no longer be doubled after cutscene (ToB)
+	-Breagar should not comment on the mines being flooded before it happened.
+	-Breagar should comment on the Mithril necklace.
+	-Saving Revianel should only give XP once.
+	-Breagar's Axe should not be on table with Duergar in ID if Tweak to transfer BG1 items into BG2 is installed.
+	-Hooded dwarf should no longer wait in Trademeet if quest is over.
+	-Breagar should not complain that the axe is his before he received it from the Silver Lady.
+	-Breagar should move with the camps in SoD if not in party.
+	-Breagar will wait near Rayphus in the big Coalition Camp (bd3000.are).
+	-EET: Breagar should spawn in ID if he did not leave forever before.
+	-EET/SoD: Breagar will not be present in the kidnapping scene for technical reasons.
+	-trap on third floor of Astinus' tower can now be disarmed (98%).
+	-removed invalid spawn references in ARAC06.ARE.
+	-Fixed misspelled variable for Audhild quest. 
+	-Optimized EET transition. 
+	-Journal entries should be sorted into the quest section (EE).
+	-typo corrections.
+	-Reinserted sound clips for Silver Lady.
+	-streamlined dialogue syntax in acsilver.de.
+	-streamlined triggering of dialogues with Imoen about Breagar's hand.
+	-Fixed crossmod bug with Imoen4Ever.
+	-Added check so the mod can't be installed after EET_End.
+	-Changed check for Crossmod with EET_DSotSC to exclude BG:EE-DSotSC (fix install error).
+	-Fixed install error with Imoen4Ever crossmod (for non-english versions).
+	-Added install order syntax and globally unique LABELs to support Project Infinity.
+
 
 
 ***************************************************************************************************************
