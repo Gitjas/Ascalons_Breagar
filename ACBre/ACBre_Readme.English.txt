@@ -2,7 +2,7 @@
                A Modification for BGT, EET, BG:EE, Tutu, BGII, BGII:EE, and EET
                             by Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 7.0.5
+                         		Version: 7.0.6
 
 ***************************************************************************************************************
 
@@ -261,6 +261,8 @@ silver arm in ToB
 	-(BG2) Anstinus' Tower: when encountering Anstinus' ghost in his tower, the dialogue should trigger even if Player1 is not in fist slot; also cutscene mode removed 
 	-crossmod compatibility with Alternatives mod: in case of certain status of Breagar's Axe quest, the Thieves' Guild messenger will no longer spawn if PC agreed to attack the Thieves' Guild
 
+7.0.6:
+	-Breagar-Solaufein crossmod compiles without error message
 
 
 ***************************************************************************************************************

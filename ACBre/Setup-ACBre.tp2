@@ -26,7 +26,7 @@ Note to English translation:
 BACKUP ~ACBre/backup~
 //AUTHOR ~whiteagnus@gmx.de~ //Original von Ascalon (geheimer.herrscher@gmx.de)
 SUPPORT ~jastey@web.de~
-VERSION ~7.0.5~ //2018-05-10
+VERSION ~7.0.6~ //2018-06-09
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
@@ -1673,7 +1673,7 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~sola5.cre~ THEN BEGIN
 PRINT @209
-COMPILE ~ACBre/CROSS/ACSOLA.D~
+COMPILE ~ACBre/CROSS/ACSOLA.D~ EVALUATE_BUFFER
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~B!ASTER.dlg~ THEN BEGIN

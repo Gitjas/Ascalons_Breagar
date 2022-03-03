@@ -2,7 +2,7 @@
                Eine Modifikation für BGT, EET, BG:EE, Tutu, BGII, BGII:EE und EET
                             von Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 7.0.5
+                         		Version: 7.0.6
 
 ***************************************************************************************************************
 
@@ -259,6 +259,9 @@ silver arm in ToB
 	-(BG2) Breagar's Axe Quest: can be solved if PC has quest to attack the Thieves' Guild (for example if going another route to Spellhold like in Alternatives Mod); removed "game dead end" - Black Market Thieve won't turn the Guild hostile any more just because Breagar and the PC talk aggressively
 	-(BG2) Anstinus' Tower: when encountering Anstinus' ghost in his tower, the dialogue should trigger even if Player1 is not in fist slot; also cutscene mode removed 
 	-crossmod compatibility with Alternatives mod: in case of certain status of Breagar's Axe quest, the Thieves' Guild messenger will no longer spawn if PC agreed to attack the Thieves' Guild
+
+7.0.6:
+	-Breagar-Solaufein crossmod compiles without error message
 
 
 ***************************************************************************************************************
