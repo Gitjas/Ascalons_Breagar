@@ -392,7 +392,7 @@ silver arm in ToB
 12.0.0:	(2022-06-01) by jastey
 	-added Russian version by AlexKaran & Arcanecoast team
 	-Worldmap entry for EE should be in correct format
-	-improved script additions for SoD (all blocks added via EXTEND_BOTTOM should end with a Continue())
+	-improved script additions for SoD (all blocks added via EXTEND_TOP should end with a Continue())
 	-fixed reference errors in scripts
 	-typo correction
 
