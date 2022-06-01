@@ -4,7 +4,10 @@
 
 IF
 	Global("ACBre_DestroyAxeID","MYAREA",0)
-	PartyHasItem("c#br0003")
+	OR(3)
+		PartyHasItem("ACAXE")
+		PartyHasItem("ACAXE2")
+		PartyHasItem("ACAXE3")
 THEN
 	RESPONSE #100
         ActionOverride("Container3",DestroyItem("ACAXE"))
