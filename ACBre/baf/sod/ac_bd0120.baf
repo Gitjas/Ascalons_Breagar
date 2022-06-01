@@ -31,5 +31,6 @@ THEN
 		SetGlobalTimerRandom("bd_leaving2_ot_timer","global",EIGHT_MINUTES,THIRTEEN_MINUTES)
 		DisplayStringWait("ACBre",@5020)
 		DisplayStringWait("ACBre",@5021)
+		Continue()
 END
 

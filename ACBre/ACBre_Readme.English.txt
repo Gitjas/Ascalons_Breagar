@@ -2,7 +2,7 @@
                A Modification for BGT, EET, BG:EE, Tutu, BGII, BGII:EE, and EET
                             by Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 11.4.0
+                         		Version: 12.0.0
 
 ***************************************************************************************************************
 
@@ -388,6 +388,13 @@ silver arm in ToB
 	-Breagar's Portrait for EE should not be pixelated for some means of ingame display (uses the L portrait everywhere).
 	-Added a note to the readme that Breagar's pips in one handed (single) weapon style will not be applied while he has an injured arm.
 
+12.0.0:	(2022-06-01) by jastey
+	-added Russian version by AlexKaran
+	-Worldmap entry for EE should be in correct format
+	-improved script additions for SoD (all blocks added via EXTEND_BOTTOM should end with a Continue())
+	-fixed reference errors in scripts
+	-typo correction
+
 ***************************************************************************************************************
 
 
@@ -415,6 +422,9 @@ English version:
 -first part by Gertwenger and Sergio, revised by Bloodtitan
 -completed for v10 by Eimerian
 -all proofread by Brokenkatana
+
+Russian version:
+-by AlexKaran, proofread by p_zombie (v11.5.0)
 
 ***************************************************************************************************************
 

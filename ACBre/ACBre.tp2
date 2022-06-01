@@ -20,7 +20,7 @@ Note:
 BACKUP ~ACBre/backup~
 //AUTHOR Original von Ascalon 
 SUPPORT ~https://www.baldurs-gate.de/index.php?threads/ascalons-breagar.44520/~
-VERSION ~11.4.0~ 
+VERSION ~12.0.0~ 
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
@@ -111,6 +111,9 @@ LANGUAGE ~Deutsch~ ~german~ ~ACBre/TRA/german/setup-ACBre.tra~
 
 LANGUAGE ~English~ ~english~ ~ACBre/TRA/english/setup-ACBre.tra~
 			~ACBre/TRA/english/game-acbre.tra~
+
+LANGUAGE ~Russian (by AlexKaran)~ ~russian~ ~ACBre/TRA/russian/setup-ACBre.tra~
+			~ACBre/TRA/russian/game-acbre.tra~
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1198,7 +1201,7 @@ EXTEND_BOTTOM ~bdc116d.bcs~ ~ACBre/baf/sod/ac_bdc116d.baf~
 EVALUATE_BUFFER
 
 /* Change camps if not in party */
-EXTEND_BOTTOM ~bd1000.bcs~ ~ACBre/baf/sod/ac_bd1000.baf~
+EXTEND_TOP ~bd1000.bcs~ ~ACBre/baf/sod/ac_bd1000.baf~
   EVALUATE_BUFFER
 
 	/* Patch your NPC's "Move Camp" variable to the original game's script block (bd1000.bcs) */
@@ -1334,7 +1337,7 @@ EXTEND_TOP ~bdcut61.bcs~ ~ACBre/baf/sod/ac_bdcut61.baf~
 EXTEND_TOP ~bd6200.bcs~ ~ACBre/baf/sod/ac_bd6200.baf~
   EVALUATE_BUFFER
 
-/* Deprecated: Having Breagar at the kidnapping scene either doesn't work, he's not moving with the party, or it leads to glitches. 
+/* ## Deprecated: Having Breagar at the kidnapping scene either doesn't work, he's not moving with the party, or it leads to glitches. 
 //ACTION_IF !GAME_IS ~eet~ THEN BEGIN
 
 /* Move Breagar to last abduction scene if he is present at end of SoD */
@@ -1376,7 +1379,7 @@ EXTEND_TOP ~bd6100.bcs~ ~ACBre/baf/sod/ac_bd6100.baf~
   EVALUATE_BUFFER
 
 //END //leave this out for EET
-*/ //deprecated
+*/ //## deprecated
 
 
 END //SoD
@@ -1547,9 +1550,9 @@ END ELSE BEGIN
 END
 ACTION_IF FILE_EXISTS ~Worldmap/map_mods_trans.tra~ BEGIN
   COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
-  APPEND_FILE_EVALUATE ~ACBre/TRA/%LANGUAGE%/worldmap.tra~
+  APPEND_FILE_EVALUATE ~ACBre/TRA/autotra/%LANGUAGE%/worldmap.tra~
 END ELSE BEGIN
-  COPY ~ACBre/TRA/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+  COPY ~ACBre/TRA/autotra/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
 END
 
 /* direct Worldmap-patching for EET */
@@ -1563,7 +1566,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 		path_to_areas = EVAL ~ACBre/Worldmap/EET/areas.tbl~
 		path_to_areas_bp = EVAL ~ACBre/Worldmap/areas.tbl~
 		path_to_links = EVAL ~ACBre/Worldmap/links.tbl~
-		path_to_trans = EVAL ~ACBre/TRA/%LANGUAGE%/worldmap.tra~
+		path_to_trans = EVAL ~ACBre/TRA/autotra/%LANGUAGE%/worldmap.tra~
 	END
 END
 
@@ -1578,7 +1581,7 @@ ACTION_IF GAME_IS ~bgt~ BEGIN
 		path_to_areas = EVAL ~ACBre/Worldmap/BGT/areas.tbl~
 		path_to_areas_bp = EVAL ~ACBre/Worldmap/areas.tbl~
 		path_to_links = EVAL ~ACBre/Worldmap/links.tbl~
-		path_to_trans = EVAL ~ACBre/TRA/%LANGUAGE%/worldmap.tra~
+		path_to_trans = EVAL ~ACBre/TRA/autotra/%LANGUAGE%/worldmap.tra~
 	END
 END
 
@@ -1593,7 +1596,7 @@ ACTION_IF (GAME_IS ~tob bg2ee~ AND NOT GAME_IS ~bgt~) BEGIN
 		path_to_areas = EVAL ~ACBre/Worldmap/BG2/areas.tbl~
 		path_to_areas_bp = EVAL ~ACBre/Worldmap/areas.tbl~
 		path_to_links = EVAL ~ACBre/Worldmap/links.tbl~
-		path_to_trans = EVAL ~ACBre/TRA/%LANGUAGE%/worldmap.tra~
+		path_to_trans = EVAL ~ACBre/TRA/autotra/%LANGUAGE%/worldmap.tra~
 	END
 END
 

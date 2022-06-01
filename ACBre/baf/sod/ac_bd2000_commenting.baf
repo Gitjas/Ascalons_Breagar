@@ -14,6 +14,7 @@ THEN
 		SetGlobal("ACBre_SoDbetrayal_discussion","bd2000",1)
 		SetGlobalTimer("bd_betrayal_discuss_timer","bd2000",ONE_MINUTE) //to space all the other NPC comments
 		DisplayStringHead("ACBre",@51)
+		Continue()
 END
 
 /* Battle at Bridgefort starts */
@@ -28,4 +29,5 @@ THEN
 		SetGlobalTimer("bd_mdd410z_ot_timer","bd2000",THREE_MINUTES)  
 		SetGlobal("ACBre_bd_ot","bd2000",1)  
 		DisplayStringHead("ACBre",@41)  
+		Continue()
 END
