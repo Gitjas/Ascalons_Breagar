@@ -389,7 +389,7 @@ silver arm in ToB
 	-Added a note to the readme that Breagar's pips in one handed (single) weapon style will not be applied while he has an injured arm.
 
 12.0.0:	(2022-06-01) by jastey
-	-added Russian version by AlexKaran
+	-added Russian version by AlexKaran & Arcanecoast team
 	-Worldmap entry for EE should be in correct format
 	-improved script additions for SoD (all blocks added via EXTEND_BOTTOM should end with a Continue())
 	-fixed reference errors in scripts
@@ -424,7 +424,7 @@ English version:
 -all proofread by Brokenkatana
 
 Russian version:
--by AlexKaran, proofread by p_zombie (v11.5.0)
+-by AlexKaran & Arcanecoast team (v11.5.0)
 
 ***************************************************************************************************************
 
