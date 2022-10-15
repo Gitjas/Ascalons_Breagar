@@ -32,7 +32,7 @@ IF ~InParty("Kivan")~ THEN REPLY @13 + ASCKI
 IF ~InParty("Viconia")~ THEN REPLY @14 + ASCVI
 IF ~InParty("Kagain")~ THEN REPLY @15 + ASCKA
 IF ~InParty("Xzar")~ THEN REPLY @16 + ASCXZ
-IF ~InParty("Monatron")~ THEN REPLY @17 + ASCMO
+IF ~InParty("Montaron")~ THEN REPLY @17 + ASCMO
 IF ~InParty("ACBre")~ THEN REPLY @18 + ASCBRE
 IF ~InParty("Tiax")~ THEN REPLY @19 + ASCTI
 IF ~InParty("Sharteel")~ THEN REPLY @20 + ASCSH
@@ -41,7 +41,7 @@ IF ~InParty("Alora")~ THEN REPLY @22 + ASCAL
 IF ~InParty("Coran")~ THEN REPLY @23 + ASCCO
 IF ~InParty("Eldoth")~ THEN REPLY @24 + ASCEL
 IF ~InParty("Faldorn")~ THEN REPLY @25 + ASCFA
-IF ~InParty("Garrik")~ THEN REPLY @26 + ASCGA
+IF ~InParty("Garrick")~ THEN REPLY @26 + ASCGA
 IF ~InParty("Quayle")~ THEN REPLY @27 + ASCQU
 IF ~InParty("Safana")~ THEN REPLY @28 + ASCSA
 IF ~InParty("Skie")~ THEN REPLY @29 + ASCSK
