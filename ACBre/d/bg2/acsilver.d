@@ -140,11 +140,11 @@ See("ACBRE")
 EraseJournalEntry(@10057) EraseJournalEntry(@10058) EraseJournalEntry(@10059) EraseJournalEntry(@10060) EraseJournalEntry(@10061) EraseJournalEntry(@10062) EraseJournalEntry(@10063) EraseJournalEntry(@10064) EraseJournalEntry(@10065) EraseJournalEntry(@10066) EraseJournalEntry(@10067) EraseJournalEntry(@10068) EraseJournalEntry(@10069) EraseJournalEntry(@10070) EraseJournalEntry(@10071) AddJournalEntry(@10072,QUEST_DONE)~
 ==ACBRE25J @75
 ==ACSILVER @108
-==ACSILVER IF ~PartyHasItem("ACAXE2")~ THEN @109
+==ACSILVER IF ~OR(2) PartyHasItem("ACAXE2") PartyHasItem("c!ax44")~ THEN @109
 END
-IF ~PartyHasItem("ACAXE2") GlobalLT("CHAPTER","GLOBAL",%bg2_chapter_9%)~ THEN DO ~AddXPObject(PLAYER1,20000)AddXPObject(PLAYER2,20000)AddXPObject(PLAYER3,20000)AddXPObject(PLAYER4,20000)AddXPObject(PLAYER5,20000)AddXPObject(PLAYER6,20000)ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT_14")~ EXIT
-IF ~PartyHasItem("ACAXE2") GlobalGT("CHAPTER","GLOBAL",%bg2_chapter_8%)~ THEN DO ~AddXPObject(PLAYER1,20000)AddXPObject(PLAYER2,20000)AddXPObject(PLAYER3,20000)AddXPObject(PLAYER4,20000)AddXPObject(PLAYER5,20000)AddXPObject(PLAYER6,20000)ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT14A")~ EXIT
-IF ~!PartyHasItem("ACAXE2")~ THEN DO ~AddXPObject(PLAYER1,20000)AddXPObject(PLAYER2,20000)AddXPObject(PLAYER3,20000)AddXPObject(PLAYER4,20000)AddXPObject(PLAYER5,20000)AddXPObject(PLAYER6,20000)ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT_17")~ EXIT
+IF ~OR(2) PartyHasItem("ACAXE2") PartyHasItem("c!ax44") GlobalLT("CHAPTER","GLOBAL",%bg2_chapter_9%)~ THEN DO ~AddXPObject(PLAYER1,20000)AddXPObject(PLAYER2,20000)AddXPObject(PLAYER3,20000)AddXPObject(PLAYER4,20000)AddXPObject(PLAYER5,20000)AddXPObject(PLAYER6,20000)ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT_14")~ EXIT
+IF ~OR(2) PartyHasItem("ACAXE2") PartyHasItem("c!ax44") GlobalGT("CHAPTER","GLOBAL",%bg2_chapter_8%)~ THEN DO ~AddXPObject(PLAYER1,20000)AddXPObject(PLAYER2,20000)AddXPObject(PLAYER3,20000)AddXPObject(PLAYER4,20000)AddXPObject(PLAYER5,20000)AddXPObject(PLAYER6,20000)ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT14A")~ EXIT
+IF ~!PartyHasItem("ACAXE2") !PartyHasItem("c!ax44")~ THEN DO ~AddXPObject(PLAYER1,20000)AddXPObject(PLAYER2,20000)AddXPObject(PLAYER3,20000)AddXPObject(PLAYER4,20000)AddXPObject(PLAYER5,20000)AddXPObject(PLAYER6,20000)ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT_17")~ EXIT
 
 CHAIN
 IF ~Global("ACLASTPLOT","GLOBAL",1)See("ACBRE")See(PLAYER1)~ THEN ACSILVER LAST.4

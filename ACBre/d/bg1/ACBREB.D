@@ -1163,7 +1163,9 @@ CHAIN
 IF ~Global("ACBRETia","GLOBAL",2)
 !Global("ACBREFRIENDACTIVE","GLOBAL",2)
 %BG1_BEFORE_TRANSITION%
-PartyHasItem("ACAXE")
+OR(2)
+  PartyHasItem("ACAXE")
+  PartyHasItem("c!ax43")
 InParty("ACBRE")
 InParty("Tiax")
 See("Tiax")
