@@ -88,6 +88,7 @@ END
 /* Breagar turns on CHARNAME if Dwarves are attacked */
 
 IF 
+	%IT_IS_SOD%
 	OR(4)
 		Allegiance("BDDEEP",[ENEMY])
 		Allegiance("BDDEEP2",[ENEMY])
