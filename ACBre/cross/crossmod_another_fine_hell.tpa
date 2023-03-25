@@ -1,0 +1,37 @@
+/* Compatibility with Another fine Hell */
+ACTION_IF FILE_EXISTS_IN_GAME ~c#afh3.bcs~ THEN BEGIN
+  PRINT @214 
+
+/*if this ending is installed, Breagar will just remain in the group at the end of SoD. */
+COPY_EXISTING ~bdcut61.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(InParty("ACBre")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1
+Global("C#AfHSoD_RevisedEnd","GLOBAL",0)~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY 
+
+/* get state number for c#afhblt to add your NPC's comment after Duke Belt announced that the PC will have to leave the town:
+@77 = [Duke Belt]Sort your equipment and rest once again. Tomorrow morning we will take you out of the city unnoticed. */
+  OUTER_SET belt_interjection = STATE_WHICH_SAYS 77 IN ~c#anotherfinehell/translations/autotra/%s/anotherfinehell_sod.tra~ FROM ~c#afhblt~
+/* add interjection for Breagar into Duke Belt's dialogue */
+<<<<<<<< .../add_acbre_afh_interjection.d
+I_C_T c#afhblt %belt_interjection% ACBre_c#afhblt_77
+== ACBreJ IF ~InParty("ACBRE") InMyArea("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN @5021
+END
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~.../add_acbre_afh_interjection.d~ USING ~ACBre/tra/autotra/%s/game-acbre.tra~
+
+/* Unfortunately, the end cutscene (default in EET, restored for BG:SoD via tweak) is quite funky if mod NPCs are in the group instead of the default crew. Therefore, we add that the mod NPC will leave the group after the fade-to-black before the end ambush cutscene. */
+
+EXTEND_TOP ~bdcut64x.bcs~ ~ACBre/baf/sod/ac_bdcut61.baf~ 
+EVALUATE_BUFFER
+
+
+END //Another Fine Hell
