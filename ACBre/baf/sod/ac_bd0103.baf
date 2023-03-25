@@ -36,6 +36,7 @@ THEN
 		SmallWait(1)
 		ActionOverride("ACBre",LeaveParty())
 		SetGlobal("ACBREINPARTY","GLOBAL",3)
+		SetGlobal("ACBREEXISTS","GLOBAL",1)
 		SetGlobal("ACBREPartyBG1","GLOBAL",1)
 		ActionOverride("ACBre",SetDialog("ACBreS")
 		SmallWait(1)
@@ -56,8 +57,9 @@ THEN
 	RESPONSE #100
 		SetGlobal("ACBre_MoveCamp","bd0103",1)
 		MoveGlobal("bd0103","ACBre",[681.882])  
-		ActionOverride("ACBre",LeaveParty())
 		SetGlobal("ACBREINPARTY","GLOBAL",3)
+		SetGlobal("ACBREEXISTS","GLOBAL",1)
+		SetGlobal("ACBREPartyBG1","GLOBAL",1)
 		ActionOverride("ACBre",Face(W))
 		ReallyForceSpellDeadRES("bdrejuve","ACBre")  // No such index
 		ChangeEnemyAlly("ACBre",NEUTRAL)  
