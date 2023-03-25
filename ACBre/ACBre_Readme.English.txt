@@ -2,8 +2,6 @@
                A Modification for BGT, EET, BG:EE, Tutu, BGII, BGII:EE, and EET
                             by Ascalon (geheimer.herrscher@gmx.de)
 
-                         		Version: 12.0.0
-
 ***************************************************************************************************************
 
 
@@ -394,6 +392,11 @@ silver arm in ToB
 	-improved script additions for SoD (all blocks added via EXTEND_TOP should end with a Continue())
 	-fixed reference errors in scripts
 	-typo correction
+
+12.0.0:	(2023-03-xx) by CamDawg and jastey
+	-EE: Breagar can't equip two-handed weapons where appropriate due to story reasons, by CamDawg
+	-EET: Breagar should span in ID if he was in party in SoD
+	-updated crossmod with Another fine Hell mod
 
 ***************************************************************************************************************
 
