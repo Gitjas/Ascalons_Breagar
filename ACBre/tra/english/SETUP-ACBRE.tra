@@ -57,3 +57,6 @@
 
 /* new for v11.2.0 */
 @215 =  ~Installing cross-mod content for EndlessBG1~
+
+// needed for EE two-handed restrictions
+@216 = ~Breagar cannot use two-handed weapons~

@@ -33,10 +33,13 @@ THEN
 END
 
 IF
-	OR(3)
-	HasItem("ACAXE",Myself)
-	HasItem("ACAXE2",Myself)
-	HasItem("ACAXE3",Myself)
+	OR(6)
+    HasItem("ACAXE",Myself)
+    HasItem("ACAXE2",Myself)
+    HasItem("ACAXE3",Myself)
+    HasItem("c!ax43",Myself)
+    HasItem("c!ax44",Myself)
+    HasItem("c!ax45",Myself)
 	!Global("ACBREMYAXE","GLOBAL",1)
 THEN
 	RESPONSE #100
@@ -46,8 +49,11 @@ THEN
 END
 
 IF
-	PartyHasItem("ACAXE")
+	OR(2)
+    PartyHasItem("ACAXE")
+	  PartyHasItem("c!ax43")
 	!HasItem("ACAXE",Myself)
+	!HasItem("c!ax43",Myself)
 	!Global("ACBRENOTYOURAXE","GLOBAL",1)
 	OR(2)
 		GlobalGT("ACSTORY","GLOBAL",4)
@@ -60,8 +66,11 @@ THEN
 END
 
 IF
-	PartyHasItem("ACAXE2")
+  OR(2)
+    PartyHasItem("ACAXE2")
+    PartyHasItem("c!ax44")
 	!HasItem("ACAXE2",Myself)
+	!HasItem("c!ax44",Myself)
 	!Global("ACBRENOTYOURAXE","GLOBAL",1)
 	OR(2)
 		GlobalGT("ACSTORY","GLOBAL",4)
@@ -73,8 +82,11 @@ THEN
 END
 
 IF
-	PartyHasItem("ACAXE3")
+  OR(2)
+    PartyHasItem("ACAXE3")
+    PartyHasItem("c!ax45")
 	!HasItem("ACAXE3",Myself)
+	!HasItem("c!ax45",Myself)
 	!Global("ACBRENOTYOURAXE","GLOBAL",1)
 	OR(2)
 		GlobalGT("ACSTORY","GLOBAL",4)
@@ -102,6 +114,9 @@ IF
 	!PartyHasItem("ACAXE")
 	!PartyHasItem("ACAXE2")
 	!PartyHasItem("ACAXE3")
+	!PartyHasItem("c!ax43")
+	!PartyHasItem("c!ax44")
+	!PartyHasItem("c!ax45")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck("ACBRE",CD_STATE_NOTVALID)
@@ -120,6 +135,9 @@ IF
 	!PartyHasItem("ACAXE")
 	!PartyHasItem("ACAXE2")
 	!PartyHasItem("ACAXE3")
+	!PartyHasItem("c!ax43")
+	!PartyHasItem("c!ax44")
+	!PartyHasItem("c!ax45")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck("ACBRE",CD_STATE_NOTVALID)
@@ -140,6 +158,9 @@ IF
 	!PartyHasItem("ACAXE")
 	!PartyHasItem("ACAXE2")
 	!PartyHasItem("ACAXE3")
+	!PartyHasItem("c!ax43")
+	!PartyHasItem("c!ax44")
+	!PartyHasItem("c!ax45")
 OR(3)
 	Global("ACBREMYAXE","GLOBAL",2)
 	Global("ACBREMYAXE","GLOBAL",4)
@@ -511,7 +532,9 @@ IF
 	See(Player1)
 	PartyHasItem("ACHAND2")
 	PartyHasItem("ACBOWL")
-	PartyHasItem("ACAXE")
+  OR(2)
+  	PartyHasItem("ACAXE")
+  	PartyHasItem("c!ax43")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck("ACBRE",CD_STATE_NOTVALID)
@@ -1220,7 +1243,9 @@ IF
 	PartyHasItem("ACPLOT1A")
 	PartyHasItem("ACPLOT1B")
 	PartyHasItem("ACPLOT1C")
-	PartyHasItem("ACAXE")
+  OR(2)
+  	PartyHasItem("ACAXE")
+  	PartyHasItem("c!ax43")
 	%BGT_VAR2%
 	CombatCounter(0)
 	!See([ENEMY])
@@ -1439,7 +1464,9 @@ IF
 	PartyHasItem("ACSTONE1")
 	PartyHasItem("ACSTONE2")
 	PartyHasItem("ACSTONE3")
-	PartyHasItem("ACAXE")
+  OR(2)
+    PartyHasItem("ACAXE")
+    PartyHasItem("c!ax43")
 	AreaCheck("AR0334")
 THEN
 	RESPONSE #100

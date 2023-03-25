@@ -24,6 +24,7 @@ THEN
 		MoveGlobal("AR0334","ACBRE",[648.229])
 		Wait(1)
 		ActionOverride("ACBRE",DestroyItem("ACAXE"))
+		ActionOverride("ACBRE",DestroyItem("c!ax43"))
 		SmallWait(10)
 		ActionOverride("ACBRE",GiveItemCreate("ACAXE2","ACBRE",0,0,0))
 //CreateItem("ACAXE2",0,0,0))

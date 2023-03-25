@@ -6,6 +6,7 @@ THEN
 		Wait(2)
 		//ActionOverride("ACBRE",DestroyItem("ACAXE2"))
 		//ActionOverride("ACBRE",CreateItem("ACAXE3",0,0,0))
+		ActionOverride("ACBRE",DestroyItem("c!ax44"))
 		ActionOverride("ACBRE",TakeItemReplace("ACAXE3","ACAXE2","ACBRE")
 		Wait(2)
 		CreateVisualEffectObject("spholy","ACSILVER")
