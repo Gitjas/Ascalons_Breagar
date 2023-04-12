@@ -16,7 +16,7 @@ END
 /* 2 Portal is opened after Hephernaan's scheme */
 IF
 	AreaCheck("BD4300")
-	Global("bd_plot","bd4300",495)
+	Global("bd_plot","global",495)
 	Global("ACBre_SoDPortalComment","bd4300",0) 
 	IfValidForPartyDialog("ACBre")  
 THEN
