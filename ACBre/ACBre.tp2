@@ -20,7 +20,7 @@ Note:
 BACKUP ~ACBre/backup~
 //AUTHOR Original von Ascalon 
 SUPPORT ~https://www.baldurs-gate.de/index.php?threads/ascalons-breagar.44520/~
-VERSION ~12.1.0pre~ 
+VERSION ~12.1.0~ 
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
@@ -1816,7 +1816,7 @@ COMPILE EVALUATE_BUFFER ~ACBre/CROSS/acbst.D~
 END
 
 /* Another Fine Hell */
-INCLUDE ~%MOD_FOLDER%/crossmod/crossmod_another_fine_hell.tpa~
+INCLUDE ~%MOD_FOLDER%/cross/crossmod_another_fine_hell.tpa~
 
 /* EndlessBG1 */
 ACTION_IF (GAME_INCLUDES ~sod~ AND FILE_EXISTS_IN_GAME ~c#stdstr.bcs~) THEN BEGIN 

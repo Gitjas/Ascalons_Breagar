@@ -394,9 +394,10 @@ silver arm in ToB
 	-fixed reference errors in scripts
 	-typo correction
 
-12.0.0:	(2023-03-xx) by CamDawg and jastey
+12.1.0:	(2023-04-12) by CamDawg and jastey
 	-EE: Breagar can't equip two-handed weapons where appropriate due to story reasons, by CamDawg
-	-EET: Breagar should span in ID if he was in party in SoD
+	-EET: Breagar should spawn in ID if he was in party in SoD
+	-Fixed trigger for comment in SoD bd4300.
 	-updated crossmod with Another fine Hell mod
 
 
