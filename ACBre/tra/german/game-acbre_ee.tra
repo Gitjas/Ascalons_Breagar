@@ -1,0 +1,291 @@
+//BGII:EE #6656 + addition
+@71   = ~Die gängigste Ausführung einer Streitaxt besteht aus einem dicken Stab von ungefähr 1,20 m Länge mit einer einschneidigen, trompetenförmigen Klinge an einem Ende. Diese Waffe wird auch Breitbeil genannt.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Initiativefaktor: 7
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 7~
+// BGII:EE #6706 + addition
+@72   = ~Ein Flegel besteht aus einem kräftigen Holzgriff, der mit einem Eisenstab, einem dornenbesetzten Holzstab oder einer mit Dornen besetzten Eisenkugel verbunden ist. Die beiden Teile sind entweder mit einem Scharnier oder einer Kette verbunden. Ursprünglich wurde diese Waffe zum Dreschen von Getreide benutzt.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 +1 (Wucht)
+Initiativefaktor: 7
+Fertigkeit: Flegel/Morgenstern
+Typ: 1-händig
+Mindeststärke: 13
+
+Gewicht: 15~
+// BGII:EE #6709 + addition
+@73   = ~Der Streitkolben ist ein direkter Nachfolger der einfachen Keule und besteht lediglich aus einem Holzschaft, auf den ein Stein- oder Eisenkopf aufgesetzt ist. Der Kopf kann entweder mit Spitzen versehen, geflanscht oder aber auch pyramidenförmig ausgearbeitet sein.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 +1 (Wucht)
+Initiativefaktor: 7
+Fertigkeit: Streitkolben
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 10~
+//BGII:EE #6855 + addition
+@74   = ~Ein Morgenstern besteht aus einem hölzernen Schaft, auf den ein mit Eisenspitzen besetzter Metallkopf aufgesetzt ist. Die Gesamtlänge eines Morgensterns beträgt etwa 1,20 m. Der Kopf kann rund, oval oder zylindrisch geformt sein und ist mit Stacheln besetzt. Unabhängig von der jeweiligen Ausführung ist der Kopf von Morgensternen meist mit einer langen Spitze zum Stoßen versehen.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 2W4 (Wucht)
+Initiativefaktor: 7
+Fertigkeit: Flegel/Morgenstern
+Typ: 1-händig
+Mindeststärke: 11
+
+Gewicht: 12~
+//BGII:EE #6720 + addition
+@75   = ~Ein typischer Dolch ist mit einer spitzen, normalerweise zweischneidigen Klinge versehen, wodurch er sich von einem Messer unterscheidet. Ein Messer hat nur eine Schneide und ist etwas kürzer als ein Dolch.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 (Stich)
+Initiativefaktor: 2
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~
+//BGII:EE #6712 + addition
+@76   = ~Die Hellebarde ist nach dem Speer die älteste und verbreitetste Stangenwaffe. Sie besteht aus einer Klinge, die einem Henkerbeil ähnelt, welche auf einen durchschnittlich 1,80 m langen Stab aufgesetzt ist. Das Gewicht der Axtklinge wird durch eine Fluke ausgeglichen. Am oberen Ende sitzt ein spitzer Dorn, der gewöhnlich viereckig geformt ist. Manchmal wird die Fluke von einem Haken ersetzt, mit dem berittene Kämpfer vom Pferd geholt werden können. Eine Hellebarde lässt sich am besten als eine Kreuzung zwischen Speer und Axt beschreiben.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W10 (Klinge oder Stich)
+Initiativefaktor: 9
+Fertigkeit: Hellebarde
+Typ: 2-händig
+Mindeststärke: 13
+
+Gewicht: 15~
+//BGII:EE #6727 + addition
+@77   = ~Speere zählen zu den ältesten Waffen der Geschichte. Schon die primitivsten Völker benutzten einfache Holzstangen, die an einem Ende angespitzt wurden. Nachdem die Menschen die Metallverarbeitung entdeckt hatten, begannen sie Speerköpfe aus Eisen und Stahl herzustellen. Waffenschmiede experimentierten bald mit unterschiedlichen Formen von Speerköpfen, was zur Entstehung verschiedener Arten von Stangenwaffen führte.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 (Stich)
+Initiativefaktor: 6
+Fertigkeit: Speer
+Typ: 2-händig
+Mindeststärke: 5
+
+Gewicht: 5~
+//BGII:EE #6738 + addition
+@78   = ~Das Bastardschwert ist von seiner Art her zwischen dem Zweihänder und dem Langschwert angesiedelt, weshalb es auch als Anderthalbhänder bezeichnet wird. Es besitzt eine zweischneidige Klinge und einen langen Griff, wodurch es auch beidhändig geschwungen werden kann. Die durchschnittliche Länge des Bastardschwertes liegt zwischen 1,40 und 1,60 m.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 2W4 (Klinge)
+Initiativefaktor: 8
+Fertigkeit: Bastardschwert
+Typ: 1-händig
+Mindeststärke: 11
+
+Gewicht: 10~
+//BGII:EE #6742 + addition
+@79   = ~Diese Schwerter werden auch als zweischneidige Schwerter, Kriegsschwerter oder Militärschwerter bezeichnet. Es gibt keine einheitliche Form des Langschwertes. Seine Form und Länge sind von Kultur zu Kultur unterschiedlich und können selbst innerhalb einer Kultur je nach Zeitalter variieren. Das grundlegendste Merkmal aller Langschwerter ist ihre Länge, die zwischen 90 cm und 1,20 m beträgt. Im letzteren Fall nimmt die Klinge 1 m der Gesamtlänge ein. Die meisten Langschwerter besitzen eine zweischneidige Klinge mit einer scharfen Spitze. Trotz dieser Spitze ist das Langschwert nicht zum Stoßen, sondern zum Schwingen vorgesehen.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Initiativefaktor: 5
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 6
+
+Gewicht: 4~
+//BGII:EE #6747 + addition
+@80   = ~Das Kurzschwert ist die erste und ursprüngliche Form eines Schwertes. Einfach ausgedrückt ist ein Kurzschwert ein Dolch, bei dem die Klinge so lang ist, dass das Ganze nicht mehr als Dolch bezeichnet werden kann. Der Begriff „Kurzschwert“ ist in der Klassifizierung der Schwerter eigentlich nicht bekannt. Er wird jedoch mittlerweile zur Beschreibung einer zweischneidigen Klinge mit einer ungefähren Länge von 60 cm verwendet. Die Klinge ist normalerweise vorne spitz, wodurch sich das Kurzschwert hervorragend zum Stoßen eignet.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 (Stich)
+Initiativefaktor: 3
+Fertigkeit: Kurzschwert
+Typ: 1-händig
+Mindeststärke: 5
+
+Gewicht: 3~
+//BGII:EE #22712 + addition
+@81   = ~Sowohl der Säbel als auch der Krummsäbel sind durch eine einseitig scharfe, gekrümmte Klinge charakterisiert, obwohl die beiden Waffen ursprünglich aus unterschiedlichen Regionen Faerûns stammen. Der Säbel wurde aufgrund seiner Vielseitigkeit hauptsächlich von berittenen Kriegern eingesetzt, während die Entwicklung des Krummsäbels durch einen starken orientalischen Einfluss geprägt ist. Der „Shamshir“, wie man ihn ursprünglich genannt hat, ist größer und stärker gekrümmt und hat eine langgezogene Spitze. Dadurch kann er zwar nur ein wenig langsamer geschwungen werden, ist aber wesentlich tödlicher.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Initiativefaktor: 5
+Fertigkeit: Krummsäbel/Wakizashi/Ninjato
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 4~
+//BGII:EE #35963 + addition
+@82   = ~Das Katana ist ein Schwert, dessen Klinge nur auf einer Seite scharf ist. Es ist leicht gekrümmt und endet in einer Spitze, die an die Spitze eines Meißels erinnert. Das Katana stellt vermutlich die aufwändigste Form des Schwertes dar. Seine Fertigung ist ein langer, aufwändiger und höchst geheimer Vorgang, den man schon fast als Kunstwerk bezeichnen müsste. Diese Schwerter spielen in der Kultur von Kara-Tur eine wichtige Rolle. Wenn man es wagt, das Katana eines Samurais zu berühren oder gar zu ziehen, beleidigt man den Samurai, dem es gehört, und zieht seinen Zorn auf sich. Es kommt nur äußerst selten vor, dass ein Gaijin, ein Fremder, in den Besitz einer derartigen Waffe kommt. Entweder handelt es sich bei diesem Gaijin dann um den geehrten Freund eines wichtigen Ministers oder um den Mörder eines Samurais.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W10 (Klinge)
+Initiativefaktor: 4
+Fertigkeit: Katana
+Typ: 1-händig
+Mindeststärke: 6
+
+Gewicht: 6~
+//BGII:EE #36181 + addition
+@83   = ~Das Wakizashi, auch Begleitschwert genannt, ist für einen Samurai von höchster Wichtigkeit. Es wird von ihm ständig getragen, auch wenn er sich in einem Gebäude aufhält. Wenn er schläft, liegt es neben ihm. Das Wakizashi ist von ebenso hochwertiger Fertigung wie das Katana. Es ist allerdings deutlich kürzer und die Klinge ist nur 30 bis 60 cm lang. In den Händen eines geschulten Kriegers ist es eine tödliche Waffe.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Stich)
+Initiativefaktor: 3
+Fertigkeit: Krummsäbel/Wakizashi/Ninjato
+Typ: 1-händig
+Mindeststärke: 5
+
+Gewicht: 3~
+//BGII:EE #39467 + addition
+@84   = ~Das Ninjato ist das Schwert der Ninja und nicht von so hochwertiger Qualität wie die anderen Klingen, die aus Kara-Tur stammen, wie beispielsweise das Katana. Das Ninjato hat eine gerade Klinge und ist relativ kurz. Es eignet sich daher ideal für den verschlagenen Ninja, da es sich leicht verbergen lässt. Da es recht kurz ist, eignet es sich besser als die langen Klingen eines Samurais, um damit unter beengten Verhältnissen zu kämpfen. Das verschafft einem Ninja, der gegen einen Samurai antritt, manchmal einen Vorteil.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Initiativefaktor: 4
+Fertigkeit: Krummsäbel/Wakizashi/Ninjato
+Typ: 1-händig
+Mindeststärke: 6
+
+Gewicht: 5~
+//BGII:EE #6752 + addition
+@85   = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen.
+
+Der Zwergenschmied Breagar hat diese Waffe verstärkt, so dass sie nicht wie die anderen zerbricht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W10 (Klinge)
+Initiativefaktor: 10
+Fertigkeit: Zweihänder
+Typ: 2-händig
+Mindeststärke: 14
+
+Gewicht: 15~
+
+@111  = ~Um diese legendäre Axt ranken sich viele Legenden. Angeblich soll Moradin selbst diese Waffe als Geschenk für seine treue Gattin Berronar geschmiedet haben, doch durch eine Verkettung unglücklicher Ereignisse zerbrach die Waffe, und die kostbaren Edelsteine, die sie zierten, gingen verloren.
+
+Obwohl die Axt durch diesen Schaden einiges von ihrer Kraft verloren hat, ist sie doch in den Händen eines ehrbaren Zwerges immer noch eine hilfreiche Waffe gegen alles Böse.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer besteht eine 10%ige Chance, den Gegner für 10 Sekunden bewusstlos zu schlagen (Rettungswurf gg. Tod, +2 Malus).
+Auf dem Träger liegt Schutz vor Bösem.
+
+ETW0-Bonus: -2
+Schaden: 1W10 +2 (Klinge)
+Initiativefaktor: 4
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 7~
+
+@113  = ~Um diese legendäre Axt ranken sich viele Legenden. Angeblich soll Moradin selbst diese Waffe als Geschenk für seine treue Gattin Berronar geschmiedet haben.
+
+Bei Ihrer Reise durch das Unterreich fanden <CHARNAME> und Breagar die fehlenden Edelsteine und reparierten die Axt in Cromwells Schmiede. Seitdem erstrahlt die Axt in neuem Glanz und ist eine furchtbare Waffe im Kampf gegen das Böse.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer besteht eine 10%ige Chance, den Gegner für 10 Sekunden bewusstlos zu schlagen (Rettungswurf gg. Tod, +2 Malus).
+Auf dem Träger liegt Schutz vor Bösem.
+
+ETW0-Bonus: -5
+Schaden: 1W12 +5 (Klinge)
+Initiativefaktor: 4
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 7~
+
+@115  = ~Um diese legendäre Axt ranken sich viele Legenden. Angeblich soll Moradin selbst diese Waffe als Geschenk für seine treue Gattin Berronar geschmiedet haben.
+
+Bei Ihrer Reise durch das Unterreich fanden <CHARNAME> und Breagar die fehlenden Edelsteine und reparierten die Axt in Cromwells Schmiede. Diese Tat erweckte das Interesse der Götter, und sie verliehen der Waffe einen zusätzlichen Segen. Seitdem erstrahlt die Axt in neuem Glanz und ist eine furchtbare Waffe im Kampf gegen das Böse, ganz besonders gegen Riesen und riesenartige.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer besteht eine 10%ige Chance, den Gegner für 10 Sekunden bewusstlos zu schlagen (Rettungswurf gg. Tod, +2 Malus).
+Auf dem Träger liegt Schutz vor Bösem.
+
+ETW0-Bonus: -6
+Schaden:
+ 1W12 +6 (Klinge)
+ 1W12 +9 gg. Riesen
+Initiativefaktor: 4
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 7~
+
+@117  = ~Diese Robe gehörte einst dem Nekromanten Borsk. Jetzt gehört sie Euch.
+
+EIGENSCHAFTEN:
+
+Rüstungsklasse: 5
+RW-Bonus: -1
+Magiewiderstand: +5 %
+
+Gewicht: 6~
+
+@175  = ~Reggik, einer der fähigsten Schmiede des Bardormar-Clans aus den Sturmhornbergen, übte sich lange in der Kunst der Runenschmiede, bis er seine Fähkigeiten an diesem Hammer erproben wollte. Die Waffe knackst hin und wieder vor Kälte, und in dem Metall funkeln silberweiße Runen.
+
+EIGENSCHAFTEN:
+
+Wird ein Gegner getroffen, besteht eine 5%ige Chance, dass das Ziel den sofortigen Kältetod stirbt (Rettungswurf gg. Tod).
+
+ETW0-Bonus: 0
+Schaden: 1W4 +3 (Wucht)
+Initiativefaktor: 1
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 4~

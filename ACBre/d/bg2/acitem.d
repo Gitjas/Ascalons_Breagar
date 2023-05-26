@@ -184,10 +184,26 @@ EXIT
 CHAIN
 IF WEIGHT #5 ~Global("ACMISC4E","GLOBAL",1)~ THEN ACBREJ MISC4E
 @77 DO ~SetGlobal("ACMISC4E","GLOBAL",2)~
-==BIMOEN2 IF ~InParty("IMOEN2")See("IMOEN2")!StateCheck("IMOEN2",CD_STATE_NOTVALID)~ THEN @78
-==ACBREJ IF ~InParty("IMOEN2")See("IMOEN2")!StateCheck("IMOEN2",CD_STATE_NOTVALID)~ THEN @79
-==ACBREJ @80
+== ~%IMOENJ_ID%~ IF ~InParty("%ImoenDV_ID%")See("%ImoenDV_ID%")!StateCheck("%ImoenDV_ID%",CD_STATE_NOTVALID)~ THEN @78
+==ACBREJ IF ~InParty("%ImoenDV_ID%")See("%ImoenDV_ID%")!StateCheck("%ImoenDV_ID%",CD_STATE_NOTVALID)~ THEN @79
+==ACBREJ @80 DO ~AddJournalEntry(@125,QUEST)~
 EXIT
+
+APPEND ACBREJ
+
+IF WEIGHT #-1
+~Global("ACMISC4E","GLOBAL",3)~ THEN BEGIN use_energycells
+SAY @123 /* ~Das ist eine schöne Schmiede, <CHARNAME>. Wie ärgerlich, dass sie nur für dieses Dunkelvolk zugänglich ist. Wenn wir hier fertig sind, würde ich hier mit den Energiezellen gerne meinen Arm verbessern. */
+IF ~~ THEN DO ~SetGlobal("ACMISC4E","GLOBAL",4)~ UNSOLVED_JOURNAL @126 EXIT
+END
+
+IF WEIGHT #-1
+~Global("ACMISC4E","GLOBAL",6)~ THEN BEGIN energycells_done
+SAY @124 /* Ja, das hat so geklappt wie ich es mir dachte, auch wenn das Schmieden am eigenen Arm etwas heikel ist, bei Moradin. Aber nun profitiert mein Silberarm von der Magie dieser verflixten Dinger, er ist nun merkbar stärker.~ */
+IF ~~ THEN DO ~EraseJournalEntry(@125)
+EraseJournalEntry(@126)SetGlobal("ACMISC4E","GLOBAL",7)AddexperienceParty(15000)~ SOLVED_JOURNAL @127 EXIT
+END
+END //APPEND
 
 CHAIN
 IF WEIGHT #5 ~Global("ACMISC5K","LOCALS",1)~ THEN ACBREJ MISC5K

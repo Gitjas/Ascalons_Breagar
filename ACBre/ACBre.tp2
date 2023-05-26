@@ -20,7 +20,7 @@ Note:
 BACKUP ~ACBre/backup~
 //AUTHOR Original von Ascalon 
 SUPPORT ~https://www.baldurs-gate.de/index.php?threads/ascalons-breagar.44520/~
-VERSION ~12.1.0~ 
+VERSION ~12.2.0~ 
 
 AUTO_TRA "ACBre/TRA/autotra/%s"//%"
 
@@ -82,11 +82,7 @@ ACTION_IF !FILE_EXISTS ~ACBre/reinstall.mrk~ BEGIN
 			reload_array = tra#reload
 			iconv_path = ~ACBre/tools/iconv~
 	END
-		
-		//LOAD_TRA ~ACBre/tra/autotra/german/setup-ACBre.tra~	
-		LOAD_TRA ~ACBre/tra/autotra/%LANGUAGE%/game-acbre.tra~
-		LOAD_TRA ~ACBre/tra/autotra/%LANGUAGE%/ACStates.tra~ //?
-		
+				
 APPEND ~STATE.IDS~
 	~0x80101FEF CD_STATE_NOTVALID~
 UNLESS ~CD_STATE_NOTVALID~
@@ -102,8 +98,14 @@ COPY_EXISTING ~action.ids~ ~override~
 BUT_ONLY_IF_IT_CHANGES
 
 COPY ~ACBre/component.xxx~ ~ACBre/reinstall.mrk~
-
 END
+
+//reloading of tras ALWAYS:
+  LOAD_TRA ~ACBre/tra/autotra/%LANGUAGE%/game-acbre.tra~
+  ACTION_IF GAME_IS ~bgee bg2ee eet~ THEN BEGIN
+	LOAD_TRA ~ACBre/tra/autotra/%LANGUAGE%/game-acbre_ee.tra~
+  END
+
 END
 
 LANGUAGE ~Deutsch~ ~german~ ~ACBre/TRA/german/setup-ACBre.tra~
@@ -112,7 +114,8 @@ LANGUAGE ~Deutsch~ ~german~ ~ACBre/TRA/german/setup-ACBre.tra~
 LANGUAGE ~English~ ~english~ ~ACBre/TRA/english/setup-ACBre.tra~
 			~ACBre/TRA/english/game-acbre.tra~
 
-LANGUAGE ~Russian (by AlexKaran & Arcanecoast team)~ ~russian~ ~ACBre/TRA/russian/setup-ACBre.tra~
+LANGUAGE ~Russian (by AlexKaran & Arcanecoast team)~ ~russian~ 
+			~ACBre/TRA/english/setup-ACBre.tra~
 			~ACBre/TRA/russian/game-acbre.tra~
 
 
@@ -419,6 +422,7 @@ COPY ~ACBre/ITM/ACHAND3A.ITM~ ~override~
 SAY NAME1 @95
 SAY NAME2 @95
 SAY DESC @97
+/*
 COPY ~ACBre/ITM/ACHAND3B.ITM~ ~override~
 SAY NAME1 @95
 SAY NAME2 @95
@@ -427,6 +431,7 @@ COPY ~ACBre/ITM/ACHAND3B.ITM~ ~override~
 SAY NAME1 @95
 SAY NAME2 @95
 SAY DESC @99
+*/
 COPY ~ACBre/ITM/ACHAND1a.ITM~ ~override~
 SAY NAME1 @100
 SAY NAME2 @100
@@ -435,6 +440,10 @@ COPY ~ACBre/ITM/ACHAND4.ITM~ ~override~
 SAY NAME1 @102
 SAY NAME2 @102
 SAY DESC @103
+COPY ~ACBre/ITM/ACHAND4A.ITM~ ~override~
+SAY NAME1 @102
+SAY NAME2 @102
+SAY DESC @5042
 COPY ~ACBre/ITM/AC_WCHAN.ITM~ ~override~
 SAY NAME1 @105
 SAY NAME2 @105
@@ -1405,6 +1414,8 @@ ADD_JOURNAL TITLE (@60010) @10047
 ADD_JOURNAL TITLE (@60011) @10048 @10049 @10050 @10051 @10052 @10053 @10054
 ADD_JOURNAL TITLE (@60012) @10055 @10056 @10057 @10058 @10059 @10060 @10061 @10062 @10063 @10064 @10065 @10066 @10067 @10068 @10069 @10070 @10071 @10072
 
+ADD_JOURNAL TITLE (@128) @125 @126 @127 USING ~ACBre/tra/autotra/%LANGUAGE%/acitem.tra~
+
 //Tilesets and Areas for BG2 Part
 
 ACTION_IF GAME_IS ~bgt tob~ THEN BEGIN
@@ -1480,6 +1491,20 @@ END
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
   EXTEND_TOP ~AR4500.bcs~ ~ACBre/baf/bg2/AR4500_eet.baf~
 END
+
+/* patch exit script from ID so energy cells stay in inventory */
+COPY_EXISTING ~TELE0700.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+        SPRINT textToReplace ~\(TakePartyItem("MISC4E")\)~
+        COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+        PATCH_IF (num_matches > 0) BEGIN
+            REPLACE_TEXTUALLY ~%textToReplace%~ ~~
+            PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+        END ELSE BEGIN
+            PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+        END
+    END
+BUT_ONLY
 
 
 

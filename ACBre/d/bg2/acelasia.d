@@ -50,7 +50,7 @@ END
 
 IF ~~ THEN BEGIN 6a
 SAY @25
-IF ~~ THEN DO ~EraseJournalEntry(@10038)EraseJournalEntry(@10045)EraseJournalEntry(@10039)EraseJournalEntry(@10040)EraseJournalEntry(@10041)AddJournalEntry(@10043,QUEST_DONE)DropItem("POTN26",[-1.-1])ActionOverride("ACBOR001",EscapeAreaDestroy(90))EscapeAreaDestroy(90)~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@10038)EraseJournalEntry(@10045)EraseJournalEntry(@10039)EraseJournalEntry(@10040)EraseJournalEntry(@10041)AddJournalEntry(@10043,QUEST_DONE)GiveItem("POTN26",Player1)ActionOverride("ACBOR001",EscapeAreaDestroy(90))EscapeAreaDestroy(90)~ EXIT
 END
 
 IF ~~ THEN BEGIN 7
@@ -117,7 +117,7 @@ END
 
 IF~~ THEN BEGIN 14
 SAY @47 = @48
-IF ~~ THEN DO ~SetGlobal("ACBORKPLOT","GLOBAL",2)DropItem("POTN26",[-1.-1])AddexperienceParty(6000)EraseJournalEntry(@10038)EraseJournalEntry(@10039)EraseJournalEntry(@10040)EraseJournalEntry(@10041)EraseJournalEntry(@10045)AddJournalEntry(@10046,QUEST_DONE)EscapeAreaDestroy(90)~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACBORKPLOT","GLOBAL",2)GiveItem("POTN26",Player1)AddexperienceParty(6000)EraseJournalEntry(@10038)EraseJournalEntry(@10039)EraseJournalEntry(@10040)EraseJournalEntry(@10041)EraseJournalEntry(@10045)AddJournalEntry(@10046,QUEST_DONE)EscapeAreaDestroy(90)~ EXIT
 END
 
 IF ~~ THEN BEGIN 15
@@ -127,6 +127,6 @@ END
 
 CHAIN
 IF ~~ THEN ACELASIA 9
-@49 DO ~TakePartyItem("POTN10")~
+@49 DO ~TakePartyItemNum("POTN10",1)~
 ==ACELASIA @50
 ==ACELASIA @51 DO ~UseItem("potn10",Myself)~ EXIT

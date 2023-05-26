@@ -980,7 +980,8 @@ IF ~~ THEN %IMOEN_JOINED% BREIMMYHAND2
 EXIT
 
 CHAIN
-IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")PartyHasItem("ACHAND3")Global("ACBreImmyHand2","GLOBAL",0)~ THEN ACBREJ BREIMMYHAND3a
+IF ~RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")InParty("%IMOEN_DV%")
+OR(2)PartyHasItem("ACHAND3")PartyHasItem("ACHAND3A") Global("ACBreImmyHand2","GLOBAL",0)~ THEN ACBREJ BREIMMYHAND3a
 @457
 ==%IMOEN_JOINED% @458
 END
@@ -1165,7 +1166,7 @@ IF ~Global("ACBRETia","GLOBAL",2)
 %BG1_BEFORE_TRANSITION%
 OR(2)
   PartyHasItem("ACAXE")
-  PartyHasItem("c!ax43")
+  PartyHasItem("c!ax44")
 InParty("ACBRE")
 InParty("Tiax")
 See("Tiax")
@@ -1332,7 +1333,7 @@ CHAIN
 IF ~Global("ACBREAja","GLOBAL",3)
 !Global("ACBREFRIENDACTIVE","GLOBAL",2)
 %BG1_BEFORE_TRANSITION%
-PartyHasItem("ACHAND3")
+OR(2)PartyHasItem("ACHAND3")PartyHasItem("ACHAND3A")
 InParty("ACBRE")
 InParty("Ajantis")
 See("Ajantis")
@@ -1522,7 +1523,7 @@ EXIT
 
 CHAIN
 IF ~Global("ACBREAlo","GLOBAL",2)
-PartyHasItem("ACHAND3")
+OR(2)PartyHasItem("ACHAND3")PartyHasItem("ACHAND3A")
 %BG1_BEFORE_TRANSITION%
 InParty("ACBRE")
 InParty("Alora")

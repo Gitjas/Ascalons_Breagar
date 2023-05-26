@@ -17,7 +17,7 @@ END
 
 IF WEIGHT #4 ~Global("ACBRENOTYOURAXE","GLOBAL",1)~ THEN BEGIN NOTYOURAXE
 SAY @3
-IF ~~ THEN DO ~SetGlobal("ACBRENOTYOURAXE","GLOBAL",2)TakePartyItem("ACAXE")TakePartyItem("ACAXE2")TakePartyItem("ACAXE3")TakePartyItem("c!ax43")TakePartyItem("c!ax44")TakePartyItem("c!ax45")~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACBRENOTYOURAXE","GLOBAL",2)TakePartyItem("ACAXE")TakePartyItem("ACAXE2")TakePartyItem("ACAXE3")TakePartyItem("c!ax44")TakePartyItem("c!ax45")TakePartyItem("c!ax46")~ EXIT
 END
 
 IF WEIGHT #7 ~Global("ACBREREPUTATION","LOCALS",2)Global("ACBREBOUTREP","LOCALS",1)~ THEN BEGIN BOUTREP.1

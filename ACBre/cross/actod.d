@@ -6,9 +6,19 @@ END
 END
 
 INTERJECT_COPY_TRANS VA#BALOR 2 ACVA#BALOR2
-== ACBreJ IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)OR(2)PartyHasItem("ACAXE")PartyHasItem("ACAXE2")~ THEN
+== ACBreJ IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)
+OR(4)
+	PartyHasItem("ACAXE")
+	PartyHasItem("ACAXE2")
+	PartyHasItem("c!ax44")
+	PartyHasItem("c!ax45")~ THEN
 @2
-== VA#BALOR IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)OR(2)PartyHasItem("ACAXE")PartyHasItem("ACAXE2")~ THEN
+== VA#BALOR IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)
+OR(4)
+	PartyHasItem("ACAXE")
+	PartyHasItem("ACAXE2")
+	PartyHasItem("c!ax44")
+	PartyHasItem("c!ax45")~ THEN
 @3
 END
 

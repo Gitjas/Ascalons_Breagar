@@ -3,6 +3,28 @@ APPEND ACBREJ
 IF ~TRUE()~ THEN BEGIN PID
 SAY @0
 IF ~AreaCheck("AR0334")Global("ACFORGE1","GLOBAL",2)PartyHasItem("ACSTONE1")PartyHasItem("ACSTONE2")PartyHasItem("ACSTONE3")~ THEN REPLY @1 DO ~SetGlobal("ACFORGE1","GLOBAL",3)~ + PID.FORGE
+//Energy cells from ID:
+/* Guergar forge in AR0603 */
+IF ~AreaCheck("AR0603")
+Global("ACMISC4E","GLOBAL",4)
+PartyHasItem("ACHAND3")
+PartyHasItem("MISC4E")
+AreaCheck("AR0603")
+OR(4)
+	Range("Forge1",20)
+	Range("Forge2",20)
+	Range("Forge3",20)
+	Range("Forge4",20)~ THEN REPLY @117 /* ~Ich denke jetzt sollten wir Zeit haben, damit Ihr an der Schmiede arbeiten könnt, Breagar.~ */ + PID_enerygcells
+/* Cromwell */
+IF ~AreaCheck("AR0334")
+Global("ACBREKNOWSCROMWELL","GLOBAL",1)
+GlobalLT("ACMISC4E","GLOBAL",5)
+PartyHasItem("ACHAND3")
+PartyHasItem("MISC4E")~ THEN REPLY @118 /* ~Ihr meintet Ihr würdet gerne etwas mit den Energiezellen aus dem Gefängnis von Irenicus ausprobieren. Dort waren wir nicht mehr dazu gekommen. Wollt Ihr es hier versuchen?~ */ + PID_enerygcells_cromwell
+IF ~AreaCheck("AR0334")
+Global("ACMISC4E","GLOBAL",5)
+PartyHasItem("ACHAND3")
+PartyHasItem("MISC4E")~ THEN REPLY @119 /* ~Macht das mit dem Schmieden der Energiezellen. Wir haben dafür jetzt Zeit.~ */ + PID_enerygcells
 IF ~Global("ACBREPID1","GLOBAL",1)~ THEN REPLY @2 + PID.1
 IF ~Global("ACBREPID2","GLOBAL",1)~ THEN REPLY @3 + PID.2
 ++ @4 + PID.10
@@ -21,6 +43,18 @@ END
 IF ~~ THEN BEGIN PID.FORGE
 SAY @8
 IF ~~ THEN DO ~ClearAllActions()StartCutScenemode()StartCutScene("ACCUT_13")~ EXIT
+END
+
+IF ~~ THEN PID_enerygcells_cromwell
+SAY @120 /* ~Ob ich das will? Da könnt Ihr aber Gift drauf nehmen, <CHARNAME>. Das juckt mich schon in den Fingern, seit wir hier reingekommen sind! Wir haben die Dinger wahrlich lange genug mit uns rumgetragen.~ */
+++ @119 /* Macht das mit dem Schmieden der Energiezellen. Wir haben dafür jetzt Zeit.~ */ + PID_enerygcells
+++ @121 /* Gut, ich merke es mir. Jetzt gerade passt es leider nicht.~ */ DO ~SetGlobal("ACMISC4E","GLOBAL",5)~ + PID.END
+END
+
+IF ~~ THEN PID_enerygcells
+SAY @122 /* ~Nun, dann wollen wir mal sehen, ob das so klappt wie ich mir das vorstelle. Bei Moradin!~ */
+IF ~~ THEN DO ~SetGlobal("ACMISC4E","GLOBAL",6) ClearAllActions()StartCutScenemode()StartCutScene("ACCUT_20")~ EXIT
+IF ~AreaCheck("AR0334")~ THEN DO ~SetGlobal("ACMISC4E","GLOBAL",6) ClearAllActions()StartCutScenemode()StartCutScene("ACCUT_19")~ EXIT
 END
 
 IF ~~ THEN BEGIN PID.END

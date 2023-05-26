@@ -400,6 +400,15 @@ silver arm in ToB
 	-Fixed trigger for comment in SoD bd4300.
 	-updated crossmod with Another fine Hell mod
 
+12.2.0:	(2023-05-26) by jastey
+	-Breagar will now use the energy cells from Irenicus' Dungeon to upgrade his silver arm (either in ID at the duergar forge or at Cromwell's if talked to).
+	-BGII(:EE): Imoen's interjection to Breagar's remark about energy cells should fire, too (corrected wrong DV and dlg for Imoen in ID).
+	-Quest characters should take only one instance of items, not the whole stack.
+	-Quest characters should not drop quest items onto teh floor instead of giving them to the PC.
+	-Minor fixes (potential stutter, looping trap script)
+	-Added EE specific item descriptions.
+	-reworked compatibility code to Tweak Anthology's "Two-handed axes".
+
 
 
 ***************************************************************************************************************
@@ -431,7 +440,7 @@ Englische Version:
 -alles von Brokenkatana gegengelesen.
 
 Russian version:
--by AlexKaran & Arcanecoast team (v11.5.0)
+-by AlexKaran & Arcanecoast team (v12.0.0)
 
 
 ***************************************************************************************************************

@@ -11,7 +11,7 @@ IF ~CheckStatGT(LastTalkedToBy(),11,CHR) PartyGoldGT(499)~ THEN REPLY @4 DO ~Tak
 IF ~CheckStatLT(LastTalkedToBy(),12,CHR) PartyGoldGT(499)~ THEN REPLY @4 + BREAGAR.2
 IF ~CheckStatGT(LastTalkedToBy(),9,CHR) PartyGoldGT(999)~ THEN REPLY @5 DO ~TakePartyGold(1000)~ + BREAGAR.1
 IF ~CheckStatLT(LastTalkedToBy(),10,CHR) PartyGoldGT(999)~ THEN REPLY @5 + BREAGAR.2
-IF ~Global("ACHARPERAMULET","LOCALS",1)PartyHasItem("MISC5E")~ THEN REPLY @6 DO ~TakePartyItem("MISC5E")DestroyItem("MISC5E")~ + BREAGAR.7
+IF ~Global("ACHARPERAMULET","LOCALS",1)PartyHasItem("MISC5E")~ THEN REPLY @6 DO ~TakePartyItemNum("MISC5E",1)DestroyItem("MISC5E")~ + BREAGAR.7
 ++ @7 + BREAGAR.3
 ++ @8 + BREAGAR.4
 ++ @9 + BREAGAR.4
@@ -35,7 +35,7 @@ IF ~CheckStatLT(LastTalkedToBy(),12,CHR) PartyGoldGT(499)~ THEN REPLY @4 + BREAG
 IF ~CheckStatGT(LastTalkedToBy(),9,CHR) PartyGoldGT(999)~ THEN REPLY @5 DO ~TakePartyGold(1000)~ + BREAGAR.1
 IF ~CheckStatLT(LastTalkedToBy(),10,CHR) PartyGoldGT(999)~ THEN REPLY @5 + BREAGAR.2
 IF ~PartyGoldGT(1999)~ THEN REPLY @13 DO ~TakePartyGold(2000)~ + BREAGAR.1
-IF ~Global("ACHARPERAMULET","LOCALS",1)PartyHasItem("MISC5E")~ THEN REPLY @6 DO ~TakePartyItem("MISC5E")DestroyItem("MISC5E")~ + BREAGAR.7
+IF ~Global("ACHARPERAMULET","LOCALS",1)PartyHasItem("MISC5E")~ THEN REPLY @6 DO ~TakePartyItemNum("MISC5E",1)DestroyItem("MISC5E")~ + BREAGAR.7
 ++ @7 + BREAGAR.3
 ++ @8 + BREAGAR.4
 ++ @9 + BREAGAR.4
@@ -55,7 +55,7 @@ IF ~CheckStatGT(LastTalkedToBy(),9,CHR) PartyGoldGT(999)~ THEN REPLY @5 DO ~Take
 IF ~CheckStatLT(LastTalkedToBy(),10,CHR) PartyGoldGT(999)~ THEN REPLY @5 + BREAGAR.2
 IF ~PartyGoldGT(1999)~ THEN REPLY @13 DO ~TakePartyGold(2000)~ + BREAGAR.1
 IF ~Global("ACHARPERAMULET","LOCALS",0)~ THEN REPLY @15 + BREAGAR.5
-IF ~Global("ACHARPERAMULET","LOCALS",1)PartyHasItem("MISC5E")~ THEN REPLY @6 DO ~TakePartyItem("MISC5E")DestroyItem("MISC5E")~ + BREAGAR.7
+IF ~Global("ACHARPERAMULET","LOCALS",1)PartyHasItem("MISC5E")~ THEN REPLY @6 DO ~TakePartyItemNum("MISC5E",1)DestroyItem("MISC5E")~ + BREAGAR.7
 ++ @8 + BREAGAR.4
 ++ @9 + BREAGAR.4
 END
@@ -131,7 +131,7 @@ IF ~CheckStatLT(LastTalkedToBy(),12,CHR) PartyGoldGT(499)~ THEN REPLY @4 + BREAG
 IF ~CheckStatGT(LastTalkedToBy(),9,CHR) PartyGoldGT(999)~ THEN REPLY @5 DO ~TakePartyGold(1000)~ + BREAGAR.1
 IF ~CheckStatLT(LastTalkedToBy(),10,CHR) PartyGoldGT(999)~ THEN REPLY @5 + BREAGAR.2
 IF ~PartyGoldGT(1999)~ THEN REPLY @13 DO ~TakePartyGold(2000)~ + BREAGAR.1
-IF ~Global("ACHARPERAMULET","LOCALS",1)PartyHasItem("MISC5E")~ THEN REPLY @39 DO ~TakePartyItem("MISC5E")DestroyItem("MISC5E")~ + BREAGAR.7
+IF ~Global("ACHARPERAMULET","LOCALS",1)PartyHasItem("MISC5E")~ THEN REPLY @39 DO ~TakePartyItemNum("MISC5E",1)DestroyItem("MISC5E")~ + BREAGAR.7
 ++ @40 + BREAGAR.4
 
 CHAIN

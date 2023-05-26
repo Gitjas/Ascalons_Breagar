@@ -117,7 +117,7 @@ END
 
 IF ~~ THEN BEGIN 15
 SAY @32
-IF ~~ THEN DO ~TakePartyItem("BOOK89")SetGlobal("ACBOOKWORK","GLOBAL",2)SetGlobalTimer("ACBOOKWORKTIMER","GLOBAL",ONE_DAY)AddexperienceParty(15000)TakePartyItem("ACTEXT1")TakePartyItem("ACTEXT2")TakePartyItem("ACTEXT3")EscapeAreaDestroy(10)~ EXIT
+IF ~~ THEN DO ~TakePartyItemNum("BOOK89",1)SetGlobal("ACBOOKWORK","GLOBAL",2)SetGlobalTimer("ACBOOKWORKTIMER","GLOBAL",ONE_DAY)AddexperienceParty(15000)TakePartyItem("ACTEXT1")TakePartyItem("ACTEXT2")TakePartyItem("ACTEXT3")EscapeAreaDestroy(10)~ EXIT
 END
 
 IF ~Global("ACBOOKWORK","GLOBAL",6)RandomNum(3,1)~ THEN BEGIN 16

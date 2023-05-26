@@ -121,3 +121,17 @@
 @120  = ~Warum sollten die Blätter denn... BUZZURK!~
 @121  = ~In der freien Wildbahn muss man nehmen, was man bekommt.~
 @122  = ~Ihr solltet auch einmal einen Blick hineinwerfen, <CHARNAME>. Bevor das Werk noch auf der Reise Schaden nimmt.~
+
+/* new for v12.2.0 */
+@123  = ~Das ist eine schöne Schmiede, <CHARNAME>. Wie ärgerlich, dass sie nur für dieses Dunkelvolk zugänglich ist. Wenn wir hier fertig sind, würde ich hier mit den Energiezellen gerne meinen Arm verbessern.~
+@124  = ~Ja, das hat so geklappt wie ich es mir dachte, auch wenn das Schmieden am eigenen Arm etwas heikel ist, bei Moradin. Aber nun profitiert mein Silberarm von der Magie dieser verflixten Dinger, er ist nun merkbar stärker.~
+@125  = ~Breagar möchte die Energiezellen verwenden
+
+Breagar meinte er habe einen Nutzen für die Energiezellen, die wir gefunden haben. Er braucht nur noch eine gute Schmiede.~
+@126  = ~Breagar möchte die Energiezellen verwenden
+
+Die Schmiedeöfen von den Duergar im Kerker von Irenicus wären geeignet für Breagars Schmiedevorhaben. Ich sollte ihn wissen lassen, wenn er damit beginnen kann.~
+@127  = ~Breagar möchte die Energiezellen verwenden
+
+Bregar hat die Energiezellen verwendet. Sein Silberarm ist nun stärker.~
+@128  = ~Breagar möchte die Energiezellen verwenden~

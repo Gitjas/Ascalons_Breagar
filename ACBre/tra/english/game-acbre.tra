@@ -61,6 +61,7 @@ Disadvantages:
 @68   = ~BREAGAR of Clan Bardormar rumbles behind his beard, when you ask for his story. From what you can understand, he hails from the Storm Horn mountains and left his clan for reasons, that could never be understood by a "foolish <PRO_RACE>, who never walked a tunnel in <PRO_HISHER> life", as he puts it. Maybe the dwarf will warm up to you in time and might even tell you what motivates him.~
 @69   = ~Ha! Taste my axe!~ [ACBre_36]
 @70   = ~Injured Breagar~
+//BGII #6656 + addition
 @71   = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes.
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
@@ -80,7 +81,8 @@ Not usable by:
 - Clerics
 - Mages
 - Monks~
-@72   = ~ The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain. 
+// BGII #6706 + addition
+@72   = ~The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain. 
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
@@ -98,6 +100,7 @@ Not usable by:
 - Druids
 - Mages
 - Monks~
+// BGII #6709 + addition
 @73   = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies; some being spiked, others flanged, and still others have pyramidal knobs. 
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
@@ -115,7 +118,9 @@ Not usable by:
 - Thieves
 - Druids
 - Mages~
-@74   = ~ The morning star is a wooden shaft topped with a metal head made up of a spiked iron sheath. Morning stars have an overall length of about four feet. Some such weapons have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+//BGII #6855 + addition
+@74   = ~The morning star is a wooden shaft topped with a metal head made up of a spiked iron sheath. Morning stars have an overall length of about four feet. Some such weapons have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
 
@@ -133,6 +138,7 @@ Not usable by:
 - Druids
 - Mages
 - Monks~
+//BGII #6720 + addition
 @75   = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. 
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
@@ -147,6 +153,7 @@ Type: 1-handed
 
 Not usable by:
 - Clerics~
+//BGII #6712 + addition
 @76   = ~By far the oldest and most often used pole-arm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke, and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe. 
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight
@@ -166,6 +173,7 @@ Not usable by:
 - Clerics
 - Mages
 - Monks~
+//BGII #6727 + addition
 @77   = ~One of man's earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When man mastered metals, spearheads were made from iron and steel. Having reached this end, weaponers began experimenting with different types of spear heads, thus leading to the development of certain polearm types.
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
@@ -184,6 +192,7 @@ Not usable by:
 - Druids
 - Mages
 - Monks~
+//BGII #6738 + additio
 @78   = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the sword ranged between four feet and four feet ten inches.
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
@@ -203,6 +212,7 @@ Not usable by:
 - Clerics
 - Mages
 - Monks~
+//BGII #6742 + addition
 @79   = ~These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
@@ -220,6 +230,7 @@ Not usable by:
 - Druids
 - Clerics
 - Mages~
+//BGII #6747 + addition
 @80   = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
@@ -237,6 +248,7 @@ Not usable by:
 - Druids
 - Clerics
 - Mages~
+//BGII #22712 + addition
 @81   = ~The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
@@ -255,6 +267,7 @@ Not usable by:
 - Clerics
 - Mages
 - Monks~
+//BGII #35963 + addition
 @82   = ~The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process, that is more art form than anything else. This blade is an important facet of Kara-Tur culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
@@ -272,6 +285,7 @@ Not usable by:
 - Druids
 - Clerics
 - Mages~
+//BGII #36181 + addition
 @83   = ~The wakizashi, or companion sword is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi, a shorter sword with a length between 12 and 24 inches, is a dangerous weapon in the hands of a skilled user.
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
@@ -289,6 +303,7 @@ Not usable by:
 - Druids
 - Clerics
 - Mages~
+//BGII #39467 + addition
 @84   = ~The sword of the ninja, the ninjato, is of lower quality than other Kara-Turan blades such as the katana. The ninjato is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninjato is also more suited to fighting in closed places, sometimes giving the ninja an advantage over the longer blades that the samurai use.
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
@@ -306,6 +321,7 @@ Not usable by:
 - Druids
 - Clerics
 - Mages~
+//BGII #6752 + addition
 @85   = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
 The dwarven smith Breagar has improved this weapon, so it won't break during a fight.
@@ -359,7 +375,7 @@ STATISTICS:
   +2 Points in Sword and Shield Style Proficiency 
   Armor Class: -2 bonus
   Saving Throws: +2 bonus~
-@99   = ~ Through Berronar's divine powers, the silver arm of a guardian golem was fused to the stump of Breagar's arm. Breagar can now use this hand, as if it were his own. The metal is enhanced by a blessing of the dwarven goddess, allowing Breagar to block weapons and even magical attacks to some extent. Unfortunately, the fingers of this new hand are too thick for wearing rings.
+@99   = ~Through Berronar's divine powers, the silver arm of a guardian golem was fused to the stump of Breagar's arm. Breagar can now use this hand, as if it were his own. The metal is enhanced by a blessing of the dwarven goddess, allowing Breagar to block weapons and even magical attacks to some extent. Unfortunately, the fingers of this new hand are too thick for wearing rings.
 
 Thanks to the energy cells found in the dungeon of Irenicus, the silver arm can now wield off-hand weapons much more effectively.
 
@@ -370,7 +386,7 @@ STATISTICS:
   Saving Throws: +2 bonus~
 @100  = ~Breagar's missing hand~
 @101  = ~Since Breagar's hand was torn-off in an accident in the Thunderhammer Smithy, he can no longer wear rings.~
-@102  = ~Breagar's meteorite hand ~
+@102  = ~Breagar's meteorite hand~
 @103  = ~Through Berronar's divine powers, the silver arm of a guardian golem was fused to the stump of Breagar's arm. Breagar can now use this hand, as if it were his own. The metal is enhanced by a blessing of the dwarven goddess, allowing Breagar to block weapons and even magical attacks to some extent. Unfortunately, the fingers of this new hand are too thick for wearing rings.
 
 Breagar success fully managed to incorporate meteorite ore into the hand, and improved its resistance to damage.
@@ -461,13 +477,13 @@ Only usable by:
 
 STATISTICS:
 
-Armor Class: 5
-  Armor Class: -1 bonus
-  Magic Resistance: +2% bonus
-Weight: 6
-
+Armor Class:  5
+Magic Resistance:  5%
+Saving Throw:  +1 bonus
+Weight:  6
 Only usable by:
-- Mages~
+Mage (single, dual, & multi-class)~
+
 @118  = ~Borsk~
 @119  = ~Theber~
 @120  = ~Karela~
@@ -719,6 +735,16 @@ G.~
 @5040 = ~Ha, that dragon chose a great spot for his death. A reminder to a great battle, and victory for the people here.~
 @5041 = ~Normally, such ornaments would give my smithy's heart joy. But this door radiates an evil gloominess that makes it impossible to marvel at the craftmanship.~
 
+/* new for v12.2.0 */
+@5042  = ~Through Berronar's divine powers, the silver arm of a guardian golem was fused to the stump of Breagar's arm. Breagar can now use this hand, as if it were his own. The metal is enhanced by a blessing of the dwarven goddess, allowing Breagar to block weapons and even magical attacks to some extent. Unfortunately, the fingers of this new hand are too thick for wearing rings.
+
+Breagar success fully managed to incorporate meteorite ore into the hand, and improved its resistance to damage.
+
+STATISTICS:
+
+  Strength Bonus: +1
+  Armor Class: -3 bonus
+  Saving Throws: +3 bonus~
 
 ///////////////////////////////////////////
 ///// Journal entries

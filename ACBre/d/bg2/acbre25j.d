@@ -160,7 +160,9 @@ IF ~Global("ACBREFORGESARM","GLOBAL",1)~ THEN ACBRE25J ACBREFORGESNEWARM
 ==ACBRE25J IF ~See("AMSMITH")!StateCheck("AMSMITH",CD_STATE_NOTVALID)~ THEN @53
 ==ACBRE25J @54
 END
-IF ~~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("ACCUT_18")~ EXIT
+IF ~HasItem("ACHAND3A","ACBRE")~ THEN DO ~SetInterrupt(FALSE) ClearAllActions() TakeItemReplace("ACHAND4A","ACHAND3A","ACBRE") StartCutSceneMode()StartCutScene("ACCUT_18") SetInterrupt(TRUE)~ EXIT
+IF ~HasItem("ACHAND3","ACBRE")~ THEN DO ~SetInterrupt(FALSE) ClearAllActions() TakeItemReplace("ACHAND4","ACHAND3","ACBRE")
+StartCutSceneMode()StartCutScene("ACCUT_18") SetInterrupt(TRUE)~ EXIT
 
 CHAIN
 IF ~Global("ACTOWERCLEANER","LOCALS",5)~ THEN ACBRE25J TOWERCLEANER.4

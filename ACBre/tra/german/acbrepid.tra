@@ -115,3 +115,11 @@
 @114  = ~Der Drache klaut das Gold um auf ihm zu schlafen und der Zwerg klaut das Gold, um mit ihm zu schlafen.~
 @115  = ~Der Witz hat schon sooo einen Bart, <CHARNAME>.~
 @116  = ~Also ich fand ihn lustig.~
+
+/* new for v12.2.0 */
+@117  = ~Ich denke jetzt sollten wir Zeit haben, damit Ihr an der Schmiede arbeiten könnt, Breagar.~
+@118  = ~Ihr meintet Ihr würdet gerne etwas mit den Energiezellen aus dem Gefängnis von Irenicus ausprobieren. Dort waren wir nicht mehr dazu gekommen. Wollt Ihr es hier versuchen?~
+@119  = ~Macht das mit dem Schmieden der Energiezellen. Wir haben dafür jetzt Zeit.~
+@120  = ~Ob ich das will? Da könnt Ihr aber Gift drauf nehmen, <CHARNAME>. Das juckt mich schon in den Fingern, seit wir hier reingekommen sind! Wir haben die Dinger wahrlich lange genug mit uns rumgetragen.~
+@121  = ~Gut, ich merke es mir. Jetzt gerade passt es leider nicht.~
+@122  = ~Nun, dann wollen wir mal sehen, ob das so klappt wie ich mir das vorstelle. Bei Moradin!~

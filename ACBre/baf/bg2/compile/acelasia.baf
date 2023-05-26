@@ -7,7 +7,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("ACBORKPLOT","GLOBAL",2)
 		DisplayStringHead(Myself,@5019)
-		DropItem("POTN26",[-1.-1])
+		GiveItem("POTN26",Player1)
 		AddexperienceParty(6000)
 		EraseJournalEntry(@10038)
 		EraseJournalEntry(@10039)

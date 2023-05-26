@@ -36,7 +36,7 @@ THEN
 		ActionOverride("AMSMITH",TakePartyItem("ACCOMPON"))
 		ActionOverride("AMSMITH",DestroyItem("ACCOMPON"))
 //		ActionOverride("ACBRE",DropInventory())
-		ActionOverride("ACBRE",TakeItemReplace("ACHAND4","ACHAND3",Myself))
+//		ActionOverride("ACBRE",TakeItemReplace("ACHAND4","ACHAND3",Myself))
 //		ActionOverride("ACBRE",CreateItem("ACHAND4",0,0,0))
 		Wait(2)
 		FadeFromColor([20.0],0)

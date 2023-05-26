@@ -1,4 +1,3 @@
-
 @17   = ~Zwergenschmied~
 @18   = ~ZWERGENSCHMIED: In den Hallen der Zwergenclans wird die Meisterschaft eines Handwerkes als höchste zu erlangende Kunst angesehen. Angehörigen anderer Rassen sind Zwerge am ehesten als tapfere Bergleute und talentierte Schmiede bekannt, von denen gerade letztere durch ihre kunstvollen Waffen auf der ganzen Welt einen besondernen Ruf halten. Der typische Zwergenschmied ist kräftig und zäh, das lange Arbeiten am offenen Feuer hat ihn unempfindlich gegen die Hitze gemacht. Ein wahrer Meisterschmied erkennt die Geheimnisse, die ein Werkstück in sich birgt, auf den ersten Blick. Obwohl der Schmied nicht zögert, seinen Amboss vor jeglichen Gefahren zu schützen, kennt er die meisten Waffen doch nur vom Übungsplatz und verlässt sich im Kampf auf wuchtige Hiebwaffen wie Hämmer und Äxte.
 
@@ -719,6 +718,16 @@ G.~
 @5040 = ~Ha, der Drache hat einen malerischen Ort für sein Ableben ausgesucht. Ein Denkmal für eine große Schlacht, und den Sieg der Leute hier.~
 @5041 = ~Eigentlich sollten mich die geschmiedeten Verzierungen auf dem Tor entzücken, aber diese Tür strahlt etwas so abgrundtief Böses aus, dass es unmöglich ist, sich an der Schmiedekunst zu erfreuen.~
 
+/* new for v12.2.0 */
+@5042  = ~Durch Berronars mächtige Magie wurde der silberne Arm des Wächtergolems mit Breagars Armstumpf verbunden. Breagar kann die Hand verwenden, als ob es seine eigene wäre. Der Segen der Zwergengöttin verstärkt das Metall genug, dass Breagar damit Waffen blocken und sogar magischen Angriffen ein wenig trotzen kann. Leider sind die Finger der neuen Hand zu dick, als dass er einen Ring über sie streifen könnte.
+
+Mit Hilfe des Meteoritenerzes, welches Breagar erfolgreich in den Golemarm implementierten konnte, ist es ihm gelungen, dessen Widerstandsfähigkeit noch einmal zu verbessern.
+
+EIGENSCHAFTEN:
+
+  Stärkebonus: +1
+  RK-Bonus: -3
+  RW-Bonus: +3~
 
 ///////////////////////////////////////////
 ///// Tagebucheinträge

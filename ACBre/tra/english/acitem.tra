@@ -121,3 +121,19 @@
 @120  = ~Why should the pages be... BUZZURK!~
 @121  = ~In the wilderness, you have to use what you can get.~
 @122  = ~Maybe you should also take a look, <CHARNAME>. Bevor the book gets *damaged* on our journey.~
+
+
+/* new for v12.2.0 */
+@123  = ~This is a beautiful forge, <CHARNAME>. How annoying that it's only accessible to these dark folk. When we're done here, I'd like to use the energy cells to improve my arm.~
+@124  = ~Yes, that worked out as I thought it would, even if forging on your own arm is a bit tricky, by Moradin. But now my silver arm benefits from the magic of these darn things, it is now noticeably stronger.~
+@125  = ~Breagar wants to use the energy cells
+
+Breagar said he had a use for the energy cells we found. All he needs now is a good forge.~
+@126  = ~Breagar wants to use the energy cells
+
+The forge furnaces from the duergar in Irenicus' dungeon would be suitable for Breagar's forging project. I should let him know when he can start.~
+@127  = ~Breagar wants to use the energy cells
+
+Breagar has used the energy cells. His silver arm is now stronger.~
+@128  = ~Breagar wants to use the energy cells~
+

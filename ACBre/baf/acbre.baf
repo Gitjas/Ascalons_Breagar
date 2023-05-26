@@ -37,9 +37,9 @@ IF
     HasItem("ACAXE",Myself)
     HasItem("ACAXE2",Myself)
     HasItem("ACAXE3",Myself)
-    HasItem("c!ax43",Myself)
     HasItem("c!ax44",Myself)
     HasItem("c!ax45",Myself)
+    HasItem("c!ax46",Myself)
 	!Global("ACBREMYAXE","GLOBAL",1)
 THEN
 	RESPONSE #100
@@ -51,9 +51,9 @@ END
 IF
 	OR(2)
     PartyHasItem("ACAXE")
-	  PartyHasItem("c!ax43")
+	  PartyHasItem("c!ax44")
 	!HasItem("ACAXE",Myself)
-	!HasItem("c!ax43",Myself)
+	!HasItem("c!ax44",Myself)
 	!Global("ACBRENOTYOURAXE","GLOBAL",1)
 	OR(2)
 		GlobalGT("ACSTORY","GLOBAL",4)
@@ -68,9 +68,9 @@ END
 IF
   OR(2)
     PartyHasItem("ACAXE2")
-    PartyHasItem("c!ax44")
+    PartyHasItem("c!ax45")
 	!HasItem("ACAXE2",Myself)
-	!HasItem("c!ax44",Myself)
+	!HasItem("c!ax45",Myself)
 	!Global("ACBRENOTYOURAXE","GLOBAL",1)
 	OR(2)
 		GlobalGT("ACSTORY","GLOBAL",4)
@@ -84,9 +84,9 @@ END
 IF
   OR(2)
     PartyHasItem("ACAXE3")
-    PartyHasItem("c!ax45")
+    PartyHasItem("c!ax46")
 	!HasItem("ACAXE3",Myself)
-	!HasItem("c!ax45",Myself)
+	!HasItem("c!ax46",Myself)
 	!Global("ACBRENOTYOURAXE","GLOBAL",1)
 	OR(2)
 		GlobalGT("ACSTORY","GLOBAL",4)
@@ -114,9 +114,9 @@ IF
 	!PartyHasItem("ACAXE")
 	!PartyHasItem("ACAXE2")
 	!PartyHasItem("ACAXE3")
-	!PartyHasItem("c!ax43")
 	!PartyHasItem("c!ax44")
 	!PartyHasItem("c!ax45")
+	!PartyHasItem("c!ax46")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck("ACBRE",CD_STATE_NOTVALID)
@@ -135,9 +135,9 @@ IF
 	!PartyHasItem("ACAXE")
 	!PartyHasItem("ACAXE2")
 	!PartyHasItem("ACAXE3")
-	!PartyHasItem("c!ax43")
 	!PartyHasItem("c!ax44")
 	!PartyHasItem("c!ax45")
+	!PartyHasItem("c!ax46")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck("ACBRE",CD_STATE_NOTVALID)
@@ -158,9 +158,9 @@ IF
 	!PartyHasItem("ACAXE")
 	!PartyHasItem("ACAXE2")
 	!PartyHasItem("ACAXE3")
-	!PartyHasItem("c!ax43")
 	!PartyHasItem("c!ax44")
 	!PartyHasItem("c!ax45")
+	!PartyHasItem("c!ax46")
 OR(3)
 	Global("ACBREMYAXE","GLOBAL",2)
 	Global("ACBREMYAXE","GLOBAL",4)
@@ -534,7 +534,7 @@ IF
 	PartyHasItem("ACBOWL")
   OR(2)
   	PartyHasItem("ACAXE")
-  	PartyHasItem("c!ax43")
+  	PartyHasItem("c!ax44")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck("ACBRE",CD_STATE_NOTVALID)
@@ -726,7 +726,7 @@ IF
 	!See([ENEMY])
 	!StateCheck("ACBre",CD_STATE_NOTVALID)
 	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
-	PartyHasItem("ACHAND3")
+	OR(2) PartyHasItem("ACHAND3") PartyHasItem("ACHAND3A")
 	Global("ACBreImmyHand2","GLOBAL",0)
 THEN
 	RESPONSE #100
@@ -1052,6 +1052,7 @@ IF
 	InParty(Myself) 
 	See(Player1)
 	Global("ACAUDQUEST","GLOBAL",2)
+	Global("ACAUDQUESTSTARTER","LOCALS",0)
 	!InMyArea("ACAUD001")
 	%BGT_VAR2%
 OR(8)
@@ -1245,7 +1246,7 @@ IF
 	PartyHasItem("ACPLOT1C")
   OR(2)
   	PartyHasItem("ACAXE")
-  	PartyHasItem("c!ax43")
+  	PartyHasItem("c!ax44")
 	%BGT_VAR2%
 	CombatCounter(0)
 	!See([ENEMY])
@@ -1466,7 +1467,7 @@ IF
 	PartyHasItem("ACSTONE3")
   OR(2)
     PartyHasItem("ACAXE")
-    PartyHasItem("c!ax43")
+    PartyHasItem("c!ax44")
 	AreaCheck("AR0334")
 THEN
 	RESPONSE #100
@@ -1501,7 +1502,7 @@ END
 
 IF 
 	InParty(Myself)
-	PartyHasItem("ACHAND3")
+	OR(2) PartyHasItem("ACHAND3") PartyHasItem("ACHAND3A")
 	%BG1_BEFORE_TRANSITION%
 	Global("ACBREBANTER2","LOCALS",0)
 	Global("ACBREFRIENDACTIVE","GLOBAL",1)
@@ -3144,6 +3145,7 @@ IF
 	InParty(Myself) 
 	See(Player1)
 	PartyHasItem("MISC4E")
+	OR(2) AreaCheck("AR0602") AreaCheck("AR0603")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck("ACBre",CD_STATE_NOTVALID)
@@ -3499,6 +3501,42 @@ THEN
 		IncrementGlobal("ACBERROSTONE","LOCALS",1)
 		Continue()
 END
+
+/* Forge in Irenicus Dungeon */
+IF
+	%BGT_VAR2%
+	InParty(Myself) 
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("ACMISC4E","GLOBAL",2)
+	%BGT_VAR2%
+	PartyHasItem("MISC4E")
+	PartyHasItem("ACHAND3")
+	AreaCheck("AR0603")
+	OR(4)
+		Range("Forge1",15)
+		Range("Forge2",15)
+		Range("Forge3",15)
+		Range("Forge4",15)
+THEN
+	RESPONSE #100
+		SetGlobal("ACMISC4E","GLOBAL",3)
+END
+
+IF
+	%BGT_VAR2%
+	InParty(Myself) 
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("ACMISC4E","GLOBAL",3)
+	AreaCheck("AR0603")
+THEN
+	RESPONSE #100
+		StartDialogNoSet(PLAYER1)
+END
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
