@@ -117,10 +117,10 @@
 @116  = ~Я нашёл это забавным.~
 
 /* new for v12.2.0 */
-@117  = ~I think now we should have time for you to work on the forge, Breagar.~
-@118  = ~You said you would like to try something with the energy cells from the prison of Irenicus. We didn't get around to it there. Do you want to try it here?~
-@119  = ~Do that with the forging of the energy cells. We have time for that now.~
-@120  = ~Do I want to? You bet your ass, <CHARNAME>. I've been itching to do that ever since we came in here! We've been carrying those things around long enough.~
-@121  = ~Good, I'll keep it in mind. Right now, unfortunately, we do not have time.~
-@122  = ~Well, let's see if that works out the way I imagine. By Moradin!~
+@117  = ~Думаю, теперь у нас должно быть время для работы над кузницей, Бреагар.~
+@118  = ~Ты говорил, что хотел бы попробовать что-то сделать с энергетическими элементами из тюрьмы Айреникуса. Мы не успели сделать это тогда. Хочешь попробовать здесь?~
+@119  = ~Тогда приступай к работе над энергетическим элементами. Сейчас у нас есть на это время.~
+@120  = ~Хочу ли я? Ещё бы, <CHARNAME>. У меня руки чешутся с тех пора, как мы здесь оказались! Мы уже долго таскаем эти штуки с собой.~
+@121  = ~Хорошо, я буду иметь это в виду. Сейчас, к сожалению, у нас нет на это времени.~
+@122  = ~Ну что ж, посмотрим, сработает ли это так, как я себе представлял. Во имя Морадина!~
 
