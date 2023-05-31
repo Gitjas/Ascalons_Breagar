@@ -400,8 +400,8 @@ silver arm in ToB
 	-Fixed trigger for comment in SoD bd4300.
 	-updated crossmod with Another fine Hell mod
 
-12.2.0:	(2023-05-26) by jastey
-	-Breagar will now use the energy cells from Irenicus' Dungeon to upgrade his silver arm (either in ID at the duergar forge or at Cromwell's if talked to).
+12.2.0:	(2023-05-31) by jastey
+	-Breagar will now use the energy cells from Irenicus' Dungeon to upgrade his silver arm (either in ID at the duergar forge or at Cromwell's if talked to); Russian translation by paladin84.
 	-BGII(:EE): Imoen's interjection to Breagar's remark about energy cells should fire, too (corrected wrong DV and dlg for Imoen in ID).
 	-Quest characters should take only one instance of items, not the whole stack.
 	-Quest characters should not drop quest items onto teh floor instead of giving them to the PC.
@@ -438,9 +438,11 @@ Englische Version:
 -Ein erster Teil von Gertwenger und Sergio, überarbeitet von Bloodtitan
 -für v10 fertig übersetzt von Eimerian
 -alles von Brokenkatana gegengelesen.
+-Addition in v12.2.0 by jastey
 
 Russian version:
 -by AlexKaran & Arcanecoast team (v12.0.0)
+-update to v12.2.0 by paladin84.
 
 
 ***************************************************************************************************************
@@ -483,7 +485,7 @@ Nein, natürlich nicht. Spiel weiter.
 Nein. Zum einen, weil das wieder mit Aufwand verbunden wäre, zum anderen, weil man glaube ich mit Fug und Recht sagen kann, dass es auf Kerzenburg keine Zwergenschmiede gibt, bei denen CHARNAME die Kunst hätte lernen können.
 
 - Wassn das für ein Portrait? Ich will das alte wieder!
-Das alte Portrait findet sich unter /ACBRE/PORTRAITS/GERRI. Einfach die drei Bilder in den Override Ordner kopieren. Oder bei der Installation die 2 wählen.
+Das alte Portrait wurde aus Copyright-Gründen rausgenommen.
 
 - Deine Mod ist genial!
 Das ist keine Frage, aber trotzdem danke!
