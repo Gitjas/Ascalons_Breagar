@@ -114,7 +114,7 @@ LANGUAGE ~Deutsch~ ~german~ ~ACBre/TRA/german/setup-ACBre.tra~
 LANGUAGE ~English~ ~english~ ~ACBre/TRA/english/setup-ACBre.tra~
 			~ACBre/TRA/english/game-acbre.tra~
 
-LANGUAGE ~Russian (by AlexKaran & Arcanecoast team)~ ~russian~ 
+LANGUAGE ~Russian (by klichko86 & AlexKaran & Arcanecoast team)~ ~russian~ 
 			~ACBre/TRA/english/setup-ACBre.tra~
 			~ACBre/TRA/russian/game-acbre.tra~
 
