@@ -22,7 +22,7 @@ END
 
 IF ~~ THEN BEGIN 2
 SAY @7
-++ @8 + 5
+++ @8 + 4
 IF ~OR(3)PartyHasItem("ACTEXT1")PartyHasItem("ACTEXT2")PartyHasItem("ACTEXT3")~ THEN REPLY @2 + 3
 ++ @4 + 4
 END
