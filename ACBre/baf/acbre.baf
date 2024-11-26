@@ -3658,13 +3658,23 @@ THEN
 		StartDialogNoSet(Player1)
 END
 
-
 /* at Fierkraag's entrance */
 IF
 	%BGT_VAR2%
 	InParty(Myself)
 	See(Player1)
 	Global("ACAR1201","LOCALS",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+/* at Shadow Temple */
+IF
+	%BGT_VAR2%
+	InParty(Myself)
+	See(Player1)
+	Global("ACAR1401","LOCALS",1)
 THEN
 	RESPONSE #100
 		StartDialogNoSet(Player1)
