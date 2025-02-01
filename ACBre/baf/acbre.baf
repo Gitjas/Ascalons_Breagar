@@ -3254,9 +3254,7 @@ END
 IF
 	InParty(Myself) 
 	See(Player1)
-	OR(2)
-		PartyHasItem("MISC7R")
-		PartyHasItem("ACMISC7R")
+	PartyHasItem("MISC7R")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck("ACBre",CD_STATE_NOTVALID)
