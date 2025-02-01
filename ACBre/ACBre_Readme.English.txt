@@ -408,6 +408,12 @@ silver arm in ToB
 	-Added EE specific item descriptions.
 	-reworked compatibility code to Tweak Anthology's "Two-handed axes".
 
+12.2.1:	(2025-02-01) by jastey
+	-Revision of Russian version, by klichko86.
+	-Fix illogical transition in ACOGHMA1.D, by Ychap.
+	-Do not set "ACMISC7R" during BG1, by Ychap.
+	-Start Breagar's dialog at Shadow Temple, by Ychap.
+
 ***************************************************************************************************************
 
 
