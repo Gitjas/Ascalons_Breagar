@@ -415,6 +415,9 @@ silver arm in ToB
 	-Do not set "ACMISC7R" during BG1, by Ychap.
 	-Start Breagar's dialog at Shadow Temple, by Ychap.
 
+12.2.2:	(xxx) by xxx
+	-(German) typo correction
+
 
 
 ***************************************************************************************************************
