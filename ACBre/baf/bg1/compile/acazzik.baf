@@ -1,8 +1,0 @@
-IF
-	Detect([PC])
-	Global("ACAZZIK","LOCALS",0)
-THEN
-	RESPONSE #100
-		SetGlobal("ACAZZIK","LOCALS",1)
-		StartDialogNoSet([PC])
-END

@@ -1,9 +1,0 @@
-IF
-	Detect([PC])
-	Global("ACGIANT","LOCALS",0)
-THEN
-	RESPONSE #100
-		SetGlobal("ACGIANT","LOCALS",1)
-		DisplayStringHead("ACGIANT",@5011)
-		Enemy()
-END
