@@ -1,0 +1,10 @@
+IF 
+	%BG1_BEFORE_TRANSITION%
+	Global("ACSTORY","GLOBAL",0)
+	Global("CHAPTER","GLOBAL",%tutu_chapter_3%)
+THEN
+	RESPONSE #100
+		SetGlobal("ACSTORY","GLOBAL",1)
+		CreateCreature("ACAZZIK",[1116.1282],0)
+		Continue()
+END

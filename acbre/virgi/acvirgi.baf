@@ -1,0 +1,3040 @@
+IF
+	Global("ACANSTIQUEST","GLOBAL",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END 
+
+IF
+	GlobalLT("ACVIRGISELFDESTRUCT","LOCALS",9)
+THEN
+	RESPONSE #100
+		IncrementGlobal("ACVIRGISELFDESTRUCT","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("ACVIRGISELFDESTRUCT","LOCALS",9)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+  CheckStatGT(Player1,7999999,44)
+  CheckStatLT("ACBRE",7000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,7499999,44)
+  CheckStatLT("ACBRE",6500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,6999999,44)
+  CheckStatLT("ACBRE",6000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,6499999,44)
+  CheckStatLT("ACBRE",5500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,5999999,44)
+  CheckStatLT("ACBRE",5000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,5499999,44)
+  CheckStatLT("ACBRE",4500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,4999999,44)
+  CheckStatLT("ACBRE",4000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,4499999,44)
+  CheckStatLT("ACBRE",3500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,3999999,44)
+  CheckStatLT("ACBRE",3000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,3499999,44)
+  CheckStatLT("ACBRE",2500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,2999999,44)
+  CheckStatLT("ACBRE",2000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,2499999,44)
+  CheckStatLT("ACBRE",1500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,1999999,44)
+  CheckStatLT("ACBRE",1000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,1499999,44)
+  CheckStatLT("ACBRE",500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000000)
+END 
+
+IF
+  CheckStatGT(Player1,3999999,44)
+  CheckStatLT("ACBRE",3666667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333333)
+END 
+
+IF
+  CheckStatGT(Player1,3666666,44)
+  CheckStatLT("ACBRE",3333334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333333)
+END 
+
+IF
+  CheckStatGT(Player1,3333333,44)
+  CheckStatLT("ACBRE",3000001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333333)
+END 
+
+IF
+  CheckStatGT(Player1,2999999,44)
+  CheckStatLT("ACBRE",2666667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333333)
+END 
+
+IF
+  CheckStatGT(Player1,2666666,44)
+  CheckStatLT("ACBRE",2333334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333333)
+END 
+
+IF
+  CheckStatGT(Player1,2333333,44)
+  CheckStatLT("ACBRE",2000001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333333)
+END 
+
+IF
+  CheckStatGT(Player1,1999999,44)
+  CheckStatLT("ACBRE",1666667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333333)
+END 
+
+IF
+  CheckStatGT(Player1,1666666,44)
+  CheckStatLT("ACBRE",1333334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333333)
+END 
+
+IF
+  CheckStatGT(Player1,1333333,44)
+  CheckStatLT("ACBRE",1000001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333333)
+END 
+
+IF
+  CheckStatGT(Player1,999999,44)
+  CheckStatLT("ACBRE",666667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333333)
+END 
+
+IF
+  CheckStatGT(Player1,666666,44)
+  CheckStatLT("ACBRE",333334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333333)
+END 
+
+IF
+  CheckStatGT(Player1,1999999,44)
+  CheckStatLT("ACBRE",1900000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,1899999,44)
+  CheckStatLT("ACBRE",1800000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,1799999,44)
+  CheckStatLT("ACBRE",1700000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,1699999,44)
+  CheckStatLT("ACBRE",1600000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,1599999,44)
+  CheckStatLT("ACBRE",1500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,1499999,44)
+  CheckStatLT("ACBRE",1400000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,1399999,44)
+  CheckStatLT("ACBRE",1300000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,1299999,44)
+  CheckStatLT("ACBRE",1200000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,1199999,44)
+  CheckStatLT("ACBRE",1100000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,1099999,44)
+  CheckStatLT("ACBRE",1000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,999999,44)
+  CheckStatLT("ACBRE",900000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,899999,44)
+  CheckStatLT("ACBRE",800000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,799999,44)
+  CheckStatLT("ACBRE",700000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,699999,44)
+  CheckStatLT("ACBRE",600000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,599999,44)
+  CheckStatLT("ACBRE",500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,499999,44)
+  CheckStatLT("ACBRE",400000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,399999,44)
+  CheckStatLT("ACBRE",300000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,299999,44)
+  CheckStatLT("ACBRE",200000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,199999,44)
+  CheckStatLT("ACBRE",100000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100000)
+END 
+
+IF
+  CheckStatGT(Player1,999999,44)
+  CheckStatLT("ACBRE",966667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,966666,44)
+  CheckStatLT("ACBRE",933334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,933333,44)
+  CheckStatLT("ACBRE",900001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,899999,44)
+  CheckStatLT("ACBRE",866667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,866666,44)
+  CheckStatLT("ACBRE",833334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,833333,44)
+  CheckStatLT("ACBRE",800001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,799999,44)
+  CheckStatLT("ACBRE",766667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,766666,44)
+  CheckStatLT("ACBRE",733334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,733333,44)
+  CheckStatLT("ACBRE",700001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,699999,44)
+  CheckStatLT("ACBRE",666667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,666666,44)
+  CheckStatLT("ACBRE",633334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,633333,44)
+  CheckStatLT("ACBRE",600001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,599999,44)
+  CheckStatLT("ACBRE",566667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,566666,44)
+  CheckStatLT("ACBRE",533334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,533333,44)
+  CheckStatLT("ACBRE",500001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,499999,44)
+  CheckStatLT("ACBRE",466667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,466666,44)
+  CheckStatLT("ACBRE",433334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,433333,44)
+  CheckStatLT("ACBRE",400001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,399999,44)
+  CheckStatLT("ACBRE",366667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,366666,44)
+  CheckStatLT("ACBRE",333334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,333333,44)
+  CheckStatLT("ACBRE",300001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,299999,44)
+  CheckStatLT("ACBRE",266667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,266666,44)
+  CheckStatLT("ACBRE",233334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,233333,44)
+  CheckStatLT("ACBRE",200001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,199999,44)
+  CheckStatLT("ACBRE",166667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,166666,44)
+  CheckStatLT("ACBRE",133334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,133333,44)
+  CheckStatLT("ACBRE",100001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,99999,44)
+  CheckStatLT("ACBRE",66667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,66666,44)
+  CheckStatLT("ACBRE",33334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",33333)
+END 
+
+IF
+  CheckStatGT(Player1,199999,44)
+  CheckStatLT("ACBRE",190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,189999,44)
+  CheckStatLT("ACBRE",190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,179999,44)
+  CheckStatLT("ACBRE",190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,169999,44)
+  CheckStatLT("ACBRE",190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,159999,44)
+  CheckStatLT("ACBRE",190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,149999,44)
+  CheckStatLT("ACBRE",190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,139999,44)
+  CheckStatLT("ACBRE",190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,129999,44)
+  CheckStatLT("ACBRE",190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,119999,44)
+  CheckStatLT("ACBRE",190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,109999,44)
+  CheckStatLT("ACBRE",190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,99999,44)
+  CheckStatLT("ACBRE",90000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,89999,44)
+  CheckStatLT("ACBRE",80000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,79999,44)
+  CheckStatLT("ACBRE",70000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,69999,44)
+  CheckStatLT("ACBRE",60000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,59999,44)
+  CheckStatLT("ACBRE",50000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,49999,44)
+  CheckStatLT("ACBRE",40000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,39999,44)
+  CheckStatLT("ACBRE",30000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,29999,44)
+  CheckStatLT("ACBRE",20000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,19999,44)
+  CheckStatLT("ACBRE",10000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",10000)
+END 
+
+IF
+  CheckStatGT(Player1,99999,44)
+  CheckStatLT("ACBRE",96667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,96666,44)
+  CheckStatLT("ACBRE",93334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,93333,44)
+  CheckStatLT("ACBRE",90001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,89999,44)
+  CheckStatLT("ACBRE",86667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,86666,44)
+  CheckStatLT("ACBRE",83334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,83333,44)
+  CheckStatLT("ACBRE",80001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,79999,44)
+  CheckStatLT("ACBRE",76667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,76666,44)
+  CheckStatLT("ACBRE",73334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,73333,44)
+  CheckStatLT("ACBRE",70001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,69999,44)
+  CheckStatLT("ACBRE",66667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,66666,44)
+  CheckStatLT("ACBRE",63334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,63333,44)
+  CheckStatLT("ACBRE",60001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,59999,44)
+  CheckStatLT("ACBRE",56667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,56666,44)
+  CheckStatLT("ACBRE",53334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,53333,44)
+  CheckStatLT("ACBRE",50001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,49999,44)
+  CheckStatLT("ACBRE",46667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,46666,44)
+  CheckStatLT("ACBRE",43334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,43333,44)
+  CheckStatLT("ACBRE",40001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,39999,44)
+  CheckStatLT("ACBRE",36667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,36666,44)
+  CheckStatLT("ACBRE",33334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,33333,44)
+  CheckStatLT("ACBRE",30001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,29999,44)
+  CheckStatLT("ACBRE",26667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,26666,44)
+  CheckStatLT("ACBRE",23334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,23333,44)
+  CheckStatLT("ACBRE",20001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,19999,44)
+  CheckStatLT("ACBRE",16667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,16666,44)
+  CheckStatLT("ACBRE",13334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,13333,44)
+  CheckStatLT("ACBRE",10001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,9999,44)
+  CheckStatLT("ACBRE",6667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,6666,44)
+  CheckStatLT("ACBRE",3334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",3333)
+END 
+
+IF
+  CheckStatGT(Player1,19999,44)
+  CheckStatLT("ACBRE",19000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,18999,44)
+  CheckStatLT("ACBRE",18000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,17999,44)
+  CheckStatLT("ACBRE",17000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,16999,44)
+  CheckStatLT("ACBRE",16000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,15999,44)
+  CheckStatLT("ACBRE",15000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,14999,44)
+  CheckStatLT("ACBRE",14000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,13999,44)
+  CheckStatLT("ACBRE",13000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,12999,44)
+  CheckStatLT("ACBRE",12000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,11999,44)
+  CheckStatLT("ACBRE",11000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,10999,44)
+  CheckStatLT("ACBRE",10000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,9999,44)
+  CheckStatLT("ACBRE",9000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,8999,44)
+  CheckStatLT("ACBRE",8000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,7999,44)
+  CheckStatLT("ACBRE",7000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,6999,44)
+  CheckStatLT("ACBRE",6000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,5999,44)
+  CheckStatLT("ACBRE",5000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,4999,44)
+  CheckStatLT("ACBRE",4000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,3999,44)
+  CheckStatLT("ACBRE",3000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,2999,44)
+  CheckStatLT("ACBRE",2000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,1999,44)
+  CheckStatLT("ACBRE",1000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",1000)
+END 
+
+IF
+  CheckStatGT(Player1,9999,44)
+  CheckStatLT("ACBRE",9667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,9666,44)
+  CheckStatLT("ACBRE",9334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,9333,44)
+  CheckStatLT("ACBRE",9001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,8999,44)
+  CheckStatLT("ACBRE",8667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,8666,44)
+  CheckStatLT("ACBRE",8334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,8333,44)
+  CheckStatLT("ACBRE",8001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,7999,44)
+  CheckStatLT("ACBRE",7667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,7666,44)
+  CheckStatLT("ACBRE",7334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,7333,44)
+  CheckStatLT("ACBRE",7001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,6999,44)
+  CheckStatLT("ACBRE",6667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,6666,44)
+  CheckStatLT("ACBRE",6334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,6333,44)
+  CheckStatLT("ACBRE",6001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,5999,44)
+  CheckStatLT("ACBRE",5667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,5666,44)
+  CheckStatLT("ACBRE",5334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,5333,44)
+  CheckStatLT("ACBRE",5001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,4999,44)
+  CheckStatLT("ACBRE",4667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,4666,44)
+  CheckStatLT("ACBRE",4334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,4333,44)
+  CheckStatLT("ACBRE",4001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,3999,44)
+  CheckStatLT("ACBRE",3667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,3666,44)
+  CheckStatLT("ACBRE",3334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,3333,44)
+  CheckStatLT("ACBRE",3001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,2999,44)
+  CheckStatLT("ACBRE",2667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,2666,44)
+  CheckStatLT("ACBRE",2334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,2333,44)
+  CheckStatLT("ACBRE",2001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,1999,44)
+  CheckStatLT("ACBRE",1667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,1666,44)
+  CheckStatLT("ACBRE",1334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,1333,44)
+  CheckStatLT("ACBRE",1001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,999,44)
+  CheckStatLT("ACBRE",667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,666,44)
+  CheckStatLT("ACBRE",334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",333)
+END 
+
+IF
+  CheckStatGT(Player1,1999,44)
+  CheckStatLT("ACBRE",1900,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,1899,44)
+  CheckStatLT("ACBRE",1800,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,1799,44)
+  CheckStatLT("ACBRE",1700,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,1699,44)
+  CheckStatLT("ACBRE",1600,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,1599,44)
+  CheckStatLT("ACBRE",1500,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,1499,44)
+  CheckStatLT("ACBRE",1400,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,1399,44)
+  CheckStatLT("ACBRE",1300,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,1299,44)
+  CheckStatLT("ACBRE",1200,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,1199,44)
+  CheckStatLT("ACBRE",1100,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,1099,44)
+  CheckStatLT("ACBRE",1000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,999,44)
+  CheckStatLT("ACBRE",900,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,899,44)
+  CheckStatLT("ACBRE",800,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,799,44)
+  CheckStatLT("ACBRE",700,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,699,44)
+  CheckStatLT("ACBRE",600,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,599,44)
+  CheckStatLT("ACBRE",500,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,499,44)
+  CheckStatLT("ACBRE",400,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,399,44)
+  CheckStatLT("ACBRE",300,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,299,44)
+  CheckStatLT("ACBRE",200,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT(Player1,199,44)
+  CheckStatLT("ACBRE",100,44) 
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",100)
+END 
+
+IF
+  CheckStatGT("ACBRE",7999999,44)
+  CheckStatLT(Player1,7000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",7499999,44)
+  CheckStatLT(Player1,6500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",6999999,44)
+  CheckStatLT(Player1,6000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",6499999,44)
+  CheckStatLT(Player1,5500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",5999999,44)
+  CheckStatLT(Player1,5000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",4499999,44)
+  CheckStatLT(Player1,4500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",4999999,44)
+  CheckStatLT(Player1,4000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",4499999,44)
+  CheckStatLT(Player1,3500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",3999999,44)
+  CheckStatLT(Player1,3000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",3499999,44)
+  CheckStatLT(Player1,2500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",2999999,44)
+  CheckStatLT(Player1,2000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",2499999,44)
+  CheckStatLT(Player1,1500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",1999999,44)
+  CheckStatLT(Player1,1000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",1499999,44)
+  CheckStatLT(Player1,500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000000)
+END 
+
+IF
+  CheckStatGT("ACBRE",3999999,44)
+  CheckStatLT(Player1,3666667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333333)
+END 
+
+IF
+  CheckStatGT("ACBRE",3666666,44)
+  CheckStatLT(Player1,3333334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333333)
+END 
+
+IF
+  CheckStatGT("ACBRE",3333333,44)
+  CheckStatLT(Player1,3000001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333333)
+END 
+
+IF
+  CheckStatGT("ACBRE",2999999,44)
+  CheckStatLT(Player1,2666667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333333)
+END 
+
+IF
+  CheckStatGT("ACBRE",2666666,44)
+  CheckStatLT(Player1,2333334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333333)
+END 
+
+IF
+  CheckStatGT("ACBRE",2333333,44)
+  CheckStatLT(Player1,2000001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333333)
+END 
+
+IF
+  CheckStatGT("ACBRE",1999999,44)
+  CheckStatLT(Player1,1666667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333333)
+END 
+
+IF
+  CheckStatGT("ACBRE",1666666,44)
+  CheckStatLT(Player1,1333334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333333)
+END 
+
+IF
+  CheckStatGT("ACBRE",1333333,44)
+  CheckStatLT(Player1,1000001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333333)
+END 
+
+IF
+  CheckStatGT("ACBRE",999999,44)
+  CheckStatLT(Player1,666667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333333)
+END 
+
+IF
+  CheckStatGT("ACBRE",666666,44)
+  CheckStatLT(Player1,333334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333333)
+END 
+
+IF
+  CheckStatGT("ACBRE",1999999,44)
+  CheckStatLT(Player1,1900000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",1899999,44)
+  CheckStatLT(Player1,1800000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",1799999,44)
+  CheckStatLT(Player1,1700000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",1699999,44)
+  CheckStatLT(Player1,1600000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",1599999,44)
+  CheckStatLT(Player1,1500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",1499999,44)
+  CheckStatLT(Player1,1400000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",1399999,44)
+  CheckStatLT(Player1,1300000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",1299999,44)
+  CheckStatLT(Player1,1200000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",1199999,44)
+  CheckStatLT(Player1,1100000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",1099999,44)
+  CheckStatLT(Player1,1000000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",999999,44)
+  CheckStatLT(Player1,900000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",899999,44)
+  CheckStatLT(Player1,800000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",799999,44)
+  CheckStatLT(Player1,700000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",699999,44)
+  CheckStatLT(Player1,600000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",599999,44)
+  CheckStatLT(Player1,500000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",499999,44)
+  CheckStatLT(Player1,400000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",399999,44)
+  CheckStatLT(Player1,300000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",299999,44)
+  CheckStatLT(Player1,200000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",199999,44)
+  CheckStatLT(Player1,100000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100000)
+END 
+
+IF
+  CheckStatGT("ACBRE",999999,44)
+  CheckStatLT(Player1,966667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",966666,44)
+  CheckStatLT(Player1,933334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",933333,44)
+  CheckStatLT(Player1,900001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",899999,44)
+  CheckStatLT(Player1,866667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",866666,44)
+  CheckStatLT(Player1,833334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",833333,44)
+  CheckStatLT(Player1,800001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",799999,44)
+  CheckStatLT(Player1,766667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",766666,44)
+  CheckStatLT(Player1,733334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",733333,44)
+  CheckStatLT(Player1,700001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",699999,44)
+  CheckStatLT(Player1,666667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",666666,44)
+  CheckStatLT(Player1,633334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",633333,44)
+  CheckStatLT(Player1,600001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",599999,44)
+  CheckStatLT(Player1,566667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",566666,44)
+  CheckStatLT(Player1,533334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",533333,44)
+  CheckStatLT(Player1,500001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",499999,44)
+  CheckStatLT(Player1,466667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",466666,44)
+  CheckStatLT(Player1,433334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",433333,44)
+  CheckStatLT(Player1,400001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",399999,44)
+  CheckStatLT(Player1,366667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",366666,44)
+  CheckStatLT(Player1,333334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",333333,44)
+  CheckStatLT(Player1,300001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",299999,44)
+  CheckStatLT(Player1,266667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",266666,44)
+  CheckStatLT(Player1,233334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",233333,44)
+  CheckStatLT(Player1,200001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",199999,44)
+  CheckStatLT(Player1,166667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",166666,44)
+  CheckStatLT(Player1,133334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",133333,44)
+  CheckStatLT(Player1,100001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",99999,44)
+  CheckStatLT(Player1,66667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",66666,44)
+  CheckStatLT(Player1,33334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-33333)
+END 
+
+IF
+  CheckStatGT("ACBRE",199999,44)
+  CheckStatLT(Player1,190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",189999,44)
+  CheckStatLT(Player1,190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",179999,44)
+  CheckStatLT(Player1,190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",169999,44)
+  CheckStatLT(Player1,190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",159999,44)
+  CheckStatLT(Player1,190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",149999,44)
+  CheckStatLT(Player1,190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",139999,44)
+  CheckStatLT(Player1,190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",129999,44)
+  CheckStatLT(Player1,190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",119999,44)
+  CheckStatLT(Player1,190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",109999,44)
+  CheckStatLT(Player1,190000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",99999,44)
+  CheckStatLT(Player1,90000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",89999,44)
+  CheckStatLT(Player1,80000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",79999,44)
+  CheckStatLT(Player1,70000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",69999,44)
+  CheckStatLT(Player1,60000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",59999,44)
+  CheckStatLT(Player1,50000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",49999,44)
+  CheckStatLT(Player1,40000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",39999,44)
+  CheckStatLT(Player1,30000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",29999,44)
+  CheckStatLT(Player1,20000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",19999,44)
+  CheckStatLT(Player1,10000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-10000)
+END 
+
+IF
+  CheckStatGT("ACBRE",99999,44)
+  CheckStatLT(Player1,96667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",96666,44)
+  CheckStatLT(Player1,93334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",93333,44)
+  CheckStatLT(Player1,90001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",89999,44)
+  CheckStatLT(Player1,86667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",86666,44)
+  CheckStatLT(Player1,83334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",83333,44)
+  CheckStatLT(Player1,80001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",79999,44)
+  CheckStatLT(Player1,76667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",76666,44)
+  CheckStatLT(Player1,73334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",73333,44)
+  CheckStatLT(Player1,70001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",69999,44)
+  CheckStatLT(Player1,66667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",66666,44)
+  CheckStatLT(Player1,63334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",63333,44)
+  CheckStatLT(Player1,60001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",59999,44)
+  CheckStatLT(Player1,56667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",56666,44)
+  CheckStatLT(Player1,53334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",53333,44)
+  CheckStatLT(Player1,50001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",49999,44)
+  CheckStatLT(Player1,46667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",46666,44)
+  CheckStatLT(Player1,43334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",43333,44)
+  CheckStatLT(Player1,40001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",39999,44)
+  CheckStatLT(Player1,36667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",36666,44)
+  CheckStatLT(Player1,33334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",33333,44)
+  CheckStatLT(Player1,30001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",29999,44)
+  CheckStatLT(Player1,26667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",26666,44)
+  CheckStatLT(Player1,23334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",23333,44)
+  CheckStatLT(Player1,20001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",19999,44)
+  CheckStatLT(Player1,16667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",16666,44)
+  CheckStatLT(Player1,13334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",13333,44)
+  CheckStatLT(Player1,10001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",9999,44)
+  CheckStatLT(Player1,6667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",6666,44)
+  CheckStatLT(Player1,3334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-3333)
+END 
+
+IF
+  CheckStatGT("ACBRE",19999,44)
+  CheckStatLT(Player1,19000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",18999,44)
+  CheckStatLT(Player1,18000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",17999,44)
+  CheckStatLT(Player1,17000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",16999,44)
+  CheckStatLT(Player1,16000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",15999,44)
+  CheckStatLT(Player1,15000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",14999,44)
+  CheckStatLT(Player1,14000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",13999,44)
+  CheckStatLT(Player1,13000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",12999,44)
+  CheckStatLT(Player1,12000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",11999,44)
+  CheckStatLT(Player1,11000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",10999,44)
+  CheckStatLT(Player1,10000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",9999,44)
+  CheckStatLT(Player1,9000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",8999,44)
+  CheckStatLT(Player1,8000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",7999,44)
+  CheckStatLT(Player1,7000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",6999,44)
+  CheckStatLT(Player1,6000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",5999,44)
+  CheckStatLT(Player1,5000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",4999,44)
+  CheckStatLT(Player1,4000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",3999,44)
+  CheckStatLT(Player1,3000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",2999,44)
+  CheckStatLT(Player1,2000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",1999,44)
+  CheckStatLT(Player1,1000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-1000)
+END 
+
+IF
+  CheckStatGT("ACBRE",9999,44)
+  CheckStatLT(Player1,9667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",9666,44)
+  CheckStatLT(Player1,9334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",9333,44)
+  CheckStatLT(Player1,9001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",8999,44)
+  CheckStatLT(Player1,8667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",8666,44)
+  CheckStatLT(Player1,8334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",8333,44)
+  CheckStatLT(Player1,8001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",7999,44)
+  CheckStatLT(Player1,7667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",7666,44)
+  CheckStatLT(Player1,7334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",7333,44)
+  CheckStatLT(Player1,7001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",6999,44)
+  CheckStatLT(Player1,6667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",6666,44)
+  CheckStatLT(Player1,6334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",6333,44)
+  CheckStatLT(Player1,6001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",5999,44)
+  CheckStatLT(Player1,5667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",5666,44)
+  CheckStatLT(Player1,5334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",5333,44)
+  CheckStatLT(Player1,5001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",4999,44)
+  CheckStatLT(Player1,4667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",4666,44)
+  CheckStatLT(Player1,4334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",4333,44)
+  CheckStatLT(Player1,4001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",3999,44)
+  CheckStatLT(Player1,3667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",3666,44)
+  CheckStatLT(Player1,3334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",3333,44)
+  CheckStatLT(Player1,3001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",2999,44)
+  CheckStatLT(Player1,2667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",2666,44)
+  CheckStatLT(Player1,2334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",2333,44)
+  CheckStatLT(Player1,2001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",1999,44)
+  CheckStatLT(Player1,1667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",1666,44)
+  CheckStatLT(Player1,1334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",1333,44)
+  CheckStatLT(Player1,1001,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",999,44)
+  CheckStatLT(Player1,667,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",666,44)
+  CheckStatLT(Player1,334,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-333)
+END 
+
+IF
+  CheckStatGT("ACBRE",1999,44)
+  CheckStatLT(Player1,1900,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",1899,44)
+  CheckStatLT(Player1,1800,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",1799,44)
+  CheckStatLT(Player1,1700,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",1699,44)
+  CheckStatLT(Player1,1600,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",1599,44)
+  CheckStatLT(Player1,1500,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",1499,44)
+  CheckStatLT(Player1,1400,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",1399,44)
+  CheckStatLT(Player1,1300,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",1299,44)
+  CheckStatLT(Player1,1200,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",1199,44)
+  CheckStatLT(Player1,1100,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",1099,44)
+  CheckStatLT(Player1,1000,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",999,44)
+  CheckStatLT(Player1,900,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",899,44)
+  CheckStatLT(Player1,800,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",799,44)
+  CheckStatLT(Player1,700,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",699,44)
+  CheckStatLT(Player1,600,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",599,44)
+  CheckStatLT(Player1,500,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",499,44)
+  CheckStatLT(Player1,400,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",399,44)
+  CheckStatLT(Player1,300,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",299,44)
+  CheckStatLT(Player1,200,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+  CheckStatGT("ACBRE",199,44)
+  CheckStatLT(Player1,100,44)
+THEN
+  RESPONSE #100
+    AddXpObject("ACBRE",-100)
+END 
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		DestroySelf()
+END 
+
+
+
+

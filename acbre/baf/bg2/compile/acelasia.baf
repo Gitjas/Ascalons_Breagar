@@ -1,0 +1,19 @@
+IF
+	OR(2)
+	StateCheck(Myself,STATE_INVISIBLE)
+	StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	!Global("ACBORKPLOT","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBORKPLOT","GLOBAL",2)
+		DisplayStringHead(Myself,@5019)
+		GiveItem("POTN26",Player1)
+		AddexperienceParty(6000)
+		EraseJournalEntry(@10038)
+		EraseJournalEntry(@10039)
+		EraseJournalEntry(@10040)
+		EraseJournalEntry(@10041)
+		EraseJournalEntry(@10045)
+		AddJournalEntry(@10044,QUEST_DONE)
+		EscapeAreaDestroy(90)
+END		

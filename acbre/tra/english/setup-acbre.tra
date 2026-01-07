@@ -1,0 +1,62 @@
+@1    = ~Breagar: Contents~
+@2    = ~You have not installed a game that is compatible with this mod. Installation is cancelled.~
+@3    = ~Change Breagar's dialog timer? (Default is 30 minutes between dialogues.)~
+/*
+@4    = ~Please choose:
+[1] 30 minutes real time between talks (recommended)
+[2] 45 minutes real time between talks
+[3] 1 hour real time between talks
+[4] 15 minutes real time between talks
+[5] 1 hour 30 real time between talks~
+*/
+@5    = ~This mod needs to be installed before EET_End on your EET install.~
+/*
+@6    = ~Please choose 1, 2, 3, 4 or 5 and confirm with enter.~
+@7    = ~30 minutes real time between talks~
+*/
+@8    = ~45 minutes real time between talks~
+@9    = ~1 hour real time between talks~
+@10   = ~15 minutes real time between talks~
+@11   = ~1 hour 30 minutes real time between talks~
+@12   = ~Install Alternative Portrait from v4.X? (Default is Original Art by Nix)~
+/*
+@13   = ~Please choose a portrait:
+
+[1] Original Art by Nix
+[2] Alternative Portrait from v4.X~
+@14   = ~Please choose 1 or 2 and confirm with enter ~
+@15   = ~Installing portrait: Original Art by Nix~
+*/
+@16   = ~Installing portrait: Alternative Portrait from v.4.X~
+
+@197  = ~Breagar: Crossmods and PID~
+@198  = ~You did not install the main component of Breagar. Canceling installation.~
+@199  = ~Installing cross-mod content for DSotSC~
+@200  = ~Installing cross-mod content for Amber~
+@201  = ~Installing cross-mod content for Auren~
+@202  = ~Installing cross-mod content for ToBR~
+@203  = ~Installing cross-mod content for BGQE~
+@204  = ~Installing cross-mod content for ToD~
+@205  = ~Installing cross-mod content for AsQ~
+@206  = ~Teach Virginie, the invisible wonder bunny some new tricks~
+@207  = ~Installing Virginie, the invisible wonder bunny~
+@208  = ~This mod should be installed BEFORE BP-BGT Worldmap~
+@209  = ~Installing cross-mod content for Weimer's Solaufein~
+
+
+/* new for v9.0.0 */
+@210  = ~Installing cross-mod content for: Alternatives~
+@211  = ~Install cross-mod content for: Imoen 4 Ever~
+
+/* new for v10.0.0 */
+@212 = ~Transitions Mod detected~
+@213 = ~Installing cross-mod content for Balduran's Seatower~
+
+/* new for v11.1.0 */
+@214 = ~Installing cross-mod content for Another Fine Hell Mod~
+
+/* new for v11.2.0 */
+@215 =  ~Installing cross-mod content for EndlessBG1~
+
+// needed for EE two-handed restrictions
+@216 = ~Breagar cannot use two-handed weapons~

@@ -1,0 +1,38 @@
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("ACBRE")
+	GlobalLT("ACBREBIO","GLOBAL",2)
+	Global("ACBREEND","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBREEND","GLOBAL",1)
+		TextScreen("ACBREBIO")
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("ACBRE")
+	Global("ACBREBIO","GLOBAL",2)
+	Global("ACBREEND","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBREEND","GLOBAL",1)
+		TextScreen("ACBREBI2")
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("ACBRE")
+	Global("ACBREBIO","GLOBAL",3)
+	Global("ACBREEND","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBREEND","GLOBAL",1)
+		TextScreen("ACBREBI3")
+		SmallWait(1)
+		Continue()
+END

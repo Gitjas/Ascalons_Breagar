@@ -1,0 +1,14 @@
+/* bgqe nashkel monster */
+
+INTERJECT_COPY_TRANS C#Q04001 0 ACC#Q040010
+== ACBreJ IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@19
+== C#Q04001 IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@20
+END
+
+INTERJECT_COPY_TRANS C#Q04003 2 ACC#Q040032
+== ACBreJ IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@21
+END
+

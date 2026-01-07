@@ -1,0 +1,33 @@
+@0    = ~Hrmpf. Für diese Missgestalt das Leben von Zwergen gefährden, soweit kommt's noch! Darauf gehen wir nicht ein, <CHARNAME>!~
+@1    = ~<CHARNAME>, ich hoffe sehr, dass Euer gezeigtes Interesse diesem Lich gegenüber in die Kategorie "geregelter Rückzug" fällt, denn ich werde meine Waffe nicht gegen Bruder Deepvein und seine Männer erheben!~
+@2    = ~Buzzurk! <CHARNAME>, das kann ich nicht zulassen! Lasst die Zwerge in Ruhe!~
+@3    = ~Zwerge sind stark und ziemlich stur. Wenn Thrix gewinnt und Ihr sein Rätsel nicht lösen könnt, wird er den Zwerg mit der silbernen Hand unter seinen Willen binden.~
+@4    = ~Ihr wollt Breagar? Schön, dann nehmt ihn und beißt Euch die Zähne an ihm aus!~
+@5    = ~Breagar hat mir sein Leben anvertraut, aber das beinhaltet keine Spielchen mit seiner Seele. Sucht Euch jemand anderen aus meiner Gruppe als Preis aus, oder tretet zur Seite und lasst mich passieren.~
+@6    = ~Er hat zwar seine Fehler, aber ich werde seine Seele nicht leichtfertig aufs Spiel setzen. Wenn ich Euer Rätsel nicht lösen kann, dann werdet Ihr meine Seele nehmen. Einverstanden?~
+@7    = ~Ich werde Euch mit Euren eigenen Körperteilen füttern, wenn Ihr mich nicht in den Turm lasst, Ihr verflixte Kreatur. Ich bin es leid, mit Euch Spielchen zu spielen.~
+@8    = ~Buzzurk. <CHARNAME> - wir werden später darüber sprechen. IHR - glaubt bloß nicht, dass ich freiwillig mitkomme, Ihr Höllenkreatur. Meine Axt wartet schon auf Euch! Bei Moradins Hammer!~
+@9    = ~Oh nein, dieser ist viel zu widerspenstig. Es ist kein Spaß, wenn es keine Aussicht auf Erfolg gibt.~
+@10   = ~Hrmpf! Lasst Euch doch nicht auf die Spielchen von dieser Höllenkreatur ein, <CHARNAME>! Was soll denn das werden? Der, der als letztes zuckt, wird verwettet?!~
+@11   = ~Sagt mal, <CHARNAME>, sollte das irgendwie witzig sein oder so? Meine Seele so einem Höllendings zu versprechen, geht's noch?!~
+@12   = ~Regt Euch nicht so auf. Ich weiß doch, dass Ihr Euch verteidigen könnt.~
+@13   = ~Es tut mir Leid, Breagar. Das hätte ich nicht sagen sollen.~
+@14   = ~Hört mir mal zu: Niemand, auch nicht Ihr, ist unverzichtbar. Wir haben ein Ziel zu erreichen, und da haben sich alle unterzuordnen.~
+@15   = ~Ja, was ist jetzt Euer Problem? Soll ich etwa *meine* verwetten?~
+@16   = ~Ach so ist das?! Komisch nur, dass es andere sind als Ihr, die sich diesem Ziel unterordnen sollen, ja? Wie wär's denn als Idee gewesen, wenn Ihr Eure eigene verzichtbare Seele angeboten hättet, hä?!~
+@17   = ~Ihr könnt von Glück sagen, dass alles gut ausgegangen ist, <CHARNAME>. Ansonsten würde ich Euch noch hier vor die Füße spucken!~
+@18   = ~Was? Darum geht's doch gar nicht! Hallo? Hört Ihr überhaupt, was ich Euch sagen will?~
+@19   = ~Was Ihr nicht sagt! Dafür, dass es Euch nun so leid tut, kam Euch das da aber ganz schön schnell über die Lippen!~
+@20   = ~Ja, das habt Ihr eindrucksvoll bewiesen. Hrmpf.~
+@21   = ~Und stattdesen darf sich nun einer unserer Kameraden auf die Ankunft dieses Höllendämons vorbereiten. Ein schöner Streiter für Eure Ziele seid Ihr! (Breagar spuckt auf den Boden.)~
+@22   = ~Na gut, ich werde das aufgrund der Umstände, wie das Treffen ausgegangen ist, mal ruhen lassen. Aber vergessen kann ich das nicht, wie leichtfertig Ihr meine Seele angeboten habt!~
+@23   = ~Sagt mal, <CHARNAME>, was sollte das denn da eben sein? Die Seele eines Kameraden zu verwetten, geht's noch?!~
+@24   = ~Es tut mir sehr leid. Ich hätte das nicht tun sollen.~
+@25   = ~Hört mir mal zu: Niemand ist unverzichtbar. Wir haben ein Ziel zu erreichen, und da haben sich alle unterzuordnen.~
+@26   = ~Seufz, Ihr auch noch. Haben wir das Thema langsam durch?~
+@27   = ~Werdet mal nicht frech, Bürschchen, ja? Den Ernst der Lage habt Ihr begriffen? Oder verwandelt Ihr Euch hier unten selbst in eine Höllenkreatur?!~ ~Werdet mal nicht frech, Mädel, ja? Den Ernst der Lage habt Ihr begriffen? Oder verwandelt Ihr Euch hier unten selbst in eine Höllenkreatur?!~
+@28   = ~Na gut, ich werde das aufgrund der Umstände, wie das Treffen ausgegangen ist, mal ruhen lassen. Aber vergessen kann ich das nicht, wie leichtfertig Ihr eine andere Seele angeboten habt!~
+
+/* new for v10.0.0 */
+@50   = ~Buzzurk, <CHARNAME>, so machen wir das doch nicht. Ihr wollt ihren Tod - dann gebt ihnen Waffen und öffnet die Zellentüren!~
+@51   = ~Was ist in Euch gefahren, <CHARNAME>? Wir scheuen uns doch sonst nicht vor einem Kampf!~

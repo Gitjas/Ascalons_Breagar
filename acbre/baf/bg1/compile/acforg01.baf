@@ -1,0 +1,19 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("ACBRESMI")
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(2)
+		JumpToPoint([851.508])
+		MoveViewPoint([851.508],INSTANT)
+	    Face(10)
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(2)
+		Swing()
+		Wait(4)
+		SetGlobal("ACFORG01","LOCALS",1)
+		StartDialogNoSet([PC])
+END

@@ -1,0 +1,22 @@
+/* ac_bdc116d.baf */
+/* Move the PC in the cutscene of the plotting nobles in Three Old Kegs (bdc116d.bcs) */
+IF
+	Global("bd_uncovered_seditious_plot","BD0108",1)  
+	InParty("ACBre")  
+THEN
+	RESPONSE #100
+		CutSceneId("ACBre")  
+		JumpToPoint([307.282]) 
+		Face(NE)
+END
+
+IF
+	Global("bd_uncovered_seditious_plot","BD0108",2)  
+	InParty("ACBre")  
+THEN
+	RESPONSE #100
+		CutSceneId("ACBre")  
+		JumpToPoint([307.282]) 
+		Face(NE)
+END
+	

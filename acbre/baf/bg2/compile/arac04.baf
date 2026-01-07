@@ -1,0 +1,12 @@
+IF
+	Global("ACANSTIQUEST","GLOBAL",1)
+	Contains("ACPEPPER","Container 12")
+	Contains("ACFIREFL","Container 12")
+	Contains("MISC43","Container 12")
+	Contains("POTN26","Container 12")
+	Global("AC_CreateVirginy","MYAREA",0)
+THEN
+	RESPONSE #100
+		CreateCreatureImpassable("ACVIRGI",[530.924],0)
+		SetGlobal("AC_CreateVirginy","MYAREA",1)
+END

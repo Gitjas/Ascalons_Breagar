@@ -1,0 +1,82 @@
+IF
+	Global("ACBrePlotLost","GLOBAL",0)
+	Global("ACBreBroke","GLOBAL",0)
+	Global("ACBREPartyBG1","GLOBAL",1)
+	Global("ACBREEXISTS","GLOBAL",1)
+	GlobalGT("ACBREINPARTY","GLOBAL",1)
+	!Dead("ACBRE")
+	Global("ACBRE","AR0602",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("ACBRE","AR0602",1)
+		SetGlobal("ACBREINPARTY","GLOBAL",0)
+		SetGlobal("ACBREMYAXE","GLOBAL",7)
+		MoveGlobal("AR0602","ACBRE",[464.1957])
+		ActionOverride("ACBRE",SetNumTimesTalkedTo(0))
+		ActionOverride("ACBRE",SetDialog("ACBRE")
+	    	ActionOverride("ACBRE",DestroyAllEquipment())
+
+		ActionOverride("ACBRE",CreateItem("ACHAND3",0,0,0))
+		ActionOverride("ACBRE",FillSlot(SLOT_RING_RIGHT))
+		SetInterrupt(TRUE)
+END
+
+IF
+	Global("ACBRE","AR0602",1)
+	!InMyArea("ACBRE")
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("ACBRE","AR0602",4)
+		MoveGlobal("AR0602","ACBRE",[464.1957])
+		ActionOverride("ACBRE",SetNumTimesTalkedTo(0))
+		ActionOverride("ACBRE",SetDialog("ACBRE")
+	    	ActionOverride("ACBRE",DestroyAllEquipment())
+		ActionOverride("ACBRE",CreateItem("ACHAND3",0,0,0))
+		ActionOverride("ACBRE",FillSlot(SLOT_RING_RIGHT))
+		SetInterrupt(TRUE)
+END
+
+IF
+	Global("ACBrePlotLost","GLOBAL",0)
+	Global("ACBreBroke","GLOBAL",0)
+	Global("ACBREPartyBG1","GLOBAL",0)
+	Global("ACBREEXISTS","GLOBAL",0)
+	Global("ACBREINPARTY","GLOBAL",0)
+	Global("ACBRE","AR0602",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("ACBRE","AR0602",2)
+		SetGlobal("ACBREEXISTS","GLOBAL",1)
+		SetGlobal("ACBREMYAXE","GLOBAL",7)
+		CreateCreature("ACBRE07",[464.1957],13)
+		CreateCreature("ACBRESMI",[454.1957],13) //MoveBetweenAreas("AC9999",[222.222],0)
+		ActionOverride("ACBRE",SetNumTimesTalkedTo(0))
+		ActionOverride("ACBRE",SetDialog("ACBRE"))
+		ActionOverride("ACBRE",MakeGlobal())
+		SetInterrupt(TRUE)
+END
+
+
+IF
+	Global("ACBREPartyBG1","GLOBAL",1)
+	OR(5)
+		GlobalGT("ACBrePlotLost","GLOBAL",0)
+		GlobalGT("ACBreBroke","GLOBAL",0)
+		!Global("ACBREEXISTS","GLOBAL",1)
+		!GlobalGT("ACBREINPARTY","GLOBAL",1)
+		Dead("ACBRE")
+	Global("ACBRE","AR0602",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("ACBRE","AR0602",3)
+		SetGlobal("ACBREEXISTS","GLOBAL",2)
+		SetInterrupt(TRUE)
+END
+
+
+
+	

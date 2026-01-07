@@ -1,0 +1,75 @@
+
+/* for testing; spawn Breagar for new SoD game **note: screwed up quest variables** */
+
+IF
+	Global("ACBre_GiveMeBreagar","GLOBAL",1)
+	!Exists("ACBre")  
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_GiveMeBreagar","GLOBAL",2)
+		CreateCreature("ACBRE",[681.882],W)
+		SetGlobal("ACBREINPARTY","GLOBAL",3)
+		SetGlobal("ACBREPartyBG1","GLOBAL",1)
+		ChangeSpecifics("ACBre",ALLIES) 
+		ActionOverride("ACBre",SetGlobal("bd_joined","locals",0))
+		ActionOverride("ACBre",ChangeAIScript("ACBre",OVERRIDE))
+		ActionOverride("ACBre",ChangeAIScript("bdasc3",CLASS))
+		ActionOverride("ACBre",ChangeAIScript("BDSHOUT",RACE))
+		ActionOverride("ACBre",ChangeAIScript("BDFIGH01",GENERAL))
+		ActionOverride("ACBre",ChangeAIScript("",DEFAULT))
+		ActionOverride("ACBre",SetDialog("ACBreS"))
+		Continue()
+END
+
+/* Breagar was in party */
+
+IF
+	OR(2)
+		InMyArea("ACBre")
+		InPartyAllowDead("ACBre")
+	GlobalLT("BD_PLOT","GLOBAL",51)
+THEN
+	RESPONSE #100
+		ApplySpellRES("bdresurr","ACBre") // No such index
+		SmallWait(1)
+		ActionOverride("PlayerChest00",TakeCreatureItems("ACBre",BACKPACK))
+		SmallWait(1)
+		ActionOverride("ACBre",LeaveParty())
+		SetGlobal("ACBREINPARTY","GLOBAL",3)
+		SetGlobal("ACBREEXISTS","GLOBAL",1)
+		SetGlobal("ACBREPartyBG1","GLOBAL",1)
+		ActionOverride("ACBre",SetDialog("ACBreS")
+		SmallWait(1)
+		ActionOverride("ACBre",JumpToPoint([681.882]))
+		Continue()
+END
+
+/* Breagar was left standing in Korlasz' Tomb */
+
+IF
+	Global("ACBre_MoveCamp","bd0103",0)
+	!Dead("ACBre")  
+	!InPartyAllowDead("ACBre")  
+	Global("ACBREBROKE","GLOBAL",0)
+	Global("ACBREPartyBG1","GLOBAL",1)
+	GlobalLT("BD_PLOT","GLOBAL",51)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_MoveCamp","bd0103",1)
+		MoveGlobal("bd0103","ACBre",[681.882])  
+		SetGlobal("ACBREINPARTY","GLOBAL",3)
+		SetGlobal("ACBREEXISTS","GLOBAL",1)
+		SetGlobal("ACBREPartyBG1","GLOBAL",1)
+		ActionOverride("ACBre",Face(W))
+		ReallyForceSpellDeadRES("bdrejuve","ACBre")  // No such index
+		ChangeEnemyAlly("ACBre",NEUTRAL)  
+		ChangeSpecifics("ACBre",ALLIES) 
+		ActionOverride("ACBre",SetGlobal("bd_joined","locals",0))
+		ActionOverride("ACBre",ChangeAIScript("ACBre",OVERRIDE))
+		ActionOverride("ACBre",ChangeAIScript("bdasc3",CLASS))
+		ActionOverride("ACBre",ChangeAIScript("BDSHOUT",RACE))
+		ActionOverride("ACBre",ChangeAIScript("BDFIGH01",GENERAL))
+		ActionOverride("ACBre",ChangeAIScript("",DEFAULT))
+		ActionOverride("ACBre",SetDialog("ACBreS"))
+		Continue()
+END

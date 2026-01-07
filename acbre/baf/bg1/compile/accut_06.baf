@@ -1,0 +1,23 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(PLAYER1)
+		Wait(1)
+		ActionOverride("ACSILVER",TakePartyItem("ACBOWL"))
+//		ActionOverride("ACSILVER",TakePartyItem("ACAXE"))
+		ActionOverride("ACSILVER",TakePartyItem("ACHAND2"))
+		ActionOverride("ACSILVER",TakePartyItem("ACHand1"))
+//		ActionOverride("ACSILVER",TakePartyItem("ACHand1a"))
+		WAIT(1)
+//		ActionOverride("ACBre",DropInventory())
+		WAIT(1)
+		ActionOverride("ACSILVER",ReallyForceSpell("ACBre",CLERIC_HEAL))
+		ActionOverride("ACBRE",TakeItemReplace("ACHAND3","ACHand1a",Myself))
+//		ActionOverride("ACBre",CreateItem("ACHAND3",0,0,0))
+//		ActionOverride("ACBre",FillSlot(SLOT_RING_RIGHT))
+//		ActionOverride("ACBre",CreateItem("ACAXE",0,0,0))
+		SetGlobal("ACBREMYAXE","GLOBAL",1)
+		WAIT(6)
+		ActionOverride("ACSILVER",StartDialogNoSet(PLAYER1)
+END

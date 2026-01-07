@@ -1,0 +1,15 @@
+/* xxbdcut64x.baf
+Breagar will not join after PC escaped from prison (simplifies scripting) */
+IF
+	Global("ACBre_SoDEndMove","bd6200",1) 
+	InMyArea("ACBre")
+	!Dead("ACBre")  
+	!InParty("ACBre")  
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		SetGlobal("ACBre_SoDEndMove","bd6200",2)
+		ActionOverride("ACBre",LeaveAreaLUA("bd6100","",[643.465],SE)) 
+		SmallWait(10)
+		Continue()
+END

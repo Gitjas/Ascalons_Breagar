@@ -1,0 +1,27 @@
+IF
+	Global("ACAUDQUEST","GLOBAL",2)
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		MakeGlobal()
+		Dialog("ACBRE")
+END
+
+IF
+	Global("ACAUDINTM","GLOBAL",3)
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		MakeGlobal()
+		Dialog("ACBRE")
+END
+
+IF
+	OR(2)
+	Global("ACAUDINTM","GLOBAL",4)
+	Global("ACAUDQUEST","GLOBAL",3)
+	Global("ACAUDWAITS","GLOBAL",0)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END

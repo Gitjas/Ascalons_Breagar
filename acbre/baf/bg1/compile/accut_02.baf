@@ -1,0 +1,15 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(PLAYER1)
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(2)
+		ActionOverride("ACBRERED",DestroySelf())
+		ActionOverride("ACTAEROM",DestroySelf())
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		EndCutSceneMode()
+END

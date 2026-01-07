@@ -1,0 +1,53 @@
+/* EET: summon the old Breagar if he was in party in BGII */
+
+IF
+	InPartyAllowDead("ACBRE")
+	Global("ACBreSummoned","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ActionOverride("ACBRE",ChangeAIScript("ACBRE25",OVERRIDE))
+		SetGlobal("ACBreSummoned","GLOBAL",2)
+		Continue()
+END
+
+IF
+	Global("NEWGAME_TOB","GLOBAL",0)
+	Global("ACBreSummoned","GLOBAL",1)
+	Global("ACBreSpawnPlane","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CreateVisualEffect("SPPORTAL",[1999.1218])
+		Wait(2)
+		ActionOverride("ACBre",SetDialog("ACBRE25"))
+		ActionOverride("ACBre",ChangeAIScript("ACBRE25",OVERRIDE))
+		MoveGlobal("AR4500","ACBre",[1999.1218])
+		ActionOverride("ACBre",Face(S))
+		ActionOverride("ACBre",SetNumTimesTalkedTo(0))
+		SetGlobal("ACBRELEVELED","GLOBAL",0)
+		SetGlobal("ACBreSpawnPlane","GLOBAL",1)
+		Continue()
+END
+
+IF
+	Global("NEWGAME_TOB","GLOBAL",1)
+	Global("ACBreSummoned","GLOBAL",1)
+	Global("ACBreSpawnPlane","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CreateVisualEffect("SPPORTAL",[1999.1218])
+		Wait(2)
+		CreateCreature("ACBRE25",[1999.1218],0)
+		ActionOverride("ACBRE",SetBeenInPartyFlags())
+		SetGlobal("ACBreSpawnPlane","GLOBAL",1)
+		Continue()
+END
+
+IF
+	Global("ACBre_ToBRemoveARAC00","MYAREA",0)
+THEN
+	RESPONSE #100
+
+		RemoveWorldmapAreaFlag("arac00",VISIBLE)
+		SetGlobal("ACBre_ToBRemoveARAC00","MYAREA",1)
+		Continue()
+END

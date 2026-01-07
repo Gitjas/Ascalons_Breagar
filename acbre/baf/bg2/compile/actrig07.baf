@@ -1,0 +1,31 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("ACTUNNEL3","ARAC06",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@5013)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("ACTUNNEL3","ARAC06",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@5014)
+		SetGlobal("ACTUNNEL3","ARAC06",1)
+		Wait(1)
+		ActionOverride(LastTrigger,CreateCreature("ACNDRO01",[-1.-1],0)
+		ActionOverride(LastTrigger,CreateCreature("ACNDRO01",[-1.-1],0)
+		ActionOverride(LastTrigger,CreateCreature("ACNDRO02",[-1.-1],0)
+		ActionOverride(LastTrigger,CreateCreature("ACNDRO03",[-1.-1],0)
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)
+END

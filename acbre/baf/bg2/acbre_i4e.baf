@@ -1,0 +1,165 @@
+/* I4E: after Immy returned in the slums. */
+
+/*
+Global("ACBreImmyTalk_I4E","GLOBAL",2): new dialogue only for I4E
+
+Global("ACBreImmyTalk","GLOBAL",8) = 
+		Global("ACBreImmyTalk_I4E","GLOBAL",4)
+Global("ACBreImmyTalk","GLOBAL",10) = 
+		Global("ACBreImmyTalk_I4E","GLOBAL",6)
+Global("ACBreImmyTalk","GLOBAL",12) = 
+		Global("ACBreImmyTalk_I4EAudhild","GLOBAL",1)
+*/
+
+/* first (new) dialogue after Imoen returned in the slums. Will only fire for I4E in chapters 2&3 */
+/* activation */
+IF
+	%BGT_VAR2%
+	GlobalLT("Chapter","GLOBAL",%bg2_chapter_4%)
+	!Global("C#IM_ImoenStays","GLOBAL",0) //compatibility with I4E
+	OR(2) // either before or after the three after-Spellhold banter
+		Global("ACBreImmyTalk","GLOBAL",0)
+		Global("ACBreImmyTalk","GLOBAL",7)
+	RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")
+	Global("ACBreImmyTalk_I4E","GLOBAL",0)
+	InParty(Myself)
+	InParty("Imoen2") 
+THEN
+	RESPONSE #100
+		SetGlobal("ACBreImmyTalk_I4E","GLOBAL",1)
+END
+
+/* triggering */
+IF
+	%BGT_VAR2%
+	!Global("C#IM_ImoenStays","GLOBAL",0) //compatibility with I4E
+	Global("ACBreImmyTalk_I4E","GLOBAL",1)
+	InParty(Myself)
+	InParty("Imoen2") 
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("Imoen2",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)
+		PlaySong(999991)
+		StartDialogNoSet("Imoen2")
+END
+
+/* in case Imoen or Breagar weren't in party in Chapter 2&3, first I4E dialogue will be skipped */
+IF
+	%BGT_VAR2%
+	GlobalGT("Chapter","GLOBAL",%bg2_chapter_3%)
+	!Global("C#IM_ImoenStays","GLOBAL",1) //compatibility with I4E
+	OR(2) // either before or after the three after-Spellhold banter
+		Global("ACBreImmyTalk","GLOBAL",0)
+		Global("ACBreImmyTalk","GLOBAL",7)
+	RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")
+	Global("ACBreImmyTalk_I4E","GLOBAL",0)
+	InParty(Myself)
+	InParty("Imoen2") 
+THEN
+	RESPONSE #100
+		SetGlobal("ACBreImmyTalk_I4E","GLOBAL",2)
+END
+
+
+
+
+/* I4E: after Immy returned in the slums. normal banter activation */
+IF
+	%BGT_VAR2%
+	%GlobalGT_CHAPTER_1%
+	!Global("C#IM_ImoenStays","GLOBAL",0) //compatibility with I4E
+	OR(2) // either before or after the three after-Spellhold banter
+		Global("ACBreImmyTalk","GLOBAL",0)
+		Global("ACBreImmyTalk","GLOBAL",7)
+	InParty(Myself)
+	InParty("Imoen2")
+	See("Imoen2")
+	RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("Imoen2",CD_STATE_NOTVALID)
+	OR(2)
+		Global("ACBreImmyTalk_I4E","GLOBAL",2)
+		Global("ACBreImmyTalk_I4E","GLOBAL",4)
+THEN
+	RESPONSE #100
+		IncrementGlobal("ACBreImmyTalk_I4E","GLOBAL",1)
+END
+
+/* I4E: after Immy returned in the slums. banter triggering */
+IF
+	%BGT_VAR2%
+	%GlobalGT_CHAPTER_1%
+	InParty(Myself) 
+	InParty("Imoen2")
+	See("Imoen2")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("Imoen2",CD_STATE_NOTVALID)
+	Global("ACBreImmyTalk_I4E","GLOBAL",3)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)
+		PlaySong(999991)
+		StartDialogNoSet("Imoen2")
+END
+
+IF
+	%BGT_VAR2%
+	%GlobalGT_CHAPTER_1%
+	InParty(Myself) 
+	InParty("Imoen2")
+	See("Imoen2")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("Imoen2",CD_STATE_NOTVALID)
+	Global("ACBreImmyTalk_I4E","GLOBAL",5)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)
+		PlaySong(999991)
+		ActionOverride("Imoen2",StartDialogNoSet("ACBRE")
+END
+
+/* I4E: after Immy returned in the slums. after Audhild + Galthur quest */
+/* activation */
+IF
+	%BGT_VAR2%
+	!Global("C#IM_ImoenStays","GLOBAL",0) //compatibility with I4E
+	GlobalGT("ACBreBio","GLOBAL",0)
+	OR(2) // either before or after the three after-Spellhold banter
+		Global("ACBreImmyTalk","GLOBAL",0)
+		Global("ACBreImmyTalk","GLOBAL",7)
+	RealGlobalTimerExpired("ACBreImmyTimer","GLOBAL")
+	Global("ACBreImmyTalk_I4EAudhild","GLOBAL",0)
+	InParty(Myself)
+	InParty("Imoen2") 
+THEN
+	RESPONSE #100
+		SetGlobal("ACBreImmyTalk_I4EAudhild","GLOBAL",1)
+END
+
+/* triggering */
+IF
+	%BGT_VAR2%
+	!Global("C#IM_ImoenStays","GLOBAL",0) //compatibility with I4E
+	Global("ACBreImmyTalk_I4EAudhild","GLOBAL",1)
+	InParty(Myself)
+	InParty("Imoen2") 
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck("Imoen2",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("ACBreImmyTimer","GLOBAL",ACBRE_TIMER)
+		PlaySong(999991)
+		ActionOverride("Imoen2",StartDialogNoSet("ACBRE")
+END

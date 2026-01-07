@@ -1,0 +1,29 @@
+/* CHARNAME is accused of murder. Breagar comments */
+
+IF
+	Global("bd_plot","global",591)
+	!GlobalTimerNotExpired("bd_mdd1352_ot_timer","bd4100")
+	Global("ACBre_SoDMurderAccusations","bd4100",0)
+	ReputationLT(Player1,10)
+	IsValidForPartyDialogue("ACBre")  
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_SoDMurderAccusations","bd4100",1)
+		SetGlobalTimer("bd_mdd1352_ot_timer","bd4100",ONE_ROUND)
+		DisplayStringHead("ACBre",@5023) 
+		Continue() 
+END
+
+IF
+	Global("bd_plot","global",591)
+	!GlobalTimerNotExpired("bd_mdd1352_ot_timer","bd4100")
+	Global("ACBre_SoDMurderAccusations","bd4100",0)
+	!ReputationLT(Player1,10)
+	IsValidForPartyDialogue("ACBre")  
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_SoDMurderAccusations","bd4100",1)
+		SetGlobalTimer("bd_mdd1352_ot_timer","bd4100",ONE_ROUND)
+		DisplayStringHead("ACBre",@5024)  
+		Continue()
+END

@@ -1,0 +1,10 @@
+IF
+	Global("ACBreagar_kicked_bd4700","global",1)
+	!Dead("ACBre")  
+	!InParty("ACBre")  
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		MoveGlobal("bd4400","ACBre",[1170.1240])  
+		ActionOverride("ACBre",Face(NE))
+END

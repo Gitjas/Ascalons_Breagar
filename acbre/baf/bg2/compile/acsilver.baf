@@ -1,0 +1,8 @@
+IF
+	See(PLAYER1)
+	See("ACBRE")
+	Global("ACLASTPLOT","GLOBAL",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(PLAYER1)
+END

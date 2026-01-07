@@ -1,0 +1,17 @@
+IF
+	IsOverMe([PC])
+	Global("ACDROWITEMCHECKDONE","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ACDROWITEMCHECKDONE","GLOBAL",0)
+END
+
+IF
+	GlobalGT("Chapter","GLOBAL",%tutu_chapter_7%)
+	IsOverMe("ACBRE")  // Breagar
+	Global("ACBRE_ARAC07INFO","MYAREA",0)
+THEN
+	RESPONSE #100
+		DisplayStringHead("ACBRE",@5028)
+		SetGlobal("ACBRE_ARAC07INFO","MYAREA",1)
+END

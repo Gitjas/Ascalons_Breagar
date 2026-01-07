@@ -1,0 +1,15 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(PLAYER1)
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(2)
+		MoveViewObject("ACBRE",INSTANT)
+		ActionOverride("ACBRE",CreateCreature("ACSILVER",[-1.-1],0))
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(2)
+		ActionOverride("ACSILVER",StartDialogNoSet(PLAYER1)
+END

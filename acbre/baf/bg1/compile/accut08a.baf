@@ -1,0 +1,22 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(PLAYER1)
+		SetGlobal("ACREVIQUEST","GLOBAL",9)
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		SetMasterArea("AC6701")
+		ActionOverride(Player2,LeaveAreaLUA("AC6701","",[360.522],12))
+		ActionOverride(Player3,LeaveAreaLUA("AC6701","",[376.462],12))
+		ActionOverride(Player4,LeaveAreaLUA("AC6701","",[392.498],12))
+		ActionOverride(Player5,LeaveAreaLUA("AC6701","",[408.546],12))
+		ActionOverride(Player6,LeaveAreaLUA("AC6701","",[344.486],12))
+		ActionOverride("ACREVI2",MoveBetweenAreas("AC6701",[696.438],2))
+		LeaveAreaLUA("AC6701","",[440.522],12)
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(2)
+		ActionOverride("ACREVI2",StartDialogNoSet(PLAYER1))
+END

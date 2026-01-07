@@ -1,0 +1,10 @@
+IF
+	Global("ACAUDQUEST","GLOBAL",10)
+	Global("ACBREAMBUSH","AR0300",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBREAMBUSH","AR0300",1)
+		CreateCreature("ACDUEFI1",[4001.2800],9)
+		CreateCreature("ACDUEFI2",[4022.2839],9)
+		Continue()
+END

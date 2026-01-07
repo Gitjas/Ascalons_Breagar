@@ -1,0 +1,188 @@
+APPEND BMTHIEF
+IF ~~ THEN BEGIN BMTHIEF.7
+SAY @0
+IF ~CheckStatGT(LastTalkedToBy(),17,CHR)~ THEN REPLY @1 + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),18,CHR)~ THEN REPLY @1 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),15,CHR) PartyGoldGT(99)~ THEN REPLY @2 DO ~TakePartyGold(100)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),16,CHR) PartyGoldGT(99)~ THEN REPLY @2 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),13,CHR) PartyGoldGT(199)~ THEN REPLY @3 DO ~TakePartyGold(200)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),14,CHR) PartyGoldGT(199)~ THEN REPLY @3 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),11,CHR) PartyGoldGT(499)~ THEN REPLY @4 DO ~TakePartyGold(500)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),12,CHR) PartyGoldGT(499)~ THEN REPLY @4 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),9,CHR) PartyGoldGT(999)~ THEN REPLY @5 DO ~TakePartyGold(1000)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),10,CHR) PartyGoldGT(999)~ THEN REPLY @5 + BREAGAR.2
+IF ~Global("ACHARPERAMULET","LOCALS",1)PartyHasItem("MISC5E")~ THEN REPLY @6 DO ~TakePartyItemNum("MISC5E",1)DestroyItem("MISC5E")~ + BREAGAR.7
+++ @7 + BREAGAR.3
+++ @8 + BREAGAR.4
+++ @9 + BREAGAR.4
+END
+
+IF ~~ THEN BEGIN BREAGAR.1
+SAY @10
+IF ~~ THEN DO ~EraseJournalEntry(@10027)EraseJournalEntry(@10028)EraseJournalEntry(@10029)SetGlobal("ACAUDQUEST","GLOBAL",6)SetGlobalTimer("ACBMTHIEF","GLOBAL",ONE_HOUR)AddexperienceParty(1200)~ UNSOLVED_JOURNAL @10030 EXIT
+END
+
+IF ~~ THEN BEGIN BREAGAR.2
+SAY @11
+IF ~CheckStatGT(LastTalkedToBy(),17,CHR)~ THEN REPLY @12 + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),18,CHR)~ THEN REPLY @12 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),15,CHR) PartyGoldGT(99)~ THEN REPLY @2 DO ~TakePartyGold(100)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),16,CHR) PartyGoldGT(99)~ THEN REPLY @2 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),13,CHR) PartyGoldGT(199)~ THEN REPLY @3 DO ~TakePartyGold(200)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),14,CHR) PartyGoldGT(199)~ THEN REPLY @3 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),11,CHR) PartyGoldGT(499)~ THEN REPLY @4 DO ~TakePartyGold(500)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),12,CHR) PartyGoldGT(499)~ THEN REPLY @4 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),9,CHR) PartyGoldGT(999)~ THEN REPLY @5 DO ~TakePartyGold(1000)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),10,CHR) PartyGoldGT(999)~ THEN REPLY @5 + BREAGAR.2
+IF ~PartyGoldGT(1999)~ THEN REPLY @13 DO ~TakePartyGold(2000)~ + BREAGAR.1
+IF ~Global("ACHARPERAMULET","LOCALS",1)PartyHasItem("MISC5E")~ THEN REPLY @6 DO ~TakePartyItemNum("MISC5E",1)DestroyItem("MISC5E")~ + BREAGAR.7
+++ @7 + BREAGAR.3
+++ @8 + BREAGAR.4
+++ @9 + BREAGAR.4
+END
+
+IF ~~ THEN BEGIN BREAGAR.3
+SAY @14
+IF ~CheckStatGT(LastTalkedToBy(),17,CHR)~ THEN REPLY @12 + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),18,CHR)~ THEN REPLY @12 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),15,CHR) PartyGoldGT(99)~ THEN REPLY @2 DO ~TakePartyGold(100)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),16,CHR) PartyGoldGT(99)~ THEN REPLY @2 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),13,CHR) PartyGoldGT(199)~ THEN REPLY @3 DO ~TakePartyGold(200)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),14,CHR) PartyGoldGT(199)~ THEN REPLY @3 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),11,CHR) PartyGoldGT(499)~ THEN REPLY @4 DO ~TakePartyGold(500)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),12,CHR) PartyGoldGT(499)~ THEN REPLY @4 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),9,CHR) PartyGoldGT(999)~ THEN REPLY @5 DO ~TakePartyGold(1000)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),10,CHR) PartyGoldGT(999)~ THEN REPLY @5 + BREAGAR.2
+IF ~PartyGoldGT(1999)~ THEN REPLY @13 DO ~TakePartyGold(2000)~ + BREAGAR.1
+IF ~Global("ACHARPERAMULET","LOCALS",0)~ THEN REPLY @15 + BREAGAR.5
+IF ~Global("ACHARPERAMULET","LOCALS",1)PartyHasItem("MISC5E")~ THEN REPLY @6 DO ~TakePartyItemNum("MISC5E",1)DestroyItem("MISC5E")~ + BREAGAR.7
+++ @8 + BREAGAR.4
+++ @9 + BREAGAR.4
+END
+
+IF ~~ THEN BEGIN BREAGAR.4
+SAY @16
+IF ~~ THEN DO ~SetGlobal("ACAUDQUEST","GLOBAL",5)AddJournalEntry(@10028,QUEST)~ EXIT
+END
+
+IF ~~ THEN BEGIN BREAGAR.7
+SAY @17
+IF ~~ THEN GOTO BREAGAR.1
+END
+
+IF ~~ THEN BEGIN BREAGAR.NOTDONE
+SAY @18
+IF ~~ THEN EXIT
+END
+END
+
+CHAIN
+IF ~~ THEN BMTHIEF BMTHIEF.3
+@19
+==BMTHIEF IF ~InParty("YOSHIMO")See("YOSHIMO")!StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN @20
+==BYOSHIM IF ~InParty("YOSHIMO")See("YOSHIMO")!StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN @21
+==BMTHIEF @22
+END
+++ @23 + BMTHIEF.4a
+++ @24 + BMTHIEF.5
+++ @25 + BMTHIEF.6
+
+CHAIN
+IF ~~ THEN BMTHIEF BMTHIEF.4a
+@26
+==BYOSHIM IF ~InParty("YOSHIMO")See("YOSHIMO")!StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN @27
+==ACBREJ IF ~InParty("ACBRE")See("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN @28
+==BMTHIEF @29
+END
+IF ~~ THEN GOTO BMTHIEF.7
+
+CHAIN
+IF ~~ THEN BMTHIEF BMTHIEF.5
+@30
+==BYOSHIM IF ~InParty("YOSHIMO")See("YOSHIMO")!StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN @27
+==ACBREJ IF ~InParty("ACBRE")See("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN @28
+==BMTHIEF @29
+END
+IF ~~ THEN GOTO BMTHIEF.7
+
+CHAIN
+IF ~~ THEN BMTHIEF BMTHIEF.6
+@31
+==ACBREJ IF ~InParty("ACBRE")See("ACBRE")!StateCheck("ACBRE",CD_STATE_NOTVALID)~ THEN @32
+END
+++ @33 + BMTHIEF.4a
+++ @34 + BMTHIEF.5
+++ @35 EXTERN ACBREJ BMTHIEF.2
+
+CHAIN
+IF ~~ THEN BMTHIEF BREAGAR.5
+@36 DO ~SetGlobal("ACHARPERAMULET","LOCALS",1)AddJournalEntry(@10029,QUEST)~
+==BJAHEIR IF ~InParty("Jaheira")InMyArea("Jaheira")!StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @37
+==BMTHIEF @38
+END
+IF ~CheckStatGT(LastTalkedToBy(),17,CHR)~ THEN REPLY @12 + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),18,CHR)~ THEN REPLY @12 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),15,CHR) PartyGoldGT(99)~ THEN REPLY @2 DO ~TakePartyGold(100)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),16,CHR) PartyGoldGT(99)~ THEN REPLY @2 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),13,CHR) PartyGoldGT(199)~ THEN REPLY @3 DO ~TakePartyGold(200)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),14,CHR) PartyGoldGT(199)~ THEN REPLY @3 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),11,CHR) PartyGoldGT(499)~ THEN REPLY @4 DO ~TakePartyGold(500)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),12,CHR) PartyGoldGT(499)~ THEN REPLY @4 + BREAGAR.2
+IF ~CheckStatGT(LastTalkedToBy(),9,CHR) PartyGoldGT(999)~ THEN REPLY @5 DO ~TakePartyGold(1000)~ + BREAGAR.1
+IF ~CheckStatLT(LastTalkedToBy(),10,CHR) PartyGoldGT(999)~ THEN REPLY @5 + BREAGAR.2
+IF ~PartyGoldGT(1999)~ THEN REPLY @13 DO ~TakePartyGold(2000)~ + BREAGAR.1
+IF ~Global("ACHARPERAMULET","LOCALS",1)PartyHasItem("MISC5E")~ THEN REPLY @39 DO ~TakePartyItemNum("MISC5E",1)DestroyItem("MISC5E")~ + BREAGAR.7
+++ @40 + BREAGAR.4
+
+CHAIN
+IF ~Global("ACAUDQUEST","GLOBAL",3)Global("ACBMTHIEFBANTER","LOCALS",1)~ THEN ACBREJ BMTHIEF
+@41 DO ~SetGlobal("ACAUDQUEST","GLOBAL",4)SetGlobal("ACBMTHIEFBANTER","LOCALS",2)~
+==BYOSHIM IF ~InParty("YOSHIMO")See("YOSHIMO")!StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN @42
+==BMTHIEF @43
+==ACBREJ @44
+==BMTHIEF @45
+==ACBREJ @46
+==BMTHIEF @47
+END
+++ @48 + BMTHIEF.1
+++ @49 + BMTHIEF.2
+
+CHAIN
+IF ~~ THEN ACBREJ BMTHIEF.2
+@50
+
+/* take this out - leads to a dead end because Thieves' Guild can't be attacked this way (game ends)
+==BMTHIEF @51 DO ~SetGlobal("AttackedThieves","GLOBAL",1)~
+==BYOSHIM IF ~InParty("YOSHIMO")See("YOSHIMO")!StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN @52 DO ~LeaveParty()EscapeArea()~
+EXIT 
+*/
+
+==BMTHIEF @59
+END
+IF ~~ THEN EXTERN ACBREJ BMTHIEF.1
+
+
+CHAIN
+IF ~~ THEN ACBREJ BMTHIEF.1
+@53
+==BMTHIEF @54
+==ACBREJ @55
+==BMTHIEF @56
+END
+++ @57 EXTERN BMTHIEF BMTHIEF.3
+
+EXTEND_TOP BMTHIEF 0 #0
+IF ~Global("ACAUDQUEST","GLOBAL",5)~ THEN REPLY @58 + BREAGAR.3
+END
+
+EXTEND_TOP BMTHIEF 4 #0
+IF ~Global("ACAUDQUEST","GLOBAL",5)~ THEN REPLY @58 + BREAGAR.3
+END
+
+EXTEND_TOP BMTHIEF 0 #0
+IF ~Global("ACAUDQUEST","GLOBAL",6)!GlobalTimerExpired("ACBMTHIEF","GLOBAL")~ THEN REPLY @58 + BREAGAR.NOTDONE
+END
+
+EXTEND_TOP BMTHIEF 4 #0
+IF ~Global("ACAUDQUEST","GLOBAL",6)!GlobalTimerExpired("ACBMTHIEF","GLOBAL")~ THEN REPLY @58 + BREAGAR.NOTDONE
+END

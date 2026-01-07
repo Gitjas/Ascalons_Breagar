@@ -1,0 +1,30 @@
+IF
+	InParty(Myself) 
+	See(Player1)
+	AreaCheck("M#AR01")
+	CombatCounter(0)
+	!See([ENEMY])
+	!Global("ACBREFRIEND","GLOBAL",3)
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACM#ARE01","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACM#ARE01","LOCALS",1)
+		Continue()
+END
+
+IF
+	InParty(Myself) 
+	See(Player1)
+	!Global("ACBREFRIEND","GLOBAL",3)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)	
+OR(1)
+	Global("ACM#ARE01","LOCALS",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END

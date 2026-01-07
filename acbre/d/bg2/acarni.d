@@ -1,0 +1,176 @@
+BEGIN ACARNI
+
+IF ~Global("ACARNIBANTER","GLOBAL",1)~ THEN BEGIN 1
+SAY @0
+++ @1 + 2
+++ @2 + 3
+++ @3 + 4
+END
+
+IF ~~ THEN BEGIN 2
+SAY @4
+++ @5 + 5
+++ @6 + 6
+++ @7 + 7
+END
+
+IF ~~ THEN BEGIN 3
+SAY @8
+++ @9 + 8
+++ @10 + 9
+++ @11 + 10
+END
+
+IF ~~ THEN BEGIN 4
+SAY @12
+++ @13 + 8
+++ @14 + 9
+++ @15 + 10
+END
+
+IF ~~ THEN BEGIN 5
+SAY @16
+++ @2 + 3
+++ @17 + 11
+++ @3 + 4
+END
+
+IF ~~ THEN BEGIN 6
+SAY @18
+IF ~~ THEN DO ~SetGlobal("ACAUDQUEST","GLOBAL",9)SetGlobal("ACARNIBANTER","GLOBAL",4)Enemy()UseItem("potn10",Myself)MoveToPoint([509.655])~ EXIT
+END
+
+IF ~~ THEN BEGIN 7
+SAY @19
+++ @5 + 5
+++ @6 + 6
+++ @3 + 4
+END
+
+IF ~~ THEN BEGIN 8
+SAY @20
+++ @21 + 12
+++ @14 + 9
+++ @15 + 10
+END
+
+IF ~~ THEN BEGIN 9
+SAY @22 = @23 = @24 = @25
+IF ~CheckStatGT(PLAYER1,15,CHR)~ THEN REPLY @26 + 13a
+IF ~CheckStatLT(PLAYER1,16,CHR)~ THEN REPLY @26 + 13b
+++ @27 + 14
+++ @28 + 12
+END
+
+IF ~~ THEN BEGIN 11
+SAY @29
+IF ~CheckStatGT(PLAYER1,15,CHR)~ THEN REPLY @30 + 13a
+IF ~CheckStatLT(PLAYER1,16,CHR)~ THEN REPLY @30 + 13b
+++ @31 + 14
+++ @32 + 12
+END
+
+IF ~~ THEN BEGIN 12
+SAY @33
+++ @34 + 14
+IF ~PartyGoldGT(999)~ THEN REPLY @35 DO ~TakePartyGold(1000)~ + 15a
+IF ~PartyGoldGT(499)~ THEN REPLY @36 DO ~TakePartyGold(500)~ + 15b
+++ @37 + 16
+IF ~CheckStatGT(PLAYER1,15,CHR)~ THEN REPLY @38 + 13a
+IF ~CheckStatLT(PLAYER1,16,CHR)~ THEN REPLY @38 + 13b
+END
+
+IF ~~ THEN BEGIN 13a
+SAY @39 = @40
+IF ~~ THEN DO ~SetGlobal("ACAUDQUEST","GLOBAL",9)SetGlobal("ACARNIBANTER","GLOBAL",3)GiveItem("ACSCRL2J",LastTalkedToBy())EscapeAreaDestroy(10)~ EXIT
+END
+
+IF ~~ THEN BEGIN 13b
+SAY @41
+++ @34 + 14
+IF ~PartyGoldGT(999)~ THEN REPLY @35 DO ~TakePartyGold(1000)~ + 15a
+IF ~PartyGoldGT(499)~ THEN REPLY @36 DO ~TakePartyGold(500)~ + 15b
+++ @37 + 16
+IF ~CheckStatGT(PLAYER1,15,CHR)~ THEN REPLY @38 + 13a
+IF ~CheckStatLT(PLAYER1,16,CHR)~ THEN REPLY @38 + 13b
+END
+
+IF ~~ THEN BEGIN 14
+SAY @18
+IF ~~ THEN DO ~SetGlobal("ACAUDQUEST","GLOBAL",9)SetGlobal("ACARNIBANTER","GLOBAL",4)Enemy()UseItem("potn10",Myself)MoveToPoint([509.655])~ EXIT
+END
+
+IF ~~ THEN BEGIN 15a
+SAY @42 = @40
+IF ~~ THEN DO ~SetGlobal("ACAUDQUEST","GLOBAL",9)SetGlobal("ACARNIBANTER","GLOBAL",3)GiveItem("ACSCRL2J",LastTalkedToBy())EscapeAreaDestroy(10)~ EXIT
+END
+
+IF ~~ THEN BEGIN 15b
+SAY @40
+IF ~~ THEN DO ~SetGlobal("ACAUDQUEST","GLOBAL",9)SetGlobal("ACARNIBANTER","GLOBAL",3)GiveItem("ACSCRL2J",LastTalkedToBy())EscapeAreaDestroy(10)~ EXIT
+END
+
+IF ~~ THEN BEGIN 16
+SAY @43
+++ @34 + 14
+++ @44 EXTERN ACBREJ ARNI17
+IF ~CheckStatGT(PLAYER1,15,CHR)~ THEN REPLY @38 + 13a
+IF ~CheckStatLT(PLAYER1,16,CHR)~ THEN REPLY @38 + 13b
+END
+
+APPEND ACBREJ
+IF ~~ THEN BEGIN ARNI17
+SAY @45
+IF ~InParty("JAN")InMyArea("JAN")!StateCheck("JAN",CD_STATE_NOTVALID)~ THEN EXTERN ACARNI JAN
+IF ~OR(3)!InParty("JAN")!InMyArea("JAN")StateCheck("JAN",CD_STATE_NOTVALID)Global("ACARNIBANTER","GLOBAL",2)~ THEN EXTERN ACARNI WAR
+END
+END
+
+CHAIN
+IF ~~ THEN ACARNI 10
+@46 
+==ACBREJ @47
+==ACARNI @48
+==ACBREJ @49
+==ACARNI @50 DO ~SetGlobal("ACAUDQUEST","GLOBAL",9)SetGlobal("ACARNIBANTER","GLOBAL",4)Enemy()UseItem("potn10",Myself)MoveToPoint([509.655])~
+==ACBREJ @51
+EXIT
+
+CHAIN
+IF ~OR(3)!InParty("JAN")!InMyArea("JAN")StateCheck("JAN",CD_STATE_NOTVALID)Global("ACARNIBANTER","GLOBAL",2)~ THEN ACARNI WAR
+@0
+==ACBREJ @52
+==ACARNI @53
+==ACBREJ @54
+==ACARNI @48
+==ACBREJ @49
+==ACARNI @50 DO ~SetGlobal("ACAUDQUEST","GLOBAL",9)SetGlobal("ACARNIBANTER","GLOBAL",4)Enemy()UseItem("potn10",Myself)MoveToPoint([509.655])~
+==ACBREJ @51
+EXIT
+
+CHAIN
+IF ~InParty("JAN")InMyArea("JAN")!StateCheck("JAN",CD_STATE_NOTVALID)Global("ACARNIBANTER","GLOBAL",2)~ THEN ACARNI JAN
+@0
+==ACBREJ @52
+==ACARNI @53
+==ACBREJ @54
+==ACARNI @48
+==ACBREJ @49
+==ACARNI @50
+==BJAN @55
+==ACARNI @56
+==BJAN @57
+==ACARNI @58
+==BJAN @59
+==ACBREJ @60
+==BJAN @61
+==ACARNI @62
+==ACBREJ @63
+==ACARNI @64
+==BJAN @65
+==ACARNI @66
+==ACBREJ @67
+==ACARNI @68 = @69 DO ~SetGlobal("ACAUDQUEST","GLOBAL",9)SetGlobal("ACARNIBANTER","GLOBAL",3)GiveItem("ACSCRL2J",LastTalkedToBy())~
+==ACBREJ @70
+==ACARNI @71 DO ~EscapeAreaDestroy(10)~
+EXIT

@@ -1,0 +1,33 @@
+IF
+	Detect([PC])
+	Global("ACCEM1","LOCALS",0)
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END
+
+IF
+	Dead("ACNECRO1")
+	Global("ACNECROGIVEUP","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACNECROGIVEUP","LOCALS",2)
+		Continue()
+END
+
+IF
+	HPLT(Myself,10)
+	Global("ACNECROGIVEUP","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACNECROGIVEUP","LOCALS",1)
+		Continue()
+END
+
+IF
+	GlobalGT("ACNECROGIVEUP","LOCALS",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartDialogNoSet([PC])
+END

@@ -1,0 +1,36 @@
+/* bd0120.bcs; bd0130.bcs */
+
+IF
+	OR(2)
+		InMyArea("ACBre")
+		InPartyAllowDead("ACBre")
+	Global("ACBREPartyBG1","GLOBAL",0)
+THEN
+	RESPONSE #200
+		SetGlobal("ACBREPartyBG1","GLOBAL",1)
+		Continue()
+END
+
+IF
+	Global("ACBreagarSoD_LeavingStringHead","global",0)
+	CombatCounter(0)
+	GlobalGT("bd_leaving2_ot","GLOBAL",0)
+	GlobalLT("bd_leaving2_ot","GLOBAL",7)
+	IfValidForPartyDialog("ACBre")
+	GlobalTimerExpired("bd_leaving2_ot_timer","global")
+	OR(2)
+		Dead("bdkorlas")
+		Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
+THEN
+	RESPONSE #200
+		Continue()
+	RESPONSE #100
+		BanterBlockTime(100)
+		IncrementGlobal("bd_leaving2_ot","global",1)
+		SetGlobal("ACBreagarSoD_LeavingStringHead","global",1)
+		SetGlobalTimerRandom("bd_leaving2_ot_timer","global",EIGHT_MINUTES,THIRTEEN_MINUTES)
+		DisplayStringWait("ACBre",@5020)
+		DisplayStringWait("ACBre",@5021)
+		Continue()
+END
+

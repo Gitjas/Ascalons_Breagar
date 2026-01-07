@@ -1,0 +1,16 @@
+IF
+	HPLT(Myself,10)
+	Global("ACNECROGIVEUP","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACNECROGIVEUP","LOCALS",1)
+		Continue()
+END
+
+IF
+	GlobalGT("ACNECROGIVEUP","LOCALS",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartDialogNoSet([PC])
+END

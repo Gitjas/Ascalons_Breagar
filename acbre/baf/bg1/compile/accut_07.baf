@@ -1,0 +1,28 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("ACCLERIC")
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		MoveBetweenAreas("%Temple%",[205.1007],2)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(PLAYER1)
+		Wait(4)
+		ActionOverride(Player2,LeaveAreaLUA("ACCEM1","",[567.1134],10))
+		ActionOverride(Player3,LeaveAreaLUA("ACCEM1","",[487.1170],10))
+		ActionOverride(Player4,LeaveAreaLUA("ACCEM1","",[551.1182],10))
+		ActionOverride(Player5,LeaveAreaLUA("ACCEM1","",[471.1218],10))
+		ActionOverride(Player6,LeaveAreaLUA("ACCEM1","",[535.1230],10))
+		LeaveAreaLUA("ACCEM1","",[503.1122],10)
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(2)
+		ActionOverride("ACCLERIC",StartDialogNoSet(PLAYER1)
+END

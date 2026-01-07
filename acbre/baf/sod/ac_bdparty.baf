@@ -1,0 +1,36 @@
+/* Move camp if kicked out and waiting */
+
+IF
+	Global("bd_npc_camp","locals",1)
+	Name("ACBre",Myself)
+	Switch("bd_npc_camp_chapter","global")
+	OR(2)
+		!Range("ff_camp",999)
+		!TriggerOverride("ff_camp",IsOverMe("ACBre"))  
+THEN
+	RESPONSE #2
+		EscapeAreaMove("bd1000",300,3435,N) 
+	RESPONSE #3
+		EscapeAreaMove("bd7100",1000,3595,N) 
+	RESPONSE #4
+		EscapeAreaMove("bd3000",469,570,N) 
+END
+
+IF
+	GlobalLT("bd_npc_camp","locals",2)
+	Name("ACBre",Myself)
+	Global("bd_joined","locals",0)
+	TriggerOverride("ff_camp",IsOverMe("ACBre"))  
+	Switch("bd_npc_camp_chapter","global")
+THEN
+	RESPONSE #2
+		SetGlobal("bd_npc_camp","locals",2)
+		SaveLocation("LOCALS","bd_default_loc",[300.3435])
+	RESPONSE #3
+		SetGlobal("bd_npc_camp","locals",2)
+		SaveLocation("LOCALS","bd_default_loc",[1000.3595])
+	RESPONSE #4
+		SetGlobal("bd_npc_camp","locals",2)
+		SaveLocation("LOCALS","bd_default_loc",[469.570])
+		ChangeAIScript("bdasc3",CLASS)
+END

@@ -1,0 +1,28 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(PLAYER1)
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("ACTAEROM",DestroySelf())
+		ActionOverride("ACREVI",DestroySelf())
+		ActionOverride(Player2,LeaveAreaLUA("%Beregost_ThunderhammerSmithy%","",[651.547],10))
+		ActionOverride(Player3,LeaveAreaLUA("%Beregost_ThunderhammerSmithy%","",[762.666],10))
+		ActionOverride(Player4,LeaveAreaLUA("%Beregost_ThunderhammerSmithy%","",[682.617],10))
+		ActionOverride(Player5,LeaveAreaLUA("%Beregost_ThunderhammerSmithy%","",[633.582],10))
+		ActionOverride(Player6,LeaveAreaLUA("%Beregost_ThunderhammerSmithy%","",[602.523],10))
+		CopyGroundPilesTo("%Beregost_ThunderhammerSmithy%",[851.508])
+		ActionOverride("ACBRE",LeaveAreaLUA("%Beregost_ThunderhammerSmithy%","",[670.535],10))
+		Wait(1)
+		LeaveAreaLUA("%Beregost_ThunderhammerSmithy%","",[758.620],10)
+		Wait(1)
+		ActionOverride("ACBRE",SetDialog("AcBreJ"))
+		ActionOverride("ACBRE",ChangeAIScript("AcBre",OVERRIDE))
+		ActionOverride("ACBRE",JoinParty())
+		SmallWait(1)
+		FadeFromColor([20.0],0)
+		Wait(2)
+		EndCutSceneMode()
+END

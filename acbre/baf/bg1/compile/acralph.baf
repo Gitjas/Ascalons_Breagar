@@ -1,0 +1,51 @@
+IF
+	Global("ACREVIQUEST","GLOBAL",3)
+	!See("ACBRE")
+THEN
+	RESPONSE #100
+		DisplayStringHead("ACRALPH",@5002)
+		MoveToObject("ACBRE")
+		Continue()
+END
+
+IF
+	Global("ACREVIQUEST","GLOBAL",3)
+	See("ACBRE")
+THEN
+	RESPONSE #100
+		StartDialogNoSet("ACBRE")
+END
+
+IF
+	Global("ACREVIQUEST","GLOBAL",4)
+	AreaCheck("AC6701")
+	See(PLAYER1)
+THEN
+	RESPONSE #100
+		StartCutSceneMode()
+		CreateCreature("ACTAEROM",[332.286],14)
+		Wait(1)
+		StartDialogNoSet(PLAYER1)
+END
+
+IF
+	Global("ACREVIQUEST","GLOBAL",9)
+	AreaCheck("AC6701")
+	InMyArea("ACREVI2")
+	See(PLAYER1)
+	Global("ACREVIQUESTFINAL","LOCALS",0)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(PLAYER1)
+END
+
+IF
+	Global("ACREVIQUEST","GLOBAL",9)
+	AreaCheck("AC6701")
+	InMyArea("ACTAEROM")
+	!InMyArea("ACREVI2")
+THEN
+	RESPONSE #100
+		ActionOverride("ACTAEROM",EscapeAreaDestroy(90))
+		Continue()
+END

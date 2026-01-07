@@ -1,0 +1,27 @@
+IF
+	Global("ACBre_MoveCamp","bd7100",0)
+	!Dead("ACBre")  
+	!InPartyAllowDead("ACBre")   
+	Global("ACBREBROKE","GLOBAL",0)
+	Global("ACBREPartyBG1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_MoveCamp","bd7100",1)
+		MoveGlobal("bd7100","ACBre",[1000.3595])
+		ActionOverride("ACBre",LeaveParty())
+		SetGlobal("ACBREINPARTY","GLOBAL",3)  
+		ActionOverride("ACBre",Face(N))
+		ReallyForceSpellDeadRES("bdrejuve","ACBre")  // No such index
+		ChangeEnemyAlly("ACBre",NEUTRAL)  
+		ChangeSpecifics("ACBre",ALLIES)  
+		ActionOverride("ACBre",SetGlobal("bd_joined","locals",0))
+		ActionOverride("ACBre",SetGlobal("bd_retreat","locals",0))
+		ActionOverride("ACBre",SaveObjectLocation("LOCALS","bd_default_loc",Myself))
+		ActionOverride("ACBre",ChangeAIScript("ACBre",OVERRIDE))
+		ActionOverride("ACBre",ChangeAIScript("bdasc3",CLASS))
+		ActionOverride("ACBre",ChangeAIScript("BDSHOUT",RACE))
+		ActionOverride("ACBre",ChangeAIScript("BDFIGH01",GENERAL))
+		ActionOverride("ACBre",ChangeAIScript("",DEFAULT))
+		ActionOverride("ACBre",SetDialogue("ACBreP"))
+		Continue()
+END

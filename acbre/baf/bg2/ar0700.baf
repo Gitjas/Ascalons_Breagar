@@ -1,0 +1,18 @@
+/* Breagar spawns in Waukeen's Promenade if PC skipped Irenicus Dungeon. */
+
+
+
+IF 
+	!InMyArea("ACBre")
+	!Dead("ACBre")
+	Global("ACBREEXISTS","GLOBAL",1)
+	Global("ACBreBroke","GLOBAL",0)
+	Global("ACBREINPARTY","GLOBAL",0)
+	Global("ACBRE_MoveTo0700","MYAREA",0)	
+THEN
+	RESPONSE #100
+		MoveGlobalObject("ACBRE",Player1) 
+		ReallyForceSpellRES("SPWM168","ACBRE") //Heal 
+		SetGlobal("ACBRE_MoveTo0700","MYAREA",1)
+		ActionOverride("ACBRE",StartDialogNoSet(Player1))
+END

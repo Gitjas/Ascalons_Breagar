@@ -1,0 +1,21 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		PlaySong(999990)
+		ActionOverride("ACAUD001",Destroyself())
+		Wait(1)
+		CreateCreature("ACAUD002",[2939.210],0)
+		Wait(1)
+		ActionOverride("ACAUD002",FaceObject("ACBRE"))
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		ActionOverride("ACAUD002",StartDialogNoSet("ACBRE"))
+END
+      
+

@@ -1,0 +1,24 @@
+/* Breagar was kicked out of group in hell dimension - make sure he's coming, too */
+
+
+IF
+	Global("ACBreagar_kicked_bd4700","global",1)
+	!Dead("ACBre")  
+	!InParty("ACBre")  
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		MoveGlobal("bd4300","ACBre",[600.320])  
+		ActionOverride("ACBre",Face(N))
+END
+
+IF
+	Global("ACBreagar_kicked_bd4700","global",0)
+	!Dead("ACBre")  
+	!InParty("ACBre")  
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		MoveGlobal("bd4300","ACBre",[690.1254])  
+		ActionOverride("ACBre",Face(NW))
+END

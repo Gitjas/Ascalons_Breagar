@@ -1,0 +1,11 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(2)
+		MoveViewPoint([1093.1165],INSTANT)
+		CreateCreatureDoor("ACDROWE3",[1176.1263],5)
+		Wait(7)
+		ActionOverride("ACDROWE3",StartDialogNoSet("ACREG"))
+END

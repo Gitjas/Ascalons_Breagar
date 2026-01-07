@@ -1,0 +1,62 @@
+@1    = ~Breagar: Inhalte~
+@2    = ~Ihr habt kein Spiel installiert, für das die Mod kompatibel ist. Installation wird abgebrochen.~
+@3    = ~Zeit zwischen Breagars Gespraechen veraendern? (Default ist 30 Minuten Realzeit zwischen den Gespraechen.)~
+/*
+@4    = ~Bitte auswaehlen:
+[1] 30 Minuten Realzeit zwischen den einzelnen Gespraechen (empfohlen)
+[2] 45 Minuten Realzeit zwischen den einzelnen Gespraechen
+[3] 1 Stunde Realzeit zwischen den einzelnen Gespraechen
+[4] 15 Minuten Realzeit zwischen den einzelnen Gespraechen
+[5] 1 Stunde 30 Minuten Realzeit zwischen den einzelnen Gespraechen
+~
+*/
+@5    = ~Diese Mod muss vor EET_End installiert werden.~
+/*
+@6    = ~Bitte waehlt 1, 2, 3, 4 oder 5 und bestaetigt mit Enter.~
+@7    = ~30 Minuten Realzeit zwischen den Gespraechen~
+*/
+@8    = ~45 Minuten Realzeit zwischen den Gespraechen~
+@9    = ~1 Stunde Realzeit zwischen den Gespraechen~
+@10   = ~15 Minuten Realzeit zwischen den Gespraechen~
+@11   = ~1 Stunde 30 Minuten Realzeit zwischen den Gespraechen~
+@12   = ~Alternatives Portraits aus v4.X installieren? (Default ist Original Art by Nix)~
+/*
+@13   = ~Bitte waehlt ein Portrait:
+
+[1] Original Art by Nix
+[2] Alternatives Portraits aus v4.X~
+@14   = ~Bitte 1 oder 2 waehlen und mit ENTER bestaetigen.~
+@15   = ~Portrait wird installiert: Original Art by Nix~
+*/
+@16   = ~Portrait wird installiert: Alternatives Portrait aus v.4.X~
+
+@197  = ~Breagar: Crossmods und PID~
+@198  = ~Ihr habt den Hauptteil von Breagar nicht installiert. Installation wird abgebrochen.~
+@199  = ~Installiere Crossmodinhalt fuer: DSotSC~
+@200  = ~Installiere Crossmodinhalt fuer: Amber~
+@201  = ~Installiere Crossmodinhalt fuer: Auren~
+@202  = ~Installiere Crossmodinhalt fuer: ToBR~
+@203  = ~Installiere Crossmodinhalt fuer: BGQE~
+@204  = ~Installiere Crossmodinhalt fuer: ToD~
+@205  = ~Installiere Crossmodinhalt fuer: AsQ~
+@206  = ~Bringe Virginie, dem unsichtbaren Wunderbunny, ein paar neue Tricks bei~
+@207  = ~Installiere Virginie, das unsichtbare Wunderbunny~
+@208  = ~Die Mod muss vor BP-BGT Worldmap installiert werden.~ /* ~This mod should be installed BEFORE BP-BGT Worldmap~ */
+@209  = ~Installiere Crossmodinhalt fuer: Weimers Solaufein~
+
+/* new for v9.0.0 */
+@210 = ~Installiere Crossmodinhalt fuer: Alternatives~
+@211  = ~Installiere Crossmodinhalt fuer: Imoen 4 Ever~
+
+/* new for v10.0.0 */
+@212 = ~Transitions Mod entdeckt.~
+@213 = ~Installiere Crossmodinhalt fuer: Balduran's Seatower~
+
+/* new for v11.1.0 */
+@214 = ~Installiere Crossmodinhalt fuer: Another Fine Hell Mod~
+
+/* new for v11.2.0 */
+@215 =  ~Installiere Crossmodinhalt fuer: EndlessBG1~
+
+// needed for EE two-handed restrictions
+@216 = ~Breagar kann keine Zweihaenderwaffen benutzen~

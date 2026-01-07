@@ -1,0 +1,12 @@
+IF
+	Global("ACBreSummoned","GLOBAL",1)
+	Global("ACBreSpawnPlane","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CreateVisualEffect("SPPORTAL",[1999.1218])
+		Wait(2)
+		CreateCreature("ACBRE25",[1999.1218],0)
+		ActionOverride("ACBRE",SetBeenInPartyFlags())
+		SetGlobal("ACBreSpawnPlane","GLOBAL",1)
+		Continue()
+END

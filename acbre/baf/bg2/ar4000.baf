@@ -1,0 +1,9 @@
+IF
+	InPartyAllowDead("ACBRE")
+	Global("ACBRESUMMONED","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ActionOverride("ACBRE",ChangeAIScript("ACBRE25",OVERRIDE))
+		SetGlobal("ACBRESUMMONED","GLOBAL",2)
+    		Continue()
+END

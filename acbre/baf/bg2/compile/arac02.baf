@@ -1,0 +1,43 @@
+IF
+	Global("ACDIARY","ARAC02",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACDIARY","ARAC02",1)
+		EraseJournalEntry(@10033)
+		AddJournalEntry(@10034,QUEST)
+END
+
+IF
+	OR(2)
+	!PartyHasItem("ACKEYSTO")
+	!InParty("ACBRE")
+	Global("ACAR02LOCKED","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACAR02LOCKED","GLOBAL",1)
+		TriggerActivation("Infod01",TRUE)
+		TriggerActivation("DoorD001",FALSE)
+		Continue()
+END
+
+IF
+	PartyHasItem("ACKEYSTO")
+	InParty("ACBRE")
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!Dead("ACBRE")
+	Global("ACAR02LOCKED","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ACAR02LOCKED","GLOBAL",2)
+		DisplayStringHead(PLAYER1,@5010)
+		TriggerActivation("Infod01",FALSE)
+		TriggerActivation("DoorD001",TRUE)
+		Continue()
+END
+
+IF
+	Global("ACDROWITEMCHECKDONE","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACDROWITEMCHECKDONE","GLOBAL",1)
+END

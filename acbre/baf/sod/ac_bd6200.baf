@@ -1,0 +1,46 @@
+/* end of SoD. Breagar will be at the meeting place */
+
+IF
+	Global("chapter","global",13)
+	Global("ACBre_SoDEndMove","bd6200",0)
+	!Dead("ACBre")  
+	!InPartyAllowDead("ACBre")
+	Global("ACBREBROKE","GLOBAL",0)
+	Global("ACBREPartyBG1","GLOBAL",1)
+THEN
+	RESPONSE #0
+		SetGlobal("ACBre_SoDEndMove","bd6200",1)
+		MoveGlobal("bd6200","ACBre",[1680.1200]) 
+		ActionOverride("ACBre",LeaveParty())
+		SetGlobal("ACBREINPARTY","GLOBAL",3) 
+		ActionOverride("ACBre",SetSequence(SEQ_READY))
+		ActionOverride("ACBre",Face(NW))
+		ActionOverride("ACBre",SetGlobal("bd_joined","locals",0))
+		ActionOverride("ACBre",SetGlobal("bd_retreat","locals",0))
+		ActionOverride("ACBre",SaveObjectLocation("LOCALS","bd_default_loc",Myself))
+		ReallyForceSpellDeadRES("bdrejuve","ACBre")  // No such index
+		ChangeEnemyAlly("ACBre",NEUTRAL)  
+		ChangeSpecifics("ACBre",ALLIES)  
+		ActionOverride("ACBre",ChangeAIScript("ACBre",OVERRIDE))
+		ActionOverride("ACBre",ChangeAIScript("",CLASS))
+		ActionOverride("ACBre",ChangeAIScript("SHOUT",RACE))
+		ActionOverride("ACBre",ChangeAIScript("BDFIGH01",GENERAL))
+		ActionOverride("ACBre",ChangeAIScript("",DEFAULT))
+		ActionOverride("ACBre",SetDialog("ACBreP"))
+		Continue()
+END
+
+/* Breagar moves across area with the others */
+IF
+	Global("bd_plot","global",670)
+	Global("ACBre_SodBreagarMoves","MYAREA",0)
+	InMyArea("ACBre")  
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_SodBreagarMoves","MYAREA",1)
+		ActionOverride("ACBre",MoveToPoint([1410.1410]))
+		Continue()
+END
+
+
+

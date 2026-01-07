@@ -1,0 +1,12 @@
+/* ac_bd0063.baf */
+
+/* Warn about the place being a good ambush point: */
+IF
+	Global("BD_NPC02","MYAREA",0)
+	IfValidForPartyDialog("ACBre")  
+	Delay(3)
+THEN
+	RESPONSE #100
+		SetGlobal("BD_NPC02","MYAREA",1)
+		DisplayStringHead("ACBre",@5034)  
+END

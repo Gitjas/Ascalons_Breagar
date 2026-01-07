@@ -1,0 +1,188 @@
+BEGIN ACADAM
+IF ~!AreaCheck("%Candlekeep_Catacombs_L1%")NumTimesTalkedTo(0)~ THEN BEGIN START
+SAY @0
+IF ~Global("ACBREBOOKQUEST","GLOBAL",1)~ THEN REPLY @1 + 20
+++ @2 + 1
+++ @3 + 2
+IF ~CLASS(LastTalkedToBy(),FIGHTER_ALL)~ THEN REPLY @4 + 3a
+IF ~CLASS(LastTalkedToBy(),PALADIN_ALL)~ THEN REPLY @5 + 3b
+IF ~CLASS(LastTalkedToBy(),MAGE_ALL)~ THEN REPLY @6 + 3c
+IF ~CLASS(LastTalkedToBy(),CLERIC_ALL)~ THEN REPLY @7 + 3d
+IF ~CLASS(LastTalkedToBy(),THIEF_ALL)~ THEN REPLY @8 + 3e
+IF ~CLASS(LastTalkedToBy(),BARD_ALL)~ THEN REPLY @8 + 3f
+IF ~CLASS(LastTalkedToBy(),DRUID_ALL)~ THEN REPLY @9 + 3g
+IF ~CLASS(LastTalkedToBy(),RANGER_ALL)~ THEN REPLY @10 + 3h
+END
+
+IF ~~ THEN BEGIN 3a
+SAY @11
+IF ~~ THEN GOTO 4
+END
+
+IF ~~ THEN BEGIN 3b
+SAY @12
+IF ~~ THEN GOTO 4
+END
+
+IF ~~ THEN BEGIN 3c
+SAY @13
+IF ~~ THEN GOTO 4
+END
+
+IF ~~ THEN BEGIN 3d
+SAY @14
+IF ~~ THEN GOTO 4
+END
+
+IF ~~ THEN BEGIN 3e
+SAY @15
+IF ~~ THEN GOTO 4
+END
+
+IF ~~ THEN BEGIN 3f
+SAY @15
+IF ~~ THEN GOTO 4
+END
+
+IF ~~ THEN BEGIN 3g
+SAY @16
+IF ~~ THEN GOTO 4
+END
+
+IF ~~ THEN BEGIN 3h
+SAY @17
+IF ~~ THEN GOTO 4
+END
+
+IF ~~ THEN BEGIN 1
+SAY @18
+IF ~~ THEN GOTO 4
+END
+
+IF ~~ THEN BEGIN 2
+SAY @19
+IF ~~ THEN GOTO 4
+END
+
+IF ~~ THEN BEGIN 4
+SAY @20
+IF ~Gender(player1,FEMALE)OR(4)Race(player1,HALFLING)Race(player1,ELF)Race(player1,HALF_ELF)Race(player1,HUMAN)~ THEN REPLY @21 + 5a
+IF ~OR(3)!Gender(player1,FEMALE)Race(player1,DWARF)Race(player1,HALFORC)~ THEN REPLY @21 + 5b
+IF ~Gender(player1,FEMALE)OR(4)Race(player1,HALFLING)Race(player1,ELF)Race(player1,HALF_ELF)Race(player1,HUMAN)~ THEN REPLY @22 + 6a
+IF ~OR(3)!Gender(player1,FEMALE)Race(player1,DWARF)Race(player1,HALFORC)~ THEN REPLY @22 + 6b
+IF ~Global("ACBREBOOKQUEST","GLOBAL",1)~ THEN REPLY @23 + 20
+END
+
+IF ~~ THEN BEGIN 5a
+SAY @24 = @25
+++ @26 + 11
+++ @27 + 12
+++ @28 + 13
+++ @29 + 14
+IF ~Global("ACBREBOOKQUEST","GLOBAL",1)~ THEN REPLY @30 + 20
+END
+
+IF ~~ THEN BEGIN 5b
+SAY @24 = @31
+IF ~Global("ACBREBOOKQUEST","GLOBAL",1)~ THEN REPLY @32 + 20
+++ @33 + 10
+END
+
+IF~~ THEN BEGIN 6a
+SAY @34 = @25
+++ @26 + 11
+++ @27 + 12
+++ @28 + 13
+++ @29 + 14
+IF ~Global("ACBREBOOKQUEST","GLOBAL",1)~ THEN REPLY @30 + 20
+END
+
+IF~~ THEN BEGIN 6b
+SAY @34 = @31
+IF ~Global("ACBREBOOKQUEST","GLOBAL",1)~ THEN REPLY @32 + 20
+++ @33 + 10
+END
+
+IF ~~ THEN BEGIN 7
+SAY @25
+++ @26 + 11
+++ @27 + 12
+++ @28 + 13
+++ @29 + 14
+IF ~Global("ACBREBOOKQUEST","GLOBAL",1)~ THEN REPLY @30 + 20
+END
+
+IF ~~ THEN BEGIN 8
+SAY @35
+++ @26 + 11
+++ @27 + 11
+++ @28 + 13
+++ @29 + 14
+IF ~Global("ACBREBOOKQUEST","GLOBAL",1)~ THEN REPLY @30 + 20
+END
+
+IF ~~ THEN BEGIN 10
+SAY @36
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 11
+SAY @37
+++ @38 + 12
+++ @28 + 13
+++ @29 + 14
+END
+
+IF ~~ THEN BEGIN 12
+SAY @39 = @40
+++ @41 + 15
+++ @42 + 16
+++ @43 + 14
+END
+
+IF ~~ THEN BEGIN 13
+SAY @44
+IF ~~ THEN GOTO 10
+END
+
+IF ~~ THEN BEGIN 14
+SAY @45
+IF ~~ THEN GOTO 10
+END
+
+IF ~~ THEN BEGIN 15
+SAY @46
+IF ~~ THEN GOTO 10
+END
+
+IF ~~ THEN BEGIN 16
+SAY @47
+IF ~~ THEN GOTO 10
+END
+
+IF ~!AreaCheck("%Candlekeep_Catacombs_L1%")NumTimesTalkedToGT(0)~ THEN BEGIN START.2
+SAY @48
+++ @49 EXIT
+IF ~Global("ACBREBOOKQUEST","GLOBAL",1)~ THEN REPLY @30 + 20
+END
+
+IF ~~ THEN BEGIN 20
+SAY @50 = @51 = @52
+++ @53 + 21
+++ @54 + 22
+END
+
+IF ~~ THEN BEGIN 21
+SAY @55
+IF ~~ THEN DO ~SetGlobal("ACBREBOOKQUEST","GLOBAL",3)AddexperienceParty(50)EraseJournalEntry(@10000)EscapeAreaDestroy(90)~ UNSOLVED_JOURNAL @10002 EXIT
+END
+
+IF ~~ THEN BEGIN 22
+SAY @56   
+IF ~~ THEN DO ~SetGlobal("ACBREBOOKQUEST","GLOBAL",2)GiveItem("ACBOOK",LastTalkedToBy())AddexperienceParty(50)EraseJournalEntry(@10000)EscapeAreaDestroy(90)~ UNSOLVED_JOURNAL @10001 EXIT
+END
+
+IF ~AreaCheck("%Candlekeep_Catacombs_L1%")~ THEN BEGIN DOPPELGANGER
+SAY @57
+IF ~~ THEN DO ~ApplySpell(Myself,DOPPLEGANGER_CHANGE_DEFAULT_LESSER)~ EXIT
+END

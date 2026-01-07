@@ -1,0 +1,25 @@
+IF
+	IsOverMe("ACBRE")  // Breagar
+	GlobalLT("ACTOWERCLEAN","GLOBAL",2)
+	GlobalLT("ACCELLARCLEAN","GLOBAL",2)
+	Global("ACBRE_ARAC06INFO","MYAREA",0)
+THEN
+	RESPONSE #100
+		DisplayStringHead("ACBRE",@5027)
+		SetGlobal("ACBRE_ARAC06INFO","MYAREA",1)
+END
+
+
+
+IF
+	IsOverMe(PLAYER1)
+	IsOverMe("ACBRE")
+	Global("ACTOWERCLEAN","GLOBAL",2)
+	Global("ACCELLARCLEAN","GLOBAL",2)
+	GlobalLT("ARAC06PREP","GLOBAL",3)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("ACCUT_16")
+END

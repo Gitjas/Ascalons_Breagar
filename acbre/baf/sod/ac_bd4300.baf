@@ -1,0 +1,69 @@
+/* ac_bd4300_commenting.baf */
+/* 1 Hephernaan discovered the group inside the castle */
+IF
+	Global("bd_plot","global",370)
+	!GlobalTimerNotExpired("bd_mdd905a_ot_timer","bd4300")  
+	Global("ACBre_bd_ot","bd4300",0)  
+	IfValidForPartyDialog("ACBre")  
+THEN
+	RESPONSE #100
+		SetGlobalTimer("bd_mdd905a_ot_timer","bd4300",THREE_MINUTES)  
+		SetGlobal("ACBre_bd_ot","bd4300",1)  
+		DisplayStringHead("ACBre",@5036)  
+		Continue()  
+END
+
+/* 2 Portal is opened after Hephernaan's scheme */
+IF
+	AreaCheck("BD4300")
+	Global("bd_plot","global",495)
+	Global("ACBre_SoDPortalComment","bd4300",0) 
+	IfValidForPartyDialog("ACBre")  
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_SoDPortalComment","bd4300",1)
+		DisplayStringHead("ACBre",@5037)  
+		Continue()
+END
+
+
+/* 3 PC killed the crusaders at the portal */
+IF
+	Global("ACBre_bd_MDD892a_ot","bd4300",0)  
+	Global("bd_poison_dsc_supplies","global",0)
+	Dead("bdbelben")  // Belben
+	CombatCounter(0)
+	IfValidForPartyDialog("ACBre")  
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_bd_MDD892a_ot","bd4300",1)  
+		SetGlobalTimer("bd_MDD892a_ot_timer","bd4300",ONE_MINUTE) //timer will be checked for Corwin 
+		DisplayStringHead("ACBre",@5038)   
+		Continue() 
+END
+
+/* 4 Comment after first wave of demons if PC lingers */
+IF
+	Global("bd_mdd1290d_ot","bd4300",1)
+	Global("ACBre_SoDPortalComment","bd4300",0)
+	IsValidForPartyDialog("ACBre")  
+THEN
+	RESPONSE #100
+		DisplayStringHead("ACBre",@5025)  
+		SetGlobal("ACBre_SoDPortalComment","bd4300",1)
+		Continue()
+END
+
+/* 5 Comment after return from Avernus: portal is closed */
+IF
+	Global("bd_plot","global",586)
+	!GlobalTimerNotExpired("bd_mdd1341a_ot_timer","bd4300")  
+	Global("ACBre_bd_ot2","bd4300",0)  
+	IfValidForPartyDialog("ACBre")  
+THEN
+	RESPONSE #100
+		SetGlobalTimer("bd_mdd1341a_ot_timer","bd4300",2)  // Dragonspear Castle Basement
+		SetGlobal("ACBre_bd_ot2","bd4300",1)  
+		DisplayStringHead("ACBre",@5039)  
+		Continue()
+END

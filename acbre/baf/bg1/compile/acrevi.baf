@@ -1,0 +1,20 @@
+IF
+	%BG1_BEFORE_TRANSITION%
+	GlobalTimerNotExpired("ACTAEROMTIMER","GLOBAL")
+	AreaCheck("AC6701")
+	See(PLAYER1)
+	NumTimesTalkedTo(1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(PLAYER1)
+END
+
+IF
+	%BG1_BEFORE_TRANSITION%
+	GlobalTimerExpired("ACTAEROMTIMER","GLOBAL")
+	AreaCheck("AC6701")
+	See(PLAYER1)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END

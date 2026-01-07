@@ -1,0 +1,13 @@
+IF
+	GlobalLT("bd_plot","global",505)
+	IfValidForPartyDialogue("ACBre") 
+	Global("ACBre_SoD_avernus","bd4400",0)
+THEN
+	RESPONSE #50
+		Continue()
+	RESPONSE #50
+		DisplayStringWait("ACBre",@5026)  
+		SetGlobal("ACBre_SoD_avernus","bd4400",1)
+		SmallWait(8)
+		Continue()
+END

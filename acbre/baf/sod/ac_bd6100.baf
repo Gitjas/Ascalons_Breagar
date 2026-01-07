@@ -1,0 +1,36 @@
+/* Last area bd6100.are: abduction scene for EET */
+
+
+/* makes the NPC comment with a 33% chance during the rush of the attack */
+IF
+	!RealGlobalTimerExpired("bd_stop_alertbark","bd6100")
+	GlobalTimerExpired("bd_second_alertbark","BD6100")
+	GlobalGT("bd_Mdd1735a_ot","bd6100",0)
+	Global("ACBre_alert","bd6100",0)
+	Global("bd_finale","bd6100",4)
+	IfValidForPartyDialog("ACBre")  
+	TriggerOverride("ACBre",Detect([ENEMY]))
+THEN
+	RESPONSE #200
+		Continue()
+	RESPONSE #100
+		SetGlobal("ACBre_alert","bd6100",1)
+		DisplayStringHead("ACBre",@5030)
+		SetGlobalTimerRandom("bd_second_alertbark","BD6100",2,4)
+		Continue()
+END
+
+
+IF
+	GlobalTimerExpired("bd_effectbark","BD6100")  // The Ambush
+	IfValidForPartyDialog("ACBre")  
+	Global("ACBre_bd_effect","bd6100",0)  // The Ambush
+THEN
+	RESPONSE #200
+		Continue()
+	RESPONSE #100
+		SetGlobal("ACBre_bd_effect","bd6100",1)  // The Ambush
+		DisplayStringHead("ACBre",@5031)  
+		SetGlobalTimerRandom("bd_effectbark","BD6100",2,4)  
+		Continue()
+END

@@ -1,0 +1,33 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(2)
+		//ActionOverride("ACBRE",DestroyItem("ACAXE2"))
+		//ActionOverride("ACBRE",CreateItem("ACAXE3",0,0,0))
+		//ActionOverride("ACBRE",DestroyItem("c!ax45"))
+		ActionOverride("ACBRE",TakeItemReplace("c!ax46","c!ax45","ACBRE"))
+		ActionOverride("ACBRE",TakeItemReplace("ACAXE3","ACAXE2","ACBRE"))
+		Wait(2)
+		CreateVisualEffectObject("spholy","ACSILVER")
+		PlaySound("EFF_P15")
+		Wait(2)
+		FadeToColor([20.0],0)
+		Wait(2)
+		ActionOverride("ACSILVER",Destroyself())
+/*
+		LeaveAreaLUAPanic("AR6400","",[143.1035],12)
+		LeaveAreaLUA("AR6400","",[143.1035],12)
+		ActionOverride(Player2,LeaveAreaLUA("AR6400","",[143.1082],12))
+		ActionOverride(Player3,LeaveAreaLUA("AR6400","",[94.1035],12))
+		ActionOverride(Player4,LeaveAreaLUA("AR6400","",[94.1082],12))
+		ActionOverride(Player5,LeaveAreaLUA("AR6400","",[45.1035],12))
+		ActionOverride(Player6,LeaveAreaLUA("AR6400","",[45.1082],12))
+*/
+		Wait(1)
+		FadeFromColor([40.0],0)
+		Wait(3)
+		EndCutSceneMode()
+END
+

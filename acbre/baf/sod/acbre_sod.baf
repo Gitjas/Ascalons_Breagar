@@ -1,0 +1,176 @@
+/* Skript SoD */
+
+/* after scene in Ducal Palace - Breagar will come to PC */
+
+IF
+	%IT_IS_SOD%
+	!InParty(Myself)
+	Global("ACBREINPARTY","GLOBAL",3)
+	AreaCheck("bd0103")
+        !See(Player1)
+	Global("bd_001_plot","bd0103",9)
+	Global("ACBRE_SoDJoin","LOCALS",0)
+	
+THEN
+	RESPONSE #100
+		SetGlobal("ACBRE_SoDJoin","LOCALS",1)
+		MoveToObject(Player1)
+END
+
+IF
+	%IT_IS_SOD%
+	!InParty(Myself)
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBREINPARTY","GLOBAL",3)
+	AreaCheck("bd0103")
+	See(Player1)
+	GlobalLT("ACBRE_SoDJoin","LOCALS",2)
+	
+THEN
+	RESPONSE #100
+		SetGlobal("ACBRE_SoDJoin","LOCALS",2)
+		StartDialogNoSet(Player1)
+END
+
+/* bd1000: Breagar comments on the explosion on the bridge  */
+IF
+	GlobalTimerNotExpired("bd_caelar_timer","bd1000")
+	AreaCheck("bd1000")
+	IsValidForPartyDialog(Myself)
+	Detect(Player1)	
+	Global("ACBRE_SoDbridge","bd1000",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBRE_SoDbridge","bd1000",1)
+		DisplayStringHead(Myself,@5032)
+END
+
+
+
+
+/* SoD gameplay */
+
+/* Breagar comments on deal with Lich */
+IF
+	%IT_IS_SOD%
+	InParty(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	OR(2)
+		Global("BD_DOD_COLDH_CONSIDER","LOCALS",1)
+		Global("BD_DOD_KILL_CLERICS","GLOBAL",1)
+	!Dead("BDDEEP")
+	!Dead("BDDEEP2")
+	Global("ACBre_BDCOLDH_17","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_BDCOLDH_17","GLOBAL",2)
+END
+
+IF
+	%IT_IS_SOD%
+	InParty(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBre_BDCOLDH_17","GLOBAL",2)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+/* Breagar turns on CHARNAME if Dwarves are attacked */
+
+IF 
+	%IT_IS_SOD%
+	OR(4)
+		Allegiance("BDDEEP",[ENEMY])
+		Allegiance("BDDEEP2",[ENEMY])
+		Dead("BDDEEP")
+		Dead("BDDEEP2")
+	OR(2)
+		See("BDDEEP")
+		See("BDDEEP2")
+	Global("ACBre_SoDDeepvein","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_SoDDeepvein","LOCALS",1)
+END
+
+IF
+	%IT_IS_SOD%
+	InParty(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBre_SoDDeepvein","LOCALS",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+/* Breagar reacts to Thrix's game */
+
+/* PC offered Breagar's soul */
+IF
+	%IT_IS_SOD%
+	InParty(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACBre_SoDThrix","GLOBAL",2)
+	GlobalLT("bd_plot","global",550)	
+	OR(2)
+		Global("bd_thrix_plot","global",20)
+		Dead("bdthrix")  // Thrix
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_SoDThrix","GLOBAL",3)
+END
+
+/* PC offered Breagar's soul */
+IF
+	%IT_IS_SOD%
+	InParty(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	GlobalLT("ACBre_SoDThrix","GLOBAL",2)
+	Global("bd_thrix_sacrifice_companion","global",1)
+	GlobalLT("bd_plot","global",550)	
+	OR(2)
+		Global("bd_thrix_plot","global",20)
+		Dead("bdthrix")  // Thrix
+THEN
+	RESPONSE #100
+		SetGlobal("ACBre_SoDThrix","GLOBAL",5)
+END
+
+IF
+	%IT_IS_SOD%
+	InParty(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBRE",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	OR(2)
+		Global("ACBre_SoDThrix","GLOBAL",3)
+		Global("ACBre_SoDThrix","GLOBAL",5)		
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+

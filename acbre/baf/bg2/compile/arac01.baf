@@ -1,0 +1,18 @@
+IF
+	Dead("ACFORRES")
+	Global("ACAUDQUEST","GLOBAL",11)
+THEN
+	RESPONSE #100
+		SetGlobal("ACAUDQUEST","GLOBAL",12)
+END
+
+
+IF
+	Global("ACAR01LOCKED","ARAC01",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACAR01LOCKED","ARAC01",1)
+		TriggerActivation("Info Point 3",TRUE)
+		TriggerActivation("Doordown",FALSE)
+		Continue()
+END

@@ -1,0 +1,72 @@
+IF
+	!Global("ACBREEXISTS","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	AreaCheck("AR0602")
+THEN
+	RESPONSE #100
+		MakeGlobal()
+		MoveBetweenAreas("AC9999",[222.222],0)
+END
+
+IF
+	GlobalLT("IRONDEALING","LOCALS",2)
+	Global("ACSTORY","GLOBAL",2)
+	AreaCheck("%Beregost_ThunderhammerSmithy%")
+THEN
+	RESPONSE #100
+		SetNumTimesTalkedTo(0)
+		SetGlobal("IRONDEALING","LOCALS",2)
+END
+
+IF
+	NumTimesTalkedTo(0)
+	AreaCheck("%Beregost_ThunderhammerSmithy%")
+	See([PC])
+	!Global("ACSTORY","GLOBAL",2)
+THEN
+	RESPONSE #100
+		MakeGlobal()
+		StartDialogNoSet([PC])
+END
+
+IF
+	AreaCheck("%Beregost_ThunderhammerSmithy%")
+	!Global("ACSTORY","GLOBAL",2)
+	!InParty("ACBRE")
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		Face(10)
+		Swing()
+END
+
+IF
+	AreaCheck("%Beregost_ThunderhammerSmithy%")
+	Global("ACSTORY","GLOBAL",2)
+	!InParty("ACBRE")
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		Face(10)
+		CreateVisualEffectObject("spcrtwpn","ACBRESMI")
+		Swing()
+END
+
+IF
+	Allegiance("TAEROM",ENEMY)
+THEN
+	RESPONSE #100
+		SetGlobal("ACSTORY","GLOBAL",99)
+		SetGlobal("ACBREBROKE","GLOBAL",1)
+		ChangeAIScript("%WTASIGHT%",OVERRIDE)
+		FillSlot(SLOT_WEAPON)
+		FillSlot(SLOT_HELMET)
+		EquipMostDamagingMelee()
+		Enemy()
+		ChangeAIScript("%WTASIGHT%",OVERRIDE)
+END

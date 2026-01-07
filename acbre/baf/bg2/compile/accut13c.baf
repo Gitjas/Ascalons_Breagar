@@ -1,0 +1,26 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(1)
+		ActionOverride("ACBRESMI",Face(10))
+		CreateVisualEffect("spcrtwpn",[648.229])
+		Wait(2)
+		ActionOverride("ACBRESMI",Swing())
+		Wait(5)
+		FadeToColor([20.0],0)
+		Wait(2)
+		ActionOverride("ACBRESMI",TakePartyItem("ACSTONE1"))
+		ActionOverride("ACBRESMI",DestroyItem("ACSTONE1"))
+		ActionOverride("ACBRESMI",TakePartyItem("ACSTONE2"))
+		ActionOverride("ACBRESMI",DestroyItem("ACSTONE2"))
+		ActionOverride("ACBRESMI",TakePartyItem("ACSTONE3"))
+		ActionOverride("ACBRESMI",DestroyItem("ACSTONE3"))
+		ActionOverride("ACBRESMI",DestroySelf())
+		MoveGlobal("AR0334","ACBRE",[648.229])
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		ActionOverride("ACBRE",StartDialogNoSet(PLAYER1))
+END

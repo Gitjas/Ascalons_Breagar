@@ -1,0 +1,24 @@
+/* compatibility with Alternatives: prevent the Thieves' Guild messenger to spawn */
+
+/* I put this separately so it's easier to maintain the references */
+
+/*
+For:
+-GlobalGT("B!Alternatives","GLOBAL",5)
+-GlobalGT("B!Tourist","GLOBAL",7)
+PC attacks the Thieves Guild */
+
+/* prevent the Thieves' Guild messenger to spawn */
+IF
+	Global("ACAUDQUEST","GLOBAL",6)
+	OR(2)
+		GlobalGT("B!Alternatives","GLOBAL",5)
+		GlobalGT("B!Tourist","GLOBAL",7)
+	Global("ACAUDQUEST_PCAttacksThievesGuild","GLOBAL",0)
+
+THEN
+	RESPONSE #100
+		SetGlobal("ACAUDQUEST_PCAttacksThievesGuild","GLOBAL",1)
+END
+
+

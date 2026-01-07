@@ -1,0 +1,25 @@
+IF
+	InParty(Myself) 
+	See(Player1)
+	PartyHasItem("VA#BOOK")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("ACVA#BOOK","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACVA#BOOK","LOCALS",1)
+		Continue()
+END
+
+IF
+	InParty(Myself) 
+	See(Player1)
+	Global("ACVA#BOOK","LOCALS",1)
+	!StateCheck("ACBre",CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END

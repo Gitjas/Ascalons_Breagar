@@ -1,0 +1,8 @@
+IF
+	Global("ACREVIQUEST","GLOBAL",5)
+	Global("ACTOBINEXISTS","%Temple%",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACTOBINEXISTS","%Temple%",1)
+		CreateCreature("ACCLERIC",[205.1007],2)
+END

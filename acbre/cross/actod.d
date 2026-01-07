@@ -1,0 +1,62 @@
+APPEND ACBREJ
+IF ~Global("ACVA#BOOK","LOCALS",1)~ THEN BEGIN VABOOK
+SAY @0 = @1
+IF ~~ THEN DO ~SetGlobal("ACVA#BOOK","LOCALS",2)~ EXIT
+END
+END
+
+INTERJECT_COPY_TRANS VA#BALOR 2 ACVA#BALOR2
+== ACBreJ IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)
+OR(4)
+	PartyHasItem("ACAXE")
+	PartyHasItem("ACAXE2")
+	PartyHasItem("c!ax44")
+	PartyHasItem("c!ax45")~ THEN
+@2
+== VA#BALOR IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)
+OR(4)
+	PartyHasItem("ACAXE")
+	PartyHasItem("ACAXE2")
+	PartyHasItem("c!ax44")
+	PartyHasItem("c!ax45")~ THEN
+@3
+END
+
+INTERJECT_COPY_TRANS2 VA#KERGO 0 ACVA#KERGO0
+== ACBreJ IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@4
+==BJAHEIR IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)InParty("JAHEIRA")InMyArea("JAHEIRA")!StateCheck("JAHEIRA",CD_STATE_NOTVALID)~ THEN 
+@5
+END
+
+INTERJECT VA#KERGO 5 ACVA#KERGO5
+== ACBreJ IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@6
+== VA#KERGO @7 DO ~SetGlobal("VAJobPos","GLOBAL",2)SetGlobal("VAJobNeg","GLOBAL",3)SetGlobalTimer("VA#USTRAIN_ENCOUNTER","GLOBAL",THREE_DAYS)StartCutSceneMode()StartCutScene("va#10sc")~ EXIT
+
+INTERJECT_COPY_TRANS VA#TIAN 3 ACVA#TIAN3
+== ACBreJ IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@8
+== VA#TIAN IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@9
+END
+
+INTERJECT_COPY_TRANS VA#TIAN 9 ACVA#TIAN9
+== ACBreJ IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@10
+== VA#TIAN IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@11
+== ACBreJ IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@12
+== VA#TIAN IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@13
+== ACBreJ IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@14
+== VA#TIAN IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@15
+== ACBreJ IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@16 = @17
+== VA#TIAN IF ~InParty("ACBre")See("ACBRE")!StateCheck("ACBre",CD_STATE_NOTVALID)~ THEN
+@18
+END
+

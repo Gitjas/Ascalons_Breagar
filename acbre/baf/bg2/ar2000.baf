@@ -1,0 +1,26 @@
+IF
+Global("ACAUDINTM","GLOBAL",4)
+TimeOfDay(NIGHT)
+OR(2)
+	Global("ACAUDWAITS","GLOBAL",0)
+	Global("ACAUDWAITS","GLOBAL",2)
+GlobalLT("ACAUDQUEST","GLOBAL",14)
+THEN
+RESPONSE #100
+SetGlobal("ACAUDWAITS","GLOBAL",1)
+CreateCreature("ACAUD001",[2939.210],0)
+Continue()
+END
+
+IF
+Global("ACAUDWAITS","GLOBAL",1)
+Global("ACAUDINTM","GLOBAL",4)
+OR(2)
+	!TimeOfDay(NIGHT)
+	GlobalGT("ACAUDQUEST","GLOBAL",13)
+THEN
+RESPONSE #100
+SetGlobal("ACAUDWAITS","GLOBAL",2)
+ActionOverride("ACAUD001",Destroyself())
+Continue()
+END

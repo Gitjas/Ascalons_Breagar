@@ -1,0 +1,33 @@
+IF
+	IsOverMe([PC])
+	InMyArea("ACBRE")
+	Global("ACBREFOUND","GLOBAL",0)
+	OpenState("DOOR08",FALSE)
+THEN
+	RESPONSE #100
+		ActionOverride("ACBRE",DisplayStringHead(Myself,@5004)
+		Wait(5)
+	RESPONSE #100
+		ActionOverride("ACBRE",DisplayStringHead(Myself,@5005)
+		Wait(5)
+	RESPONSE #100
+		ActionOverride("ACBRE",DisplayStringHead(Myself,@5006)
+		Wait(5)
+	RESPONSE #100
+		ActionOverride("ACBRE",DisplayStringHead(Myself,@5007)
+		Wait(5)
+	RESPONSE #100
+		ActionOverride("ACBRE",DisplayStringHead(Myself,@5008)
+		Wait(5)
+END
+
+IF
+	IsOverMe([PC])
+	InMyArea("ACBRE")
+	Global("ACBRESET","LOCALS",0)
+	OpenState("DOOR08",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("ACBRESET","LOCALS",1)
+		ActionOverride("ACBRE",ChangeAIScript("ACBRE",OVERRIDE)
+END

@@ -1,0 +1,30 @@
+IF
+	Global("ARAC06PREP","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ARAC06PREP","GLOBAL",1)
+		SoundActivate("ENERGY",FALSE)
+		AmbientActivate("ENERGY",FALSE)
+		TriggerActivation("Barrier",FALSE)
+END
+
+/*
+IF
+	Global("ARAC06PREP","GLOBAL",2)
+THEN
+	RESPONSE #100
+
+END
+*/
+
+IF
+	Global("ACCELLARCLEAN","GLOBAL",0)
+	NumDeadGT("ACHOLD01",3)
+	NumDeadGT("ACNDRO01",6)
+	NumDeadGT("ACNDRO02",1)
+	NumDeadGT("ACNDRO03",1)
+	NumDeadGT("ACNDRO04",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ACCELLARCLEAN","GLOBAL",1)
+END

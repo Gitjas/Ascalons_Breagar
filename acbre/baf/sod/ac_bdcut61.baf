@@ -1,0 +1,11 @@
+IF
+	InParty("ACBre")  
+THEN
+	RESPONSE #100
+		CutSceneId("ACBre")
+		ActionOverride("ACBre",LeaveParty())
+		SetGlobal("ACBREPartyBG1","GLOBAL",1)
+		SetGlobal("ACBREEXISTS","GLOBAL",1)
+		SetGlobal("ACBREINPARTY","GLOBAL",3)
+//		ActionOverride("ACBre",DestroyAllFragileEquipment(ADAMANTINE))
+END

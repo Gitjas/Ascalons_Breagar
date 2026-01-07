@@ -1,0 +1,6 @@
+IF
+	HP(MYSELF,1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(PLAYER1)
+END
