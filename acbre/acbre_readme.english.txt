@@ -416,6 +416,7 @@ silver arm in ToB
 
 12.2.2:	(xxx) by xxx
 	-Fixed detection of EndlessBG1 for crossmod.
+	-Moved Breagar's interjection into Lazarus' dialogue so it fits better (and added passback line; 25spell.dlg state 1).
 	-(German) typo correction
 
 ***************************************************************************************************************
