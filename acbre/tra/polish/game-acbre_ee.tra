@@ -1,0 +1,402 @@
+//BGII:EE #6656 + addition
+@71   = ~Najpowszechniejsza wersja topora bojowego sk³ada siê z solidnego trzonka o ponad metrowej d³ugoœci, na którego koñcu osadzono jednosieczne ostrze o zakrzywionym kszta³cie. Topory bojowe s¹ równie¿ nazywane toporami szerokimi.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k8 
+Typ obra¿eñ: sieczne
+OpóŸnienie: 7
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 10
+
+Waga: 7~
+// BGII #6706 + addition
+@72   = ~Cep bojowy sk³ada siê z solidnego drzewca, s³u¿¹cego za uchwyt, do którego przymocowany jest gruby metalowy prêt, nabijany ostrymi kawa³kami metalu lub kamieni dr¹g, lub te¿ ¿elazna kula ze szpikulcami. Te dwa elementy s¹ zwykle po³¹czone krótkim ³añcuchem lub mocnymi rzemieniami. Broñ ta by³a pocz¹tkowo u¿ywana jako narzêdzie do m³ócenia ziarna.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k6 +1
+Typ obra¿eñ: obuchowe
+OpóŸnienie: 7
+Rodzaj bieg³oœci: cep bojowy/morgensztern
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 13
+
+Waga: 15~
+// BGII #6709 + addition
+@73   = ~Wekiera jest w prostej linii spadkobierczyni¹ zwyk³ej maczugi, bêd¹c po prostu drewnianym trzonem, na którym zosta³a osadzona kamienna lub metalowa g³owica. Wygl¹d g³owicy mo¿e siê ró¿niæ, niektóre s¹ nabijane ostrymi kolcami inne metalowymi æwiekami, a jeszcze inne maj¹ kszta³t ostros³upa.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k6 +1
+Typ obra¿eñ: obuchowe
+OpóŸnienie: 7
+Rodzaj bieg³oœci: wekiera
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 10
+
+Waga: 10~
+//BGII #6855 + addition
+@74   = ~Morgensztern sk³ada siê z drewnianego styliska, zwieñczonego ¿elazn¹ g³owic¹ nabit¹ licznymi szpiczastymi æwiekami. Broñ ta ma od oko³o stu dwudziestu do stu trzydziestu centymetrów d³ugoœci. Ró¿ne jej rodzaje posiadaj¹ g³owicê kulist¹, owaln¹ lub cylindryczn¹. Bez wzglêdu jednak na rodzaj, wiêkszoœæ morgenszternów zakoñczona jest d³ugim szpikulcem, przeznaczonym do k³ucia.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 2k4
+Typ obra¿eñ: obuchowe
+OpóŸnienie: 7
+Rodzaj bieg³oœci: cep bojowy/morgensztern
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 11
+
+Waga: 12~
+//BGII #6720 + addition
+@75   = ~Typowy sztylet posiada ostro zakoñczone, przewa¿nie obusieczne ostrze, w przeciwieñstwie do no¿a, który jest jednosieczny i nieco od niego krótszy.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k4
+Typ obra¿eñ: k³ute
+OpóŸnienie: 2
+Rodzaj bieg³oœci: sztylet
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 3
+
+Waga: 1~
+//BGII #6712 + addition
+@76   = ~Halabarda jest zdecydowanie najstarsz¹ i najczêœciej u¿ywan¹ broni¹ drzewcow¹, sk³adaj¹c¹ siê z przypominaj¹cego kszta³tem tasak ostrza, które pe³ni funkcjê topora, zamocowanego na stylisku o d³ugoœci oko³o dwóch metrów. Ostrze równowa¿one jest z drugiej strony przez zadzior, a na jego szczycie znajduje siê ostry kolec, zwykle o czworobocznej konstrukcji. Zadzior jest czasami zastêpowany hakiem wykorzystywanym do zrzucania z koni kawalerzystów. Halabardê mo¿na najlepiej opisaæ jako skrzy¿owanie w³óczni z toporem.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k10 
+Typ obra¿eñ: sieczne lub k³ute, wybiera siê lepsz¹ opcjê
+OpóŸnienie: 9
+Rodzaj bieg³oœci: halabarda
+Typ broni: 2-rêczna
+
+Wymagania:
+– Si³a: 13
+
+Waga: 15~
+//BGII #6727 + addition
+@77   = ~W³ócznia to jeden z najwczeœniejszych rodzajów broni, którymi zacz¹³ pos³ugiwaæ siê cz³owiek. Pierwsze egzemplarze by³y wykonane z drewna i zaostrzone na koñcu. Kiedy cz³owiek nauczy³ siê wytapiaæ metale, groty w³óczni zaczêto wytwarzaæ z ¿elaza i stali. W pewnym momencie zaczêto eksperymentowaæ z ró¿nymi typami grotów i w ten sposób powsta³y ró¿ne typy broni drzewcowej.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k6
+Typ obra¿eñ: k³ute
+OpóŸnienie: 6
+Rodzaj bieg³oœci: w³ócznia
+Typ broni: 2-rêczna
+
+Wymagania:
+– Si³a: 5
+
+Waga: 5~
+//BGII #6738 + additio
+@78   = ~Miecz pó³torarêczny zwany jest równie¿ „bêkartem”, gdy¿ stanowi niejako skrzy¿owanie miecza d³ugiego i oburêcznego. Ma obusieczne ostrze i d³ug¹ rêkojeœæ, dziêki czemu mo¿na go u¿ywaæ jedn¹ rêk¹ lub obur¹cz. Jego d³ugoœæ waha siê od stu dwudziestu do stu czterdziestu piêciu centymetrów.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 2k4
+Typ obra¿eñ: sieczne
+OpóŸnienie: 8
+Rodzaj bieg³oœci: miecz pó³torarêczny
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 11
+
+Waga: 10~
+//BGII #6742 + addition
+@79   = ~Miecze te nazywa siê zwykle mieczami obusiecznymi, wojennymi lub wojskowymi. W wielu wypadkach miecz d³ugi posiada jedn¹ krawêdŸ tn¹c¹. Nie istnieje jedna wersja miecza d³ugiego, jego konstrukcja i d³ugoœæ mog¹ siê bowiem ró¿niæ w zale¿noœci od kultury, a nawet w obrêbie tej samej spo³ecznoœci, jeœli weŸmie siê pod uwagê ró¿ne epoki. Jedn¹ z najbardziej charakterystycznych cech mieczy d³ugich jest ich d³ugoœæ, która waha siê od dziewiêædziesiêciu do stu dwudziestu centymetrów. W tym ostatnim przypadku samo ostrze mo¿e mierzyæ nawet do stu centymetrów. Wiêkszoœæ mieczy d³ugich jest obusiecznych i ma ostre zakoñczenie. Pomimo posiadania sztychu, miecz d³ugi przeznaczony jest do ciêcia, a nie do wyprowadzania pchniêæ.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k8
+Typ obra¿eñ: sieczne
+OpóŸnienie: 5
+Rodzaj bieg³oœci: miecz d³ugi
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 6
+
+Waga: 4~
+//BGII #6747 + addition
+@80   = ~Miecze krótkie pojawi³y siê jako pierwsze w tej grupie broni. W najprostszych s³owach jest to sztylet o ostrzu tak d³ugim, ¿e nie mo¿e byæ d³u¿ej traktowany jak sztylet. Termin „miecz krótki” nie istnieje w ¿adnych klasyfikacjach mieczy. Jednak¿e jest tu u¿ywany do opisania dwusiecznego ostrza o d³ugoœci oko³o szeœædziesiêciu centymetrów. Czubki tych mieczy s¹ zazwyczaj ostre, co czyni je doskona³ymi do zadawania ran k³utych.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k6 
+Typ obra¿eñ: k³ute
+OpóŸnienie: 3
+Rodzaj bieg³oœci: miecz krótki
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 5
+
+Waga: 3~
+//BGII #22712 + addition
+@81   = ~D³ugie, zakrzywione, jednosieczne ostrze jest charakterystyczn¹ cech¹ zarówno szabli, jak i sejmitara, mimo i¿ obie te bronie wywodz¹ siê z ró¿nych krain Faerunu. Podczas gdy, ze wzglêdu na sw¹ wszechstronnoœæ, szabla by³a przeznaczona g³ównie dla jeŸdŸców, sejmitar jest mocniej zwi¹zany z tradycjami kultury wschodu. „Shamshir”, jak pierwotnie go nazwano, jest d³u¿szy, a jego ostrze bardziej zakrzywione i zakoñczone wyd³u¿onym, ostrym szpicem. W efekcie jest to broñ nieco wolniejsza, jednak bardziej skuteczna i zabójcza w walce.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k8
+Typ obra¿eñ: sieczne 
+OpóŸnienie: 5
+Rodzaj bieg³oœci: sejmitar/wakizashi/ninja-to
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 10
+
+Waga: 4~
+//BGII #35963 + addition
+@82   = ~Katana to lekko zakrzywiony miecz o jednym ostrzu. S¹ to prawdopodobnie najostrzejsze miecze jakie kiedykolwiek wykuto, proces ich tworzenia jest d³ugi, trzymany w tajemnicy i jest prawdziw¹ sztuk¹. To ostrze jest chyba najwa¿niejsz¹ czêœci¹ kultury Kara-Tur. Dotkniêcie czy wziêcie do rêki katany samuraja to dla niego obraza i zawsze wywo³uje jego gniew. Rzadkoœci¹ jest by gaijin, czyli obcokrajowiec, posiada³ taki miecz. Albo ten gaijin jest serdecznym przyjacielem wa¿nego ministra, albo zamordowa³ samuraja.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k10
+Typ obra¿eñ: sieczne
+OpóŸnienie: 4
+Rodzaj bieg³oœci: katana
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 6
+
+Waga: 6~
+//BGII #36181 + addition
+@83   = ~Wakizashi, czyli miecz pomocniczy, jest niezwykle wa¿ny dla samuraja. Nosi siê go przez ca³y czas, nawet w mieszkaniu, spoczywa blisko samuraja, gdy ten œpi. Wykonany z równ¹ pieczo³owitoœci¹ co katana, krótszy miecz, d³ugoœci trzydziestu piêciu do szeœædziesiêciu centymetrów jest niebezpieczn¹ broni¹ w rêkach wyszkolonego szermierza.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k8
+Typ obra¿eñ: k³ute
+OpóŸnienie: 3
+Rodzaj bieg³oœci: sejmitar/wakizashi/ninja-to
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 5
+
+Waga: 3~
+//BGII #39467 + addition
+@84   = ~Miecz ninja, zwany ninja-to, jest gorszej jakoœci ni¿ inne klingi z Kara-Tur, takie jak katana. Ninja-To jest krótki i ma proste ostrze, co sprawia, ¿e jest idealnym narzêdziem podstêpnych ninja. Ninja-to jest te¿ lepszy do walki w zamkniêtych przestrzeniach, daj¹c czasem ninja przewagê nad samurajami uzbrojonymi w d³u¿sz¹ broñ.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k8
+Typ obra¿eñ: sieczne
+OpóŸnienie: 4
+Rodzaj bieg³oœci: sejmitar/wakizashi/ninja-to
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 6
+
+Waga: 5~
+//BGII #6752 + addition
+@85   = ~Miecz oburêczny wywodzi siê od miecza d³ugiego. P³atnerze od zawsze szukali sposobów, aby ulepszaæ istniej¹ce bronie. W przypadku miecza d³ugiego zdecydowano siê na wyd³u¿enie ostrza, ale w konsekwencji nale¿a³o uczyniæ to samo z rêkojeœci¹, gdy¿ do w³aœciwego wymachiwania mieczem niezbêdne by³y obie d³onie. G³ówn¹ funkcj¹ mieczy oburêcznych jest przecinanie na pó³ rycerzy konnych oraz prze³amywanie formacji pikinierów.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1k10
+Typ obra¿eñ: sieczne
+OpóŸnienie: 10
+Rodzaj bieg³oœci: miecz oburêczny
+Typ broni: 2-rêczna
+
+Wymagania:
+– Si³a: 14
+
+Waga: 15~
+@96   = ~Dziêki boskiej mocy Berronar srebrne ramiê golema stra¿niczego zosta³o zespolone z kikutem Breagara. Krasnolud mo¿e teraz w³adaæ rêk¹ jak w³asn¹. Metal zosta³ wzmocniony b³ogos³awieñstwem krasnoludzkiej bogini, co pozwala Breagarowi blokowaæ ciosy, a nawet w pewnym stopniu ataki magiczne. Niestety palce nowej d³oni s¹ zbyt grube, by móg³ nosiæ na nich pierœcienie.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +2
+– Rzuty obronne: +2~
+@97   = ~Dziêki boskiej mocy Berronar srebrne ramiê golema stra¿niczego zosta³o zespolone z kikutem Breagara. Krasnolud mo¿e teraz w³adaæ rêk¹ jak w³asn¹. Metal zosta³ wzmocniony b³ogos³awieñstwem krasnoludzkiej bogini, co pozwala Breagarowi blokowaæ ciosy, a nawet w pewnym stopniu ataki magiczne. Niestety palce nowej d³oni s¹ zbyt grube, by móg³ nosiæ na nich pierœcienie.
+
+Dziêki ogniwom energetycznym znalezionym w lochach Irenicusa srebrne ramiê sta³o siê teraz znacznie silniejsze.
+
+PARAMETRY:
+
+Specjalne:
+– Si³a: +1
+– Klasa Pancerza: +2
+– Rzuty obronne: +2~
+@98   = ~Dziêki boskiej mocy Berronar srebrne ramiê golema stra¿niczego zosta³o zespolone z kikutem Breagara. Krasnolud mo¿e teraz w³adaæ rêk¹ jak w³asn¹. Metal zosta³ wzmocniony b³ogos³awieñstwem krasnoludzkiej bogini, co pozwala Breagarowi blokowaæ ciosy, a nawet w pewnym stopniu ataki magiczne. Niestety palce nowej d³oni s¹ zbyt grube, by móg³ nosiæ na nich pierœcienie.
+
+Dziêki ogniwom energetycznym znalezionym w lochach Irenicusa srebrne ramiê pozwala teraz znacznie skuteczniej w³adaæ tarczami.
+
+PARAMETRY:
+
+Specjalne:
+– Styl walki mieczem i tarcz¹: +2
+– Klasa Pancerza: +2
+– Rzuty obronne: +2
+– Dzier¿¹cy nie mo¿e nosiæ pierœcieni na lewej d³oni~
+@99   = ~Dziêki boskiej mocy Berronar srebrne ramiê golema stra¿niczego zosta³o zespolone z kikutem Breagara. Krasnolud mo¿e teraz w³adaæ rêk¹ jak w³asn¹. Metal zosta³ wzmocniony b³ogos³awieñstwem krasnoludzkiej bogini, co pozwala Breagarowi blokowaæ ciosy, a nawet w pewnym stopniu ataki magiczne. Niestety palce nowej d³oni s¹ zbyt grube, by móg³ nosiæ na nich pierœcienie.
+
+Dziêki ogniwom energetycznym znalezionym w lochach Irenicusa srebrne ramiê pozwala teraz znacznie skuteczniej w³adaæ broni¹ w drugiej rêce.
+
+PARAMETRY:
+
+Specjalne:
+– Styl walki dwoma broniami: +3
+– Klasa Pancerza: +2
+– Rzuty obronne: +2~
+@103  = ~Dziêki boskiej mocy Berronar srebrne ramiê golema stra¿niczego zosta³o zespolone z kikutem Breagara. Krasnolud mo¿e teraz w³adaæ rêk¹ jak w³asn¹. Metal zosta³ wzmocniony b³ogos³awieñstwem krasnoludzkiej bogini, co pozwala Breagarowi blokowaæ ciosy, a nawet w pewnym stopniu ataki magiczne. Niestety palce nowej d³oni s¹ zbyt grube, by móg³ nosiæ na nich pierœcienie.
+
+Breagarowi uda³o siê pomyœlnie wtopiæ rudê meteorytow¹ w d³oñ, co poprawi³o jej odpornoœæ na uszkodzenia.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +3
+– Rzuty obronne: +3~
+@111  = ~O tym s³ynnym toporze kr¹¿y wiele legend. Mówi siê, ¿e sam Moradin wyku³ tê broñ jako dar dla swojej ma³¿onki, Berronar. W wyniku splotu nieszczêœliwych wydarzeñ topór zosta³ strzaskany, a zdobi¹ce go niegdyœ klejnoty przepad³y w mrokach dziejów.
+
+Mimo ¿e broñ utraci³a znaczn¹ czêœæ swej dawnej mocy, w rêkach honorowego krasnoluda wci¹¿ stanowi potê¿ny orê¿ przeciwko z³u.
+
+PARAMETRY:
+
+Specjalne:
+– 10% szans przy trafieniu na og³uszenie przeciwnika na 10 sekund (rzut obronny przeciw œmierci z modyfikatorem -2 neguje)
+
+Obra¿enia: 1k10 +2
+TraK0: +2
+Typ obra¿eñ: sieczne
+OpóŸnienie: 4
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 10
+
+Waga: 7~
+@113  = ~O tym s³ynnym toporze kr¹¿y wiele legend. Mówi siê, ¿e sam Moradin wyku³ tê broñ jako dar dla swojej ma³¿onki, Berronar.
+
+Podczas podró¿y przez Podmrok <CHARNAME> i Breagar odnaleŸli zaginione klejnoty i naprawili topór w kuŸni Cromwella. Od tego czasu broñ lœni nowym blaskiem i stanowi potê¿ny orê¿ przeciwko z³u.
+
+PARAMETRY:
+
+Specjalne:
+– 50% szans przy trafieniu na og³uszenie przeciwnika na 10 sekund (rzut obronny przeciw œmierci z modyfikatorem -2 neguje)
+– Ochrona przed z³em
+
+Obra¿enia: 1k12 +5
+TraK0: +5
+Typ obra¿eñ: sieczne
+OpóŸnienie: 4
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 10
+
+Waga: 7~
+@115  = ~O tym s³ynnym toporze kr¹¿y wiele legend. Mówi siê, ¿e sam Moradin wyku³ tê broñ jako dar dla swojej ma³¿onki, Berronar.
+
+Podczas podró¿y przez Podmrok <CHARNAME> i Breagar odnaleŸli zaginione klejnoty i naprawili topór w kuŸni Cromwella. Czyn ten wzbudzi³ zainteresowanie krasnoludzkich bóstw, które pob³ogos³awi³y orê¿ dodatkowymi mocami. Od tego czasu broñ lœni nowym blaskiem i stanowi potê¿ny orê¿ przeciwko z³u, zw³aszcza przeciwko olbrzymom i ich pobratymcom.
+
+PARAMETRY:
+
+Specjalne:
+– 50% szans przy trafieniu na og³uszenie przeciwnika na 10 sekund (rzut obronny przeciw œmierci z modyfikatorem -2 neguje)
+– Ochrona przed z³em
+
+Obra¿enia: 1k12 +6, +9 przeciw olbrzymom
+TraK0: +6, +9 przeciw olbrzymom
+Typ obra¿eñ: sieczne
+OpóŸnienie: 4
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 10
+
+Waga: 7~
+@117  = ~Ta szata nale¿a³a niegdyœ do nekromanty Borska. Teraz nale¿y do ciebie.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: 5
+– Odpornoœæ na magiê: 5%
+– Rzuty obronne: +1
+
+Waga: 6~
+@175  = ~Reggik, jeden z najzdolniejszych kowali klanu Bardormar z gór Burzowych Rogów, przez d³ugi czas studiowa³ sztukê rzeŸbienia run, a¿ w koñcu stworzy³ ten m³ot, by wystawiæ swoje umiejêtnoœci na próbê. Broñ trzeszczy od przenikliwego zimna, a w jej metalu lœni¹ srebrzystobia³e runy.
+
+PARAMETRY:
+
+Specjalne:
+– 5% szans przy trafieniu na natychmiastowe zamro¿enie przeciwnika na œmieræ (rzut obronny przeciw œmierci neguje)
+
+Obra¿enia: 2k4 +3
+TraK0: +3
+Typ obra¿eñ: obuchowe
+OpóŸnienie: 1
+Rodzaj bieg³oœci: m³ot bojowy
+Typ broni: 1-rêczna
+
+Wymagania:
+– Si³a: 10
+
+Waga: 4~
+@5042  = ~Dziêki boskiej mocy Berronar srebrne ramiê golema stra¿niczego zosta³o zespolone z kikutem Breagara. Krasnolud mo¿e teraz w³adaæ rêk¹ jak w³asn¹. Metal zosta³ wzmocniony b³ogos³awieñstwem krasnoludzkiej bogini, co pozwala Breagarowi blokowaæ ciosy, a nawet w pewnym stopniu ataki magiczne. Niestety palce nowej d³oni s¹ zbyt grube, by móg³ nosiæ na nich pierœcienie.
+
+Breagarowi uda³o siê pomyœlnie wtopiæ rudê meteorytow¹ w d³oñ, co poprawi³o jej odpornoœæ na uszkodzenia.
+
+PARAMETRY:
+
+Specjalne:
+– Si³a: +1
+– Klasa Pancerza: +3
+– Rzuty obronne: +3~

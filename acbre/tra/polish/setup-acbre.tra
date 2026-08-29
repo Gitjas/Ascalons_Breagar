@@ -1,0 +1,61 @@
+@1    = ~Breagar NPC mod do BG I EE, BG II EE i EET~
+@2    = ~Nie zainstalowano gry kompatybilnej z tym modem. Instalacja zostaje anulowana.~
+@3    = ~Breagar NPC: Czas pomiędzy dialogami Breagara (domyślnie 30 minut miedzy dialogami)~
+/*
+@4    = ~Prosze wybrac:
+[1] 30 minut czasu rzeczywistego miedzy rozmowami (zalecane)
+[2] 45 minut czasu rzeczywistego miedzy rozmowami
+[3] 1 godzina czasu rzeczywistego miedzy rozmowami
+[4] 15 minut czasu rzeczywistego miedzy rozmowami
+[5] 1 godzina 30 minut czasu rzeczywistego miedzy rozmowami~
+*/
+@5    = ~Ten mod musi zostać zainstalowany przed EET_End w twojej instalacji EET.~
+/*
+@6    = ~Prosze wybrac 1, 2, 3, 4 lub 5 i zatwierdzic klawiszem Enter.~
+@7    = ~30 minut czasu rzeczywistego miedzy rozmowami~
+*/
+@8    = ~45 minut czasu rzeczywistego między rozmowami~
+@9    = ~1 godzina czasu rzeczywistego między rozmowami~
+@10   = ~15 minut czasu rzeczywistego między rozmowami~
+@11   = ~1 godzina 30 minut czasu rzeczywistego między rozmowami~
+@12   = ~Breagar NPC: Alternatywny portret z wersji v4.X (domyślnie oryginalna grafika autorstwa Nix)~
+/*
+@13   = ~Prosze wybrac portret:
+
+[1] Oryginalna grafika autorstwa Nix
+[2] Alternatywny portret z wersji v4.X~
+@14   = ~Prosze wybrac 1 lub 2 i zatwierdzic klawiszem Enter~
+@15   = ~Instalowanie portretu: Oryginalna grafika autorstwa Nix~
+*/
+@16   = ~Instalowanie portretu: Alternatywny portret z wersji v4.X~
+
+@197  = ~Breagar NPC: Komponenty integracyjne i PID~
+@198  = ~Nie zainstalowano głównego komponentu Breagara. Anulowanie instalacji.~
+@199  = ~Instalowanie komponentu integracyjnego dla DSotSC~
+@200  = ~Instalowanie komponentu integracyjnego dla Amber~
+@201  = ~Instalowanie komponentu integracyjnego dla Auren~
+@202  = ~Instalowanie komponentu integracyjnego dla ToBR~
+@203  = ~Instalowanie komponentu integracyjnego dla BGQE~
+@204  = ~Instalowanie komponentu integracyjnego dla ToD~
+@205  = ~Instalowanie komponentu integracyjnego dla AsQP~
+@206  = ~Naucz Virginię, niewidzialnego cudownego królika, nowych sztuczek~
+@207  = ~Instalowanie Virginii, niewidzialnego cudownego królika~
+@208  = ~Ten mod powinien zostać zainstalowany PRZED BP-BGT Worldmap~
+@209  = ~Instalowanie komponentu integracyjnego dla Weimer's Solaufein~
+
+/* new for v9.0.0 */
+@210  = ~Instalowanie komponentu integracyjnego dla: Alternatives~
+@211  = ~Instalowanie komponentu integracyjnego dla: Imoen 4 Ever~
+
+/* new for v10.0.0 */
+@212 = ~Wykryto mod Transitions~
+@213 = ~Instalowanie komponentu integracyjnego dla Balduran's Seatower~
+
+/* new for v11.1.0 */
+@214 = ~Instalowanie komponentu integracyjnego dla Another Fine Hell Mod~
+
+/* new for v11.2.0 */
+@215 =  ~Instalowanie komponentu integracyjnego dla EndlessBG1~
+
+// needed for EE two-handed restrictions
+@216 = ~Breagar nie może używać broni oburęcznej~

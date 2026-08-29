@@ -1,0 +1,1188 @@
+@17   = ~Krasnoludzki kowal~
+@18   = ~KRASNOLUDZKI KOWAL: W podziemnych pa³acach krasnoludzkich klanów mistrzostwo rzemios³a uchodzi za najbardziej presti¿ow¹ drogê ¿yciow¹. Inne rasy postrzegaj¹ krasnoludy przede wszystkim jako nieustraszonych górników i wybitnych kowali, z których ci drudzy zdobyli œwiatow¹ s³awê dziêki mistrzowsko wykonanemu orê¿owi. Typowy krasnoludzki kowal jest silny, wytrzyma³y i zahartowany przez d³ugie godziny spêdzane przy rozpalonym palenisku. Jako prawdziwy mistrz kowalstwa potrafi dostrzec sekrety niemal ka¿dego przedmiotu ju¿ na pierwszy rzut oka. Nie zawaha siê broniæ swojej kuŸni przed zagro¿eniem, a choæ zna obs³ugê wiêkszoœci broni u¿ywanych na placach treningowych, w walce polega g³ównie na m³otach i toporach.
+
+ZALETY:
+– Otrzymuje 1% odpornoœci na ogieñ na ka¿dy poziom (zaczynaj¹c od 5%).
+– Zwiêkszona wiedza.
+– Otrzymuje specjaln¹ zdolnoœæ: Widmowy m³ot.
+
+WADY:
+– Mo¿e osi¹gn¹æ Wielkie mistrzostwo (5 punktów) tylko w m³otach i toporach.
+– Mo¿e osi¹gn¹æ Specjalizacjê (2 punkty) tylko w stylu walki jedn¹ broni¹.~
+@19   = ~Ksiêga kowalstwa~
+@20   = ~Ksiêga kowalstwa to grube i ciê¿kie tomiszcze, oprawione w kruszej¹c¹, star¹ skórê. Strony pokrywaj¹ krasnoludzkie runy i schematy, niezrozumia³e dla ka¿dego, kto nie spêdzi³ ¿ycia przy kowadle.~
+@21   = ~Nieska¿ona bry³a ¿elaza~
+@22   = ~Solidna bry³a ¿elaza. Idealnie nadaje siê do ambitnych prac kowalskich.~
+@23   = ~Klucz~
+@24   = ~Ten klucz nale¿a³ do lisza rezyduj¹cego pod cmentarzem.~
+@25   = ~Adam~
+@26   = ~Azzik~
+
+
+@29   = ~Breagar~
+@30   = ~Na m³ot Moradina! Karczmarzu, przez ciebie oszalejê!~ [ACBre_00]
+@31   = ~Niech to dunder œwiœnie, mam co do tego z³e przeczucia.~ [ACBre_01]
+@32   = ~Clangeddin nam sprzyja.~ [ACBre_02]
+@33   = ~Prowadzisz nas na zatracenie.~ [ACBre_03]
+@34   = ~Lepiej zawróæ z tej drogi, jeœli nie chcesz bliskiego spotkania z moim toporem!~ [ACBre_04]
+@35   = ~Marny z ciebie przywódca!~ [ACBre_05]
+@36   = ~No jasne, wystawcie krasnoluda do pierwszej linii!~ [ACBre_06]
+@37   = ~Nadeptaliœmy siê ju¿ co niemiara. Czas na odpoczynek.~ [ACBre_07]
+
+@39   = ~Skosztuj mojej stali!~ [ACBre_09]
+@40   = ~Clangeddinie!~ [ACBre_10]
+@41   = ~Braæ ich!~ [ACBre_11]
+@42   = ~Za klan Bardormar!~ [ACBre_12]
+
+@45   = ~D³u¿ej tego nie zniosê!~ [ACBre_15]
+@46   = ~Hrmf. Nienawidzê lasów.~ [ACBre_16]
+@47   = ~W którymœ z tych budynków musi byæ karczma. Ciekawe, czy maj¹ krasnoludzkie piwo.~ [ACBre_17]
+@48   = ~Krasnolud potrzebuje solidnego dachu nad g³ow¹. Od razu czujê siê jak u siebie.~ [ACBre_18]
+@49   = ~Tak?~ [ACBre_21]
+@50   = ~O co chodzi?~ [ACBre_22]
+@51   = ~Czego chcesz?~ [ACBre_23]
+@52   = ~Hmm?~ [ACBre_24]
+@53   = ~Wykrztuœ to wreszcie!~ [ACBre_25]
+@54   = ~Mów, czego ci trzeba.~ [ACBre_26]
+@55   = ~Oczywiœcie.~ [ACBre_27]
+@56   = ~Natychmiast.~ [ACBre_28]
+@57   = ~W porz¹dku.~ [ACBre_29]
+@58   = ~Wedle ¿yczenia.~ [ACBre_30]
+@59   = ~No to ruszajmy!~ [ACBre_31]
+@60   = ~Czemu nie.~ [ACBre_32]
+@61   = ~Tak.~ [ACBre_33]
+@62   = ~I po to mi zawracasz g³owê?~ [ACBre_34]
+@63   = ~Jeœli trzeba.~ [ACBre_35]
+@64   = ~Ha!~ [ACBre_36]
+@65   = ~Buzzurk!~ [ACBre_37]
+@66   = ~Buzzurk! Ani draœniêcia!~ [ACBre_38]
+@67   = ~Nie jestem twoim jucznym mu³em!~ [ACBre_39]
+
+@68   = ~Zapytany o swoj¹ przesz³oœæ BREAGAR z klanu Bardormar jedynie mruczy coœ pod brod¹. Z tego, co udaje ci siê wywnioskowaæ, pochodzi z gór Burzowych Rogów, a swój klan opuœci³ z powodów, których – jak sam twierdzi – nigdy nie pojmie „¿aden g³upiec, co to w ¿yciu nie widzia³ kopalnianego chodnika”. Byæ mo¿e z czasem krasnolud nabierze do ciebie zaufania i wyjawi, co nim w rzeczywistoœci kieruje.~
+@69   = ~Ha! Skosztuj mojej stali!~ [ACBre_36]
+@70   = ~Ranny Breagar~
+
+@71   = ~Najpowszechniejsza wersja topora bojowego sk³ada siê z solidnego trzonka o ponad metrowej d³ugoœci, na którego koñcu osadzono jednosieczne ostrze o zakrzywionym kszta³cie. Topory bojowe s¹ równie¿ nazywane toporami szerokimi.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K8 
+Typ obra¿eñ: sieczne
+Waga: 7
+OpóŸnienie: 7
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Nie mo¿e u¿ywaæ:
+ Z³odziej
+ Druid
+ Kap³an
+ Mag
+ Mnich~
+// BGII #6706 + addition
+@72   = ~Cep bojowy sk³ada siê z solidnego drzewca, s³u¿¹cego za uchwyt, do którego przymocowany jest gruby metalowy prêt, nabijany ostrymi kawa³kami metalu lub kamieni dr¹g, lub te¿ ¿elazna kula ze szpikulcami. Te dwa elementy s¹ zwykle po³¹czone krótkim ³añcuchem lub mocnymi rzemieniami. Broñ ta by³a pocz¹tkowo u¿ywana jako narzêdzie do m³ócenia ziarna.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K6 +1
+Typ obra¿eñ: obuchowe
+Waga: 15
+OpóŸnienie: 7
+Rodzaj bieg³oœci: cep bojowy/morgensztern
+Typ broni: 1-rêczna
+Wymagana si³a: 13
+Nie mo¿e u¿ywaæ:
+ Z³odziej
+ Druid
+ Mag
+ Mnich~
+// BGII #6709 + addition
+@73   = ~Wekiera jest w prostej linii spadkobierczyni¹ zwyk³ej maczugi, bêd¹c po prostu drewnianym trzonem, na którym zosta³a osadzona kamienna lub metalowa g³owica. Wygl¹d g³owicy mo¿e siê ró¿niæ, niektóre s¹ nabijane ostrymi kolcami inne metalowymi æwiekami, a jeszcze inne maj¹ kszta³t ostros³upa.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K6 +1
+Typ obra¿eñ: obuchowe
+Waga: 10
+OpóŸnienie: 7
+Rodzaj bieg³oœci: wekiera
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Nie mo¿e u¿ywaæ:
+ Z³odziej
+ Druid
+ Mag~
+
+//BGII #6855 + addition
+@74   = ~Morgensztern sk³ada siê z drewnianego styliska, zwieñczonego ¿elazn¹ g³owic¹ nabit¹ licznymi szpiczastymi æwiekami. Broñ ta ma od oko³o stu dwudziestu do stu trzydziestu centymetrów d³ugoœci. Ró¿ne jej rodzaje posiadaj¹ g³owicê kulist¹, owaln¹ lub cylindryczn¹. Bez wzglêdu jednak na rodzaj, wiêkszoœæ morgenszternów zakoñczona jest d³ugim szpikulcem, przeznaczonym do k³ucia.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 2K4
+Typ obra¿eñ: obuchowe
+Waga: 12
+OpóŸnienie: 7
+Rodzaj bieg³oœci: cep bojowy/morgensztern
+Typ broni: 1-rêczna
+Wymagana si³a: 11
+Nie mo¿e u¿ywaæ:
+ Z³odziej
+ Druid
+ Mag
+ Mnich~
+//BGII #6720 + addition
+@75   = ~Typowy sztylet posiada ostro zakoñczone, przewa¿nie obusieczne ostrze, w przeciwieñstwie do no¿a, który jest jednosieczny i nieco od niego krótszy.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K4
+Typ obra¿eñ: k³ute
+Waga: 1
+OpóŸnienie: 2
+Rodzaj bieg³oœci: sztylet
+Typ broni: 1-rêczna
+Wymagana si³a: 3
+Nie mo¿e u¿ywaæ:
+ Kap³an~
+//BGII #6712 + addition
+@76   = ~Halabarda jest zdecydowanie najstarsz¹ i najczêœciej u¿ywan¹ broni¹ drzewcow¹, sk³adaj¹c¹ siê z przypominaj¹cego kszta³tem tasak ostrza, które pe³ni funkcjê topora, zamocowanego na stylisku o d³ugoœci oko³o dwóch metrów. Ostrze równowa¿one jest z drugiej strony przez zadzior, a na jego szczycie znajduje siê ostry kolec, zwykle o czworobocznej konstrukcji. Zadzior jest czasami zastêpowany hakiem wykorzystywanym do zrzucania z koni kawalerzystów. Halabardê mo¿na najlepiej opisaæ jako skrzy¿owanie w³óczni z toporem.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K10 
+Typ obra¿eñ: k³ute
+Waga: 15
+OpóŸnienie: 9
+Rodzaj bieg³oœci: halabarda
+Typ broni: 2-rêczna
+Wymagana si³a: 13
+Nie mo¿e u¿ywaæ:
+ Z³odziej
+ Druid
+ Kap³an
+ Mag
+ Mnich~
+//BGII #6727 + addition
+@77   = ~W³ócznia to jeden z najwczeœniejszych rodzajów broni, którymi zacz¹³ pos³ugiwaæ siê cz³owiek. Pierwsze egzemplarze by³y wykonane z drewna i zaostrzone na koñcu. Kiedy cz³owiek nauczy³ siê wytapiaæ metale, groty w³óczni zaczêto wytwarzaæ z ¿elaza i stali. W pewnym momencie zaczêto eksperymentowaæ z ró¿nymi typami grotów i w ten sposób powsta³y ró¿ne typy broni drzewcowej.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K6
+Typ obra¿eñ: k³ute
+Waga: 5
+OpóŸnienie: 6
+Rodzaj bieg³oœci: w³ócznia
+Typ broni: 2-rêczna
+Wymagana si³a: 5
+Nie mo¿e u¿ywaæ:
+ Z³odziej
+ Druid
+ Mag
+ Mnich~
+//BGII #6738 + additio
+@78   = ~Miecz pó³torarêczny zwany jest równie¿ "bêkartem", gdy¿ stanowi niejako skrzy¿owanie miecza d³ugiego i oburêcznego. Ma obusieczne ostrze i d³ug¹ rêkojeœæ, dziêki czemu mo¿na go u¿ywaæ jedn¹ rêk¹ lub obur¹cz. Jego d³ugoœæ waha siê od stu dwudziestu do stu czterdziestu piêciu centymetrów.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 2K4
+Typ obra¿eñ: sieczne
+Waga: 10
+OpóŸnienie: 8
+Rodzaj bieg³oœci: miecz pó³torarêczny
+Typ broni: 1-rêczna
+Wymagana si³a: 11
+Nie mo¿e u¿ywaæ:
+ Z³odziej
+ Druid
+ Kap³an
+ Mag
+ Mnich~
+//BGII #6742 + addition
+@79   = ~Miecze te nazywa siê zwykle mieczami obusiecznymi, wojennymi lub wojskowymi. W wielu wypadkach miecz d³ugi posiada jedn¹ krawêdŸ tn¹c¹. Nie istnieje jedna wersja miecza d³ugiego, jego konstrukcja i d³ugoœæ mog¹ siê bowiem ró¿niæ w zale¿noœci od kultury, a nawet w obrêbie tej samej spo³ecznoœci, jeœli weŸmie siê pod uwagê ró¿ne epoki. Jedn¹ z najbardziej charakterystycznych cech mieczy d³ugich jest ich d³ugoœæ, która waha siê od dziewiêædziesiêciu do stu dwudziestu centymetrów. W tym ostatnim przypadku samo ostrze mo¿e mierzyæ nawet do stu centymetrów. Wiêkszoœæ mieczy d³ugich jest obusiecznych i ma ostre zakoñczenie. Pomimo posiadania sztychu, miecz d³ugi przeznaczony jest do ciêcia, a nie do wyprowadzania pchniêæ.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K8
+Typ obra¿eñ: sieczne
+Waga: 4
+OpóŸnienie: 5
+Rodzaj bieg³oœci: d³ugi miecz
+Typ broni: 1-rêczna
+Wymagana si³a: 6
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag~
+//BGII #6747 + addition
+@80   = ~Miecze krótkie pojawi³y siê jako pierwsze w tej grupie broni. W najprostszych s³owach jest to sztylet o ostrzu tak d³ugim, ¿e nie mo¿e byæ d³u¿ej traktowany jak sztylet. Termin „miecz krótki” nie istnieje w ¿adnych klasyfikacjach mieczy. Jednak¿e jest tu u¿ywany do opisania dwusiecznego ostrza o d³ugoœci oko³o szeœædziesiêciu centymetrów. Czubki tych mieczy s¹ zazwyczaj ostre, co czyni je doskona³ymi do zadawania ran k³utych.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K6 
+Typ obra¿eñ: k³ute
+Waga: 3
+OpóŸnienie: 3
+Rodzaj bieg³oœci: krótki miecz
+Typ broni: 1-rêczna
+Wymagana si³a: 5
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag~
+//BGII #22712 + addition
+@81   = ~D³ugie, zakrzywione, jednosieczne ostrze jest charakterystyczn¹ cech¹ zarówno szabli, jak i sejmitara, mimo i¿ obie te bronie wywodz¹ siê z ró¿nych krain Faerunu. Podczas gdy, ze wzglêdu na sw¹ wszechstronnoœæ, szabla by³a przeznaczona g³ównie dla jeŸdŸców, sejmitar jest mocniej zwi¹zany z tradycjami kultury wschodu. "Shamshir", jak pierwotnie go nazwano, jest d³u¿szy, a jego ostrze bardziej zakrzywione i zakoñczone wyd³u¿onym, ostrym szpicem. W efekcie jest to broñ nieco wolniejsza, jednak bardziej skuteczna i zabójcza w walce.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K8
+Typ obra¿eñ: sieczne
+Waga: 4
+OpóŸnienie: 5
+Rodzaj bieg³oœci: sejmitar/wakizashi/ninja-to
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Nie mo¿e u¿ywaæ:
+ Z³odziej
+ Kap³an
+ Mag
+ Mnich~
+//BGII #35963 + addition
+@82   = ~Katana to lekko zakrzywiony miecz o jednym ostrzu. S¹ to prawdopodobnie najostrzejsze miecze jakie kiedykolwiek wykuto, proces ich tworzenia jest d³ugi, trzymany w tajemnicy i jest prawdziw¹ sztuk¹. To ostrze jest chyba najwa¿niejsz¹ czêœci¹ kultury Kara-Tur. Dotkniêcie czy wziêcie do rêki katany samuraja to dla niego obraza i zawsze wywo³uje jego gniew. Rzadkoœci¹ jest by gaijin, czyli obcokrajowiec, posiada³ taki miecz. Albo ten gaijin jest serdecznym przyjacielem wa¿nego ministra, albo zamordowa³ samuraja.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K10
+Typ obra¿eñ: sieczne
+Waga: 6
+OpóŸnienie: 4
+Rodzaj bieg³oœci: katana
+Typ broni: 1-rêczna
+Wymagana si³a: 6
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag~
+//BGII #36181 + addition
+@83   = ~Wakizashi, czyli miecz pomocniczy, jest niezwykle wa¿ny dla samuraja. Nosi siê go przez ca³y czas, nawet w mieszkaniu, spoczywa blisko samuraja, gdy ten œpi. Wykonany z równ¹ pieczo³owitoœci¹ co katana, krótszy miecz, d³ugoœci trzydziestu piêciu do szeœædziesiêciu centymetrów jest niebezpieczn¹ broni¹ w rêkach wyszkolonego szermierza.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K8
+Typ obra¿eñ: k³ute
+Waga: 3
+OpóŸnienie: 3
+Rodzaj bieg³oœci: sejmitar/wakizashi/ninja-to
+Typ broni: 1-rêczna
+Wymagana si³a: 5
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag~
+//BGII #39467 + addition
+@84   = ~Miecz ninja, zwany ninja-to, jest gorszej jakoœci ni¿ inne klingi z Kara-Tur, takie jak katana. Ninja-To jest krótki i ma proste ostrze, co sprawia, ¿e jest idealnym narzêdziem podstêpnych ninja. Ninja-to jest te¿ lepszy do walki w zamkniêtych przestrzeniach, daj¹c czasem ninja przewagê nad samurajami uzbrojonymi w d³u¿sz¹ broñ.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K8
+Typ obra¿eñ: sieczne
+Waga: 5
+OpóŸnienie: 4
+Rodzaj bieg³oœci: sejmitar/wakizashi/ninja-to
+Typ broni: 1-rêczna
+Wymagana si³a: 6
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag~
+//BGII #6752 + addition
+@85   = ~Miecz oburêczny wywodzi siê od miecza d³ugiego. P³atnerze od zawsze szukali sposobów, aby ulepszaæ istniej¹ce bronie. W przypadku miecza d³ugiego zdecydowano siê na wyd³u¿enie ostrza, ale w konsekwencji nale¿a³o uczyniæ to samo z rêkojeœci¹, gdy¿ do w³aœciwego wymachiwania mieczem niezbêdne by³y obie d³onie. G³ówn¹ funkcj¹ mieczy oburêcznych jest przecinanie na pó³ rycerzy konnych oraz prze³amywanie formacji pikinierów.
+
+Krasnoludzki kowal Breagar wzmocni³ tê broñ, dziêki czemu nie zniszczy siê w ferworze walki.
+
+PARAMETRY:
+
+Obra¿enia: 1K10
+Typ obra¿eñ: sieczne
+Waga: 15
+OpóŸnienie: 10
+Rodzaj bieg³oœci: miecz oburêczny
+Typ broni: 2-rêczna
+Wymagana si³a: 14
+Nie mo¿e u¿ywaæ:
+ Z³odziej
+ Druid
+ Kap³an
+ Mag
+ Mnich~
+
+@86   = ~Taerom~
+
+@88   = ~Revianel~
+@89   = ~Pani Zmierzchu Revianel~
+@90   = ~Niech Lathander ciê prowadzi! W czym mogê pomóc?~ [ACREVI00]
+@91 	= ~Odciête ramiê Breagara~
+@92   = ~W wyniku wypadku w kuŸni Grzmi¹cego M³ota Breagar straci³ lewe ramiê. Ranê szybko opatrzono, ale pokryty bliznami kikut nie jest przyjemnym widokiem.~
+@93   = ~Ramiê golema~
+@94   = ~Urwane ramiê srebrnego golema.~
+@95   = ~Srebrna rêka Breagara~
+@96   = ~Dziêki boskiej mocy Berronar srebrne ramiê golema stra¿niczego zosta³o zespolone z kikutem Breagara. Krasnolud mo¿e teraz w³adaæ rêk¹ jak w³asn¹. Metal zosta³ wzmocniony b³ogos³awieñstwem krasnoludzkiej bogini, co pozwala Breagarowi blokowaæ ciosy, a nawet w pewnym stopniu ataki magiczne. Niestety palce nowej d³oni s¹ zbyt grube, by móg³ nosiæ na nich pierœcienie.
+
+PARAMETRY:
+
+Klasa Pancerza: +2
+Specjalne:
+ +2 do rzutów obronnych~
+
+
+@97   = ~Dziêki boskiej mocy Berronar srebrne ramiê golema stra¿niczego zosta³o zespolone z kikutem Breagara. Krasnolud mo¿e teraz w³adaæ rêk¹ jak w³asn¹. Metal zosta³ wzmocniony b³ogos³awieñstwem krasnoludzkiej bogini, co pozwala Breagarowi blokowaæ ciosy, a nawet w pewnym stopniu ataki magiczne. Niestety palce nowej d³oni s¹ zbyt grube, by móg³ nosiæ na nich pierœcienie.
+
+Dziêki ogniwom energetycznym znalezionym w lochach Irenicusa srebrne ramiê sta³o siê teraz znacznie silniejsze.
+
+PARAMETRY:
+
+Klasa Pancerza: +2
+Specjalne:
+ +1 do Si³y
+ +2 do rzutów obronnych~
+
+@98   = ~Dziêki boskiej mocy Berronar srebrne ramiê golema stra¿niczego zosta³o zespolone z kikutem Breagara. Krasnolud mo¿e teraz w³adaæ rêk¹ jak w³asn¹. Metal zosta³ wzmocniony b³ogos³awieñstwem krasnoludzkiej bogini, co pozwala Breagarowi blokowaæ ciosy, a nawet w pewnym stopniu ataki magiczne. Niestety palce nowej d³oni s¹ zbyt grube, by móg³ nosiæ na nich pierœcienie.
+
+Dziêki ogniwom energetycznym znalezionym w lochach Irenicusa srebrne ramiê pozwala teraz znacznie skuteczniej w³adaæ tarczami.
+
+PARAMETRY:
+
+Klasa Pancerza: +2
+Specjalne:
+ +2 do stylu walki mieczem i tarcz¹
+ +2 do rzutów obronnych
+ Posiadacz nie mo¿e nosiæ pierœcieni na lewej d³oni~
+
+@99   = ~Dziêki boskiej mocy Berronar srebrne ramiê golema stra¿niczego zosta³o zespolone z kikutem Breagara. Krasnolud mo¿e teraz w³adaæ rêk¹ jak w³asn¹. Metal zosta³ wzmocniony b³ogos³awieñstwem krasnoludzkiej bogini, co pozwala Breagarowi blokowaæ ciosy, a nawet w pewnym stopniu ataki magiczne. Niestety palce nowej d³oni s¹ zbyt grube, by móg³ nosiæ na nich pierœcienie.
+
+Dziêki ogniwom energetycznym znalezionym w lochach Irenicusa srebrne ramiê pozwala teraz znacznie skuteczniej w³adaæ broni¹ w drugiej rêce.
+
+PARAMETRY:
+
+Klasa Pancerza: +2
+Specjalne:
+ +3 do stylu walki dwoma broniami
+ +2 do rzutów obronnych~
+
+@100  = ~Brakuj¹ca d³oñ Breagara~
+
+@101  = ~Odk¹d Breagar straci³ d³oñ w wypadku w kuŸni Grzmi¹cego M³ota, nie mo¿e on nosiæ pierœcieni.~
+@102  = ~Meteorytowa d³oñ Breagara~
+@103  = ~Dziêki boskiej mocy Berronar srebrne ramiê golema stra¿niczego zosta³o zespolone z kikutem Breagara. Krasnolud mo¿e teraz w³adaæ rêk¹ jak w³asn¹. Metal zosta³ wzmocniony b³ogos³awieñstwem krasnoludzkiej bogini, co pozwala Breagarowi blokowaæ ciosy, a nawet w pewnym stopniu ataki magiczne. Niestety palce nowej d³oni s¹ zbyt grube, by móg³ nosiæ na nich pierœcienie.
+
+Breagarowi uda³o siê pomyœlnie wtopiæ rudê meteorytow¹ w d³oñ, co poprawi³o jej odpornoœæ na uszkodzenia.
+
+PARAMETRY:
+
+Klasa Pancerza: +3
+Specjalne:
++3 do rzutów obronnych~
+@104  = ~Srebrna krasnoludka~
+@105  = ~Srebrna kolczuga~
+@106  = ~Srebrny he³m~
+@107  = ~Yrrymyr~
+@108  = ~Misa Berronar~
+@109  = ~Podczas obchodów Nowego Roku w takich misach roztapia siê srebro, które sk³ada siê Berronar w uroczystej ofierze.~
+@110  = ~Topór Berronar +2~
+@111  = ~O tym s³ynnym toporze kr¹¿y wiele legend. Mówi siê, ¿e sam Moradin wyku³ tê broñ jako dar dla swojej ma³¿onki, Berronar. W wyniku splotu nieszczêœliwych wydarzeñ topór zosta³ strzaskany, a zdobi¹ce go niegdyœ klejnoty przepad³y w mrokach dziejów.
+
+Mimo ¿e broñ utraci³a znaczn¹ czêœæ swej dawnej mocy, w rêkach honorowego krasnoluda wci¹¿ stanowi potê¿ny orê¿ przeciwko z³u.
+
+PARAMETRY:
+
+
+Obra¿enia: 1K10 +2
+TraK0: +2
+Typ obra¿eñ: sieczne
+Specjalne:
+ 10% szans przy trafieniu na og³uszenie przeciwnika na 10 sekund (rzut obronny przeciw œmierci z modyfikatorem -2 neguje)
+Waga: 7
+OpóŸnienie: 4
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Mo¿e u¿ywaæ:
+ Postaæ o charakterze dobrym
+ Krasnolud
+ Barbarzyñca
+ Wojownik~
+@112  = ~Topór Berronar +5~
+@113  = ~O tym s³ynnym toporze kr¹¿y wiele legend. Mówi siê, ¿e sam Moradin wyku³ tê broñ jako dar dla swojej ma³¿onki, Berronar.
+
+Podczas podró¿y przez Podmrok <CHARNAME> i Breagar odnaleŸli zaginione klejnoty i naprawili topór w kuŸni Cromwella. Od tego czasu broñ lœni nowym blaskiem i stanowi potê¿ny orê¿ przeciwko z³u.
+
+PARAMETRY:
+
+
+Obra¿enia: 1K12 +5
+TraK0: +5
+Typ obra¿eñ: sieczne
+Specjalne:
+ 50% szans przy trafieniu na og³uszenie przeciwnika na 10 sekund (rzut obronny przeciw œmierci z modyfikatorem -2 neguje)
+ Ochrona przed z³em
+Waga: 7
+OpóŸnienie: 4
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Mo¿e u¿ywaæ:
+ Postaæ o charakterze dobrym
+ Krasnolud
+ Barbarzyñca
+ Wojownik~
+@114  = ~Topór Berronar +6~
+@115  = ~O tym s³ynnym toporze kr¹¿y wiele legend. Mówi siê, ¿e sam Moradin wyku³ tê broñ jako dar dla swojej ma³¿onki, Berronar.
+
+Podczas podró¿y przez Podmrok <CHARNAME> i Breagar odnaleŸli zaginione klejnoty i naprawili topór w kuŸni Cromwella. Czyn ten wzbudzi³ zainteresowanie krasnoludzkich bóstw, które pob³ogos³awi³y orê¿ dodatkowymi mocami. Od tego czasu broñ lœni nowym blaskiem i stanowi potê¿ny orê¿ przeciwko z³u, zw³aszcza przeciwko olbrzymom i ich pobratymcom.
+
+PARAMETRY:
+
+
+Obra¿enia: 1K12 +6, +9 przeciwko olbrzymom
+TraK0: +6, +9 przeciwko olbrzymom
+Typ obra¿eñ: sieczne
+Specjalne:
+ 50% szans przy trafieniu na og³uszenie przeciwnika na 10 sekund (rzut obronny przeciw œmierci z modyfikatorem -2 neguje)
+ Ochrona przed z³em
+Waga: 7
+OpóŸnienie: 4
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Mo¿e u¿ywaæ:
+ Postaæ o charakterze dobrym
+ Krasnolud
+ Barbarzyñca
+ Wojownik~
+@116  = ~Szata maga Borska~
+@117  = ~Ta szata nale¿a³a niegdyœ do nekromanty Borska. Teraz nale¿y do ciebie.
+
+PARAMETRY:
+
+Klasa Pancerza: 5
+Specjalne:
+ +5% do odpornoœci na magiê
+ +1 do rzutów obronnych
+Waga: 6
+Mo¿e u¿ywaæ:
+ Mag~
+
+@118  = ~Borsk~
+@119  = ~Theber~
+@120  = ~Karela~
+@121  = ~Ralf~
+@122  = ~Kowal Ralf~
+@123  = ~Tobin~
+@124  = ~Pan Poranka Tobin~
+@125  = ~Zakapturzony krasnolud~
+@126  = ~Audhild~
+@127  = ~Wiadomoœæ od Z³odziei Cienia~
+
+
+@128  = ~Breagarze,
+
+Rzeczywiœcie widziano twój topór. Nasze kontakty twierdz¹, ¿e znikn¹³ w czasie rozgardiaszu, jakie powsta³ na Promenadzie Waukeen po niedawnym ataku. Podobno zabra³a go jakaœ drobna postaæ ubrana na niebiesko. Wszystko wskazuje na Jednookiego Arnolda, gnomiego handlarza broni¹ raczej drugiej kategorii. Jeœli chcesz z nim porozmawiaæ, na pewno znajdziesz go w jednej z karczem na promenadzie. Postaraj siê tylko nie obchodziæ z nim zbyt ostro – to nie jest z³y cz³owiek.
+
+Powodzenia w poszukiwaniach!~
+@129  = ~List~
+@130  = ~List Jednookiego Arnolda~
+@131  = ~Arnie,
+
+Umowa stoi. Spotkamy siê pod wie¿¹ Anstinusa.
+
+ Reggik~
+@132  = ~Pos³aniec Z³odziei Cienia~
+@133  = ~Arnie~
+@134  = ~Jednooki Arnold~
+@135  = ~Kap³an~
+@136  = ~S³u¿ebnica Lolth~
+@137  = ~Kap³anka~
+@138  = ~Ziarna pieprzu~
+@139  = ~Czarny pieprz to pn¹cze z rodziny pieprzowatych, uprawiane dla owoców, z których uzyskuje siê aromatyczn¹ przyprawê.~
+@140  = ~Rozdarty przepis~
+@141  = ~Przepis na zielony ogieñ
+
+Sk³adniki:
+
+1 kompletny ludzki szkielet
+1 ogólnodostêpna mikstura eksplozji
+1 szmaragd
+1 ga³¹zka wierzbówki kiprzycy
+1 garœæ ziaren pieprzu
+
+(papier jest w tym miejscu rozdarty i zdaje siê, ¿e brakuje dolnej po³owy)~
+@142  = ~(Wygl¹da na to, ¿e brakuje górnej po³owy kartki)
+
+Przygotowanie:
+
+1. Roz³ó¿ wszystkie sk³adniki wokó³ pierwszego.
+2. Pozwól, by ostatnia stru¿ka sp³ynê³a do drugiego.
+3. WeŸ po³owê czwartego sk³adnika, rozkrusz j¹ i dodaj do drugiego.
+4. Delikatnie wstrz¹œnij.
+5. Drug¹ po³owê czwartego sk³adnika wrzuæ do drugiego.
+6. Wstrz¹œnij energicznie.
+7. Wrzuæ trzeci sk³adnik do drugiego i odczekaj, a¿ ca³kowicie siê rozpuœci.
+
+Produkt nieodpowiedni dla dzieci poni¿ej trzeciego roku ¿ycia!~
+@143  = ~Wojownik duergarów~
+@144  = ~Kap³an duergarów~
+@145  = ~Grashek~
+@146  = ~Hargek~
+@147  = ~Forres~
+@148  = ~Anstinus~
+
+
+@149  = ~Drugi dziennik Reggika~
+@150  = ~Na wewnêtrznej stronie ok³adki spisano krótk¹ notatkê:
+Postanowi³em ani nie niszczyæ, ani nie upiêkszaæ tych relacji. Jeœli nadejdzie dzieñ, w którym zostanê os¹dzony, te strony bêd¹ moimi œwiadkami – na dobre lub na z³e.
+
+4 Alturiak 1467
+
+Breagar naprawdê to zrobi³. Poprosi³ mistrza Galthura o rêkê Audhild. Zwleka³em zbyt d³ugo. Ten g³upiec staje mi na drodze. Muszê porozmawiaæ z Forresem.
+
+6 Alturiak 1467
+
+Nasz plan powoli zaczyna przynosiæ owoce. Forres bez w¹tpienia jest bystrzejszym z nas dwóch. Zadziwia mnie, jak szybko znalaz³ rozwi¹zanie naszego problemu. Galthur okaza³ siê podatny na moje sugestie i postawi³ przed Breagarem nie lada wyzwanie w ramach próby mistrzowskiej. Ma wykuæ Pierœcieñ ¿ywio³ów.
+
+Nie powinienem jednak cieszyæ siê zbyt wczeœnie – wiem, ¿e wkrótce i mnie czeka to samo zadanie. Muszê dzia³aæ szybko.
+
+10 Tarsakh 1467
+
+Czyniê postêpy. Breagar pracuje jak opêtany. Nawet nie zauwa¿y³, ¿e nie tylko on przygotowuje siê do wykucia Pierœcienia ¿ywio³ów. Nawi¹za³em ju¿ kontakt z ludŸmi na po³udniu. Mój dawny klan z pewnoœci¹ mi pomo¿e.
+
+15 Marpenoth 1467
+
+Pó³ roku ciê¿kiej pracy przynios³o owoce. Moje badania s¹ ukoñczone i zak³adam, ¿e Breagar równie¿ zbli¿a siê do koñca. Zmanipulowanie jego szkiców staro¿ytnych run okaza³o siê dziecinnie proste. Jedno poci¹gniêcie pióra wystarczy³o, by runa kontroli sta³a siê run¹ uwolnienia.
+
+Gdy zacznie grawerowaæ pierœcieñ, si³y drzemi¹ce w metalu zostan¹ wypuszczone na wolnoœæ i...
+Nie podoba mi siê to, lecz dla wy¿szego dobra trzeba sk³adaæ ofiary. Breagar i tak by tego nie zrozumia³.
+
+20 Marpenoth 1467
+
+Breagar planuje wyruszyæ nastêpnej wiosny. Zamierza udaæ siê na Wybrze¿e Mieczy, by zdobyæ kopiê Ksiêgi kowalstwa w Candlekeep. To dla mnie fortunny obrót spraw. Wstêp do Candlekeep kosztuje krocie, a ka¿dy dzieñ, który Breagar spêdzi na gromadzeniu z³ota, dzia³a na moj¹ korzyœæ.
+
+1 Ches 1468
+
+Breagar wyjecha³ wczoraj. Odczekam kilka dni na wypadek, gdyby wróci³, a potem sam poproszê Galthura o rêkê Audhild. Jestem przygotowany. Ksiêga kowalstwa ju¿ na mnie czeka – w moim dawnym klanie.~
+
+@151 = ~Pierwszy dziennik Reggika~
+@152 = ~Jeœli ktokolwiek kiedykolwiek przeczyta ten dziennik, bêdzie to oznaczaæ, ¿e nie ¿yjê. Zgodnie z krasnoludzkim prawem zas³ugujê na œmieræ – z³ama³em niemal wszystkie zasady klanu Bardormar, a w przysz³oœci zapewne z³amiê kolejne. Jeœli jednak taka jest moja œcie¿ka, przejdê j¹ z podniesion¹ g³ow¹, wierz¹c, ¿e to droga s³uszna.
+
+Kilka tygodni temu spotka³em Forresa, kap³ana duergarów. B³¹ka³ siê po kopalniach, wyg³odzony i ob³¹kany; zabicie go by³oby dziecinnie proste. Coœ jednak powstrzyma³o moj¹ rêkê. Ukry³em go w opuszczonym szybie i wyleczy³em. Im d³u¿ej trzyma³em go w sekrecie, tym wiêksze by³o ryzyko, ¿e ktoœ nas odkryje. Jednoczeœnie ros³o jednak moje przekonanie, ¿e postêpujê w³aœciwie.
+
+Forres jest zbieg³ym niewolnikiem. Jego ca³y klan zosta³ podbity i zniewolony przez drowy. Ucieka³ rozga³êzionymi tunelami Podmroku, a¿ trafi³ do kopalñ klanu Bardormar. Gdyby znalaz³ go ktoœ inny – bez wahania zosta³by zabity.
+
+Im wiêcej czasu spêdza³em z Forresem, im d³u¿ej z nim rozmawia³em, tym mocniej utwierdza³em siê w s³usznoœci swoich czynów. Jest duergarem, a wiêc wrogiem wszystkich krasnoludów z klanu Bardormar, a wiele jego pogl¹dów stoi w sprzecznoœci z naukami Mordinsamman. Mimo to jest rozs¹dny i inteligentny, a rozmowy z nim by³y ciekawsze i g³êbsze ni¿ z jakimkolwiek „czystym” krasnoludem.
+
+Zajê³o mi sporo czasu, zanim zrozumia³em, ¿e w moich myœlach zapuœci³a korzenie wielka idea. Muszê zakoñczyæ waœñ miêdzy szarymi krasnoludami a klanami i wskazaæ Forresowi oraz jego ludowi drogê powrotu na ³ono Mordinsamman. To zadanie trudne, lecz czu³em, ¿e moje przedsiêwziêcie mo¿e liczyæ na boskie wsparcie.
+
+Najpierw musia³em jednak zast¹piæ Galthura i obj¹æ stanowisko mistrza kowalskiego. Jako cz³onek rady klanu zyska³bym ogromny wp³yw – byæ mo¿e wystarczaj¹cy, by zapocz¹tkowaæ prawdziwe zmiany.
+
+Wtedy na drodze moich planów pojawi³a siê nowa przeszkoda. Breagar, syn piekarza, postanowi³ porzuciæ rodzinny fach i zostaæ uczniem Galthura. Szybko poj¹³em dlaczego. Zakocha³ siê w Audhild i pragnie zostaæ klanowym Telormavarem. Przez tê m³odzieñcz¹ g³upotê Breagar mo¿e zniweczyæ wszystko.
+
+Poczekam i zobaczê, jak potocz¹ siê sprawy. Jeœli polegnie o w³asnych si³ach – dobrze.
+Jeœli nie...~
+@153  = ~Trzeci dziennik Reggika~
+
+@154 = ~Breagar i <CHARNAME> byli widziani w Athkatli! Gdy Grothir doniós³, ¿e Breagar obla³ swoj¹ próbê, lecz w zamian zosta³ dotkniêty przez bogów, zrozumia³em, ¿e nasz plan spoczywa na znacznie bardziej kruchych podstawach, ni¿ dot¹d s¹dzi³em. A jednak... czy¿ broñ o tak silnym znaczeniu symbolicznym jak Topór Berronar nie by³aby dok³adnie tym, czego potrzebuj¹ duergarowie? Da³aby im coœ, w co mogliby uwierzyæ. Czy¿ nie by³by to boski znak, który móg³by sprowadziæ ich z powrotem na ³ono Mordinsamman?
+
+Wynaj¹³em Jednookiego Arnolda, handlarza broni¹, aby zdoby³ topór. Nie chcê nawet wiedzieæ, jak tego dokona³, lecz zdo³a³ przej¹æ go podczas chaosu na Promenadzie Waukeen. Jeœli bogowie pozwol¹, utrata topora raz na zawsze odsunie Breagara od Audhild i Galthura, a jednoczeœnie tchnie now¹ nadziejê w serca duergarów.
+
+Zostawiê broñ oraz dzienniki u Forresa, zanim wyruszê do Targowa na spotkanie z Galthurem. Stamt¹d udam siê do pa³aców mojego dawnego klanu.~
+
+@155 = ~Kamieñ pieczêci Reggika~
+@156 = ~Ten kamieñ pieczêci otwiera magiczn¹ barierê strzeg¹c¹ dostêpu do piwnic wie¿y Anstinusa. Zosta³ zmodyfikowany tak, by móg³ z niego korzystaæ wy³¹cznie cz³onek klanu Bardormar.~
+
+@157 = ~Kamieñ pieczêci Forresa~
+@158 = ~Ten kamieñ pieczêci otwiera magiczn¹ barierê strzeg¹c¹ dostêpu do piwnic wie¿y Anstinusa.~
+
+@159  = ~Ga³¹zka wierzbówki~
+@160  = ~Owoce wierzbówki smakuj¹ ohydnie, ale wci¹¿ ciesz¹ siê du¿¹ popularnoœci¹ wœród dzieci i alchemików. Ci drudzy u¿ywaj¹ zawartej w nich spektryny, aby ich mikstury œwieci³y. Te pierwsze chc¹ po prostu uzyskaæ ten sam efekt w swoim porannym siuœku.~
+
+@161  = ~Kontrakt handlowy z klanem Bardormar~
+@162  = ~Ten kontrakt szczegó³owo opisuje bardzo intratn¹ umowê na dostawê broni miêdzy klanem Bardormar a ¯elaznym Tronem.~
+@163  = ~Naszyjnik z mithrilu~
+@164  = ~Cenny naszyjnik z mithrilu, bez w¹tpienia krasnoludzkiej roboty.~
+@165  = ~Mikstura zielonego ognia~
+@166  = ~Mikstura, któr¹ zgodnie z przepisem Anstinusa Wielkiego uwarzy³ <CHARNAME> i jego towarzysze.~~Mikstura, któr¹ zgodnie z przepisem Anstinusa Wielkiego uwarzy³a <CHARNAME> i jej towarzysze.~
+@167  = ~Grothir~
+@168  = ~Reggik~
+@169  = ~Galthur~
+@170  = ~Ascalon~
+@171  = ~Karczmarz Ascalon~
+@172  = ~Bork~
+@173  = ~Elasia~
+@174  = ~M³ot mrozu +3~
+@175  = ~Reggik, jeden z najzdolniejszych kowali klanu Bardormar z gór Burzowych Rogów, przez d³ugi czas studiowa³ sztukê rzeŸbienia run, a¿ w koñcu stworzy³ ten m³ot, by wystawiæ swoje umiejêtnoœci na próbê. Broñ trzeszczy od przenikliwego zimna, a w jej metalu lœni¹ srebrzystobia³e runy.
+
+PARAMETRY:
+
+Obra¿enia: 2K4 +3
+TraK0: +3
+Typ obra¿eñ: obuchowe
+Specjalne:
+ 5% szansa przy trafieniu na natychmiastowe zamro¿enie przeciwnika na œmieræ (rzut obronny przeciw œmierci neguje)
+Waga: 4
+OpóŸnienie: 1
+Rodzaj bieg³oœci: m³ot bojowy
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Nie mo¿e u¿ywaæ:
+ Z³odziej
+ Druid
+ Mag
+ Mnich~
+
+@176  = ~Fragmenty krasnoludzkiego tekstu~
+@177  = ~Te luŸne strony opowiadaj¹ fragment historii Topora Berronar.
+
+„...nieskazitelna czystoœæ srebrnego ostrza... najszlachetniejsze materia³y... rubin... s³oñce...”~
+@178  = ~Te luŸne strony opowiadaj¹ fragment historii Topora Berronar.
+
+„...przyjê³a z r¹k Moradina... Mordinsamman... szafir... spadaj¹ca gwiazda...”~
+@179  = ~Te luŸne strony opowiadaj¹ fragment historii Topora Berronar.
+
+„...tysi¹c lawin... unios³a topór wysoko... drogocenne klejnoty... w krainach œmiertelników... szafir... najg³êbsze odmêty Podmroku...”~
+@180  = ~Skryba Oghmy~
+@181  = ~Martwy drow~
+@182  = ~Historia Topora Berronar~
+@183  = ~W owych czasach Moradin stworzy³ dla swej ma³¿onki, Berronar, dar wspania³y i godny bogów. Przez rok i dzieñ wykuwa³ srebrny topór, przeznaczony do ochrony klanu i bêd¹cy ho³dem dla ukochanej ¿ony. Ostrze, nieskazitelnie czyste, zosta³o zahartowane przy u¿yciu najszlachetniejszych materia³ów, a w jego sercu osadzono rubin – lœni¹cy i gorej¹cy niczym zachodz¹ce s³oñce.
+
+Gdy tylko Berronar przyjê³a topór z r¹k Moradina, œwiat³o rozb³ys³o w podziemnych pa³acach Mordinsamman, a szafir w obuchu zap³on¹³ niczym spadaj¹ca gwiazda.
+
+Lecz gdy Abbathor, mroczny bóg chciwoœci, ujrza³ ów orê¿, pozazdroœci³ Berronar jego potêgi. Napad³ na ni¹ i uciek³, unosz¹c topór ze sob¹. Moradin pochwyci³ swój m³ot, ruszy³ w pogoñ za z³odziejem i w koñcu dopad³ go.
+
+A kiedy m³ot Moradina opad³ z si³¹ tysi¹ca lawin, Abbathor uniós³ topór w obronie – i oto orê¿ wytrzyma³ potê¿ny cios. Lecz drogocenne klejnoty zosta³y wyrwane ze swych gniazd i spad³y do krain œmiertelników. Rubin, szafir oraz zdobi¹cy tylec szmaragd przelecia³y nad górami i dolinami, po czym zniknê³y w mrocznych g³êbinach Podmroku i s³uch po nich zagin¹³.
+
+~
+@184  = ~Szmaragd~
+@185  = ~Klejnot ten wygl¹da tak, jakby by³ niegdyœ osadzony w broni.~
+@186  = ~Szafir~
+@187  = ~Rubin~
+@188  = ~Ruda meteorytu~
+@189  = ~Breagar zabra³ tê próbkê rudy, aby w wolnej chwili przyjrzeæ siê jej bli¿ej.~
+
+
+@190 = ~Gdy Breagar i <CHARNAME> siê po¿egnali, krasnolud wyruszy³ samotnie na pó³noc. Choæ pragn¹³ powrotu do podziemnych pa³aców swego klanu, czu³, ¿e los poprowadzi go w zupe³nie innym kierunku. Prowadzony przez Topór Berronar przemierza³ œwiat w pojedynkê i prze¿y³ wiele przygód, raz po raz dowodz¹c swego oddania sprawie dobra. Gdy po d³ugim i spe³nionym ¿yciu Breagar odszed³ z tego œwiata, jego szcz¹tki sprowadzono do pa³aców klanu Bardormar. Dopiero w œmierci ten wiecznie dzia³aj¹cy wojownik zazna³ spokoju na ³onie ojczyzny, której za ¿ycia nie by³o mu dane ju¿ ujrzeæ.~
+
+@191 = ~Gdy Breagar i <CHARNAME> po¿egnali siê, krasnolud powróci³ na Wybrze¿e Mieczy, by wreszcie dokoñczyæ wykucie Pierœcienia ¿ywio³ów. Przeby³ jeszcze wiele dróg i prze¿y³ liczne przygody, a¿ w koñcu stan¹³ u bram swego klanu, by wsun¹æ pierœcieñ na palec Audhild jako zarêczynowy podarek. Po przejœciu Galthura na zas³u¿ony odpoczynek Breagar obj¹³ stanowisko mistrza kowalskiego.  
+Kilka lat póŸniej, gdy wygnany Reggik stan¹³ u bram klanu, to w³aœnie Breagar wstawi³ siê za jego ponownym przyjêciem. Choæ nigdy nie zostali bliskimi przyjació³mi, obaj nauczyli siê patrzeæ poza w³asne uprzedzenia i przez d³ugie lata pracowali razem ku chwale klanu.  
+Po œmierci Audhild, która odesz³a po d³ugim i spokojnym ¿yciu, Breagar wyruszy³ w sw¹ ostatni¹ podró¿. Odwiedzi³ Suldanessellar, Athkatlê i Wrota Baldura, a tak¿e wiele innych miejsc, które niegdyœ  przemierzali <CHARNAME> i on. W koñcu dotar³ do Candlekeep. Mnisi byli zdumieni, gdy sêdziwy krasnolud o d³ugiej, bia³ej brodzie oznajmi³ im, ¿e przed laty podró¿owa³ z wychowanym tam Dzieckiem Bhaala. Aby uzyskaæ prawo wstêpu, podarowa³ bibliotece now¹ Ksiêgê kowalstwa, któr¹ sam spisa³.  
+Breagar zosta³ przyjêty niezwykle serdecznie, lecz gdy nastêpnego dnia mnisi próbowali go obudziæ, stary krasnolud le¿a³ martwy w swym ³o¿u. Odszed³ do pa³aców Berronar z uœmiechem na twarzy, by spêdziæ wiecznoœæ u boku swej ukochanej Audhild.~
+
+@192 = ~Gdy Breagar i <CHARNAME> po¿egnali siê, krasnolud powróci³ na Wybrze¿e Mieczy, by wreszcie dokoñczyæ wykucie Pierœcienia ¿ywio³ów. Prze¿y³ jeszcze wiele przygód, lecz ostatecznie stan¹³ u bram swego klanu, by wsun¹æ pierœcieñ na palec Audhild jako zarêczynowy podarek. Zosta³ powitany ze wszystkimi honorami, gdy¿ wieœci o jego heroicznych czynach dotar³y do klanu przed nim.  
+Po odejœciu Galthura na emeryturê Breagar obj¹³ stanowisko mistrza kowalskiego i sprawowa³ je sumiennie przez d³ugie lata. Gdy Audhild zmar³a po d³ugim i spokojnym ¿yciu, Breagar wyruszy³ w sw¹ ostatni¹ podró¿. Odwiedzi³ Suldanessellar, Athkatlê i Wrota Baldura, a tak¿e wiele innych miejsc, które niegdyœ  przemierzali <CHARNAME> i on.
+W koñcu dotar³ do Candlekeep. Mnisi byli zdumieni, gdy sêdziwy krasnolud o d³ugiej, bia³ej brodzie oznajmi³ im, ¿e niegdyœ podró¿owa³ z wychowanym tam Dzieckiem Bhaala. Aby uzyskaæ prawo wstêpu, ofiarowa³ bibliotece now¹ Ksiêgê kowalstwa, któr¹ sam spisa³. Breagar zosta³ przyjêty niezwykle serdecznie, lecz gdy nastêpnego dnia mnisi próbowali go obudziæ, stary krasnolud le¿a³ martwy w swym ³o¿u. Odszed³ do pa³aców Berronar z uœmiechem na twarzy, by spêdziæ wiecznoœæ u boku swej ukochanej Audhild.~
+
+
+@193  = ~Wie¿a Anstinusa~
+@194  = ~Stromy korytarz niknie w ciemnoœciach. Schodzenie tam by³oby g³upot¹.~
+@195  = ~Niewidzialne pole si³owe blokuje dostêp do schodów prowadz¹cych do podziemi.~
+@196  = ~Te schody nie wygl¹daj¹ na zbyt solidne.~
+
+@4000 = ~Wszystkie sk³adniki gotowe. Jak wiesz, mamy tylko jedn¹ próbê – jeœli przerwiemy w po³owie, mikstura przepadnie. Zaczynamy?~
+@4001 = ~Tak, jestem gotów.~ ~Tak, jestem gotowa.~
+@4002 = ~Nie, muszê siê jeszcze przygotowaæ.~
+@4003 = ~(Odwracasz siê)~
+@4004 = ~Od czego chcesz zacz¹æ?~
+@4005 = ~*delikatnie wstrz¹œnij Mikstur¹ eksplozji*~
+@4006 = ~*energicznie wstrz¹œnij Mikstur¹ eksplozji*~
+@4007 = ~*dodaj po³owê wierzbówki do mikstury*~
+@4008 = ~*pozwól ziarnom pieprzu powoli sp³yn¹æ do mikstury*~
+@4009 = ~*wrzuæ szmaragd do mikstury*~
+@4010 = ~(Mieszanina gwa³townie bulgocze. Coœ posz³o nie tak, jak powinno).~ 
+@4011 = ~(Ziarna pieprzu opadaj¹ na dno z g³oœnym sykiem)~
+@4012 = ~(Liœcie zwijaj¹ siê w miksturze)~
+@4013 = ~*dodaj drug¹ po³owê wierzbówki do mikstury*~
+@4014 = ~(Ostro¿nie wstrz¹sasz mikstur¹. Liœcie rozpuszczaj¹ siê w drobne w³ókna).~
+@4015 = ~(Pozosta³e liœcie sprawiaj¹, ¿e mikstura bulgocze, uwalniaj¹c przy tym cuchn¹cy gaz).~
+@4016 = ~(Z dawk¹ nerwowoœci, ale i determinacji potrz¹sasz mikstur¹. Ostatnie liœcie rozpuszczaj¹ siê).~
+@4017 = ~(Szmaragd tonie w bulgocz¹cej cieczy, która wkrótce przybiera bladozielony kolor).~
+
+@5000 = ~Ewsahvarmarnakkaglem...~
+@5001 = ~Ewsahvarmar... mos! MOS!~
+@5002 = ~Hej, Breagarze!~
+@5003 = ~Raaaah! Œmieræ i zniszczenie wam wszystkim!~
+@5004 = ~Otwieraæ drzwi!~
+@5005 = ~S³yszê was! Wypuœæcie mnie natychmiast!~
+@5006 = ~Buzzurk! Otwieraj te drzwi!~
+@5007 = ~To nie jest zabawne! Otwieraæ!~
+@5008 = ~Przeklêta, g³upia istoto! Otwieraj!~
+@5009 = ~Duergarzy! Przeklête pomioty demonów!~
+@5010 = ~Pole si³owe nad schodami zniknê³o.~
+@5011 = ~Czujê wasz odór!~
+@5012 = ~Hej, posi³ki! Braæ ich!~
+@5013 = ~Tunel jest pusty.~
+@5014 = ~Z jaskini nadci¹gaj¹ drowy.~
+@5015 = ~W imiê Mordinsamman!~
+@5016 = ~B¹dŸcie zapieczêtowani po wsze czasy!~
+@5017 = ~Pole energii sprawia, ¿e w³osy je¿¹ ci siê na karku.~
+@5018 = ~Bar jest zamkniêty!~
+@5019 = ~Nigdy ci tego nie zapomnê!~
+
+/* new for v7.0 */
+@5020 = ~Na m³ot Moradina, uda³o nam siê!~
+@5021 = ~Pozostanê u twego boku. Oczywiœcie tylko jeœli tego chcesz.~
+/* Avernus, inside the elevator */
+@5022 = ~Hrmf. Mo¿e i jesteœmy g³êboko pod ziemi¹, ale wcale nie czujê siê tutaj jak w domu.~
+/* after PC's murder accusation, low rep */
+@5023 = ~Chyba nie mówisz powa¿nie! Po tym wszystkim, co razem osi¹gnêliœmy, masz czelnoœæ robiæ coœ takiego?~
+/* after PC's murder accusation, high rep */
+
+
+@5024 = ~Coœ mi tu œmierdzi. Po tym wszystkim oskar¿enie o zamordowanie córki hrabiego nie ma sensu. I to niby <CHARNAME>?~
+
+@5025 = ~Buzzurk. Nie mo¿emy tu po prostu staæ i czekaæ, a¿ wype³zn¹ wszystkie te paskudztwa. Nie mamy wyboru, <CHARNAME>! Musimy tam wejœæ.~
+@5026 = ~Buzzurk. Gorêcej ni¿ w kuŸni...~
+@5027 = ~To st¹d wype³zaj¹ te dranie. Wkrótce zajmiemy siê tym przejœciem, <CHARNAME>. Najpierw jednak upewnijmy siê, ¿e w wie¿y nie zosta³y ¿adne drowy.~
+@5028 = ~<CHARNAME>! S³yszê odg³osy walki na wschodzie. SprawdŸmy to, zanim ruszymy do wie¿y!~
+
+
+@5029 = ~Renalu,
+
+nasi informatorzy widzieli Jednookiego Arnolda, jak podczas zamieszana na Promenadzie Waukeen zabiera³ krasnoludzki topór. Zobaczymy, czy sam przypomni sobie o op³acie gildyjnej, czy bêdzie potrzebowa³ kolejnych odwiedzin. Powinien byæ w swojej ulubionej tawernie na Promenadzie.
+
+G.~
+
+/* new for v8.0.2 */
+@5030 = ~Tak, chodŸcie no tutaj, szumowiny! Zmia¿d¿ê was, rhaaaa!~
+
+/* new for v10.0.0 */
+@5031 = ~Buzzurk, ta mg³a p³ata figle! Ja... nie czujê siê najlepiej.~
+@5032 = ~Buzzurk!~
+@5033 = ~Ta Caelar to silna przywódczyni. Jej krzy¿owcy nie dadz¹ siê tak ³atwo od niej odci¹gn¹æ.~
+
+@5034 = ~Wola³bym, ¿eby ten w¹ski kanion by³ prawdziw¹ jaskini¹. Teraz daje napastnikom zbyt wiele mo¿liwoœci, by zaatakowali nas z góry.~
+@5035 = ~Podró¿uj¹c z tob¹, widzia³em ju¿ sporo robactwa... Ale to przebija wszystko.~
+@5036 = ~Hmf. Lubiê dobr¹ bitkê, ale jeœli wszystkie wrogie jednostki rusz¹ naraz, mo¿emy mieæ problem.~
+@5037 = ~Magom nie mo¿na ufaæ, mówi³em ci to ju¿ wystarczaj¹co wiele razy!~
+@5038 = ~Powinni byli pos³uchaæ, g³upcy.~
+@5039 = ~<CHARNAME>, jeœli w najbli¿szym czasie znowu zaci¹gniesz mnie do Piek³a, roz³upiê ci czerep na pó³.~
+@5040 = ~Ha, ten smok wybra³ œwietne miejsce na œmieræ. Przypomina o wielkiej bitwie i zwyciêstwie tutejszego ludu.~
+@5041 = ~Zazwyczaj takie ornamenty radowa³yby moje kowalskie serce, ale te drzwi emanuj¹ tak¹ z³owieszcz¹ mrocznoœci¹, ¿e nie sposób podziwiaæ kunsztu ich wykonania.~
+
+
+/* new for v12.2.0 */
+@5042  = ~Dziêki boskiej mocy Berronar srebrne ramiê golema stra¿niczego zosta³o zespolone z kikutem Breagara. Krasnolud mo¿e teraz w³adaæ rêk¹ jak w³asn¹. Metal zosta³ wzmocniony b³ogos³awieñstwem krasnoludzkiej bogini, co pozwala Breagarowi blokowaæ ciosy, a nawet w pewnym stopniu ataki magiczne. Niestety palce nowej d³oni s¹ zbyt grube, by móg³ nosiæ na nich pierœcienie.
+
+Breagarowi uda³o siê pomyœlnie wtopiæ rudê meteorytow¹ w d³oñ, co poprawi³o jej odpornoœæ na uszkodzenia.
+
+PARAMETRY:
+
+Klasa Pancerza: +3
+Specjalne:
+ +1 do Si³y
+ +3 do rzutów obronnych~
+
+///////////////////////////////////////////
+///// Wpisy do dziennika
+///////////////////////////////////////////
+
+@10000 = ~Ksi¹¿ka dla krasnoluda
+
+Krasnolud w gospodzie Winthropa czeka, a¿ Adam przyniesie mu ksi¹¿kê. Wygl¹da na to, ¿e ten obibok znów zaj¹³ siê czymœ nieistotnym...~
+
+@10001 = ~Ksi¹¿ka dla krasnoluda
+
+Adam przekaza³ mi tom, który mam dostarczyæ krasnoludowi.~
+
+@10002 = ~Ksi¹¿ka dla krasnoluda
+
+Wys³aliœmy Adama do Winthropa, by osobiœcie dostarczy³ ksi¹¿kê. Lepiej sprawdzê, czy tam dotar³.~
+
+@10003 = ~Ksi¹¿ka dla krasnoluda
+
+Breagar, krasnolud z gospody Winthropa, w koñcu siê uspokoi³, a nawet zaprosi³ mnie na piwo! Jednak teraz ju¿ odszed³. Przed odejœciem poradzi³ mi odwiedziæ kuŸniê Grzmi¹cego M³ota w Beregoœcie, jeœli kiedykolwiek trafiê do tego miasta.~
+
+@10004 = ~Ksi¹¿ka dla krasnoluda
+
+W podziêce za dostarczenie ksi¹¿ki krasnolud da³ mi kilka monet za fatygê. Ale¿ z niego sknera!~
+
+@10005 = ~Breagar szuka ¿elaza
+
+Krasnolud desperacko szuka dobrej jakoœci ¿elaza. Mo¿e dostarczenie mu go jakoœ mi siê op³aci.~
+
+@10006 = ~Breagar szuka ¿elaza
+
+Krasnolud pracuje teraz w kuŸni Taeroma. Powinniœmy go odwiedziæ i sprawdziæ, jak mu idzie.~
+
+@10007 = ~Breagar szuka ¿elaza
+
+Krasnolud wyruszy³ na w³asn¹ rêkê w poszukiwaniu ¿elaza.~
+
+@10008 = ~Wypadek Breagara w kuŸni Grzmi¹cego M³ota
+
+Muszê jak najszybciej udaæ siê do Œwi¹tyni Pieœni Poranka i sprowadziæ kap³ana, by pomóc Breagarowi!~
+
+@10009 = ~Wypadek Breagara w kuŸni Grzmi¹cego M³ota
+
+W kuŸni Grzmi¹cego M³ota mia³ miejsce wypadek. Wygl¹da na to, ¿e magiczny wybuch urwa³ Breagarowi rêkê. Taerom zaprowadzi³ go do œwi¹tyni. Ja mam ciekawsze rzeczy do roboty.~
+
+@10010 = ~Wypadek Breagara w kuŸni Grzmi¹cego M³ota
+
+Zajê³o mi to zbyt du¿o czasu i Breagar zmar³ w wyniku odniesionych ran.~
+
+@10011 = ~Wypadek Breagara w kuŸni Grzmi¹cego M³ota
+
+Kap³anka Revianel uda³a siê do kuŸni Grzmi¹cego M³ota, by ratowaæ Breagara. Powinniœmy poœpieszyæ za ni¹.~
+
+@10012 = ~Wypadek Breagara w kuŸni Grzmi¹cego M³ota
+
+Kowal wyruszy³ w dalsz¹ drogê. Mam nadziejê, ¿e wszystko u³o¿y siê po jego myœli.~
+
+@10013 = ~Wypadek Breagara w kuŸni Grzmi¹cego M³ota
+
+Wdziêczny krasnolud do³¹czy³ do mojej dru¿yny. Miejmy nadziejê, ¿e oka¿e siê przydatnym towarzyszem.~
+
+@10014 = ~Olbrzym z Chmurnych Szczytów
+
+Tajemnicza krasnoludka, podaj¹ca siê za wys³anniczkê Berronar, powierzy³a Breagarowi zadanie. Olbrzym grasuj¹cy w Chmurnych Szczytach sprofanowa³ œwi¹tyniê. Musimy go zg³adziæ i odzyskaæ trzy skradzione artefakty.~
+
+@10015 = ~Olbrzym z Chmurnych Szczytów
+
+Breagar opuœci³ dru¿ynê, by samodzielnie wype³niæ zadanie powierzone mu przez krasnoludzkie bóstwa.~
+
+@10016 = ~Olbrzym z Chmurnych Szczytów
+
+W Chmurnych Szczytach rzeczywiœcie grasowa³ olbrzym zwany Yrrymyrem! Walka by³a ³atwiejsza ni¿ przypuszczaliœmy, gdy¿ potwór by³ wycieñczony d³ug¹ podró¿¹. Nasza nagroda okaza³a siê ca³kiem godziwa: rêka Breagara zosta³a zast¹piona protez¹ z ramienia srebrnego golema, a on sam otrzyma³ w darze œwiêty topór Berronar. Poza tym olbrzym mia³ przy sobie sporo z³ota...~
+
+
+@10017 = ~Mroczna przepowiednia
+
+Tajemnicza krasnoludka, któr¹ Breagar nazwa³ wys³anniczk¹ Berronar, mia³a mi kilka rzeczy do powiedzenia. Wygl¹da na to, ¿e krasnoludzkie bóstwa interesuj¹ siê moimi poczynaniami. Breagar zosta³ wybrany, aby mi towarzyszyæ, a moim zdaniem tak dzielny wojownik mo¿e okazaæ siê przydatny. Czas poka¿e, czego dotyczy³a przepowiednia: Z popio³ów starych bogów powstanie nowe ¿ycie...~
+
+@10018 = ~Zaginiêcie Revianel
+
+Kap³anka, która uratowa³a ¿ycie Breagarowi, zaginê³a podczas misji dla œwi¹tyni, a Taerom potrzebuje naszej pomocy. Wygl¹da na to, ¿e wzi¹³ jej znikniêcie bardzo do siebie...~
+
+@10019 = ~Zaginiêcie Revianel
+
+Kap³an, który bra³ udzia³ w misji wraz z Revianel, powinien znajdowaæ siê w œwi¹tyni, a my musimy z nim porozmawiaæ.~
+
+@10020 = ~Zaginiêcie Revianel
+
+Postanowiliœmy nie szukaæ kap³anki. Losy Wybrze¿a Mieczy s¹ wa¿niejsze ni¿ ¿ycie jednej kobiety.~
+
+@10021 = ~Zaginiêcie Revianel
+
+Kap³an Tobin zostanie naszym przewodnikiem i zaprowadzi nas na cmentarz, abyœmy mogli przeprowadziæ tam w³asne œledztwo w sprawie z³a czaj¹cego siê pod cmentarzem.~
+
+@10022 = ~Zaginiêcie Revianel
+
+Kap³anka Revianel chce wróciæ do œwi¹tyni razem z Tobinem, spotkamy j¹ przy wejœciu na cmentarz.~
+
+@10023 = ~Zaginiêcie Revianel
+
+Kap³anka Revianel zosta³a uratowana i wraz z Taeromem wróci³a do œwi¹tyni. Breagar cieszy siê, ¿e choæ czêœciowo sp³aci³ swój d³ug wdziêcznoœci. To wspania³e uczucie zrobiæ coœ dobrego.~
+
+@10024 = ~Kontrakt Grothira
+
+Grothir, krasnolud z klanu Breagara, podpisa³ niefortunny kontrakt z ¯elaznym Tronem. By³by wdziêczny, gdybyœmy odzyskali ten dokument. Znajdziemy go w gospodzie „Pod Napuszonym Jesiotrem”.~
+
+@10025 = ~Kontrakt Grothira
+
+Grothir odzyska³ kontrakt a klan Bardormar nieprêdko podpisze kolejn¹ umowê z ¯elaznym Tronem.~
+
+@10026 = ~Skradziony Topór Berronar
+
+Wygl¹da na to, ¿e nasz oprawca nie zabra³ tylko mojego ekwipunku. Ukochany srebrny topór Breagara, pob³ogos³awiony przez krasnoludzk¹ boginiê Berronar, równie¿ zosta³ skradziony. Jeœli chcemy go odzyskaæ, powinniœmy zacz¹æ poszukiwania tak szybko, jak to mo¿liwe... gdy tylko wydostaniemy siê z tego lochu.~
+
+@10027 = ~Skradziony Topór Berronar
+
+Zakapturzony krasnolud podszed³ do Breagara i zasugerowa³, ¿e Z³odzieje Cienia mog¹ wiedz¹ coœ o Toporze Berronar. Powinniœmy siê temu przyjrzeæ.~
+
+@10028 = ~Skradziony Topór Berronar
+
+Paserka Z³odziei Cienia obieca³a, ¿e rozejrzy siê za toporem w zamian za stosown¹ zap³atê. Powinienem wróciæ, gdy uzbieram wystarczaj¹c¹ kwotê, by z³o¿yæ jej godziw¹ ofertê.~~Skradziony Topór Berronar
+
+Paserka Z³odziei Cienia obieca³a, ¿e rozejrzy siê za toporem w zamian za stosown¹ zap³atê. Powinnam wróciæ, gdy uzbieram wystarczaj¹c¹ kwotê, by z³o¿yæ jej godziw¹ ofertê.~
+
+@10029 = ~Skradziony Topór Berronar
+
+Dowiedzia³em siê, ¿e zamiast z³ota paserka mo¿e przyj¹æ amulet Harfiarzy jako zap³atê za swoje informacje.~~Skradziony Topór Berronar
+
+Dowiedzia³am siê, ¿e zamiast z³ota paserka mo¿e przyj¹æ amulet Harfiarzy jako zap³atê za swoje informacje.~
+
+@10030 = ~Skradziony Topór Berronar
+
+Z trudem powstrzyma³em Breagara przed rozpoczêciem prywatnej wojny ze Z³odziejami Cienia. Ostatecznie paserka zgodzi³a siê wypytaæ o topór. Pos³aniec nas odnajdzie, jeœli tylko wyp³yn¹ jakieœ informacje.~~Skradziony Topór Berronar
+
+Z trudem powstrzyma³am Breagara przed rozpoczêciem prywatnej wojny ze Z³odziejami Cienia. Ostatecznie paserka zgodzi³a siê wypytaæ o topór. Pos³aniec nas odnajdzie, jeœli tylko wyp³yn¹ jakieœ informacje.~
+
+@10031 = ~Skradziony Topór Berronar
+
+Wygl¹da na to, ¿e w kradzie¿ zamieszany by³ gnom imieniem Arnie. Podobno przebywa gdzieœ na Promenadzie.~
+
+@10032 = ~Skradziony Topór Berronar
+
+Arnie mia³ przy sobie list od Reggika z wezwaniem do Wie¿y Anstinusa. Musimy dowiedzieæ siê o niej czegoœ wiêcej. Cromwell powinien byæ doskona³ym Ÿród³em informacji.~
+
+@10033 = ~Skradziony Topór Berronar
+
+Jeœli Breagar ma racjê, powinniœmy znaleŸæ tê wie¿ê w Górach Trollowych.~
+
+@10034 = ~Skradziony Topór Berronar
+
+Uda³o nam siê wejœæ do Wie¿y Anstinusa bez problemów. Topór musi byæ blisko...~
+
+@10035 = ~Skradziony Topór Berronar
+
+Wielki Anstinus, a przynajmniej to, co z niego zosta³o, poprosi³ nas o uwarzenie Mikstury Zielonego Ognia. Sk³adniki powinny znajdowaæ siê gdzieœ w wie¿y...~
+
+@10036 = ~Skradziony Topór Berronar
+
+Oczyœciliœmy Wie¿ê Anstinusa i zdobyliœmy kamieñ pieczêci otwieraj¹cy drogê do podziemi.~
+
+@10037 = ~Skradziony Topór Berronar
+
+Zdobyliœmy kamieñ pieczêci, który Reggik odda³ duchowi Anstinusa na przechowanie. Powinien otworzyæ przejœcie do podziemi.~
+
+@10038 = ~Bork i Ellie
+
+Pó³ork, który krêci³ siê przed Wie¿¹ Anstinusa, szuka³ kogoœ o imieniu Ellie... có¿, ju¿ nie bêdzie jej szukaæ.~
+
+@10039 = ~Bork i Ellie
+
+Zgodzi³em siê pomóc pó³orkowi Borkowi w poszukiwaniach Ellie. Powinna byæ gdzieœ w Wie¿y Anstinusa.~~Bork i Ellie
+
+Zgodzi³am siê pomóc pó³orkowi Borkowi w poszukiwaniach Ellie. Powinna byæ gdzieœ w Wie¿y Anstinusa.~
+
+@10040 = ~Bork i Ellie
+
+W Wie¿y Anstinusa napotka³em ³owczyniê Elasiê, która mnie zaatakowa³a. Musia³em siê broniæ.~~Bork i Ellie
+
+W Wie¿y Anstinusa napotka³am ³owczyniê Elasiê, która mnie zaatakowa³a. Musia³am siê broniæ.~
+
+@10041 = ~Bork i Ellie
+
+Pó³ork Bork zmusi³ elfi¹ ³owczyniê Elasiê do ma³¿eñstwa. Elasia chce siê od niego uwolniæ, ale nie chce go zabijaæ... Jak niby mia³bym jej pomóc?~~Bork i Ellie
+
+Pó³ork Bork zmusi³ elfi¹ ³owczyniê Elasiê do ma³¿eñstwa. Elasia chce siê od niego uwolniæ, ale nie chce go zabijaæ... Jak niby mia³abym jej pomóc?~
+
+@10042 = ~Bork i Ellie
+
+Po³¹czy³em Borka i Ellie... w zaœwiatach.~~Bork i Ellie
+
+Po³¹czy³am Borka i Ellie... w zaœwiatach.~
+
+@10043 = ~Bork i Ellie
+
+Przypomnia³em Elasii o jej przysiêdze. Jako ³owczyni jest zobowi¹zana zawsze mówiæ prawdê. Wróci³a do Borka, by ¿yæ u jego boku.~~Bork i Ellie
+
+Przypomnia³am Elasii o jej przysiêdze. Jako ³owczyni jest zobowi¹zana zawsze mówiæ prawdê. Wróci³a do Borka, by ¿yæ u jego boku.~
+
+@10044 = ~Bork i Ellie
+
+Rzuci³em na Elasiê czar niewidzialnoœci i pomog³em jej przemkn¹æ obok Borka. Powinienem teraz porozmawiaæ z pó³orkiem.~~Bork i Ellie
+
+Rzuci³am na Elasiê czar niewidzialnoœci i pomog³am jej przemkn¹æ obok Borka. Powinnam teraz porozmawiaæ z pó³orkiem.~
+
+@10045 = ~Bork i Ellie
+
+Elasia ukrywa siê w Wie¿y Anstinusa i chce przemkn¹æ niezauwa¿ona obok Borka. Mikstura niewidzialnoœci lub odpowiednie zaklêcie mog³yby jej w tym pomóc.~
+
+@10046 = ~Bork i Ellie
+
+Teraz, gdy Bork nie ¿yje, elfka Elasia mo¿e kontynuowaæ swoj¹ podró¿.~
+
+@10047 = ~Breagar w Saradush
+
+Breagar wspomnia³, ¿e w Saradush s¹ krasnoludy, które potrzebuj¹ wsparcia Berronar. Powinniœmy siê rozejrzeæ.~
+
+@10048 = ~Fragmenty tekstu Breagara
+
+Breagar znalaz³ fragmenty ksiêgi o Toporze Berronar i chce j¹ poddaæ renowacji, ale nie wie jak. Wskazana by³aby wizyta w œwi¹tyni Oghmy, W³adcy Wiedzy.~
+
+@10049 = ~Fragmenty tekstu Breagara
+
+W œwi¹tyni Oghmy znaleŸliœmy skrybê Walliska, który móg³by poddaæ renowacji ksiêgê dla Breagara.~
+
+@10050 = ~Fragmenty tekstu Breagara
+
+W œwi¹tyni Oghmy znaleŸliœmy skrybê Walliska, który móg³by poddaæ renowacji ksiêgê dla Breagara. Niestety nie mamy jeszcze wszystkich fragmentów. Musimy je odnaleŸæ, aby móc odtworzyæ dzie³o.~
+
+@10051 = ~Fragmenty tekstu Breagara
+
+Mnich Wallisek uwa¿a, ¿e istniej¹ trzy takie fragmenty.~
+
+@10052 = ~Fragmenty tekstu Breagara
+
+Mnich Wallisek przypuszcza, ¿e fragmenty mog¹ byæ w posiadaniu krasnoludów lub osób specjalizuj¹cych siê w wytwarzaniu broni.~
+
+@10053 = ~Fragmenty tekstu Breagara
+
+Mnich Wallisek pracuje nad renowacj¹ ksiêgi o Toporze Berronar. Powinniœmy wróciæ za kilka dni, aby sprawdziæ rezultaty.~
+
+@10054 = ~Fragmenty tekstu Breagara
+
+Ksiêga o Toporze Berronar zosta³a odrestaurowana!~
+
+@10055 = ~Oblê¿enie Wie¿y Anstinusa
+
+Srebrna krasnoludka pojawi³a siê ponownie i poinformowa³a Breagara, ¿e Wie¿a Anstinusa jest w niebezpieczeñstwie. Bez wahania zgodziliœmy siê to sprawdziæ. Wys³anniczka by³a zadowolona i natychmiast nas tam teleportowa³a. Ale co teraz? Powinniœmy zabezpieczyæ teren na zewn¹trz czy zajrzeæ do œrodka?~
+
+
+/* Forres i Reggik, duergarzy mog¹ zostaæ */
+@10056 = ~Oblê¿enie Wie¿y Anstinusa
+
+Pod¹¿yliœmy za odg³osami walki i znaleŸliœmy Forresa oraz Reggika odpieraj¹cych ataki paj¹ków. Gdy pomogliœmy im uporaæ siê z potworami, powiedzieli nam, ¿e drowy i inne szumowiny przebi³y siê przez korytarze pod wie¿¹. Breagar pozwoli³ mi zdecydowaæ, jak post¹piæ w tej sytuacji. Przekonaliœmy go, by pomóg³ im odzyskaæ wie¿ê.~
+
+/* Forres i Grashek, duergarzy mog¹ zostaæ */
+@10057 = ~Oblê¿enie Wie¿y Anstinusa
+
+Pod¹¿yliœmy za odg³osami walki i znaleŸliœmy Forresa oraz Grashka odpieraj¹cych ataki paj¹ków. Gdy pomogliœmy im uporaæ siê z potworami, powiedzieli nam, ¿e drowy i inne szumowiny przebi³y siê przez korytarze pod wie¿¹. Breagar pozwoli³ mi zdecydowaæ, jak post¹piæ w tej sytuacji. Przekonaliœmy go, by pomóg³ im odzyskaæ wie¿ê.~
+
+
+
+
+
+/* Reggik i Grashek, duergarzy mog¹ zostaæ */
+@10058 = ~Oblê¿enie Wie¿y Anstinusa
+
+Pod¹¿yliœmy za odg³osami walki i znaleŸliœmy Reggika oraz Grashka odpieraj¹cych ataki paj¹ków. Gdy pomogliœmy im uporaæ siê z potworami, powiedzieli nam, ¿e drowy i inne szumowiny przebi³y siê przez korytarze pod wie¿¹. Breagar pozwoli³ mi zdecydowaæ, jak post¹piæ w tej sytuacji. Przekonaliœmy go, by pomóg³ im odzyskaæ wie¿ê.~
+
+/* Grashek i Hargek, duergarzy mog¹ zostaæ */
+@10059 = ~Oblê¿enie Wie¿y Anstinusa
+
+Pod¹¿yliœmy za odg³osami walki i znaleŸliœmy Grashka oraz Hargka odpieraj¹cych ataki paj¹ków. Gdy pomogliœmy im uporaæ siê z potworami, powiedzieli nam,¿e drowy i inne szumowiny przebi³y siê przez korytarze pod wie¿¹. Breagar pozwoli³ mi zdecydowaæ, jak post¹piæ w tej sytuacji. Przekonaliœmy go, by pomóg³ im odzyskaæ wie¿ê.~
+
+/* Forres i Reggik, duergarowie musz¹ odejœæ */
+@10060 = ~Oblê¿enie Wie¿y Anstinusa
+
+Pod¹¿yliœmy za odg³osami walki i znaleŸliœmy Forresa oraz Reggika odpieraj¹cych ataki paj¹ków. Gdy pomogliœmy im uporaæ siê z potworami, powiedzieli nam, ¿e drowy i inne szumowiny przebi³y siê przez korytarze pod wie¿¹. Zgodziliœmy siê rozprawiæ z mrocznymi elfami, ale duergarowie bêd¹ musieli opuœciæ wie¿ê!~
+
+/* Forres i Grashek, duergarowie musz¹ odejœæ */
+@10061 = ~Oblê¿enie Wie¿y Anstinusa
+
+Pod¹¿yliœmy za odg³osami walki i znaleŸliœmy Forresa oraz Grashka odpieraj¹cych ataki paj¹ków. Gdy pomogliœmy im uporaæ siê z potworami, powiedzieli nam, ¿e drowy i inne szumowiny przebi³y siê przez korytarze pod wie¿¹. Zgodziliœmy siê rozprawiæ z mrocznymi elfami, ale duergarowie bêd¹ musieli opuœciæ wie¿ê!~
+
+/* Reggik i Grashek, duergarowie musz¹ odejœæ */
+@10062 = ~Oblê¿enie Wie¿y Anstinusa
+
+Pod¹¿yliœmy za odg³osami walki i znaleŸliœmy Reggika oraz Grashka odpieraj¹cych ataki paj¹ków. Gdy pomogliœmy im uporaæ siê z potworami, powiedzieli nam, ¿e drowy i inne szumowiny przebi³y siê przez korytarze pod wie¿¹. Zgodziliœmy siê rozprawiæ z mrocznymi elfami, ale duergarowie bêd¹ musieli opuœciæ wie¿ê!~
+
+/* Grashek i Hargek, duergarowie musz¹ odejœæ */
+@10063 = ~Oblê¿enie Wie¿y Anstinusa
+
+Pod¹¿yliœmy za odg³osami walki i znaleŸliœmy Grashka oraz Hargka odpieraj¹cych ataki paj¹ków. Gdy pomogliœmy im uporaæ siê z potworami, powiedzieli nam, ¿e drowy i inne szumowiny przebi³y siê przez korytarze pod wie¿¹. Zgodziliœmy siê rozprawiæ z mrocznymi elfami, ale duergarowie bêd¹ musieli opuœciæ wie¿ê!~
+
+
+@10064 = ~Oblê¿enie Wie¿y Anstinusa
+
+Breagar by³ zadowolony, ¿e pokonaliœmy drowy na wy¿szych poziomach wie¿y. Teraz musimy zaj¹æ siê podziemiami.~
+
+@10065 = ~Oblê¿enie Wie¿y Anstinusa
+
+Breagar by³ zadowolony, ¿e pokonaliœmy drowy w podziemiach wie¿y. Teraz musimy zaj¹æ siê wy¿szymi poziomami.~
+
+/* Forres i Reggik */
+@10066 = ~Oblê¿enie Wie¿y Anstinusa
+
+W podziemiach i siedzibie duergarów stawiliœmy czo³a drowom oraz obserwatorom i zdo³aliœmy ich pokonaæ. Dziêki boskiemu wsparciu Berronar, Breagar zapieczêtowa³ podziemne wejœcie do wie¿y, aby chroniæ duergarów przed przysz³ymi atakami mrocznych elfów. Teraz pozostaje nam tylko poinformowaæ o tym Reggika i Forresa.~
+
+/* Forres i Grashek */
+@10067 = ~Oblê¿enie Wie¿y Anstinusa
+
+W podziemiach i siedzibie duergarów stawiliœmy czo³a drowom oraz obserwatorom i zdo³aliœmy ich pokonaæ. Dziêki boskiemu wsparciu Berronar, Breagar zapieczêtowa³ podziemne wejœcie do wie¿y, aby chroniæ duergarów przed przysz³ymi atakami mrocznych elfów. Teraz pozostaje nam tylko poinformowaæ o tym Grashka i Forresa.~
+
+/* Reggik i Grashek */
+@10068 = ~Oblê¿enie Wie¿y Anstinusa
+
+W podziemiach i siedzibie duergarów stawiliœmy czo³a drowom oraz obserwatorom i zdo³aliœmy ich pokonaæ. Dziêki boskiemu wsparciu Berronar, Breagar zapieczêtowa³ podziemne wejœcie do wie¿y, aby chroniæ duergarów przed przysz³ymi atakami mrocznych elfów. Teraz pozostaje nam tylko poinformowaæ o tym Reggika i Grashka.~
+
+/* Grashek i Hargek */
+@10069 = ~Oblê¿enie Wie¿y Anstinusa
+
+W podziemiach i siedzibie duergarów stawiliœmy czo³a drowom oraz obserwatorom i zdo³aliœmy ich pokonaæ. Dziêki boskiemu wsparciu Berronar, Breagar zapieczêtowa³ podziemne wejœcie do wie¿y, aby chroniæ duergarów przed przysz³ymi atakami mrocznych elfów. Teraz pozostaje nam tylko poinformowaæ o tym Grashka i Hargka.~
+
+/* Reggik ¿yje */
+@10070 = ~Oblê¿enie Wie¿y Anstinusa
+
+Reggik i duergarowie byli szczêœliwi i wdziêczni za to, co Breagar i nasza dru¿yna dla nich zrobi³a. Teraz musimy wróciæ do sfery kieszeniowej, by spotkaæ siê ze srebrn¹ krasnoludk¹.~
+
+/* Reggik nie ¿yje */
+@10071 = ~Oblê¿enie Wie¿y Anstinusa
+
+Duergarowie byli szczêœliwi i wdziêczni za to, co Breagar i nasza dru¿yna dla nich zrobili. Teraz musimy wróciæ do sfery kieszeniowej, by spotkaæ siê ze srebrn¹ krasnoludk¹.~
+
+@10072 = ~Oblê¿enie Wie¿y Anstinusa
+
+Srebrna krasnoludka by³a zadowolona z naszych czynów. W dowód wdziêcznoœci udzieli³a Toporowi Berronar dodatkowego b³ogos³awieñstwa, jeszcze bardziej go wzmacniaj¹c. Zanim odesz³a, przekaza³a Breagarowi, ¿e posiadacza topora czeka w przysz³oœci jeszcze jedna próba.~
+
+//ungelöste Aufgaben:	AddJournalEntry(@10037,QUEST)
+//erledigte Aufgaben:	AddJournalEntry(@10036,QUEST_DONE)
+//Tagebucheinträge:	AddJournalEntry(%Text%,INFO)
+//EraseJournalEntry(@10032)EraseJournalEntry(@10033)EraseJournalEntry(@10034)EraseJournalEntry(@10035)
+
+//BG:EE Compatibility
+
+//Strings from BG2
+
+
+@50001 = ~O tak... bêdziesz cierpieæ.~ [HVILLM04] //#61778
+@50002 = ~~ [HVILLM06] //#61780
+@50003 = ~~ [HVILLM07] //#61781
+@50004 = ~~ [MTOWN05] //#12566
+@50005 = ~Oby bogowie spojrzeli na ciebie przychylnie.~ [GPRIM03] //#61726
+@50006 = ~~ [GPRIM06] //#61730
+@50007 = ~~ [GPRIM07] //#61731
+@50008 = ~Lisz~ //#8457
+@50009 = ~Mmmm, tak?~ [GNOMEM03] //#61703
+@50010 = ~Z drogi! Wasze rzepki padn¹ mym ³upem!~ [GNOMEM05] //#61705
+@50011 = ~~ [GNOMEM06] //#61706
+@50012 = ~~ [GNOMEM07] //#61707
+@50013 = ~Chwa³a Mrocznej Matce!~ [DRPRIS04] //#53379
+@50014 = ~Chwa³a niech bêdzie Lolth! Wszelkie zwyciêstwa s¹ jej zas³ug¹!~ [DRPRIS01] //#53358
+@50015 = ~~ [DRPRIS06] //#53387
+@50016 = ~~ [DRPRIS05] //#53383
+@50017 = ~Obserwator~ //#2662
+@50018 = ~Drow~ //#50900
+@50019 = ~Cieñ~
+
+
+//Journal Titles
+
+@60001 = ~Ksi¹¿ka dla krasnoluda~
+@60002 = ~Breagar szuka ¿elaza~
+@60003 = ~Wypadek Breagara w kuŸni Grzmi¹cego M³ota~
+@60004 = ~Olbrzym z Chmurnych Szczytów~
+@60005 = ~Mroczna przepowiednia~
+@60006 = ~Zaginiêcie Revianel~
+@60007 = ~Kontrakty Grothira~
+@60008 = ~Skradziony topór Berronar~
+@60009 = ~Bork i Ellie~
+@60010 = ~Breagar w Saradush~
+@60011 = ~Fragmenty tekstu Breagara~
+@60012 = ~Oblê¿enie Wie¿y Anstinusa~
