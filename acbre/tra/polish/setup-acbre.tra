@@ -1,30 +1,29 @@
 @1    = ~Breagar NPC mod do BG I EE, BG II EE i EET~
 @2    = ~Nie zainstalowano gry kompatybilnej z tym modem. Instalacja zostaje anulowana.~
-@3    = ~Breagar NPC: Czas pomiędzy dialogami Breagara (domyślnie 30 minut miedzy dialogami)~
+@3    = ~Breagar NPC: Rzeczywisty czas pomiędzy dialogami Breagara (domyślnie 30 minut)~
 /*
-@4    = ~Prosze wybrac:
-[1] 30 minut czasu rzeczywistego miedzy rozmowami (zalecane)
-[2] 45 minut czasu rzeczywistego miedzy rozmowami
-[3] 1 godzina czasu rzeczywistego miedzy rozmowami
-[4] 15 minut czasu rzeczywistego miedzy rozmowami
-[5] 1 godzina 30 minut czasu rzeczywistego miedzy rozmowami~
+@4    = ~Proszę wybrać:
+[1] 30 minut (zalecane)
+[2] 45 minut
+[3] 1 godzina
+[4] 15 minut
+[5] 1 godzina 30 minut~
 */
 @5    = ~Ten mod musi zostać zainstalowany przed EET_End w twojej instalacji EET.~
 /*
-@6    = ~Prosze wybrac 1, 2, 3, 4 lub 5 i zatwierdzic klawiszem Enter.~
-@7    = ~30 minut czasu rzeczywistego miedzy rozmowami~
+@6    = ~Proszę wybrać 1, 2, 3, 4 lub 5 i zatwierdzić klawiszem Enter.~
+@7    = ~30 minut~
 */
-@8    = ~45 minut czasu rzeczywistego między rozmowami~
-@9    = ~1 godzina czasu rzeczywistego między rozmowami~
-@10   = ~15 minut czasu rzeczywistego między rozmowami~
-@11   = ~1 godzina 30 minut czasu rzeczywistego między rozmowami~
+@8    = ~45 minut~
+@9    = ~1 godzina~
+@10   = ~15 minut~
+@11   = ~1 godzina 30 minut~
 @12   = ~Breagar NPC: Alternatywny portret z wersji v4.X (domyślnie oryginalna grafika autorstwa Nix)~
 /*
-@13   = ~Prosze wybrac portret:
-
+@13   = ~Proszę wybrać portret:
 [1] Oryginalna grafika autorstwa Nix
 [2] Alternatywny portret z wersji v4.X~
-@14   = ~Prosze wybrac 1 lub 2 i zatwierdzic klawiszem Enter~
+@14   = ~Proszę wybrać 1 lub 2 i zatwierdzić klawiszem Enter~
 @15   = ~Instalowanie portretu: Oryginalna grafika autorstwa Nix~
 */
 @16   = ~Instalowanie portretu: Alternatywny portret z wersji v4.X~
