@@ -118,6 +118,10 @@ LANGUAGE ~Russian (by klichko86 & AlexKaran & Arcanecoast team)~ ~russian~
 			~ACBre/TRA/english/setup-ACBre.tra~
 			~ACBre/TRA/russian/game-acbre.tra~
 
+LANGUAGE ~Polish (by my_summertime, SoM Membress, part of CoB Clan)~ ~polish~
+      		~ACBre/TRA/polish/setup-acbre.tra~
+			~ACBre/TRA/polish/game-acbre.tra~
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1785,7 +1789,7 @@ EXTEND_BOTTOM ~ACBRE.bcs~ ~ACBre/CROSS/ACTOD.baf~
 COMPILE EVALUATE_BUFFER ~ACBre/CROSS/ACTOD.D~
 END
 
-/* Ascalon's Questpack: Der Lohn f¸r die M¸he */
+/* Ascalon's Questpack: Der Lohn f√ºr die M√ºhe */
 ACTION_IF FILE_EXISTS_IN_GAME ~ACQ11001.CRE~
 THEN BEGIN
   PRINT @205
@@ -1877,7 +1881,7 @@ EVALUATE_BUFFER
 
 BEGIN @8 DESIGNATED 10 /* ~45 Minuten Realzeit zwischen den Gespraechen~ */
 LABEL ~Ascalons_Breagar-dialogue_timer_45min~
-	SUBCOMPONENT @3  /* ~Setup von Breagars Gespr‰chsgeschwindigkeit~ */
+	SUBCOMPONENT @3  /* ~Setup von Breagars Gespr√§chsgeschwindigkeit~ */
 REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
 
 COPY_EXISTING ~gtimes.ids~ ~override~
@@ -1886,7 +1890,7 @@ COPY_EXISTING ~gtimes.ids~ ~override~
 
 BEGIN @9 DESIGNATED 11 /* ~1 Stunde Realzeit zwischen den Gespraechen~ */
 LABEL ~Ascalons_Breagar-dialogue_timer_60min~
-	SUBCOMPONENT @3  /* ~Setup von Breagars Gespr‰chsgeschwindigkeit~ */
+	SUBCOMPONENT @3  /* ~Setup von Breagars Gespr√§chsgeschwindigkeit~ */
 REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
 
 COPY_EXISTING ~gtimes.ids~ ~override~
@@ -1895,7 +1899,7 @@ COPY_EXISTING ~gtimes.ids~ ~override~
 
 BEGIN @10 DESIGNATED 12 /* ~15 Minuten Realzeit zwischen den Gespraechen~ */
 LABEL ~Ascalons_Breagar-dialogue_timer_15min~
-	SUBCOMPONENT @3  /* ~Setup von Breagars Gespr‰chsgeschwindigkeit~ */
+	SUBCOMPONENT @3  /* ~Setup von Breagars Gespr√§chsgeschwindigkeit~ */
 REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
 
 COPY_EXISTING ~gtimes.ids~ ~override~
@@ -1904,7 +1908,7 @@ COPY_EXISTING ~gtimes.ids~ ~override~
 
 BEGIN @11 DESIGNATED 13 /* ~1 Stunde 30 Minuten Realzeit zwischen den Gespraechen~ */
 LABEL ~Ascalons_Breagar-dialogue_timer_90min~
-	SUBCOMPONENT @3  /* ~Setup von Breagars Gespr‰chsgeschwindigkeit~ */
+	SUBCOMPONENT @3  /* ~Setup von Breagars Gespr√§chsgeschwindigkeit~ */
 REQUIRE_COMPONENT ~Setup-ACBre.tp2~ 0 @198
 
 COPY_EXISTING ~gtimes.ids~ ~override~
